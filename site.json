@@ -1,0 +1,193 @@
+{
+  "brand": "Recipe Mom",
+  "tagline": "Everything worth cooking twice.",
+  "hero": {
+    "eyebrow": "Today's pick",
+    "title": "Cook something you'll want again tomorrow",
+    "sub": "Recipes cooked more than twice in a real kitchen, with the timings that actually held up and the shortcuts that didn't ruin anything.",
+    "cta": "Browse all recipes",
+    "featured": "thai-congee"
+  },
+  "nav": [
+    {
+      "label": "Recipes",
+      "columns": [
+        {
+          "heading": "Meals",
+          "links": [
+            { "label": "Breakfast", "cat": "Breakfast" },
+            { "label": "Mains", "cat": "Mains" },
+            { "label": "Sides", "cat": "Sides" }
+          ]
+        },
+        {
+          "heading": "Rice & Noodles",
+          "links": [
+            { "label": "Rice bowls & congee", "cat": "Rice" },
+            { "label": "Noodles", "cat": "Noodles" },
+            { "label": "Soups & broths", "cat": "Soups" }
+          ]
+        },
+        {
+          "heading": "Sweet things",
+          "links": [
+            { "label": "Baking", "cat": "Baking" },
+            { "label": "Sweets", "cat": "Sweets" },
+            { "label": "Drinks", "cat": "Drinks" }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Collections",
+      "columns": [
+        {
+          "heading": "Fast & fresh",
+          "links": [
+            { "label": "Salads", "cat": "Salads" },
+            { "label": "Weeknight mains", "cat": "Mains" },
+            { "label": "Quick sides", "cat": "Sides" }
+          ]
+        },
+        {
+          "heading": "Cosy & slow",
+          "links": [
+            { "label": "Soups & stews", "cat": "Soups" },
+            { "label": "Rice pots", "cat": "Rice" },
+            { "label": "Noodle bowls", "cat": "Noodles" }
+          ]
+        },
+        {
+          "heading": "Sweet & sipping",
+          "links": [
+            { "label": "Cakes & breads", "cat": "Baking" },
+            { "label": "Puddings & sweets", "cat": "Sweets" },
+            { "label": "Coolers & warmers", "cat": "Drinks" }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "How-Tos",
+      "columns": [
+        {
+          "heading": "Technique",
+          "links": [
+            { "label": "Braising & stewing", "cat": "Mains" },
+            { "label": "Building a broth", "cat": "Soups" },
+            { "label": "Cooking rice properly", "cat": "Rice" }
+          ]
+        },
+        {
+          "heading": "Baking basics",
+          "links": [
+            { "label": "Doughs & batters", "cat": "Baking" },
+            { "label": "Sugar, set & chill", "cat": "Sweets" }
+          ]
+        },
+        {
+          "heading": "Everyday kitchen",
+          "links": [
+            { "label": "Eggs, five ways", "cat": "Breakfast" },
+            { "label": "Dressings & pickles", "cat": "Salads" },
+            { "label": "Stocking the shelf", "cat": "Sides" }
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": [
+    "Breakfast",
+    "Mains",
+    "Rice",
+    "Noodles",
+    "Baking",
+    "Soups",
+    "Salads",
+    "Sweets",
+    "Drinks",
+    "Sides"
+  ],
+  "collections": [
+    {
+      "id": "quick",
+      "label": "Quick & Easy",
+      "desc": "On the table in thirty minutes, start to plate.",
+      "filter": { "maxMinutes": 30 }
+    },
+    {
+      "id": "top",
+      "label": "Highly Rated",
+      "desc": "The ones readers keep coming back to.",
+      "filter": { "minRating": 4.5 }
+    },
+    {
+      "id": "one-pot",
+      "label": "One-Pot Wonders",
+      "desc": "Dinner, and exactly one pan to wash.",
+      "filter": { "tag": "One Pot" }
+    },
+    {
+      "id": "weeknight",
+      "label": "Weeknight Dinners",
+      "desc": "Between six and seven, handled.",
+      "filter": { "tag": "Weeknight" }
+    },
+    {
+      "id": "crowd-pleasers",
+      "label": "Crowd-Pleasers",
+      "desc": "The comfort food that disappears fastest. Cook once, feed everybody.",
+      "filter": { "tag": "Comfort Food" }
+    },
+    {
+      "id": "from-the-oven",
+      "label": "From the Oven",
+      "desc": "Cakes, breads, and a house that smells like Sunday.",
+      "filter": { "cat": "Baking" }
+    },
+    {
+      "id": "slurp",
+      "label": "Soup & Noodle Night",
+      "desc": "Broth, noodles, steam on the windows.",
+      "filter": { "cat": "Noodles" }
+    },
+    {
+      "id": "morning",
+      "label": "Better Mornings",
+      "desc": "Breakfasts worth getting up a little earlier for.",
+      "filter": { "cat": "Breakfast", "maxMinutes": 45 }
+    }
+  ],
+  "footer": {
+    "note": "Recipe Mom is a home kitchen, not a test lab. Nothing goes up here until it has been cooked at least twice and worked both times.",
+    "columns": [
+      {
+        "heading": "Explore",
+        "links": [
+          { "label": "All recipes", "href": "#/recipes" },
+          { "label": "Quick & Easy", "href": "#/collection/quick" },
+          { "label": "Highly Rated", "href": "#/collection/top" },
+          { "label": "One-Pot Wonders", "href": "#/collection/one-pot" }
+        ]
+      },
+      {
+        "heading": "Categories",
+        "links": [
+          { "label": "Breakfast", "href": "#/category/Breakfast" },
+          { "label": "Mains", "href": "#/category/Mains" },
+          { "label": "Baking", "href": "#/category/Baking" },
+          { "label": "Sweets", "href": "#/category/Sweets" }
+        ]
+      },
+      {
+        "heading": "The kitchen",
+        "links": [
+          { "label": "Weeknight dinners", "href": "#/collection/weeknight" },
+          { "label": "Crowd-pleasers", "href": "#/collection/crowd-pleasers" },
+          { "label": "Soup & noodle night", "href": "#/collection/slurp" },
+          { "label": "Start from the top", "href": "#/" }
+        ]
+      }
+    ]
+  }
+}

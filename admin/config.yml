@@ -1,0 +1,433 @@
+backend:
+  name: github
+  repo: brianchenhao/recipe
+  branch: main
+  base_url: https://recipe-mom3.vercel.app
+  auth_endpoint: api/auth
+  commit_messages:
+    update: 'content: update {{collection}} "{{slug}}"'
+    openAuthoring: 'content: update {{collection}} "{{slug}}"'
+
+site_url: https://recipe-mom3.vercel.app
+display_url: https://recipe-mom3.vercel.app
+publish_mode: simple
+
+media_folder: images
+public_folder: images
+
+collections:
+  - name: site
+    label: Site settings
+    editor:
+      preview: false
+    files:
+      - name: config
+        label: Site configuration
+        file: site.json
+        format: json
+        fields:
+          - label: Brand
+            name: brand
+            widget: string
+          - label: Tagline
+            name: tagline
+            widget: string
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+                required: false
+              - label: Title
+                name: title
+                widget: string
+              - label: Sub
+                name: sub
+                widget: text
+                required: false
+              - label: CTA label
+                name: cta
+                widget: string
+                required: false
+              - label: Featured recipe id
+                name: featured
+                widget: string
+                required: false
+                hint: The id of a recipe in recipes.json, e.g. thai-congee
+          - label: Navigation
+            name: nav
+            widget: list
+            summary: '{{fields.label}}'
+            fields:
+              - label: Label
+                name: label
+                widget: string
+              - label: Columns
+                name: columns
+                widget: list
+                summary: '{{fields.heading}}'
+                fields:
+                  - label: Heading
+                    name: heading
+                    widget: string
+                  - label: Links
+                    name: links
+                    widget: list
+                    summary: '{{fields.label}}'
+                    fields:
+                      - label: Label
+                        name: label
+                        widget: string
+                      - label: Category
+                        name: cat
+                        widget: select
+                        options:
+                          - Breakfast
+                          - Mains
+                          - Rice
+                          - Noodles
+                          - Baking
+                          - Soups
+                          - Salads
+                          - Sweets
+                          - Drinks
+                          - Sides
+          - label: Categories
+            name: categories
+            widget: list
+            field:
+              label: Category
+              name: category
+              widget: string
+          - label: Collections
+            name: collections
+            widget: list
+            summary: '{{fields.label}}'
+            fields:
+              - label: Id
+                name: id
+                widget: string
+                hint: url-safe slug, used in #/collection/<id>
+              - label: Label
+                name: label
+                widget: string
+              - label: Description
+                name: desc
+                widget: string
+                required: false
+              - label: Filter
+                name: filter
+                widget: object
+                hint: Leave unused keys blank. Only maxMinutes, minRating, cat and tag are honoured.
+                fields:
+                  - label: Max minutes
+                    name: maxMinutes
+                    widget: number
+                    required: false
+                    value_type: int
+                    min: 1
+                  - label: Min rating
+                    name: minRating
+                    widget: number
+                    required: false
+                    value_type: float
+                    min: 0
+                    max: 5
+                    step: 0.1
+                  - label: Category
+                    name: cat
+                    widget: select
+                    required: false
+                    options:
+                      - Breakfast
+                      - Mains
+                      - Rice
+                      - Noodles
+                      - Baking
+                      - Soups
+                      - Salads
+                      - Sweets
+                      - Drinks
+                      - Sides
+                  - label: Tag
+                    name: tag
+                    widget: string
+                    required: false
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - label: Note
+                name: note
+                widget: text
+                required: false
+              - label: Columns
+                name: columns
+                widget: list
+                summary: '{{fields.heading}}'
+                fields:
+                  - label: Heading
+                    name: heading
+                    widget: string
+                  - label: Links
+                    name: links
+                    widget: list
+                    summary: '{{fields.label}}'
+                    fields:
+                      - label: Label
+                        name: label
+                        widget: string
+                      - label: Href
+                        name: href
+                        widget: string
+                        hint: A hash route, e.g. #/recipes or #/category/Baking
+
+  - name: content
+    label: Content
+    editor:
+      preview: false
+    files:
+      - name: recipes
+        label: Recipes
+        file: recipes.json
+        format: json
+        fields:
+          - label: Recipes
+            name: recipes
+            widget: list
+            summary: '{{fields.title}}'
+            collapsed: true
+            fields:
+              - label: Id
+                name: id
+                widget: string
+                hint: url-safe slug, unique, lowercase-hyphen
+              - label: Title
+                name: title
+                widget: string
+              - label: Author
+                name: author
+                widget: string
+                required: false
+                hint: Shown as "Recipe courtesy of ___"
+              - label: Category
+                name: cat
+                widget: select
+                required: false
+                options:
+                  - Breakfast
+                  - Mains
+                  - Rice
+                  - Noodles
+                  - Baking
+                  - Soups
+                  - Salads
+                  - Sweets
+                  - Drinks
+                  - Sides
+              - label: Tags
+                name: tags
+                widget: list
+                required: false
+                field:
+                  label: Tag
+                  name: tag
+                  widget: string
+              - label: Image
+                name: img
+                widget: string
+                required: false
+                hint: Absolute https URL or images/x.jpg. Leave blank to use the illustration.
+              - label: Illustration
+                name: ill
+                widget: select
+                required: false
+                options:
+                  - ill-bowl
+                  - ill-noodles
+                  - ill-bread
+                  - ill-cake
+                  - ill-pot
+                  - ill-pan
+                  - ill-salad
+                  - ill-egg
+                  - ill-fish
+                  - ill-grill
+                  - ill-jar
+                  - ill-drink
+              - label: Badge
+                name: badge
+                widget: string
+                required: false
+                hint: e.g. New, Trending. Blank for none.
+              - label: Featured
+                name: featured
+                widget: boolean
+                required: false
+                default: false
+                hint: Eligible for the home hero rotation.
+              - label: Description
+                name: desc
+                widget: string
+                required: false
+                hint: One-line card blurb.
+              - label: Lede
+                name: lede
+                widget: text
+                required: false
+                hint: Intro paragraph on the recipe page.
+              - label: Level
+                name: level
+                widget: select
+                required: false
+                options:
+                  - Easy
+                  - Intermediate
+                  - Advanced
+              - label: Prep time
+                name: prep
+                widget: string
+                required: false
+                hint: e.g. 25 min
+              - label: Cook time
+                name: cook
+                widget: string
+                required: false
+              - label: Active time
+                name: active
+                widget: string
+                required: false
+              - label: Total time
+                name: total
+                widget: string
+                required: false
+                hint: e.g. 1 hr 30 min
+              - label: Yield
+                name: yield
+                widget: string
+                required: false
+                hint: e.g. 4 to 6 servings
+              - label: Serves
+                name: serves
+                widget: number
+                required: false
+                value_type: int
+                min: 1
+                hint: Numeric base for the servings scaler.
+              - label: Rating
+                name: rating
+                widget: number
+                required: false
+                value_type: float
+                min: 0
+                max: 5
+                step: 0.1
+              - label: Reviews
+                name: reviews
+                widget: number
+                required: false
+                value_type: int
+                min: 0
+              - label: Ingredient groups
+                name: ingredientGroups
+                widget: list
+                required: false
+                summary: '{{fields.group}}'
+                fields:
+                  - label: Group
+                    name: group
+                    widget: string
+                    required: false
+                    hint: Leave blank for a recipe with no sub-sections.
+                  - label: Items
+                    name: items
+                    widget: list
+                    required: false
+                    summary: '{{fields.name}}'
+                    fields:
+                      - label: Name
+                        name: name
+                        widget: string
+                      - label: US quantity
+                        name: usQty
+                        widget: number
+                        required: false
+                        value_type: float
+                        default: 0
+                        hint: 0 means no quantity, e.g. "salt to taste".
+                      - label: US unit
+                        name: usUnit
+                        widget: string
+                        required: false
+                        hint: Blank for countable things, e.g. "2 bay leaves".
+                      - label: Metric quantity
+                        name: metricQty
+                        widget: number
+                        required: false
+                        value_type: float
+                        default: 0
+                      - label: Metric unit
+                        name: metricUnit
+                        widget: string
+                        required: false
+                      - label: Note
+                        name: note
+                        widget: string
+                        required: false
+                        hint: e.g. plus more to taste
+              - label: Steps
+                name: steps
+                widget: list
+                required: false
+                summary: '{{fields.title}}'
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                    required: false
+                  - label: Text
+                    name: text
+                    widget: text
+              - label: Tips
+                name: tips
+                widget: list
+                required: false
+                field:
+                  label: Tip
+                  name: tip
+                  widget: string
+              - label: Cook's note
+                name: cooksNote
+                widget: text
+                required: false
+              - label: Nutrition
+                name: nutrition
+                widget: object
+                required: false
+                fields:
+                  - label: Calories
+                    name: calories
+                    widget: string
+                    required: false
+                  - label: Fat
+                    name: fat
+                    widget: string
+                    required: false
+                  - label: Carbs
+                    name: carbs
+                    widget: string
+                    required: false
+                  - label: Protein
+                    name: protein
+                    widget: string
+                    required: false
+                  - label: Sodium
+                    name: sodium
+                    widget: string
+                    required: false
+                  - label: Fiber
+                    name: fiber
+                    widget: string
+                    required: false

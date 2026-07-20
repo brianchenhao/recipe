@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Recipe Mom — Content Manager</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #fbf7f2;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      #nc-root:empty::after {
+        content: "Loading the content manager…";
+        display: block;
+        padding: 4rem 1.5rem;
+        text-align: center;
+        color: #6b5c52;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nc-root"></div>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </body>
+</html>

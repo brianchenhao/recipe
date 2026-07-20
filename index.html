@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Recipe Mom</title>
+<meta name="description" content="Recipe Mom is a warm, generous home-cooking library: clear ingredient lists, honest timings, a servings scaler and step-by-step directions you can tick off as you cook.">
+<link rel="canonical" href="https://recipe.chenki.com/">
+
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbf6ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171310" media="(prefers-color-scheme: dark)">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="format-detection" content="telephone=no">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Recipe Mom">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Recipe Mom">
+<meta property="og:description" content="A warm, generous home-cooking library: clear ingredient lists, honest timings, a servings scaler and step-by-step directions you can tick off as you cook.">
+<meta property="og:url" content="https://recipe.chenki.com/">
+<meta property="og:image" content="https://recipe.chenki.com/images/og-recipe-mom.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Recipe Mom">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Recipe Mom">
+<meta name="twitter:description" content="A warm, generous home-cooking library: clear ingredient lists, honest timings, a servings scaler and step-by-step directions you can tick off as you cook.">
+<meta name="twitter:image" content="https://recipe.chenki.com/images/og-recipe-mom.png">
+<meta name="twitter:image:alt" content="Recipe Mom">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23b8431d'/%3E%3Cpath%20d='M11%2029h42c0%2013-9.4%2021-21%2021S11%2042%2011%2029z'%20fill='%23fdf7ef'/%3E%3Cpath%20d='M15%2031h34c-.6%209.4-8%2015-17%2015s-16.4-5.6-17-15z'%20fill='%23f0b46a'/%3E%3Cpath%20d='M26%2023c4-3%204-6%200-9m10%209c4-3%204-6%200-9'%20fill='none'%20stroke='%23fdf7ef'%20stroke-width='3.2'%20stroke-linecap='round'/%3E%3C/svg%3E" type="image/svg+xml">
+
+<link rel="stylesheet" href="styles.css">
+<script>
+/* Theme bootstrap: applies the persisted theme before first paint to avoid a flash.
+   The toggle itself, and everything else, is owned by app.js. */
+(function () {
+  try {
+    var t = localStorage.getItem('rm-theme');
+    if (t !== 'light' && t !== 'dark') {
+      t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+<script defer src="app.js"></script>
+</head>
+<body>
+
+<a class="skip-link" href="#app">Skip to content</a>
+
+<div id="scroll-progress" class="scroll-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+<header id="site-header" class="site-header">
+  <div class="site-header__inner">
+
+    <button id="nav-toggle" class="btn btn--icon nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <svg class="icon icon--menu" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+        <path d="M4 7h16M4 12h16M4 17h16"></path>
+      </svg>
+      <svg class="icon icon--close" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+        <path d="M6 6l12 12M18 6L6 18"></path>
+      </svg>
+    </button>
+
+    <div class="brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true" focusable="false">
+          <circle cx="20" cy="20" r="19" fill="var(--accent)"></circle>
+          <path d="M7 18h26c0 8.6-5.9 14.5-13 14.5S7 26.6 7 18z" fill="currentColor"></path>
+          <path d="M11 20h18c-.6 5.8-4.7 9.3-9 9.3S11.6 25.8 11 20z" fill="var(--accent)"></path>
+          <path d="M16 13.5c2.5-2 2.5-4 0-6m8 6c2.5-2 2.5-4 0-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <a id="brand-name" class="brand__name" href="#/"></a>
+    </div>
+
+    <nav id="nav-root" class="nav" aria-label="Main"></nav>
+
+    <form id="search-form" class="search" role="search" autocomplete="off" novalidate>
+      <span class="search__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+          <circle cx="11" cy="11" r="6.5"></circle>
+          <path d="M16 16l4.5 4.5"></path>
+        </svg>
+      </span>
+      <input id="search-input" class="search__input" type="search" name="q"
+             placeholder="Search recipes"
+             aria-label="Search recipes"
+             autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"
+             role="combobox" aria-expanded="false" aria-controls="search-suggest"
+             aria-autocomplete="list" aria-haspopup="listbox">
+      <button class="btn btn--icon search__submit" type="submit" aria-label="Search">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M4 12h15M13 6l6 6-6 6"></path>
+        </svg>
+      </button>
+      <div id="search-suggest" class="search__suggest" role="listbox" aria-label="Search suggestions"></div>
+    </form>
+
+    <button id="theme-toggle" class="btn btn--icon theme-toggle" type="button" aria-label="Switch colour theme" aria-pressed="false" title="Switch colour theme">
+      <svg class="icon icon--sun" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="4.2"></circle>
+        <path d="M12 2.6v2.6M12 18.8v2.6M2.6 12h2.6M18.8 12h2.6M5.3 5.3l1.9 1.9M16.8 16.8l1.9 1.9M18.7 5.3l-1.9 1.9M7.2 16.8l-1.9 1.9"></path>
+      </svg>
+      <svg class="icon icon--moon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <path d="M20 14.4A8.6 8.6 0 0 1 9.6 4a8.6 8.6 0 1 0 10.4 10.4z"></path>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<div id="mobile-nav" class="mobile-nav" role="dialog" aria-modal="true" aria-label="Menu"></div>
+
+<section id="hero" class="hero" aria-labelledby="hero-title">
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <p id="hero-eyebrow" class="hero__eyebrow"></p>
+      <h1 id="hero-title" class="hero__title"></h1>
+      <p id="hero-sub" class="hero__sub"></p>
+      <a id="hero-cta" class="btn btn--primary hero__cta" href="#/recipes"></a>
+    </div>
+    <div id="hero-card" class="hero__card"></div>
+  </div>
+</section>
+
+<main id="app" class="app" tabindex="-1" aria-busy="true">
+
+  <div id="skeleton" class="skeleton" aria-hidden="true">
+    <div class="skeleton__hero">
+      <div class="skeleton__hero-copy">
+        <span class="skeleton__bar skeleton__bar--eyebrow"></span>
+        <span class="skeleton__bar skeleton__bar--title"></span>
+        <span class="skeleton__bar skeleton__bar--title skeleton__bar--short"></span>
+        <span class="skeleton__bar skeleton__bar--sub"></span>
+        <span class="skeleton__bar skeleton__bar--sub skeleton__bar--short"></span>
+        <span class="skeleton__bar skeleton__bar--btn"></span>
+      </div>
+      <div class="skeleton__hero-card"></div>
+    </div>
+
+    <div class="skeleton__chips">
+      <span class="skeleton__chip"></span>
+      <span class="skeleton__chip"></span>
+      <span class="skeleton__chip"></span>
+      <span class="skeleton__chip"></span>
+      <span class="skeleton__chip"></span>
+      <span class="skeleton__chip"></span>
+    </div>
+
+    <div class="skeleton__head">
+      <span class="skeleton__bar skeleton__bar--head"></span>
+      <span class="skeleton__bar skeleton__bar--link"></span>
+    </div>
+
+    <div class="grid skeleton__grid">
+      <div class="skeleton-card">
+        <div class="skeleton-card__media"></div>
+        <div class="skeleton-card__body">
+          <span class="skeleton__bar skeleton__bar--cat"></span>
+          <span class="skeleton__bar skeleton__bar--line"></span>
+          <span class="skeleton__bar skeleton__bar--line skeleton__bar--short"></span>
+          <span class="skeleton__bar skeleton__bar--meta"></span>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-card__media"></div>
+        <div class="skeleton-card__body">
+          <span class="skeleton__bar skeleton__bar--cat"></span>
+          <span class="skeleton__bar skeleton__bar--line"></span>
+          <span class="skeleton__bar skeleton__bar--line skeleton__bar--short"></span>
+          <span class="skeleton__bar skeleton__bar--meta"></span>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-card__media"></div>
+        <div class="skeleton-card__body">
+          <span class="skeleton__bar skeleton__bar--cat"></span>
+          <span class="skeleton__bar skeleton__bar--line"></span>
+          <span class="skeleton__bar skeleton__bar--line skeleton__bar--short"></span>
+          <span class="skeleton__bar skeleton__bar--meta"></span>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-card__media"></div>
+        <div class="skeleton-card__body">
+          <span class="skeleton__bar skeleton__bar--cat"></span>
+          <span class="skeleton__bar skeleton__bar--line"></span>
+          <span class="skeleton__bar skeleton__bar--line skeleton__bar--short"></span>
+          <span class="skeleton__bar skeleton__bar--meta"></span>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-card__media"></div>
+        <div class="skeleton-card__body">
+          <span class="skeleton__bar skeleton__bar--cat"></span>
+          <span class="skeleton__bar skeleton__bar--line"></span>
+          <span class="skeleton__bar skeleton__bar--line skeleton__bar--short"></span>
+          <span class="skeleton__bar skeleton__bar--meta"></span>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-card__media"></div>
+        <div class="skeleton-card__body">
+          <span class="skeleton__bar skeleton__bar--cat"></span>
+          <span class="skeleton__bar skeleton__bar--line"></span>
+          <span class="skeleton__bar skeleton__bar--line skeleton__bar--short"></span>
+          <span class="skeleton__bar skeleton__bar--meta"></span>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-card__media"></div>
+        <div class="skeleton-card__body">
+          <span class="skeleton__bar skeleton__bar--cat"></span>
+          <span class="skeleton__bar skeleton__bar--line"></span>
+          <span class="skeleton__bar skeleton__bar--line skeleton__bar--short"></span>
+          <span class="skeleton__bar skeleton__bar--meta"></span>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-card__media"></div>
+        <div class="skeleton-card__body">
+          <span class="skeleton__bar skeleton__bar--cat"></span>
+          <span class="skeleton__bar skeleton__bar--line"></span>
+          <span class="skeleton__bar skeleton__bar--line skeleton__bar--short"></span>
+          <span class="skeleton__bar skeleton__bar--meta"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<noscript>
+  <div class="empty">
+    <p>This site renders its recipes with JavaScript. Please enable JavaScript to browse the collection.</p>
+  </div>
+</noscript>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<button id="back-to-top" class="btn btn--icon back-to-top" type="button" aria-label="Back to top" title="Back to top">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path d="M12 19.5V5M6 11l6-6 6 6"></path>
+  </svg>
+</button>
+
+<div id="toast-root" class="toast-root" role="status" aria-live="polite" aria-atomic="false"></div>
+
+
+<!-- ============================================================
+     Illustration sprite. Flat two-to-three-tone drawings on a
+     0 0 200 150 viewBox, using currentColor + var(--accent) so
+     every symbol inherits the theme. Referenced as:
+     <svg class="card__ill"><use href="#ill-bowl"></use></svg>
+     ============================================================ -->
+<svg id="sprite" xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+
+  <!-- ---------- bowl of congee ---------- -->
+  <symbol id="ill-bowl" viewBox="0 0 200 150">
+    <title>A bowl of congee</title>
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M74 60c7-6 7-13 0-19s-7-13 0-19" opacity=".55"/>
+      <path d="M100 56c8-7 8-16 0-23s-8-16 0-23" opacity=".75"/>
+      <path d="M126 60c7-6 7-13 0-19s-7-13 0-19" opacity=".55"/>
+    </g>
+    <path d="M40 78c7 16 31 27 60 27s53-11 60-27z" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M74 90h16M102 96h18M88 102h11"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M30 76h140"/>
+      <path d="M36 78c1 25 27 44 64 44s63-19 64-44"/>
+      <path d="M82 122h36"/>
+      <path d="M86 122c-1 6 4 10 14 10s15-4 14-10"/>
+    </g>
+    <g fill="var(--accent)" stroke="currentColor" stroke-width="4" stroke-linejoin="round">
+      <ellipse cx="146" cy="68" rx="13" ry="8" transform="rotate(-38 146 68)"/>
+    </g>
+    <path d="M154 60l26-20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- ---------- nest of noodles ---------- -->
+  <symbol id="ill-noodles" viewBox="0 0 200 150">
+    <title>A bowl of noodles with chopsticks</title>
+    <path d="M48 74c2-24 24-40 52-40s50 16 52 40z" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M56 72c6-19 22-30 44-30s38 11 44 30"/>
+      <path d="M68 72c4-14 16-23 32-23s28 9 32 23"/>
+      <path d="M82 72c3-9 9-15 18-15s15 6 18 15"/>
+      <path d="M62 60c10-6 22-9 38-9s28 3 38 9"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round">
+      <path d="M124 24L94 62"/>
+      <path d="M138 32l-30 38"/>
+    </g>
+    <path d="M104 58c-6 9-6 17 1 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M118 66c-5 8-5 15 1 21" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 74h136"/>
+      <path d="M38 76c1 27 28 48 62 48s61-21 62-48"/>
+      <path d="M84 124h32"/>
+      <path d="M88 124c-1 6 4 10 12 10s13-4 12-10"/>
+    </g>
+    <path d="M60 92h22" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".4"/>
+  </symbol>
+
+  <!-- ---------- boule of bread ---------- -->
+  <symbol id="ill-bread" viewBox="0 0 200 150">
+    <title>A round loaf of bread</title>
+    <path d="M36 110c-3-41 25-70 64-70s67 29 64 70z" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M36 110c-3-41 25-70 64-70s67 29 64 70"/>
+      <path d="M36 110h128"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round">
+      <path d="M64 84l20-20"/>
+      <path d="M82 94l26-26"/>
+      <path d="M104 100l24-24"/>
+      <path d="M126 100l14-14"/>
+    </g>
+    <g fill="currentColor" opacity=".45">
+      <circle cx="58" cy="66" r="2.6"/>
+      <circle cx="72" cy="54" r="2.2"/>
+      <circle cx="120" cy="52" r="2.4"/>
+      <circle cx="140" cy="66" r="2.6"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M24 110h152a7 7 0 0 1 0 14H24a7 7 0 0 1 0-14z"/>
+      <path d="M176 124l-8 10H32l-8-10" opacity=".5"/>
+    </g>
+  </symbol>
+
+  <!-- ---------- layer cake ---------- -->
+  <symbol id="ill-cake" viewBox="0 0 200 150">
+    <title>A frosted layer cake</title>
+    <path d="M56 92h88v22a8 8 0 0 1-8 8H64a8 8 0 0 1-8-8z" fill="var(--accent)" opacity=".5"/>
+    <path d="M52 60c3-9 13-9 16 0c3-9 13-9 16 0c3-9 13-9 16 0c3-9 13-9 16 0c3-9 13-9 16 0c3-9 13-9 16 0V47H52z" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M56 60h88v54a8 8 0 0 1-8 8H64a8 8 0 0 1-8-8z"/>
+      <path d="M52 60c3-9 13-9 16 0c3-9 13-9 16 0c3-9 13-9 16 0c3-9 13-9 16 0c3-9 13-9 16 0c3-9 13-9 16 0V47H52z"/>
+      <path d="M56 78h88" opacity=".7"/>
+      <path d="M56 92h88" opacity=".7"/>
+    </g>
+    <g fill="var(--accent)" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round">
+      <circle cx="100" cy="38" r="8"/>
+    </g>
+    <path d="M100 30c2-8 8-11 15-10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M40 122h120c-6 8-24 12-60 12s-54-4-60-12z"/>
+      <path d="M100 134v6"/>
+      <path d="M78 142h44"/>
+    </g>
+  </symbol>
+
+  <!-- ---------- stockpot ---------- -->
+  <symbol id="ill-pot" viewBox="0 0 200 150">
+    <title>A stockpot on the stove</title>
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".6">
+      <path d="M72 26c7-6 7-12 0-18"/>
+      <path d="M128 26c7-6 7-12 0-18"/>
+    </g>
+    <path d="M56 48c7-19 23-30 44-30s37 11 44 30z" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M56 48c7-19 23-30 44-30s37 11 44 30z"/>
+      <circle cx="100" cy="14" r="6" fill="var(--accent)"/>
+      <path d="M50 76c-13 0-20 6-20 13s7 13 20 13"/>
+      <path d="M150 76c13 0 20 6 20 13s-7 13-20 13"/>
+    </g>
+    <path d="M44 48h112v14H44z" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M44 48h112a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4H44a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4z"/>
+      <path d="M50 62l7 58a8 8 0 0 0 8 7h70a8 8 0 0 0 8-7l7-58"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".35">
+      <path d="M72 74l4 42"/>
+      <path d="M86 74l2 42"/>
+    </g>
+  </symbol>
+
+  <!-- ---------- skillet ---------- -->
+  <symbol id="ill-pan" viewBox="0 0 200 150">
+    <title>A skillet</title>
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".6">
+      <path d="M70 46c7-6 7-13 0-19s-7-13 0-19"/>
+      <path d="M96 42c7-6 7-13 0-19s-7-13 0-19"/>
+    </g>
+    <path d="M138 74l42-25a9 9 0 0 1 9 15l-42 24z" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M138 74l42-25a9 9 0 0 1 9 15l-42 24z"/>
+      <circle cx="181" cy="55" r="3.5"/>
+    </g>
+    <ellipse cx="86" cy="86" rx="44" ry="13" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="86" cy="86" rx="54" ry="20"/>
+      <path d="M32 86v6c0 16 24 29 54 29s54-13 54-29v-6"/>
+      <ellipse cx="86" cy="86" rx="44" ry="13" opacity=".65"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round">
+      <path d="M62 84h16"/>
+      <path d="M92 90h18"/>
+      <path d="M74 94h12"/>
+    </g>
+  </symbol>
+
+  <!-- ---------- leafy salad ---------- -->
+  <symbol id="ill-salad" viewBox="0 0 200 150">
+    <title>A bowl of leafy salad</title>
+    <g fill="var(--accent)" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M96 86C72 82 58 64 60 40c23 5 36 22 36 46z"/>
+      <path d="M104 86c24-4 38-22 36-46-23 5-36 22-36 46z"/>
+      <path d="M100 86c-13-11-15-32-2-46 13 15 13 35 5 46z"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".7">
+      <path d="M92 82c-6-13-14-24-24-32"/>
+      <path d="M108 82c6-13 14-24 24-32"/>
+      <path d="M99 82c-3-12-3-24 0-34"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="62" cy="80" r="10"/>
+      <path d="M62 70v20M52 80h20" opacity=".6"/>
+      <circle cx="140" cy="82" r="9"/>
+      <path d="M140 73v18M131 82h18" opacity=".6"/>
+      <circle cx="120" cy="78" r="7"/>
+      <circle cx="120" cy="78" r="3" opacity=".6"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M36 86h128"/>
+      <path d="M42 88c2 22 26 38 58 38s56-16 58-38"/>
+      <path d="M84 126h32"/>
+      <path d="M88 126c-1 6 4 10 12 10s13-4 12-10"/>
+    </g>
+  </symbol>
+
+  <!-- ---------- cracked egg ---------- -->
+  <symbol id="ill-egg" viewBox="0 0 200 150">
+    <title>A cracked egg</title>
+
+    <!-- shell cap, lifted away to the upper right -->
+    <path d="M126 44c0-19 15-30 30-26 9 2 14 10 14 20l-8 6-9-6-9 6-9-6-9 6z" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" opacity=".45">
+      <path d="M176 30c5-3 8-7 9-12"/>
+      <path d="M180 46c6 0 10-2 13-6"/>
+    </g>
+
+    <!-- yolk, doming up out of the broken shell -->
+    <circle cx="97" cy="86" r="23" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round">
+      <circle cx="97" cy="86" r="23"/>
+      <path d="M85 77a13 13 0 0 1 11-6" opacity=".5"/>
+    </g>
+
+    <!-- lower shell half with a jagged break -->
+    <path d="M54 84l11-13 12 13 12-13 12 13 12-13 12 13 11-11c7 30-12 50-42 50-31 0-51-20-40-52z" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g fill="currentColor" opacity=".35">
+      <circle cx="40" cy="62" r="3"/>
+      <circle cx="34" cy="98" r="2.4"/>
+      <circle cx="158" cy="104" r="2.8"/>
+    </g>
+  </symbol>
+
+  <!-- ---------- whole fish ---------- -->
+  <symbol id="ill-fish" viewBox="0 0 200 150">
+    <title>A whole fish</title>
+    <path d="M52 76L22 48c-6 18-6 38 0 56z" fill="var(--accent)"/>
+    <path d="M52 76c16-26 44-40 72-40 24 0 40 14 46 40-6 26-22 40-46 40-28 0-56-14-72-40z" fill="var(--accent)"/>
+    <path d="M82 40c6-16 18-24 32-24-2 11-8 19-16 25z" fill="currentColor" opacity=".28"/>
+    <path d="M92 114c4 13 13 20 24 20-2-9-7-16-14-20z" fill="currentColor" opacity=".28"/>
+    <path d="M104 82c13 0 24 8 28 21-15 2-25-6-29-19z" fill="currentColor" opacity=".28"/>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M52 76c16-26 44-40 72-40 24 0 40 14 46 40-6 26-22 40-46 40-28 0-56-14-72-40z"/>
+      <path d="M52 76L22 48c-6 18-6 38 0 56z"/>
+      <path d="M82 40c6-16 18-24 32-24-2 11-8 19-16 25"/>
+      <path d="M92 114c4 13 13 20 24 20-2-9-7-16-14-20"/>
+      <path d="M104 82c13 0 24 8 28 21-15 2-25-6-29-19"/>
+      <path d="M122 42c-11 20-11 48 0 68"/>
+      <path d="M160 88c5-2 8-5 9-9" opacity=".6"/>
+    </g>
+    <circle cx="144" cy="64" r="8" fill="none" stroke="currentColor" stroke-width="4.5"/>
+    <circle cx="144" cy="64" r="3.4" fill="currentColor"/>
+    <g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" opacity=".55">
+      <path d="M78 66c7 7 7 17 0 24"/>
+      <path d="M92 60c8 9 8 21 0 30"/>
+      <path d="M106 58c8 10 8 24 0 34"/>
+    </g>
+  </symbol>
+
+  <!-- ---------- grill ---------- -->
+  <symbol id="ill-grill" viewBox="0 0 200 150">
+    <title>A charcoal grill</title>
+
+    <!-- kettle, legs and side handles -->
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M38 74c0 30 27 48 62 48s62-18 62-48"/>
+      <path d="M28 88c-9 1-13 6-12 13"/>
+      <path d="M172 88c9 1 13 6 12 13"/>
+      <path d="M64 114l-16 28"/>
+      <path d="M136 114l16 28"/>
+      <path d="M100 122v20"/>
+    </g>
+
+    <!-- the grate -->
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".65">
+      <path d="M54 66h92"/>
+      <path d="M44 70h112"/>
+      <path d="M40 74h120"/>
+      <path d="M44 78h112"/>
+      <path d="M54 82h92"/>
+    </g>
+    <ellipse cx="100" cy="74" rx="62" ry="11" fill="none" stroke="currentColor" stroke-width="5"/>
+
+    <!-- flames licking up at the edges -->
+    <g fill="var(--accent)" stroke="currentColor" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M50 64c-9-6-8-18 2-25-2 7 3 9 5 15 2-5 2-9 0-12 9 7 11 16 4 22z"/>
+      <path d="M150 62c-9-6-8-18 2-25-2 7 3 9 5 15 2-5 2-9 0-12 9 7 11 16 4 22z"/>
+    </g>
+
+    <!-- food on the bars -->
+    <g fill="var(--accent)" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round">
+      <rect x="60" y="52" width="56" height="14" rx="7" transform="rotate(-6 88 59)"/>
+      <rect x="86" y="36" width="56" height="14" rx="7" transform="rotate(5 114 43)"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".55">
+      <path d="M72 62l2-8M88 60l2-8M104 58l2-8"/>
+      <path d="M98 46l2-8M114 47l2-8M130 48l2-8"/>
+    </g>
+  </symbol>
+
+  <!-- ---------- preserve jar ---------- -->
+  <symbol id="ill-jar" viewBox="0 0 200 150">
+    <title>A jar of preserves</title>
+    <path d="M64 22h72a5 5 0 0 1 5 5v14a5 5 0 0 1-5 5H64a5 5 0 0 1-5-5V27a5 5 0 0 1 5-5z" fill="var(--accent)"/>
+    <path d="M56 76c6 8 16 8 22 0 6-8 16-8 22 0 6 8 16 8 22 0 4-6 10-7 16-2v38a10 10 0 0 1-10 10H66a10 10 0 0 1-10-10z" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M64 22h72a5 5 0 0 1 5 5v14a5 5 0 0 1-5 5H64a5 5 0 0 1-5-5V27a5 5 0 0 1 5-5z"/>
+      <path d="M68 46h64v10H68z"/>
+      <path d="M68 56c-8 5-12 13-12 24v32a10 10 0 0 0 10 10h68a10 10 0 0 0 10-10V80c0-11-4-19-12-24z"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".55">
+      <path d="M72 27v14M86 27v14M100 27v14M114 27v14M128 27v14"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="76" cy="93" r="7"/>
+      <circle cx="100" cy="101" r="8"/>
+      <circle cx="123" cy="91" r="7"/>
+      <circle cx="88" cy="112" r="6"/>
+      <circle cx="114" cy="113" r="6"/>
+      <path d="M100 93v-5M76 86v-4M123 84v-4" opacity=".7"/>
+    </g>
+    <path d="M70 68v42" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".3"/>
+  </symbol>
+
+  <!-- ---------- tall iced drink ---------- -->
+  <symbol id="ill-drink" viewBox="0 0 200 150">
+    <title>A tall iced drink</title>
+    <path d="M78 64h44l-6 60a10 10 0 0 1-10 9H94a10 10 0 0 1-10-9z" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M148 12l-9 9"/>
+      <path d="M139 21l-24 44" stroke="var(--accent)"/>
+      <path d="M139 21l-24 44" opacity=".35"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M72 30h56l-9 94a11 11 0 0 1-11 10H92a11 11 0 0 1-11-10z"/>
+      <ellipse cx="100" cy="30" rx="28" ry="7"/>
+      <path d="M77 64c5 4 13 6 23 6s18-2 23-6" opacity=".8"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity=".85">
+      <rect x="84" y="74" width="19" height="19" rx="3" transform="rotate(-13 93.5 83.5)"/>
+      <rect x="104" y="92" width="17" height="17" rx="3" transform="rotate(16 112.5 100.5)"/>
+      <rect x="87" y="106" width="16" height="16" rx="3" transform="rotate(7 95 114)"/>
+    </g>
+    <path d="M122 30h30a15 15 0 0 1-30 0z" fill="var(--accent)"/>
+    <g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M122 30h30a15 15 0 0 1-30 0z"/>
+      <path d="M137 30v15M137 30l-10 11M137 30l10 11" opacity=".65"/>
+    </g>
+    <g fill="currentColor" opacity=".35">
+      <circle cx="64" cy="76" r="3"/>
+      <circle cx="60" cy="98" r="2.4"/>
+      <circle cx="141" cy="88" r="2.8"/>
+    </g>
+  </symbol>
+
+</svg>
+
+</body>
+</html>
