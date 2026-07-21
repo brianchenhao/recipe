@@ -5720,6 +5720,133 @@
         "sodium": "520 mg",
         "fiber": "3 g"
       }
+    },
+    {
+      "id": "mediterranean-tuna-salad",
+      "title": "Mediterranean Tuna Salad",
+      "author": "",
+      "cat": "Salads",
+      "tags": [
+        "No Cook",
+        "High Protein",
+        "Mediterranean",
+        "Lunch",
+        "Quick"
+      ],
+      "img": "",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Oil-packed albacore with tomato, red onion, capers and parsley — ten minutes, no stove.",
+      "lede": "This is the lunch I make when I want something that actually holds me together till dinner. The trick is good tuna packed in olive oil — that oil is the whole dressing — and letting it sit five minutes so the onion softens its bite. Pile it over greens, stuff it into an avocado, or pull it apart on toast.",
+      "level": "Easy",
+      "prep": "10 min",
+      "cook": "",
+      "active": "10 min",
+      "total": "10 min",
+      "yield": "2 servings",
+      "serves": 2,
+      "rating": 4.8,
+      "reviews": 64,
+      "ingredientGroups": [
+        {
+          "group": "",
+          "items": [
+            {
+              "name": "wild albacore tuna in olive oil",
+              "usQty": 5,
+              "usUnit": "oz",
+              "metricQty": 140,
+              "metricUnit": "g",
+              "note": "one can, oil and all"
+            },
+            {
+              "name": "plum tomato, diced",
+              "usQty": 1,
+              "usUnit": "",
+              "metricQty": 1,
+              "metricUnit": "",
+              "note": "small"
+            },
+            {
+              "name": "red onion, finely chopped",
+              "usQty": 2,
+              "usUnit": "tbsp",
+              "metricQty": 20,
+              "metricUnit": "g"
+            },
+            {
+              "name": "capers, drained",
+              "usQty": 1,
+              "usUnit": "tbsp",
+              "metricQty": 9,
+              "metricUnit": "g"
+            },
+            {
+              "name": "fresh parsley, chopped",
+              "usQty": 2,
+              "usUnit": "tbsp",
+              "metricQty": 8,
+              "metricUnit": "g",
+              "note": "a small handful"
+            },
+            {
+              "name": "red wine vinegar",
+              "usQty": 1,
+              "usUnit": "tbsp",
+              "metricQty": 15,
+              "metricUnit": "ml"
+            },
+            {
+              "name": "fine salt",
+              "usQty": 0.5,
+              "usUnit": "tsp",
+              "metricQty": 3,
+              "metricUnit": "g",
+              "note": "or to taste"
+            },
+            {
+              "name": "ground black pepper",
+              "usQty": 0.5,
+              "usUnit": "tsp",
+              "metricQty": 1,
+              "metricUnit": "g"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "title": "Flake the tuna",
+          "text": "Tip the tuna into a medium bowl along with its olive oil and break it into big, craggy flakes with a fork — you want texture, not paste."
+        },
+        {
+          "title": "Fold in the vegetables",
+          "text": "Add the diced tomato, red onion, capers and parsley. Fold everything together gently so the tomato does not break down."
+        },
+        {
+          "title": "Dress and season",
+          "text": "Pour over the red wine vinegar, season with the salt and pepper, and toss until glossy. Taste and adjust — it should be bright and a little punchy."
+        },
+        {
+          "title": "Rest, then serve",
+          "text": "Let it sit for five minutes so the onion mellows and the flavours settle. Serve over arugula with chickpeas, avocado and a jammy egg, or spread on toasted sourdough."
+        }
+      ],
+      "tips": [
+        "Buy the tuna packed in olive oil, not water — that oil is your dressing, so never drain it.",
+        "Five minutes of resting is not optional; it takes the raw edge off the onion and pulls everything together.",
+        "Doubles and triples cleanly for a batch of lunches — it actually tastes better on day two."
+      ],
+      "cooksNote": "Keeps covered in the fridge for up to two days and only improves overnight. Bring it back to room temperature before serving so the olive oil loosens again.",
+      "nutrition": {
+        "calories": "210",
+        "fat": "12 g",
+        "carbs": "5 g",
+        "protein": "20 g",
+        "sodium": "620 mg",
+        "fiber": "1 g"
+      }
     }
   ]
 }
