@@ -5847,6 +5847,130 @@
         "sodium": "620 mg",
         "fiber": "1 g"
       }
+    },
+    {
+      "id": "high-fiber-overnight-oats",
+      "title": "High-Fiber Overnight Oats",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "Overnight",
+        "No Cook",
+        "High Fiber",
+        "Make Ahead",
+        "Meal Prep"
+      ],
+      "img": "images/high-fiber-overnight-oats.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Oats, chia and avocado powder soaked overnight into a thick, green, genuinely filling jar.",
+      "lede": "This is the one I stir together at night so breakfast is already done. The chia does all the work while you sleep — by morning it is thick enough to stand a spoon in, and it actually holds you until lunch instead of leaving you rummaging at ten. It goes an alarming shade of green from the avocado powder; do not let that put you off.",
+      "level": "Easy",
+      "prep": "5 min",
+      "cook": "",
+      "active": "5 min",
+      "total": "8 hr 5 min",
+      "yield": "1 serving",
+      "serves": 1,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [
+        {
+          "group": "",
+          "items": [
+            {
+              "name": "rolled oats",
+              "usQty": 3,
+              "usUnit": "tbsp",
+              "metricQty": 30,
+              "metricUnit": "g"
+            },
+            {
+              "name": "chia seeds",
+              "usQty": 1,
+              "usUnit": "tbsp",
+              "metricQty": 12,
+              "metricUnit": "g"
+            },
+            {
+              "name": "Supreme Avocado Nutri Drink powder",
+              "usQty": 1,
+              "usUnit": "tbsp",
+              "metricQty": 8,
+              "metricUnit": "g"
+            },
+            {
+              "name": "plain low-fat milk",
+              "usQty": 0.875,
+              "usUnit": "cup",
+              "metricQty": 200,
+              "metricUnit": "ml",
+              "note": "or unsweetened soy milk"
+            },
+            {
+              "name": "ground cinnamon",
+              "usQty": 0.5,
+              "usUnit": "tsp",
+              "metricQty": 1.5,
+              "metricUnit": "g",
+              "note": "optional"
+            },
+            {
+              "name": "ground flaxseed",
+              "usQty": 1,
+              "usUnit": "tsp",
+              "metricQty": 3,
+              "metricUnit": "g",
+              "note": "optional, for extra omega-3"
+            },
+            {
+              "name": "blueberries or strawberries, to top",
+              "usQty": 0,
+              "usUnit": "",
+              "metricQty": 0,
+              "metricUnit": "",
+              "note": "optional — a small handful of blueberries, or 2 to 3 strawberries"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "title": "Combine the dry",
+          "text": "Tip the oats, chia seeds, avocado powder and the cinnamon and flaxseed if you are using them into a jar or container with a lid."
+        },
+        {
+          "title": "Pour in the milk",
+          "text": "Add the milk, pouring it right over the dry ingredients so nothing stays stuck to the sides."
+        },
+        {
+          "title": "Stir properly",
+          "text": "Stir until there are no dry pockets and no powder clinging to the bottom — chia clumps if you rush this, so go round the base of the jar a few times."
+        },
+        {
+          "title": "Chill overnight",
+          "text": "Cover and refrigerate for at least 6 to 8 hours. The chia swells and the oats soften until the whole thing is thick and spoonable."
+        },
+        {
+          "title": "Stir and top",
+          "text": "In the morning give it another stir to loosen it, then scatter over the berries. If it has set firmer than you like, slacken it with a splash more milk."
+        }
+      ],
+      "tips": [
+        "Give it a second stir a few minutes after the first — that is when the chia starts to seize and any clumps are still easy to break up.",
+        "Build three or four jars at once on a Sunday; they keep happily for a couple of days and breakfast stops being a decision.",
+        "If you are hungry again before lunch, eat it alongside a boiled egg or a small pot of plain Greek yogurt for extra protein."
+      ],
+      "cooksNote": "Designed to keep you full and your blood sugar steady through the morning — the oats bring beta-glucan, the chia and flaxseed bring omega-3, and the milk adds calcium and magnesium. Best eaten cold, straight from the fridge.",
+      "nutrition": {
+        "calories": "250–300 kcal",
+        "fat": "",
+        "carbs": "",
+        "protein": "12–15 g",
+        "sodium": "",
+        "fiber": "10–12 g"
+      }
     }
   ]
 }
