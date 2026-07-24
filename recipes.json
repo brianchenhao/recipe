@@ -5971,6 +5971,138 @@
         "sodium": "",
         "fiber": "10–12 g"
       }
+    },
+    {
+      "id": "garlic-oyster-tempeh-stir-fry",
+      "title": "Garlic & Oyster Sauce Tempeh Stir-Fry",
+      "author": "",
+      "cat": "Mains",
+      "tags": [
+        "Stir-Fry",
+        "Tempeh",
+        "High Protein",
+        "Quick",
+        "Weeknight"
+      ],
+      "img": "images/garlic-oyster-tempeh-stir-fry.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Fried tempeh, snappy French beans and chickpeas in a quick garlic and oyster sauce glaze.",
+      "lede": "Thirteen minutes, one pan, and the sort of dinner that makes you feel organised. The whole point is heat and speed — the beans should stay squeaky and bright, not go dull and soft, so everything gets cut and measured before the oil goes in. Tempeh and chickpeas together make it properly filling without any meat.",
+      "level": "Easy",
+      "prep": "5 min",
+      "cook": "8 min",
+      "active": "13 min",
+      "total": "13 min",
+      "yield": "2 servings",
+      "serves": 2,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [
+        {
+          "group": "",
+          "items": [
+            {
+              "name": "tempeh, fried and sliced",
+              "usQty": 2,
+              "usUnit": "",
+              "metricQty": 2,
+              "metricUnit": "",
+              "note": "pieces"
+            },
+            {
+              "name": "French beans, trimmed and cut diagonally",
+              "usQty": 9,
+              "usUnit": "oz",
+              "metricQty": 250,
+              "metricUnit": "g"
+            },
+            {
+              "name": "chickpeas, soaked and boiled",
+              "usQty": 3.5,
+              "usUnit": "oz",
+              "metricQty": 100,
+              "metricUnit": "g"
+            },
+            {
+              "name": "garlic cloves, finely minced",
+              "usQty": 3,
+              "usUnit": "",
+              "metricQty": 3,
+              "metricUnit": ""
+            },
+            {
+              "name": "oyster sauce",
+              "usQty": 1,
+              "usUnit": "tbsp",
+              "metricQty": 15,
+              "metricUnit": "ml",
+              "note": "savoury, with very little sugar"
+            },
+            {
+              "name": "soy sauce",
+              "usQty": 1,
+              "usUnit": "tsp",
+              "metricQty": 5,
+              "metricUnit": "ml",
+              "note": "light soy sauce works too"
+            },
+            {
+              "name": "water",
+              "usQty": 2,
+              "usUnit": "tbsp",
+              "metricQty": 30,
+              "metricUnit": "ml",
+              "note": "to loosen it into a sauce"
+            },
+            {
+              "name": "cooking oil",
+              "usQty": 1,
+              "usUnit": "tbsp",
+              "metricQty": 15,
+              "metricUnit": "ml",
+              "note": "olive, canola or peanut"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "title": "Aromatise the base",
+          "text": "Heat the oil in a wok or large skillet over medium heat. Add the minced garlic and sauté for about a minute, until it turns golden and smells sweet — do not let it catch or it will go bitter."
+        },
+        {
+          "title": "Flash-cook the beans",
+          "text": "Tip in the French beans and push the heat up to medium-high. Stir-fry for 2 to 3 minutes, until they turn a vivid bright green and still squeak against the spoon."
+        },
+        {
+          "title": "Add the pulses and protein",
+          "text": "Add the boiled chickpeas and the fried tempeh slices. Toss for a minute so everything is evenly spread through the pan and heated right through."
+        },
+        {
+          "title": "Sauce and simmer",
+          "text": "Drizzle over the oyster sauce and soy sauce, then pour in the water. Stir-fry hard for 1 to 2 minutes, letting the liquid bubble up and coat everything — the beans should soften just slightly and stay crisp."
+        },
+        {
+          "title": "Serve hot",
+          "text": "Take it off the heat straight away and turn it out onto a serving plate. It carries on cooking in a hot wok, so do not let it sit."
+        }
+      ],
+      "tips": [
+        "Cut and measure everything before the pan gets hot. Eight minutes of cooking leaves no time to be trimming beans halfway through.",
+        "Frying the tempeh first is what gives it that firm, golden edge — straight from the packet it will steam and go soft in the sauce.",
+        "Oyster sauce is not vegetarian. Swap in a mushroom-based vegetarian oyster sauce and the dish becomes fully plant-based."
+      ],
+      "cooksNote": "The beans are the thing to watch. Pull the pan off while they still have a squeak and a bright colour — a minute too long and they slump and grey out. A splash more water is fine if the sauce tightens before the beans are ready.",
+      "nutrition": {
+        "calories": "",
+        "fat": "",
+        "carbs": "",
+        "protein": "",
+        "sodium": "",
+        "fiber": ""
+      }
     }
   ]
 }
