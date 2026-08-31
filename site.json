@@ -13,57 +13,23 @@
       "label": "Recipes",
       "columns": [
         {
-          "heading": "Meals",
+          "heading": "Browse",
           "links": [
             {
-              "label": "Breakfast",
-              "cat": "Breakfast"
+              "label": "Main Dish",
+              "cat": "Main Dish"
             },
             {
-              "label": "Mains",
-              "cat": "Mains"
+              "label": "Side Dish",
+              "cat": "Side Dish"
             },
             {
-              "label": "Sides",
-              "cat": "Sides"
+              "label": "Juice",
+              "cat": "Juice"
             },
             {
-              "label": "Salads",
-              "cat": "Salads"
-            }
-          ]
-        },
-        {
-          "heading": "Rice & noodles",
-          "links": [
-            {
-              "label": "Rice",
-              "cat": "Rice"
-            },
-            {
-              "label": "Noodles",
-              "cat": "Noodles"
-            },
-            {
-              "label": "Soups",
-              "cat": "Soups"
-            }
-          ]
-        },
-        {
-          "heading": "Sweet things",
-          "links": [
-            {
-              "label": "Baking",
-              "cat": "Baking"
-            },
-            {
-              "label": "Sweets",
-              "cat": "Sweets"
-            },
-            {
-              "label": "Drinks",
-              "cat": "Drinks"
+              "label": "Fermentation",
+              "cat": "Fermentation"
             }
           ]
         }
@@ -92,42 +58,15 @@
               "collection": "weeknight"
             }
           ]
-        },
-        {
-          "heading": "More",
-          "links": [
-            {
-              "label": "Crowd-Pleasers",
-              "collection": "crowd-pleasers"
-            },
-            {
-              "label": "From the Oven",
-              "collection": "from-the-oven"
-            },
-            {
-              "label": "Soup & Noodle Night",
-              "collection": "slurp"
-            },
-            {
-              "label": "Better Mornings",
-              "collection": "morning"
-            }
-          ]
         }
       ]
     }
   ],
   "categories": [
-    "Breakfast",
-    "Mains",
-    "Rice",
-    "Noodles",
-    "Baking",
-    "Soups",
-    "Salads",
-    "Sweets",
-    "Drinks",
-    "Sides"
+    "Main Dish",
+    "Side Dish",
+    "Juice",
+    "Fermentation"
   ],
   "collections": [
     {
@@ -160,39 +99,6 @@
       "desc": "Between six and seven, handled.",
       "filter": {
         "tag": "Weeknight"
-      }
-    },
-    {
-      "id": "crowd-pleasers",
-      "label": "Crowd-Pleasers",
-      "desc": "The comfort food that disappears fastest. Cook once, feed everybody.",
-      "filter": {
-        "tag": "Comfort Food"
-      }
-    },
-    {
-      "id": "from-the-oven",
-      "label": "From the Oven",
-      "desc": "Cakes, breads, and a house that smells like Sunday.",
-      "filter": {
-        "cat": "Baking"
-      }
-    },
-    {
-      "id": "slurp",
-      "label": "Soup & Noodle Night",
-      "desc": "Broth, noodles, steam on the windows.",
-      "filter": {
-        "cat": "Noodles"
-      }
-    },
-    {
-      "id": "morning",
-      "label": "Better Mornings",
-      "desc": "Breakfasts worth getting up a little earlier for.",
-      "filter": {
-        "cat": "Breakfast",
-        "maxMinutes": 45
       }
     }
   ],

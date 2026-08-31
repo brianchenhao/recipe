@@ -84,16 +84,10 @@ collections:
                         name: cat
                         widget: select
                         options:
-                          - Breakfast
-                          - Mains
-                          - Rice
-                          - Noodles
-                          - Baking
-                          - Soups
-                          - Salads
-                          - Sweets
-                          - Drinks
-                          - Sides
+                          - Main Dish
+                          - Side Dish
+                          - Juice
+                          - Fermentation
           - label: Categories
             name: categories
             widget: list
@@ -141,16 +135,10 @@ collections:
                     widget: select
                     required: false
                     options:
-                      - Breakfast
-                      - Mains
-                      - Rice
-                      - Noodles
-                      - Baking
-                      - Soups
-                      - Salads
-                      - Sweets
-                      - Drinks
-                      - Sides
+                      - Main Dish
+                      - Side Dish
+                      - Juice
+                      - Fermentation
                   - label: Tag
                     name: tag
                     widget: string
@@ -222,16 +210,10 @@ collections:
                 widget: select
                 required: false
                 options:
-                  - Breakfast
-                  - Mains
-                  - Rice
-                  - Noodles
-                  - Baking
-                  - Soups
-                  - Salads
-                  - Sweets
-                  - Drinks
-                  - Sides
+                  - Main Dish
+                  - Side Dish
+                  - Juice
+                  - Fermentation
               - label: Tags
                 name: tags
                 widget: list

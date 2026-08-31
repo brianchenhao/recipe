@@ -4,7 +4,7 @@
       "id": "tall-buttermilk-ricotta-pancakes",
       "title": "Tall Buttermilk Ricotta Pancakes",
       "author": "Recipe Mom",
-      "cat": "Breakfast",
+      "cat": "Main Dish",
       "tags": [
         "Weekend",
         "Kid-Friendly",
@@ -179,7 +179,7 @@
       "id": "red-pepper-shakshuka-with-feta",
       "title": "Red Pepper Shakshuka with Feta",
       "author": "Recipe Mom",
-      "cat": "Breakfast",
+      "cat": "Main Dish",
       "tags": [
         "One Pan",
         "Vegetarian",
@@ -357,7 +357,7 @@
       "id": "maple-pecan-overnight-oats",
       "title": "Maple Pecan Overnight Oats",
       "author": "Recipe Mom",
-      "cat": "Breakfast",
+      "cat": "Main Dish",
       "tags": [
         "Make-Ahead",
         "No-Cook",
@@ -527,7 +527,7 @@
       "id": "brown-butter-banana-bread",
       "title": "Brown Butter Banana Bread",
       "author": "Recipe Mom",
-      "cat": "Baking",
+      "cat": "Side Dish",
       "tags": [
         "Loaf",
         "Freezer-Friendly",
@@ -702,7 +702,7 @@
       "id": "rosemary-sourdough-focaccia",
       "title": "Rosemary Sourdough Focaccia",
       "author": "Recipe Mom",
-      "cat": "Baking",
+      "cat": "Fermentation",
       "tags": [
         "Sourdough",
         "Slow Rise",
@@ -865,7 +865,7 @@
       "id": "overnight-cardamom-cinnamon-rolls",
       "title": "Overnight Cardamom Cinnamon Rolls",
       "author": "Recipe Mom",
-      "cat": "Baking",
+      "cat": "Side Dish",
       "tags": [
         "Overnight",
         "Holiday",
@@ -1066,7 +1066,7 @@
       "id": "freezer-friendly-breakfast-burritos",
       "title": "Freezer-Friendly Breakfast Burritos",
       "author": "Recipe Mom",
-      "cat": "Breakfast",
+      "cat": "Main Dish",
       "tags": [
         "Meal Prep",
         "Freezer-Friendly",
@@ -1249,7 +1249,7 @@
       "id": "blueberry-lemon-cream-scones",
       "title": "Blueberry Lemon Cream Scones",
       "author": "Recipe Mom",
-      "cat": "Baking",
+      "cat": "Side Dish",
       "tags": [
         "Tea Time",
         "Quick Bread",
@@ -1415,7 +1415,7 @@
       "id": "thai-congee",
       "title": "Thai Congee",
       "author": "Jet Tila",
-      "cat": "Rice",
+      "cat": "Main Dish",
       "tags": [
         "Thai",
         "Comfort Food",
@@ -1611,7 +1611,7 @@
       "id": "red-wine-braised-short-ribs",
       "title": "Red Wine Braised Short Ribs",
       "author": "Mom",
-      "cat": "Mains",
+      "cat": "Main Dish",
       "tags": [
         "Beef",
         "Braise",
@@ -1797,7 +1797,7 @@
       "id": "herb-butter-roast-chicken",
       "title": "Herb Butter Roast Chicken",
       "author": "Mom",
-      "cat": "Mains",
+      "cat": "Main Dish",
       "tags": [
         "Chicken",
         "Roast",
@@ -1967,7 +1967,7 @@
       "id": "hyderabadi-chicken-biryani",
       "title": "Hyderabadi Chicken Biryani",
       "author": "Mom",
-      "cat": "Rice",
+      "cat": "Main Dish",
       "tags": [
         "Indian",
         "Chicken",
@@ -2163,7 +2163,7 @@
       "id": "slow-roasted-lemon-herb-salmon",
       "title": "Slow-Roasted Lemon Herb Salmon",
       "author": "Mom",
-      "cat": "Mains",
+      "cat": "Main Dish",
       "tags": [
         "Seafood",
         "Weeknight",
@@ -2325,7 +2325,7 @@
       "id": "sunday-braised-beef-stew",
       "title": "Sunday Braised Beef Stew",
       "author": "Mom",
-      "cat": "Mains",
+      "cat": "Main Dish",
       "tags": [
         "Beef",
         "Stew",
@@ -2511,7 +2511,7 @@
       "id": "chicken-chorizo-seafood-paella",
       "title": "Chicken and Chorizo Seafood Paella",
       "author": "Mom",
-      "cat": "Rice",
+      "cat": "Main Dish",
       "tags": [
         "Spanish",
         "Seafood",
@@ -2701,7 +2701,7 @@
       "id": "ginger-scallion-shrimp-fried-rice",
       "title": "Ginger Scallion Shrimp Fried Rice",
       "author": "Mom",
-      "cat": "Rice",
+      "cat": "Main Dish",
       "tags": [
         "Quick",
         "Weeknight",
@@ -2871,7 +2871,7 @@
       "id": "blistered-basil-drunken-noodles",
       "title": "Blistered Basil Drunken Noodles",
       "author": "Mom",
-      "cat": "Noodles",
+      "cat": "Main Dish",
       "tags": [
         "Thai",
         "Stir-fry",
@@ -3059,7 +3059,7 @@
       "id": "weeknight-tamarind-pad-thai",
       "title": "Weeknight Tamarind Pad Thai",
       "author": "Mom",
-      "cat": "Noodles",
+      "cat": "Main Dish",
       "tags": [
         "Thai",
         "Shrimp",
@@ -3249,7 +3249,7 @@
       "id": "miso-butter-chicken-ramen",
       "title": "Miso Butter Chicken Ramen",
       "author": "Mom",
-      "cat": "Noodles",
+      "cat": "Main Dish",
       "tags": [
         "Japanese",
         "Chicken",
@@ -3444,7 +3444,7 @@
       "id": "deep-winter-minestrone",
       "title": "Deep Winter Minestrone",
       "author": "Mom",
-      "cat": "Soups",
+      "cat": "Main Dish",
       "tags": [
         "Italian",
         "Vegetable",
@@ -3631,7 +3631,7 @@
       "id": "charred-tomato-fennel-soup",
       "title": "Charred Tomato and Fennel Soup",
       "author": "Mom",
-      "cat": "Soups",
+      "cat": "Main Dish",
       "tags": [
         "Vegetarian",
         "Roasted",
@@ -3817,7 +3817,7 @@
       "id": "sunday-chicken-noodle-soup",
       "title": "Sunday Chicken Noodle Soup",
       "author": "Mom",
-      "cat": "Soups",
+      "cat": "Main Dish",
       "tags": [
         "Chicken",
         "From Scratch",
@@ -4007,7 +4007,7 @@
       "id": "charred-romaine-caesar-rye-crumbs",
       "title": "Charred Romaine Caesar with Rye Crumbs",
       "author": "Mom",
-      "cat": "Salads",
+      "cat": "Side Dish",
       "tags": [
         "Salad",
         "Grilled",
@@ -4190,7 +4190,7 @@
       "id": "lemon-farro-salad-with-feta",
       "title": "Lemon Farro Salad with Feta and Herbs",
       "author": "Mom",
-      "cat": "Salads",
+      "cat": "Side Dish",
       "tags": [
         "Grain Salad",
         "Vegetarian",
@@ -4377,7 +4377,7 @@
       "id": "dark-chocolate-olive-oil-cake",
       "title": "Dark Chocolate Olive Oil Cake",
       "author": "Recipe Mom",
-      "cat": "Sweets",
+      "cat": "Side Dish",
       "tags": [
         "chocolate",
         "one bowl",
@@ -4555,7 +4555,7 @@
       "id": "brown-butter-sea-salt-brownies",
       "title": "Brown Butter Sea Salt Brownies",
       "author": "Recipe Mom",
-      "cat": "Sweets",
+      "cat": "Side Dish",
       "tags": [
         "brownies",
         "chocolate",
@@ -4725,7 +4725,7 @@
       "id": "peach-blackberry-summer-galette",
       "title": "Peach and Blackberry Summer Galette",
       "author": "Recipe Mom",
-      "cat": "Sweets",
+      "cat": "Side Dish",
       "tags": [
         "stone fruit",
         "pastry",
@@ -4917,7 +4917,7 @@
       "id": "buttermilk-vanilla-bean-panna-cotta",
       "title": "Buttermilk Vanilla Bean Panna Cotta",
       "author": "Recipe Mom",
-      "cat": "Sweets",
+      "cat": "Side Dish",
       "tags": [
         "make ahead",
         "no bake",
@@ -5079,7 +5079,7 @@
       "id": "iced-matcha-oat-latte",
       "title": "Iced Matcha Oat Latte",
       "author": "Recipe Mom",
-      "cat": "Drinks",
+      "cat": "Juice",
       "tags": [
         "matcha",
         "iced",
@@ -5238,7 +5238,7 @@
       "id": "cinnamon-almond-horchata",
       "title": "Cinnamon Almond Horchata",
       "author": "Recipe Mom",
-      "cat": "Drinks",
+      "cat": "Juice",
       "tags": [
         "horchata",
         "make ahead",
@@ -5400,7 +5400,7 @@
       "id": "blistered-garlic-green-beans",
       "title": "Blistered Garlic Green Beans",
       "author": "Recipe Mom",
-      "cat": "Sides",
+      "cat": "Side Dish",
       "tags": [
         "quick",
         "vegetable",
@@ -5562,7 +5562,7 @@
       "id": "salt-and-vinegar-smashed-roast-potatoes",
       "title": "Salt and Vinegar Smashed Roast Potatoes",
       "author": "Recipe Mom",
-      "cat": "Sides",
+      "cat": "Side Dish",
       "tags": [
         "potatoes",
         "crispy",
@@ -5725,7 +5725,7 @@
       "id": "mediterranean-tuna-salad",
       "title": "Mediterranean Tuna Salad",
       "author": "",
-      "cat": "Salads",
+      "cat": "Main Dish",
       "tags": [
         "No Cook",
         "High Protein",
@@ -5852,7 +5852,7 @@
       "id": "high-fiber-overnight-oats",
       "title": "High-Fiber Overnight Oats",
       "author": "",
-      "cat": "Breakfast",
+      "cat": "Main Dish",
       "tags": [
         "Overnight",
         "No Cook",
@@ -5976,7 +5976,7 @@
       "id": "garlic-oyster-tempeh-stir-fry",
       "title": "Garlic & Oyster Sauce Tempeh Stir-Fry",
       "author": "",
-      "cat": "Mains",
+      "cat": "Main Dish",
       "tags": [
         "Stir-Fry",
         "Tempeh",
@@ -6108,7 +6108,7 @@
       "id": "acar-timun-nyonya",
       "title": "Acar Timun Nyonya",
       "author": "",
-      "cat": "Sides",
+      "cat": "Fermentation",
       "tags": [
         "Nyonya",
         "Malaysian",
