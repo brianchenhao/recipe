@@ -240,6 +240,15 @@ collections:
                 widget: string
                 required: false
                 hint: Absolute https URL or images/x.jpg. Leave blank to use the illustration.
+              - label: Recipe image (image-only recipes)
+                name: poster
+                widget: string
+                required: false
+                hint: >-
+                  For recipes that ARE an image (an infographic or a photographed
+                  recipe card). Set this to images/x.jpg and the page shows that
+                  image full width with a zoom viewer instead of ingredients and
+                  steps. Leave blank for normal recipes.
               - label: Illustration
                 name: ill
                 widget: select
