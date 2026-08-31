@@ -1907,6 +1907,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "laksa-goreng",
+      "title": "Laksa Goreng",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [
+        "Malaysian",
+        "Noodles",
+        "Stir Fry",
+        "Quick",
+        "Seafood"
+      ],
+      "img": "images/laksa-goreng-card.jpg",
+      "poster": "images/laksa-goreng.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Stir-fried laksa noodles with chicken, prawns and a fragrant chilli paste — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "25–30 min",
+      "yield": "2 to 3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
