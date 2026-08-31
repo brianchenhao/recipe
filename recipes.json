@@ -1873,6 +1873,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "thai-papaya-salad-som-tam",
+      "title": "Thai Papaya Salad (Som Tam)",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Thai",
+        "Som Tam",
+        "No Cook",
+        "Spicy",
+        "Salad"
+      ],
+      "img": "images/thai-papaya-salad-som-tam-card.jpg",
+      "poster": "images/thai-papaya-salad-som-tam.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Spicy, sour, salty, sweet and crunchy — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
