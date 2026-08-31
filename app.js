@@ -38,6 +38,7 @@
     searchForm: $('#search-form'),
     searchInput:$('#search-input'),
     searchSuggest: $('#search-suggest'),
+    searchToggle: $('#search-toggle'),
     footer:     $('#site-footer'),
     skeleton:   $('#skeleton'),
     progress:   $('#scroll-progress'),
@@ -411,6 +412,7 @@
   }
 
   function openMobileNav() {
+    closeHeaderSearch();
     el.mobileNav.classList.add('is-open');
     el.navToggle.setAttribute('aria-expanded', 'true');
     el.navToggle.setAttribute('aria-label', 'Close menu');
@@ -586,7 +588,7 @@
   function render() {
     var route = parseHash();
     var parts = route.parts;
-    closeAllMega(); closeMobileNav(); hideSuggest(); closeLightbox();
+    closeAllMega(); closeMobileNav(); hideSuggest(); closeLightbox(); closeHeaderSearch();
     removeRecipeJsonLd();
 
     var head = parts[0] || '';
@@ -1589,6 +1591,28 @@
 
   /* ============================================================= chrome wiring */
 
+  function isSearchOpen() {
+    var h = $('#site-header');
+    return !!(h && h.classList.contains('search-open'));
+  }
+
+  function openHeaderSearch() {
+    var h = $('#site-header');
+    if (!h) return;
+    h.classList.add('search-open');
+    if (el.searchToggle) el.searchToggle.setAttribute('aria-expanded', 'true');
+    closeMobileNav();
+    if (el.searchInput) el.searchInput.focus();
+  }
+
+  function closeHeaderSearch() {
+    var h = $('#site-header');
+    if (!h) return;
+    h.classList.remove('search-open');
+    if (el.searchToggle) el.searchToggle.setAttribute('aria-expanded', 'false');
+    hideSuggest();
+  }
+
   function wireChrome() {
     // Theme toggle.
     el.themeToggle.addEventListener('click', function () {
@@ -1604,12 +1628,21 @@
     // Mobile nav.
     el.navToggle.addEventListener('click', toggleMobileNav);
 
+    // On a phone the header has no room for a usable search field, so it
+    // lives behind a magnifier and drops down full width when tapped.
+    if (el.searchToggle) {
+      el.searchToggle.addEventListener('click', function () {
+        if (isSearchOpen()) { closeHeaderSearch(); } else { openHeaderSearch(); }
+      });
+    }
+
     // Search form.
     el.searchForm.addEventListener('submit', function (e) {
       e.preventDefault();
       if (commitSuggest()) return;
       var q = el.searchInput.value.trim();
       hideSuggest();
+      closeHeaderSearch();
       navigate('#/search?q=' + encodeURIComponent(q));
       el.searchInput.blur();
     });
@@ -1625,17 +1658,22 @@
 
     // Close suggestions / menus on outside click.
     document.addEventListener('click', function (e) {
-      if (el.searchForm && !el.searchForm.contains(e.target)) hideSuggest();
+      if (el.searchForm && !el.searchForm.contains(e.target)) {
+        hideSuggest();
+        if (isSearchOpen() && el.searchToggle && !el.searchToggle.contains(e.target)) closeHeaderSearch();
+      }
       if (el.navRoot && !el.navRoot.contains(e.target)) closeAllMega();
     });
 
     // Global keys: "/" focuses search, Esc closes things.
     document.addEventListener('keydown', function (e) {
       if (e.key === '/' && !lightboxOpen() && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) && !document.activeElement.isContentEditable) {
-        e.preventDefault(); el.searchInput.focus();
+        e.preventDefault();
+        if (el.searchToggle && getComputedStyle(el.searchToggle).display !== 'none') openHeaderSearch();
+        el.searchInput.focus();
       } else if (e.key === 'Escape') {
         if (lightboxOpen()) { closeLightbox(); return; }
-        hideSuggest(); closeAllMega(); closeMobileNav();
+        hideSuggest(); closeAllMega(); closeMobileNav(); closeHeaderSearch();
       } else if (lightboxOpen()) {
         if (e.key === '+' || e.key === '=') { e.preventDefault(); zoomBy(1.4); }
         else if (e.key === '-' || e.key === '_') { e.preventDefault(); zoomBy(1 / 1.4); }

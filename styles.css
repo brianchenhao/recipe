@@ -4774,3 +4774,257 @@ textarea:focus-visible { outline: none; }
   .poster__hint { opacity: 1 !important; transform: none !important; }
   .lightbox.is-open .lightbox__bar { transform: translateX(-50%) !important; }
 }
+
+
+/* ==========================================================================
+   19  MOBILE — make the site genuinely usable on a phone
+   Everything here is scoped to touch/narrow widths so the desktop layout
+   is untouched. Targets 360-430px, one-handed use, and reading while
+   actually cooking.
+   ========================================================================== */
+
+/* --- 19.1 Never let a focused field zoom the page on iOS ---------------- */
+/* Safari zooms the whole page when a focused input is under 16px. */
+@media (max-width: 899.98px) {
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select,
+  .search__input,
+  #search-input,
+  #sort-select { font-size: 16px; }
+}
+
+/* --- 19.2 Header: a real search instead of a 90px sliver ---------------- */
+
+/* The magnifier button only exists on small screens. */
+#search-toggle { display: none; }
+#search-toggle .icon--findclose { display: none; }
+#site-header.search-open #search-toggle .icon--find { display: none; }
+#site-header.search-open #search-toggle .icon--findclose { display: block; }
+
+@media (max-width: 899.98px) {
+  #search-toggle { display: grid; }
+
+  /* Logo beside the name rather than stacked — buys back header height. */
+  .brand { flex-direction: row; align-items: center; gap: .5rem; min-width: 0; }
+  .brand__mark svg { width: 30px; height: 30px; }
+  #brand-name { font-size: var(--fs-lg); line-height: 1.1; }
+
+  /* Push the two icon buttons to the right edge. */
+  #site-header > .wrap,
+  .header__inner,
+  #site-header > div:first-of-type {
+    gap: .4rem;
+    min-height: 3.6rem;
+    padding-top: env(safe-area-inset-top);
+  }
+  .brand { margin-right: auto; }
+
+  /* The search form drops out of the header row and becomes a full-width
+     bar underneath it, revealed by the magnifier. */
+  #search-form {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 215;
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: .55rem var(--gutter) .7rem;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity var(--dur-fast) var(--ease),
+                transform var(--dur-fast) var(--ease),
+                visibility 0s linear var(--dur-fast);
+  }
+
+  #site-header.search-open #search-form {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: opacity var(--dur-fast) var(--ease),
+                transform var(--dur-fast) var(--ease),
+                visibility 0s;
+  }
+
+  #search-form::before { left: var(--gutter); right: var(--gutter); }
+  #search-input { min-height: 2.9rem; }
+
+  /* Suggestions hang below the full-width bar. */
+  #search-suggest {
+    left: var(--gutter);
+    right: var(--gutter);
+    top: calc(100% - .15rem);
+    max-height: 60vh;
+  }
+}
+
+/* --- 19.3 Hero: get to the recipes sooner ------------------------------ */
+
+@media (max-width: 899.98px) {
+  .hero { padding-block: 1.75rem 2rem; margin-bottom: var(--sp-8); }
+  .hero__title { font-size: clamp(2rem, 1.1rem + 6.4vw, 3rem); }
+  .hero__sub { font-size: var(--fs-base); }
+}
+
+/* An illustrated hero card has a pale background, so white-on-scrim text
+   is unreadable. When there is no photograph, stack the copy underneath
+   the picture in normal ink instead of overlaying it. */
+#hero-card .card:has(.card__ill) .card__media::before { opacity: 0; }
+
+#hero-card .card:has(.card__ill) .card__body {
+  position: static;
+  padding: var(--sp-5);
+  background: var(--surface);
+  color: var(--text);
+}
+
+#hero-card .card:has(.card__ill) .card__title { color: var(--text); text-shadow: none; }
+#hero-card .card:has(.card__ill) .card__desc,
+#hero-card .card:has(.card__ill) .card__meta { color: var(--text-dim); text-shadow: none; }
+#hero-card .card:has(.card__ill) .card__cat { color: var(--brand-ink); text-shadow: none; }
+#hero-card .card:has(.card__ill) { background: var(--surface); }
+
+/* --- 19.4 Touch targets ------------------------------------------------ */
+/* Anything tappable wants ~44px. These are the ones that were too small. */
+
+@media (max-width: 899.98px) {
+  /* Category / filter chips */
+  .chip {
+    min-height: 2.6rem;
+    padding-inline: 1.05rem;
+    font-size: var(--fs-sm);
+  }
+
+  /* Hero rotation dots — 8px was untappable. Keep the dot small but give
+     it a proper invisible hit area. */
+  .hero__dots { gap: 0; right: var(--sp-3); top: var(--sp-3); }
+  .hero__dots button,
+  .hero__dot {
+    width: 2.1rem;
+    height: 2.1rem;
+    background: none !important;
+    display: grid;
+    place-items: center;
+    transform: none !important;
+  }
+  .hero__dots button::before,
+  .hero__dot::before {
+    content: "";
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .5);
+    transition: background-color var(--dur) var(--ease), transform var(--dur) var(--spring);
+  }
+  .hero__dots button[aria-current="true"]::before,
+  .hero__dot.is-on::before { background: #fff; transform: scale(1.45); }
+
+  /* Servings scaler */
+  .scaler { padding: .4rem .45rem; }
+  .scaler button { width: 2.75rem; height: 2.75rem; font-size: var(--fs-lg); }
+  .scaler output,
+  .scaler__value { font-size: var(--fs-lg); }
+
+  /* US / Metric toggle */
+  .units button,
+  .units label { padding-block: .8rem; font-size: var(--fs-sm); }
+
+  /* Ingredient rows: bigger box, bigger text, roomier row. */
+  .ing__item {
+    grid-template-columns: 1.6rem auto minmax(0, 1fr);
+    gap: .15rem .7rem;
+    padding-block: .7rem;
+    font-size: var(--fs-base);
+  }
+  .ing__check { width: 1.5rem; height: 1.5rem; }
+  .ing__name, .ing__qty { font-size: 1rem; line-height: 1.45; }
+  .ing__name small, .ing__note { font-size: var(--fs-sm); }
+}
+
+/* Step numbers are the control for ticking a step off, so they need to be
+   comfortably tappable — and the progress rail must follow them. */
+@media (max-width: 599.98px) {
+  .step { grid-template-columns: 2.5rem minmax(0, 1fr); gap: .3rem var(--sp-4); }
+  .step__num { width: 2.5rem; height: 2.5rem; font-size: var(--fs-sm); }
+  .dirs__steps::before,
+  .dirs ol::before,
+  .step::before { left: 1.25rem; }
+  .step__text { font-size: 1rem; line-height: 1.65; }
+}
+
+/* --- 19.5 Filters: one scrollable line per group ----------------------- */
+/* Seventeen wrapped chips pushed the first recipe 324px down the page. */
+
+@media (max-width: 899.98px) {
+  .filters { display: block; padding-block: var(--sp-3) var(--sp-4); }
+
+  .filters__group {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: .5rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-inline: calc(var(--gutter) * -1);
+    padding: .3rem var(--gutter);
+    scroll-padding-inline: var(--gutter);
+  }
+  .filters__group::-webkit-scrollbar { display: none; }
+  .filters__group > * { flex: 0 0 auto; }
+  .filters__label { position: sticky; left: 0; }
+
+  /* The sort control reads better as a full-width row than a squeezed chip. */
+  .filters__group:last-child { overflow: visible; padding-top: .5rem; }
+  #sort-select { flex: 1 1 auto; min-width: 0; }
+}
+
+/* --- 19.6 Recipe page rhythm on a phone -------------------------------- */
+
+@media (max-width: 899.98px) {
+  .recipe { padding-top: var(--sp-5); }
+  .recipe__actions .btn { flex: 1 1 auto; justify-content: center; }
+  .recipe__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ing { padding: var(--sp-5); }
+  .crumbs { font-size: var(--fs-2xs); }
+}
+
+/* --- 19.7 Drawer and fixed chrome respect the notch --------------------- */
+
+@media (max-width: 899.98px) {
+  #mobile-nav {
+    inset: 3.6rem 0 0 0;
+    padding-top: var(--sp-5);
+    padding-bottom: calc(var(--sp-12) + env(safe-area-inset-bottom));
+  }
+  #mobile-nav a { padding-block: 1rem; }
+
+  #back-to-top {
+    right: max(1rem, env(safe-area-inset-right));
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* --- 19.8 Poster viewer on a phone ------------------------------------- */
+/* A tall recipe infographic fitted to the screen is unreadable, so the
+   toolbar has to stay within thumb reach and the image gets the room. */
+
+@media (max-width: 599.98px) {
+  .lightbox__img { max-height: 78vh; }
+  .lightbox__bar { bottom: max(.75rem, env(safe-area-inset-bottom)); }
+  .poster__head { padding-bottom: var(--sp-5); margin-bottom: var(--sp-5); }
+}
