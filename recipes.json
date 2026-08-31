@@ -165,199 +165,37 @@
     },
     {
       "id": "thai-congee",
-      "title": "Thai Congee",
-      "author": "Jet Tila",
+      "title": "Thai Congee (Jok)",
+      "author": "",
       "cat": "Main Dish",
       "tags": [
         "Thai",
+        "Rice",
         "Comfort Food",
-        "One Pot",
+        "Breakfast",
         "Pork"
       ],
-      "img": "",
+      "img": "images/thai-congee-card.jpg",
+      "poster": "images/thai-congee.jpg",
       "ill": "ill-bowl",
-      "badge": "Trending",
+      "badge": "New",
       "featured": true,
-      "desc": "Silky rice porridge with springy pork meatballs, ginger, and a jammy soft-boiled egg on top.",
-      "lede": "This is the bowl I make when someone in the house is under the weather, and also the bowl I make when nobody is. Congee asks for one cup of rice and a lot of patience, and it pays you back with something that tastes far richer than its ingredient list. The pork meatballs are what turn it from a sickbed remedy into an actual dinner.",
-      "level": "Easy",
-      "prep": "20 min",
-      "cook": "40 min",
-      "active": "30 min",
-      "total": "1 hr",
-      "yield": "4 to 6 servings",
-      "serves": 6,
-      "rating": 4.8,
-      "reviews": 412,
-      "ingredientGroups": [
-        {
-          "group": "Congee Base",
-          "items": [
-            {
-              "name": "jasmine rice",
-              "usQty": 1,
-              "usUnit": "cup",
-              "metricQty": 185,
-              "metricUnit": "g",
-              "note": "rinsed until the water runs clear"
-            },
-            {
-              "name": "chicken stock",
-              "usQty": 10,
-              "usUnit": "cups",
-              "metricQty": 2400,
-              "metricUnit": "ml",
-              "note": "low-sodium"
-            },
-            {
-              "name": "fresh ginger",
-              "usQty": 2,
-              "usUnit": "tbsp",
-              "metricQty": 30,
-              "metricUnit": "ml",
-              "note": "finely julienned, plus more for serving"
-            },
-            {
-              "name": "kosher salt",
-              "usQty": 0,
-              "usUnit": "",
-              "metricQty": 0,
-              "metricUnit": "",
-              "note": "to taste"
-            }
-          ]
-        },
-        {
-          "group": "Pork Meatballs",
-          "items": [
-            {
-              "name": "ground pork",
-              "usQty": 1,
-              "usUnit": "lb",
-              "metricQty": 454,
-              "metricUnit": "g",
-              "note": "not too lean"
-            },
-            {
-              "name": "garlic",
-              "usQty": 3,
-              "usUnit": "",
-              "metricQty": 3,
-              "metricUnit": "",
-              "note": "cloves, minced"
-            },
-            {
-              "name": "fish sauce",
-              "usQty": 1,
-              "usUnit": "tbsp",
-              "metricQty": 15,
-              "metricUnit": "ml",
-              "note": ""
-            },
-            {
-              "name": "ground white pepper",
-              "usQty": 1,
-              "usUnit": "tsp",
-              "metricQty": 5,
-              "metricUnit": "ml",
-              "note": ""
-            },
-            {
-              "name": "cornstarch",
-              "usQty": 1,
-              "usUnit": "tbsp",
-              "metricQty": 15,
-              "metricUnit": "ml",
-              "note": "keeps the meatballs tender"
-            }
-          ]
-        },
-        {
-          "group": "Toppings",
-          "items": [
-            {
-              "name": "large eggs",
-              "usQty": 4,
-              "usUnit": "",
-              "metricQty": 4,
-              "metricUnit": "",
-              "note": "soft-boiled"
-            },
-            {
-              "name": "scallions",
-              "usQty": 4,
-              "usUnit": "",
-              "metricQty": 4,
-              "metricUnit": "",
-              "note": "thinly sliced"
-            },
-            {
-              "name": "fresh cilantro",
-              "usQty": 0.5,
-              "usUnit": "cup",
-              "metricQty": 120,
-              "metricUnit": "ml",
-              "note": "leaves and tender stems"
-            },
-            {
-              "name": "garlic oil",
-              "usQty": 2,
-              "usUnit": "tbsp",
-              "metricQty": 30,
-              "metricUnit": "ml",
-              "note": "with the fried garlic bits"
-            },
-            {
-              "name": "soy sauce",
-              "usQty": 1,
-              "usUnit": "tbsp",
-              "metricQty": 15,
-              "metricUnit": "ml",
-              "note": "for drizzling at the table"
-            }
-          ]
-        }
-      ],
-      "steps": [
-        {
-          "title": "Start the porridge",
-          "text": "Combine the rinsed rice, stock, and half the ginger in a heavy pot and bring to a boil over high heat. Drop to a bare simmer, set the lid ajar, and cook for 30 to 35 minutes, stirring every 10 minutes so the bottom does not catch."
-        },
-        {
-          "title": "Mix the meatballs",
-          "text": "While the rice cooks, work the ground pork together with the garlic, fish sauce, white pepper, and cornstarch until the mixture turns slightly sticky and holds together when you press it. Chill until you need it."
-        },
-        {
-          "title": "Check the texture",
-          "text": "The congee is ready when the grains have burst open and the whole pot moves like loose oatmeal, coating a spoon but still sliding off it. If it is too thick, loosen with hot stock a half cup at a time."
-        },
-        {
-          "title": "Poach the meatballs",
-          "text": "Pinch off teaspoon-sized pieces of pork and drop them straight into the simmering congee. Cook for 5 to 6 minutes, until they float and are firm and opaque all the way through when you cut one open."
-        },
-        {
-          "title": "Soft-boil the eggs",
-          "text": "Lower the eggs into a separate pot of boiling water and cook exactly 6 minutes, then move them to ice water for 2 minutes before peeling. The white should be set and the yolk still liquid at the center."
-        },
-        {
-          "title": "Season and serve",
-          "text": "Salt the congee to taste — it needs more than you think. Ladle into deep bowls, halve an egg over each, and finish with the remaining ginger, scallions, cilantro, garlic oil, and a drizzle of soy."
-        }
-      ],
-      "tips": [
-        "Rinse the rice properly. Cloudy water in the pot means gummy congee later.",
-        "A wooden spoon scraped across the bottom every ten minutes is the whole technique.",
-        "Leftovers set up like concrete in the fridge — reheat with an extra cup of stock and it comes right back."
-      ],
-      "cooksNote": "The eggs are the part people get wrong. Six minutes in hard-boiling water gives a fully set white with a molten center; five minutes gives you a softer, saucier yolk that runs into the congee, and I go closer to five when the eggs are straight from the fridge and closer to six when they are at room temperature. Either way, straight into ice water afterward or they keep cooking in the shell.",
-      "nutrition": {
-        "calories": "390",
-        "fat": "18 g",
-        "carbs": "31 g",
-        "protein": "26 g",
-        "sodium": "870 mg",
-        "fiber": "1 g"
-      }
+      "desc": "Creamy rice porridge with minced pork, ginger and a soft egg — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     },
     {
       "id": "hyderabadi-chicken-biryani",
