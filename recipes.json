@@ -1975,6 +1975,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "pad-see-ew",
+      "title": "Pad See Ew",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [
+        "Thai",
+        "Noodles",
+        "Stir Fry",
+        "Quick",
+        "Weeknight"
+      ],
+      "img": "images/pad-see-ew-card.jpg",
+      "poster": "images/pad-see-ew.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Thai stir-fried flat rice noodles with chicken and kailan — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "20 min",
+      "yield": "2 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
