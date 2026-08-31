@@ -1285,7 +1285,22 @@
     var img = $('#poster-img');
     if (!openBtn || !img) return;
     var open = function () { openLightbox(img.getAttribute('src'), img.getAttribute('alt'), openBtn); };
-    openBtn.addEventListener('click', open);
+
+    // The poster fills the screen on a phone, so a scroll almost always starts
+    // on top of it. Only treat the gesture as a tap when the finger stayed put —
+    // otherwise scrolling past the image would hijack into the zoom viewer.
+    var downX = 0, downY = 0, moved = false;
+    openBtn.addEventListener('pointerdown', function (e) {
+      downX = e.clientX; downY = e.clientY; moved = false;
+    });
+    openBtn.addEventListener('pointermove', function (e) {
+      if (Math.abs(e.clientX - downX) > 10 || Math.abs(e.clientY - downY) > 10) moved = true;
+    });
+    openBtn.addEventListener('click', function (e) {
+      if (moved) { e.preventDefault(); moved = false; return; }
+      open();
+    });
+
     if (zoomBtn) zoomBtn.addEventListener('click', open);
     if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
   }
