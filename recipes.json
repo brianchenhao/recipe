@@ -6103,6 +6103,40 @@
         "sodium": "",
         "fiber": ""
       }
+    },
+    {
+      "id": "acar-timun-nyonya",
+      "title": "Acar Timun Nyonya",
+      "author": "",
+      "cat": "Sides",
+      "tags": [
+        "Nyonya",
+        "Malaysian",
+        "Acar",
+        "No Cook",
+        "Make Ahead"
+      ],
+      "img": "images/acar-timun-nyonya-card.jpg",
+      "poster": "images/acar-timun-nyonya.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rangup, masam, manis & segar — resipi penuh ada dalam gambar.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
