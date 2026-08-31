@@ -350,7 +350,7 @@
     wireMegaMenus();
 
     // Mobile drawer.
-    buildMobileNav(nav);
+    buildMobileNav();
   }
 
   function navLinkHref(lk) {
@@ -395,30 +395,51 @@
     });
   }
 
-  function buildMobileNav(nav) {
+  // The phone menu is built from what the site actually contains, not from the
+  // desktop mega-menu. Mirroring that menu produced ~37 rows in which every
+  // category appeared two or three times under different names.
+  function buildMobileNav() {
+    var site = state.site || {};
     var html = '';
-    html += '<a href="#/recipes">All recipes</a>';
-    nav.forEach(function (item) {
-      var cols = arr(item && item.columns);
-      if (!cols.length && isStr(item && item.label)) {
-        html += '<a href="' + escAttr(isStr(item.href) ? item.href : '#/recipes') + '">' + esc(item.label) + '</a>';
-        return;
-      }
-      html += '<h3>' + esc(item && item.label || '') + '</h3>';
-      html += '<ul>';
-      cols.forEach(function (c) {
-        arr(c && c.links).forEach(function (lk) {
-          html += '<li><a href="' + escAttr(navLinkHref(lk)) + '">' + esc(lk && lk.label || '') + '</a></li>';
-        });
+
+    html += '<button type="button" class="mnav__search" id="mnav-search">'
+         +  '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">'
+         +  '<circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg>'
+         +  '<span>Search recipes</span></button>';
+    html += '<a class="mnav__all" href="#/recipes">All recipes'
+         +  '<span class="mnav__count">' + state.recipes.length + '</span></a>';
+
+    var cats = allCategories().map(function (c) {
+      return { name: c, n: recipesInCategory(c).length };
+    }).filter(function (c) { return c.n > 0; });
+
+    if (cats.length) {
+      html += '<h3>Browse by category</h3><ul>';
+      cats.forEach(function (c) {
+        html += '<li><a href="#/category/' + encodeURIComponent(c.name) + '">' + esc(c.name)
+             +  '<span class="mnav__count">' + c.n + '</span></a></li>';
       });
       html += '</ul>';
-    });
-    // Also expose every category directly.
-    html += '<h3>Categories</h3><ul>';
-    allCategories().forEach(function (c) { html += '<li><a href="#/category/' + encodeURIComponent(c) + '">' + esc(c) + '</a></li>'; });
-    html += '</ul>';
+    }
+
+    // A short editorial shelf — these are real filters, unlike the old menu.
+    var colls = arr(site.collections).filter(Boolean).map(function (c) {
+      return { c: c, n: applyFilter(state.recipes, c.filter).length };
+    }).filter(function (x) { return x.n > 0; }).slice(0, 4);
+
+    if (colls.length) {
+      html += '<h3>Collections</h3><ul>';
+      colls.forEach(function (x) {
+        html += '<li><a href="#/collection/' + encodeURIComponent(x.c.id) + '">' + esc(x.c.label || x.c.id)
+             +  '<span class="mnav__count">' + x.n + '</span></a></li>';
+      });
+      html += '</ul>';
+    }
+
     el.mobileNav.innerHTML = html;
     $$('a', el.mobileNav).forEach(function (a) { a.addEventListener('click', closeMobileNav); });
+    var sb = $('#mnav-search', el.mobileNav);
+    if (sb) sb.addEventListener('click', function () { closeMobileNav(); openHeaderSearch(); });
   }
 
   function openMobileNav() {

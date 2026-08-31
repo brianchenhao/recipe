@@ -5044,3 +5044,42 @@ textarea:focus-visible { outline: none; }
 /* A card standing in for an image-only recipe shows the top of the picture —
    a recipe infographic carries its title there, and centring would crop it. */
 .card__img--poster { object-position: top center; }
+
+/* --- 19.10 Phone menu: a short, honest list ----------------------------- */
+/* Counts tell you where the recipes actually are before you tap. */
+
+.mnav__count {
+  margin-left: auto;
+  padding: .1rem .5rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-soft);
+  color: var(--text-dim);
+  font-family: var(--font-sans);
+  font-size: var(--fs-2xs);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+#mobile-nav .mnav__search {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  width: 100%;
+  margin-bottom: .35rem;
+  padding: .95rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--bg-soft);
+  color: var(--text-dim);
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* The drawer's shared row style is space-between; this row reads left-to-right. */
+#mobile-nav .mnav__search { justify-content: flex-start; }
+#mobile-nav .mnav__search svg { flex: none; }
+
+#mobile-nav .mnav__all { font-size: var(--fs-lg); }
