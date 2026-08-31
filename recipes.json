@@ -1941,6 +1941,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "thai-basil-chicken-pad-kra-pao",
+      "title": "Thai Basil Chicken (Pad Kra Pao)",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [
+        "Thai",
+        "Stir Fry",
+        "Quick",
+        "Spicy",
+        "Weeknight"
+      ],
+      "img": "images/thai-basil-chicken-pad-kra-pao-card.jpg",
+      "poster": "images/thai-basil-chicken-pad-kra-pao.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chicken mince stir-fried with garlic, chilli and Thai basil — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "15 min",
+      "yield": "2 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
