@@ -5040,3 +5040,7 @@ textarea:focus-visible { outline: none; }
   padding-inline: var(--gutter);
   max-width: 100%;
 }
+
+/* A card standing in for an image-only recipe shows the top of the picture —
+   a recipe infographic carries its title there, and centring would crop it. */
+.card__img--poster { object-position: top center; }

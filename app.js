@@ -169,12 +169,22 @@
 
   /* ============================================================= card html */
 
+  // Picture for a card. A recipe added as an image-only recipe may have no
+  // separate photo, so fall back to its poster and anchor the crop to the top
+  // (a recipe infographic keeps its title up there).
+  function cardImage(r) {
+    if (isStr(r.img)) return { src: r.img, cls: 'card__img' };
+    if (isStr(r.poster)) return { src: r.poster, cls: 'card__img card__img--poster' };
+    return null;
+  }
+
   function cardHtml(r, stagger) {
     if (!r || !isStr(r.id)) return '';
     var href = '#/recipe/' + encodeURIComponent(r.id);
     var media;
-    if (isStr(r.img)) {
-      media = '<img class="card__img" src="' + escAttr(r.img) + '" alt="' + escAttr(r.title || '') + '" loading="lazy" decoding="async">';
+    var pic = cardImage(r);
+    if (pic) {
+      media = '<img class="' + pic.cls + '" src="' + escAttr(pic.src) + '" alt="' + escAttr(r.title || '') + '" loading="lazy" decoding="async">';
     } else {
       media = '<svg class="card__ill" viewBox="0 0 200 150" role="img" aria-label="' + escAttr(r.title || 'Recipe') + '">'
             + '<use href="#' + escAttr(illRef(r)) + '"></use></svg>';
@@ -470,8 +480,9 @@
   function heroCardHtml(r, dotsCount, activeDot) {
     if (!r) return '';
     var href = '#/recipe/' + encodeURIComponent(r.id);
-    var media = isStr(r.img)
-      ? '<img class="card__img" src="' + escAttr(r.img) + '" alt="' + escAttr(r.title || '') + '">'
+    var hpic = cardImage(r);
+    var media = hpic
+      ? '<img class="' + hpic.cls + '" src="' + escAttr(hpic.src) + '" alt="' + escAttr(r.title || '') + '">'
       : '<svg class="card__ill" viewBox="0 0 200 150" role="img" aria-label="' + escAttr(r.title || 'Recipe') + '"><use href="#' + escAttr(illRef(r)) + '"></use></svg>';
     var dots = '';
     if (dotsCount > 1) {
@@ -1526,7 +1537,8 @@
     }
     var html = '<ul role="listbox">' + matches.map(function (r, i) {
       var ill = '<svg viewBox="0 0 200 150" aria-hidden="true"><use href="#' + escAttr(illRef(r)) + '"></use></svg>';
-      var thumb = isStr(r.img) ? '<img src="' + escAttr(r.img) + '" alt="">' : ill;
+      var spic = cardImage(r);
+      var thumb = spic ? '<img src="' + escAttr(spic.src) + '" alt="">' : ill;
       return '<li role="option" id="sg-' + i + '" aria-selected="false">'
         + '<a class="suggest__item" href="#/recipe/' + encodeURIComponent(r.id) + '" data-idx="' + i + '">'
         + thumb + '<span>' + highlight(r.title || '', q) + '<br><span class="suggest__cat muted">' + esc(r.cat || '') + '</span></span>'

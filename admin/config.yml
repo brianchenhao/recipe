@@ -203,7 +203,12 @@ collections:
               - label: Id
                 name: id
                 widget: string
-                hint: url-safe slug, unique, lowercase-hyphen
+                pattern:
+                  - '^[a-z0-9]+(-[a-z0-9]+)*$'
+                  - 'Lowercase letters, numbers and single hyphens only — e.g. lemon-butter-salmon'
+                hint: >-
+                  The recipe's web address, so it must be unique and never
+                  reused. Lowercase with hyphens, e.g. lemon-butter-salmon
               - label: Title
                 name: title
                 widget: string
@@ -235,20 +240,34 @@ collections:
                   label: Tag
                   name: tag
                   widget: string
-              - label: Image
+              - label: Photo
                 name: img
-                widget: string
+                widget: image
                 required: false
-                hint: Absolute https URL or images/x.jpg. Leave blank to use the illustration.
+                allow_multiple: false
+                choose_url: true
+                media_library:
+                  config:
+                    max_file_size: 8000000
+                hint: >-
+                  Upload a photo of the dish (or take one on your phone). Leave
+                  it blank to use a drawn illustration instead. For an
+                  image-only recipe you can leave this blank and just fill in
+                  "Recipe image" below — the card will use that.
               - label: Recipe image (image-only recipes)
                 name: poster
-                widget: string
+                widget: image
                 required: false
+                allow_multiple: false
+                choose_url: true
+                media_library:
+                  config:
+                    max_file_size: 8000000
                 hint: >-
-                  For recipes that ARE an image (an infographic or a photographed
-                  recipe card). Set this to images/x.jpg and the page shows that
-                  image full width with a zoom viewer instead of ingredients and
-                  steps. Leave blank for normal recipes.
+                  Use this when the recipe IS a picture — a recipe infographic
+                  or a photographed recipe card. Upload it here and the page
+                  shows it full width with a zoom viewer, instead of the
+                  ingredients and steps below. Leave blank for a normal recipe.
               - label: Illustration
                 name: ill
                 widget: select
