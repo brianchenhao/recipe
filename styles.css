@@ -5028,3 +5028,15 @@ textarea:focus-visible { outline: none; }
   .lightbox__bar { bottom: max(.75rem, env(safe-area-inset-bottom)); }
   .poster__head { padding-bottom: var(--sp-5); margin-bottom: var(--sp-5); }
 }
+
+/* --- 19.9 Full-bleed scrollers must not overflow the page -------------- */
+/* .chiprow--scroll pulls itself out with negative margins, which only works
+   when the parent carries matching padding. As a direct child of #app (which
+   has none) it ran past the right edge and gave the whole page a horizontal
+   scrollbar. Keep it edge-to-edge without escaping the viewport. */
+#app > .chiprow--scroll,
+#app > .rail {
+  margin-inline: 0;
+  padding-inline: var(--gutter);
+  max-width: 100%;
+}
