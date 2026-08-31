@@ -4550,3 +4550,227 @@ textarea:focus-visible { outline: none; }
 #nav-toggle .icon--close { display: none; }
 #nav-toggle[aria-expanded="true"] .icon--menu  { display: none; }
 #nav-toggle[aria-expanded="true"] .icon--close { display: block; }
+
+
+/* ==========================================================================
+   18  IMAGE-ONLY RECIPES — the poster and its zoom viewer
+   For recipes where the picture IS the recipe (a photographed card or a
+   designed infographic). Shown large, then zoomable full-screen.
+   ========================================================================== */
+
+.recipe--poster { padding-bottom: var(--sp-6); }
+
+.poster__head {
+  max-width: var(--measure);
+  padding-bottom: var(--sp-6);
+  margin-bottom: var(--sp-6);
+  border-bottom: 1px solid var(--border);
+}
+
+.poster {
+  margin: 0 0 var(--sp-8);
+}
+
+/* The whole image is one big button. */
+.poster__btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  cursor: zoom-in;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow: var(--shadow);
+  transition: transform var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease),
+              border-color var(--dur) var(--ease);
+}
+
+.poster__btn:hover,
+.poster__btn:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: color-mix(in srgb, var(--brand) 34%, var(--border));
+}
+
+.poster__img {
+  display: block;
+  width: 100%;
+  height: auto;              /* a recipe card is any shape — never crop it */
+  max-height: none;
+}
+
+/* "Tap to zoom" pill, bottom-right of the image. */
+.poster__hint {
+  position: absolute;
+  right: var(--sp-4);
+  bottom: var(--sp-4);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: .4em;
+  padding: .45rem .9rem;
+  border-radius: var(--radius-pill);
+  background: rgba(20, 12, 8, .74);
+  color: #fff;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: .02em;
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+
+.poster__hint::before {
+  content: "";
+  width: .85em;
+  height: .85em;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.poster__btn:hover .poster__hint,
+.poster__btn:focus-visible .poster__hint { opacity: 1; transform: translateY(0); }
+
+/* Touch devices get no hover, so show the affordance permanently. */
+@media (hover: none) {
+  .poster__hint { opacity: 1; transform: none; }
+}
+
+/* --- the full-screen viewer -------------------------------------------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--dur) var(--ease), visibility 0s linear var(--dur);
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity var(--dur) var(--ease), visibility 0s;
+}
+
+.lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(14, 9, 6, .93);
+  backdrop-filter: blur(3px);
+}
+
+.lightbox__stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  touch-action: none;        /* we drive pan/zoom ourselves */
+}
+
+.lightbox__img {
+  max-width: min(96vw, 1400px);
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, .55);
+  transform-origin: center center;
+  transition: transform 160ms var(--ease);
+  cursor: zoom-in;
+  user-select: none;
+  -webkit-user-drag: none;
+  will-change: transform;
+}
+
+/* While a finger or the mouse is down we want the drag to feel direct. */
+.lightbox__img:active { transition: none; cursor: grabbing; }
+
+.lightbox__bar {
+  position: absolute;
+  left: 50%;
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .45rem;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: var(--radius-pill);
+  background: rgba(28, 18, 12, .92);
+  box-shadow: var(--shadow-lg);
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  transition: transform var(--dur) var(--spring) 80ms, opacity var(--dur) var(--ease) 80ms;
+}
+
+.lightbox.is-open .lightbox__bar { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+.lightbox__btn {
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  padding: .4rem .85rem;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--spring);
+}
+
+.lightbox__btn:hover { background: rgba(255, 255, 255, .16); }
+.lightbox__btn:active { transform: scale(.92); }
+.lightbox__btn:focus-visible { outline: 3px solid var(--warm); outline-offset: 2px; }
+
+.lightbox__btn--close { background: var(--brand); }
+.lightbox__btn--close:hover { background: color-mix(in srgb, var(--brand) 86%, #fff); }
+
+.lightbox__level {
+  min-width: 3.6rem;
+  text-align: center;
+  color: rgba(255, 255, 255, .82);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 599.98px) {
+  .lightbox__btn { padding: .4rem .6rem; font-size: var(--fs-xs); }
+  .lightbox__img { max-width: 100vw; max-height: 82vh; border-radius: 0; }
+}
+
+/* Printing an image recipe should print the image, nothing else. */
+@media print {
+  .poster__btn { border: 0; box-shadow: none; }
+  .poster__hint,
+  .lightbox { display: none !important; }
+  .poster__img { max-width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .poster__btn,
+  .poster__hint,
+  .lightbox,
+  .lightbox__bar,
+  .lightbox__img { transition: none !important; }
+  .poster__btn:hover,
+  .poster__btn:focus-visible { transform: none !important; }
+  .poster__hint { opacity: 1 !important; transform: none !important; }
+  .lightbox.is-open .lightbox__bar { transform: translateX(-50%) !important; }
+}

@@ -586,7 +586,7 @@
   function render() {
     var route = parseHash();
     var parts = route.parts;
-    closeAllMega(); closeMobileNav(); hideSuggest();
+    closeAllMega(); closeMobileNav(); hideSuggest(); closeLightbox();
     removeRecipeJsonLd();
 
     var head = parts[0] || '';
@@ -812,6 +812,9 @@
       + '<li aria-current="page">' + esc(r.title || '') + '</li>'
       + '</ol></nav>';
 
+    // Image-only recipe: the picture IS the recipe (e.g. a recipe infographic).
+    if (isStr(r.poster)) return posterRecipeHtml(r, crumbs);
+
     var media = isStr(r.img)
       ? '<img src="' + escAttr(r.img) + '" alt="' + escAttr(r.title || '') + '">'
       : '<svg viewBox="0 0 200 150" role="img" aria-label="' + escAttr(r.title || 'Recipe') + '"><use href="#' + escAttr(illRef(r)) + '"></use></svg>';
@@ -854,6 +857,43 @@
     injectRecipeJsonLd(r);
 
     return '<article class="recipe">' + crumbs + hero + cols + extras + '</article>' + related;
+  }
+
+  // ---- image-only ("poster") recipes -----------------------------------
+  // The recipe is a single image — a photographed card or a designed
+  // infographic. We show it large and let the reader zoom into it, rather
+  // than pretending to have structured ingredients and steps.
+  function posterRecipeHtml(r, crumbs) {
+    var eyebrow = isStr(r.author) ? '<span class="recipe__eyebrow">Recipe courtesy of ' + esc(r.author) + '</span>'
+      : (isStr(r.cat) ? '<span class="recipe__eyebrow">' + esc(r.cat) + '</span>' : '');
+    var lede = isStr(r.lede) ? '<p class="recipe__lede">' + esc(r.lede) + '</p>' : '';
+    var rt = ratingText(r.rating);
+    var ratingBlock = rt ? '<div class="recipe__rating">' + starsHtml(r.rating, '') + ' <strong>' + esc(rt) + '</strong></div>' : '';
+    var alt = (r.title ? r.title + ' — ' : '') + 'full recipe image';
+
+    var actions = '<div class="recipe__actions">'
+      + '<button class="btn btn--primary" type="button" id="poster-zoom">Zoom in</button>'
+      + '<a class="btn btn--ghost" href="' + escAttr(r.poster) + '" target="_blank" rel="noopener">Open full size</a>'
+      + '<button class="btn btn--ghost" type="button" id="print-recipe">Print recipe</button>'
+      + '</div>';
+
+    var head = '<div class="poster__head">' + eyebrow
+      + '<h1 class="recipe__title">' + esc(r.title || 'Untitled recipe') + '</h1>'
+      + ratingBlock + lede + statsHtml(r) + actions + '</div>';
+
+    var fig = '<figure class="poster reveal">'
+      + '<button class="poster__btn" type="button" id="poster-open" aria-label="Zoom into the recipe image">'
+      +   '<img class="poster__img" id="poster-img" src="' + escAttr(r.poster) + '" alt="' + escAttr(alt) + '" decoding="async">'
+      +   '<span class="poster__hint" aria-hidden="true">Tap to zoom</span>'
+      + '</button>'
+      + '</figure>';
+
+    var extras = tipsHtml(r) + noteHtml(r) + nutritionHtml(r) + tagsHtml(r);
+
+    setMeta(r.title || 'Recipe', isStr(r.desc) ? r.desc : (isStr(r.lede) ? r.lede : ''));
+    injectRecipeJsonLd(r);
+
+    return '<article class="recipe recipe--poster">' + crumbs + head + fig + extras + '</article>' + relatedHtml(r);
   }
 
   function statsHtml(r) {
@@ -1042,7 +1082,7 @@
     // Rails on the home page.
     $$('.rail').forEach(wireRail);
 
-    if (head === 'recipe') wireRecipe(parts[1]);
+    if (head === 'recipe') { wireRecipe(parts[1]); wirePoster(); }
     if (head === 'recipes' || head === 'category') wireFilters(head, parts, query);
   }
 
@@ -1231,6 +1271,175 @@
     } catch (e) { return false; }
   }
 
+  /* ============================================================ lightbox */
+  // Zoom + pan viewer for image-only recipes. Wheel/pinch to zoom, drag to
+  // pan, double-click to toggle, Esc to close. Transform-only so it stays
+  // smooth on a phone, and it never traps the reader.
+
+  var lb = { el: null, img: null, scale: 1, tx: 0, ty: 0, pointers: {}, pinch: 0, opener: null };
+
+  function wirePoster() {
+    var openBtn = $('#poster-open');
+    var zoomBtn = $('#poster-zoom');
+    var printBtn = $('#print-recipe');
+    var img = $('#poster-img');
+    if (!openBtn || !img) return;
+    var open = function () { openLightbox(img.getAttribute('src'), img.getAttribute('alt'), openBtn); };
+    openBtn.addEventListener('click', open);
+    if (zoomBtn) zoomBtn.addEventListener('click', open);
+    if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
+  }
+
+  function buildLightbox() {
+    if (lb.el) return lb.el;
+    var d = document.createElement('div');
+    d.className = 'lightbox';
+    d.id = 'lightbox';
+    d.setAttribute('role', 'dialog');
+    d.setAttribute('aria-modal', 'true');
+    d.setAttribute('aria-label', 'Recipe image viewer');
+    d.innerHTML =
+        '<div class="lightbox__backdrop" data-close="1"></div>'
+      + '<div class="lightbox__stage" data-close="1"><img class="lightbox__img" alt="" draggable="false"></div>'
+      + '<div class="lightbox__bar">'
+      +   '<button class="lightbox__btn" type="button" data-act="out" aria-label="Zoom out">&minus;</button>'
+      +   '<span class="lightbox__level" aria-live="polite">100%</span>'
+      +   '<button class="lightbox__btn" type="button" data-act="in" aria-label="Zoom in">+</button>'
+      +   '<button class="lightbox__btn" type="button" data-act="reset">Reset</button>'
+      +   '<button class="lightbox__btn lightbox__btn--close" type="button" data-act="close" aria-label="Close viewer">Close</button>'
+      + '</div>';
+    document.body.appendChild(d);
+    lb.el = d;
+    lb.img = $('.lightbox__img', d);
+
+    d.addEventListener('click', function (e) {
+      var act = e.target.getAttribute && e.target.getAttribute('data-act');
+      if (act === 'close') return closeLightbox();
+      if (act === 'in') return zoomBy(1.4);
+      if (act === 'out') return zoomBy(1 / 1.4);
+      if (act === 'reset') return resetZoom();
+      // Tapping the empty space around an unzoomed image closes the viewer.
+      if (e.target.getAttribute && e.target.getAttribute('data-close') && lb.scale <= 1.01) closeLightbox();
+    });
+
+    lb.img.addEventListener('dblclick', function (e) {
+      e.preventDefault();
+      if (lb.scale > 1.05) resetZoom(); else zoomAt(2.5, e.clientX, e.clientY);
+    });
+
+    d.addEventListener('wheel', function (e) {
+      e.preventDefault();
+      zoomAt(lb.scale * (e.deltaY < 0 ? 1.12 : 1 / 1.12), e.clientX, e.clientY);
+    }, { passive: false });
+
+    d.addEventListener('pointerdown', function (e) {
+      if (e.target.closest && e.target.closest('.lightbox__bar')) return;
+      lb.pointers[e.pointerId] = { x: e.clientX, y: e.clientY };
+      if (Object.keys(lb.pointers).length === 2) lb.pinch = pointerDist();
+      try { d.setPointerCapture(e.pointerId); } catch (err) {}
+    });
+
+    d.addEventListener('pointermove', function (e) {
+      var p = lb.pointers[e.pointerId];
+      if (!p) return;
+      var ids = Object.keys(lb.pointers);
+      if (ids.length === 2 && lb.pinch) {
+        var prev = lb.pinch;
+        lb.pointers[e.pointerId] = { x: e.clientX, y: e.clientY };
+        var now = pointerDist();
+        var a = lb.pointers[ids[0]], b = lb.pointers[ids[1]];
+        if (prev > 0 && now > 0) zoomAt(lb.scale * (now / prev), (a.x + b.x) / 2, (a.y + b.y) / 2);
+        lb.pinch = now;
+        return;
+      }
+      if (lb.scale > 1.01) {
+        lb.tx += e.clientX - p.x;
+        lb.ty += e.clientY - p.y;
+        clampPan();
+        applyTransform();
+      }
+      lb.pointers[e.pointerId] = { x: e.clientX, y: e.clientY };
+    });
+
+    var up = function (e) {
+      delete lb.pointers[e.pointerId];
+      if (Object.keys(lb.pointers).length < 2) lb.pinch = 0;
+    };
+    d.addEventListener('pointerup', up);
+    d.addEventListener('pointercancel', up);
+
+    return d;
+  }
+
+  function pointerDist() {
+    var ids = Object.keys(lb.pointers);
+    if (ids.length < 2) return 0;
+    var a = lb.pointers[ids[0]], b = lb.pointers[ids[1]];
+    return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
+  }
+
+  function applyTransform() {
+    if (!lb.img) return;
+    lb.img.style.transform = 'translate3d(' + lb.tx + 'px,' + lb.ty + 'px,0) scale(' + lb.scale + ')';
+    lb.img.style.cursor = lb.scale > 1.01 ? 'grab' : 'zoom-in';
+    var lvl = $('.lightbox__level', lb.el);
+    if (lvl) lvl.textContent = Math.round(lb.scale * 100) + '%';
+  }
+
+  // Keep the image from being dragged entirely off screen.
+  function clampPan() {
+    if (!lb.img) return;
+    var r = lb.img.getBoundingClientRect();
+    var maxX = Math.max(0, (r.width - window.innerWidth) / 2 + 40);
+    var maxY = Math.max(0, (r.height - window.innerHeight) / 2 + 40);
+    lb.tx = clamp(lb.tx, -maxX, maxX);
+    lb.ty = clamp(lb.ty, -maxY, maxY);
+  }
+
+  // Zoom keeping the point under the cursor/pinch centre put.
+  function zoomAt(next, cx, cy) {
+    if (!lb.img) return;
+    var prev = lb.scale;
+    var s = clamp(next, 1, 6);
+    if (s === prev) return;
+    var r = lb.img.getBoundingClientRect();
+    var ox = cx - (r.left + r.width / 2);
+    var oy = cy - (r.top + r.height / 2);
+    var k = s / prev;
+    lb.tx = lb.tx - ox * (k - 1);
+    lb.ty = lb.ty - oy * (k - 1);
+    lb.scale = s;
+    if (s <= 1.01) { lb.tx = 0; lb.ty = 0; }
+    clampPan();
+    applyTransform();
+  }
+
+  function zoomBy(k) { zoomAt(lb.scale * k, window.innerWidth / 2, window.innerHeight / 2); }
+  function resetZoom() { lb.scale = 1; lb.tx = 0; lb.ty = 0; applyTransform(); }
+
+  function openLightbox(src, alt, opener) {
+    var d = buildLightbox();
+    lb.opener = opener || null;
+    lb.img.setAttribute('src', src);
+    lb.img.setAttribute('alt', alt || '');
+    resetZoom();
+    d.classList.add('is-open');
+    document.body.classList.add('is-locked');
+    var close = $('.lightbox__btn--close', d);
+    if (close) close.focus();
+  }
+
+  function closeLightbox() {
+    if (!lb.el) return;
+    lb.el.classList.remove('is-open');
+    document.body.classList.remove('is-locked');
+    lb.pointers = {};
+    lb.pinch = 0;
+    if (lb.opener && document.contains(lb.opener)) lb.opener.focus();
+  }
+
+  function lightboxOpen() { return !!(lb.el && lb.el.classList.contains('is-open')); }
+
   /* ============================================================ progress */
 
   function loadProgress(id) {
@@ -1407,10 +1616,15 @@
 
     // Global keys: "/" focuses search, Esc closes things.
     document.addEventListener('keydown', function (e) {
-      if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) && !document.activeElement.isContentEditable) {
+      if (e.key === '/' && !lightboxOpen() && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) && !document.activeElement.isContentEditable) {
         e.preventDefault(); el.searchInput.focus();
       } else if (e.key === 'Escape') {
+        if (lightboxOpen()) { closeLightbox(); return; }
         hideSuggest(); closeAllMega(); closeMobileNav();
+      } else if (lightboxOpen()) {
+        if (e.key === '+' || e.key === '=') { e.preventDefault(); zoomBy(1.4); }
+        else if (e.key === '-' || e.key === '_') { e.preventDefault(); zoomBy(1 / 1.4); }
+        else if (e.key === '0') { e.preventDefault(); resetZoom(); }
       }
     });
 
