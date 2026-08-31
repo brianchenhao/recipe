@@ -660,9 +660,12 @@
     var all = state.recipes.slice();
 
     // Category chip row.
+    // Only offer a category that actually has something in it — an empty one
+    // is a dead end. It stays in site.json so the CMS can still assign it.
+    var liveCats = cats.filter(function (c) { return recipesInCategory(c).length > 0; });
     var chipRow = '<div class="chiprow chiprow--scroll" role="list" aria-label="Categories">'
       + '<a class="chip" href="#/recipes" role="listitem">All</a>'
-      + cats.map(function (c) { return '<a class="chip" href="#/category/' + encodeURIComponent(c) + '" role="listitem">' + esc(c) + '</a>'; }).join('')
+      + liveCats.map(function (c) { return '<a class="chip" href="#/category/' + encodeURIComponent(c) + '" role="listitem">' + esc(c) + '</a>'; }).join('')
       + '</div>';
 
     // The big "plenty to choose from" grid — at least 24 cards.
@@ -693,7 +696,7 @@
     var browse = '<section class="section section--band"><div>'
       + '<div class="section__head"><h2 class="section__title">Browse by category</h2></div>'
       + '<div class="catgrid">'
-      + cats.map(function (c) {
+      + liveCats.map(function (c) {
           var n = recipesInCategory(c).length;
           return '<a class="cat-tile reveal" href="#/category/' + encodeURIComponent(c) + '"><span>' + esc(c) + '</span>'
             + '<span class="count">' + n + '</span></a>';
