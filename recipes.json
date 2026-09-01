@@ -1949,6 +1949,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "seremban-dry-beef-laksa",
+      "title": "Seremban Dry Beef Laksa Noodle",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [
+        "Malaysian",
+        "Seremban",
+        "Noodles",
+        "Beef",
+        "Dry Noodles"
+      ],
+      "img": "images/seremban-dry-beef-laksa-card.jpg",
+      "poster": "images/seremban-dry-beef-laksa.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Springy laksa noodles tossed in a beef sauce with bean sprouts and crispy shallots — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "3 to 4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
