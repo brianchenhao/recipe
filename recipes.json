@@ -1983,6 +1983,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "taiwanese-beef-noodle-soup",
+      "title": "Taiwanese Beef Noodle Soup",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [
+        "Taiwanese",
+        "Chinese",
+        "Beef",
+        "Noodles",
+        "Comfort Food"
+      ],
+      "img": "images/taiwanese-beef-noodle-soup-card.jpg",
+      "poster": "images/taiwanese-beef-noodle-soup.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Brisket simmered low and slow with Chinese spices, over chewy noodles — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "3 to 4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
