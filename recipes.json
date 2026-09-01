@@ -1915,6 +1915,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "hakka-braised-pork-black-fungus",
+      "title": "Hakka Braised Pork with Black Fungus",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [
+        "Hakka",
+        "Chinese",
+        "Pork",
+        "Braised",
+        "Comfort Food"
+      ],
+      "img": "images/hakka-braised-pork-black-fungus-card.jpg",
+      "poster": "images/hakka-braised-pork-black-fungus.jpg",
+      "ill": "ill-pot",
+      "badge": "New",
+      "featured": false,
+      "desc": "Pork belly braised low and slow with black fungus and warm spices — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "3 to 4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
