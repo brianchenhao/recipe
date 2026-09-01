@@ -1847,6 +1847,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "taiwan-shaobing",
+      "title": "Taiwan Shaobing",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Taiwanese",
+        "Flatbread",
+        "Street Food",
+        "Sesame",
+        "Baking"
+      ],
+      "img": "images/taiwan-shaobing-card.jpg",
+      "poster": "images/taiwan-shaobing.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy, flaky Taiwanese sesame flatbread — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 6",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
