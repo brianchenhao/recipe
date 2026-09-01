@@ -1881,6 +1881,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "hakka-nam-yee-fried-pork",
+      "title": "Hakka Nam Yee Fried Pork",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [
+        "Hakka",
+        "Chinese",
+        "Pork",
+        "Fermented",
+        "Deep Fried"
+      ],
+      "img": "images/hakka-nam-yee-fried-pork-card.jpg",
+      "poster": "images/hakka-nam-yee-fried-pork.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Cubed pork marinated in fermented red bean curd and fried crisp — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "3 to 4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
