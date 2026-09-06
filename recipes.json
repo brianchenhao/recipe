@@ -2359,6 +2359,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "easy-uttapam",
+      "title": "Easy Uttapam",
+      "author": "",
+      "cat": "Fermentation",
+      "tags": [
+        "South Indian",
+        "Fermented Batter",
+        "Rice",
+        "Breakfast",
+        "Vegetarian"
+      ],
+      "img": "images/easy-uttapam-card.jpg",
+      "poster": "images/easy-uttapam.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "A thick savoury pancake from fermented rice and lentil batter, topped with vegetables — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 6 to 8 uttapams",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
