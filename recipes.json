@@ -2051,6 +2051,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "thai-long-bean-salad-palar",
+      "title": "Thai Long Bean Salad with Palar",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Thai",
+        "Som Tam",
+        "Salad",
+        "Spicy",
+        "Fermented",
+        "No Cook"
+      ],
+      "img": "images/thai-long-bean-salad-palar-card.jpg",
+      "poster": "images/thai-long-bean-salad-palar.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Long beans pounded with chilli, tomato and fermented fish sauce — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2 to 3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
