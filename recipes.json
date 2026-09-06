@@ -2393,6 +2393,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "potato-masala",
+      "title": "Potato Masala",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "South Indian",
+        "Potato",
+        "Vegetarian",
+        "Quick",
+        "Curry Leaves"
+      ],
+      "img": "images/potato-masala-card.jpg",
+      "poster": "images/potato-masala.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Mildly spiced potatoes tempered with mustard seeds and curry leaves — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
