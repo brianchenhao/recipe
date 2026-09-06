@@ -2257,6 +2257,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chinese-veggie-pau",
+      "title": "Chinese Veggie Pau",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Chinese",
+        "Dim Sum",
+        "Steamed",
+        "Vegetarian",
+        "Baking"
+      ],
+      "img": "images/chinese-veggie-pau-card.jpg",
+      "poster": "images/chinese-veggie-pau.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft steamed buns filled with mixed vegetables, mushrooms and glass noodles — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 8 to 10 pau",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
