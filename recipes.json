@@ -2223,6 +2223,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sheng-rou-pau",
+      "title": "Sheng Rou Pau",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Chinese",
+        "Dim Sum",
+        "Steamed",
+        "Pork",
+        "Baking"
+      ],
+      "img": "images/sheng-rou-pau-card.jpg",
+      "poster": "images/sheng-rou-pau.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft steamed buns filled with juicy seasoned minced pork — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 8 to 10 buns",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
