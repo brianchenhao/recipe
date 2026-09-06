@@ -2120,6 +2120,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "hakka-soon-kuih",
+      "title": "Hakka Soon Kuih",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Hakka",
+        "Chinese",
+        "Dumplings",
+        "Steamed",
+        "Dim Sum"
+      ],
+      "img": "images/hakka-soon-kuih-card.jpg",
+      "poster": "images/hakka-soon-kuih.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chewy rice-flour dumplings filled with turnip, dried shrimp and mushroom — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 12 to 15 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
