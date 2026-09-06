@@ -2665,6 +2665,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "pumpkin-baked-egg-custard",
+      "title": "Air Fryer Pumpkin Baked Egg Custard",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Air Fryer",
+        "Pumpkin",
+        "Custard",
+        "Dessert",
+        "No Oven"
+      ],
+      "img": "images/pumpkin-baked-egg-custard-card.jpg",
+      "poster": "images/pumpkin-baked-egg-custard.jpg",
+      "ill": "ill-egg",
+      "badge": "New",
+      "featured": false,
+      "desc": "Silky egg custard air-fried inside a whole small pumpkin — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "25-35 min",
+      "yield": "2 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
