@@ -2597,6 +2597,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "dong-quai-chicken-rice",
+      "title": "Dong Quai Chicken Rice",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [
+        "Chinese",
+        "Rice Cooker",
+        "Chicken",
+        "Herbal",
+        "Comfort Food"
+      ],
+      "img": "images/dong-quai-chicken-rice-card.jpg",
+      "poster": "images/dong-quai-chicken-rice.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chicken and jasmine rice cooked together with dong quai, ginger and red dates — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "3 to 4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
