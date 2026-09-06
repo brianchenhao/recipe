@@ -56,7 +56,8 @@
     heroIndex: 0,
     io: null,               // IntersectionObserver
     suggestItems: [],       // current suggestion list
-    suggestActive: -1
+    suggestActive: -1,
+    session: { signedIn: false, email: '' }
   };
 
   /* ============================================================ utilities */
@@ -427,6 +428,11 @@
       return { c: c, n: applyFilter(state.recipes, c.filter).length };
     }).filter(function (x) { return x.n > 0; }).slice(0, 4);
 
+    if (state.session && state.session.signedIn) {
+      html += '<h3>Manage</h3><ul>'
+           +  '<li><a href="#/admin">My recipes</a></li></ul>';
+    }
+
     if (colls.length) {
       html += '<h3>Collections</h3><ul>';
       colls.forEach(function (x) {
@@ -634,6 +640,8 @@
     else if (head === 'category') html = renderCategory(parts[1]);
     else if (head === 'collection') html = renderCollection(parts[1]);
     else if (head === 'search') html = renderSearch(route.query.q || '');
+    else if (head === 'login') html = renderLogin();
+    else if (head === 'admin') html = renderAdmin();
     else { html = renderHome(); isHome = true; }
 
     el.app.innerHTML = html;
@@ -1122,6 +1130,8 @@
     $$('.rail').forEach(wireRail);
 
     if (head === 'recipe') { wireRecipe(parts[1]); wirePoster(); }
+    if (head === 'login') wireLogin();
+    if (head === 'admin') wireAdmin();
     if (head === 'recipes' || head === 'category') wireFilters(head, parts, query);
   }
 
@@ -1308,6 +1318,393 @@
       document.body.removeChild(ta);
       return ok;
     } catch (e) { return false; }
+  }
+
+  /* ============================================================ sign-in */
+  // Login and the recipe manager live inside the site itself, using the same
+  // header, type and buttons, so signing in does not feel like leaving.
+
+  function apiPost(path, body) {
+    return fetch(path, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin',
+      body: JSON.stringify(body || {})
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (data) {
+        if (!r.ok) throw new Error(data.error || ('Request failed (' + r.status + ')'));
+        return data;
+      });
+    });
+  }
+
+  function loadSession() {
+    return fetch('/api/session', { credentials: 'same-origin' })
+      .then(function (r) { return r.json(); })
+      .then(function (d) { state.session = d || { signedIn: false }; return state.session; })
+      .catch(function () { state.session = { signedIn: false }; return state.session; });
+  }
+
+  function signedIn() { return !!(state.session && state.session.signedIn); }
+
+  /* ---------------------------------------------------------- login UI */
+
+  function renderLogin() {
+    setMeta('Sign in', 'Sign in to manage Recipe Mom.');
+    if (signedIn()) {
+      return '<section class="section"><div class="pagehead"><h1>You are signed in</h1>'
+        + '<p>Signed in as ' + esc(state.session.email) + '.</p></div>'
+        + '<div class="row"><a class="btn btn--primary" href="#/admin">Go to my recipes</a>'
+        + '<button class="btn btn--ghost" type="button" id="signout-btn">Sign out</button></div></section>';
+    }
+    return '<section class="section wrap--tight">'
+      + '<div class="pagehead"><h1>Sign in</h1>'
+      + '<p>Enter your email and we will send you a 6-digit code. No password to remember — '
+      + 'and you only need to do this once on this device.</p></div>'
+      + '<form class="authform" id="login-form" novalidate>'
+      +   '<div class="authform__step" id="step-email">'
+      +     '<label class="authform__label" for="login-email">Your email</label>'
+      +     '<input class="authform__input" id="login-email" type="email" inputmode="email" '
+      +       'autocomplete="email" placeholder="you@example.com" required>'
+      +     '<button class="btn btn--primary btn--block" type="submit" id="send-code">Send me a code</button>'
+      +   '</div>'
+      +   '<div class="authform__step" id="step-code" hidden>'
+      +     '<p class="authform__sent" id="sent-to"></p>'
+      +     '<label class="authform__label" for="login-code">6-digit code</label>'
+      +     '<input class="authform__input authform__input--code" id="login-code" type="text" '
+      +       'inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="000000">'
+      +     '<button class="btn btn--primary btn--block" type="button" id="verify-code">Sign in</button>'
+      +     '<button class="btn btn--ghost btn--block" type="button" id="back-to-email">Use a different email</button>'
+      +   '</div>'
+      +   '<p class="authform__msg" id="login-msg" role="status" aria-live="polite"></p>'
+      + '</form>'
+      + '</section>';
+  }
+
+  function wireLogin() {
+    var out = $('#signout-btn');
+    if (out) {
+      out.addEventListener('click', function () {
+        apiPost('/api/signout').then(function () {
+          state.session = { signedIn: false };
+          toast('Signed out');
+          navigate('#/');
+        });
+      });
+    }
+
+    var form = $('#login-form');
+    if (!form) return;
+    var msg = $('#login-msg');
+    var stepEmail = $('#step-email');
+    var stepCode = $('#step-code');
+    var emailInput = $('#login-email');
+    var codeInput = $('#login-code');
+    var sendBtn = $('#send-code');
+    var verifyBtn = $('#verify-code');
+
+    function say(text, isError) {
+      msg.textContent = text || '';
+      msg.classList.toggle('is-error', !!isError);
+    }
+
+    function requestCode() {
+      var email = (emailInput.value || '').trim();
+      if (!email) { say('Please enter your email.', true); emailInput.focus(); return; }
+      sendBtn.disabled = true;
+      say('Sending…');
+      apiPost('/api/signin-request', { email: email }).then(function () {
+        stepEmail.hidden = true;
+        stepCode.hidden = false;
+        $('#sent-to').textContent = 'We sent a code to ' + email + '. It expires in 15 minutes.';
+        say('');
+        codeInput.focus();
+      }).catch(function (err) {
+        say(err.message, true);
+      }).then(function () { sendBtn.disabled = false; });
+    }
+
+    function verify() {
+      var code = (codeInput.value || '').replace(/\s+/g, '');
+      if (!/^\d{6}$/.test(code)) { say('Enter the 6 digits from the email.', true); codeInput.focus(); return; }
+      verifyBtn.disabled = true;
+      say('Checking…');
+      apiPost('/api/signin-verify', { code: code }).then(function (d) {
+        state.session = { signedIn: true, email: d.email };
+        toast('Signed in — welcome back');
+        navigate('#/admin');
+      }).catch(function (err) {
+        say(err.message, true);
+      }).then(function () { verifyBtn.disabled = false; });
+    }
+
+    form.addEventListener('submit', function (e) { e.preventDefault(); if (!stepEmail.hidden) requestCode(); else verify(); });
+    verifyBtn.addEventListener('click', verify);
+    codeInput.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); verify(); } });
+    $('#back-to-email').addEventListener('click', function () {
+      stepCode.hidden = true; stepEmail.hidden = false; say(''); emailInput.focus();
+    });
+  }
+
+  /* ---------------------------------------------------------- admin UI */
+
+  function renderAdmin() {
+    setMeta('My recipes', 'Add and edit recipes.');
+    if (!signedIn()) {
+      return '<section class="section">' + emptyHtml('Please sign in first',
+        'You need to sign in before you can add or change recipes.', '#/login', 'Sign in') + '</section>';
+    }
+
+    var rows = state.recipes.map(function (r) {
+      return '<li class="adminrow">'
+        + '<span class="adminrow__title">' + esc(r.title || r.id) + '</span>'
+        + '<span class="adminrow__cat">' + esc(r.cat || '') + '</span>'
+        + '<span class="adminrow__acts">'
+        +   '<a class="btn btn--ghost btn--sm" href="#/recipe/' + encodeURIComponent(r.id) + '">View</a>'
+        +   '<button class="btn btn--ghost btn--sm" type="button" data-edit="' + escAttr(r.id) + '">Edit</button>'
+        +   '<button class="btn btn--ghost btn--sm adminrow__del" type="button" data-del="' + escAttr(r.id) + '">Delete</button>'
+        + '</span></li>';
+    }).join('');
+
+    return '<section class="section">'
+      + '<div class="pagehead"><h1>My recipes</h1>'
+      + '<p>Signed in as ' + esc(state.session.email) + '. Add a recipe by uploading its picture — '
+      + 'the details fill in by themselves, then you check them and publish.</p></div>'
+      + '<div class="row" style="margin-bottom:1.25rem">'
+      +   '<button class="btn btn--primary" type="button" id="admin-new">Add a recipe</button>'
+      +   '<button class="btn btn--ghost" type="button" id="signout-btn">Sign out</button>'
+      + '</div>'
+      + '<div id="admin-form-host"></div>'
+      + '<h2 class="section__title" style="margin:2rem 0 1rem">All recipes <span class="count">'
+      +   state.recipes.length + '</span></h2>'
+      + '<ul class="adminlist">' + rows + '</ul>'
+      + '</section>';
+  }
+
+  function adminFormHtml(recipe) {
+    var r = recipe || {};
+    var editing = !!recipe;
+    var cats = allCategories();
+    return '<form class="adminform" id="admin-form" novalidate>'
+      + '<h2 class="adminform__title">' + (editing ? 'Edit “' + esc(r.title) + '”' : 'Add a recipe') + '</h2>'
+
+      + '<div class="adminform__field">'
+      +   '<label class="authform__label" for="af-image">Recipe picture</label>'
+      +   '<p class="adminform__hint">Upload the recipe image. This picture becomes the recipe — '
+      +     'people tap it to zoom in.' + (editing ? ' Leave empty to keep the current one.' : '') + '</p>'
+      +   '<input class="adminform__file" id="af-image" type="file" accept="image/*">'
+      +   '<div class="adminform__preview" id="af-preview"' + (r.poster ? '' : ' hidden') + '>'
+      +     (r.poster ? '<img src="' + escAttr(r.poster) + '" alt="">' : '')
+      +   '</div>'
+      +   '<p class="authform__msg" id="af-imgmsg" role="status" aria-live="polite"></p>'
+      + '</div>'
+
+      + '<div class="adminform__field">'
+      +   '<label class="authform__label" for="af-title">Name</label>'
+      +   '<input class="authform__input" id="af-title" type="text" value="' + escAttr(r.title || '') + '" required>'
+      + '</div>'
+
+      + '<div class="adminform__row">'
+      +   '<div class="adminform__field">'
+      +     '<label class="authform__label" for="af-cat">Category</label>'
+      +     '<select id="af-cat">' + cats.map(function (c) {
+              return '<option value="' + escAttr(c) + '"' + (r.cat === c ? ' selected' : '') + '>' + esc(c) + '</option>';
+            }).join('') + '</select>'
+      +   '</div>'
+      +   '<div class="adminform__field">'
+      +     '<label class="authform__label" for="af-total">Time <span class="muted">(optional)</span></label>'
+      +     '<input class="authform__input" id="af-total" type="text" placeholder="e.g. 25 min" value="' + escAttr(r.total || '') + '">'
+      +   '</div>'
+      +   '<div class="adminform__field">'
+      +     '<label class="authform__label" for="af-yield">Servings <span class="muted">(optional)</span></label>'
+      +     '<input class="authform__input" id="af-yield" type="text" placeholder="e.g. 2 servings" value="' + escAttr(r.yield || '') + '">'
+      +   '</div>'
+      + '</div>'
+
+      + '<div class="adminform__field">'
+      +   '<label class="authform__label" for="af-desc">Short description</label>'
+      +   '<input class="authform__input" id="af-desc" type="text" value="' + escAttr(r.desc || '') + '">'
+      + '</div>'
+
+      + '<div class="adminform__field">'
+      +   '<label class="authform__label" for="af-tags">Tags <span class="muted">(separated by commas)</span></label>'
+      +   '<input class="authform__input" id="af-tags" type="text" value="' + escAttr((r.tags || []).join(', ')) + '">'
+      + '</div>'
+
+      + '<input type="hidden" id="af-id" value="' + escAttr(r.id || '') + '">'
+      + '<input type="hidden" id="af-ill" value="' + escAttr(r.ill || 'ill-bowl') + '">'
+
+      + '<div class="row">'
+      +   '<button class="btn btn--primary" type="submit" id="af-save">' + (editing ? 'Save changes' : 'Publish recipe') + '</button>'
+      +   '<button class="btn btn--ghost" type="button" id="af-cancel">Cancel</button>'
+      + '</div>'
+      + '<p class="authform__msg" id="af-msg" role="status" aria-live="polite"></p>'
+      + '</form>';
+  }
+
+  // Shrink on the device rather than uploading a 3 MB phone photo, and cut the
+  // 4:3 card from the top so an infographic keeps its title on the card.
+  function processImage(file) {
+    return new Promise(function (resolve, reject) {
+      var reader = new FileReader();
+      reader.onerror = function () { reject(new Error('Could not read that file.')); };
+      reader.onload = function () {
+        var img = new Image();
+        img.onerror = function () { reject(new Error('That file is not an image we can read.')); };
+        img.onload = function () {
+          function draw(w, h, sx, sy, sw, sh, quality) {
+            var c = document.createElement('canvas');
+            c.width = w; c.height = h;
+            c.getContext('2d').drawImage(img, sx, sy, sw, sh, 0, 0, w, h);
+            return c.toDataURL('image/jpeg', quality);
+          }
+          var maxW = 1400;
+          var scale = Math.min(1, maxW / img.naturalWidth);
+          var pw = Math.round(img.naturalWidth * scale);
+          var ph = Math.round(img.naturalHeight * scale);
+          var poster = draw(pw, ph, 0, 0, img.naturalWidth, img.naturalHeight, 0.9);
+
+          var cropH = Math.min(img.naturalHeight, Math.round(img.naturalWidth * 3 / 4));
+          var cw = Math.min(1200, img.naturalWidth);
+          var ch = Math.round(cw * cropH / img.naturalWidth);
+          var card = draw(cw, ch, 0, 0, img.naturalWidth, cropH, 0.88);
+
+          resolve({ poster: poster, card: card });
+        };
+        img.src = reader.result;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function wireAdmin() {
+    var out = $('#signout-btn');
+    if (out) {
+      out.addEventListener('click', function () {
+        apiPost('/api/signout').then(function () {
+          state.session = { signedIn: false };
+          toast('Signed out');
+          navigate('#/');
+        });
+      });
+    }
+    if (!signedIn()) return;
+
+    var host = $('#admin-form-host');
+
+    function openForm(recipe) {
+      host.innerHTML = adminFormHtml(recipe);
+      wireAdminForm(recipe);
+      host.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    var newBtn = $('#admin-new');
+    if (newBtn) newBtn.addEventListener('click', function () { openForm(null); });
+
+    $$('[data-edit]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        openForm(state.byId[b.getAttribute('data-edit')]);
+      });
+    });
+
+    $$('[data-del]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var id = b.getAttribute('data-del');
+        var r = state.byId[id];
+        if (!window.confirm('Delete “' + ((r && r.title) || id) + '”?\n\nIt will disappear from the site in a minute or two.')) return;
+        b.disabled = true;
+        apiPost('/api/recipe-delete', { id: id }).then(function () {
+          toast('Deleted — the site updates in a minute');
+          b.closest('.adminrow').style.opacity = '.4';
+        }).catch(function (err) {
+          toast(err.message, true);
+          b.disabled = false;
+        });
+      });
+    });
+  }
+
+  function wireAdminForm(recipe) {
+    var pending = { poster: '', card: '' };
+    var msg = $('#af-msg');
+    var imgMsg = $('#af-imgmsg');
+
+    function say(el, text, isError) {
+      el.textContent = text || '';
+      el.classList.toggle('is-error', !!isError);
+    }
+
+    $('#af-image').addEventListener('change', function (e) {
+      var file = e.target.files && e.target.files[0];
+      if (!file) return;
+      say(imgMsg, 'Preparing the picture…');
+      processImage(file).then(function (out) {
+        pending.poster = out.poster;
+        pending.card = out.card;
+        var prev = $('#af-preview');
+        prev.hidden = false;
+        prev.innerHTML = '<img src="' + out.poster + '" alt="">';
+        say(imgMsg, 'Reading the picture…');
+        // Ask Gemini to fill in the details so nothing has to be typed.
+        return apiPost('/api/recipe-extract', {
+          imageBase64: out.poster.split(',')[1],
+          mimeType: 'image/jpeg'
+        });
+      }).then(function (d) {
+        if (!d) return;
+        if (!$('#af-title').value) $('#af-title').value = d.title || '';
+        if (!$('#af-desc').value) $('#af-desc').value = d.desc || '';
+        if (!$('#af-tags').value) $('#af-tags').value = (d.tags || []).join(', ');
+        if (!$('#af-total').value) $('#af-total').value = d.total || '';
+        if (!$('#af-yield').value) $('#af-yield').value = d.yield || '';
+        if (d.cat) $('#af-cat').value = d.cat;
+        if (d.ill) $('#af-ill').value = d.ill;
+        say(imgMsg, 'Filled in from the picture — please check it below.');
+      }).catch(function (err) {
+        say(imgMsg, 'Picture ready. (Could not read the details automatically: ' + err.message + ')', true);
+      });
+    });
+
+    $('#af-cancel').addEventListener('click', function () { $('#admin-form-host').innerHTML = ''; });
+
+    $('#admin-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var title = $('#af-title').value.trim();
+      if (!title) { say(msg, 'Please give the recipe a name.', true); return; }
+      if (!recipe && !pending.poster) { say(msg, 'Please upload the recipe picture.', true); return; }
+
+      var btn = $('#af-save');
+      btn.disabled = true;
+      say(msg, 'Publishing…');
+
+      var payload = {
+        recipe: {
+          id: $('#af-id').value || title,
+          title: title,
+          cat: $('#af-cat').value,
+          tags: $('#af-tags').value.split(',').map(function (t) { return t.trim(); }).filter(Boolean),
+          desc: $('#af-desc').value.trim(),
+          total: $('#af-total').value.trim(),
+          yield: $('#af-yield').value.trim(),
+          ill: $('#af-ill').value,
+          badge: recipe ? (recipe.badge || '') : 'New',
+          lede: (recipe && recipe.lede) || 'The whole recipe is in the picture — tap it to zoom in.',
+          img: (recipe && recipe.img) || '',
+          poster: (recipe && recipe.poster) || ''
+        },
+        originalId: recipe ? recipe.id : ''
+      };
+      if (pending.poster) { payload.posterBase64 = pending.poster.split(',')[1]; payload.posterMime = 'image/jpeg'; }
+      if (pending.card) { payload.cardBase64 = pending.card.split(',')[1]; payload.cardMime = 'image/jpeg'; }
+
+      apiPost('/api/recipe-save', payload).then(function (d) {
+        say(msg, '');
+        toast(d.created ? 'Published — live in a minute or two' : 'Saved — live in a minute or two');
+        $('#admin-form-host').innerHTML = '';
+      }).catch(function (err) {
+        say(msg, err.message, true);
+      }).then(function () { btn.disabled = false; });
+    });
   }
 
   /* ============================================================ lightbox */
@@ -1779,7 +2176,12 @@
       wireChrome();
 
       window.addEventListener('hashchange', render);
-      render();
+      // Knowing whether we are signed in before the first paint keeps the
+      // admin route from flashing "please sign in" to someone who is.
+      loadSession().then(function () {
+        buildMobileNav();
+        render();
+      });
     }).catch(function (err) {
       fatal('Could not load the site data (' + (err && err.message ? err.message : 'network error') + ').');
     });

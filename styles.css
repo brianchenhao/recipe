@@ -5090,3 +5090,141 @@ textarea:focus-visible { outline: none; }
 #mobile-nav .mnav__search svg { flex: none; }
 
 #mobile-nav .mnav__all { font-size: var(--fs-lg); }
+
+/* ==========================================================================
+   20  SIGN-IN AND THE RECIPE MANAGER
+   Same type, buttons and paper as the rest of the site — signing in should
+   not feel like being handed off to a different tool.
+   ========================================================================== */
+
+.authform {
+  max-width: 26rem;
+  margin: 0 0 var(--sp-10);
+  padding: var(--sp-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.authform__label {
+  display: block;
+  margin-bottom: .4rem;
+  font-size: var(--fs-2xs);
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.authform__input { margin-bottom: var(--sp-4); }
+
+/* The code is the one thing she has to copy across from her email. */
+.authform__input--code {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  letter-spacing: .35em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.authform__sent {
+  margin: 0 0 var(--sp-4);
+  padding: .8rem 1rem;
+  border-radius: var(--radius);
+  background: var(--accent-wash);
+  color: var(--text);
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+}
+
+.authform__msg {
+  margin: var(--sp-3) 0 0;
+  font-size: var(--fs-sm);
+  color: var(--text-dim);
+  min-height: 1.2em;
+}
+
+.authform__msg.is-error { color: var(--brand-ink); font-weight: 600; }
+.authform .btn--block + .btn--block { margin-top: .55rem; }
+
+/* --- the manager ------------------------------------------------------- */
+
+.adminlist { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+
+.adminrow {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+  padding: .75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.adminrow__title { font-family: var(--font-display); font-size: var(--fs-md); font-weight: 700; }
+
+.adminrow__cat {
+  padding: .15rem .6rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-soft);
+  color: var(--text-dim);
+  font-size: var(--fs-2xs);
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.adminrow__acts { display: flex; gap: .4rem; margin-left: auto; flex-wrap: wrap; }
+.adminrow__del:hover { color: var(--brand); border-color: var(--brand); }
+
+.adminform {
+  margin: 0 0 var(--sp-8);
+  padding: var(--sp-6);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--brand);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.adminform__title { margin: 0 0 var(--sp-5); font-family: var(--font-display); font-size: var(--fs-xl); }
+.adminform__field { margin-bottom: var(--sp-4); }
+.adminform__hint { margin: 0 0 .6rem; color: var(--text-dim); font-size: var(--fs-sm); line-height: 1.5; }
+
+.adminform__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: var(--sp-4);
+}
+
+.adminform__file {
+  width: 100%;
+  padding: .9rem;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  font-size: var(--fs-sm);
+  cursor: pointer;
+}
+
+.adminform__file:hover { border-color: var(--brand); }
+
+.adminform__preview {
+  margin-top: var(--sp-4);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  max-height: 22rem;
+}
+
+.adminform__preview img { display: block; width: 100%; height: auto; }
+
+@media (max-width: 599.98px) {
+  .adminrow { align-items: flex-start; }
+  .adminrow__acts { margin-left: 0; width: 100%; }
+  .adminrow__acts .btn { flex: 1 1 auto; }
+  .authform, .adminform { padding: var(--sp-5); }
+}
