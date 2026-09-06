@@ -2017,6 +2017,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "radish-cake-lo-bak-go",
+      "title": "Radish Cake (Lo Bak Go)",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Chinese",
+        "Dim Sum",
+        "Steamed",
+        "Radish",
+        "Make Ahead"
+      ],
+      "img": "images/radish-cake-lo-bak-go-card.jpg",
+      "poster": "images/radish-cake-lo-bak-go.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Grated daikon steamed with rice flour, dried shrimp and lap cheong, then pan-fried — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 1 loaf, serves 6 to 8",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
