@@ -2291,6 +2291,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "radish-skin-namul",
+      "title": "Radish Skin Namul",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Korean",
+        "Namul",
+        "No Cook",
+        "Zero Waste",
+        "Radish"
+      ],
+      "img": "images/radish-skin-namul-card.jpg",
+      "poster": "images/radish-skin-namul.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Daikon skins salted, rinsed and tossed in sesame and gochugaru — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2 to 4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
