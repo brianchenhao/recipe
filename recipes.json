@@ -2461,6 +2461,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "easy-idly",
+      "title": "Easy Idly",
+      "author": "",
+      "cat": "Fermentation",
+      "tags": [
+        "South Indian",
+        "Fermented Batter",
+        "Rice",
+        "Steamed",
+        "Breakfast"
+      ],
+      "img": "images/easy-idly-card.jpg",
+      "poster": "images/easy-idly.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft steamed rice cakes from a fermented rice and lentil batter — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 12 to 15 idlis",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
