@@ -2325,6 +2325,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "japanese-lemon-daikon-pickle",
+      "title": "Japanese Lemon Daikon Pickle",
+      "author": "",
+      "cat": "Fermentation",
+      "tags": [
+        "Japanese",
+        "Pickle",
+        "Daikon",
+        "No Cook",
+        "Make Ahead"
+      ],
+      "img": "images/japanese-lemon-daikon-pickle-card.jpg",
+      "poster": "images/japanese-lemon-daikon-pickle.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Daikon pickled in a bright lemon and rice vinegar brine — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
