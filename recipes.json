@@ -2427,6 +2427,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "dosa",
+      "title": "Dosa",
+      "author": "",
+      "cat": "Fermentation",
+      "tags": [
+        "South Indian",
+        "Fermented Batter",
+        "Rice",
+        "Breakfast",
+        "Vegetarian"
+      ],
+      "img": "images/dosa-card.jpg",
+      "poster": "images/dosa.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "A thin, crisp crepe from fermented rice and lentil batter — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 8 to 10 dosas",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
