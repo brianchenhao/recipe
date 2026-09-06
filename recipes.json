@@ -2631,6 +2631,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "herbal-chicken-rice",
+      "title": "Herbal Chicken Rice",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [
+        "Chinese",
+        "Rice Cooker",
+        "Chicken",
+        "Herbal",
+        "Comfort Food"
+      ],
+      "img": "images/herbal-chicken-rice-card.jpg",
+      "poster": "images/herbal-chicken-rice.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chicken and rice cooked together with shiitake, red dates and goji berries — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "3 to 4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
