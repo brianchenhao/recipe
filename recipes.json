@@ -2086,6 +2086,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "thai-steamed-squid-lemon",
+      "title": "Thai Steamed Squid with Lemon",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [
+        "Thai",
+        "Seafood",
+        "Steamed",
+        "Spicy",
+        "Quick"
+      ],
+      "img": "images/thai-steamed-squid-lemon-card.jpg",
+      "poster": "images/thai-steamed-squid-lemon.jpg",
+      "ill": "ill-fish",
+      "badge": "New",
+      "featured": false,
+      "desc": "Squid steamed briefly and dressed in a lime, chilli and garlic sauce — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2 to 3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
