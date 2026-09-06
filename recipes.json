@@ -2188,6 +2188,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "mui-choy-pau",
+      "title": "Mui Choy Pau",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Chinese",
+        "Malaysian",
+        "Dim Sum",
+        "Steamed",
+        "Preserved Vegetable",
+        "Pork"
+      ],
+      "img": "images/mui-choy-pau-card.jpg",
+      "poster": "images/mui-choy-pau.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft steamed buns filled with preserved mustard greens and pork — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 8 to 10 pau",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
