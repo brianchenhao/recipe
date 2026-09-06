@@ -517,7 +517,9 @@
     var rt = ratingText(r.rating);
     var meta = (rt ? '<span class="card__rating">' + starsHtml(r.rating, 'sm') + ' ' + esc(rt) + '</span>' : '')
              + (isStr(cardTime(r)) ? '<span class="card__time">' + esc(cardTime(r)) + '</span>' : '');
-    return '<a class="card" href="' + href + '">'
+    // An image-only recipe already carries its title inside the picture, so the
+    // hero must not overlay a second title on top of a busy infographic.
+    return '<a class="card' + (isStr(r.poster) ? ' card--poster' : '') + '" href="' + href + '">'
       +  '<span class="card__media">' + media + dots + '</span>'
       +  '<span class="card__body">'
       +    (isStr(r.cat) ? '<span class="card__cat">' + esc(r.cat) + '</span>' : '')

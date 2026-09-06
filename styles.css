@@ -4880,20 +4880,27 @@ textarea:focus-visible { outline: none; }
 /* An illustrated hero card has a pale background, so white-on-scrim text
    is unreadable. When there is no photograph, stack the copy underneath
    the picture in normal ink instead of overlaying it. */
-#hero-card .card:has(.card__ill) .card__media::before { opacity: 0; }
+#hero-card .card:has(.card__ill) .card__media::before,
+#hero-card .card--poster .card__media::before { opacity: 0; }
 
-#hero-card .card:has(.card__ill) .card__body {
+#hero-card .card:has(.card__ill) .card__body,
+#hero-card .card--poster .card__body {
   position: static;
   padding: var(--sp-5);
   background: var(--surface);
   color: var(--text);
 }
 
-#hero-card .card:has(.card__ill) .card__title { color: var(--text); text-shadow: none; }
+#hero-card .card:has(.card__ill) .card__title,
+#hero-card .card--poster .card__title { color: var(--text); text-shadow: none; }
 #hero-card .card:has(.card__ill) .card__desc,
-#hero-card .card:has(.card__ill) .card__meta { color: var(--text-dim); text-shadow: none; }
-#hero-card .card:has(.card__ill) .card__cat { color: var(--brand-ink); text-shadow: none; }
-#hero-card .card:has(.card__ill) { background: var(--surface); }
+#hero-card .card:has(.card__ill) .card__meta,
+#hero-card .card--poster .card__desc,
+#hero-card .card--poster .card__meta { color: var(--text-dim); text-shadow: none; }
+#hero-card .card:has(.card__ill) .card__cat,
+#hero-card .card--poster .card__cat { color: var(--brand-ink); text-shadow: none; }
+#hero-card .card:has(.card__ill),
+#hero-card .card--poster { background: var(--surface); }
 
 /* --- 19.4 Touch targets ------------------------------------------------ */
 /* Anything tappable wants ~44px. These are the ones that were too small. */
