@@ -1357,28 +1357,99 @@
         + '<div class="row"><a class="btn btn--primary" href="#/admin">Go to my recipes</a>'
         + '<button class="btn btn--ghost" type="button" id="signout-btn">Sign out</button></div></section>';
     }
+
+    var methods = (state.session && state.session.methods) || {};
+    var blocks = '';
+
+    if (methods.google) {
+      blocks += '<div class="authform__google">'
+        +   '<div id="google-signin"></div>'
+        +   '<p class="authform__msg" id="google-msg" role="status" aria-live="polite"></p>'
+        + '</div>';
+    }
+
+    if (methods.google && methods.email) {
+      blocks += '<div class="authform__or"><span>or</span></div>';
+    }
+
+    if (methods.email) {
+      blocks += '<form class="authform__email" id="login-form" novalidate>'
+        +   '<div class="authform__step" id="step-email">'
+        +     '<label class="authform__label" for="login-email">Your email</label>'
+        +     '<input class="authform__input" id="login-email" type="email" inputmode="email" '
+        +       'autocomplete="email" placeholder="you@example.com" required>'
+        +     '<button class="btn btn--primary btn--block" type="submit" id="send-code">Send me a code</button>'
+        +   '</div>'
+        +   '<div class="authform__step" id="step-code" hidden>'
+        +     '<p class="authform__sent" id="sent-to"></p>'
+        +     '<label class="authform__label" for="login-code">6-digit code</label>'
+        +     '<input class="authform__input authform__input--code" id="login-code" type="text" '
+        +       'inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="000000">'
+        +     '<button class="btn btn--primary btn--block" type="button" id="verify-code">Sign in</button>'
+        +     '<button class="btn btn--ghost btn--block" type="button" id="back-to-email">Use a different email</button>'
+        +   '</div>'
+        +   '<p class="authform__msg" id="login-msg" role="status" aria-live="polite"></p>'
+        + '</form>';
+    }
+
+    if (!methods.google && !methods.email) {
+      return '<section class="section wrap--tight">' + emptyHtml('Sign-in is not set up yet',
+        'Ask whoever manages the site to finish setting it up.') + '</section>';
+    }
+
     return '<section class="section wrap--tight">'
       + '<div class="pagehead"><h1>Sign in</h1>'
-      + '<p>Enter your email and we will send you a 6-digit code. No password to remember — '
-      + 'and you only need to do this once on this device.</p></div>'
-      + '<form class="authform" id="login-form" novalidate>'
-      +   '<div class="authform__step" id="step-email">'
-      +     '<label class="authform__label" for="login-email">Your email</label>'
-      +     '<input class="authform__input" id="login-email" type="email" inputmode="email" '
-      +       'autocomplete="email" placeholder="you@example.com" required>'
-      +     '<button class="btn btn--primary btn--block" type="submit" id="send-code">Send me a code</button>'
-      +   '</div>'
-      +   '<div class="authform__step" id="step-code" hidden>'
-      +     '<p class="authform__sent" id="sent-to"></p>'
-      +     '<label class="authform__label" for="login-code">6-digit code</label>'
-      +     '<input class="authform__input authform__input--code" id="login-code" type="text" '
-      +       'inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="000000">'
-      +     '<button class="btn btn--primary btn--block" type="button" id="verify-code">Sign in</button>'
-      +     '<button class="btn btn--ghost btn--block" type="button" id="back-to-email">Use a different email</button>'
-      +   '</div>'
-      +   '<p class="authform__msg" id="login-msg" role="status" aria-live="polite"></p>'
-      + '</form>'
+      + '<p>' + (methods.google
+          ? 'Tap the button below to sign in with your Google account. No password to remember — '
+            + 'and you only need to do this once on this device.'
+          : 'Enter your email and we will send you a 6-digit code. No password to remember — '
+            + 'and you only need to do this once on this device.')
+      + '</p></div>'
+      + '<div class="authform">' + blocks + '</div>'
       + '</section>';
+  }
+
+  // Loaded only when the login page actually offers Google sign-in, so an
+  // ordinary visitor just browsing recipes never contacts Google at all.
+  function ensureGoogleScript() {
+    return new Promise(function (resolve, reject) {
+      if (window.google && window.google.accounts && window.google.accounts.id) { resolve(); return; }
+      var s = document.createElement('script');
+      s.src = 'https://accounts.google.com/gsi/client';
+      s.async = true;
+      s.onload = function () { resolve(); };
+      s.onerror = function () { reject(new Error('Could not reach Google.')); };
+      document.head.appendChild(s);
+    });
+  }
+
+  function wireGoogleSignIn() {
+    var wrap = $('#google-signin');
+    if (!wrap) return;
+    var clientId = state.session && state.session.googleClientId;
+    var gmsg = $('#google-msg');
+    function say(text, isError) {
+      if (!gmsg) return;
+      gmsg.textContent = text || '';
+      gmsg.classList.toggle('is-error', !!isError);
+    }
+    if (!clientId) { say('Google sign-in is not finished setting up.', true); return; }
+
+    ensureGoogleScript().then(function () {
+      window.google.accounts.id.initialize({
+        client_id: clientId,
+        callback: function (resp) {
+          say('Checking…');
+          apiPost('/api/google-signin', { credential: resp.credential }).then(function (d) {
+            state.session.signedIn = true;
+            state.session.email = d.email;
+            toast('Signed in — welcome back');
+            navigate('#/admin');
+          }).catch(function (err) { say(err.message, true); });
+        }
+      });
+      window.google.accounts.id.renderButton(wrap, { theme: 'outline', size: 'large', shape: 'pill', width: 280 });
+    }).catch(function (err) { say(err.message, true); });
   }
 
   function wireLogin() {
@@ -1392,6 +1463,8 @@
         });
       });
     }
+
+    wireGoogleSignIn();
 
     var form = $('#login-form');
     if (!form) return;
@@ -1638,12 +1711,20 @@
       var file = e.target.files && e.target.files[0];
       if (!file) return;
       say(imgMsg, 'Preparing the picture…');
+      var aiOn = !!(state.session && state.session.ai);
       processImage(file).then(function (out) {
         pending.poster = out.poster;
         pending.card = out.card;
         var prev = $('#af-preview');
         prev.hidden = false;
         prev.innerHTML = '<img src="' + out.poster + '" alt="">';
+
+        if (!aiOn) {
+          // Nothing reads the picture automatically on this deployment —
+          // say so plainly rather than trying a call that can only fail.
+          say(imgMsg, 'Picture ready — please fill in the details below.');
+          return null;
+        }
         say(imgMsg, 'Reading the picture…');
         // Ask Gemini to fill in the details so nothing has to be typed.
         return apiPost('/api/recipe-extract', {

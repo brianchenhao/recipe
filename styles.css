@@ -5228,3 +5228,40 @@ textarea:focus-visible { outline: none; }
   .adminrow__acts .btn { flex: 1 1 auto; }
   .authform, .adminform { padding: var(--sp-5); }
 }
+
+/* --- Google sign-in block ------------------------------------------------ */
+
+.authform__google {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+  padding-block: .3rem .5rem;
+}
+
+#google-signin { min-height: 2.85rem; }
+
+.authform__or {
+  position: relative;
+  margin: 1.1rem 0;
+  text-align: center;
+}
+
+.authform__or::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: 1px;
+  background: var(--border);
+}
+
+.authform__or span {
+  position: relative;
+  padding: 0 .8rem;
+  background: var(--surface);
+  color: var(--text-dim);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
