@@ -2952,6 +2952,34 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "fudgy-chocolate-brownies",
+      "title": "Fudgy Chocolate Brownies",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [],
+      "img": "images/fudgy-chocolate-brownies-card.jpg",
+      "poster": "images/fudgy-chocolate-brownies.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
