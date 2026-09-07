@@ -2924,6 +2924,34 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chocolate-devil-cake",
+      "title": "Chocolate Devil Cake",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [],
+      "img": "images/chocolate-devil-cake-card.jpg",
+      "poster": "images/chocolate-devil-cake.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "45 minutes",
+      "yield": "8 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
