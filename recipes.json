@@ -2767,6 +2767,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "banana-cake",
+      "title": "Banana Cake",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Baking",
+        "Banana",
+        "Tea Time",
+        "Cake"
+      ],
+      "img": "images/banana-cake-card.jpg",
+      "poster": "images/banana-cake.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "A moist loaf cake made with ripe bananas and warm spice — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "50-60 min",
+      "yield": "1 loaf",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
