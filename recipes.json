@@ -2800,6 +2800,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "easy-peanut-pesto",
+      "title": "Easy Peanut Pesto",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Pesto",
+        "Peanut",
+        "No Cook",
+        "Condiment",
+        "Vegetarian"
+      ],
+      "img": "images/easy-peanut-pesto-card.jpg",
+      "poster": "images/easy-peanut-pesto.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Basil pesto made with roasted peanuts instead of pine nuts — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "5 min",
+      "yield": "Makes about 1 cup",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
