@@ -5313,3 +5313,82 @@ textarea:focus-visible { outline: none; }
   .brand__mark svg { width: 26px; height: 26px; }
   #brand-name { font-size: var(--fs-md); }
 }
+
+/* --- manager: thumbnails and publish status ------------------------------ */
+
+.adminrow__thumb {
+  width: 3.25rem;
+  height: 2.5rem;
+  flex: none;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: top center;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+}
+
+.adminrow__thumb--ill { padding: .3rem; color: var(--brand); }
+
+/* Progress line under the buttons. Publishing commits and rebuilds, so this
+   is the only honest signal that the site has actually caught up. */
+.adminstatus {
+  margin: 0 0 1rem;
+  padding: 0;
+  color: var(--text-dim);
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+  min-height: 0;
+}
+
+.adminstatus:empty { display: none; }
+
+.adminstatus.is-working,
+.adminstatus.is-done {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .8rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.adminstatus.is-working {
+  background: var(--bg-soft);
+  color: var(--text);
+}
+
+.adminstatus.is-working::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+  border: 2px solid color-mix(in srgb, var(--text-dim) 35%, transparent);
+  border-top-color: var(--brand);
+  border-radius: 50%;
+  animation: spin 720ms linear infinite;
+}
+
+.adminstatus.is-done {
+  background: var(--accent-wash);
+  color: var(--text);
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+  font-weight: 600;
+}
+
+.adminstatus.is-done::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: inset 0 0 0 2px var(--surface), 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .adminstatus.is-working::before { animation: none !important; }
+}
+
+@media (max-width: 599.98px) {
+  .adminrow__thumb { width: 2.75rem; height: 2.25rem; }
+}

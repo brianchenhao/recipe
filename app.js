@@ -1545,7 +1545,13 @@
     }
 
     var rows = state.recipes.map(function (r) {
-      return '<li class="adminrow">'
+      var pic = cardImage(r);
+      var thumb = pic
+        ? '<img class="adminrow__thumb" src="' + escAttr(pic.src) + '" alt="" loading="lazy">'
+        : '<svg class="adminrow__thumb adminrow__thumb--ill" viewBox="0 0 200 150" aria-hidden="true">'
+          + '<use href="#' + escAttr(illRef(r)) + '"></use></svg>';
+      return '<li class="adminrow" data-row="' + escAttr(r.id) + '">'
+        + thumb
         + '<span class="adminrow__title">' + esc(r.title || r.id) + '</span>'
         + '<span class="adminrow__cat">' + esc(r.cat || '') + '</span>'
         + '<span class="adminrow__acts">'
@@ -1563,6 +1569,7 @@
       +   '<button class="btn btn--primary" type="button" id="admin-new">Add a recipe</button>'
       +   '<button class="btn btn--ghost" type="button" id="signout-btn">Sign out</button>'
       + '</div>'
+      + '<p class="adminstatus" id="admin-status" role="status" aria-live="polite"></p>'
       + '<div id="admin-form-host"></div>'
       + '<h2 class="section__title" style="margin:2rem 0 1rem">All recipes <span class="count">'
       +   state.recipes.length + '</span></h2>'
@@ -1573,6 +1580,9 @@
   function adminFormHtml(recipe) {
     var r = recipe || {};
     var editing = !!recipe;
+    // Show whatever picture the recipe already has, poster or card, so an
+    // edit never looks like the image went missing.
+    var existingPic = isStr(r.poster) ? r.poster : (isStr(r.img) ? r.img : '');
     var cats = allCategories();
     return '<form class="adminform" id="admin-form" novalidate>'
       + '<h2 class="adminform__title">' + (editing ? 'Edit “' + esc(r.title) + '”' : 'Add a recipe') + '</h2>'
@@ -1582,8 +1592,8 @@
       +   '<p class="adminform__hint">Upload the recipe image. This picture becomes the recipe — '
       +     'people tap it to zoom in.' + (editing ? ' Leave empty to keep the current one.' : '') + '</p>'
       +   '<input class="adminform__file" id="af-image" type="file" accept="image/*">'
-      +   '<div class="adminform__preview" id="af-preview"' + (r.poster ? '' : ' hidden') + '>'
-      +     (r.poster ? '<img src="' + escAttr(r.poster) + '" alt="">' : '')
+      +   '<div class="adminform__preview" id="af-preview"' + (existingPic ? '' : ' hidden') + '>'
+      +     (existingPic ? '<img src="' + escAttr(existingPic) + '" alt="">' : '')
       +   '</div>'
       +   '<p class="authform__msg" id="af-imgmsg" role="status" aria-live="polite"></p>'
       + '</div>'
@@ -1704,13 +1714,73 @@
         b.disabled = true;
         apiPost('/api/recipe-delete', { id: id }).then(function () {
           toast('Deleted — the site updates in a minute');
-          b.closest('.adminrow').style.opacity = '.4';
+          var row = b.closest('.adminrow');
+          if (row) row.style.opacity = '.4';
+          var status = $('#admin-status');
+          if (status) {
+            status.className = 'adminstatus is-working';
+            status.textContent = 'Removing “' + id + '” — the site updates in a minute…';
+          }
         }).catch(function (err) {
           toast(err.message, true);
           b.disabled = false;
         });
       });
     });
+  }
+
+  // Re-read recipes.json from the network, bypassing any cache, and rebuild
+  // the in-memory list. Without this the manager keeps showing the data it
+  // loaded at boot, so a freshly published recipe looks like it vanished.
+  function refreshRecipes() {
+    return fetch('recipes.json?cb=' + Date.now(), { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        var list = arr(data && data.recipes).filter(function (r) { return r && isStr(r.id) && isStr(r.title); });
+        if (!list.length) return false;
+        state.recipes = list;
+        state.byId = {};
+        list.forEach(function (r) { state.byId[r.id] = r; });
+        return true;
+      })
+      .catch(function () { return false; });
+  }
+
+  // Publishing commits to the repository, which triggers a rebuild — so the
+  // recipe is not on the site the instant the button returns. Poll until it
+  // actually appears and say so, rather than leaving her wondering.
+  function watchForPublish(id, created) {
+    var status = $('#admin-status');
+    var started = Date.now();
+    var LIMIT = 3 * 60 * 1000;
+
+    function say(text, cls) {
+      if (!status) return;
+      status.textContent = text || '';
+      status.className = 'adminstatus' + (cls ? ' ' + cls : '');
+    }
+
+    say((created ? 'Publishing' : 'Saving') + ' “' + id + '” — the site updates in a minute…', 'is-working');
+
+    function tick() {
+      refreshRecipes().then(function (ok) {
+        var present = ok && !!state.byId[id];
+        if (present) {
+          say((created ? 'Published' : 'Saved') + ' — “' + ((state.byId[id] || {}).title || id) + '” is live on the site now.', 'is-done');
+          toast(created ? 'Published and live' : 'Saved and live');
+          // Redraw the manager so the new recipe is in the list.
+          if ((parseHash().parts[0] || '') === 'admin') { render(); }
+          return;
+        }
+        if (Date.now() - started > LIMIT) {
+          say('Saved to the recipe book, but the site has not picked it up yet. '
+            + 'It usually appears within a couple of minutes — refresh the page to check.', '');
+          return;
+        }
+        setTimeout(tick, 6000);
+      });
+    }
+    setTimeout(tick, 6000);
   }
 
   function wireAdminForm(recipe) {
@@ -1796,8 +1866,8 @@
 
       apiPost('/api/recipe-save', payload).then(function (d) {
         say(msg, '');
-        toast(d.created ? 'Published — live in a minute or two' : 'Saved — live in a minute or two');
         $('#admin-form-host').innerHTML = '';
+        watchForPublish(d.id, d.created);
       }).catch(function (err) {
         say(msg, err.message, true);
       }).then(function () { btn.disabled = false; });
