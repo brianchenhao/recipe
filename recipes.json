@@ -2699,6 +2699,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "herbal-coconut-soup",
+      "title": "Herbal Coconut Soup",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [
+        "Chinese",
+        "Coconut",
+        "Chicken",
+        "Soup",
+        "Herbal"
+      ],
+      "img": "images/herbal-coconut-soup-card.jpg",
+      "poster": "images/herbal-coconut-soup.jpg",
+      "ill": "ill-pot",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chicken and Chinese herbs steamed whole inside a young coconut — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "1.5-2 hr",
+      "yield": "2 to 3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
