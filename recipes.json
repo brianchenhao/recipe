@@ -2952,6 +2952,34 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "seremban-bread-chicken",
+      "title": "Seremban Bread Chicken",
+      "author": "",
+      "cat": "Main Dish",
+      "tags": [],
+      "img": "images/seremban-bread-chicken-card.jpg",
+      "poster": "images/seremban-bread-chicken.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
