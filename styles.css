@@ -5265,3 +5265,51 @@ textarea:focus-visible { outline: none; }
   text-transform: uppercase;
   letter-spacing: .08em;
 }
+
+/* --- account button in the header ---------------------------------------- */
+/* The only entry point to signing in from a cold visit, so it is present at
+   every width rather than hidden behind the menu. */
+
+#account-link {
+  display: grid;
+  place-items: center;
+  flex: none;
+  text-decoration: none;
+}
+
+#account-link svg { width: 1.35rem; height: 1.35rem; }
+#account-link:hover { background: var(--bg-soft); border-color: var(--border); }
+#account-link:active { transform: scale(.9); }
+
+/* Signed in: a quiet dot so the state is readable at a glance. */
+#account-link.is-on { position: relative; color: var(--brand-ink); }
+
+#account-link.is-on::after {
+  content: "";
+  position: absolute;
+  top: .35rem;
+  right: .35rem;
+  width: .45rem;
+  height: .45rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 2px var(--bg);
+}
+
+.footer__signin {
+  color: var(--brand-ink);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.footer__signin:hover { text-decoration: underline; }
+
+/* At 360px the header carries menu + brand + search + account + theme, so
+   tighten the icon buttons rather than dropping one. */
+@media (max-width: 420px) {
+  #site-header .btn--icon { min-width: 2.5rem; width: 2.5rem; padding: 0; }
+  #site-header .btn--icon svg { width: 1.2rem; height: 1.2rem; }
+  .brand__mark svg { width: 26px; height: 26px; }
+  #brand-name { font-size: var(--fs-md); }
+}

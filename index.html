@@ -34,7 +34,7 @@
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23b8431d'/%3E%3Cpath%20d='M11%2029h42c0%2013-9.4%2021-21%2021S11%2042%2011%2029z'%20fill='%23fdf7ef'/%3E%3Cpath%20d='M15%2031h34c-.6%209.4-8%2015-17%2015s-16.4-5.6-17-15z'%20fill='%23f0b46a'/%3E%3Cpath%20d='M26%2023c4-3%204-6%200-9m10%209c4-3%204-6%200-9'%20fill='none'%20stroke='%23fdf7ef'%20stroke-width='3.2'%20stroke-linecap='round'/%3E%3C/svg%3E" type="image/svg+xml">
 
-<link rel="stylesheet" href="styles.css?v=11">
+<link rel="stylesheet" href="styles.css?v=13">
 <script>
 /* Theme bootstrap: applies the persisted theme before first paint to avoid a flash.
    The toggle itself, and everything else, is owned by app.js. */
@@ -50,7 +50,7 @@
   }
 })();
 </script>
-<script defer src="app.js?v=11"></script>
+<script defer src="app.js?v=13"></script>
 </head>
 <body>
 
@@ -114,6 +114,13 @@
         <path d="M6 6l12 12M18 6L6 18"></path>
       </svg>
     </button>
+
+    <a id="account-link" class="btn btn--icon account-link" href="#/login" aria-label="Sign in">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="8" r="3.6"></circle>
+        <path d="M4.8 20a7.6 7.6 0 0 1 14.4 0"></path>
+      </svg>
+    </a>
 
     <button id="theme-toggle" class="btn btn--icon theme-toggle" type="button" aria-label="Switch colour theme" aria-pressed="false" title="Switch colour theme">
       <svg class="icon icon--sun" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">

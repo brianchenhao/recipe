@@ -39,6 +39,7 @@
     searchInput:$('#search-input'),
     searchSuggest: $('#search-suggest'),
     searchToggle: $('#search-toggle'),
+    accountLink: $('#account-link'),
     footer:     $('#site-footer'),
     skeleton:   $('#skeleton'),
     progress:   $('#scroll-progress'),
@@ -428,11 +429,6 @@
       return { c: c, n: applyFilter(state.recipes, c.filter).length };
     }).filter(function (x) { return x.n > 0; }).slice(0, 4);
 
-    if (state.session && state.session.signedIn) {
-      html += '<h3>Manage</h3><ul>'
-           +  '<li><a href="#/admin">My recipes</a></li></ul>';
-    }
-
     if (colls.length) {
       html += '<h3>Collections</h3><ul>';
       colls.forEach(function (x) {
@@ -441,6 +437,12 @@
       });
       html += '</ul>';
     }
+
+    html += '<h3>Manage</h3><ul>'
+         +  (state.session && state.session.signedIn
+              ? '<li><a href="#/admin">My recipes</a></li>'
+              : '<li><a href="#/login">Sign in</a></li>')
+         +  '</ul>';
 
     el.mobileNav.innerHTML = html;
     $$('a', el.mobileNav).forEach(function (a) { a.addEventListener('click', closeMobileNav); });
@@ -487,7 +489,9 @@
       +     '<p class="footer__note">' + esc(note) + '</p>'
       +   '</div>'
       +   '<div class="footer__cols">' + colsHtml + '</div>'
-      +   '<p class="footer__legal muted">© ' + year + ' ' + esc(site.brand || 'Recipe Mom') + '. Recipes for the love of it.</p>'
+      +   '<p class="footer__legal muted">© ' + year + ' ' + esc(site.brand || 'Recipe Mom') + '. Recipes for the love of it. '
+      +     '<a class="footer__signin" href="' + (signedIn() ? '#/admin' : '#/login') + '">'
+      +       (signedIn() ? 'My recipes' : 'Sign in') + '</a></p>'
       + '</div>';
   }
 
@@ -648,6 +652,7 @@
     el.app.setAttribute('aria-busy', 'false');
 
     showHero(isHome);
+    syncAccountLink();
 
     // Route-enter animation.
     el.app.classList.remove('page-enter');
@@ -1341,11 +1346,22 @@
   function loadSession() {
     return fetch('/api/session', { credentials: 'same-origin' })
       .then(function (r) { return r.json(); })
-      .then(function (d) { state.session = d || { signedIn: false }; return state.session; })
-      .catch(function () { state.session = { signedIn: false }; return state.session; });
+      .then(function (d) { state.session = d || { signedIn: false }; syncAccountLink(); return state.session; })
+      .catch(function () { state.session = { signedIn: false }; syncAccountLink(); return state.session; });
   }
 
   function signedIn() { return !!(state.session && state.session.signedIn); }
+
+  // The header button is the only way in from a cold visit, so it always
+  // points somewhere useful: the manager when signed in, sign-in when not.
+  function syncAccountLink() {
+    if (!el.accountLink) return;
+    var inn = signedIn();
+    el.accountLink.setAttribute('href', inn ? '#/admin' : '#/login');
+    el.accountLink.setAttribute('aria-label', inn ? 'My recipes' : 'Sign in');
+    el.accountLink.setAttribute('title', inn ? 'My recipes' : 'Sign in');
+    el.accountLink.classList.toggle('is-on', inn);
+  }
 
   /* ---------------------------------------------------------- login UI */
 
