@@ -2733,6 +2733,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chinese-pumpkin-cakes",
+      "title": "Chinese Pumpkin Cakes",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "Chinese",
+        "Pumpkin",
+        "Glutinous Rice",
+        "Pan Fried",
+        "Snack"
+      ],
+      "img": "images/chinese-pumpkin-cakes-card.jpg",
+      "poster": "images/chinese-pumpkin-cakes.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Steamed pumpkin worked into glutinous rice dough and pan-fried until crisp — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 10 to 12 cakes",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
