@@ -2834,6 +2834,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "easy-chocolate-fudge",
+      "title": "Easy Chocolate Fudge",
+      "author": "",
+      "cat": "Side Dish",
+      "tags": [
+        "No Bake",
+        "Chocolate",
+        "Dessert",
+        "Make Ahead",
+        "5 Ingredients"
+      ],
+      "img": "images/easy-chocolate-fudge-card.jpg",
+      "poster": "images/easy-chocolate-fudge.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rich no-bake fudge from just five ingredients, chilled until firm — the whole recipe is in the picture.",
+      "lede": "Resipi penuh ada dalam gambar — ketik untuk zum masuk. (The whole recipe is in the picture — tap it to zoom in.)",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 16 squares",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
