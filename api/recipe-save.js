@@ -7,7 +7,11 @@
 
 import { json, readJsonBody, requireSession } from './_lib.js';
 
-const CATEGORIES = ['Main Dish', 'Side Dish', 'Juice', 'Fermentation'];
+const CATEGORIES = [
+  'Stir-Fry', 'Noodles', 'Soup', 'Rice', 'Meat & Seafood',
+  'Salad', 'Breakfast', 'Kuih', 'Bread & Pau', 'Cake',
+  'Dessert', 'Drinks', 'Pickles', 'Sides & Sauces'
+];
 const ILLUSTRATIONS = [
   'ill-bowl', 'ill-noodles', 'ill-bread', 'ill-cake', 'ill-pot', 'ill-pan',
   'ill-salad', 'ill-egg', 'ill-fish', 'ill-grill', 'ill-jar', 'ill-drink'
@@ -81,7 +85,7 @@ function cleanRecipe(input, posterPath, cardPath) {
     id: slugify(input.id),
     title: String(input.title || '').trim().slice(0, 140),
     author: String(input.author || '').trim().slice(0, 80),
-    cat: CATEGORIES.includes(input.cat) ? input.cat : 'Main Dish',
+    cat: CATEGORIES.includes(input.cat) ? input.cat : 'Stir-Fry',
     tags,
     img: cardPath || String(input.img || ''),
     poster: posterPath || String(input.poster || ''),
@@ -93,17 +97,51 @@ function cleanRecipe(input, posterPath, cardPath) {
     level: '', prep: '', cook: '', active: '',
     total: String(input.total || '').trim().slice(0, 40),
     yield: String(input.yield || '').trim().slice(0, 40),
-    serves: 0,
+    serves: numOrZero(input.serves, 99),
     // Ratings are never accepted from the client — the site does not show
     // invented social proof.
     rating: 0,
     reviews: 0,
-    ingredientGroups: [],
-    steps: [],
-    tips: [],
-    cooksNote: '',
+    ingredientGroups: cleanGroups(input.ingredientGroups),
+    steps: cleanSteps(input.steps),
+    tips: Array.isArray(input.tips)
+      ? input.tips.filter(t => typeof t === 'string' && t.trim()).slice(0, 8).map(t => t.trim().slice(0, 300))
+      : [],
+    cooksNote: String(input.cooksNote || '').trim().slice(0, 600),
     nutrition: {}
   };
+}
+
+function numOrZero(v, max) {
+  const n = typeof v === 'number' ? v : parseFloat(v);
+  if (!isFinite(n) || n <= 0) return 0;
+  return Math.min(max === undefined ? n : max, Math.round(n * 100) / 100);
+}
+
+/** A full extraction may carry the ingredients and method; keep them tidy. */
+function cleanGroups(groups) {
+  if (!Array.isArray(groups)) return [];
+  return groups.filter(Boolean).slice(0, 8).map(g => ({
+    group: String(g.group || '').trim().slice(0, 80),
+    items: Array.isArray(g.items)
+      ? g.items.filter(Boolean).slice(0, 40).map(it => ({
+          name: String(it.name || '').trim().slice(0, 160),
+          usQty: numOrZero(it.usQty),
+          usUnit: String(it.usUnit || '').trim().slice(0, 20),
+          metricQty: numOrZero(it.metricQty),
+          metricUnit: String(it.metricUnit || '').trim().slice(0, 20),
+          note: String(it.note || '').trim().slice(0, 160)
+        })).filter(it => it.name)
+      : []
+  })).filter(g => g.items.length);
+}
+
+function cleanSteps(steps) {
+  if (!Array.isArray(steps)) return [];
+  return steps.filter(Boolean).slice(0, 30).map(s => ({
+    title: String(s.title || '').trim().slice(0, 80),
+    text: String(s.text || (typeof s === 'string' ? s : '')).trim().slice(0, 900)
+  })).filter(s => s.text);
 }
 
 export default async function handler(req, res) {

@@ -13,23 +13,73 @@
       "label": "Recipes",
       "columns": [
         {
-          "heading": "Browse",
+          "heading": "Savoury",
           "links": [
             {
-              "label": "Main Dish",
-              "cat": "Main Dish"
+              "label": "Stir-Fry",
+              "cat": "Stir-Fry"
             },
             {
-              "label": "Side Dish",
-              "cat": "Side Dish"
+              "label": "Noodles",
+              "cat": "Noodles"
             },
             {
-              "label": "Juice",
-              "cat": "Juice"
+              "label": "Soup",
+              "cat": "Soup"
             },
             {
-              "label": "Fermentation",
-              "cat": "Fermentation"
+              "label": "Rice",
+              "cat": "Rice"
+            },
+            {
+              "label": "Meat & Seafood",
+              "cat": "Meat & Seafood"
+            }
+          ]
+        },
+        {
+          "heading": "Light & fresh",
+          "links": [
+            {
+              "label": "Salad",
+              "cat": "Salad"
+            },
+            {
+              "label": "Breakfast",
+              "cat": "Breakfast"
+            },
+            {
+              "label": "Sides & Sauces",
+              "cat": "Sides & Sauces"
+            },
+            {
+              "label": "Pickles",
+              "cat": "Pickles"
+            }
+          ]
+        },
+        {
+          "heading": "Baked & sweet",
+          "links": [
+            {
+              "label": "Kuih",
+              "cat": "Kuih"
+            },
+            {
+              "label": "Bread & Pau",
+              "cat": "Bread & Pau"
+            },
+            {
+              "label": "Cake",
+              "cat": "Cake"
+            },
+            {
+              "label": "Dessert",
+              "cat": "Dessert"
+            },
+            {
+              "label": "Drinks",
+              "cat": "Drinks"
             }
           ]
         }
@@ -63,10 +113,20 @@
     }
   ],
   "categories": [
-    "Main Dish",
-    "Side Dish",
-    "Juice",
-    "Fermentation"
+    "Stir-Fry",
+    "Noodles",
+    "Soup",
+    "Rice",
+    "Meat & Seafood",
+    "Salad",
+    "Breakfast",
+    "Kuih",
+    "Bread & Pau",
+    "Cake",
+    "Dessert",
+    "Drinks",
+    "Pickles",
+    "Sides & Sauces"
   ],
   "collections": [
     {

@@ -84,10 +84,20 @@ collections:
                         name: cat
                         widget: select
                         options:
-                          - Main Dish
-                          - Side Dish
-                          - Juice
-                          - Fermentation
+                          - Stir-Fry
+                          - Noodles
+                          - Soup
+                          - Rice
+                          - "Meat & Seafood"
+                          - Salad
+                          - Breakfast
+                          - Kuih
+                          - "Bread & Pau"
+                          - Cake
+                          - Dessert
+                          - Drinks
+                          - Pickles
+                          - "Sides & Sauces"
           - label: Categories
             name: categories
             widget: list
@@ -135,10 +145,20 @@ collections:
                     widget: select
                     required: false
                     options:
-                      - Main Dish
-                      - Side Dish
-                      - Juice
-                      - Fermentation
+                      - Stir-Fry
+                      - Noodles
+                      - Soup
+                      - Rice
+                      - "Meat & Seafood"
+                      - Salad
+                      - Breakfast
+                      - Kuih
+                      - "Bread & Pau"
+                      - Cake
+                      - Dessert
+                      - Drinks
+                      - Pickles
+                      - "Sides & Sauces"
                   - label: Tag
                     name: tag
                     widget: string
@@ -210,10 +230,20 @@ collections:
                 widget: select
                 required: false
                 options:
-                  - Main Dish
-                  - Side Dish
-                  - Juice
-                  - Fermentation
+                  - Stir-Fry
+                  - Noodles
+                  - Soup
+                  - Rice
+                  - "Meat & Seafood"
+                  - Salad
+                  - Breakfast
+                  - Kuih
+                  - "Bread & Pau"
+                  - Cake
+                  - Dessert
+                  - Drinks
+                  - Pickles
+                  - "Sides & Sauces"
               - label: Tags
                 name: tags
                 widget: list

@@ -4,7 +4,7 @@
       "id": "rosemary-sourdough-focaccia",
       "title": "Rosemary Sourdough Focaccia",
       "author": "Recipe Mom",
-      "cat": "Fermentation",
+      "cat": "Bread & Pau",
       "tags": [
         "Sourdough",
         "Slow Rise",
@@ -24,8 +24,8 @@
       "total": "19 hr",
       "yield": "One 13-by-9-inch focaccia, 12 pieces",
       "serves": 12,
-      "rating": 4.6,
-      "reviews": 141,
+      "rating": 0,
+      "reviews": 0,
       "ingredientGroups": [
         {
           "group": "Dough",
@@ -167,7 +167,7 @@
       "id": "thai-congee",
       "title": "Thai Congee (Jok)",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Rice",
       "tags": [
         "Thai",
         "Rice",
@@ -201,7 +201,7 @@
       "id": "hyderabadi-chicken-biryani",
       "title": "Hyderabadi Chicken Biryani",
       "author": "Mom",
-      "cat": "Main Dish",
+      "cat": "Rice",
       "tags": [
         "Indian",
         "Chicken",
@@ -221,8 +221,8 @@
       "total": "1 hr 45 min",
       "yield": "6 servings",
       "serves": 6,
-      "rating": 4.8,
-      "reviews": 197,
+      "rating": 0,
+      "reviews": 0,
       "ingredientGroups": [
         {
           "group": "Marinated Chicken",
@@ -397,7 +397,7 @@
       "id": "ginger-scallion-shrimp-fried-rice",
       "title": "Ginger Scallion Shrimp Fried Rice",
       "author": "Mom",
-      "cat": "Main Dish",
+      "cat": "Rice",
       "tags": [
         "Quick",
         "Weeknight",
@@ -417,8 +417,8 @@
       "total": "30 min",
       "yield": "4 servings",
       "serves": 4,
-      "rating": 4.6,
-      "reviews": 623,
+      "rating": 0,
+      "reviews": 0,
       "ingredientGroups": [
         {
           "group": "",
@@ -567,7 +567,7 @@
       "id": "blistered-basil-drunken-noodles",
       "title": "Blistered Basil Drunken Noodles",
       "author": "Mom",
-      "cat": "Main Dish",
+      "cat": "Noodles",
       "tags": [
         "Thai",
         "Stir-fry",
@@ -588,8 +588,8 @@
       "total": "35 min",
       "yield": "2 to 3 servings",
       "serves": 3,
-      "rating": 4.8,
-      "reviews": 312,
+      "rating": 0,
+      "reviews": 0,
       "ingredientGroups": [
         {
           "group": "Sauce",
@@ -755,7 +755,7 @@
       "id": "weeknight-tamarind-pad-thai",
       "title": "Weeknight Tamarind Pad Thai",
       "author": "Mom",
-      "cat": "Main Dish",
+      "cat": "Noodles",
       "tags": [
         "Thai",
         "Shrimp",
@@ -775,8 +775,8 @@
       "total": "45 min",
       "yield": "4 servings",
       "serves": 4,
-      "rating": 4.6,
-      "reviews": 208,
+      "rating": 0,
+      "reviews": 0,
       "ingredientGroups": [
         {
           "group": "",
@@ -945,7 +945,7 @@
       "id": "miso-butter-chicken-ramen",
       "title": "Miso Butter Chicken Ramen",
       "author": "Mom",
-      "cat": "Main Dish",
+      "cat": "Noodles",
       "tags": [
         "Japanese",
         "Chicken",
@@ -965,8 +965,8 @@
       "total": "1 hr",
       "yield": "4 bowls",
       "serves": 4,
-      "rating": 4.9,
-      "reviews": 154,
+      "rating": 0,
+      "reviews": 0,
       "ingredientGroups": [
         {
           "group": "Broth",
@@ -1140,7 +1140,7 @@
       "id": "iced-matcha-oat-latte",
       "title": "Iced Matcha Oat Latte",
       "author": "Recipe Mom",
-      "cat": "Juice",
+      "cat": "Drinks",
       "tags": [
         "matcha",
         "iced",
@@ -1160,8 +1160,8 @@
       "total": "15 min",
       "yield": "2 tall glasses",
       "serves": 2,
-      "rating": 4.5,
-      "reviews": 96,
+      "rating": 0,
+      "reviews": 0,
       "ingredientGroups": [
         {
           "group": "Vanilla syrup",
@@ -1299,7 +1299,7 @@
       "id": "mediterranean-tuna-salad",
       "title": "Mediterranean Tuna Salad",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Salad",
       "tags": [
         "No Cook",
         "High Protein",
@@ -1320,8 +1320,8 @@
       "total": "10 min",
       "yield": "2 servings",
       "serves": 2,
-      "rating": 4.8,
-      "reviews": 64,
+      "rating": 0,
+      "reviews": 0,
       "ingredientGroups": [
         {
           "group": "",
@@ -1426,7 +1426,7 @@
       "id": "high-fiber-overnight-oats",
       "title": "High-Fiber Overnight Oats",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Breakfast",
       "tags": [
         "Overnight",
         "No Cook",
@@ -1550,7 +1550,7 @@
       "id": "garlic-oyster-tempeh-stir-fry",
       "title": "Garlic & Oyster Sauce Tempeh Stir-Fry",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Stir-Fry",
       "tags": [
         "Stir-Fry",
         "Tempeh",
@@ -1682,7 +1682,7 @@
       "id": "acar-timun-nyonya",
       "title": "Acar Timun Nyonya",
       "author": "",
-      "cat": "Fermentation",
+      "cat": "Pickles",
       "tags": [
         "Nyonya",
         "Malaysian",
@@ -1716,7 +1716,7 @@
       "id": "thai-papaya-salad-som-tam",
       "title": "Thai Papaya Salad (Som Tam)",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Salad",
       "tags": [
         "Thai",
         "Som Tam",
@@ -1750,7 +1750,7 @@
       "id": "laksa-goreng",
       "title": "Laksa Goreng",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Noodles",
       "tags": [
         "Malaysian",
         "Noodles",
@@ -1784,7 +1784,7 @@
       "id": "thai-basil-chicken-pad-kra-pao",
       "title": "Thai Basil Chicken (Pad Kra Pao)",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Stir-Fry",
       "tags": [
         "Thai",
         "Stir Fry",
@@ -1818,7 +1818,7 @@
       "id": "pad-see-ew",
       "title": "Pad See Ew",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Noodles",
       "tags": [
         "Thai",
         "Noodles",
@@ -1852,7 +1852,7 @@
       "id": "taiwan-shaobing",
       "title": "Taiwan Shaobing",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Bread & Pau",
       "tags": [
         "Taiwanese",
         "Flatbread",
@@ -1886,7 +1886,7 @@
       "id": "hakka-nam-yee-fried-pork",
       "title": "Hakka Nam Yee Fried Pork",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Meat & Seafood",
       "tags": [
         "Hakka",
         "Chinese",
@@ -1920,7 +1920,7 @@
       "id": "hakka-braised-pork-black-fungus",
       "title": "Hakka Braised Pork with Black Fungus",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Meat & Seafood",
       "tags": [
         "Hakka",
         "Chinese",
@@ -1954,7 +1954,7 @@
       "id": "seremban-dry-beef-laksa",
       "title": "Seremban Dry Beef Laksa Noodle",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Noodles",
       "tags": [
         "Malaysian",
         "Seremban",
@@ -1988,7 +1988,7 @@
       "id": "taiwanese-beef-noodle-soup",
       "title": "Taiwanese Beef Noodle Soup",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Soup",
       "tags": [
         "Taiwanese",
         "Chinese",
@@ -2022,7 +2022,7 @@
       "id": "radish-cake-lo-bak-go",
       "title": "Radish Cake (Lo Bak Go)",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Kuih",
       "tags": [
         "Chinese",
         "Dim Sum",
@@ -2056,7 +2056,7 @@
       "id": "thai-long-bean-salad-palar",
       "title": "Thai Long Bean Salad with Palar",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Salad",
       "tags": [
         "Thai",
         "Som Tam",
@@ -2091,7 +2091,7 @@
       "id": "thai-steamed-squid-lemon",
       "title": "Thai Steamed Squid with Lemon",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Meat & Seafood",
       "tags": [
         "Thai",
         "Seafood",
@@ -2125,7 +2125,7 @@
       "id": "hakka-soon-kuih",
       "title": "Hakka Soon Kuih",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Kuih",
       "tags": [
         "Hakka",
         "Chinese",
@@ -2159,7 +2159,7 @@
       "id": "char-siu-pau",
       "title": "Char Siu Pau",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Bread & Pau",
       "tags": [
         "Chinese",
         "Dim Sum",
@@ -2193,7 +2193,7 @@
       "id": "mui-choy-pau",
       "title": "Mui Choy Pau",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Bread & Pau",
       "tags": [
         "Chinese",
         "Malaysian",
@@ -2228,7 +2228,7 @@
       "id": "sheng-rou-pau",
       "title": "Sheng Rou Pau",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Bread & Pau",
       "tags": [
         "Chinese",
         "Dim Sum",
@@ -2262,7 +2262,7 @@
       "id": "chinese-veggie-pau",
       "title": "Chinese Veggie Pau",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Bread & Pau",
       "tags": [
         "Chinese",
         "Dim Sum",
@@ -2296,7 +2296,7 @@
       "id": "radish-skin-namul",
       "title": "Radish Skin Namul",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Salad",
       "tags": [
         "Korean",
         "Namul",
@@ -2330,7 +2330,7 @@
       "id": "japanese-lemon-daikon-pickle",
       "title": "Japanese Lemon Daikon Pickle",
       "author": "",
-      "cat": "Fermentation",
+      "cat": "Pickles",
       "tags": [
         "Japanese",
         "Pickle",
@@ -2364,7 +2364,7 @@
       "id": "easy-uttapam",
       "title": "Easy Uttapam",
       "author": "",
-      "cat": "Fermentation",
+      "cat": "Breakfast",
       "tags": [
         "South Indian",
         "Fermented Batter",
@@ -2398,7 +2398,7 @@
       "id": "potato-masala",
       "title": "Potato Masala",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Sides & Sauces",
       "tags": [
         "South Indian",
         "Potato",
@@ -2432,7 +2432,7 @@
       "id": "dosa",
       "title": "Dosa",
       "author": "",
-      "cat": "Fermentation",
+      "cat": "Breakfast",
       "tags": [
         "South Indian",
         "Fermented Batter",
@@ -2466,7 +2466,7 @@
       "id": "easy-idly",
       "title": "Easy Idly",
       "author": "",
-      "cat": "Fermentation",
+      "cat": "Breakfast",
       "tags": [
         "South Indian",
         "Fermented Batter",
@@ -2500,7 +2500,7 @@
       "id": "chai-kueh",
       "title": "Chai Kueh",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Kuih",
       "tags": [
         "Chinese",
         "Dim Sum",
@@ -2534,7 +2534,7 @@
       "id": "coconut-chutney",
       "title": "Coconut Chutney",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Sides & Sauces",
       "tags": [
         "South Indian",
         "Coconut",
@@ -2568,7 +2568,7 @@
       "id": "hokkien-mee",
       "title": "Hokkien Mee",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Noodles",
       "tags": [
         "Malaysian",
         "Noodles",
@@ -2602,7 +2602,7 @@
       "id": "dong-quai-chicken-rice",
       "title": "Dong Quai Chicken Rice",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Rice",
       "tags": [
         "Chinese",
         "Rice Cooker",
@@ -2636,7 +2636,7 @@
       "id": "herbal-chicken-rice",
       "title": "Herbal Chicken Rice",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Rice",
       "tags": [
         "Chinese",
         "Rice Cooker",
@@ -2670,7 +2670,7 @@
       "id": "pumpkin-baked-egg-custard",
       "title": "Air Fryer Pumpkin Baked Egg Custard",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Dessert",
       "tags": [
         "Air Fryer",
         "Pumpkin",
@@ -2704,7 +2704,7 @@
       "id": "herbal-coconut-soup",
       "title": "Herbal Coconut Soup",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Soup",
       "tags": [
         "Chinese",
         "Coconut",
@@ -2738,7 +2738,7 @@
       "id": "chinese-pumpkin-cakes",
       "title": "Chinese Pumpkin Cakes",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Kuih",
       "tags": [
         "Chinese",
         "Pumpkin",
@@ -2772,7 +2772,7 @@
       "id": "banana-cake",
       "title": "Banana Cake",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Cake",
       "tags": [
         "Baking",
         "Banana",
@@ -2805,7 +2805,7 @@
       "id": "easy-peanut-pesto",
       "title": "Easy Peanut Pesto",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Sides & Sauces",
       "tags": [
         "Pesto",
         "Peanut",
@@ -2839,7 +2839,7 @@
       "id": "easy-chocolate-fudge",
       "title": "Easy Chocolate Fudge",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Dessert",
       "tags": [
         "No Bake",
         "Chocolate",
@@ -2873,7 +2873,7 @@
       "id": "chocolate-devil-cake",
       "title": "Chocolate Devil Cake",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Cake",
       "tags": [],
       "img": "images/chocolate-devil-cake-card.jpg",
       "poster": "images/chocolate-devil-cake.jpg",
@@ -2901,7 +2901,7 @@
       "id": "fudgy-chocolate-brownies",
       "title": "Fudgy Chocolate Brownies",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Dessert",
       "tags": [],
       "img": "images/fudgy-chocolate-brownies-card.jpg",
       "poster": "images/fudgy-chocolate-brownies.jpg",
@@ -2929,7 +2929,7 @@
       "id": "chocolate-walnut-cake",
       "title": "Chocolate Walnut Cake",
       "author": "",
-      "cat": "Side Dish",
+      "cat": "Cake",
       "tags": [],
       "img": "images/chocolate-walnut-cake-card.jpg",
       "poster": "images/chocolate-walnut-cake.jpg",
@@ -2957,7 +2957,7 @@
       "id": "seremban-bread-chicken",
       "title": "Seremban Bread Chicken",
       "author": "",
-      "cat": "Main Dish",
+      "cat": "Meat & Seafood",
       "tags": [],
       "img": "images/seremban-bread-chicken-card.jpg",
       "poster": "images/seremban-bread-chicken.jpg",

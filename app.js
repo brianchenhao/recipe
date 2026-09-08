@@ -1783,8 +1783,61 @@
     setTimeout(tick, 6000);
   }
 
+  // After a picture is chosen we ask what to do with it, rather than deciding
+  // for her: just the labels, or read the whole recipe out of the picture.
+  function askExtractMode() {
+    return new Promise(function (resolve) {
+      var wrap = document.createElement('div');
+      wrap.className = 'askmode';
+      wrap.innerHTML =
+          '<div class="askmode__backdrop"></div>'
+        + '<div class="askmode__panel" role="dialog" aria-modal="true" aria-labelledby="askmode-title">'
+        +   '<h2 class="askmode__title" id="askmode-title">Read the picture?</h2>'
+        +   '<p class="askmode__sub">The picture stays the recipe either way. This is about how much '
+        +     'gets filled in for you underneath it.</p>'
+        +   '<button class="askmode__opt" type="button" data-mode="basic">'
+        +     '<span class="askmode__optname">Just the basics</span>'
+        +     '<span class="askmode__optdesc">Name, category, tags, time and servings. Quick.</span>'
+        +   '</button>'
+        +   '<button class="askmode__opt askmode__opt--full" type="button" data-mode="full">'
+        +     '<span class="askmode__optname">Read the whole recipe</span>'
+        +     '<span class="askmode__optdesc">Also pulls out the ingredients and the steps, so the '
+        +       'recipe can be searched and read as text. Takes a few seconds longer.</span>'
+        +   '</button>'
+        +   '<button class="askmode__opt askmode__opt--skip" type="button" data-mode="none">'
+        +     '<span class="askmode__optname">Don\u2019t read it</span>'
+        +     '<span class="askmode__optdesc">I will type the details myself.</span>'
+        +   '</button>'
+        + '</div>';
+      document.body.appendChild(wrap);
+      document.body.classList.add('is-locked');
+
+      function close(mode) {
+        document.body.classList.remove('is-locked');
+        if (wrap.parentNode) wrap.parentNode.removeChild(wrap);
+        document.removeEventListener('keydown', onKey);
+        resolve(mode);
+      }
+      function onKey(e) { if (e.key === 'Escape') close('none'); }
+
+      wrap.addEventListener('click', function (e) {
+        var btn = e.target.closest && e.target.closest('[data-mode]');
+        if (btn) return close(btn.getAttribute('data-mode'));
+        if (e.target.classList.contains('askmode__backdrop')) close('none');
+      });
+      document.addEventListener('keydown', onKey);
+      // Force a reflow, then reveal synchronously. requestAnimationFrame does
+      // not fire in a backgrounded tab, which would leave the page locked
+      // behind a dialog that never appeared.
+      void wrap.offsetWidth;
+      wrap.classList.add('is-open');
+      var first = wrap.querySelector('[data-mode]');
+      if (first) first.focus();
+    });
+  }
+
   function wireAdminForm(recipe) {
-    var pending = { poster: '', card: '' };
+    var pending = { poster: '', card: '', full: null };
     var msg = $('#af-msg');
     var imgMsg = $('#af-imgmsg');
 
@@ -1806,16 +1859,23 @@
         prev.innerHTML = '<img src="' + out.poster + '" alt="">';
 
         if (!aiOn) {
-          // Nothing reads the picture automatically on this deployment —
-          // say so plainly rather than trying a call that can only fail.
+          // Nothing reads the picture on this deployment — say so plainly
+          // rather than trying a call that can only fail.
           say(imgMsg, 'Picture ready — please fill in the details below.');
           return null;
         }
-        say(imgMsg, 'Reading the picture…');
-        // Ask Gemini to fill in the details so nothing has to be typed.
-        return apiPost('/api/recipe-extract', {
-          imageBase64: out.poster.split(',')[1],
-          mimeType: 'image/jpeg'
+        say(imgMsg, 'Picture ready.');
+        return askExtractMode().then(function (mode) {
+          if (mode === 'none') {
+            say(imgMsg, 'Picture ready — please fill in the details below.');
+            return null;
+          }
+          say(imgMsg, mode === 'full' ? 'Reading the whole recipe — this takes a few seconds…' : 'Reading the picture…');
+          return apiPost('/api/recipe-extract', {
+            imageBase64: out.poster.split(',')[1],
+            mimeType: 'image/jpeg',
+            mode: mode
+          });
         });
       }).then(function (d) {
         if (!d) return;
@@ -1826,9 +1886,26 @@
         if (!$('#af-yield').value) $('#af-yield').value = d.yield || '';
         if (d.cat) $('#af-cat').value = d.cat;
         if (d.ill) $('#af-ill').value = d.ill;
-        say(imgMsg, 'Filled in from the picture — please check it below.');
+
+        if (d.mode === 'full') {
+          // Held aside and sent on save; the form stays short either way.
+          pending.full = {
+            lede: d.lede || '',
+            serves: d.serves || 0,
+            ingredientGroups: d.ingredientGroups || [],
+            steps: d.steps || [],
+            tips: d.tips || [],
+            cooksNote: d.cooksNote || ''
+          };
+          var ing = (d.ingredientGroups || []).reduce(function (n, g) { return n + ((g.items || []).length); }, 0);
+          var stp = (d.steps || []).length;
+          say(imgMsg, 'Read the whole recipe — ' + ing + ' ingredient' + (ing === 1 ? '' : 's')
+            + ' and ' + stp + ' step' + (stp === 1 ? '' : 's') + ' found. Check the details below, then publish.');
+        } else {
+          say(imgMsg, 'Filled in from the picture — please check it below.');
+        }
       }).catch(function (err) {
-        say(imgMsg, 'Picture ready. (Could not read the details automatically: ' + err.message + ')', true);
+        say(imgMsg, 'Picture ready. (Could not read it automatically: ' + err.message + ')', true);
       });
     });
 
@@ -1861,6 +1938,22 @@
         },
         originalId: recipe ? recipe.id : ''
       };
+      // A full read supplies the ingredients and method; a basic one does not,
+      // and editing an existing recipe keeps whatever it already had.
+      if (pending.full) {
+        payload.recipe.lede = pending.full.lede || payload.recipe.lede;
+        payload.recipe.serves = pending.full.serves || 0;
+        payload.recipe.ingredientGroups = pending.full.ingredientGroups || [];
+        payload.recipe.steps = pending.full.steps || [];
+        payload.recipe.tips = pending.full.tips || [];
+        payload.recipe.cooksNote = pending.full.cooksNote || '';
+      } else if (recipe) {
+        payload.recipe.ingredientGroups = recipe.ingredientGroups || [];
+        payload.recipe.steps = recipe.steps || [];
+        payload.recipe.tips = recipe.tips || [];
+        payload.recipe.cooksNote = recipe.cooksNote || '';
+        payload.recipe.serves = recipe.serves || 0;
+      }
       if (pending.poster) { payload.posterBase64 = pending.poster.split(',')[1]; payload.posterMime = 'image/jpeg'; }
       if (pending.card) { payload.cardBase64 = pending.card.split(',')[1]; payload.cardMime = 'image/jpeg'; }
 

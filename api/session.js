@@ -17,9 +17,9 @@ export default function handler(req, res) {
       email: !!(process.env.RESEND_API_KEY && process.env.MAIL_FROM)
     },
     googleClientId: process.env.GOOGLE_CLIENT_ID || '',
-    // Whether the picture-upload step can ask Gemini to fill in the recipe
-    // details. Not required for adding a recipe — the form still works
-    // without it, just with nothing pre-filled.
-    ai: !!process.env.GEMINI_API_KEY
+    // Whether the picture-upload step can have the picture read for her.
+    // Not required for adding a recipe — the form still works without it,
+    // just with nothing filled in automatically.
+    ai: !!process.env.OPENROUTER_API_KEY
   });
 }
