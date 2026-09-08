@@ -4560,16 +4560,26 @@ textarea:focus-visible { outline: none; }
 
 .recipe--poster { padding-bottom: var(--sp-6); }
 
+/* Title, then the picture, then everything else. The picture is the recipe
+   here, so nothing is allowed to stand between the two — the buttons and the
+   time/servings grid used to push it a whole screen down on a phone. */
 .poster__head {
   max-width: var(--measure);
-  padding-bottom: var(--sp-6);
-  margin-bottom: var(--sp-6);
-  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--sp-5);
 }
 
 .poster {
-  margin: 0 0 var(--sp-8);
+  margin: 0 0 var(--sp-6);
 }
+
+.poster__meta {
+  padding-top: var(--sp-6);
+  margin-bottom: var(--sp-6);
+  border-top: 1px solid var(--border);
+}
+
+.poster__meta .recipe__actions { margin-bottom: var(--sp-5); }
+.poster__meta .recipe__actions:last-child { margin-bottom: 0; }
 
 /* The whole image is one big button. */
 .poster__btn {
@@ -5033,7 +5043,90 @@ textarea:focus-visible { outline: none; }
 @media (max-width: 599.98px) {
   .lightbox__img { max-height: 78vh; }
   .lightbox__bar { bottom: max(.75rem, env(safe-area-inset-bottom)); }
-  .poster__head { padding-bottom: var(--sp-5); margin-bottom: var(--sp-5); }
+  .poster__head { margin-bottom: var(--sp-4); }
+  .poster__meta { padding-top: var(--sp-5); }
+}
+
+
+/* --- 19.10 Finding things -------------------------------------------------
+   Two small filters, added once the site outgrew being scrollable: one in the
+   phone menu for the fourteen categories, one over the admin list for the
+   fifty-odd recipes. Both narrow what is already on screen — nothing is
+   fetched, so they stay instant and work offline. */
+
+.mnav__filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 0 var(--sp-3);
+}
+
+.mnav__filter svg {
+  position: absolute;
+  left: .85rem;
+  color: var(--text-dim);
+  pointer-events: none;
+}
+
+.mnav__filterinput {
+  width: 100%;
+  padding: .7rem .9rem .7rem 2.6rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--fs-sm);
+  transition: border-color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+}
+
+.mnav__filterinput::placeholder { color: var(--text-dim); }
+.mnav__filterinput:focus-visible {
+  outline: none;
+  border-color: var(--brand);
+  background: var(--surface);
+}
+
+/* The browser's own clear button is tiny and inconsistent; hide it and let
+   her wipe the box the usual way. */
+.mnav__filterinput::-webkit-search-cancel-button { display: none; }
+
+.mnav__none,
+.adminfilter__none {
+  margin: 0 0 var(--sp-4);
+  color: var(--text-dim);
+  font-size: var(--fs-sm);
+  line-height: 1.55;
+}
+
+.adminfilter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.adminfilter__field {
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+
+.adminfilter__field .authform__label { display: block; margin-bottom: .3rem; }
+.adminfilter__field .authform__input,
+.adminfilter__field select { width: 100%; }
+
+/* Sits on the baseline of the two fields rather than floating above them. */
+.adminfilter__clear { flex: 0 0 auto; margin-bottom: .1rem; }
+
+@media (max-width: 599.98px) {
+  .adminfilter { gap: var(--sp-2) var(--sp-3); }
+  .adminfilter__field { flex: 1 1 100%; }
+  .adminfilter__clear { width: 100%; margin-bottom: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mnav__filterinput { transition: none !important; }
 }
 
 /* --- 19.9 Full-bleed scrollers must not overflow the page -------------- */

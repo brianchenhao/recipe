@@ -416,12 +416,23 @@
     }).filter(function (c) { return c.n > 0; });
 
     if (cats.length) {
-      html += '<h3>Browse by category</h3><ul>';
+      // Fourteen categories is more than fits comfortably on a phone screen,
+      // so the menu lets her type a couple of letters instead of scrolling.
+      html += '<h3>Browse by category</h3>';
+      html += '<div class="mnav__filter">'
+           +  '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">'
+           +  '<circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg>'
+           +  '<input class="mnav__filterinput" id="mnav-catfilter" type="search" autocomplete="off"'
+           +  ' placeholder="Find a category" aria-label="Find a category" aria-controls="mnav-cats">'
+           +  '</div>';
+      html += '<ul id="mnav-cats">';
       cats.forEach(function (c) {
         html += '<li><a href="#/category/' + encodeURIComponent(c.name) + '">' + esc(c.name)
              +  '<span class="mnav__count">' + c.n + '</span></a></li>';
       });
       html += '</ul>';
+      html += '<p class="mnav__none" id="mnav-catnone" role="status" hidden>'
+           +  'No category by that name. Try the search at the top to look inside the recipes.</p>';
     }
 
     // A short editorial shelf — these are real filters, unlike the old menu.
@@ -448,6 +459,29 @@
     $$('a', el.mobileNav).forEach(function (a) { a.addEventListener('click', closeMobileNav); });
     var sb = $('#mnav-search', el.mobileNav);
     if (sb) sb.addEventListener('click', function () { closeMobileNav(); openHeaderSearch(); });
+
+    var cf = $('#mnav-catfilter', el.mobileNav);
+    if (cf) {
+      cf.addEventListener('input', function () {
+        var q = cf.value.trim().toLowerCase();
+        var shown = 0;
+        $$('#mnav-cats li', el.mobileNav).forEach(function (li) {
+          var hit = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
+          li.hidden = !hit;
+          if (hit) shown++;
+        });
+        var none = $('#mnav-catnone', el.mobileNav);
+        if (none) none.hidden = shown !== 0;
+      });
+      // Enter on the only remaining category opens it, so she never has to
+      // aim at a small target after typing.
+      cf.addEventListener('keydown', function (e) {
+        if (e.key !== 'Enter') return;
+        e.preventDefault();
+        var open = $$('#mnav-cats li', el.mobileNav).filter(function (li) { return !li.hidden; });
+        if (open.length) { var a = $('a', open[0]); if (a) a.click(); }
+      });
+    }
   }
 
   function openMobileNav() {
@@ -929,9 +963,12 @@
       + '<button class="btn btn--ghost" type="button" id="print-recipe">Print recipe</button>'
       + '</div>';
 
+    // Title, then the picture. On a phone the picture IS the recipe, so the
+    // buttons and the time/servings grid go underneath it — putting them on
+    // top pushed the actual recipe a full screen below the fold.
     var head = '<div class="poster__head">' + eyebrow
       + '<h1 class="recipe__title">' + esc(r.title || 'Untitled recipe') + '</h1>'
-      + ratingBlock + lede + statsHtml(r) + actions + '</div>';
+      + ratingBlock + lede + '</div>';
 
     var fig = '<figure class="poster reveal">'
       + '<button class="poster__btn" type="button" id="poster-open" aria-label="Zoom into the recipe image">'
@@ -945,7 +982,9 @@
     setMeta(r.title || 'Recipe', isStr(r.desc) ? r.desc : (isStr(r.lede) ? r.lede : ''));
     injectRecipeJsonLd(r);
 
-    return '<article class="recipe recipe--poster">' + crumbs + head + fig + extras + '</article>' + relatedHtml(r);
+    var below = '<div class="poster__meta">' + actions + statsHtml(r) + '</div>';
+
+    return '<article class="recipe recipe--poster">' + crumbs + head + fig + below + extras + '</article>' + relatedHtml(r);
   }
 
   function statsHtml(r) {
@@ -1550,7 +1589,14 @@
         ? '<img class="adminrow__thumb" src="' + escAttr(pic.src) + '" alt="" loading="lazy">'
         : '<svg class="adminrow__thumb adminrow__thumb--ill" viewBox="0 0 200 150" aria-hidden="true">'
           + '<use href="#' + escAttr(illRef(r)) + '"></use></svg>';
-      return '<li class="adminrow" data-row="' + escAttr(r.id) + '">'
+      // Name and tags only, folded into one lowercase string so the filter
+      // never has to touch the recipe objects again. Category is deliberately
+      // left out — the dropdown next to the box already does that, and
+      // including it made "pau" return every loaf in Bread & Pau.
+      var hay = [r.title || '', r.id || '', arr(r.tags).join(' ')]
+        .join(' ').toLowerCase();
+      return '<li class="adminrow" data-row="' + escAttr(r.id) + '"'
+        + ' data-cat="' + escAttr(r.cat || '') + '" data-search="' + escAttr(hay) + '">'
         + thumb
         + '<span class="adminrow__title">' + esc(r.title || r.id) + '</span>'
         + '<span class="adminrow__cat">' + esc(r.cat || '') + '</span>'
@@ -1571,8 +1617,27 @@
       + '</div>'
       + '<p class="adminstatus" id="admin-status" role="status" aria-live="polite"></p>'
       + '<div id="admin-form-host"></div>'
-      + '<h2 class="section__title" style="margin:2rem 0 1rem">All recipes <span class="count">'
+      + '<h2 class="section__title" style="margin:2rem 0 1rem">All recipes <span class="count" id="admin-count">'
       +   state.recipes.length + '</span></h2>'
+      // With fifty-odd recipes, finding the one to edit was the slow part.
+      + '<div class="adminfilter">'
+      +   '<div class="adminfilter__field">'
+      +     '<label class="authform__label" for="admin-q">Search</label>'
+      +     '<input class="authform__input" id="admin-q" type="search" autocomplete="off"'
+      +     ' placeholder="Type part of the name">'
+      +   '</div>'
+      +   '<div class="adminfilter__field">'
+      +     '<label class="authform__label" for="admin-catfilter">Category</label>'
+      +     '<select id="admin-catfilter"><option value="">All categories</option>'
+      +       allCategories().map(function (c) {
+                return '<option value="' + escAttr(c) + '">' + esc(c) + '</option>';
+              }).join('')
+      +     '</select>'
+      +   '</div>'
+      +   '<button class="btn btn--ghost btn--sm adminfilter__clear" type="button" id="admin-clear">Clear</button>'
+      + '</div>'
+      + '<p class="adminfilter__none" id="admin-none" role="status" hidden>'
+      +   'Nothing matches. Clear the search to see them all again.</p>'
       + '<ul class="adminlist">' + rows + '</ul>'
       + '</section>';
   }
@@ -1699,6 +1764,37 @@
 
     var newBtn = $('#admin-new');
     if (newBtn) newBtn.addEventListener('click', function () { openForm(null); });
+
+    // --- narrowing the list down to the one she wants to edit -------------
+    var q = $('#admin-q');
+    var catFilter = $('#admin-catfilter');
+    var countEl = $('#admin-count');
+    var noneEl = $('#admin-none');
+
+    function applyAdminFilter() {
+      var t = q ? q.value.trim().toLowerCase() : '';
+      var c = catFilter ? catFilter.value : '';
+      var shown = 0;
+      $$('.adminlist .adminrow').forEach(function (li) {
+        var okText = !t || (li.getAttribute('data-search') || '').indexOf(t) !== -1;
+        var okCat = !c || li.getAttribute('data-cat') === c;
+        var hit = okText && okCat;
+        li.hidden = !hit;
+        if (hit) shown++;
+      });
+      if (countEl) countEl.textContent = shown;
+      if (noneEl) noneEl.hidden = shown !== 0;
+    }
+
+    if (q) q.addEventListener('input', applyAdminFilter);
+    if (catFilter) catFilter.addEventListener('change', applyAdminFilter);
+    var clearBtn = $('#admin-clear');
+    if (clearBtn) clearBtn.addEventListener('click', function () {
+      if (q) q.value = '';
+      if (catFilter) catFilter.value = '';
+      applyAdminFilter();
+      if (q) q.focus();
+    });
 
     $$('[data-edit]').forEach(function (b) {
       b.addEventListener('click', function () {
