@@ -185,11 +185,12 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         model,
-        // A reasoning model narrates before it answers, and that narration is
-        // what broke the parse. We only want the JSON.
-        reasoning: { enabled: false },
+        // Reasoning is mandatory on this endpoint and cannot be switched off,
+        // so the narration always comes back and extractJson() below is what
+        // actually gets us the object. The budget has to cover the thinking
+        // as well as the answer — too low and the reply arrives empty.
         temperature: 0.1,
-        max_tokens: full ? 6000 : 900,
+        max_tokens: full ? 12000 : 2500,
         response_format: { type: 'json_object' },
         messages: [{
           role: 'user',
