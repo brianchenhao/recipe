@@ -87,6 +87,37 @@ Transcribing the ingredients:
 ${SHARED_RULES}`;
 }
 
+/**
+ * Turn an OpenRouter refusal into something a person can act on. Every branch
+ * names the setting or page that fixes it — the point is that nobody has to
+ * come back and read this file to find out what went wrong.
+ */
+function explain(status, upstream, model) {
+  const tail = upstream ? ' (' + upstream + ')' : '';
+
+  if (status === 401 || status === 403) {
+    return 'The reader key was refused. Check OPENROUTER_API_KEY on the deployment, '
+      + 'or make a fresh key at openrouter.ai/settings/keys.' + tail;
+  }
+  if (status === 402) {
+    return 'The OpenRouter account is out of credit. Top it up at openrouter.ai/settings/credits '
+      + 'and try again — reading one picture costs well under a cent.' + tail;
+  }
+  if (status === 404 || /data polic|no endpoints|no allowed provider/i.test(upstream)) {
+    return 'OpenRouter is blocking the contributor model because the account\u2019s privacy setting '
+      + 'does not allow it. Open openrouter.ai/settings/privacy and switch on prompt training, '
+      + 'or set MUSE_MODEL to "meta/muse-spark-1.3" to use the private paid tier instead.' + tail;
+  }
+  if (status === 429) {
+    return 'The reader is rate-limited right now. Wait a minute and try the picture again.' + tail;
+  }
+  if (status >= 500) {
+    return 'The reader service is having trouble at its end. Try again in a minute \u2014 '
+      + 'nothing is wrong with the picture.' + tail;
+  }
+  return 'The reader (' + model + ') refused the request.' + tail;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Use POST.' });
   if (!requireSession(req, res)) return;
@@ -134,7 +165,19 @@ export default async function handler(req, res) {
 
     if (!r.ok) {
       const detail = await r.text();
-      return json(res, 502, { error: 'The reader service rejected the request.', detail: detail.slice(0, 400) });
+      // "Rejected the request" told nobody anything. Turn the common refusals
+      // into a sentence that says what to actually go and change, and log the
+      // raw body so the runtime logs stay useful for whoever inherits this.
+      console.error('[recipe-extract] %s %s -> %s %s', model, full ? 'full' : 'basic', r.status, detail.slice(0, 600));
+
+      let upstream = '';
+      try {
+        const parsed = JSON.parse(detail);
+        upstream = (parsed && parsed.error && (parsed.error.message || parsed.error)) || '';
+      } catch { /* not JSON */ }
+      upstream = String(upstream || detail).replace(/\s+/g, ' ').trim().slice(0, 300);
+
+      return json(res, 502, { error: explain(r.status, upstream, model), detail: upstream });
     }
 
     const data = await r.json();
@@ -193,6 +236,7 @@ export default async function handler(req, res) {
 
     return json(res, 200, out);
   } catch (err) {
+    console.error('[recipe-extract] network failure:', err && err.message);
     return json(res, 502, { error: `Could not reach the reader service: ${err.message}` });
   }
 }

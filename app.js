@@ -2001,7 +2001,10 @@
           say(imgMsg, 'Filled in from the picture — please check it below.');
         }
       }).catch(function (err) {
-        say(imgMsg, 'Picture ready. (Could not read it automatically: ' + err.message + ')', true);
+        // The picture is safe either way — it is already uploaded and previewed.
+        // Say so first, then give the real reason, which now names the fix.
+        say(imgMsg, 'Picture ready \u2014 you can still fill the details in by hand. '
+          + 'The automatic reader did not run: ' + err.message, true);
       });
     });
 
