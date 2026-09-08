@@ -5129,6 +5129,123 @@ textarea:focus-visible { outline: none; }
   .mnav__filterinput { transition: none !important; }
 }
 
+
+/* --- 19.11 One-tap add ----------------------------------------------------
+   The add button is pinned to the bottom of the screen instead of sitting at
+   the top of the page, so it is under a thumb however far down the list she
+   has scrolled. It opens the camera or gallery directly; the busy panel then
+   covers the upload, the read and the publish so the wait never looks like a
+   dead screen. */
+
+.fab {
+  position: fixed;
+  left: 50%;
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 300;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.fab__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  min-height: 3.25rem;
+  padding: 0 1.6rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 .5rem 1.5rem rgba(20, 12, 8, .28), 0 0 0 .35rem var(--bg);
+  transition: transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease),
+              background-color var(--dur-fast) var(--ease);
+}
+
+.fab__btn:hover { transform: translateY(-2px); box-shadow: 0 .7rem 1.8rem rgba(20, 12, 8, .34), 0 0 0 .35rem var(--bg); }
+.fab__btn:active { transform: translateY(0); }
+.fab__btn svg { flex: 0 0 auto; }
+
+/* --- the working panel --- */
+
+.busy {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: grid;
+  place-items: center;
+  padding: var(--gutter);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--dur) var(--ease), visibility 0s linear var(--dur);
+}
+
+.busy.is-open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--dur) var(--ease), visibility 0s;
+}
+
+.busy__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 12, 8, .55);
+  backdrop-filter: blur(3px);
+}
+
+.busy__panel {
+  position: relative;
+  width: min(100%, 22rem);
+  padding: var(--sp-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.busy__spinner {
+  display: block;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0 auto var(--sp-4);
+  border: 3px solid var(--border);
+  border-top-color: var(--brand);
+  border-radius: 50%;
+  animation: busy-spin .8s linear infinite;
+}
+
+@keyframes busy-spin { to { transform: rotate(360deg); } }
+
+.busy__step {
+  margin: 0 0 .35rem;
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  font-weight: 700;
+  color: var(--text);
+}
+
+.busy__hint {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fab__btn { transition: none !important; }
+  .fab__btn:hover { transform: translateX(0) !important; }
+  .busy { transition: none !important; }
+  /* Still needs to say it is alive, just without the spin. */
+  .busy__spinner { animation: busy-pulse 1.4s ease-in-out infinite; }
+  @keyframes busy-pulse { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+}
+
 /* --- 19.9 Full-bleed scrollers must not overflow the page -------------- */
 /* .chiprow--scroll pulls itself out with negative margins, which only works
    when the parent carries matching padding. As a direct child of #app (which
@@ -5244,7 +5361,9 @@ textarea:focus-visible { outline: none; }
 
 /* --- the manager ------------------------------------------------------- */
 
-.adminlist { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+/* padding-bottom leaves room for the floating add button (section 19.11),
+   which overlaps the last row otherwise. */
+.adminlist { list-style: none; margin: 0; padding: 0 0 5.5rem; display: grid; gap: .5rem; }
 
 .adminrow {
   display: flex;

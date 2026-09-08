@@ -682,6 +682,7 @@
     else if (head === 'admin') html = renderAdmin();
     else { html = renderHome(); isHome = true; }
 
+    unmountFab();
     el.app.innerHTML = html;
     el.app.setAttribute('aria-busy', 'false');
 
@@ -1609,11 +1610,12 @@
 
     return '<section class="section">'
       + '<div class="pagehead"><h1>My recipes</h1>'
-      + '<p>Signed in as ' + esc(state.session.email) + '. Add a recipe by uploading its picture — '
-      + 'the details fill in by themselves, then you check them and publish.</p></div>'
+      + '<p>Signed in as ' + esc(state.session.email) + '. Tap <strong>Add a recipe</strong> at the '
+      + 'bottom, choose the picture, and it goes up on its own. Anything the reader got wrong '
+      + 'you can change with Edit afterwards.</p></div>'
       + '<div class="row" style="margin-bottom:1.25rem">'
-      +   '<button class="btn btn--primary" type="button" id="admin-new">Add a recipe</button>'
       +   '<button class="btn btn--ghost" type="button" id="signout-btn">Sign out</button>'
+      +   '<button class="btn btn--ghost" type="button" id="admin-new">Add one by hand</button>'
       + '</div>'
       + '<p class="adminstatus" id="admin-status" role="status" aria-live="polite"></p>'
       + '<div id="admin-form-host"></div>'
@@ -1708,6 +1710,57 @@
 
   // Shrink on the device rather than uploading a 3 MB phone photo, and cut the
   // 4:3 card from the top so an infographic keeps its title on the card.
+  // Mirrors slugify() in api/recipe-save.js. Kept in step so the address we
+  // reserve here is the address the server actually writes.
+  function slugify(str) {
+    return String(str || '')
+      .toLowerCase()
+      .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '')
+      .slice(0, 60);
+  }
+
+  // Two recipes can easily share a name. Reserve a free address up front
+  // rather than letting the save come back with a clash she has to resolve.
+  function freeId(title) {
+    var base = slugify(title) || 'recipe';
+    if (!state.byId[base]) return base;
+    for (var n = 2; n < 60; n++) {
+      if (!state.byId[base + '-' + n]) return base + '-' + n;
+    }
+    return base + '-' + Date.now();
+  }
+
+  // A full-screen "working on it" panel. Publishing takes a picture upload,
+  // a read and a commit, so silence would look like nothing had happened.
+  function busy(firstStep) {
+    var wrap = document.createElement('div');
+    wrap.className = 'busy';
+    wrap.innerHTML =
+        '<div class="busy__backdrop"></div>'
+      + '<div class="busy__panel" role="status" aria-live="polite">'
+      +   '<span class="busy__spinner" aria-hidden="true"></span>'
+      +   '<p class="busy__step" id="busy-step"></p>'
+      +   '<p class="busy__hint">This takes a few seconds. Please keep the page open.</p>'
+      + '</div>';
+    document.body.appendChild(wrap);
+    document.body.classList.add('is-locked');
+    void wrap.offsetWidth;
+    wrap.classList.add('is-open');
+
+    var stepEl = wrap.querySelector('#busy-step');
+    stepEl.textContent = firstStep || 'Working…';
+
+    return {
+      step: function (text) { stepEl.textContent = text; },
+      done: function () {
+        document.body.classList.remove('is-locked');
+        if (wrap.parentNode) wrap.parentNode.removeChild(wrap);
+      }
+    };
+  }
+
   function processImage(file) {
     return new Promise(function (resolve, reject) {
       var reader = new FileReader();
@@ -1741,6 +1794,31 @@
     });
   }
 
+  // The add bar lives on <body>, not inside the rendered section: .section
+  // gets an identity transform from the page-enter animation, and any
+  // transform makes an element the containing block for position:fixed, which
+  // would drop the bar at the bottom of the whole list instead of the screen.
+  function mountFab() {
+    unmountFab();
+    var fab = document.createElement('div');
+    fab.className = 'fab';
+    fab.innerHTML =
+        '<input type="file" id="quick-file" accept="image/*" hidden>'
+      + '<button class="fab__btn" type="button" id="quick-add">'
+      +   '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"'
+      +   ' stroke-width="2.2" stroke-linecap="round" aria-hidden="true">'
+      +   '<path d="M12 5v14M5 12h14"></path></svg>'
+      +   '<span>Add a recipe</span>'
+      + '</button>';
+    document.body.appendChild(fab);
+    return fab;
+  }
+
+  function unmountFab() {
+    var old = document.querySelector('.fab');
+    if (old && old.parentNode) old.parentNode.removeChild(old);
+  }
+
   function wireAdmin() {
     var out = $('#signout-btn');
     if (out) {
@@ -1754,6 +1832,8 @@
     }
     if (!signedIn()) return;
 
+    mountFab();
+
     var host = $('#admin-form-host');
 
     function openForm(recipe) {
@@ -1764,6 +1844,99 @@
 
     var newBtn = $('#admin-new');
     if (newBtn) newBtn.addEventListener('click', function () { openForm(null); });
+
+    // --- one-tap add: picture in, recipe published ------------------------
+    // Pick a picture and it goes up on its own — read for its name, category
+    // and tags, then published. Anything the reader got wrong is fixed with
+    // Edit afterwards, which is faster than filling a form in every time.
+    var quickBtn = $('#quick-add');
+    var quickFile = $('#quick-file');
+
+    if (quickBtn && quickFile) {
+      quickBtn.addEventListener('click', function () { quickFile.click(); });
+
+      quickFile.addEventListener('change', function () {
+        var file = quickFile.files && quickFile.files[0];
+        // Reset immediately so choosing the same picture again still fires.
+        quickFile.value = '';
+        if (!file) return;
+        quickAdd(file);
+      });
+    }
+
+    function quickAdd(file) {
+      var work = busy('Getting the picture ready…');
+      var shot = null;
+
+      processImage(file).then(function (out) {
+        shot = out;
+        if (!(state.session && state.session.ai)) return null;
+        work.step('Reading the picture…');
+        return apiPost('/api/recipe-extract', {
+          imageBase64: out.poster.split(',')[1],
+          mimeType: 'image/jpeg',
+          mode: 'basic'
+        }).catch(function (err) {
+          // A failed read is not a failed upload. Carry on without it and
+          // let her name the recipe on the form instead of losing the photo.
+          return { __failed: err.message || 'the reader did not answer' };
+        });
+      }).then(function (d) {
+        if (d && d.__failed) return handOver(shot, 'The picture is ready, but it could not be read '
+          + 'automatically (' + d.__failed + '). Please give it a name and publish.');
+        if (!d) return handOver(shot, 'The picture is ready. Please give it a name and publish.');
+
+        var title = String(d.title || '').trim();
+        // Without a name there is nothing to publish under, so fall back to
+        // the form rather than inventing one.
+        if (!title) return handOver(shot, 'The picture is ready, but the reader could not make out '
+          + 'a name for it. Please type one and publish.');
+
+        work.step('Publishing “' + title + '”…');
+        var payload = {
+          recipe: {
+            id: freeId(title),
+            title: title,
+            cat: d.cat || 'Stir-Fry',
+            tags: arr(d.tags),
+            desc: String(d.desc || '').trim(),
+            total: String(d.total || '').trim(),
+            yield: String(d.yield || '').trim(),
+            ill: d.ill || 'ill-bowl',
+            badge: 'New',
+            lede: 'The whole recipe is in the picture — tap it to zoom in.',
+            img: '', poster: ''
+          },
+          originalId: '',
+          posterBase64: shot.poster.split(',')[1], posterMime: 'image/jpeg',
+          cardBase64: shot.card.split(',')[1], cardMime: 'image/jpeg'
+        };
+        return apiPost('/api/recipe-save', payload).then(function (saved) {
+          work.done();
+          watchForPublish(saved.id, saved.created);
+        });
+      }).catch(function (err) {
+        work.done();
+        toast(err.message || 'Something went wrong adding that picture.', true);
+      });
+
+      // Drops into the ordinary form with the picture already attached, so a
+      // half-finished add never costs her the photo.
+      function handOver(out, why) {
+        work.done();
+        openForm(null);
+        var prev = $('#af-preview');
+        if (prev && out) {
+          prev.hidden = false;
+          prev.innerHTML = '<img src="' + out.poster + '" alt="">';
+        }
+        if (out) setPendingImages(out);
+        var m = $('#af-imgmsg');
+        if (m) { m.textContent = why; m.classList.add('is-error'); }
+        var t = $('#af-title');
+        if (t) t.focus();
+      }
+    }
 
     // --- narrowing the list down to the one she wants to edit -------------
     var q = $('#admin-q');
@@ -1932,8 +2105,14 @@
     });
   }
 
+  // Assigned by wireAdminForm() while a form is on screen; see quickAdd().
+  var setPendingImages = function () {};
+
   function wireAdminForm(recipe) {
     var pending = { poster: '', card: '', full: null };
+    // Lets the one-tap flow hand its already-processed picture over when it
+    // has to fall back to this form, instead of making her choose it again.
+    setPendingImages = function (out) { pending.poster = out.poster; pending.card = out.card; };
     var msg = $('#af-msg');
     var imgMsg = $('#af-imgmsg');
 
