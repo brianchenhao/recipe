@@ -118,6 +118,41 @@ function explain(status, upstream, model) {
   return 'The reader (' + model + ') refused the request.' + tail;
 }
 
+/**
+ * Find the JSON object inside a model reply. Reasoning models wrap their
+ * answer in prose, code fences, or both, so a plain JSON.parse of the whole
+ * reply fails on output that is otherwise perfectly good. Walks the string
+ * and returns the first balanced {...}, ignoring braces inside strings.
+ * Returns null when there is nothing parseable.
+ */
+function extractJson(text) {
+  const raw = String(text || '').trim();
+  if (!raw) return null;
+
+  // The easy case first.
+  try { return JSON.parse(raw); } catch { /* keep looking */ }
+
+  for (let i = 0; i < raw.length; i++) {
+    if (raw[i] !== '{') continue;
+    let depth = 0, inStr = false, esc = false;
+    for (let j = i; j < raw.length; j++) {
+      const ch = raw[j];
+      if (esc) { esc = false; continue; }
+      if (ch === '\\') { esc = true; continue; }
+      if (ch === '"') { inStr = !inStr; continue; }
+      if (inStr) continue;
+      if (ch === '{') depth++;
+      else if (ch === '}') {
+        depth--;
+        if (depth === 0) {
+          try { return JSON.parse(raw.slice(i, j + 1)); } catch { break; }
+        }
+      }
+    }
+  }
+  return null;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Use POST.' });
   if (!requireSession(req, res)) return;
@@ -150,6 +185,9 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         model,
+        // A reasoning model narrates before it answers, and that narration is
+        // what broke the parse. We only want the JSON.
+        reasoning: { enabled: false },
         temperature: 0.1,
         max_tokens: full ? 6000 : 900,
         response_format: { type: 'json_object' },
@@ -181,12 +219,17 @@ export default async function handler(req, res) {
     }
 
     const data = await r.json();
-    const text = data?.choices?.[0]?.message?.content || '';
-    let parsed;
-    try {
-      parsed = JSON.parse(String(text).replace(/^```(?:json)?/i, '').replace(/```$/, '').trim());
-    } catch {
-      return json(res, 502, { error: 'The reader did not return usable JSON.', detail: String(text).slice(0, 300) });
+    const msg = (data && data.choices && data.choices[0] && data.choices[0].message) || {};
+    // Some replies put the answer in `reasoning` when `content` comes back empty.
+    const text = String(msg.content || msg.reasoning || '');
+    const parsed = extractJson(text);
+    if (!parsed) {
+      console.error('[recipe-extract] unparseable reply from %s: %s', model, text.slice(0, 800));
+      return json(res, 502, {
+        error: 'The reader answered, but not with a recipe it could fill the form from. '
+          + 'Please try the picture again, or fill the details in by hand.',
+        detail: text.slice(0, 300)
+      });
     }
 
     // Never trust the model for values the site constrains.
