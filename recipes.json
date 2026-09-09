@@ -3046,6 +3046,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "greek-chicken-maryland",
+      "title": "Greek Chicken Maryland",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Greek",
+        "chicken",
+        "roasted",
+        "lemon",
+        "potato"
+      ],
+      "img": "images/greek-chicken-maryland-card.jpg",
+      "poster": "images/greek-chicken-maryland.jpg",
+      "ill": "ill-grill",
+      "badge": "New",
+      "featured": false,
+      "desc": "Juicy lemon-garlic roasted chicken with golden potatoes and oregano.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
