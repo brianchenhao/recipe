@@ -3013,6 +3013,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "fluffy-souffle-pancake",
+      "title": "Fluffy Souffle Pancake",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "Japanese",
+        "egg",
+        "pan-fried",
+        "fluffy"
+      ],
+      "img": "images/fluffy-souffle-pancake-card.jpg",
+      "poster": "images/fluffy-souffle-pancake.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, jiggly, cloud-like pancakes that are light, airy and melt in your mouth.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "makes 3-4 pancakes",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
