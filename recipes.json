@@ -3112,6 +3112,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cilantro-salad",
+      "title": "Cilantro Salad",
+      "author": "",
+      "cat": "Salad",
+      "tags": [
+        "Korean",
+        "cilantro",
+        "sesame",
+        "no-cook"
+      ],
+      "img": "images/cilantro-salad-card.jpg",
+      "poster": "images/cilantro-salad.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Fresh cilantro tossed with sesame, soy and chili for a fragrant side.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
