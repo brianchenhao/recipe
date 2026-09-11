@@ -3244,6 +3244,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "spicy-burdock-root-salad",
+      "title": "Spicy Burdock Root Salad",
+      "author": "",
+      "cat": "Salad",
+      "tags": [
+        "Korean",
+        "burdock root",
+        "spicy",
+        "tossed"
+      ],
+      "img": "images/spicy-burdock-root-salad-card.jpg",
+      "poster": "images/spicy-burdock-root-salad.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crisp, sweet and spicy burdock strips tossed in gochujang sesame dressing.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
