@@ -3178,6 +3178,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "temple-style-sauteed-cucumbers",
+      "title": "Temple-Style Sautéed Cucumbers",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Korean",
+        "cucumber",
+        "stir-fried",
+        "temple food"
+      ],
+      "img": "images/temple-style-sauteed-cucumbers-card.jpg",
+      "poster": "images/temple-style-sauteed-cucumbers.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Light, crispy sautéed cucumbers with pure flavours from Korean Buddhist temple cuisine.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 6",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
