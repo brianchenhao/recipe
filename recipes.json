@@ -3211,6 +3211,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "pan-fried-shiitake-mushrooms",
+      "title": "Pan-Fried Shiitake Mushrooms",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Korean",
+        "shiitake mushrooms",
+        "pan-fried",
+        "plant-based"
+      ],
+      "img": "images/pan-fried-shiitake-mushrooms-card.jpg",
+      "poster": "images/pan-fried-shiitake-mushrooms.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Sweet, savory and slightly spicy pan-fried shiitake with green chilies full of umami.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 5",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
