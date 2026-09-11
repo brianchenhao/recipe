@@ -3145,6 +3145,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sauteed-zucchini-with-perilla-seeds",
+      "title": "Sautéed Zucchini with Perilla Seeds",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Korean",
+        "zucchini",
+        "sautéed",
+        "perilla seeds"
+      ],
+      "img": "images/sauteed-zucchini-with-perilla-seeds-card.jpg",
+      "poster": "images/sauteed-zucchini-with-perilla-seeds.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "A simple, healthy and flavorful temple-style dish with fresh zucchini, savory seasonings and nutty perilla seeds.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 5",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
