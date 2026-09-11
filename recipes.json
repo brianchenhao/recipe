@@ -3641,6 +3641,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sweet-pancakes-filled-with-syrup-and-seeds",
+      "title": "Sweet Pancakes Filled with Syrup and Seeds",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Korean",
+        "flour",
+        "seeds",
+        "pan-fried"
+      ],
+      "img": "images/sweet-pancakes-filled-with-syrup-and-seeds-card.jpg",
+      "poster": "images/sweet-pancakes-filled-with-syrup-and-seeds.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy outside, chewy inside pancakes filled with sweet syrup and seeds.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 4 pancakes",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
