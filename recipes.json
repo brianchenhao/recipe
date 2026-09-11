@@ -3575,6 +3575,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "rice-cake-and-melted-cheese-skewers",
+      "title": "Rice Cake and Melted Cheese Skewers",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Korean",
+        "rice cake",
+        "mozzarella",
+        "pan-fried"
+      ],
+      "img": "images/rice-cake-and-melted-cheese-skewers-card.jpg",
+      "poster": "images/rice-cake-and-melted-cheese-skewers.jpg",
+      "ill": "ill-grill",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chewy grilled rice cake skewers with melted mozzarella and sweet condensed milk drizzle.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 1",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
