@@ -3343,6 +3343,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "korean-pancakes-with-thai-basil-chili",
+      "title": "Korean Pancakes with Thai Basil & Chili",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Korean",
+        "Thai basil",
+        "chili",
+        "pan-fried"
+      ],
+      "img": "images/korean-pancakes-with-thai-basil-chili-card.jpg",
+      "poster": "images/korean-pancakes-with-thai-basil-chili.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy savory pancakes with aromatic Thai basil and chili in fermented soybean batter.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
