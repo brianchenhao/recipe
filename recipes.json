@@ -3277,6 +3277,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "pan-fried-chinese-yam-slices",
+      "title": "Pan-Fried Chinese Yam Slices",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Korean",
+        "Chinese yam",
+        "pan-fried"
+      ],
+      "img": "images/pan-fried-chinese-yam-slices-card.jpg",
+      "poster": "images/pan-fried-chinese-yam-slices.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy outside, tender inside pan-fried yam slices, simple and healthy.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
