@@ -3475,6 +3475,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "shaved-ice-with-sweet-red-beans-and-fruits",
+      "title": "Shaved Ice with Sweet Red Beans and Fruits",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Korean",
+        "red beans",
+        "shaved ice",
+        "fruit"
+      ],
+      "img": "images/shaved-ice-with-sweet-red-beans-and-fruits-card.jpg",
+      "poster": "images/shaved-ice-with-sweet-red-beans-and-fruits.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Cool shaved ice topped with sweet red beans, fresh fruits, and milk.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
