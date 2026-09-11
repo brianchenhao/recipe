@@ -3608,6 +3608,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "candied-sweet-potatoes",
+      "title": "Candied Sweet Potatoes",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Korean",
+        "sweet potato",
+        "fried",
+        "candied"
+      ],
+      "img": "images/candied-sweet-potatoes-card.jpg",
+      "poster": "images/candied-sweet-potatoes.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy fried sweet potatoes coated in shiny caramelized sugar.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
