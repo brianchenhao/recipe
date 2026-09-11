@@ -3409,6 +3409,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "candied-ginger",
+      "title": "Candied Ginger",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Korean",
+        "ginger",
+        "candied",
+        "temple food"
+      ],
+      "img": "images/candied-ginger-card.jpg",
+      "poster": "images/candied-ginger.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chewy, sweet traditional Korean temple candy made with fresh ginger.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 1 cup",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
