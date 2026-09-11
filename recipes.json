@@ -3310,6 +3310,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "steamed-chinese-yams-ma-jjim",
+      "title": "Steamed Chinese Yams (Ma-Jjim 마찜)",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Korean",
+        "Chinese yam",
+        "steamed",
+        "temple food"
+      ],
+      "img": "images/steamed-chinese-yams-ma-jjim-card.jpg",
+      "poster": "images/steamed-chinese-yams-ma-jjim.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft steamed grated yam topped with shiitake mushrooms and chili in sesame oil.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
