@@ -3376,6 +3376,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sweet-and-crunchy-tofu",
+      "title": "Sweet and Crunchy Tofu",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Korean",
+        "tofu",
+        "fried",
+        "sweet-spicy"
+      ],
+      "img": "images/sweet-and-crunchy-tofu-card.jpg",
+      "poster": "images/sweet-and-crunchy-tofu.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy fried tofu cubes tossed in sweet spicy gochujang glaze.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
