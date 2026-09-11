@@ -3442,6 +3442,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "rice-cakes-dusted-with-soybean-powder",
+      "title": "Rice Cakes Dusted with Soybean Powder",
+      "author": "",
+      "cat": "Kuih",
+      "tags": [
+        "Korean",
+        "glutinous rice",
+        "steamed",
+        "soybean powder"
+      ],
+      "img": "images/rice-cakes-dusted-with-soybean-powder-card.jpg",
+      "poster": "images/rice-cakes-dusted-with-soybean-powder.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chewy, nutty, and naturally sweet rice cakes coated in soybean powder.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
