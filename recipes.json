@@ -3774,6 +3774,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "culantro-chimichurri",
+      "title": "Culantro Chimichurri",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Argentine",
+        "culantro",
+        "garlic",
+        "no-cook"
+      ],
+      "img": "images/culantro-chimichurri-card.jpg",
+      "poster": "images/culantro-chimichurri.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Herby, tangy, garlicky sauce perfect over grilled meats and veggies.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 1 cup",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
