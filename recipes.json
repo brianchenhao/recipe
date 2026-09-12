@@ -3906,6 +3906,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cuban-sofrito",
+      "title": "Cuban Sofrito",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Cuban",
+        "tomato",
+        "peppers",
+        "sautéed"
+      ],
+      "img": "images/cuban-sofrito-card.jpg",
+      "poster": "images/cuban-sofrito.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Aromatic Cuban pepper, onion and tomato base for stews, rice and beans.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 1½ cups",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
