@@ -3840,6 +3840,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-italian-soffritto",
+      "title": "The Italian Soffritto",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Italian",
+        "onion",
+        "carrot",
+        "slow-cooked"
+      ],
+      "img": "images/the-italian-soffritto-card.jpg",
+      "poster": "images/the-italian-soffritto.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Slow-cooked onion, carrot and celery base for Italian sauces, soups and stews.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 1 cup",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
