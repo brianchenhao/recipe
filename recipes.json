@@ -3873,6 +3873,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "dominican-sofrito-sazon",
+      "title": "Dominican Sofrito (Sazón)",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Dominican",
+        "peppers",
+        "herbs",
+        "blended"
+      ],
+      "img": "images/dominican-sofrito-sazon-card.jpg",
+      "poster": "images/dominican-sofrito-sazon.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Vibrant green herb-pepper blend forming the flavour base of Dominican cooking.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 2 cups",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
