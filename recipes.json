@@ -3707,6 +3707,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chadon-beni-sauce",
+      "title": "Chadon Beni Sauce",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Trinidadian",
+        "chadon beni",
+        "blended",
+        "condiment"
+      ],
+      "img": "images/chadon-beni-sauce-card.jpg",
+      "poster": "images/chadon-beni-sauce.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Fresh fragrant green seasoning blending chadon beni, herbs and pepper for marinades.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 1 cup",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
