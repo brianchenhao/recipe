@@ -3807,6 +3807,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-spanish-sofrito",
+      "title": "The Spanish Sofrito",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Spanish",
+        "tomato",
+        "peppers",
+        "sautéed"
+      ],
+      "img": "images/the-spanish-sofrito-card.jpg",
+      "poster": "images/the-spanish-sofrito.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rich tomato, pepper and onion base for paella, stews and sauces.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 2 cups",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
