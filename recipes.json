@@ -3674,6 +3674,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "recaito",
+      "title": "Recaito",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Puerto Rican",
+        "cilantro",
+        "herb base",
+        "blended"
+      ],
+      "img": "images/recaito-card.jpg",
+      "poster": "images/recaito.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Fresh Puerto Rican herb blend for rice, stews, beans and marinades.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 2 cups",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
