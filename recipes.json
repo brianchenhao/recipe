@@ -3939,6 +3939,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "white-sugar-sponge-cake",
+      "title": "White Sugar Sponge Cake",
+      "author": "",
+      "cat": "Kuih",
+      "tags": [
+        "Cantonese",
+        "rice flour",
+        "steamed",
+        "fermented"
+      ],
+      "img": "images/white-sugar-sponge-cake-card.jpg",
+      "poster": "images/white-sugar-sponge-cake.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, airy and lightly sweet classic Cantonese steamed treat.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "3 hrs 45 mins",
+      "yield": "Makes 4 Servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
