@@ -1,6 +1,10 @@
-// POST /api/recipe-extract  { imageBase64, mimeType, mode }
+// POST /api/recipe-extract  { imageBase64, mimeType, mode, section }
 //
 // Reads a recipe picture and fills in the fields around it.
+//
+// For the Health and Questions sections (section "health" | "questions") it
+// reads the title, topic, tags and the words in the picture instead, and
+// `mode` is ignored — there are no ingredients or steps to pull out.
 //
 //   mode "basic" — just the labels: name, category, tags, one-line
 //                  description, and any time/servings the image states.
@@ -14,15 +18,15 @@
 //   MUSE_MODEL=meta/muse-spark-1.3-contributor  (cheaper; Meta may train on it)
 
 import { json, readJsonBody, requireSession } from './_lib.js';
+import { sectionOf, categoriesFor, defaultCategory } from './_sections.js';
+import { explain, extractJson } from './_reader.js';
 
 const ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions';
 const DEFAULT_MODEL = 'meta/muse-spark-1.3-contributor';
 
-const CATEGORIES = [
-  'Stir-Fry', 'Noodles', 'Soup', 'Rice', 'Meat & Seafood',
-  'Salad', 'Breakfast', 'Kuih', 'Bread & Pau', 'Cake',
-  'Dessert', 'Drinks', 'Pickles', 'Sides & Sauces'
-];
+// Recipe categories come from the shared list, so they cannot drift from
+// what recipe-save.js accepts.
+const CATEGORIES = categoriesFor('recipes');
 const ILLUSTRATIONS = [
   'ill-bowl', 'ill-noodles', 'ill-bread', 'ill-cake', 'ill-pot', 'ill-pan',
   'ill-salad', 'ill-egg', 'ill-fish', 'ill-grill', 'ill-jar', 'ill-drink'
@@ -87,70 +91,28 @@ Transcribing the ingredients:
 ${SHARED_RULES}`;
 }
 
-/**
- * Turn an OpenRouter refusal into something a person can act on. Every branch
- * names the setting or page that fixes it — the point is that nobody has to
- * come back and read this file to find out what went wrong.
- */
-function explain(status, upstream, model) {
-  const tail = upstream ? ' (' + upstream + ')' : '';
+// Health posts and questions: no dish to classify, just what the picture says.
+function postPrompt(section) {
+  const cats = categoriesFor(section);
+  const isQ = section === 'questions';
+  return `You are reading a picture for the ${isQ ? 'Questions' : 'Health'} section of a family website.
+${isQ
+    ? 'The picture shows a question, usually about cooking, food or health, and often its answer.'
+    : 'The picture is a health tip, a home remedy, or a piece of health or nutrition advice.'}
 
-  if (status === 401 || status === 403) {
-    return 'The reader key was refused. Check OPENROUTER_API_KEY on the deployment, '
-      + 'or make a fresh key at openrouter.ai/settings/keys.' + tail;
-  }
-  if (status === 402) {
-    return 'The OpenRouter account is out of credit. Top it up at openrouter.ai/settings/credits '
-      + 'and try again — reading one picture costs well under a cent.' + tail;
-  }
-  if (status === 404 || /data polic|no endpoints|no allowed provider/i.test(upstream)) {
-    return 'OpenRouter is blocking the contributor model because the account\u2019s privacy setting '
-      + 'does not allow it. Open openrouter.ai/settings/privacy and switch on prompt training, '
-      + 'or set MUSE_MODEL to "meta/muse-spark-1.3" to use the private paid tier instead.' + tail;
-  }
-  if (status === 429) {
-    return 'The reader is rate-limited right now. Wait a minute and try the picture again.' + tail;
-  }
-  if (status >= 500) {
-    return 'The reader service is having trouble at its end. Try again in a minute \u2014 '
-      + 'nothing is wrong with the picture.' + tail;
-  }
-  return 'The reader (' + model + ') refused the request.' + tail;
+Return ONLY a JSON object with these keys:
+{
+  "title": "${isQ ? 'the question, written as a question ending in a question mark' : 'the title as printed, or a plain title of at most 8 words'}",
+  "cat": "one of: ${cats.join(' | ')}",
+  "tags": ["3 to 5 short tags"],
+  "desc": "one sentence, max 20 words, summarising ${isQ ? 'the answer' : 'the advice'}",
+  "body": "${isQ ? 'the answer' : 'the main points'} as the picture gives them, in plain sentences, with an empty line between paragraphs, at most 250 words; an empty string if the picture has no words beyond its title"
 }
 
-/**
- * Find the JSON object inside a model reply. Reasoning models wrap their
- * answer in prose, code fences, or both, so a plain JSON.parse of the whole
- * reply fails on output that is otherwise perfectly good. Walks the string
- * and returns the first balanced {...}, ignoring braces inside strings.
- * Returns null when there is nothing parseable.
- */
-function extractJson(text) {
-  const raw = String(text || '').trim();
-  if (!raw) return null;
-
-  // The easy case first.
-  try { return JSON.parse(raw); } catch { /* keep looking */ }
-
-  for (let i = 0; i < raw.length; i++) {
-    if (raw[i] !== '{') continue;
-    let depth = 0, inStr = false, esc = false;
-    for (let j = i; j < raw.length; j++) {
-      const ch = raw[j];
-      if (esc) { esc = false; continue; }
-      if (ch === '\\') { esc = true; continue; }
-      if (ch === '"') { inStr = !inStr; continue; }
-      if (inStr) continue;
-      if (ch === '{') depth++;
-      else if (ch === '}') {
-        depth--;
-        if (depth === 0) {
-          try { return JSON.parse(raw.slice(i, j + 1)); } catch { break; }
-        }
-      }
-    }
-  }
-  return null;
+Rules that matter:
+- Only use what the picture actually says. Never add medical advice, doses, or claims that are not printed on it.
+- Keep the picture's own wording where you can.
+- Reply with JSON only. No markdown fence, no commentary.`;
 }
 
 export default async function handler(req, res) {
@@ -169,7 +131,10 @@ export default async function handler(req, res) {
 
   const imageBase64 = String(body.imageBase64 || '').replace(/^data:[^;]+;base64,/, '');
   const mimeType = String(body.mimeType || 'image/jpeg');
-  const full = String(body.mode || 'basic') === 'full';
+  const section = sectionOf(body.section);
+  const isRecipe = section === 'recipes';
+  // Only a recipe has ingredients and steps to transcribe.
+  const full = isRecipe && String(body.mode || 'basic') === 'full';
   if (!imageBase64) return json(res, 400, { error: 'No picture was sent.' });
 
   const model = process.env.MUSE_MODEL || DEFAULT_MODEL;
@@ -190,12 +155,12 @@ export default async function handler(req, res) {
         // actually gets us the object. The budget has to cover the thinking
         // as well as the answer — too low and the reply arrives empty.
         temperature: 0.1,
-        max_tokens: full ? 12000 : 2500,
+        max_tokens: full ? 12000 : (isRecipe ? 2500 : 5000),
         response_format: { type: 'json_object' },
         messages: [{
           role: 'user',
           content: [
-            { type: 'text', text: full ? fullPrompt() : basicPrompt() },
+            { type: 'text', text: full ? fullPrompt() : (isRecipe ? basicPrompt() : postPrompt(section)) },
             { type: 'image_url', image_url: { url: `data:${mimeType};base64,${imageBase64}` } }
           ]
         }]
@@ -227,7 +192,7 @@ export default async function handler(req, res) {
     if (!parsed) {
       console.error('[recipe-extract] unparseable reply from %s: %s', model, text.slice(0, 800));
       return json(res, 502, {
-        error: 'The reader answered, but not with a recipe it could fill the form from. '
+        error: 'The reader answered, but not in a form it could fill in. '
           + 'Please try the picture again, or fill the details in by hand.',
         detail: text.slice(0, 300)
       });
@@ -236,16 +201,18 @@ export default async function handler(req, res) {
     // Never trust the model for values the site constrains.
     const out = {
       title: String(parsed.title || '').trim().slice(0, 140),
-      cat: CATEGORIES.indexOf(parsed.cat) !== -1 ? parsed.cat : 'Stir-Fry',
+      cat: categoriesFor(section).indexOf(parsed.cat) !== -1 ? parsed.cat : defaultCategory(section),
       ill: ILLUSTRATIONS.indexOf(parsed.ill) !== -1 ? parsed.ill : 'ill-bowl',
       tags: Array.isArray(parsed.tags)
         ? parsed.tags.filter(t => typeof t === 'string' && t.trim()).slice(0, 6).map(t => t.trim())
         : [],
       desc: String(parsed.desc || '').trim().slice(0, 300),
-      total: String(parsed.total || '').trim().slice(0, 40),
-      yield: String(parsed.yield || '').trim().slice(0, 40),
+      total: isRecipe ? String(parsed.total || '').trim().slice(0, 40) : '',
+      yield: isRecipe ? String(parsed.yield || '').trim().slice(0, 40) : '',
+      section,
       mode: full ? 'full' : 'basic'
     };
+    if (!isRecipe) out.body = String(parsed.body || '').trim().slice(0, 6000);
 
     if (full) {
       const num = v => { const n = typeof v === 'number' ? v : parseFloat(v); return isFinite(n) && n > 0 ? n : 0; };

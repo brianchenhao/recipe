@@ -64,9 +64,15 @@ collections:
               - label: Label
                 name: label
                 widget: string
+              - label: Link
+                name: href
+                widget: string
+                required: false
+                hint: For a plain menu link with no dropdown, e.g. #/health. Leave Columns empty.
               - label: Columns
                 name: columns
                 widget: list
+                required: false
                 summary: '{{fields.heading}}'
                 fields:
                   - label: Heading
@@ -217,6 +223,17 @@ collections:
                 hint: >-
                   The recipe's web address, so it must be unique and never
                   reused. Lowercase with hyphens, e.g. lemon-butter-salmon
+              - label: Section
+                name: section
+                widget: select
+                required: false
+                options:
+                  - health
+                  - questions
+                hint: >-
+                  Leave blank for a recipe. Health and Questions entries use the
+                  topics listed under sections in site.json, not the recipe
+                  categories below.
               - label: Title
                 name: title
                 widget: string
@@ -318,6 +335,26 @@ collections:
                 widget: text
                 required: false
                 hint: Intro paragraph on the recipe page.
+              - label: Write-up or answer
+                name: body
+                widget: text
+                required: false
+                hint: >-
+                  Health posts only. The words shown under the picture. An
+                  empty line starts a new paragraph.
+              - label: Quiz file
+                name: quiz
+                widget: string
+                required: false
+                hint: >-
+                  Questions (quizzes) only, e.g. quizzes/chronic-disease.json.
+                  Written by the quiz maker; do not change it by hand.
+              - label: Number of quiz questions
+                name: questionCount
+                widget: number
+                required: false
+                value_type: int
+                min: 0
               - label: Level
                 name: level
                 widget: select

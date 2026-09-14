@@ -1,17 +1,14 @@
 // POST /api/recipe-save
 //   { recipe, posterBase64?, posterMime?, cardBase64?, cardMime?, originalId? }
 //
-// Writes an image-only recipe into the repository through the GitHub Contents
-// API. Pushing to main is what publishes it: Vercel is connected to the repo,
+// Writes a recipe, health post or question (see _sections.js) into the
+// repository through the GitHub Contents API. Pushing to main is what publishes it: Vercel is connected to the repo,
 // so the commit triggers a deploy.
 
 import { json, readJsonBody, requireSession } from './_lib.js';
+import { sectionOf, categoriesFor, defaultCategory } from './_sections.js';
+import { cleanQuiz } from './_quiz.js';
 
-const CATEGORIES = [
-  'Stir-Fry', 'Noodles', 'Soup', 'Rice', 'Meat & Seafood',
-  'Salad', 'Breakfast', 'Kuih', 'Bread & Pau', 'Cake',
-  'Dessert', 'Drinks', 'Pickles', 'Sides & Sauces'
-];
 const ILLUSTRATIONS = [
   'ill-bowl', 'ill-noodles', 'ill-bread', 'ill-cake', 'ill-pot', 'ill-pan',
   'ill-salad', 'ill-egg', 'ill-fish', 'ill-grill', 'ill-jar', 'ill-drink'
@@ -81,19 +78,26 @@ function cleanRecipe(input, posterPath, cardPath) {
   const tags = Array.isArray(input.tags)
     ? input.tags.filter(t => typeof t === 'string' && t.trim()).slice(0, 8).map(t => t.trim())
     : [];
-  return {
+  const section = sectionOf(input.section);
+  const body = String(input.body || '').trim().slice(0, 6000);
+  const entry = {
     id: slugify(input.id),
+    section,
     title: String(input.title || '').trim().slice(0, 140),
     author: String(input.author || '').trim().slice(0, 80),
-    cat: CATEGORIES.includes(input.cat) ? input.cat : 'Stir-Fry',
+    cat: categoriesFor(section).includes(input.cat) ? input.cat : defaultCategory(section),
     tags,
     img: cardPath || String(input.img || ''),
     poster: posterPath || String(input.poster || ''),
+    // Questions section: where the quiz's questions live, and how many.
+    quiz: /^quizzes\/[a-z0-9-]+\.json$/.test(String(input.quiz || '')) ? String(input.quiz) : '',
+    questionCount: Math.max(0, Math.min(1000, parseInt(input.questionCount, 10) || 0)),
     ill: ILLUSTRATIONS.includes(input.ill) ? input.ill : 'ill-bowl',
     badge: String(input.badge || '').trim().slice(0, 20),
     featured: input.featured === true,
     desc: String(input.desc || '').trim().slice(0, 300),
     lede: String(input.lede || '').trim().slice(0, 600),
+    body,
     level: '', prep: '', cook: '', active: '',
     total: String(input.total || '').trim().slice(0, 40),
     yield: String(input.yield || '').trim().slice(0, 40),
@@ -110,6 +114,13 @@ function cleanRecipe(input, posterPath, cardPath) {
     cooksNote: String(input.cooksNote || '').trim().slice(0, 600),
     nutrition: {}
   };
+  // A recipe carries neither key: no `section` means a recipe, and a recipe's
+  // words live in its picture and structured fields. Leaving both out keeps
+  // recipe entries exactly as they were before sections existed.
+  if (section === 'recipes') delete entry.section;
+  if (!body) delete entry.body;
+  if (!entry.quiz) { delete entry.quiz; delete entry.questionCount; }
+  return entry;
 }
 
 function numOrZero(v, max) {
@@ -157,7 +168,7 @@ export default async function handler(req, res) {
   }
 
   const input = body.recipe || {};
-  if (!String(input.title || '').trim()) return json(res, 400, { error: 'The recipe needs a title.' });
+  if (!String(input.title || '').trim()) return json(res, 400, { error: 'Please give it a title.' });
 
   const id = slugify(input.id || input.title);
   if (!id) return json(res, 400, { error: 'Could not make a web address from that title.' });
@@ -181,6 +192,21 @@ export default async function handler(req, res) {
         `Upload card image for ${id}`, existing && existing.sha);
     }
 
+    // --- 1b. quiz questions (Questions section) ---------------------------
+    // Kept in their own file so recipes.json, which every visitor downloads
+    // on every visit, stays small. The entry just points at the file.
+    let quizPath = '';
+    let quizCount = 0;
+    if (body.quiz && sectionOf(input.section) === 'questions') {
+      const quiz = cleanQuiz(body.quiz);
+      if (!quiz.questions.length) return json(res, 400, { error: 'The quiz has no usable questions.' });
+      quizPath = `quizzes/${id}.json`;
+      quizCount = quiz.questions.length;
+      const existing = await getFile(quizPath);
+      const content = Buffer.from(JSON.stringify({ id, ...quiz }, null, 2), 'utf8').toString('base64');
+      await putFile(quizPath, content, `Write quiz for ${id} (${quizCount} questions)`, existing && existing.sha);
+    }
+
     // --- 2. recipes.json -------------------------------------------------
     const file = await getFile('recipes.json');
     if (!file) return json(res, 500, { error: 'recipes.json is missing from the repository.' });
@@ -188,7 +214,9 @@ export default async function handler(req, res) {
     const data = JSON.parse(Buffer.from(file.content, 'base64').toString('utf8'));
     if (!Array.isArray(data.recipes)) return json(res, 500, { error: 'recipes.json is not in the expected shape.' });
 
-    const recipe = cleanRecipe({ ...input, id }, posterPath, cardPath);
+    const recipe = cleanRecipe(
+      { ...input, id, ...(quizPath ? { quiz: quizPath, questionCount: quizCount } : {}) },
+      posterPath, cardPath);
     const originalId = slugify(body.originalId || '');
     const targetId = originalId || id;
     const index = data.recipes.findIndex(r => r && r.id === targetId);
@@ -204,6 +232,11 @@ export default async function handler(req, res) {
       recipe.img = cardPath || prev.img || '';
       recipe.poster = posterPath || prev.poster || '';
       recipe.featured = prev.featured === true;
+      // Renaming a quiz must not cut it off from its questions.
+      if (!recipe.quiz && prev.quiz) {
+        recipe.quiz = prev.quiz;
+        recipe.questionCount = prev.questionCount || 0;
+      }
       data.recipes[index] = recipe;
     }
 

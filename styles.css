@@ -5246,6 +5246,412 @@ textarea:focus-visible { outline: none; }
   @keyframes busy-pulse { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
 }
 
+
+/* --- 19.12 Health and Questions ---------------------------------------------
+   The site has three sections. These are the pieces only the two new ones
+   need: a text card for a post with no picture, the answer / write-up under a
+   post's picture, the section tabs in the manager, and the three section
+   links at the top of the phone menu. */
+
+/* A post with no picture: no empty 4:3 frame, the title leads instead. A thin
+   brand rule down the left edge keeps it reading as a card in a grid of photos. */
+.card--text { min-height: 11rem; }
+.card--text::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--brand);
+  opacity: .8;
+}
+.card--text .card__body { padding-top: var(--sp-5); }
+.card--text .card__title { font-size: var(--fs-lg); line-height: 1.3; }
+
+/* The write-up or answer under a post's picture. Sized for reading, not scanning. */
+.post__body {
+  max-width: var(--measure, 68ch);
+  margin: 0 0 var(--sp-6);
+  font-size: var(--fs-md);
+  line-height: 1.7;
+  color: var(--text);
+}
+.post__body p { margin: 0 0 1em; }
+.post__body p:last-child { margin-bottom: 0; }
+.post__label {
+  margin: 0 0 .5rem;
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+}
+
+/* Topic chips on #/health and #/questions. */
+.sectionpage__chips { margin: 0 0 var(--sp-4); }
+
+/* Manager tabs: Recipes | Health | Questions. Big enough to hit with a thumb. */
+.sectabs {
+  display: flex;
+  gap: .3rem;
+  margin: 0 0 var(--sp-5);
+  padding: .3rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--bg-soft);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.sectabs::-webkit-scrollbar { display: none; }
+
+.sectabs__tab {
+  flex: 1 1 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  border-radius: var(--radius-pill);
+  color: var(--text-dim);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease),
+              box-shadow var(--dur-fast) var(--ease);
+}
+.sectabs__tab:hover { color: var(--text); }
+.sectabs__tab.is-on {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+.sectabs__n {
+  min-width: 1.5rem;
+  padding: .1rem .45rem;
+  border-radius: var(--radius-pill);
+  background: var(--brand-wash);
+  color: var(--brand-ink);
+  font-size: var(--fs-2xs);
+  text-align: center;
+}
+
+.adminform__textarea {
+  width: 100%;
+  min-height: 9rem;
+  resize: vertical;
+  line-height: 1.55;
+  font: inherit;
+}
+
+/* The three sections at the top of the phone menu. */
+.mnav__sections {
+  display: grid;
+  gap: .4rem;
+  margin: 0 0 var(--sp-4);
+}
+
+@media (max-width: 599.98px) {
+  .sectabs__tab { padding: 0 .6rem; font-size: var(--fs-sm); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sectabs__tab { transition: none !important; }
+}
+
+
+/* --- 19.13 Quizzes (the Questions section) ----------------------------------
+   Laid out like the study quizzes: a bar with the score, skips, jump and
+   finish; a card with the progress track, the question, big tappable options,
+   and coloured reveal blocks — green right, red wrong, amber tip, purple
+   explain-like-I-am-5. Colours are mixed with --surface so both themes work. */
+
+.quiz { max-width: 54rem; margin: 0 auto; }
+
+.quiz__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin: 0 0 var(--sp-4);
+  padding: var(--sp-3) var(--sp-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.quiz__title { margin: 0; font-family: var(--font-display); font-size: var(--fs-lg); line-height: 1.25; }
+.quiz__sub { margin: .15rem 0 0; color: var(--text-dim); font-size: var(--fs-sm); }
+.quiz__tools { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.quiz__pill {
+  padding: .35rem .85rem;
+  border-radius: var(--radius-pill);
+  background: var(--brand-wash);
+  color: var(--brand-ink);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.quiz__pill--skip { background: color-mix(in srgb, #f0a830 22%, var(--surface)); color: color-mix(in srgb, #8a6500 80%, var(--text)); }
+.quiz__jump { display: inline-flex; align-items: center; gap: .4rem; color: var(--text-dim); font-size: var(--fs-sm); }
+.quiz__jump input { width: 5rem; min-height: 2.5rem; padding: .3rem .6rem; font-size: 16px; }
+
+.quiz__card {
+  padding: var(--sp-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+}
+.quiz__loading { margin: 0; color: var(--text-dim); }
+.quiz__about { max-width: 54rem; margin: var(--sp-4) auto 0; }
+
+.quiz__progress { display: flex; justify-content: space-between; margin: 0 0 .4rem; color: var(--text-dim); font-size: var(--fs-sm); }
+.quiz__track { height: 10px; margin: 0 0 var(--sp-4); overflow: hidden; border-radius: var(--radius-pill); background: var(--bg-soft); }
+.quiz__fill {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--brand), color-mix(in srgb, var(--brand) 55%, #f0b46a));
+  transition: width .3s var(--ease);
+}
+
+.quiz__qnum {
+  display: inline-block;
+  margin: 0 0 var(--sp-3);
+  padding: .25rem .8rem;
+  border-radius: var(--radius-pill);
+  background: var(--brand);
+  color: var(--on-brand);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+}
+.quiz__qnum.is-skipped { background: #d9922b; color: #fff; }
+.quiz__q { margin: 0 0 var(--sp-4); color: var(--text); font-size: var(--fs-md); font-weight: 600; line-height: 1.55; }
+.quiz__multi {
+  display: inline-block;
+  margin: 0 0 var(--sp-3);
+  padding: .35rem .7rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, #f0a830 18%, var(--surface));
+  color: color-mix(in srgb, #8a6500 80%, var(--text));
+  font-size: var(--fs-sm);
+}
+
+.quiz__opts { display: flex; flex-direction: column; gap: .55rem; }
+.quiz__opt {
+  display: flex;
+  align-items: flex-start;
+  gap: .65rem;
+  width: 100%;
+  min-height: 3rem;
+  padding: .8rem 1rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--fs-base);
+  line-height: 1.45;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+}
+.quiz__opt:hover:not(.is-locked) { border-color: var(--brand); background: var(--brand-wash); }
+.quiz__opt.is-selected { border-color: var(--brand); background: var(--brand-wash); }
+.quiz__opt.is-locked { cursor: default; }
+.quiz__opt.is-correct { border-color: #2f9e55; background: color-mix(in srgb, #2f9e55 14%, var(--surface)); }
+.quiz__opt.is-wrong { border-color: #d64545; background: color-mix(in srgb, #d64545 12%, var(--surface)); }
+.quiz__letter { min-width: 1.5rem; color: var(--brand-ink); font-weight: 800; }
+.quiz__opt.is-correct .quiz__letter { color: #2f9e55; }
+.quiz__opt.is-wrong .quiz__letter { color: #d64545; }
+.quiz__optext { flex: 1; }
+.quiz__mark { margin-left: auto; font-weight: 800; }
+
+.quiz__actions { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem; margin-top: var(--sp-5); }
+.quiz__group { display: flex; flex-wrap: wrap; gap: .5rem; }
+.quiz__skip {
+  border-color: transparent;
+  background: color-mix(in srgb, #f0a830 22%, var(--surface));
+  color: color-mix(in srgb, #8a6500 85%, var(--text));
+}
+
+.quiz__reveal { margin-top: var(--sp-4); padding-top: var(--sp-4); border-top: 2px dashed var(--border); }
+.quiz__block {
+  margin: 0 0 .6rem;
+  padding: .8rem 1rem;
+  border-left: 4px solid;
+  border-radius: 10px;
+  color: var(--text);
+  font-size: var(--fs-base);
+  line-height: 1.55;
+}
+.quiz__block--right { border-color: #2f9e55; background: color-mix(in srgb, #2f9e55 12%, var(--surface)); }
+.quiz__block--wrong { border-color: #d64545; background: color-mix(in srgb, #d64545 10%, var(--surface)); }
+.quiz__block--tip   { border-color: #f0a830; background: color-mix(in srgb, #f0a830 14%, var(--surface)); }
+.quiz__block--eli5  { border-color: #8a5cc2; background: color-mix(in srgb, #8a5cc2 12%, var(--surface)); }
+.quiz__label { display: block; margin: 0 0 .2rem; font-size: var(--fs-xs); font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+.quiz__block--right .quiz__label { color: #2f9e55; }
+.quiz__block--wrong .quiz__label { color: #d64545; }
+.quiz__block--tip .quiz__label   { color: #b07a10; }
+.quiz__block--eli5 .quiz__label  { color: #8a5cc2; }
+
+.quiz__end { padding: var(--sp-4) 0; text-align: center; }
+.quiz__end h2 { margin: 0 0 .4rem; font-family: var(--font-display); font-size: var(--fs-2xl); }
+.quiz__end p { color: var(--text-dim); }
+.quiz__bigscore { margin: .5rem 0; color: var(--brand); font-family: var(--font-display); font-size: clamp(2.5rem, 2rem + 3vw, 4rem); font-weight: 800; }
+.quiz__end .quiz__cheer { color: var(--text); font-size: var(--fs-lg); }
+.quiz__outstanding {
+  margin: var(--sp-4) 0;
+  padding: .9rem 1rem;
+  border-left: 4px solid #d9922b;
+  border-radius: 10px;
+  background: color-mix(in srgb, #f0a830 14%, var(--surface));
+  line-height: 1.6;
+  text-align: left;
+}
+.quiz__endbtns { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--sp-4); }
+
+/* Quiz cards carry "150 questions", not a time, so no clock icon. */
+.card--text .card__time::before { display: none; }
+
+/* #/questions: topic search, part-written banner, no-match panel. */
+.quizsearch { display: flex; gap: .5rem; margin: 0 0 var(--sp-4); }
+.quizsearch__input { flex: 1; min-width: 0; min-height: 3.25rem; font-size: max(16px, var(--fs-md)); }
+.quizdraft {
+  margin: 0 0 var(--sp-4);
+  padding: var(--sp-4);
+  border: 1px solid color-mix(in srgb, var(--brand) 35%, var(--border));
+  border-radius: var(--radius-lg);
+  background: var(--brand-wash);
+}
+.quizdraft p { margin: 0 0 var(--sp-3); }
+.quiznomatch {
+  display: grid;
+  justify-items: start;
+  gap: var(--sp-3);
+  margin: 0 0 var(--sp-5);
+  padding: var(--sp-5);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-soft);
+}
+.quiznomatch strong { font-family: var(--font-display); font-size: var(--fs-lg); }
+.quiznomatch p { margin: 0; color: var(--text-dim); }
+.quizmore { margin: var(--sp-5) 0 0; color: var(--text-dim); }
+.linkbtn {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--brand-ink);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* The quiz maker popup. A sheet from the bottom on a phone. */
+.qmaker {
+  position: fixed;
+  inset: 0;
+  z-index: 460;
+  display: grid;
+  place-items: center;
+  padding: var(--gutter);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--dur) var(--ease), visibility 0s linear var(--dur);
+}
+.qmaker.is-open { opacity: 1; visibility: visible; transition: opacity var(--dur) var(--ease), visibility 0s; }
+.qmaker__backdrop { position: absolute; inset: 0; background: rgba(20, 12, 8, .55); backdrop-filter: blur(3px); }
+.qmaker__panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 40rem);
+  max-height: min(92vh, 52rem);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+}
+.qmaker__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding: var(--sp-4) var(--sp-5);
+  border-bottom: 1px solid var(--border);
+}
+.qmaker__title { margin: 0; font-family: var(--font-display); font-size: var(--fs-xl); line-height: 1.2; }
+.qmaker__x {
+  flex: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  color: var(--text);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.qmaker__body { flex: 1; overflow-y: auto; padding: var(--sp-5); }
+.qmaker__body .authform__label { display: block; margin: 0 0 .3rem; }
+.qmaker__row { display: flex; gap: .5rem; margin: 0 0 .4rem; }
+.qmaker__row .authform__input { flex: 1; min-width: 0; font-size: 16px; }
+.qmaker__count { width: 8rem; margin: 0 0 var(--sp-4); font-size: 16px; }
+.qmaker__sample:not(:empty) {
+  margin-top: var(--sp-2);
+  padding: var(--sp-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+}
+.qmaker__sample .quiz__opt { background: var(--surface); }
+.qmaker__sample .quiz__opts { margin: 0 0 var(--sp-3); }
+.qmaker__samplelabel {
+  margin: 0 0 .5rem;
+  color: var(--brand-ink);
+  font-size: var(--fs-xs);
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.qmaker__working { display: flex; align-items: center; gap: .6rem; margin: 0; color: var(--text-dim); }
+.qmaker__working .busy__spinner { display: inline-block; flex: none; width: 1.25rem; height: 1.25rem; margin: 0; border-width: 2px; }
+.qmaker__stage { margin: 0 0 var(--sp-3); font-family: var(--font-display); font-size: var(--fs-lg); font-weight: 700; }
+.qmaker__tally { margin: 0 0 var(--sp-3); font-weight: 700; }
+.qmaker__foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .5rem;
+  padding: var(--sp-4) var(--sp-5);
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+@media (max-width: 599.98px) {
+  .quiz__card { padding: var(--sp-4); }
+  .quiz__bar { padding: var(--sp-3); }
+  .quiz__group { flex: 1 1 100%; }
+  .quiz__group .btn { flex: 1 1 auto; }
+  .quizsearch .btn { padding-inline: 1rem; }
+  .qmaker { padding: 0; place-items: end stretch; }
+  .qmaker__panel { width: 100%; max-height: 94vh; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+  .qmaker__body, .qmaker__head, .qmaker__foot { padding-inline: var(--sp-4); }
+  .qmaker__foot .btn { flex: 1 1 auto; }
+}
+
+/* Dark amber text disappears on the dark theme's brown surfaces; lift it. */
+[data-theme="dark"] .quiz__multi,
+[data-theme="dark"] .quiz__skip,
+[data-theme="dark"] .quiz__pill--skip { color: #f2c46b; }
+[data-theme="dark"] .quiz__block--tip .quiz__label { color: #f2c46b; }
+[data-theme="dark"] .quiz__block--eli5 .quiz__label { color: #c9a4f0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .quiz__fill, .quiz__opt, .qmaker { transition: none !important; }
+}
+
 /* --- 19.9 Full-bleed scrollers must not overflow the page -------------- */
 /* .chiprow--scroll pulls itself out with negative margins, which only works
    when the parent carries matching padding. As a direct child of #app (which

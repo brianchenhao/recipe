@@ -7,7 +7,9 @@
    - Every recipe field is optional; a {id,title} recipe renders cleanly.
    - All interpolated data passes through esc(); nothing prints undefined/NaN.
    - Hash routing: #/  #/recipes  #/recipe/<id>  #/category/<c>
-     #/search?q=<t>  #/collection/<id>.  Unknown/empty -> home.
+     #/search?q=<t>  #/collection/<id>
+     #/health  #/health/<id>  #/questions  #/questions/<id>
+     #/admin?s=<recipes|health|questions>.  Unknown/empty -> home.
    - localStorage keys: rm-theme, rm-units, rm-progress-<id>.
    - One IntersectionObserver, rebuilt per render (revealAll).
    - Scroll work is rAF-throttled.
@@ -50,15 +52,18 @@
   /* --------------------------------------------------------------- state */
   var state = {
     site: null,
-    recipes: [],
-    byId: {},
+    entries: [],            // everything in recipes.json, all three sections
+    recipes: [],            // just the Recipes section
+    byId: {},               // every entry by id; ids are unique across sections
     units: 'us',            // 'us' | 'metric'
     heroTimer: 0,
     heroIndex: 0,
     io: null,               // IntersectionObserver
     suggestItems: [],       // current suggestion list
     suggestActive: -1,
-    session: { signedIn: false, email: '' }
+    session: { signedIn: false, email: '' },
+    quizKeys: null,         // keydown handler of the quiz on screen, if any
+    quizRun: null           // token of the quiz writer allowed to save progress
   };
 
   /* ============================================================ utilities */
@@ -169,6 +174,60 @@
     return id;
   }
 
+  /* ============================================================ sections */
+  // The site has three sections: Recipes, Health and Questions. All three
+  // live in recipes.json so they share one upload, save and delete path. An
+  // entry with no `section` key is a recipe, which keeps every recipe written
+  // before sections existed valid without touching it.
+
+  var SECTION_IDS = ['recipes', 'health', 'questions'];
+
+  function sectionOf(r) {
+    var sec = r && r.section;
+    return (sec === 'health' || sec === 'questions') ? sec : 'recipes';
+  }
+
+  // Label, wording and categories for a section, from site.json `sections`,
+  // with sensible fallbacks so a half-filled site.json never breaks a page.
+  function sectionConf(sec) {
+    var all = (state.site && state.site.sections) || {};
+    var c = all[sec] || {};
+    var fallback = {
+      recipes:   { label: 'Recipes',   singular: 'recipe' },
+      health:    { label: 'Health',    singular: 'health post' },
+      questions: { label: 'Questions', singular: 'quiz', plural: 'quizzes' }
+    }[sec] || { label: sec, singular: 'post' };
+    return {
+      id: sec,
+      label: isStr(c.label) ? c.label : fallback.label,
+      singular: isStr(c.singular) ? c.singular : fallback.singular,
+      plural: isStr(c.plural) ? c.plural
+        : (fallback.plural || (isStr(c.singular) ? c.singular : fallback.singular) + 's'),
+      intro: isStr(c.intro) ? c.intro : '',
+      categories: sec === 'recipes' ? allCategories() : arr(c.categories).filter(isStr)
+    };
+  }
+
+  function entriesIn(sec) {
+    if (sec === 'recipes') return state.recipes;
+    return state.entries.filter(function (r) { return sectionOf(r) === sec; });
+  }
+
+  // Recipes keep their #/recipe/<id> address so links already shared still
+  // work; the other two sections nest under their own name.
+  function entryHref(r) {
+    var sec = sectionOf(r);
+    return (sec === 'recipes' ? '#/recipe/' : '#/' + sec + '/') + encodeURIComponent(r.id);
+  }
+
+  // The one place recipes.json becomes in-memory state (boot and refresh).
+  function setEntries(list) {
+    state.entries = arr(list).filter(function (r) { return r && isStr(r.id) && isStr(r.title); });
+    state.recipes = state.entries.filter(function (r) { return sectionOf(r) === 'recipes'; });
+    state.byId = {};
+    state.entries.forEach(function (r) { state.byId[r.id] = r; });
+  }
+
   /* ============================================================= card html */
 
   // Picture for a card. A recipe added as an image-only recipe may have no
@@ -182,7 +241,7 @@
 
   function cardHtml(r, stagger) {
     if (!r || !isStr(r.id)) return '';
-    var href = '#/recipe/' + encodeURIComponent(r.id);
+    var href = entryHref(r);
     var media;
     var pic = cardImage(r);
     if (pic) {
@@ -198,18 +257,28 @@
       ? '<span class="card__rating">' + starsHtml(r.rating, 'sm') + ' ' + esc(rt)
         + (reviews > 0 ? ' <span class="stars__count">(' + esc(reviews) + ')</span>' : '') + '</span>'
       : '';
-    var t = cardTime(r);
+    var t = sectionOf(r) === 'questions' ? quizCardMeta(r) : cardTime(r);
     var timeBlock = isStr(t) ? '<span class="card__time">' + esc(t) + '</span>' : '';
     var cat = isStr(r.cat) ? '<span class="card__cat">' + esc(r.cat) + '</span>' : '';
     var desc = isStr(r.desc) ? '<p class="card__desc">' + esc(r.desc) + '</p>' : '';
     var st = (stagger || stagger === 0) ? ' data-stagger="' + (clamp(stagger, 0, 12)) + '"' : '';
 
-    return '<a class="card reveal"' + st + ' href="' + href + '">'
-      +   '<span class="card__media">' + media + badge + '</span>'
+    // A health post or question with no picture has nothing to fill the 4:3
+    // frame, and a food drawing there would mislead, so it becomes a text card
+    // led by its title (or its question) and a line of what it says.
+    var textOnly = !pic && sectionOf(r) !== 'recipes';
+    var excerpt = '';
+    if (textOnly && !isStr(r.desc) && isStr(r.body)) {
+      var b = String(r.body).replace(/\s+/g, ' ').trim();
+      excerpt = '<p class="card__desc">' + esc(b.slice(0, 180)) + (b.length > 180 ? '…' : '') + '</p>';
+    }
+
+    return '<a class="card reveal' + (textOnly ? ' card--text' : '') + '"' + st + ' href="' + href + '">'
+      +   (textOnly ? '' : '<span class="card__media">' + media + badge + '</span>')
       +   '<span class="card__body">'
       +     cat
       +     '<h3 class="card__title">' + esc(r.title || 'Untitled') + '</h3>'
-      +     desc
+      +     desc + excerpt
       +     '<span class="card__meta">' + ratingBlock + timeBlock + '</span>'
       +   '</span>'
       + '</a>';
@@ -273,7 +342,7 @@
   function recipeMatches(r, q) {
     if (!isStr(q)) return true;
     var hay = [
-      r.title, r.desc, r.lede, r.cat, r.author,
+      r.title, r.desc, r.lede, r.body, r.cat, r.author,
       arr(r.tags).join(' '),
       arr(r.ingredientGroups).map(function (g) { return arr(g && g.items).map(function (it) { return it && it.name; }).join(' '); }).join(' ')
     ].filter(isStr).join(' • ').toLowerCase();
@@ -284,7 +353,9 @@
   function searchRecipes(q) {
     if (!isStr(q)) return state.recipes.slice();
     var ql = q.toLowerCase();
-    var scored = state.recipes.filter(function (r) { return recipeMatches(r, q); }).map(function (r) {
+    // Search covers all three sections, so a health tip or an answered
+    // question is findable from the same box as a recipe.
+    var scored = state.entries.filter(function (r) { return recipeMatches(r, q); }).map(function (r) {
       var score = 0;
       if (isStr(r.title) && r.title.toLowerCase().indexOf(ql) !== -1) score += 10;
       if (isStr(r.cat) && r.cat.toLowerCase().indexOf(ql) !== -1) score += 4;
@@ -298,7 +369,7 @@
 
   function relatedRecipes(r, max) {
     max = max || 4;
-    var others = state.recipes.filter(function (x) { return x.id !== r.id; });
+    var others = entriesIn(sectionOf(r)).filter(function (x) { return x.id !== r.id; });
     var tagSet = {}; arr(r.tags).forEach(function (t) { if (isStr(t)) tagSet[t.toLowerCase()] = 1; });
     var scored = others.map(function (x) {
       var score = 0;
@@ -314,7 +385,7 @@
   /* ============================================================== sorting */
 
   var SORTS = {
-    newest:  function (a, b) { return state.recipes.indexOf(b) - state.recipes.indexOf(a); },
+    newest:  function (a, b) { return state.entries.indexOf(b) - state.entries.indexOf(a); },
     top:     function (a, b) { return num(b.rating) - num(a.rating) || num(b.reviews) - num(a.reviews); },
     quick:   function (a, b) { return (parseMinutes(a.total) || 1e9) - (parseMinutes(b.total) || 1e9); },
     az:      function (a, b) { return String(a.title || '').localeCompare(String(b.title || '')); }
@@ -407,9 +478,15 @@
     html += '<button type="button" class="mnav__search" id="mnav-search">'
          +  '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">'
          +  '<circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg>'
-         +  '<span>Search recipes</span></button>';
-    html += '<a class="mnav__all" href="#/recipes">All recipes'
-         +  '<span class="mnav__count">' + state.recipes.length + '</span></a>';
+         +  '<span>Search</span></button>';
+
+    // The three sections lead the menu, each showing how much is in it.
+    html += '<div class="mnav__sections">'
+         +  SECTION_IDS.map(function (sec) {
+              return '<a class="mnav__all" href="#/' + sec + '">' + esc(sectionConf(sec).label)
+                +  '<span class="mnav__count">' + entriesIn(sec).length + '</span></a>';
+            }).join('')
+         +  '</div>';
 
     var cats = allCategories().map(function (c) {
       return { name: c, n: recipesInCategory(c).length };
@@ -418,7 +495,7 @@
     if (cats.length) {
       // Fourteen categories is more than fits comfortably on a phone screen,
       // so the menu lets her type a couple of letters instead of scrolling.
-      html += '<h3>Browse by category</h3>';
+      html += '<h3>Recipe categories</h3>';
       html += '<div class="mnav__filter">'
            +  '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">'
            +  '<circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg>'
@@ -451,7 +528,7 @@
 
     html += '<h3>Manage</h3><ul>'
          +  (state.session && state.session.signedIn
-              ? '<li><a href="#/admin">My recipes</a></li>'
+              ? '<li><a href="#/admin">My posts</a></li>'
               : '<li><a href="#/login">Sign in</a></li>')
          +  '</ul>';
 
@@ -525,7 +602,7 @@
       +   '<div class="footer__cols">' + colsHtml + '</div>'
       +   '<p class="footer__legal muted">© ' + year + ' ' + esc(site.brand || 'Recipe Mom') + '. Recipes for the love of it. '
       +     '<a class="footer__signin" href="' + (signedIn() ? '#/admin' : '#/login') + '">'
-      +       (signedIn() ? 'My recipes' : 'Sign in') + '</a></p>'
+      +       (signedIn() ? 'My posts' : 'Sign in') + '</a></p>'
       + '</div>';
   }
 
@@ -667,6 +744,8 @@
     var route = parseHash();
     var parts = route.parts;
     closeAllMega(); closeMobileNav(); hideSuggest(); closeLightbox(); closeHeaderSearch();
+    // A quiz listens for number and arrow keys; stop listening once we leave it.
+    if (state.quizKeys) { document.removeEventListener('keydown', state.quizKeys); state.quizKeys = null; }
     removeRecipeJsonLd();
 
     var head = parts[0] || '';
@@ -679,7 +758,10 @@
     else if (head === 'collection') html = renderCollection(parts[1]);
     else if (head === 'search') html = renderSearch(route.query.q || '');
     else if (head === 'login') html = renderLogin();
-    else if (head === 'admin') html = renderAdmin();
+    else if (head === 'health' || head === 'questions') {
+      html = parts[1] ? renderPost(head, parts[1]) : renderSection(head, route.query);
+    }
+    else if (head === 'admin') html = renderAdmin(route.query);
     else { html = renderHome(); isHome = true; }
 
     unmountFab();
@@ -730,16 +812,14 @@
     // One rail per collection.
     var rails = arr(site.collections).filter(Boolean).map(function (c) {
       var list = applyFilter(all, c.filter).slice(0, 12);
-      if (!list.length) return '';
-      var track = list.map(function (r, i) { return cardHtml(r, (i % 12) + 1); }).join('');
-      return '<section class="section reveal">'
-        + '<div class="section__head"><h2 class="section__title">' + esc(c.label || 'Collection') + '</h2>'
-        + '<a class="section__link" href="#/collection/' + encodeURIComponent(c.id) + '">See all</a></div>'
-        + (isStr(c.desc) ? '<p class="section__desc">' + esc(c.desc) + '</p>' : '')
-        + '<div class="rail"><div class="rail__track">' + track + '</div>'
-        + '<button class="rail__btn rail__btn--prev" type="button" aria-label="Scroll left" data-dir="prev"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>'
-        + '<button class="rail__btn rail__btn--next" type="button" aria-label="Scroll right" data-dir="next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>'
-        + '</div></section>';
+      return list.length ? railHtml(c.label || 'Collection', '#/collection/' + encodeURIComponent(c.id), c.desc, list) : '';
+    }).join('');
+
+    // The newest from Health and Questions, once each has something in it.
+    var sectionRails = ['health', 'questions'].map(function (sec) {
+      var list = entriesIn(sec).slice().sort(SORTS.newest).slice(0, 12);
+      var conf = sectionConf(sec);
+      return list.length ? railHtml(conf.label, '#/' + sec, conf.intro, list) : '';
     }).join('');
 
     // Editorial "browse by category" block.
@@ -755,7 +835,7 @@
 
     setMeta('', site.tagline || 'A warm, generous home-cooking library.');
 
-    return chipRow + bigGrid + rails + browse;
+    return chipRow + bigGrid + sectionRails + rails + browse;
   }
 
   /* ------------------------------------------------------------ all/list */
@@ -876,17 +956,904 @@
     var list = searchRecipes(q);
     setMeta('Search: ' + q, 'Search results for “' + q + '”.');
     var head = '<div class="pagehead"><h1>Search</h1>'
-      + '<p>' + (isStr(q) ? list.length + ' result' + (list.length === 1 ? '' : 's') + ' for “' + esc(q) + '”' : 'Type in the search box to find a recipe.') + '</p></div>';
+      + '<p>' + (isStr(q) ? list.length + ' result' + (list.length === 1 ? '' : 's') + ' for “' + esc(q) + '”' : 'Type in the search box to find a recipe, health post or question.') + '</p></div>';
     var body = isStr(q)
       ? gridHtml(list, { emptyTitle: 'No results', emptyMsg: 'Nothing matched “' + q + '”. Try a simpler term.' })
       : gridHtml(state.recipes.slice(0, 12), {});
     return '<section class="section">' + head + body + '</section>';
   }
 
+  /* ---------------------------------------------------- rails & sections */
+
+  function railHtml(title, href, desc, list) {
+    var track = list.map(function (r, i) { return cardHtml(r, (i % 12) + 1); }).join('');
+    return '<section class="section reveal">'
+      + '<div class="section__head"><h2 class="section__title">' + esc(title) + '</h2>'
+      + '<a class="section__link" href="' + escAttr(href) + '">See all</a></div>'
+      + (isStr(desc) ? '<p class="section__desc">' + esc(desc) + '</p>' : '')
+      + '<div class="rail"><div class="rail__track">' + track + '</div>'
+      + '<button class="rail__btn rail__btn--prev" type="button" aria-label="Scroll left" data-dir="prev"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>'
+      + '<button class="rail__btn rail__btn--next" type="button" aria-label="Scroll right" data-dir="next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>'
+      + '</div></section>';
+  }
+
+  // #/health and #/questions: every entry in the section, newest first, with
+  // a topic filter once there is more than one topic to choose between.
+  function renderSection(sec, query) {
+    if (sec === 'questions') return renderQuizHub(query);
+    var conf = sectionConf(sec);
+    var all = entriesIn(sec).slice().sort(SORTS.newest);
+    var cat = query && isStr(query.cat) && conf.categories.indexOf(query.cat) !== -1 ? query.cat : '';
+    var list = cat ? all.filter(function (r) { return r.cat === cat; }) : all;
+    setMeta(conf.label, conf.intro);
+
+    var head = '<div class="pagehead"><h1>' + esc(conf.label) + '</h1>'
+      + (conf.intro ? '<p>' + esc(conf.intro) + '</p>' : '') + '</div>';
+
+    if (!all.length) {
+      // The menu always offers this page, so an empty section says what it is
+      // for, and hands whoever can fill it a way to start.
+      var cta = signedIn()
+        ? ['#/admin?s=' + sec, 'Add the first ' + conf.singular]
+        : ['#/recipes', 'Browse recipes'];
+      return '<section class="section">' + head
+        + emptyHtml('Nothing here yet', 'The first ' + conf.singular + ' will show up here as soon as it is added.', cta[0], cta[1])
+        + '</section>';
+    }
+
+    // Only topics that have something in them; an empty one is a dead end.
+    var live = conf.categories.filter(function (c) { return all.some(function (r) { return r.cat === c; }); });
+    var chips = live.length > 1
+      ? '<div class="chiprow sectionpage__chips" role="list" aria-label="Topics">'
+        + '<a class="chip' + (!cat ? ' chip--on' : '') + '" role="listitem" href="#/' + sec + '">All</a>'
+        + live.map(function (c) {
+            return '<a class="chip' + (cat === c ? ' chip--on' : '') + '" role="listitem" href="#/' + sec
+              + '?cat=' + encodeURIComponent(c) + '">' + esc(c) + '</a>';
+          }).join('')
+        + '</div>'
+      : '';
+
+    var count = '<p class="results__count" aria-live="polite">' + list.length + ' '
+      + (list.length === 1 ? conf.singular : conf.plural) + '</p>';
+
+    return '<section class="section">' + head + chips + count
+      + gridHtml(list, { emptyTitle: 'Nothing in this topic', emptyMsg: 'Try another topic, or tap All.' })
+      + '</section>';
+  }
+
+  // Plain text in, safe paragraphs out. An empty line starts a new paragraph;
+  // a single line break stays a line break.
+  function paragraphs(text) {
+    return String(text || '').split(/\n\s*\n/)
+      .map(function (p) { return p.trim(); })
+      .filter(Boolean)
+      .map(function (p) { return '<p>' + esc(p).replace(/\n/g, '<br>') + '</p>'; })
+      .join('');
+  }
+
+  // #/health/<id> and #/questions/<id>: title first, then the picture (tap to
+  // zoom, same as a recipe infographic), then the write-up or the answer.
+  function renderPost(sec, id) {
+    var conf = sectionConf(sec);
+    var r = state.byId[id];
+    if (sec === 'questions' && r && sectionOf(r) === 'questions' && isStr(r.quiz)) return renderQuizPage(r);
+    if (!r || sectionOf(r) !== sec) {
+      return '<section class="section">' + emptyHtml('Not found',
+        'We couldn’t find that ' + conf.singular + '. It may have been renamed or removed.',
+        '#/' + sec, 'Back to ' + conf.label) + '</section>';
+    }
+
+    var crumbs = '<nav class="crumbs" aria-label="Breadcrumb"><ol>'
+      + '<li><a href="#/">Home</a></li>'
+      + '<li><a href="#/' + sec + '">' + esc(conf.label) + '</a></li>'
+      + (isStr(r.cat) ? '<li><a href="#/' + sec + '?cat=' + encodeURIComponent(r.cat) + '">' + esc(r.cat) + '</a></li>' : '')
+      + '<li aria-current="page">' + esc(r.title || '') + '</li>'
+      + '</ol></nav>';
+
+    var head = '<div class="poster__head">'
+      + (isStr(r.cat) ? '<span class="recipe__eyebrow">' + esc(r.cat) + '</span>' : '')
+      + '<h1 class="recipe__title">' + esc(r.title || '') + '</h1>'
+      + (isStr(r.desc) ? '<p class="recipe__lede">' + esc(r.desc) + '</p>' : '')
+      + '</div>';
+
+    // The ids are the ones wirePoster() looks for.
+    var src = isStr(r.poster) ? r.poster : (isStr(r.img) ? r.img : '');
+    var fig = src
+      ? '<figure class="poster reveal">'
+        + '<button class="poster__btn" type="button" id="poster-open" aria-label="Zoom into the picture">'
+        +   '<img class="poster__img" id="poster-img" src="' + escAttr(src) + '" alt="' + escAttr(r.title || '') + '" decoding="async">'
+        +   '<span class="poster__hint" aria-hidden="true">Tap to zoom</span>'
+        + '</button></figure>'
+      : '';
+
+    var body = isStr(r.body)
+      ? '<div class="post__body">'
+        + (sec === 'questions' ? '<h2 class="post__label">Answer</h2>' : '')
+        + paragraphs(r.body) + '</div>'
+      : '';
+
+    var actions = src
+      ? '<div class="poster__meta"><div class="recipe__actions">'
+        + '<button class="btn btn--primary" type="button" id="poster-zoom">Zoom in</button>'
+        + '<a class="btn btn--ghost" href="' + escAttr(src) + '" target="_blank" rel="noopener">Open full size</a>'
+        + '</div></div>'
+      : '';
+
+    var more = relatedRecipes(r, 4);
+    var moreBlock = more.length
+      ? '<section class="section reveal"><div class="section__head">'
+        + '<h2 class="section__title">More in ' + esc(conf.label) + '</h2>'
+        + '<a class="section__link" href="#/' + sec + '">See all</a></div>'
+        + gridHtml(more, {}) + '</section>'
+      : '';
+
+    setMeta(r.title || conf.label, isStr(r.desc) ? r.desc : String(r.body || '').slice(0, 160));
+
+    return '<article class="recipe recipe--poster post">' + crumbs + head + fig + body + actions + tagsHtml(r) + '</article>'
+      + moreBlock;
+  }
+
+  /* ============================================================== quizzes */
+  // The Questions section is a shelf of quizzes, one per topic.
+  //
+  //   #/questions        search a topic; if there is no quiz on it, make one
+  //   #/questions/<id>   take the quiz
+  //
+  // The player follows the study-quiz style used elsewhere: instant right or
+  // wrong on a tap, multi-answer questions with Submit, a hint with a tip and
+  // an "explain like I am 5", Skip, Jump and Finish. Progress is saved in this
+  // browser (rm-quiz-<id>) so a 150-question quiz can be done over several days.
+  //
+  // The quiz maker writes a quiz with /api/quiz-generate: one sample question
+  // to check the style, then a research step, then small batches. Every batch
+  // is saved in this browser (rm-quiz-draft) so writing can pause and resume.
+
+  var QUIZ_LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+  var QUIZ_BATCH = 6;        // questions per request: keeps each call well inside the time limit
+  var QUIZ_PARALLEL = 2;     // requests at once: halves the wait without hammering the reader
+  var QUIZ_DRAFT_KEY = 'rm-quiz-draft';
+
+  function quizIsMulti(q) { return Array.isArray(q.a); }
+  function quizCorrect(q) { return Array.isArray(q.a) ? q.a.slice() : [q.a]; }
+  function validQuizQuestion(q) {
+    return !!q && isStr(q.q) && Array.isArray(q.o) && q.o.length >= 2
+      && quizCorrect(q).every(function (n) { return n >= 1 && n <= q.o.length; });
+  }
+  function quizKey(text) { return String(text || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(); }
+  function titleCase(text) {
+    return String(text || '').replace(/\s+/g, ' ').trim().replace(/\b[a-z]/g, function (c) { return c.toUpperCase(); });
+  }
+
+  // --- saved progress (taking a quiz) -------------------------------------
+  function loadQuizProgress(id) {
+    try {
+      var p = JSON.parse(localStorage.getItem('rm-quiz-' + id) || 'null');
+      return p && typeof p === 'object' && p.answers ? p : null;
+    } catch (e) { return null; }
+  }
+  function saveQuizProgress(id, p) { try { localStorage.setItem('rm-quiz-' + id, JSON.stringify(p)); } catch (e) {} }
+  function clearQuizProgress(id) { try { localStorage.removeItem('rm-quiz-' + id); } catch (e) {} }
+
+  function quizStats(p) {
+    var out = { answered: 0, correct: 0, skipped: 0 };
+    var answers = (p && p.answers) || {};
+    Object.keys(answers).forEach(function (k) {
+      var a = answers[k];
+      if (!a) return;
+      if (a.submitted) { out.answered++; if (a.correct) out.correct++; }
+      else if (a.skipped) out.skipped++;
+    });
+    return out;
+  }
+
+  // "150 questions · 47 answered" under a quiz card.
+  function quizCardMeta(r) {
+    var n = num(r.questionCount);
+    var done = quizStats(loadQuizProgress(r.id)).answered;
+    return (n ? n + ' questions' : 'Quiz') + (done ? ' · ' + done + ' answered' : '');
+  }
+
+  // --- saved draft (writing a quiz) ---------------------------------------
+  function loadQuizDraft() {
+    try {
+      var d = JSON.parse(localStorage.getItem(QUIZ_DRAFT_KEY) || 'null');
+      return d && isStr(d.topic) && Array.isArray(d.questions) && num(d.count) > 0 ? d : null;
+    } catch (e) { return null; }
+  }
+  function saveQuizDraft(d) { try { localStorage.setItem(QUIZ_DRAFT_KEY, JSON.stringify(d)); } catch (e) {} }
+  function clearQuizDraft() { try { localStorage.removeItem(QUIZ_DRAFT_KEY); } catch (e) {} }
+
+  /* --------------------------------------------------------- #/questions */
+
+  function renderQuizHub(query) {
+    var conf = sectionConf('questions');
+    var q = query && isStr(query.q) ? query.q : '';
+    var all = entriesIn('questions').slice().sort(SORTS.newest);
+    setMeta(conf.label, conf.intro);
+    return '<section class="section quizhub">'
+      + '<div class="pagehead"><h1>' + esc(conf.label) + '</h1>'
+      +   (conf.intro ? '<p>' + esc(conf.intro) + '</p>' : '') + '</div>'
+      + '<form class="quizsearch" id="quiz-search" role="search" novalidate>'
+      +   '<input class="authform__input quizsearch__input" id="quiz-q" type="search" autocomplete="off"'
+      +   ' enterkeyhint="search" aria-label="Search a topic" placeholder="Search a topic, e.g. chronic disease"'
+      +   ' value="' + escAttr(q) + '">'
+      +   '<button class="btn btn--primary" type="submit">Search</button>'
+      + '</form>'
+      + '<div id="quiz-draft"></div>'
+      + '<p class="results__count" id="quiz-count" aria-live="polite"></p>'
+      + '<div class="quiznomatch" id="quiz-nomatch" role="status" hidden></div>'
+      + '<div id="quiz-grid">' + (all.length ? gridHtml(all, {}) : '') + '</div>'
+      + '<p class="quizmore" id="quiz-more" hidden></p>'
+      + '</section>';
+  }
+
+  function wireQuizHub(query) {
+    var hub = $('.quizhub');
+    var form = $('#quiz-search');
+    var input = $('#quiz-q');
+    if (!hub || !form || !input) return;
+    var conf = sectionConf('questions');
+    var all = entriesIn('questions').slice().sort(SORTS.newest);
+    var grid = $('#quiz-grid'), count = $('#quiz-count'), none = $('#quiz-nomatch'), more = $('#quiz-more');
+
+    function matches(q) { return isStr(q) ? all.filter(function (r) { return recipeMatches(r, q); }) : all; }
+
+    function paint(raw) {
+      var q = String(raw || '').trim();
+      var list = matches(q);
+      grid.innerHTML = list.length ? gridHtml(list, {}) : '';
+      count.textContent = !all.length ? ''
+        : q ? list.length + ' of ' + all.length + ' ' + conf.plural
+        : all.length + ' ' + (all.length === 1 ? conf.singular : conf.plural);
+
+      none.hidden = list.length > 0;
+      none.innerHTML = list.length ? '' :
+          '<strong>' + (q ? 'No quiz on “' + esc(q) + '” yet.' : 'No quizzes yet.') + '</strong>'
+        + (signedIn()
+            ? '<p>Make one: check the topic, look at a sample question, and the rest are written for you.</p>'
+              + '<button class="btn btn--primary" type="button" data-create="' + escAttr(q) + '">'
+              + (q ? 'Create a quiz on “' + esc(q) + '”' : 'Create a quiz') + '</button>'
+            : '<p>Sign in to create a quiz on it.</p><a class="btn btn--primary" href="#/login">Sign in</a>');
+
+      // A near match is not always what she meant: still offer to make the exact topic.
+      more.hidden = !(list.length && q && signedIn());
+      more.innerHTML = more.hidden ? ''
+        : 'Not what you’re after? <button class="linkbtn" type="button" data-create="' + escAttr(q) + '">Create a quiz on “'
+          + esc(q) + '”</button>';
+      revealAll();
+    }
+
+    function paintDraft() {
+      var host = $('#quiz-draft');
+      var d = loadQuizDraft();
+      if (!host) return;
+      host.innerHTML = !d ? '' :
+          '<div class="quizdraft"><p><strong>Your quiz on “' + esc(d.title || d.topic) + '” is part-written:</strong> '
+        + Math.min(d.questions.length, d.count) + ' of ' + d.count + ' questions so far.</p>'
+        + '<div class="row">'
+        +   '<button class="btn btn--primary btn--sm" type="button" data-draft="continue">Continue writing</button>'
+        +   '<button class="btn btn--ghost btn--sm" type="button" data-draft="discard">Discard</button>'
+        + '</div></div>';
+    }
+
+    hub.addEventListener('click', function (e) {
+      var make = e.target.closest && e.target.closest('[data-create]');
+      if (make) { openQuizMaker(make.getAttribute('data-create')); return; }
+      var dr = e.target.closest && e.target.closest('[data-draft]');
+      if (!dr) return;
+      var d = loadQuizDraft();
+      if (!d) { paintDraft(); return; }
+      if (dr.getAttribute('data-draft') === 'continue') openQuizMaker(d.topic, d);
+      else if (window.confirm('Throw away the part-written quiz on “' + (d.title || d.topic) + '”?')) {
+        clearQuizDraft();
+        paintDraft();
+      }
+    });
+
+    input.addEventListener('input', debounce(function () {
+      var q = input.value.trim();
+      // Keep the address in step without re-rendering (and losing the cursor).
+      try { history.replaceState(null, '', '#/questions' + (q ? '?q=' + encodeURIComponent(q) : '')); } catch (e) {}
+      paint(q);
+    }, 160));
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var q = input.value.trim();
+      paint(q);
+      // Search a topic; if there is no quiz on it, go straight to making one.
+      if (q && !matches(q).length && signedIn()) openQuizMaker(q);
+    });
+
+    paintDraft();
+    paint(input.value);
+  }
+
+  /* ---------------------------------------------------- #/questions/<id> */
+
+  function renderQuizPage(r) {
+    var n = num(r.questionCount);
+    setMeta(r.title, isStr(r.desc) ? r.desc : 'A quiz on ' + r.title + '.');
+    var crumbs = '<nav class="crumbs" aria-label="Breadcrumb"><ol>'
+      + '<li><a href="#/">Home</a></li>'
+      + '<li><a href="#/questions">' + esc(sectionConf('questions').label) + '</a></li>'
+      + '<li aria-current="page">' + esc(r.title || '') + '</li>'
+      + '</ol></nav>';
+    return '<section class="section quizpage">' + crumbs
+      + '<div class="quiz" id="quiz">'
+      +   '<div class="quiz__bar">'
+      +     '<div class="quiz__head"><h1 class="quiz__title">' + esc(r.title || 'Quiz') + '</h1>'
+      +       '<p class="quiz__sub">Interactive quiz' + (n ? ' · ' + n + ' questions' : '')
+      +         (isStr(r.cat) ? ' · ' + esc(r.cat) : '') + '</p></div>'
+      +     '<div class="quiz__tools">'
+      +       '<span class="quiz__pill" id="quiz-score">Score: 0 / 0</span>'
+      +       '<span class="quiz__pill quiz__pill--skip" id="quiz-skips" hidden>Skipped: 0</span>'
+      +       '<label class="quiz__jump"><span>Jump to</span>'
+      +         '<input class="authform__input" type="number" id="quiz-jump" min="1" inputmode="numeric" placeholder="#"></label>'
+      +       '<button class="btn btn--ghost btn--sm" type="button" id="quiz-go">Go</button>'
+      +       '<button class="btn btn--primary btn--sm" type="button" id="quiz-finish">Finish</button>'
+      +     '</div>'
+      +   '</div>'
+      +   '<div class="quiz__card" id="quiz-card"><p class="quiz__loading">Loading the questions…</p></div>'
+      + '</div>'
+      + (isStr(r.desc) ? '<p class="quiz__about muted">' + esc(r.desc) + '</p>' : '')
+      + '</section>';
+  }
+
+  function wireQuizPlayer(id) {
+    var root = $('#quiz');
+    var r = state.byId[id];
+    if (!root || !r || !isStr(r.quiz)) return;
+    var card = $('#quiz-card', root);
+    fetch(r.quiz, { cache: 'no-cache' })
+      .then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+      .then(function (data) {
+        if (!root.isConnected) return;   // she left the page while it loaded
+        var Q = arr(data && data.questions).filter(validQuizQuestion);
+        if (!Q.length) {
+          card.innerHTML = emptyHtml('This quiz is empty', 'It has no questions yet.', '#/questions', 'Back to Questions');
+          return;
+        }
+        runQuiz(root, id, Q);
+      })
+      .catch(function () {
+        if (!root.isConnected) return;
+        card.innerHTML = emptyHtml('Could not load this quiz',
+          'A brand-new quiz takes about a minute to go live. Wait a moment, then refresh the page.',
+          '#/questions', 'Back to Questions');
+      });
+  }
+
+  function runQuiz(root, id, Q) {
+    var card = $('#quiz-card', root);
+    var saved = loadQuizProgress(id);
+    var P = { current: 0, answers: {} };
+    if (saved) {
+      P.answers = saved.answers || {};
+      P.current = clamp(parseInt(saved.current, 10) || 0, 0, Q.length - 1);
+    }
+
+    function persist() { saveQuizProgress(id, { current: P.current, answers: P.answers, total: Q.length, updated: Date.now() }); }
+    function peek(i) { return P.answers[i] || null; }
+    function slot(i) {
+      return P.answers[i] || (P.answers[i] = { selected: [], submitted: false, correct: false, skipped: false, hintShown: false });
+    }
+
+    function pills() {
+      var st = quizStats(P);
+      $('#quiz-score', root).textContent = 'Score: ' + st.correct + ' / ' + st.answered;
+      var sk = $('#quiz-skips', root);
+      sk.hidden = !st.skipped;
+      sk.textContent = 'Skipped: ' + st.skipped;
+    }
+
+    function draw() {
+      var i = P.current, q = Q[i];
+      var a = peek(i) || { selected: [], submitted: false, correct: false, skipped: false, hintShown: false };
+      var multi = quizIsMulti(q), right = quizCorrect(q);
+      var pct = Math.round(((i + 1) / Q.length) * 100);
+      var skipped = a.skipped && !a.submitted;
+
+      var h = '<div class="quiz__progress"><span>Question ' + (i + 1) + ' of ' + Q.length + '</span><span>' + pct + '%</span></div>'
+        + '<div class="quiz__track"><div class="quiz__fill" style="width:' + pct + '%"></div></div>'
+        + '<span class="quiz__qnum' + (skipped ? ' is-skipped' : '') + '">Question ' + (i + 1) + (skipped ? ' (skipped)' : '') + '</span>'
+        + '<p class="quiz__q">' + esc(q.q) + '</p>';
+
+      if (multi) {
+        h += '<p class="quiz__multi">' + (a.submitted
+          ? 'Multi-answer (needed ' + right.length + ')'
+          : 'Select ' + right.length + ' answers, then tap Submit. ' + (right.length - a.selected.length) + ' more to go.') + '</p>';
+      }
+
+      h += '<div class="quiz__opts">' + q.o.map(function (opt, k) {
+        var n = k + 1;
+        var sel = a.selected.indexOf(n) !== -1;
+        var ok = right.indexOf(n) !== -1;
+        var cls = 'quiz__opt';
+        if (sel && !a.submitted) cls += ' is-selected';
+        if (a.submitted) cls += ' is-locked' + (ok ? ' is-correct' : sel ? ' is-wrong' : '');
+        var mark = a.submitted && ok ? '<span class="quiz__mark" aria-label="right answer">✓</span>'
+          : a.submitted && sel ? '<span class="quiz__mark" aria-label="your answer, wrong">✗</span>' : '';
+        return '<button type="button" class="' + cls + '" data-pick="' + n + '" aria-pressed="' + sel + '"'
+          + (a.submitted ? ' aria-disabled="true"' : '') + '>'
+          + '<span class="quiz__letter">' + QUIZ_LETTERS[k] + '.</span><span class="quiz__optext">' + esc(opt) + '</span>' + mark
+          + '</button>';
+      }).join('') + '</div>';
+
+      if (a.submitted) {
+        var list = right.slice().sort(function (x, y) { return x - y; })
+          .map(function (n) { return QUIZ_LETTERS[n - 1] + '. ' + esc(q.o[n - 1]); }).join('<br>');
+        h += '<div class="quiz__reveal"><div class="quiz__block ' + (a.correct ? 'quiz__block--right' : 'quiz__block--wrong') + '">'
+          + '<span class="quiz__label">' + (a.correct ? 'Correct!' : 'Not quite. Correct answer:') + '</span>' + list
+          + '</div></div>';
+      }
+
+      h += '<div class="quiz__actions"><div class="quiz__group">'
+        +   '<button class="btn btn--ghost" type="button" data-act="prev"' + (i === 0 ? ' disabled' : '') + '>Previous</button>'
+        +   '<button class="btn btn--ghost" type="button" data-act="hint">' + (a.hintShown ? 'Hide hint' : 'Show hint') + '</button>'
+        + '</div><div class="quiz__group">'
+        + (a.submitted
+            ? '<button class="btn btn--primary" type="button" data-act="next">' + (i < Q.length - 1 ? 'Next' : 'Finish') + '</button>'
+            : '<button class="btn quiz__skip" type="button" data-act="skip">Skip</button>'
+              + (multi ? '<button class="btn btn--primary" type="button" data-act="submit"'
+                  + (a.selected.length !== right.length ? ' disabled' : '') + '>Submit</button>' : ''))
+        + '</div></div>';
+
+      if (a.hintShown) {
+        h += '<div class="quiz__reveal">'
+          + (isStr(q.tip) ? '<div class="quiz__block quiz__block--tip"><span class="quiz__label">Tip</span>' + esc(q.tip) + '</div>' : '')
+          + (isStr(q.eli5) ? '<div class="quiz__block quiz__block--eli5"><span class="quiz__label">Explain like I am 5</span>' + esc(q.eli5) + '</div>' : '')
+          + (!isStr(q.tip) && !isStr(q.eli5) ? '<p class="muted">No hint for this one.</p>' : '')
+          + '</div>';
+      }
+
+      card.innerHTML = h;
+      pills();
+    }
+
+    function grade() {
+      var q = Q[P.current], a = slot(P.current);
+      if (a.submitted) return;
+      var right = quizCorrect(q);
+      a.correct = right.length === a.selected.length && right.every(function (n) { return a.selected.indexOf(n) !== -1; });
+      a.submitted = true;
+      a.skipped = false;
+      persist();
+      draw();
+    }
+    function pick(n) {
+      var q = Q[P.current], a = slot(P.current);
+      if (a.submitted) return;
+      a.skipped = false;
+      if (!quizIsMulti(q)) { a.selected = [n]; grade(); return; }
+      var max = quizCorrect(q).length;
+      if (a.selected.indexOf(n) !== -1) a.selected = a.selected.filter(function (x) { return x !== n; });
+      else if (a.selected.length < max) a.selected.push(n);
+      else { a.selected.shift(); a.selected.push(n); }
+      persist();
+      draw();
+    }
+    function submit() {
+      var a = peek(P.current);
+      if (a && a.selected.length === quizCorrect(Q[P.current]).length) grade();
+    }
+    function go(i) {
+      P.current = clamp(i, 0, Q.length - 1);
+      persist();
+      draw();
+      root.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    function next() { if (P.current < Q.length - 1) go(P.current + 1); else finish(); }
+    function prev() { if (P.current > 0) go(P.current - 1); }
+    function skip() {
+      var a = slot(P.current);
+      if (a.submitted) return;
+      a.skipped = true;
+      a.selected = [];
+      persist();
+      if (P.current < Q.length - 1) go(P.current + 1); else finish();
+    }
+    function hint() {
+      var a = slot(P.current);
+      a.hintShown = !a.hintShown;
+      persist();
+      draw();
+    }
+    function outstanding() {
+      var out = [];
+      for (var i = 0; i < Q.length; i++) { var a = P.answers[i]; if (!a || !a.submitted) out.push(i); }
+      return out;
+    }
+    function finish() { var o = outstanding(); if (o.length) reminder(o); else results(); }
+    function reminder(o) {
+      var shown = o.slice(0, 40).map(function (i) { return '#' + (i + 1); }).join(', ')
+        + (o.length > 40 ? ' and ' + (o.length - 40) + ' more' : '');
+      card.innerHTML = '<div class="quiz__end"><h2>Almost done!</h2>'
+        + '<p>You still have <strong>' + o.length + '</strong> question' + (o.length === 1 ? '' : 's') + ' to answer.</p>'
+        + '<div class="quiz__outstanding"><strong>Outstanding questions:</strong><br>' + shown + '</div>'
+        + '<div class="quiz__endbtns">'
+        +   '<button class="btn btn--primary" type="button" data-act="goto" data-i="' + o[0] + '">Do them now (start at #' + (o[0] + 1) + ')</button>'
+        +   '<button class="btn btn--ghost" type="button" data-act="results">Show results anyway</button>'
+        + '</div></div>';
+      pills();   // a skip that lands here must still show in the Skipped count
+    }
+    function results() {
+      var st = quizStats(P);
+      var pct = st.answered ? Math.round((st.correct / st.answered) * 100) : 0;
+      var cheer = pct >= 80 ? 'Outstanding!' : pct >= 60 ? 'Solid work!' : pct >= 40 ? 'Keep going!' : 'Practice makes perfect!';
+      card.innerHTML = '<div class="quiz__end"><h2>Quiz complete!</h2>'
+        + '<div class="quiz__bigscore">' + st.correct + ' / ' + st.answered + '</div>'
+        + '<p>' + pct + '% correct, ' + (Q.length - st.answered) + ' not answered</p>'
+        + '<p class="quiz__cheer">' + cheer + '</p>'
+        + '<div class="quiz__endbtns">'
+        +   '<button class="btn btn--primary" type="button" data-act="restart">Restart quiz</button>'
+        +   '<a class="btn btn--ghost" href="#/questions">More quizzes</a>'
+        + '</div></div>';
+      pills();
+    }
+    function restart(ask) {
+      if (ask && !window.confirm('Start this quiz again from question 1? Your answers will be cleared.')) return;
+      P = { current: 0, answers: {} };
+      clearQuizProgress(id);
+      draw();
+    }
+
+    card.addEventListener('click', function (e) {
+      var t = e.target.closest && e.target.closest('[data-pick],[data-act]');
+      if (!t || !card.contains(t)) return;
+      if (t.hasAttribute('data-pick')) { pick(parseInt(t.getAttribute('data-pick'), 10)); return; }
+      var act = t.getAttribute('data-act');
+      if (act === 'prev') prev();
+      else if (act === 'next') next();
+      else if (act === 'skip') skip();
+      else if (act === 'submit') submit();
+      else if (act === 'hint') hint();
+      else if (act === 'goto') go(parseInt(t.getAttribute('data-i'), 10) || 0);
+      else if (act === 'results') results();
+      else if (act === 'restart') restart(true);
+      else if (act === 'resume') draw();
+      else if (act === 'fresh') restart(false);
+    });
+
+    var jump = $('#quiz-jump', root);
+    var goBtn = $('#quiz-go', root);
+    jump.max = Q.length;
+    goBtn.addEventListener('click', function () {
+      var v = parseInt(jump.value, 10);
+      if (v >= 1 && v <= Q.length) { jump.value = ''; go(v - 1); }
+    });
+    jump.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); goBtn.click(); } });
+    $('#quiz-finish', root).addEventListener('click', finish);
+
+    // Keys, as in the study quizzes: 1-6 pick, arrows move, H hint, S skip,
+    // Enter submits a multi-answer question.
+    state.quizKeys = function (e) {
+      if (!root.isConnected || e.ctrlKey || e.metaKey || e.altKey) return;
+      var tag = e.target && e.target.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+      if (e.key === 'Enter' && tag === 'BUTTON') return;   // the button's own click handles it
+      if (!$('.quiz__opts', card)) return;                  // on the results or reminder screen
+      var q = Q[P.current], a = peek(P.current);
+      var key = String(e.key || '');
+      if (key === 'ArrowRight' && a && a.submitted) next();
+      else if (key === 'ArrowLeft') prev();
+      else if (key === 'Enter' && a && !a.submitted && quizIsMulti(q)) submit();
+      else if (key.toLowerCase() === 'h') hint();
+      else if (key.toLowerCase() === 's' && !(a && a.submitted)) skip();
+      else if (/^[1-6]$/.test(key) && parseInt(key, 10) <= q.o.length) pick(parseInt(key, 10));
+    };
+    document.addEventListener('keydown', state.quizKeys);
+
+    var st0 = quizStats(P);
+    if (st0.answered || st0.skipped) {
+      card.innerHTML = '<div class="quiz__end quiz__resume"><h2>Welcome back</h2>'
+        + '<p>You have answered <strong>' + st0.answered + '</strong> of ' + Q.length + ' questions, with '
+        + st0.correct + ' right.</p>'
+        + '<div class="quiz__endbtns">'
+        +   '<button class="btn btn--primary" type="button" data-act="resume">Continue from question ' + (P.current + 1) + '</button>'
+        +   '<button class="btn btn--ghost" type="button" data-act="fresh">Start over</button>'
+        + '</div></div>';
+      pills();
+    } else {
+      draw();
+    }
+  }
+
+  /* ----------------------------------------------------------- quiz maker */
+
+  // One question laid out like the player shows it, answer already marked.
+  function quizSampleHtml(q) {
+    var right = quizCorrect(q);
+    return '<p class="qmaker__samplelabel">Sample question</p>'
+      + '<p class="quiz__q">' + esc(q.q) + '</p>'
+      + '<div class="quiz__opts">' + q.o.map(function (opt, k) {
+          var ok = right.indexOf(k + 1) !== -1;
+          return '<div class="quiz__opt is-locked' + (ok ? ' is-correct' : '') + '">'
+            + '<span class="quiz__letter">' + QUIZ_LETTERS[k] + '.</span><span class="quiz__optext">' + esc(opt) + '</span>'
+            + (ok ? '<span class="quiz__mark" aria-label="right answer">✓</span>' : '') + '</div>';
+        }).join('') + '</div>'
+      + (isStr(q.tip) ? '<div class="quiz__block quiz__block--tip"><span class="quiz__label">Tip</span>' + esc(q.tip) + '</div>' : '')
+      + (isStr(q.eli5) ? '<div class="quiz__block quiz__block--eli5"><span class="quiz__label">Explain like I am 5</span>' + esc(q.eli5) + '</div>' : '');
+  }
+
+  // The popup: topic (with a Generate button for one sample), how many
+  // questions, then Done writes them all. `resume` is a saved draft to finish.
+  function openQuizMaker(topic, resume) {
+    if (!signedIn()) { navigate('#/login'); return; }
+
+    var existing = loadQuizDraft();
+    if (!resume && existing) {
+      var carryOn = window.confirm('You already have a part-written quiz on “' + (existing.title || existing.topic) + '” ('
+        + Math.min(existing.questions.length, existing.count) + ' of ' + existing.count + ' questions).\n\n'
+        + 'OK: carry on with that one.\nCancel: throw it away and start a new one.');
+      if (carryOn) resume = existing; else clearQuizDraft();
+    }
+
+    var token = {};
+    state.quizRun = token;
+
+    var wrap = document.createElement('div');
+    wrap.className = 'qmaker';
+    wrap.innerHTML = '<div class="qmaker__backdrop"></div>'
+      + '<div class="qmaker__panel" role="dialog" aria-modal="true" aria-labelledby="qm-title">'
+      +   '<div class="qmaker__head"><h2 class="qmaker__title" id="qm-title">Create a quiz</h2>'
+      +     '<button class="qmaker__x" type="button" data-qm="close" aria-label="Close">×</button></div>'
+      +   '<div class="qmaker__body" id="qm-body"></div>'
+      +   '<div class="qmaker__foot" id="qm-foot"></div>'
+      + '</div>';
+    document.body.appendChild(wrap);
+    document.body.classList.add('is-locked');
+    void wrap.offsetWidth;   // reveal without requestAnimationFrame; see askExtractMode()
+    wrap.classList.add('is-open');
+
+    var body = $('#qm-body', wrap);
+    var foot = $('#qm-foot', wrap);
+    var sample = null;        // { topic, title, category, question }
+    var d = resume || null;   // the draft, once writing has started
+    var running = false;
+
+    // This writer may keep saving while its popup is open, or after it was
+    // closed as long as no other writer has started since.
+    function mine() { return state.quizRun === token || state.quizRun === null; }
+    function live() { return state.quizRun === token && wrap.isConnected; }
+
+    function close() {
+      if (state.quizRun === token) state.quizRun = null;
+      document.removeEventListener('keydown', onKey);
+      document.body.classList.remove('is-locked');
+      if (wrap.parentNode) wrap.parentNode.removeChild(wrap);
+      var here = parseHash().parts;
+      if (here[0] === 'questions' && !here[1]) render();   // refresh the part-written banner
+    }
+    function onKey(e) { if (e.key === 'Escape') close(); }
+    document.addEventListener('keydown', onKey);
+    wrap.addEventListener('click', function (e) {
+      if (e.target.classList.contains('qmaker__backdrop') && !running) { close(); return; }
+      var t = e.target.closest && e.target.closest('[data-qm]');
+      if (t && t.getAttribute('data-qm') === 'close') close();
+    });
+
+    // --- step 1: topic, sample, how many -----------------------------------
+    function setupView() {
+      body.innerHTML =
+          '<label class="authform__label" for="qm-topic">Topic</label>'
+        + '<div class="qmaker__row">'
+        +   '<input class="authform__input" id="qm-topic" type="text" autocomplete="off" placeholder="e.g. chronic disease"'
+        +   ' value="' + escAttr(topic || '') + '">'
+        +   '<button class="btn btn--ghost" type="button" id="qm-gen">Generate</button>'
+        + '</div>'
+        + '<p class="adminform__hint">Tap <strong>Generate</strong> to see one sample question. Change the topic and try again until it looks right.</p>'
+        + '<label class="authform__label" for="qm-count">How many questions</label>'
+        + '<input class="authform__input qmaker__count" id="qm-count" type="number" inputmode="numeric" min="10" max="300" step="10" value="150">'
+        + '<div class="qmaker__sample" id="qm-sample" aria-live="polite"></div>'
+        + '<p class="authform__msg" id="qm-msg" role="status" aria-live="polite"></p>';
+      foot.innerHTML =
+          '<button class="btn btn--ghost" type="button" data-qm="close">Cancel</button>'
+        + '<button class="btn btn--primary" type="button" id="qm-done"></button>';
+
+      var topicEl = $('#qm-topic', wrap), countEl = $('#qm-count', wrap);
+      var gen = $('#qm-gen', wrap), done = $('#qm-done', wrap), out = $('#qm-sample', wrap), msg = $('#qm-msg', wrap);
+
+      function howMany() { var n = parseInt(countEl.value, 10); return isFinite(n) ? clamp(n, 10, 300) : 150; }
+      function sync() {
+        done.textContent = 'Done — write ' + howMany() + ' questions';
+        done.disabled = topicEl.value.trim().length < 2;
+      }
+      function say(text, bad) { msg.textContent = text || ''; msg.classList.toggle('is-error', !!bad); }
+
+      topicEl.addEventListener('input', sync);
+      countEl.addEventListener('input', sync);
+      topicEl.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); gen.click(); } });
+      sync();
+      setTimeout(function () { topicEl.focus(); }, 30);
+
+      gen.addEventListener('click', function () {
+        var t = topicEl.value.trim();
+        if (t.length < 2) { say('Please type a topic first.', true); topicEl.focus(); return; }
+        gen.disabled = true;
+        say('');
+        out.innerHTML = '<p class="qmaker__working"><span class="busy__spinner" aria-hidden="true"></span>'
+          + 'Writing a sample question on “' + esc(t) + '”…</p>';
+        apiPost('/api/quiz-generate', { mode: 'sample', topic: t }).then(function (res) {
+          if (!live()) return;
+          sample = { topic: t, title: res.title || titleCase(t), category: res.category || '', question: res.question };
+          out.innerHTML = quizSampleHtml(res.question);
+        }).catch(function (err) {
+          if (!live()) return;
+          out.innerHTML = '';
+          say(err.message || 'Could not write a sample. Please try again.', true);
+        }).then(function () { gen.disabled = false; });
+      });
+
+      done.addEventListener('click', function () {
+        var t = topicEl.value.trim();
+        if (t.length < 2) { say('Please type a topic first.', true); return; }
+        // The sample she approved becomes question 1, if it is still for this topic.
+        var keep = sample && sample.topic === t && validQuizQuestion(sample.question) ? sample : null;
+        d = {
+          topic: t, count: howMany(),
+          title: keep ? keep.title : titleCase(t), category: keep ? keep.category : '',
+          summary: '', tags: [], subtopics: [], facts: [],
+          researched: false, nextSub: 0, stalls: 0,
+          questions: keep ? [keep.question] : [],
+          startedAt: Date.now()
+        };
+        saveQuizDraft(d);
+        writeView();
+      });
+    }
+
+    // --- step 2: writing ---------------------------------------------------
+    function writeView() {
+      running = true;
+      $('#qm-title', wrap).textContent = 'Writing “' + d.title + '”';
+      body.innerHTML =
+          '<p class="qmaker__stage" id="qm-stage">Getting started…</p>'
+        + '<div class="quiz__track"><div class="quiz__fill" id="qm-fill"></div></div>'
+        + '<p class="qmaker__tally" id="qm-tally"></p>'
+        + '<p class="adminform__hint">You can close this and come back later. The questions written so far are kept on this device, '
+        +   'and <strong>Continue writing</strong> on the Questions page carries on from here.</p>'
+        + '<p class="authform__msg" id="qm-msg" role="status" aria-live="polite"></p>';
+      pauseFoot();
+      tally();
+      run();
+    }
+    function pauseFoot() { foot.innerHTML = '<button class="btn btn--ghost" type="button" data-qm="close">Pause and close</button>'; }
+    function stage(text) { var el2 = $('#qm-stage', wrap); if (el2) el2.textContent = text; }
+    function tally() {
+      var n = Math.min(d.questions.length, d.count);
+      var fill = $('#qm-fill', wrap); if (fill) fill.style.width = Math.round((n / d.count) * 100) + '%';
+      var tl = $('#qm-tally', wrap); if (tl) tl.textContent = n + ' of ' + d.count + ' questions written';
+    }
+    function problem(message, label, retry) {
+      running = false;
+      stage('Stopped');
+      var m = $('#qm-msg', wrap);
+      if (m) { m.textContent = message; m.classList.add('is-error'); }
+      foot.innerHTML = '<button class="btn btn--ghost" type="button" data-qm="close">Close</button>'
+        + '<button class="btn btn--primary" type="button" id="qm-retry">' + esc(label) + '</button>';
+      $('#qm-retry', wrap).addEventListener('click', function () {
+        var m2 = $('#qm-msg', wrap);
+        if (m2) { m2.textContent = ''; m2.classList.remove('is-error'); }
+        running = true;
+        pauseFoot();
+        retry();
+      });
+    }
+
+    function run() {
+      if (!live()) return;
+      if (d.researched) { writeMore(); return; }
+      stage('Researching “' + d.topic + '”…');
+      apiPost('/api/quiz-generate', { mode: 'research', topic: d.topic, count: d.count }).then(function (res) {
+        if (!mine()) return;
+        d.title = res.title || d.title;
+        d.category = res.category || d.category;
+        d.summary = res.summary || '';
+        d.tags = arr(res.tags);
+        d.subtopics = arr(res.subtopics).length ? arr(res.subtopics) : [d.topic];
+        d.facts = arr(res.facts);
+        d.researched = true;
+        saveQuizDraft(d);
+        if (!live()) return;
+        $('#qm-title', wrap).textContent = 'Writing “' + d.title + '”';
+        writeMore();
+      }).catch(function (err) {
+        if (live()) problem(err.message || 'The research step failed.', 'Try again', run);
+      });
+    }
+
+    function writeMore() {
+      if (!live()) return;
+      if (d.questions.length >= d.count) { publish(); return; }
+
+      var need = d.count - d.questions.length;
+      var jobs = [];
+      for (var j = 0; j < QUIZ_PARALLEL && need > 0; j++) {
+        var n = Math.min(QUIZ_BATCH, need);
+        jobs.push({ subtopic: d.subtopics[(d.nextSub + j) % d.subtopics.length], count: n });
+        need -= n;
+      }
+      var planned = jobs.reduce(function (sum, job) { return sum + job.count; }, 0);
+      stage('Writing questions ' + (d.questions.length + 1) + '–' + Math.min(d.count, d.questions.length + planned)
+        + ' of ' + d.count + '…');
+      var avoid = d.questions.map(function (q) { return q.q; });
+
+      Promise.all(jobs.map(function (job) {
+        return apiPost('/api/quiz-generate', {
+          mode: 'batch', topic: d.topic, title: d.title, subtopic: job.subtopic,
+          facts: d.facts, count: job.count, avoid: avoid
+        }).then(function (res) { return arr(res.questions); });
+      })).then(function (lists) {
+        if (!mine()) return;                          // another writer has started since
+        if (!live() && !loadQuizDraft()) return;      // the draft was thrown away meanwhile
+        var seen = {};
+        d.questions.forEach(function (q) { seen[quizKey(q.q)] = 1; });
+        var added = 0;
+        lists.forEach(function (list) {
+          list.forEach(function (q) {
+            if (!validQuizQuestion(q) || d.questions.length >= d.count) return;
+            var k = quizKey(q.q);
+            if (seen[k]) return;
+            seen[k] = 1;
+            d.questions.push(q);
+            added++;
+          });
+        });
+        d.nextSub = (d.nextSub + jobs.length) % d.subtopics.length;
+        d.stalls = added ? 0 : (d.stalls || 0) + 1;
+        saveQuizDraft(d);
+        if (!live()) return;
+        tally();
+        if (d.stalls >= 3) {
+          problem('The writer keeps coming back with questions the quiz already has. You can publish the '
+            + d.questions.length + ' written so far, or close this and try again later.',
+            'Publish ' + d.questions.length + ' questions', publish);
+          return;
+        }
+        writeMore();
+      }).catch(function (err) {
+        if (live()) problem((err.message || 'A batch of questions failed.') + ' Everything written so far is kept.', 'Try again', writeMore);
+      });
+    }
+
+    // --- step 3: publish ---------------------------------------------------
+    function publish() {
+      if (!live()) return;
+      running = true;
+      pauseFoot();
+      stage('Publishing “' + d.title + '”…');
+      var questions = d.questions.slice(0, d.count);
+      apiPost('/api/recipe-save', {
+        recipe: {
+          id: freeId(d.title), section: 'questions', title: d.title, cat: d.category,
+          tags: d.tags, desc: d.summary, badge: 'New', ill: 'ill-bowl',
+          img: '', poster: '', lede: '', body: ''
+        },
+        originalId: '',
+        quiz: { title: d.title, topic: d.topic, category: d.category, summary: d.summary, questions: questions }
+      }).then(function (saved) {
+        clearQuizDraft();
+        running = false;
+        if (state.quizRun === token) state.quizRun = null;
+        body.innerHTML = '<div class="quiz__end"><h2>Done!</h2><p><strong>' + esc(d.title) + '</strong> has '
+          + questions.length + ' questions. It goes live on the site in about a minute.</p></div>';
+        foot.innerHTML = '<button class="btn btn--primary" type="button" data-qm="close">Close</button>';
+        watchForPublish(saved.id, saved.created);
+      }).catch(function (err) {
+        if (live()) problem((err.message || 'Saving failed.') + ' The questions are still kept on this device.', 'Try saving again', publish);
+      });
+    }
+
+    if (d) writeView(); else setupView();
+  }
+
   /* ------------------------------------------------------------- recipe */
 
   function renderRecipe(id) {
     var r = state.byId[id];
+    // A health post or question reached through an old-style address.
+    if (r && sectionOf(r) !== 'recipes') return renderPost(sectionOf(r), id);
     if (!r) {
       return '<section class="section">' + emptyHtml('Recipe not found',
         'We couldn’t find that recipe. It may have been renamed or removed.', '#/recipes', 'Browse all recipes') + '</section>';
@@ -1176,7 +2143,9 @@
 
     if (head === 'recipe') { wireRecipe(parts[1]); wirePoster(); }
     if (head === 'login') wireLogin();
-    if (head === 'admin') wireAdmin();
+    if (head === 'admin') wireAdmin(query);
+    if ((head === 'health' || head === 'questions') && parts[1]) wirePoster();
+    if (head === 'questions') { if (parts[1]) wireQuizPlayer(parts[1]); else wireQuizHub(query); }
     if (head === 'recipes' || head === 'category') wireFilters(head, parts, query);
   }
 
@@ -1398,8 +2367,8 @@
     if (!el.accountLink) return;
     var inn = signedIn();
     el.accountLink.setAttribute('href', inn ? '#/admin' : '#/login');
-    el.accountLink.setAttribute('aria-label', inn ? 'My recipes' : 'Sign in');
-    el.accountLink.setAttribute('title', inn ? 'My recipes' : 'Sign in');
+    el.accountLink.setAttribute('aria-label', inn ? 'My posts' : 'Sign in');
+    el.accountLink.setAttribute('title', inn ? 'My posts' : 'Sign in');
     el.accountLink.classList.toggle('is-on', inn);
   }
 
@@ -1577,22 +2546,33 @@
 
   /* ---------------------------------------------------------- admin UI */
 
-  function renderAdmin() {
-    setMeta('My recipes', 'Add and edit recipes.');
+  // Which section the manager shows: #/admin?s=health. Anything unknown means
+  // Recipes, so an old bookmark to #/admin still lands somewhere sensible.
+  function adminSection(query) {
+    var sec = query && query.s;
+    return SECTION_IDS.indexOf(sec) !== -1 ? sec : 'recipes';
+  }
+
+  function renderAdmin(query) {
+    setMeta('My posts', 'Add and edit recipes, health posts and questions.');
     if (!signedIn()) {
       return '<section class="section">' + emptyHtml('Please sign in first',
-        'You need to sign in before you can add or change recipes.', '#/login', 'Sign in') + '</section>';
+        'You need to sign in before you can add or change anything.', '#/login', 'Sign in') + '</section>';
     }
 
-    var rows = state.recipes.map(function (r) {
+    var sec = adminSection(query);
+    var conf = sectionConf(sec);
+    var list = entriesIn(sec);
+
+    var rows = list.map(function (r) {
       var pic = cardImage(r);
       var thumb = pic
         ? '<img class="adminrow__thumb" src="' + escAttr(pic.src) + '" alt="" loading="lazy">'
         : '<svg class="adminrow__thumb adminrow__thumb--ill" viewBox="0 0 200 150" aria-hidden="true">'
           + '<use href="#' + escAttr(illRef(r)) + '"></use></svg>';
       // Name and tags only, folded into one lowercase string so the filter
-      // never has to touch the recipe objects again. Category is deliberately
-      // left out — the dropdown next to the box already does that, and
+      // never has to touch the entry objects again. Category is deliberately
+      // left out: the dropdown next to the box already does that, and
       // including it made "pau" return every loaf in Bread & Pau.
       var hay = [r.title || '', r.id || '', arr(r.tags).join(' ')]
         .join(' ').toLowerCase();
@@ -1602,93 +2582,144 @@
         + '<span class="adminrow__title">' + esc(r.title || r.id) + '</span>'
         + '<span class="adminrow__cat">' + esc(r.cat || '') + '</span>'
         + '<span class="adminrow__acts">'
-        +   '<a class="btn btn--ghost btn--sm" href="#/recipe/' + encodeURIComponent(r.id) + '">View</a>'
+        +   '<a class="btn btn--ghost btn--sm" href="' + escAttr(entryHref(r)) + '">View</a>'
         +   '<button class="btn btn--ghost btn--sm" type="button" data-edit="' + escAttr(r.id) + '">Edit</button>'
         +   '<button class="btn btn--ghost btn--sm adminrow__del" type="button" data-del="' + escAttr(r.id) + '">Delete</button>'
         + '</span></li>';
     }).join('');
 
+    // One tab per section. The list, its category filter and both add buttons
+    // follow the open tab, so adding to Health is: open Health, tap Add.
+    var tabs = '<div class="sectabs" role="tablist" aria-label="Which part of the site">'
+      + SECTION_IDS.map(function (s2) {
+          var on = s2 === sec;
+          return '<a class="sectabs__tab' + (on ? ' is-on' : '') + '" role="tab" aria-selected="' + on + '"'
+            + ' href="#/admin?s=' + s2 + '">' + esc(sectionConf(s2).label)
+            + ' <span class="sectabs__n">' + entriesIn(s2).length + '</span></a>';
+        }).join('')
+      + '</div>';
+
+    var listBlock = list.length
+      // With fifty-odd recipes, finding the one to edit was the slow part.
+      ? '<div class="adminfilter">'
+        +   '<div class="adminfilter__field">'
+        +     '<label class="authform__label" for="admin-q">Search</label>'
+        +     '<input class="authform__input" id="admin-q" type="search" autocomplete="off"'
+        +     ' placeholder="Type part of the name">'
+        +   '</div>'
+        +   '<div class="adminfilter__field">'
+        +     '<label class="authform__label" for="admin-catfilter">' + (sec === 'recipes' ? 'Category' : 'Topic') + '</label>'
+        +     '<select id="admin-catfilter"><option value="">' + (sec === 'recipes' ? 'All categories' : 'All topics') + '</option>'
+        +       conf.categories.map(function (c) {
+                  return '<option value="' + escAttr(c) + '">' + esc(c) + '</option>';
+                }).join('')
+        +     '</select>'
+        +   '</div>'
+        +   '<button class="btn btn--ghost btn--sm adminfilter__clear" type="button" id="admin-clear">Clear</button>'
+        + '</div>'
+        + '<p class="adminfilter__none" id="admin-none" role="status" hidden>'
+        +   'Nothing matches. Clear the search to see them all again.</p>'
+        + '<ul class="adminlist">' + rows + '</ul>'
+      : '<p class="adminfilter__none">No ' + esc(conf.plural) + ' yet. Tap <strong>'
+        + (sec === 'questions' ? 'Create a quiz' : esc('Add a ' + conf.singular))
+        + '</strong> at the bottom to add the first one.</p>'
+        + '<ul class="adminlist"></ul>';
+
     return '<section class="section">'
-      + '<div class="pagehead"><h1>My recipes</h1>'
-      + '<p>Signed in as ' + esc(state.session.email) + '. Tap <strong>Add a recipe</strong> at the '
-      + 'bottom, choose the picture, and it goes up on its own. Anything the reader got wrong '
-      + 'you can change with Edit afterwards.</p></div>'
+      + '<div class="pagehead"><h1>My posts</h1>'
+      + '<p>Signed in as ' + esc(state.session.email) + '. Pick a section, then use the button at the bottom. '
+      + (sec === 'questions'
+          ? '<strong>Create a quiz</strong> asks for a topic, shows you one sample question, then writes the rest.'
+          : '<strong>' + esc('Add a ' + conf.singular) + '</strong> opens your photos, and the picture goes up on its own. '
+            + 'Anything the reader got wrong you can change with Edit afterwards.')
+      + '</p></div>'
+      + tabs
       + '<div class="row" style="margin-bottom:1.25rem">'
       +   '<button class="btn btn--ghost" type="button" id="signout-btn">Sign out</button>'
-      +   '<button class="btn btn--ghost" type="button" id="admin-new">Add one by hand</button>'
+      // A quiz is written by the quiz maker, never typed in by hand.
+      +   (sec === 'questions' ? '' : '<button class="btn btn--ghost" type="button" id="admin-new">Add one by hand</button>')
       + '</div>'
       + '<p class="adminstatus" id="admin-status" role="status" aria-live="polite"></p>'
       + '<div id="admin-form-host"></div>'
-      + '<h2 class="section__title" style="margin:2rem 0 1rem">All recipes <span class="count" id="admin-count">'
-      +   state.recipes.length + '</span></h2>'
-      // With fifty-odd recipes, finding the one to edit was the slow part.
-      + '<div class="adminfilter">'
-      +   '<div class="adminfilter__field">'
-      +     '<label class="authform__label" for="admin-q">Search</label>'
-      +     '<input class="authform__input" id="admin-q" type="search" autocomplete="off"'
-      +     ' placeholder="Type part of the name">'
-      +   '</div>'
-      +   '<div class="adminfilter__field">'
-      +     '<label class="authform__label" for="admin-catfilter">Category</label>'
-      +     '<select id="admin-catfilter"><option value="">All categories</option>'
-      +       allCategories().map(function (c) {
-                return '<option value="' + escAttr(c) + '">' + esc(c) + '</option>';
-              }).join('')
-      +     '</select>'
-      +   '</div>'
-      +   '<button class="btn btn--ghost btn--sm adminfilter__clear" type="button" id="admin-clear">Clear</button>'
-      + '</div>'
-      + '<p class="adminfilter__none" id="admin-none" role="status" hidden>'
-      +   'Nothing matches. Clear the search to see them all again.</p>'
-      + '<ul class="adminlist">' + rows + '</ul>'
+      + '<h2 class="section__title" style="margin:2rem 0 1rem">' + esc(conf.label)
+      +   ' <span class="count" id="admin-count">' + list.length + '</span></h2>'
+      + listBlock
       + '</section>';
   }
 
-  function adminFormHtml(recipe) {
+  function adminFormHtml(recipe, section) {
     var r = recipe || {};
     var editing = !!recipe;
-    // Show whatever picture the recipe already has, poster or card, so an
-    // edit never looks like the image went missing.
+    // An edit stays in the section it was made in; a new entry goes to
+    // whichever tab is open.
+    var sec = editing ? sectionOf(recipe) : (section || 'recipes');
+    var conf = sectionConf(sec);
+    var isRecipe = sec === 'recipes';
+    var isQuestion = sec === 'questions';
+    // Show whatever picture the entry already has, poster or card, so an edit
+    // never looks like the image went missing.
     var existingPic = isStr(r.poster) ? r.poster : (isStr(r.img) ? r.img : '');
-    var cats = allCategories();
-    return '<form class="adminform" id="admin-form" novalidate>'
-      + '<h2 class="adminform__title">' + (editing ? 'Edit “' + esc(r.title) + '”' : 'Add a recipe') + '</h2>'
+    var cats = conf.categories;
 
-      + '<div class="adminform__field">'
-      +   '<label class="authform__label" for="af-image">Recipe picture</label>'
-      +   '<p class="adminform__hint">Upload the recipe image. This picture becomes the recipe — '
-      +     'people tap it to zoom in.' + (editing ? ' Leave empty to keep the current one.' : '') + '</p>'
+    return '<form class="adminform" id="admin-form" novalidate>'
+      + '<h2 class="adminform__title">' + (editing ? 'Edit “' + esc(r.title) + '”' : 'Add a ' + esc(conf.singular)) + '</h2>'
+
+      + (isQuestion
+          ? '<p class="adminform__hint">' + (num(r.questionCount) ? num(r.questionCount) + ' questions. ' : '')
+            + 'The questions themselves can’t be changed here. To rewrite them, delete this quiz and create it again.</p>'
+          : '<div class="adminform__field">'
+      +   '<label class="authform__label" for="af-image">'
+      +     (isRecipe ? 'Recipe picture' : 'Picture <span class="muted">(optional)</span>') + '</label>'
+      +   '<p class="adminform__hint">'
+      +     (isRecipe
+              ? 'Upload the recipe image. This picture becomes the recipe — people tap it to zoom in.'
+              : 'Add a picture if there is one — people can tap it to zoom in. Or skip it and just type below.')
+      +     (editing && existingPic ? ' Leave empty to keep the current one.' : '') + '</p>'
       +   '<input class="adminform__file" id="af-image" type="file" accept="image/*">'
       +   '<div class="adminform__preview" id="af-preview"' + (existingPic ? '' : ' hidden') + '>'
       +     (existingPic ? '<img src="' + escAttr(existingPic) + '" alt="">' : '')
       +   '</div>'
       +   '<p class="authform__msg" id="af-imgmsg" role="status" aria-live="polite"></p>'
-      + '</div>'
+      + '</div>')
 
       + '<div class="adminform__field">'
-      +   '<label class="authform__label" for="af-title">Name</label>'
-      +   '<input class="authform__input" id="af-title" type="text" value="' + escAttr(r.title || '') + '" required>'
+      +   '<label class="authform__label" for="af-title">' + (isRecipe ? 'Name' : isQuestion ? 'Quiz title' : 'Title') + '</label>'
+      +   '<input class="authform__input" id="af-title" type="text" value="' + escAttr(r.title || '') + '"'
+      +     ' required>'
       + '</div>'
 
       + '<div class="adminform__row">'
       +   '<div class="adminform__field">'
-      +     '<label class="authform__label" for="af-cat">Category</label>'
+      +     '<label class="authform__label" for="af-cat">' + (isRecipe ? 'Category' : 'Topic') + '</label>'
       +     '<select id="af-cat">' + cats.map(function (c) {
               return '<option value="' + escAttr(c) + '"' + (r.cat === c ? ' selected' : '') + '>' + esc(c) + '</option>';
             }).join('') + '</select>'
       +   '</div>'
-      +   '<div class="adminform__field">'
-      +     '<label class="authform__label" for="af-total">Time <span class="muted">(optional)</span></label>'
-      +     '<input class="authform__input" id="af-total" type="text" placeholder="e.g. 25 min" value="' + escAttr(r.total || '') + '">'
-      +   '</div>'
-      +   '<div class="adminform__field">'
-      +     '<label class="authform__label" for="af-yield">Servings <span class="muted">(optional)</span></label>'
-      +     '<input class="authform__input" id="af-yield" type="text" placeholder="e.g. 2 servings" value="' + escAttr(r.yield || '') + '">'
-      +   '</div>'
+      +   (isRecipe
+            ? '<div class="adminform__field">'
+            +   '<label class="authform__label" for="af-total">Time <span class="muted">(optional)</span></label>'
+            +   '<input class="authform__input" id="af-total" type="text" placeholder="e.g. 25 min" value="' + escAttr(r.total || '') + '">'
+            + '</div>'
+            + '<div class="adminform__field">'
+            +   '<label class="authform__label" for="af-yield">Servings <span class="muted">(optional)</span></label>'
+            +   '<input class="authform__input" id="af-yield" type="text" placeholder="e.g. 2 servings" value="' + escAttr(r.yield || '') + '">'
+            + '</div>'
+            : '')
       + '</div>'
+      // Time and servings mean nothing outside Recipes, but the save step reads
+      // them either way, so they stay in the form, empty and hidden.
+      + (isRecipe ? '' : '<input type="hidden" id="af-total" value=""><input type="hidden" id="af-yield" value="">')
+
+      + (isRecipe || isQuestion ? '' :
+          '<div class="adminform__field">'
+        +   '<label class="authform__label" for="af-body">' + (isQuestion ? 'The answer' : 'Write-up')
+        +     ' <span class="muted">(optional if the picture says it all)</span></label>'
+        +   '<textarea class="authform__input adminform__textarea" id="af-body" rows="7">' + esc(r.body || '') + '</textarea>'
+        +   '<p class="adminform__hint">Leave an empty line between paragraphs.</p>'
+        + '</div>')
 
       + '<div class="adminform__field">'
-      +   '<label class="authform__label" for="af-desc">Short description</label>'
+      +   '<label class="authform__label" for="af-desc">' + (isRecipe ? 'Short description' : 'One-line summary <span class="muted">(optional)</span>') + '</label>'
       +   '<input class="authform__input" id="af-desc" type="text" value="' + escAttr(r.desc || '') + '">'
       + '</div>'
 
@@ -1699,9 +2730,10 @@
 
       + '<input type="hidden" id="af-id" value="' + escAttr(r.id || '') + '">'
       + '<input type="hidden" id="af-ill" value="' + escAttr(r.ill || 'ill-bowl') + '">'
+      + '<input type="hidden" id="af-section" value="' + escAttr(sec) + '">'
 
       + '<div class="row">'
-      +   '<button class="btn btn--primary" type="submit" id="af-save">' + (editing ? 'Save changes' : 'Publish recipe') + '</button>'
+      +   '<button class="btn btn--primary" type="submit" id="af-save">' + (editing ? 'Save changes' : 'Publish') + '</button>'
       +   '<button class="btn btn--ghost" type="button" id="af-cancel">Cancel</button>'
       + '</div>'
       + '<p class="authform__msg" id="af-msg" role="status" aria-live="polite"></p>'
@@ -1798,7 +2830,7 @@
   // gets an identity transform from the page-enter animation, and any
   // transform makes an element the containing block for position:fixed, which
   // would drop the bar at the bottom of the whole list instead of the screen.
-  function mountFab() {
+  function mountFab(label) {
     unmountFab();
     var fab = document.createElement('div');
     fab.className = 'fab';
@@ -1808,7 +2840,7 @@
       +   '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"'
       +   ' stroke-width="2.2" stroke-linecap="round" aria-hidden="true">'
       +   '<path d="M12 5v14M5 12h14"></path></svg>'
-      +   '<span>Add a recipe</span>'
+      +   '<span>' + esc(label || 'Add a recipe') + '</span>'
       + '</button>';
     document.body.appendChild(fab);
     return fab;
@@ -1819,7 +2851,7 @@
     if (old && old.parentNode) old.parentNode.removeChild(old);
   }
 
-  function wireAdmin() {
+  function wireAdmin(query) {
     var out = $('#signout-btn');
     if (out) {
       out.addEventListener('click', function () {
@@ -1832,12 +2864,15 @@
     }
     if (!signedIn()) return;
 
-    mountFab();
+    // Everything below follows the open tab.
+    var sec = adminSection(query);
+    var conf = sectionConf(sec);
+    mountFab(sec === 'questions' ? 'Create a quiz' : 'Add a ' + conf.singular);
 
     var host = $('#admin-form-host');
 
     function openForm(recipe) {
-      host.innerHTML = adminFormHtml(recipe);
+      host.innerHTML = adminFormHtml(recipe, sec);
       wireAdminForm(recipe);
       host.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -1853,7 +2888,10 @@
     var quickFile = $('#quick-file');
 
     if (quickBtn && quickFile) {
-      quickBtn.addEventListener('click', function () { quickFile.click(); });
+      quickBtn.addEventListener('click', function () {
+        if (sec === 'questions') openQuizMaker('');
+        else quickFile.click();
+      });
 
       quickFile.addEventListener('change', function () {
         var file = quickFile.files && quickFile.files[0];
@@ -1875,7 +2913,8 @@
         return apiPost('/api/recipe-extract', {
           imageBase64: out.poster.split(',')[1],
           mimeType: 'image/jpeg',
-          mode: 'basic'
+          mode: 'basic',
+          section: sec
         }).catch(function (err) {
           // A failed read is not a failed upload. Carry on without it and
           // let her name the recipe on the form instead of losing the photo.
@@ -1893,18 +2932,23 @@
           + 'a name for it. Please type one and publish.');
 
         work.step('Publishing “' + title + '”…');
+        var isRecipe = sec === 'recipes';
         var payload = {
           recipe: {
             id: freeId(title),
+            section: sec,
             title: title,
-            cat: d.cat || 'Stir-Fry',
+            cat: d.cat || '',
             tags: arr(d.tags),
             desc: String(d.desc || '').trim(),
-            total: String(d.total || '').trim(),
-            yield: String(d.yield || '').trim(),
+            total: isRecipe ? String(d.total || '').trim() : '',
+            yield: isRecipe ? String(d.yield || '').trim() : '',
             ill: d.ill || 'ill-bowl',
             badge: 'New',
-            lede: 'The whole recipe is in the picture — tap it to zoom in.',
+            lede: isRecipe ? 'The whole recipe is in the picture — tap it to zoom in.' : '',
+            // For a health post or question, the words read off the picture,
+            // so the page has text under the image and search can find it.
+            body: isRecipe ? '' : String(d.body || '').trim(),
             img: '', poster: ''
           },
           originalId: '',
@@ -2005,11 +3049,8 @@
     return fetch('recipes.json?cb=' + Date.now(), { cache: 'no-store' })
       .then(function (r) { return r.json(); })
       .then(function (data) {
-        var list = arr(data && data.recipes).filter(function (r) { return r && isStr(r.id) && isStr(r.title); });
-        if (!list.length) return false;
-        state.recipes = list;
-        state.byId = {};
-        list.forEach(function (r) { state.byId[r.id] = r; });
+        if (!arr(data && data.recipes).length) return false;
+        setEntries(data.recipes);
         return true;
       })
       .catch(function () { return false; });
@@ -2038,7 +3079,10 @@
           say((created ? 'Published' : 'Saved') + ' — “' + ((state.byId[id] || {}).title || id) + '” is live on the site now.', 'is-done');
           toast(created ? 'Published and live' : 'Saved and live');
           // Redraw the manager so the new recipe is in the list.
-          if ((parseHash().parts[0] || '') === 'admin') { render(); }
+          buildMobileNav();
+          // Redraw pages that list entries, so the new one shows up there.
+          var here = parseHash().parts;
+          if (here[0] === 'admin' || ((here[0] === 'questions' || here[0] === 'health') && !here[1])) { render(); }
           return;
         }
         if (Date.now() - started > LIMIT) {
@@ -2115,13 +3159,16 @@
     setPendingImages = function (out) { pending.poster = out.poster; pending.card = out.card; };
     var msg = $('#af-msg');
     var imgMsg = $('#af-imgmsg');
+    var sec = $('#af-section') ? $('#af-section').value : 'recipes';
+    var isRecipe = sec === 'recipes';
 
     function say(el, text, isError) {
       el.textContent = text || '';
       el.classList.toggle('is-error', !!isError);
     }
 
-    $('#af-image').addEventListener('change', function (e) {
+    var imgInput = $('#af-image');   // a quiz's edit form has no picture field
+    if (imgInput) imgInput.addEventListener('change', function (e) {
       var file = e.target.files && e.target.files[0];
       if (!file) return;
       say(imgMsg, 'Preparing the picture…');
@@ -2140,7 +3187,9 @@
           return null;
         }
         say(imgMsg, 'Picture ready.');
-        return askExtractMode().then(function (mode) {
+        // Only a recipe has ingredients and steps to pull out, so only a recipe
+        // gets the basics-or-everything choice.
+        return (isRecipe ? askExtractMode() : Promise.resolve('basic')).then(function (mode) {
           if (mode === 'none') {
             say(imgMsg, 'Picture ready — please fill in the details below.');
             return null;
@@ -2149,7 +3198,8 @@
           return apiPost('/api/recipe-extract', {
             imageBase64: out.poster.split(',')[1],
             mimeType: 'image/jpeg',
-            mode: mode
+            mode: mode,
+            section: sec
           });
         });
       }).then(function (d) {
@@ -2161,6 +3211,8 @@
         if (!$('#af-yield').value) $('#af-yield').value = d.yield || '';
         if (d.cat) $('#af-cat').value = d.cat;
         if (d.ill) $('#af-ill').value = d.ill;
+        var bodyEl = $('#af-body');
+        if (bodyEl && !bodyEl.value && d.body) bodyEl.value = d.body;
 
         if (d.mode === 'full') {
           // Held aside and sent on save; the form stays short either way.
@@ -2192,8 +3244,15 @@
     $('#admin-form').addEventListener('submit', function (e) {
       e.preventDefault();
       var title = $('#af-title').value.trim();
-      if (!title) { say(msg, 'Please give the recipe a name.', true); return; }
-      if (!recipe && !pending.poster) { say(msg, 'Please upload the recipe picture.', true); return; }
+      var bodyText = $('#af-body') ? $('#af-body').value.trim() : '';
+      if (!title) { say(msg, sec === 'questions' ? 'Please type the question.' : 'Please give it a name.', true); return; }
+      // A recipe is its picture. A health post or question can be words alone.
+      if (isRecipe && !recipe && !pending.poster) { say(msg, 'Please upload the recipe picture.', true); return; }
+      if (!isRecipe && !pending.poster && !bodyText
+          && !(recipe && (isStr(recipe.poster) || isStr(recipe.img) || isStr(recipe.quiz)))) {
+        say(msg, 'Please add a picture, or type the ' + (sec === 'questions' ? 'answer' : 'write-up') + '.', true);
+        return;
+      }
 
       var btn = $('#af-save');
       btn.disabled = true;
@@ -2202,6 +3261,7 @@
       var payload = {
         recipe: {
           id: $('#af-id').value || title,
+          section: sec,
           title: title,
           cat: $('#af-cat').value,
           tags: $('#af-tags').value.split(',').map(function (t) { return t.trim(); }).filter(Boolean),
@@ -2210,7 +3270,10 @@
           yield: $('#af-yield').value.trim(),
           ill: $('#af-ill').value,
           badge: recipe ? (recipe.badge || '') : 'New',
-          lede: (recipe && recipe.lede) || 'The whole recipe is in the picture — tap it to zoom in.',
+          lede: isRecipe ? ((recipe && recipe.lede) || 'The whole recipe is in the picture — tap it to zoom in.') : '',
+          body: bodyText,
+          quiz: (recipe && recipe.quiz) || '',
+          questionCount: (recipe && recipe.questionCount) || 0,
           img: (recipe && recipe.img) || '',
           poster: (recipe && recipe.poster) || ''
         },
@@ -2501,8 +3564,10 @@
       var spic = cardImage(r);
       var thumb = spic ? '<img src="' + escAttr(spic.src) + '" alt="">' : ill;
       return '<li role="option" id="sg-' + i + '" aria-selected="false">'
-        + '<a class="suggest__item" href="#/recipe/' + encodeURIComponent(r.id) + '" data-idx="' + i + '">'
-        + thumb + '<span>' + highlight(r.title || '', q) + '<br><span class="suggest__cat muted">' + esc(r.cat || '') + '</span></span>'
+        + '<a class="suggest__item" href="' + escAttr(entryHref(r)) + '" data-idx="' + i + '">'
+        + thumb + '<span>' + highlight(r.title || '', q) + '<br><span class="suggest__cat muted">'
+        + esc(sectionOf(r) === 'recipes' ? (r.cat || '') : sectionConf(sectionOf(r)).label + (isStr(r.cat) ? ' · ' + r.cat : ''))
+        + '</span></span>'
         + '</a></li>';
     }).join('') + '</ul>';
     el.searchSuggest.innerHTML = html;
@@ -2699,9 +3764,7 @@
     Promise.all([loadJSON('site.json'), loadJSON('recipes.json')]).then(function (res) {
       state.site = res[0] || {};
       var data = res[1] || {};
-      state.recipes = arr(data.recipes).filter(function (r) { return r && isStr(r.id) && isStr(r.title); });
-      state.byId = {};
-      state.recipes.forEach(function (r) { state.byId[r.id] = r; });
+      setEntries(data.recipes);
 
       if (!state.recipes.length) { fatal('No recipes are available yet. Add some to recipes.json to get started.'); return; }
 

@@ -82,26 +82,17 @@
               "cat": "Drinks"
             }
           ]
-        }
-      ]
-    },
-    {
-      "label": "Collections",
-      "columns": [
+        },
         {
-          "heading": "Browse",
+          "heading": "Quick picks",
           "links": [
+            {
+              "label": "All recipes",
+              "href": "#/recipes"
+            },
             {
               "label": "Quick & Easy",
               "collection": "quick"
-            },
-            {
-              "label": "Highly Rated",
-              "collection": "top"
-            },
-            {
-              "label": "One-Pot Wonders",
-              "collection": "one-pot"
             },
             {
               "label": "Weeknight Dinners",
@@ -110,6 +101,14 @@
           ]
         }
       ]
+    },
+    {
+      "label": "Health",
+      "href": "#/health"
+    },
+    {
+      "label": "Questions",
+      "href": "#/questions"
     }
   ],
   "categories": [
@@ -128,6 +127,40 @@
     "Pickles",
     "Sides & Sauces"
   ],
+  "sections": {
+    "recipes": {
+      "label": "Recipes",
+      "singular": "recipe",
+      "plural": "recipes"
+    },
+    "health": {
+      "label": "Health",
+      "singular": "health post",
+      "intro": "Health tips, home remedies and herbal know-how, kept in one place.",
+      "categories": [
+        "Nutrition",
+        "Home Remedies",
+        "Herbal & Tonics",
+        "Fitness",
+        "Wellbeing"
+      ],
+      "plural": "health posts"
+    },
+    "questions": {
+      "label": "Questions",
+      "singular": "quiz",
+      "plural": "quizzes",
+      "intro": "Pick a topic and test yourself. If there's no quiz on it yet, you can create one.",
+      "categories": [
+        "Health & Medicine",
+        "Nutrition & Diet",
+        "Cooking & Food",
+        "Science",
+        "General Knowledge",
+        "Other"
+      ]
+    }
+  },
   "collections": [
     {
       "id": "quick",
@@ -135,22 +168,6 @@
       "desc": "On the table in thirty minutes, start to plate.",
       "filter": {
         "maxMinutes": 30
-      }
-    },
-    {
-      "id": "top",
-      "label": "Highly Rated",
-      "desc": "The ones readers come back to.",
-      "filter": {
-        "minRating": 4.8
-      }
-    },
-    {
-      "id": "one-pot",
-      "label": "One-Pot Wonders",
-      "desc": "Dinner, and exactly one pan to wash.",
-      "filter": {
-        "tag": "One Pot"
       }
     },
     {
@@ -173,16 +190,16 @@
             "href": "#/recipes"
           },
           {
+            "label": "Health",
+            "href": "#/health"
+          },
+          {
+            "label": "Questions",
+            "href": "#/questions"
+          },
+          {
             "label": "Quick & Easy",
             "href": "#/collection/quick"
-          },
-          {
-            "label": "Highly Rated",
-            "href": "#/collection/top"
-          },
-          {
-            "label": "One-Pot Wonders",
-            "href": "#/collection/one-pot"
           }
         ]
       },
@@ -190,20 +207,20 @@
         "heading": "Categories",
         "links": [
           {
-            "label": "Breakfast",
-            "href": "#/category/Breakfast"
+            "label": "Noodles",
+            "href": "#/category/Noodles"
           },
           {
-            "label": "Mains",
-            "href": "#/category/Mains"
+            "label": "Soup",
+            "href": "#/category/Soup"
           },
           {
-            "label": "Baking",
-            "href": "#/category/Baking"
+            "label": "Kuih",
+            "href": "#/category/Kuih"
           },
           {
-            "label": "Sweets",
-            "href": "#/category/Sweets"
+            "label": "Bread & Pau",
+            "href": "#/category/Bread%20%26%20Pau"
           }
         ]
       },
@@ -213,14 +230,6 @@
           {
             "label": "Weeknight dinners",
             "href": "#/collection/weeknight"
-          },
-          {
-            "label": "Crowd-pleasers",
-            "href": "#/collection/crowd-pleasers"
-          },
-          {
-            "label": "Soup & noodle night",
-            "href": "#/collection/slurp"
           },
           {
             "label": "Start from the top",

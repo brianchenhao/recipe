@@ -25,11 +25,21 @@ collections, footer, and every recipe — is rendered at runtime from two JSON f
 | `admin/config.yml` | Decap CMS collections — mirrors the JSON schemas exactly. |
 | `api/auth.js` | GitHub OAuth step 1 (redirect to GitHub). |
 | `api/callback.js` | GitHub OAuth step 2 (code → token, handed back to the CMS). |
+| `api/_sections.js` | The three sections and the categories each may use. The save and reader APIs check against it. |
+| `api/recipe-save.js` | Saves an entry (any section) and its pictures to the repo, which publishes it. |
+| `api/recipe-extract.js` | Reads an uploaded picture with Muse Spark and fills in the fields. |
+| `api/recipe-delete.js` | Removes an entry from `recipes.json`. |
+| `api/quiz-generate.js` | Writes quiz questions: a sample, a research plan, then batches. |
+| `api/_quiz.js` | The quiz question shape and the clean-up applied to every question. |
+| `api/_reader.js` | Shared reader plumbing: the request, plain-English errors, JSON extraction. |
+| `quizzes/` | One JSON file of questions per quiz. |
 | `vercel.json` | Static hosting config: SPA rewrite, cache headers, security headers. |
 
 Routing is hash-based and handled entirely in `app.js`:
 `#/`, `#/recipes`, `#/recipe/<id>`, `#/category/<Category>`, `#/search?q=<term>`,
-`#/collection/<id>`. An unknown or empty hash falls back to home.
+`#/collection/<id>`, `#/health`, `#/health/<id>`, `#/questions`, `#/questions/<id>`,
+and the manager at `#/admin?s=<recipes|health|questions>`. An unknown or empty hash falls back
+to home.
 
 ---
 
@@ -45,6 +55,7 @@ Routing is hash-based and handled entirely in `app.js`:
   "nav":   [ { "label", "columns": [ { "heading", "links": [ { "label", "cat" } ] } ] } ],
   "categories": [ "Breakfast", "Mains", … ],
   "collections": [ { "id", "label", "desc", "filter": { … } } ],
+  "sections": { "health": { "label", "singular", "intro", "categories": [ … ] }, "questions": { … } },
   "footer": { "note", "columns": [ { "heading", "links": [ { "label", "href" } ] } ] }
 }
 ```
@@ -70,10 +81,65 @@ hash routing space.
 `{ "recipes": [ … ] }`. Keys, **in this order**:
 
 ```
-id, title, author, cat, tags, img, ill, badge, featured, desc, lede,
+id, section, title, author, cat, tags, img, poster, ill, badge, featured, desc, lede, body,
 level, prep, cook, active, total, yield, serves,
 rating, reviews, ingredientGroups, steps, tips, cooksNote, nutrition
 ```
+
+### Sections: Recipes, Health, Questions
+
+The top menu has three parts: **Recipes**, **Health** and **Questions**. All three are stored in
+`recipes.json`, so they share one upload, save and delete path and one manager page.
+
+- `section` — `"health"` or `"questions"`. **Leave it out for a recipe.** Recipes written before
+  sections existed have no `section` key, and that is correct; nothing needs migrating.
+- `body` — plain text: a health post's write-up, shown under the picture. An empty line starts
+  a new paragraph. Recipes and quizzes do not use it.
+- `cat` — for a recipe, one of `site.json` `categories`. For the other two, one of that
+  section's `sections.<id>.categories` (shown to visitors as "topics").
+- `poster` — optional for Health: a health post can be words only.
+- `quiz`, `questionCount` — Questions only: the path of the quiz file and how many questions it holds.
+
+**The category lists live in two places that must match:** `site.json` (what the site offers)
+and `api/_sections.js` (what saving and the picture reader accept). Change both together.
+
+Health posts render at `#/health/<id>`: title, then the picture (tap to zoom, like a recipe
+infographic), then the `body`. Quizzes render at `#/questions/<id>` (see below). They never appear in recipe
+lists, category pages or collections, but search covers all three sections.
+
+In `nav`, an item with `href` and no `columns` is a plain link. That is how Health and Questions
+sit in the top menu next to the Recipes dropdown.
+
+In the manager (`#/admin`), the tabs pick the section. The floating **Add** button and **Add one
+by hand** both add to the open tab.
+
+### Quizzes (the Questions section)
+
+Questions is a shelf of quizzes, one per topic.
+
+- **`#/questions`** has a topic search at the top. Searching a topic with no quiz opens the
+  **quiz maker** (signed-in users only, because writing a quiz spends reader credit).
+- **The quiz maker** takes a topic and a number of questions (150 by default). **Generate**
+  writes one sample question so the style can be checked; **Done** writes the rest. It calls
+  `/api/quiz-generate` once to research the topic into subtopics and key facts, then in small
+  batches (6 questions, 2 at a time) so no single request runs into the time limit. The sample
+  becomes question 1. When all are written it publishes through `/api/recipe-save`.
+- **Writing can pause.** Every batch is saved in the browser under `rm-quiz-draft`. Closing the
+  popup or the tab keeps it, and **Continue writing** on `#/questions` carries on. One draft at a
+  time, on the device that started it.
+- **Each quiz's questions live in `quizzes/<id>.json`**, not in `recipes.json`, so the file every
+  visitor downloads stays small. The entry in `recipes.json` has `section: "questions"`, `quiz`
+  (that path) and `questionCount`.
+- **Question shape** (the same as the study-quiz files): `{ "q", "o": [2-6 options], "a", "tip",
+  "eli5" }`. `a` is the 1-based position of the right option, or an array such as `[1, 3]` when more
+  than one is right. `api/_quiz.js` cleans every question on the way in and on save.
+- **Taking a quiz**: tap an option for instant right or wrong; multi-answer questions need
+  Submit. Show hint reveals the tip and the explain-like-I-am-5. Skip, Jump to and Finish work as
+  in the study quizzes, and Finish lists anything still unanswered. Keys: 1-6 pick, arrows move,
+  H hint, S skip. Progress is saved per quiz in the browser under `rm-quiz-<id>`, so a long quiz
+  can be finished over several days.
+- The questions of a published quiz cannot be edited in the manager. Delete the quiz and create
+  it again to rewrite them; Edit changes only its title, topic, summary and tags.
 
 Only `id` and `title` are required. **Every other field may be absent, `""`, `0`, or `[]`** —
 the renderer omits the whole section rather than drawing an empty box, so a recipe with just an
