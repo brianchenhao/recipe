@@ -4037,6 +4037,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "missi-roti",
+      "title": "Missi Roti",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Indian",
+        "chickpea flour",
+        "spiced",
+        "pan-fried"
+      ],
+      "img": "images/missi-roti-card.jpg",
+      "poster": "images/missi-roti.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "A rustic, spiced flatbread made with chickpea flour and wheat flour, flavored with herbs and spices.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 4 Rotis",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
