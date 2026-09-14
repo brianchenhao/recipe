@@ -4104,6 +4104,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chapatis",
+      "title": "Chapatis",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Indian",
+        "atta flour",
+        "pan-fried"
+      ],
+      "img": "images/chapatis-card.jpg",
+      "poster": "images/chapatis.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft everyday whole-wheat flatbreads pan-cooked until lightly browned and puffed.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 24 Chapatis",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
