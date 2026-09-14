@@ -4070,39 +4070,6 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
-    },
-    {
-      "id": "agar-agar-santan-coconut-jelly",
-      "title": "Agar Agar Santan (Coconut Jelly)",
-      "author": "",
-      "cat": "Dessert",
-      "tags": [
-        "Malaysian",
-        "coconut",
-        "pandan",
-        "layered"
-      ],
-      "img": "images/agar-agar-santan-coconut-jelly-card.jpg",
-      "poster": "images/agar-agar-santan-coconut-jelly.jpg",
-      "ill": "ill-cake",
-      "badge": "New",
-      "featured": false,
-      "desc": "A soft, creamy and refreshing layered jelly with coconut and pandan flavour.",
-      "lede": "The whole recipe is in the picture — tap it to zoom in.",
-      "level": "",
-      "prep": "",
-      "cook": "",
-      "active": "",
-      "total": "",
-      "yield": "",
-      "serves": 0,
-      "rating": 0,
-      "reviews": 0,
-      "ingredientGroups": [],
-      "steps": [],
-      "tips": [],
-      "cooksNote": "",
-      "nutrition": {}
     }
   ]
 }
