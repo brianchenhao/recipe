@@ -4005,6 +4005,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "naan-bread",
+      "title": "Naan Bread",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Indian",
+        "flour",
+        "baked"
+      ],
+      "img": "images/naan-bread-card.jpg",
+      "poster": "images/naan-bread.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft chewy flatbread with hint of sweetness, perfect with curries and dips.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "MAKES 8 NAANS",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
