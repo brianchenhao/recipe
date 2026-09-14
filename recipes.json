@@ -3972,6 +3972,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kaya-coconut-jam",
+      "title": "Kaya (Coconut Jam)",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Malaysian",
+        "coconut",
+        "egg",
+        "steamed"
+      ],
+      "img": "images/kaya-coconut-jam-card.jpg",
+      "poster": "images/kaya-coconut-jam.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "A rich, fragrant homemade coconut jam, perfect as a spread on bread, biscuits or glutinous rice cakes.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
