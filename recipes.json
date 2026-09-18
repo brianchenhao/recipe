@@ -4335,6 +4335,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "pizza-dough",
+      "title": "Pizza Dough",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Italian",
+        "flour",
+        "kneaded",
+        "baked"
+      ],
+      "img": "images/pizza-dough-card.jpg",
+      "poster": "images/pizza-dough.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, chewy homemade pizza dough perfect for pizza, calzones or breadsticks.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "makes 2 medium 12-inch pizzas",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
