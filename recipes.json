@@ -4235,6 +4235,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chicken-breast-with-sweet-potato-noodles",
+      "title": "Chicken Breast with Sweet Potato Noodles",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Italian",
+        "chicken",
+        "sweet potato",
+        "seared",
+        "simmered"
+      ],
+      "img": "images/chicken-breast-with-sweet-potato-noodles-card.jpg",
+      "poster": "images/chicken-breast-with-sweet-potato-noodles.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender chicken in rich puttanesca-style sauce served over soft sweet potato noodles.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
