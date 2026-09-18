@@ -4169,6 +4169,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chicken-and-carrot-noodles",
+      "title": "Chicken and Carrot Noodles",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Southern",
+        "chicken",
+        "carrot noodles",
+        "sauteed"
+      ],
+      "img": "images/chicken-and-carrot-noodles-card.jpg",
+      "poster": "images/chicken-and-carrot-noodles.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender chicken and andouille sausage with veggies and carrot noodles in rich sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
