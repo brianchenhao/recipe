@@ -4202,6 +4202,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "baked-bbq-honey-chicken",
+      "title": "Baked BBQ Honey Chicken",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "American",
+        "chicken",
+        "baked",
+        "honey BBQ"
+      ],
+      "img": "images/baked-bbq-honey-chicken-card.jpg",
+      "poster": "images/baked-bbq-honey-chicken.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender baked chicken glazed with a sweet, smoky and slightly spicy honey barbecue sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
