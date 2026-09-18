@@ -4136,6 +4136,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "zucchini-meatball-bread",
+      "title": "Zucchini Meatball Bread",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Italian-style",
+        "zucchini",
+        "meatballs",
+        "broiled"
+      ],
+      "img": "images/zucchini-meatball-bread-card.jpg",
+      "poster": "images/zucchini-meatball-bread.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Juicy zucchini meatballs in marinara with melted cheese in toasted sub rolls.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
