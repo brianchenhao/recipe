@@ -4302,6 +4302,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "falafel-waffle",
+      "title": "Falafel Waffle",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "Middle Eastern",
+        "chickpea",
+        "herbs",
+        "waffle-iron"
+      ],
+      "img": "images/falafel-waffle-card.jpg",
+      "poster": "images/falafel-waffle.jpg",
+      "ill": "ill-grill",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy chickpea waffles with herbs topped with tzatziki and tomatoes.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
