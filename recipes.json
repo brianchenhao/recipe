@@ -4368,6 +4368,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "matcha-mochi",
+      "title": "Matcha Mochi",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Japanese",
+        "matcha",
+        "glutinous rice",
+        "microwaved"
+      ],
+      "img": "images/matcha-mochi-card.jpg",
+      "poster": "images/matcha-mochi.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft chewy homemade mochi with earthy matcha flavour, perfect for snack or dessert.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 12 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
