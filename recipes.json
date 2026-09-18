@@ -4434,6 +4434,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "no-bake-chickpea-cookies",
+      "title": "No Bake Chickpea Cookies",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "healthy",
+        "chickpea",
+        "oats",
+        "no-bake"
+      ],
+      "img": "images/no-bake-chickpea-cookies-card.jpg",
+      "poster": "images/no-bake-chickpea-cookies.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chewy, naturally sweet and packed with goodness.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 12 cookies (4 people)",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
