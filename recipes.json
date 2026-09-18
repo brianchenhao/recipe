@@ -4401,6 +4401,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "peanut-butterballs",
+      "title": "Peanut Butterballs",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "healthy",
+        "peanut butter",
+        "dates",
+        "no-bake"
+      ],
+      "img": "images/peanut-butterballs-card.jpg",
+      "poster": "images/peanut-butterballs.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Naturally sweet no-bake peanut butter date balls coated in coconut.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
