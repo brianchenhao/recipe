@@ -4533,6 +4533,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "malaysian-style-gochujang-kimchi",
+      "title": "Malaysian-Style Gochujang Kimchi",
+      "author": "",
+      "cat": "Pickles",
+      "tags": [
+        "Malaysian",
+        "Korean",
+        "Napa Cabbage",
+        "Fermented",
+        "Spicy"
+      ],
+      "img": "images/malaysian-style-gochujang-kimchi-card.jpg",
+      "poster": "images/malaysian-style-gochujang-kimchi.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Spicy, tangy, crunchy homemade napa cabbage kimchi made with gochujang.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
