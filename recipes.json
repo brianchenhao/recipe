@@ -4500,6 +4500,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kimchi",
+      "title": "Kimchi",
+      "author": "",
+      "cat": "Pickles",
+      "tags": [
+        "Korean",
+        "cabbage",
+        "fermented",
+        "spicy"
+      ],
+      "img": "images/kimchi-card.jpg",
+      "poster": "images/kimchi.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Spicy fermented cabbage with radish and spring onion for bold probiotic flavor.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
