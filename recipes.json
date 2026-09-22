@@ -4567,6 +4567,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kimchi-fried-rice",
+      "title": "Kimchi Fried Rice",
+      "author": "",
+      "cat": "Rice",
+      "tags": [
+        "Korean",
+        "kimchi",
+        "rice",
+        "stir-fry"
+      ],
+      "img": "images/kimchi-fried-rice-card.jpg",
+      "poster": "images/kimchi-fried-rice.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Spicy tangy fried rice with kimchi topped with a fried egg.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "15 minutes",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
