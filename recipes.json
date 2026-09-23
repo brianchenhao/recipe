@@ -4600,6 +4600,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kimchi-ramen",
+      "title": "Kimchi Ramen",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Korean",
+        "kimchi",
+        "ramen noodles",
+        "spicy",
+        "one-pot"
+      ],
+      "img": "images/kimchi-ramen-card.jpg",
+      "poster": "images/kimchi-ramen.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tangy kimchi and rich pork broth with chewy ramen noodles and egg.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 1-2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
