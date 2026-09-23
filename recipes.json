@@ -4634,6 +4634,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "potato-curry-pau",
+      "title": "Potato Curry Pau",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Malaysian",
+        "potato",
+        "curry",
+        "steamed"
+      ],
+      "img": "images/potato-curry-pau-card.jpg",
+      "poster": "images/potato-curry-pau.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, fluffy buns with fragrant potato curry filling.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes: 10-12 pau",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
