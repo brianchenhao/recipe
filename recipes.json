@@ -4700,6 +4700,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "ham-broccoli-quiche",
+      "title": "Ham & Broccoli Quiche",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "French",
+        "ham",
+        "broccoli",
+        "baked"
+      ],
+      "img": "images/ham-broccoli-quiche-card.jpg",
+      "poster": "images/ham-broccoli-quiche.jpg",
+      "ill": "ill-egg",
+      "badge": "New",
+      "featured": false,
+      "desc": "Savory tart with creamy egg custard, ham, broccoli and melted cheese.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 2 quiches, 12-14 cm each",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
