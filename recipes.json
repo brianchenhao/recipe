@@ -4798,6 +4798,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "strawberry-daifuku",
+      "title": "Strawberry Daifuku",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Japanese",
+        "strawberry",
+        "red bean",
+        "mochi"
+      ],
+      "img": "images/strawberry-daifuku-card.jpg",
+      "poster": "images/strawberry-daifuku.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft and chewy mochi filled with sweet red bean paste and a fresh juicy strawberry!",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 6 daifuku",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
