@@ -4766,6 +4766,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "burnt-cheese-cake",
+      "title": "Burnt Cheese Cake",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "Basque",
+        "cream cheese",
+        "baked"
+      ],
+      "img": "images/burnt-cheese-cake-card.jpg",
+      "poster": "images/burnt-cheese-cake.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rich, creamy cheesecake with caramelised top and soft melt-in-your-mouth centre.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
