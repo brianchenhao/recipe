@@ -4667,6 +4667,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "homemade-caramel-sauce",
+      "title": "Homemade Caramel Sauce",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Western",
+        "sugar",
+        "cream",
+        "stovetop"
+      ],
+      "img": "images/homemade-caramel-sauce-card.jpg",
+      "poster": "images/homemade-caramel-sauce.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rich, creamy and perfect for spreading, drizzling or dipping!",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 1 cup",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
