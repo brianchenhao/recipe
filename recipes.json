@@ -4733,6 +4733,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "japanese-soft-cheese-cake",
+      "title": "Japanese Soft Cheese Cake",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "Japanese",
+        "cream cheese",
+        "baked",
+        "fluffy"
+      ],
+      "img": "images/japanese-soft-cheese-cake-card.jpg",
+      "poster": "images/japanese-soft-cheese-cake.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Light, fluffy, jiggly cheesecake with melt-in-your-mouth delicate texture.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
