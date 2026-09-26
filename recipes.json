@@ -4831,6 +4831,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kacang-putih-indian-style",
+      "title": "Kacang Putih (Indian Style)",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Indian",
+        "white beans",
+        "pan-fried",
+        "spicy"
+      ],
+      "img": "images/kacang-putih-indian-style-card.jpg",
+      "poster": "images/kacang-putih-indian-style.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Spiced Indian-style white beans tempered with curry leaves and chilies.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
