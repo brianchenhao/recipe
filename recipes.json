@@ -5127,6 +5127,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "beets-pickle-2",
+      "title": "Beets Pickle",
+      "author": "",
+      "cat": "Pickles",
+      "tags": [
+        "homemade",
+        "beetroot",
+        "vinegar pickle"
+      ],
+      "img": "images/beets-pickle-2-card.jpg",
+      "poster": "images/beets-pickle-2.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Sweet-tangy sliced beetroots pickled in vinegar for salads and sandwiches.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "1 jar",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
