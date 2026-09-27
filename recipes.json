@@ -5159,6 +5159,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "tom-yam-fried-bee-hoon",
+      "title": "Tom Yam Fried Bee Hoon",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Thai-Malaysian",
+        "bee hoon",
+        "prawns",
+        "stir-fry"
+      ],
+      "img": "images/tom-yam-fried-bee-hoon-card.jpg",
+      "poster": "images/tom-yam-fried-bee-hoon.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Spicy, tangy and aromatic fried rice vermicelli with prawns, eggs and vegetables.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2-3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
