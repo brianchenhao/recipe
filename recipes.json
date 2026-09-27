@@ -4995,6 +4995,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "tempeh-indonesian-style-stir-fry",
+      "title": "Tempeh (Indonesian Style Stir-Fry)",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Indonesian",
+        "tempeh",
+        "stir-fry",
+        "spicy"
+      ],
+      "img": "images/tempeh-indonesian-style-stir-fry-card.jpg",
+      "poster": "images/tempeh-indonesian-style-stir-fry.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Savoury, slightly sweet Indonesian stir-fried tempeh with chillies and sweet soy sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
