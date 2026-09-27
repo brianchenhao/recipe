@@ -4963,6 +4963,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "natto",
+      "title": "Natto",
+      "author": "",
+      "cat": "Pickles",
+      "tags": [
+        "Japanese",
+        "soybeans",
+        "fermented"
+      ],
+      "img": "images/natto-card.jpg",
+      "poster": "images/natto.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Sticky savory fermented soybeans rich in protein, served over rice with toppings.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
