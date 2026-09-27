@@ -4897,6 +4897,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "general-tso-chicken",
+      "title": "General Tso Chicken",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Chinese-American",
+        "chicken",
+        "deep-fried",
+        "sweet-spicy"
+      ],
+      "img": "images/general-tso-chicken-card.jpg",
+      "poster": "images/general-tso-chicken.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy chicken bites coated in sweet, savoury and slightly spicy sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
