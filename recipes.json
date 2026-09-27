@@ -5094,6 +5094,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "beets-pickle",
+      "title": "Beets Pickle",
+      "author": "",
+      "cat": "Pickles",
+      "tags": [
+        "vegetarian",
+        "beetroot",
+        "pickled",
+        "vinegar"
+      ],
+      "img": "images/beets-pickle-card.jpg",
+      "poster": "images/beets-pickle.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tangy crunchy pickled beetroot that's naturally sweet, colourful and full of nutrients.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "makes 1 jar",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
