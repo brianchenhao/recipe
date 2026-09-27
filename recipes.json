@@ -5061,6 +5061,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sauerkraut-german-style",
+      "title": "Sauerkraut (German Style)",
+      "author": "",
+      "cat": "Pickles",
+      "tags": [
+        "German",
+        "cabbage",
+        "fermented",
+        "probiotic"
+      ],
+      "img": "images/sauerkraut-german-style-card.jpg",
+      "poster": "images/sauerkraut-german-style.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crunchy, tangy naturally fermented cabbage full of probiotics.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "1 large jar",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
