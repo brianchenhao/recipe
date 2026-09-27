@@ -5028,6 +5028,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "miso-soup-japanese-style",
+      "title": "Miso Soup (Japanese Style)",
+      "author": "",
+      "cat": "Soup",
+      "tags": [
+        "Japanese",
+        "miso",
+        "tofu",
+        "simmered"
+      ],
+      "img": "images/miso-soup-japanese-style-card.jpg",
+      "poster": "images/miso-soup-japanese-style.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "A simple, comforting and nutritious Japanese soup made with miso paste, dashi and fresh ingredients.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2-3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
