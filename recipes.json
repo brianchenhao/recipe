@@ -5192,6 +5192,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "bee-hoon-goreng-tauchu",
+      "title": "Bee Hoon Goreng Tauchu",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Malaysian",
+        "bee hoon",
+        "tauchu",
+        "stir-fry"
+      ],
+      "img": "images/bee-hoon-goreng-tauchu-card.jpg",
+      "poster": "images/bee-hoon-goreng-tauchu.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Fragrant stir-fried rice vermicelli with savoury tauchu, vegetables and egg.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2-3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
