@@ -4930,6 +4930,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "pao-cai",
+      "title": "Pao Cai",
+      "author": "",
+      "cat": "Pickles",
+      "tags": [
+        "Sichuan",
+        "napa cabbage",
+        "pickled",
+        "spicy"
+      ],
+      "img": "images/pao-cai-card.jpg",
+      "poster": "images/pao-cai.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crunchy, tangy and refreshing pickled vegetables with a mild spicy kick.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
