@@ -5225,6 +5225,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "buah-rojak",
+      "title": "Buah Rojak",
+      "author": "",
+      "cat": "Salad",
+      "tags": [
+        "Malaysian",
+        "fruit",
+        "spicy",
+        "tossed"
+      ],
+      "img": "images/buah-rojak-card.jpg",
+      "poster": "images/buah-rojak.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Refreshing crisp fruits tossed in rich spicy tangy sweet sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
