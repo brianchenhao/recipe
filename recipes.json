@@ -5258,6 +5258,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "petola-beancurd",
+      "title": "Petola Beancurd",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Malaysian",
+        "petola",
+        "beancurd",
+        "braised"
+      ],
+      "img": "images/petola-beancurd-card.jpg",
+      "poster": "images/petola-beancurd.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Braised fried beancurd and tender ridge gourd in savory oyster sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3-4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
