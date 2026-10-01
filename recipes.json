@@ -5397,6 +5397,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-high-blood-pressure",
+      "section": "health",
+      "title": "The Truth About HIGH BLOOD PRESSURE",
+      "author": "",
+      "cat": "Wellbeing",
+      "tags": [
+        "high blood pressure",
+        "hypertension myths",
+        "heart health",
+        "blood pressure monitoring"
+      ],
+      "img": "images/the-truth-about-high-blood-pressure-card.jpg",
+      "poster": "images/the-truth-about-high-blood-pressure.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Facts, myths, numbers and daily habits for understanding and managing high blood pressure.",
+      "lede": "",
+      "body": "High blood pressure (hypertension) is when the force of blood against your artery walls stays too high over time. It makes your heart work harder and can damage blood vessels and organs, leading to heart disease, stroke, kidney disease and other problems.\n\nUnderstand your numbers: Normal is less than 120 systolic and less than 80 diastolic. Elevated is 120-129 and less than 80. Stage 1 is 130-139 and 80-89. Stage 2 is 140 or higher and 90 or higher.\n\nCommon myths: salt is not the only cause; stress is not the only reason; no symptoms does not mean normal; garlic or herbal remedies cannot replace medication; not only weight loss helps; normal readings do not mean stop medication; it affects not only the heart but brain, kidneys, eyes and vessels.\n\nIt is usually silent but can damage heart, brain, kidneys, eyes, blood vessels and overall health. What helps is healthy eating, regular exercise, healthy weight, good sleep and managing stress. Measure correctly by resting 5 minutes, sitting supported, arm at heart level, proper cuff, two readings 1 minute apart, and recording consistently.\n\nIt is an emergency if above 180 systolic and/or 120 diastolic and remains high on recheck. Seek medical help immediately, especially with chest pain, shortness of breath, weakness or numbness, difficulty speaking, or severe headache or vision changes. Do not stop medication without medical advice.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
