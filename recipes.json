@@ -5573,6 +5573,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-kimchi-on-blood-pressure",
+      "section": "health",
+      "title": "The Truth About Kimchi on Blood Pressure",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "kimchi",
+        "blood pressure",
+        "sodium",
+        "gut health"
+      ],
+      "img": "images/the-truth-about-kimchi-on-blood-pressure-card.jpg",
+      "poster": "images/the-truth-about-kimchi-on-blood-pressure.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Kimchi may support healthy diet but high sodium can raise blood pressure in salt-sensitive individuals.",
+      "lede": "",
+      "body": "The truth is kimchi may support a healthy diet, but its high sodium content can raise blood pressure in salt-sensitive individuals.\n\nPotential benefits include beneficial lactic acid bacteria depending on preparation and storage, vegetables, fibre and micronutrients, and gut health support, although evidence for directly lowering blood pressure remains limited.\n\nMain concern is sodium. Excess sodium can cause the body to retain water and increase blood pressure. Frequent large servings may contribute to excessive daily sodium intake. Fermentation does not remove most salt, and homemade kimchi is not automatically low in sodium; amount depends on recipe.\n\nA reasonable amount is 1-2 tablespoons alongside a meal, not a proven blood-pressure-lowering dose. Choose lower-sodium kimchi, compare labels and use less salty recipes. Pair with fresh vegetables, beans, whole grains and minimally processed foods. Limit total sodium to no more than 2,300 mg per day, ideally 1,500 mg for many adults, especially those with high blood pressure.\n\nMyth vs fact: kimchi lowers blood pressure is not established; fermentation removes salt is false; kimchi contains beneficial bacteria is often true; eating more means better heart health is not necessarily true; lowering sodium can help reduce blood pressure is supported by evidence.\n\nFinal takeaway is to enjoy kimchi for flavour and fermented-food benefits, not as a blood-pressure treatment. If you have hypertension, sodium matters more than probiotic claims. Continue prescribed medication and monitor blood pressure as advised by your healthcare professional.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
