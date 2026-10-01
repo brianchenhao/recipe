@@ -5714,6 +5714,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-kimchi-on-cholesterol-2",
+      "section": "health",
+      "title": "The Truth About Kimchi on Cholesterol",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "kimchi",
+        "cholesterol",
+        "heart health",
+        "fermented food"
+      ],
+      "img": "images/the-truth-about-kimchi-on-cholesterol-2-card.jpg",
+      "poster": "images/the-truth-about-kimchi-on-cholesterol-2.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Kimchi may support healthy cholesterol as part of a heart-healthy diet but is not a proven treatment.",
+      "lede": "",
+      "body": "Kimchi may support a heart-healthy diet, but it is not a proven treatment for high cholesterol. Kimchi is made from vegetables fermented with lactic acid bacteria. It is generally low in saturated fat, and some studies suggest potential benefits for cholesterol levels, but the evidence is limited and inconsistent.\n\nKimchi contains lactic acid bacteria that may influence metabolism and support a healthier gut, which could have indirect benefits on cholesterol. It provides fibre, vitamins, minerals and plant compounds such as polyphenols that may help support healthy cholesterol levels as part of an overall healthy diet. Compounds such as flavonoids and phenolic acids may help reduce oxidative stress and inflammation, which are linked to heart health. Some small human studies suggest kimchi consumption may help lower total cholesterol, LDL and triglycerides, and/or increase HDL, but results are mixed.\n\nSome human studies reported modest reductions in total cholesterol and LDL cholesterol with regular kimchi consumption. Other studies found no significant change. Overall, current evidence is promising but not strong enough to confirm kimchi as a cholesterol-lowering treatment.\n\nKimchi is often high in sodium. Excess sodium may raise blood pressure and increase cardiovascular risk. Kimchi does not offset the effects of a high-fat, high-calorie diet. Continue prescribed medication and follow your healthcare professional's advice if you have high cholesterol.\n\n1-2 tablespoons a day is a reasonable serving. Pair with other vegetables, whole grains and lean protein. Use in soups, stir-fries or as a side dish. Choose lower-sodium kimchi when possible.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
