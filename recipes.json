@@ -5538,6 +5538,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-kimchi-on-blood-sugar",
+      "section": "health",
+      "title": "The Truth About Kimchi on Blood Sugar",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "kimchi",
+        "blood sugar",
+        "probiotics",
+        "fibre"
+      ],
+      "img": "images/the-truth-about-kimchi-on-blood-sugar-card.jpg",
+      "poster": "images/the-truth-about-kimchi-on-blood-sugar.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Kimchi may support blood sugar control when eaten with meals as part of a balanced lifestyle.",
+      "lede": "",
+      "body": "Kimchi is a traditional Korean fermented vegetable dish, usually made from napa cabbage, radish and seasonings such as garlic, ginger, chili and scallions. It is naturally low in calories and carbohydrates, and rich in probiotics, fibre and bioactive compounds. Per 100 g: 15-30 kcal, 3-5 g carbs, 1-2 g fibre, 1-2 g protein, less than 1 g fat.\n\nIt may help blood sugar through better gut microbiome, higher fibre intake, bioactive compounds and improved metabolic health. Fibre helps slow down digestion and absorption of carbohydrates, leading to a smaller and slower rise in blood sugar. Compounds like allicin from garlic and capsaicin from chili may improve insulin sensitivity and reduce inflammation.\n\nMany human and animal studies suggest regular kimchi consumption may be associated with better blood sugar control. Human studies found lower fasting blood sugar, improved insulin sensitivity and lower risk of type 2 diabetes. Combined results show modest improvements in fasting blood sugar, HbA1c and insulin resistance, especially with long-term intake.\n\nHave a small serving of kimchi, 30-50 g, with rice, noodles or other carbohydrate sources. Begin with 30-50 g per day and see how you tolerate it. Choose naturally fermented kimchi with simple ingredients and minimal added sugar. Be mindful of sodium, added sugar and bloating or gas. Combine with balanced diet, exercise, sleep and stress management. Kimchi is a supportive food, not a replacement for medical treatment.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
