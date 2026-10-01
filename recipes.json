@@ -5503,6 +5503,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-kimchi-on-cholesterol",
+      "section": "health",
+      "title": "The Truth About Kimchi on Cholesterol",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "kimchi",
+        "cholesterol",
+        "probiotics",
+        "fermented foods"
+      ],
+      "img": "images/the-truth-about-kimchi-on-cholesterol-card.jpg",
+      "poster": "images/the-truth-about-kimchi-on-cholesterol.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Regular kimchi may support healthier cholesterol as part of a balanced diet.",
+      "lede": "",
+      "body": "Kimchi is a traditional Korean fermented vegetable dish, usually made from napa cabbage, radish and seasonings such as garlic, ginger, chili and scallions, fermented by beneficial lactic acid bacteria.\n\nKey nutrients are probiotics to support gut health, dietary fibre to help bind bile acids, bioactive compounds like allicin, capsaicin, gingerols and polyphenols, and vitamins A, C and K plus potassium.\n\nKimchi may help cholesterol by supporting a healthy gut microbiome, increasing bile acid excretion, modestly reducing total and LDL cholesterol, and providing antioxidant and anti-inflammatory effects to protect blood vessels.\n\nStudies show adults consuming 50-200 g per day for 4-12 weeks had lower total and LDL cholesterol in some trials, with meta-analyses showing modest reductions in total cholesterol, LDL and triglycerides, especially with long-term intake.\n\nEat 50-200 g per day, about 2-4 tablespoons, as part of meals, choosing traditional naturally fermented kimchi, pairing with vegetables, whole grains, lean protein and healthy fats, while watching sodium, spice, digestive bloating, and noting it does not replace prescribed medication.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
