@@ -5468,6 +5468,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-cholesterol",
+      "section": "health",
+      "title": "The Truth About Cholesterol",
+      "author": "",
+      "cat": "Wellbeing",
+      "tags": [
+        "cholesterol",
+        "heart health",
+        "LDL",
+        "HDL"
+      ],
+      "img": "images/the-truth-about-cholesterol-card.jpg",
+      "poster": "images/the-truth-about-cholesterol.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Understand cholesterol types, levels, myths and lifestyle steps to manage LDL and protect heart health.",
+      "lede": "",
+      "body": "Cholesterol is a type of fat in your blood needed to build cells, produce hormones and make vitamin D. It is made by your liver and obtained from food, and is not inherently bad but becomes a problem when levels are too high.\n\nLDL carries cholesterol to tissues and high levels can lead to plaque buildup. HDL helps remove cholesterol back to liver and higher levels are generally better. Triglycerides are another blood fat that can increase heart disease risk.\n\nExcess LDL can build plaque over time, narrow arteries and reduce blood flow, which can lead to heart attack, stroke, peripheral artery disease and other complications.\n\nGeneral adult levels are total cholesterol <5.2, LDL <2.6, HDL >1.0 for men and >1.3 for women, and triglycerides <1.7 mmol/L. Your doctor may recommend a lower target.\n\nHigh cholesterol usually has no symptoms so a blood test is needed, and anyone can have it. Dietary cholesterol has smaller effect than saturated fat, saturated and trans fats raise LDL, unsaturated fats can be healthier, and no single food can fix it.\n\nCholesterol can be raised by high saturated and trans fats, genetics, age, overweight especially belly fat, inactivity, smoking, diabetes, underactive thyroid and certain medications.\n\nManage by eating soluble fibre like oats and beans, using nuts, seeds, fish and vegetable oils, exercising at least 150 minutes per week, maintaining healthy weight, avoiding smoking, limiting alcohol, and checking lipid profile and following medical advice.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
