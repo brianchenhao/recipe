@@ -5291,6 +5291,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "purple-cabbage-eggplant-blueberry-plum-and-prune",
+      "section": "health",
+      "title": "Purple Cabbage, Eggplant, Blueberry, Plum and Prune",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "purple foods",
+        "antioxidants",
+        "fibre",
+        "heart health",
+        "gut health"
+      ],
+      "img": "images/purple-cabbage-eggplant-blueberry-plum-and-prune-card.jpg",
+      "poster": "images/purple-cabbage-eggplant-blueberry-plum-and-prune.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Four purple foods rich in antioxidants and fibre support gut, heart, brain and overall well-being.",
+      "lede": "",
+      "body": "Purple cabbage is vibrant, crunchy and nutrient-dense. Rich in anthocyanins to help fight inflammation and oxidative stress, high in vitamin C, high in vitamin K, high in fibre, and may support heart health. Per 100g raw: 31 kcal, 57 mg vitamin C, 2.1 g fibre. Enjoy in salads, slaw, stir-fry, roasting, pickling.\n\nEggplant is light and versatile. Rich in anthocyanins and nasunin to help protect cells, may support heart health, supports healthy blood sugar, good source of fibre, low in calories. Per 100g raw: 25 kcal, 3.0 g fibre, 229 mg potassium. Enjoy stir-fried, grilled, roasted, in curry, steamed, braised.\n\nBlueberry offers big benefits. Supports brain health, heart health, eye health, anti-inflammatory, rich in fibre. Per 100g raw: 57 kcal, 2.4 g fibre, 9.7 mg vitamin C. Enjoy fresh, in smoothies, yoghurt, oatmeal, desserts.\n\nPlum and prune is sweet, juicy and gut-friendly. Supports digestion, bone health, heart health, rich in antioxidants, may help with blood sugar control. Fresh plum per 100g: 46 kcal, 1.4 g fibre, 9.5 mg vitamin C; prune: 240 kcal, 7.1 g fibre, 0.6 mg vitamin C. Enjoy fresh as a snack, in salads, yoghurt, desserts, or prunes for natural laxative effect.\n\nTakeaway: All four foods are rich in antioxidants and fibre, supporting gut health, heart health and overall well-being.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
