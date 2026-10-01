@@ -5644,6 +5644,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-celery-on-blood-sugar",
+      "section": "health",
+      "title": "The Truth About Celery on Blood Sugar",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "celery",
+        "blood sugar",
+        "diabetes",
+        "fibre"
+      ],
+      "img": "images/the-truth-about-celery-on-blood-sugar-card.jpg",
+      "poster": "images/the-truth-about-celery-on-blood-sugar.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Celery is low-carb, high-fibre vegetable that can support blood sugar control but not replace medication.",
+      "lede": "",
+      "body": "Celery can be part of a blood-sugar-friendly diet. It is low in carbohydrates, high in fibre and contains plant compounds that may support better blood sugar control. It is not a replacement for diabetes medication.\n\nCelery is very low in carbs, so it has minimal direct impact on blood sugar levels. Fibre helps slow down absorption of sugar from food, which can prevent spikes. Compounds such as apigenin, phthalides and antioxidants may improve insulin sensitivity in some animal and small human studies. High water helps with hydration and fullness.\n\nAnimal studies suggest celery extracts may help lower blood glucose and improve insulin sensitivity. Small human studies show potential benefits, but results are mixed and more high-quality research is needed. Current evidence supports celery as a healthy addition to the diet, not a proven treatment for diabetes.\n\nCelery alone will not cure or replace diabetes medication. Effects on blood sugar are modest and vary between individuals. Benefits are greater when combined with an overall healthy diet, regular exercise and weight management.\n\nEat raw celery sticks as a snack, add to salads for extra crunch and fibre, use in soups, stir-fries and other cooked dishes, or blend with other low-GI vegetables for a nutritious drink.\n\nCelery is good for a diabetes-friendly diet, but it does not replace medication. Claims that it lowers blood sugar or that juice works better than celery are not established. It can support control as part of a healthy lifestyle, but is not a substitute for medical treatment.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
