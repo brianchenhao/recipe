@@ -5362,6 +5362,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-diabetes",
+      "section": "health",
+      "title": "The Truth About Diabetes",
+      "author": "",
+      "cat": "Wellbeing",
+      "tags": [
+        "diabetes",
+        "blood glucose",
+        "myths",
+        "healthy habits"
+      ],
+      "img": "images/the-truth-about-diabetes-card.jpg",
+      "poster": "images/the-truth-about-diabetes.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Diabetes facts, myths and habits supporting safe long-term glucose control.",
+      "lede": "",
+      "body": "Diabetes is a condition where the body cannot regulate blood glucose properly because insulin production, insulin action or both are impaired.\n\nDiagnostic ranges are HbA1c 5.7-6.4% for prediabetes and 6.5% or higher for diabetes, fasting glucose 5.6-6.9 mmol/L for prediabetes and 7.0 mmol/L or higher for diabetes, and 2-hour glucose 7.8-11.0 mmol/L for prediabetes and 11.1 mmol/L or higher for diabetes.\n\nSeven common myths are addressed: only sugar raises blood glucose, but rice, noodles, bread, potatoes and other carbohydrates also raise blood glucose; people who are not overweight can also develop diabetes; exercise helps your body use glucose, even without insulin; bitter gourd, cinnamon or fenugreek cannot replace prescribed medication; carbohydrates can be included in sensible portions with fibre-rich sources; a single reading is only a snapshot; progression is not inevitable and some achieve remission with ongoing monitoring.\n\nDiabetes is not just about blood sugar. Many factors influence long-term health, including blood pressure, cholesterol, sleep, liver health, physical activity and body composition.\n\nWhat actually helps control diabetes is focus on vegetables, protein and fibre-rich foods, sensible carbohydrate portions, walking after meals, regular aerobic activity, resistance training, consistent sleep, taking prescribed medicines as directed, monitoring glucose as advised, and monitoring blood pressure, cholesterol, kidney function, eyes and feet.\n\nThe goal is safe, sustainable glucose control that reduces long-term complications while maintaining quality of life.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
