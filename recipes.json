@@ -5432,6 +5432,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-elevated-hrt",
+      "section": "health",
+      "title": "The Truth About Elevated HRT",
+      "author": "",
+      "cat": "Wellbeing",
+      "tags": [
+        "heart rate",
+        "elevated heart rate",
+        "causes",
+        "symptoms",
+        "self-care"
+      ],
+      "img": "images/the-truth-about-elevated-hrt-card.jpg",
+      "poster": "images/the-truth-about-elevated-hrt.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Explains what elevated heart rate means, its causes, symptoms, and when to seek care.",
+      "lede": "",
+      "body": "Heart rate is the number of times your heart beats per minute (bpm). It increases to meet your body's needs, such as during exercise, stress, illness or when body temperature is higher. Normal resting heart rate for most adults is 60-100 beats per minute (bpm).\n\nAn elevated heart rate means your heart is beating faster than normal, typically above 100 bpm at rest in adults. Common causes are exercise and physical activity, stress and anxiety, fever or infection, dehydration, caffeine, nicotine or stimulants, low blood count (anaemia), thyroid problems (hyperthyroidism), certain medications, pain, illness or inflammation, and poor sleep.\n\nSymptoms you may notice are palpitations (feeling your heart beat fast), feeling tired easily, shortness of breath, dizziness or lightheadedness, anxiety or restlessness, feeling hot or sweaty, and chest discomfort (less common).\n\nA temporarily higher heart rate during exercise, stress or when you have a fever is usually not dangerous. However, a persistently elevated heart rate, especially with symptoms or at rest, can be a sign of an underlying medical condition and should be evaluated by a healthcare professional.\n\nWhat you can do is stay hydrated, get enough quality sleep, manage stress with breathing exercises and mindfulness, limit caffeine, nicotine and other stimulants, eat a balanced diet and treat underlying conditions, and do regular exercise suitable for your fitness level.\n\nSeek urgent medical care for resting heart rate above 120 bpm with symptoms, chest pain, severe shortness of breath, or fainting. Seek non-urgent advice for persistently elevated rate at rest, recurring palpitations, dizziness or breathlessness, or concerns about thyroid, anaemia or other causes.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
