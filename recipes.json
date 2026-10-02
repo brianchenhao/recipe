@@ -6516,6 +6516,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "spicy-paprika-tomato-chickpeas",
+      "title": "Spicy Paprika Tomato Chickpeas",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Mediterranean",
+        "chickpeas",
+        "tomato",
+        "one-pan",
+        "spicy"
+      ],
+      "img": "images/spicy-paprika-tomato-chickpeas-card.jpg",
+      "poster": "images/spicy-paprika-tomato-chickpeas.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chickpeas simmered in a rich, smoky, spicy tomato sauce for a healthy weeknight meal.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2-3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
