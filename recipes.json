@@ -6649,6 +6649,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "hummus",
+      "title": "Hummus",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Middle Eastern",
+        "chickpeas",
+        "blended",
+        "dip"
+      ],
+      "img": "images/hummus-card.jpg",
+      "poster": "images/hummus.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "A classic Middle Eastern dip made with chickpeas, tahini, lemon and garlic.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "about 6 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
