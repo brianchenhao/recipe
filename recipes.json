@@ -6313,6 +6313,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "okra-stir-fry-2",
+      "title": "Okra Stir-fry",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "healthy",
+        "okra",
+        "stir-fry",
+        "high-fibre"
+      ],
+      "img": "images/okra-stir-fry-2-card.jpg",
+      "poster": "images/okra-stir-fry-2.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Cooked okra with vegetables served as stir-fry for blood sugar support.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
