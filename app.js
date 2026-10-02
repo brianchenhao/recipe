@@ -63,6 +63,7 @@
     suggestActive: -1,
     session: { signedIn: false, email: '' },
     quizKeys: null,         // keydown handler of the quiz on screen, if any
+    quizWriter: null,       // the quiz writer that is open or running in the background
     quizRun: null           // token of the quiz writer allowed to save progress
   };
 
@@ -1272,6 +1273,12 @@
       var host = $('#quiz-draft');
       var d = loadQuizDraft();
       if (!host) return;
+      if (d && state.quizWriter) {
+        host.innerHTML = '<div class="quizdraft"><p><strong>Writing “' + esc(d.title || d.topic) + '” in the background:</strong> '
+          + '<span id="quiz-draft-n">' + Math.min(d.questions.length, d.count) + '</span> of ' + d.count + ' questions so far.</p>'
+          + '<div class="row"><button class="btn btn--primary btn--sm" type="button" data-draft="show">Show progress</button></div></div>';
+        return;
+      }
       host.innerHTML = !d ? '' :
           '<div class="quizdraft"><p><strong>Your quiz on “' + esc(d.title || d.topic) + '” is part-written:</strong> '
         + Math.min(d.questions.length, d.count) + ' of ' + d.count + ' questions so far.</p>'
@@ -1286,6 +1293,7 @@
       if (make) { openQuizMaker(make.getAttribute('data-create')); return; }
       var dr = e.target.closest && e.target.closest('[data-draft]');
       if (!dr) return;
+      if (dr.getAttribute('data-draft') === 'show' && state.quizWriter) { state.quizWriter.show(); return; }
       var d = loadQuizDraft();
       if (!d) { paintDraft(); return; }
       if (dr.getAttribute('data-draft') === 'continue') openQuizMaker(d.topic, d);
@@ -1623,8 +1631,11 @@
 
   // The popup: topic (with a Generate button for one sample), how many
   // questions, then Done writes them all. `resume` is a saved draft to finish.
-  function openQuizMaker(topic, resume) {
+  // `quiet` starts it already shrunk to the corner badge (auto-resume on load).
+  function openQuizMaker(topic, resume, quiet) {
     if (!signedIn()) { navigate('#/login'); return; }
+    // One writer at a time: if one is already going, just bring it back up.
+    if (state.quizWriter) { state.quizWriter.show(); return; }
 
     var existing = loadQuizDraft();
     if (!resume && existing) {
@@ -1636,6 +1647,7 @@
 
     var token = {};
     state.quizRun = token;
+    if (resume && resume.paused) { resume.paused = false; saveQuizDraft(resume); }
 
     var wrap = document.createElement('div');
     wrap.className = 'qmaker';
@@ -1662,20 +1674,79 @@
     function mine() { return state.quizRun === token || state.quizRun === null; }
     function live() { return state.quizRun === token && wrap.isConnected; }
 
-    function close() {
-      if (state.quizRun === token) state.quizRun = null;
+    // While writing, closing the popup only shrinks it to a badge in the
+    // corner: the writer keeps going while she browses the rest of the site.
+    var pill = null, shrunk = false;
+    var ended = '';   // '' while going, 'stopped' after an error, 'done' once published
+    function hide() {
+      if (shrunk) return;
+      shrunk = true;
       document.removeEventListener('keydown', onKey);
       document.body.classList.remove('is-locked');
-      if (wrap.parentNode) wrap.parentNode.removeChild(wrap);
+      wrap.classList.remove('is-open');
+      wrap.hidden = true;
+      if (!pill) {
+        pill = document.createElement('button');
+        pill.type = 'button';
+        pill.addEventListener('click', show);
+        document.body.appendChild(pill);
+      }
+      paintPill();
+      refreshHub();
+    }
+    function show() {
+      if (!shrunk) return;
+      shrunk = false;
+      if (pill && pill.parentNode) pill.parentNode.removeChild(pill);
+      pill = null;
+      wrap.hidden = false;
+      document.body.classList.add('is-locked');
+      document.addEventListener('keydown', onKey);
+      void wrap.offsetWidth;
+      wrap.classList.add('is-open');
+    }
+    function paintPill() {
+      if (!pill || !d) return;
+      var n = Math.min(d.questions.length, d.count);
+      var mode = ended || 'busy';
+      pill.className = 'qpill qpill--' + mode;
+      pill.style.setProperty('--qp', Math.round((n / d.count) * 100) + '%');
+      pill.innerHTML = (mode === 'busy' ? '<span class="busy__spinner" aria-hidden="true"></span>' : '<span class="qpill__dot" aria-hidden="true"></span>')
+        + '<span class="qpill__text"><strong>' + esc(d.title) + '</strong>'
+        + '<span>' + (mode === 'done' ? 'Published · tap to see'
+          : mode === 'stopped' ? 'Stopped at ' + n + ' of ' + d.count + ' · tap to see'
+          : 'Writing ' + n + ' of ' + d.count + ' questions') + '</span></span>';
+      pill.setAttribute('aria-label', pill.textContent + '. Open the quiz writer.');
+    }
+    function refreshHub() {
       var here = parseHash().parts;
       if (here[0] === 'questions' && !here[1]) render();   // refresh the part-written banner
     }
+    function close() {
+      if (running) { hide(); return; }
+      // Closing a writer that is not running (not started, stopped or done)
+      // really closes it. A part-written draft is then paused, so it does not
+      // restart by itself on the next visit; Continue writing picks it up.
+      if (d && ended !== 'done' && loadQuizDraft()) { d.paused = true; saveQuizDraft(d); }
+      if (state.quizRun === token) state.quizRun = null;
+      if (state.quizWriter === writer) state.quizWriter = null;
+      document.removeEventListener('keydown', onKey);
+      document.body.classList.remove('is-locked');
+      if (wrap.parentNode) wrap.parentNode.removeChild(wrap);
+      if (pill && pill.parentNode) pill.parentNode.removeChild(pill);
+      refreshHub();
+    }
+    var writer = { show: show, isRunning: function () { return running; } };
+    state.quizWriter = writer;
+
     function onKey(e) { if (e.key === 'Escape') close(); }
     document.addEventListener('keydown', onKey);
     wrap.addEventListener('click', function (e) {
-      if (e.target.classList.contains('qmaker__backdrop') && !running) { close(); return; }
+      if (e.target.classList.contains('qmaker__backdrop')) { close(); return; }
       var t = e.target.closest && e.target.closest('[data-qm]');
-      if (t && t.getAttribute('data-qm') === 'close') close();
+      if (!t) return;
+      if (t.getAttribute('data-qm') === 'close') close();
+      else if (t.getAttribute('data-qm') === 'stop') { running = false; close(); }
     });
 
     // --- step 1: topic, sample, how many -----------------------------------
@@ -1751,27 +1822,35 @@
     // --- step 2: writing ---------------------------------------------------
     function writeView() {
       running = true;
+      setTimeout(quizLockBeat, 0);
       $('#qm-title', wrap).textContent = 'Writing “' + d.title + '”';
       body.innerHTML =
           '<p class="qmaker__stage" id="qm-stage">Getting started…</p>'
         + '<div class="quiz__track"><div class="quiz__fill" id="qm-fill"></div></div>'
         + '<p class="qmaker__tally" id="qm-tally"></p>'
-        + '<p class="adminform__hint">You can close this and come back later. The questions written so far are kept on this device, '
-        +   'and <strong>Continue writing</strong> on the Questions page carries on from here.</p>'
+        + '<p class="adminform__hint">No need to wait here. <strong>Keep writing in the background</strong> tucks this into a '
+        +   'small badge in the corner while you look around the site. If you close the page, it carries on next time you open it.</p>'
         + '<p class="authform__msg" id="qm-msg" role="status" aria-live="polite"></p>';
       pauseFoot();
       tally();
       run();
     }
-    function pauseFoot() { foot.innerHTML = '<button class="btn btn--ghost" type="button" data-qm="close">Pause and close</button>'; }
+    function pauseFoot() {
+      foot.innerHTML = '<button class="btn btn--ghost" type="button" data-qm="stop">Stop for now</button>'
+        + '<button class="btn btn--primary" type="button" data-qm="close">Keep writing in the background</button>';
+    }
     function stage(text) { var el2 = $('#qm-stage', wrap); if (el2) el2.textContent = text; }
     function tally() {
+      paintPill();
       var n = Math.min(d.questions.length, d.count);
+      var hubN = $('#quiz-draft-n'); if (hubN) hubN.textContent = n;
       var fill = $('#qm-fill', wrap); if (fill) fill.style.width = Math.round((n / d.count) * 100) + '%';
       var tl = $('#qm-tally', wrap); if (tl) tl.textContent = n + ' of ' + d.count + ' questions written';
     }
     function problem(message, label, retry) {
       running = false;
+      ended = 'stopped';
+      paintPill();
       stage('Stopped');
       var m = $('#qm-msg', wrap);
       if (m) { m.textContent = message; m.classList.add('is-error'); }
@@ -1781,6 +1860,7 @@
         var m2 = $('#qm-msg', wrap);
         if (m2) { m2.textContent = ''; m2.classList.remove('is-error'); }
         running = true;
+        ended = '';
         pauseFoot();
         retry();
       });
@@ -1880,6 +1960,8 @@
       }).then(function (saved) {
         clearQuizDraft();
         running = false;
+        ended = 'done';
+        paintPill();
         if (state.quizRun === token) state.quizRun = null;
         body.innerHTML = '<div class="quiz__end"><h2>Done!</h2><p><strong>' + esc(d.title) + '</strong> has '
           + questions.length + ' questions. It goes live on the site in about a minute.</p></div>';
@@ -1891,6 +1973,35 @@
     }
 
     if (d) writeView(); else setupView();
+    if (quiet) hide();
+  }
+
+  // Carry on a quiz that was still being written when the page was closed.
+  // Another open tab may already be writing it, so the writing tab keeps a
+  // heartbeat on the draft and drops it when the page goes away.
+  var QUIZ_LOCK_KEY = 'rm-quiz-lock';
+  var quizTab = String(Math.random()).slice(2);
+  function quizLockHeld() {
+    try {
+      var l = JSON.parse(localStorage.getItem(QUIZ_LOCK_KEY) || 'null');
+      return !!(l && l.tab !== quizTab && Date.now() - l.at < 90000);
+    } catch (e) { return false; }
+  }
+  function quizLockBeat() {
+    if (!state.quizWriter || !state.quizWriter.isRunning()) return;
+    try { localStorage.setItem(QUIZ_LOCK_KEY, JSON.stringify({ tab: quizTab, at: Date.now() })); } catch (e) {}
+  }
+  setInterval(quizLockBeat, 20000);
+  window.addEventListener('pagehide', function () {
+    try {
+      var l = JSON.parse(localStorage.getItem(QUIZ_LOCK_KEY) || 'null');
+      if (l && l.tab === quizTab) localStorage.removeItem(QUIZ_LOCK_KEY);
+    } catch (e) {}
+  });
+  function resumeQuizInBackground() {
+    var d = loadQuizDraft();
+    if (!d || d.paused || !signedIn() || state.quizWriter || quizLockHeld()) return;
+    openQuizMaker(d.topic, d, true);
   }
 
   /* ------------------------------------------------------------- recipe */
@@ -3827,6 +3938,7 @@
       loadSession().then(function () {
         buildMobileNav();
         render();
+        resumeQuizInBackground();
       });
     }).catch(function (err) {
       fatal('Could not load the site data (' + (err && err.message ? err.message : 'network error') + ').');
