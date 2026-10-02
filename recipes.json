@@ -6682,6 +6682,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "hummus-with-toasted-sesame-seeds",
+      "title": "Hummus (with Toasted Sesame Seeds)",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Middle Eastern",
+        "chickpeas",
+        "sesame",
+        "blended"
+      ],
+      "img": "images/hummus-with-toasted-sesame-seeds-card.jpg",
+      "poster": "images/hummus-with-toasted-sesame-seeds.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Smooth creamy hummus with chickpeas and toasted sesame, nutty and perfect for dipping.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "about 4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
