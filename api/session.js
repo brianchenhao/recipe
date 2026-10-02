@@ -2,6 +2,7 @@
 // sign-in methods this deployment actually has set up.
 
 import { json, sessionEmail, isAllowed } from './_lib.js';
+import { ownerEmails } from './_usage.js';
 
 export default function handler(req, res) {
   const email = sessionEmail(req);
@@ -9,6 +10,8 @@ export default function handler(req, res) {
   return json(res, 200, {
     signedIn,
     email: signedIn ? email : '',
+    // The owner (Brian) also gets the #/usage page.
+    owner: signedIn && ownerEmails().includes(String(email).toLowerCase()),
     // The login page shows whichever of these are actually configured, so a
     // half-set-up deployment degrades to a clear message instead of a dead
     // button or a confusing error.

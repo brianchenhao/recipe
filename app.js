@@ -559,7 +559,7 @@
 
     html += '<h3>Manage</h3><ul>'
          +  (state.session && state.session.signedIn
-              ? '<li><a href="#/admin">My posts</a></li>'
+              ? '<li><a href="#/admin">My posts</a></li>' + (isOwner() ? '<li><a href="#/usage">Usage</a></li>' : '')
               : '<li><a href="#/login">Sign in</a></li>')
          +  '</ul>';
 
@@ -631,7 +631,7 @@
       +     '<p class="footer__note">' + esc(note) + '</p>'
       +   '</div>'
       +   '<div class="footer__cols">' + colsHtml + '</div>'
-      +   '<p class="footer__legal muted">© ' + year + ' ' + esc(site.brand || 'Recipe Mom') + '. Recipes for the love of it. '
+      +   '<p class="footer__legal muted">© ' + year + ' ' + esc(site.brand || 'Recipe Mom') + '. Made for Mum. '
       +     '<a class="footer__signin" href="' + (signedIn() ? '#/admin' : '#/login') + '">'
       +       (signedIn() ? 'My posts' : 'Sign in') + '</a></p>'
       + '</div>';
@@ -644,6 +644,20 @@
     if (el.heroEyebrow) el.heroEyebrow.textContent = h.eyebrow || 'Today’s pick';
     if (el.heroTitle)   el.heroTitle.textContent = h.title || 'Cook something you’ll want again tomorrow';
     if (el.heroSub)     el.heroSub.textContent = h.sub || '';
+    // A handwritten sign-off and a quiet count of what she has written down.
+    var copy = el.heroSub && el.heroSub.parentNode;
+    if (copy && !$('.hero__sign', copy)) {
+      var n = { r: entriesIn('recipes').length, h: entriesIn('health').length, q: entriesIn('questions').length };
+      var bits = [n.r + ' recipes'];
+      if (n.h) bits.push(n.h + ' health notes');
+      if (n.q) bits.push(n.q + ' quizzes');
+      if (isStr(h.sign)) {
+        var sign = document.createElement('p'); sign.className = 'hero__sign'; sign.textContent = h.sign;
+        copy.insertBefore(sign, el.heroSub.nextSibling);
+      }
+      var count = document.createElement('p'); count.className = 'hero__count'; count.textContent = bits.join(' · ');
+      copy.appendChild(count);
+    }
     if (el.heroCta) {
       el.heroCta.textContent = h.cta || 'Browse all recipes';
       el.heroCta.setAttribute('href', '#/recipes');
@@ -793,8 +807,10 @@
       html = parts[1] ? renderPost(head, parts[1]) : renderSection(head, route.query);
     }
     else if (head === 'admin') html = renderAdmin(route.query);
+    else if (head === 'usage') html = renderUsage();
     else { html = renderHome(); isHome = true; }
 
+    track('view', { title: document.title.replace(/ · Recipe Mom$/, '').slice(0, 120) });
     unmountFab();
     el.app.innerHTML = html;
     el.app.setAttribute('aria-busy', 'false');
@@ -1000,6 +1016,7 @@
 
   function renderSearch(q) {
     var list = searchRecipes(q);
+    if (isStr(q)) track('search', { q: q.slice(0, 100), results: list.length, where: 'site' });
     setMeta('Search: ' + q, 'Search results for “' + q + '”.');
     var head = '<div class="pagehead"><h1>Search</h1>'
       + '<p>' + (isStr(q) ? list.length + ' result' + (list.length === 1 ? '' : 's') + ' for “' + esc(q) + '”' : 'Type in the search box to find a recipe, health post or question.') + '</p></div>';
@@ -1314,6 +1331,7 @@
       e.preventDefault();
       var q = input.value.trim();
       paint(q);
+      if (q) track('search', { q: q.slice(0, 100), results: matches(q).length, where: 'questions' });
       // Search a topic; if there is no quiz on it, go straight to making one.
       if (q && !matches(q).length && signedIn()) openQuizMaker(q);
     });
@@ -1533,6 +1551,7 @@
     function results() {
       var st = quizStats(P);
       var pct = st.answered ? Math.round((st.correct / st.answered) * 100) : 0;
+      track('quiz_finish', { id: id, answered: st.answered, correct: st.correct, pct: pct });
       var cheer = pct >= 80 ? 'Outstanding!' : pct >= 60 ? 'Solid work!' : pct >= 40 ? 'Keep going!' : 'Practice makes perfect!';
       card.innerHTML = '<div class="quiz__end"><h2>Quiz complete!</h2>'
         + '<div class="quiz__bigscore">' + st.correct + ' / ' + st.answered + '</div>'
@@ -2303,6 +2322,7 @@
     if ((head === 'health' || head === 'questions') && parts[1]) wirePoster();
     if (head === 'questions') { if (parts[1]) wireQuizPlayer(parts[1]); else wireQuizHub(query); }
     if (head === 'recipes' || head === 'category') wireFilters(head, parts, query);
+    if (head === 'usage') wireUsage();
   }
 
   function wireRail(rail) {
@@ -2495,6 +2515,16 @@
   // header, type and buttons, so signing in does not feel like leaving.
 
   function apiPost(path, body) {
+    var started = Date.now();
+    return apiPostRaw(path, body).then(function (data) {
+      track('api', { path: path, ms: Date.now() - started, ok: true, mode: body && body.mode });
+      return data;
+    }, function (err) {
+      track('api', { path: path, ms: Date.now() - started, ok: false, mode: body && body.mode, error: String(err && err.message || '').slice(0, 160) });
+      throw err;
+    });
+  }
+  function apiPostRaw(path, body) {
     return fetch(path, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -2507,6 +2537,60 @@
       });
     });
   }
+
+  /* ------------------------------------------------------------ usage log */
+
+  // What people do on the site, in small batches, for Brian's #/usage page.
+  // Only what was opened, searched and tapped: never what is typed into a
+  // form. The server adds who is signed in from the cookie.
+  var usage = { queue: [], visitor: '', timer: 0 };
+  try {
+    usage.visitor = localStorage.getItem('rm-visitor') || '';
+    if (!usage.visitor) { usage.visitor = 'v' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8); localStorage.setItem('rm-visitor', usage.visitor); }
+    usage.queue = JSON.parse(localStorage.getItem('rm-usage-queue') || '[]').slice(-100);
+  } catch (e) { usage.visitor = usage.visitor || 'anon'; }
+
+  function deviceKind() {
+    var w = Math.min(window.screen && screen.width || innerWidth, innerWidth);
+    return w < 600 ? 'phone' : w < 1024 ? 'tablet' : 'computer';
+  }
+  function track(type, data) {
+    usage.queue.push({ t: type, p: location.hash || '#/', d: data || {}, at: Date.now() });
+    if (usage.queue.length > 100) usage.queue = usage.queue.slice(-100);
+    try { localStorage.setItem('rm-usage-queue', JSON.stringify(usage.queue)); } catch (e) {}
+    clearTimeout(usage.timer);
+    usage.timer = setTimeout(flushUsage, usage.queue.length >= 20 ? 0 : 15000);
+  }
+  function flushUsage(leaving) {
+    clearTimeout(usage.timer);
+    if (!usage.queue.length) return;
+    var batch = usage.queue.splice(0, 100);
+    try { localStorage.setItem('rm-usage-queue', JSON.stringify(usage.queue)); } catch (e) {}
+    var payload = JSON.stringify({ visitor: usage.visitor, device: deviceKind(), events: batch });
+    if (leaving && navigator.sendBeacon && navigator.sendBeacon('/api/track', new Blob([payload], { type: 'application/json' }))) return;
+    fetch('/api/track', { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'same-origin', body: payload, keepalive: true })
+      .catch(function () {
+        // Offline: put them back to go with the next batch.
+        usage.queue = batch.concat(usage.queue).slice(-100);
+        try { localStorage.setItem('rm-usage-queue', JSON.stringify(usage.queue)); } catch (e) {}
+      });
+  }
+  document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') flushUsage(true); });
+  window.addEventListener('pagehide', function () { flushUsage(true); });
+  window.addEventListener('error', function (e) {
+    track('error', { msg: String(e && e.message || 'error').slice(0, 200), at: (e && e.filename ? String(e.filename).split('/').pop() : '') + ':' + (e && e.lineno || '') });
+  });
+  window.addEventListener('unhandledrejection', function (e) {
+    track('error', { msg: String(e && e.reason && (e.reason.message || e.reason) || 'rejection').slice(0, 200) });
+  });
+  // Every tap on a link or button: its label and where it goes.
+  document.addEventListener('click', function (e) {
+    var t = e.target && e.target.closest && e.target.closest('a, button, [role="button"], summary, select');
+    if (!t) return;
+    var label = (t.getAttribute('aria-label') || t.textContent || t.getAttribute('title') || '').replace(/\s+/g, ' ').trim().slice(0, 60);
+    var href = t.getAttribute('href') || '';
+    track('tap', { label: label, href: href.slice(0, 200), kind: t.tagName.toLowerCase() });
+  }, true);
 
   function loadSession() {
     return fetch('/api/session', { credentials: 'same-origin' })
@@ -2709,6 +2793,210 @@
     return SECTION_IDS.indexOf(sec) !== -1 ? sec : 'recipes';
   }
 
+
+  /* ------------------------------------------------------------- #/usage */
+
+  // Brian's view of how the site is used (mostly: how Mum uses it). The log
+  // comes raw from /api/usage and everything here is worked out in the page.
+  function isOwner() { return !!(state.session && state.session.owner); }
+
+  function renderUsage() {
+    setMeta('How the site is used', '');
+    if (!isOwner()) {
+      return '<section class="section">' + emptyHtml('Only for the site owner',
+        'Sign in with the owner account to see how the site is used.', '#/login', 'Sign in') + '</section>';
+    }
+    return '<section class="section usage">'
+      + '<div class="pagehead"><h1>How the site is used</h1>'
+      + '<p>What gets opened, searched and tapped. Nothing typed into a form is recorded.</p></div>'
+      + '<div class="usage__bar">'
+      +   '<label>Who <select id="usage-who"></select></label>'
+      +   '<label>Period <select id="usage-days">'
+      +     [['7', 'Last 7 days'], ['30', 'Last 30 days'], ['90', 'Last 90 days']].map(function (o) {
+              return '<option value="' + o[0] + '"' + (o[0] === '30' ? ' selected' : '') + '>' + o[1] + '</option>';
+            }).join('')
+      +   '</select></label>'
+      + '</div>'
+      + '<div id="usage-body"><p class="qmaker__working"><span class="busy__spinner" aria-hidden="true"></span>Loading…</p></div>'
+      + '</section>';
+  }
+
+  function wireUsage() {
+    var body = $('#usage-body'), whoSel = $('#usage-who'), daysSel = $('#usage-days');
+    if (!body || !whoSel) return;
+    var data = null;
+
+    function load() {
+      body.innerHTML = '<p class="qmaker__working"><span class="busy__spinner" aria-hidden="true"></span>Loading…</p>';
+      fetch('/api/usage?days=' + daysSel.value, { credentials: 'same-origin' })
+        .then(function (r) { return r.json().then(function (d) { if (!r.ok) throw new Error(d.error || r.status); return d; }); })
+        .then(function (d) { data = d; fillWho(); paint(); })
+        .catch(function (err) { body.innerHTML = emptyHtml('Could not load the usage log', String(err.message || err)); });
+    }
+
+    // Owners are "You", signed-out visitors are "Visitors"; if exactly one
+    // other person can sign in, that is Mum.
+    function who(email) {
+      var owners = [state.session.email].concat(arr(data.owners)).map(function (e) { return String(e || '').toLowerCase(); });
+      if (!email) return 'Visitors';
+      if (owners.indexOf(email) !== -1) return 'You';
+      var others = arr(data.allowed).filter(function (e) { return owners.indexOf(e) === -1; });
+      return others.length === 1 || /pioneersenorita/.test(email) ? 'Mum' : email.split('@')[0];
+    }
+    function fillWho() {
+      var seen = {};
+      arr(data.events).forEach(function (e) { seen[who(e.email)] = (seen[who(e.email)] || 0) + 1; });
+      var names = Object.keys(seen).sort(function (a, b) { return (b === 'Mum') - (a === 'Mum') || seen[b] - seen[a]; });
+      var keep = whoSel.value;
+      whoSel.innerHTML = names.map(function (n) { return '<option>' + esc(n) + '</option>'; }).join('') + '<option>Everyone</option>';
+      whoSel.value = keep && (names.indexOf(keep) !== -1 || keep === 'Everyone') ? keep : (names[0] || 'Everyone');
+    }
+
+    function paint() {
+      var name = whoSel.value;
+      var ev = arr(data.events).filter(function (e) { return name === 'Everyone' || who(e.email) === name; })
+        .map(function (e) { return Object.assign({}, e, { ts: new Date(e.at).getTime(), d: e.data || {} }); })
+        .sort(function (a, b) { return a.ts - b.ts; });
+      if (!ev.length) { body.innerHTML = emptyHtml('Nothing yet', 'No activity in this period for ' + name + '. It fills in as the site is used.'); return; }
+
+      // Visits: a gap of more than 30 minutes starts a new one. Time spent
+      // counts each gap between actions, capped at 10 minutes.
+      var visits = [], last = {};
+      ev.forEach(function (e) {
+        var prev = last[e.visitor];
+        if (!prev || e.ts - prev.ts > 30 * 60000) visits.push({ start: e.ts, end: e.ts, device: e.device, n: 0, mins: 0 });
+        var v = visits[visits.length - 1];
+        if (prev && e.ts - prev.ts <= 30 * 60000) v.mins += Math.min(e.ts - prev.ts, 10 * 60000) / 60000;
+        v.end = e.ts; v.n++;
+        last[e.visitor] = e;
+      });
+      var mins = Math.round(visits.reduce(function (a, v) { return a + v.mins; }, 0));
+      var dayKey = function (t) { var d = new Date(t); return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate(); };
+      var days = {}; visits.forEach(function (v) { days[dayKey(v.start)] = 1; });
+      var views = ev.filter(function (e) { return e.type === 'view'; });
+      var saves = ev.filter(function (e) { return e.type === 'api' && e.d.ok && /recipe-save/.test(e.d.path); });
+
+      function count(list, keyFn) {
+        var m = {};
+        list.forEach(function (x) { var k = keyFn(x); if (k) m[k] = (m[k] || 0) + 1; });
+        return Object.keys(m).map(function (k) { return [k, m[k]]; }).sort(function (a, b) { return b[1] - a[1]; });
+      }
+      function bars(rows, max, fmt) {
+        max = max || Math.max.apply(null, rows.map(function (r) { return r[1]; }).concat([1]));
+        return '<ul class="ubars">' + rows.map(function (r) {
+          return '<li><span class="ubars__k">' + r[0] + '</span><span class="ubars__t"><span style="width:' + Math.max(2, Math.round(r[1] / max * 100)) + '%"></span></span>'
+            + '<span class="ubars__v">' + (fmt ? fmt(r[1]) : r[1]) + '</span></li>';
+        }).join('') + '</ul>';
+      }
+      function card(title, inner, wide) { return '<div class="ucard' + (wide ? ' ucard--wide' : '') + '"><h2>' + esc(title) + '</h2>' + inner + '</div>'; }
+      function when(t) {
+        var d = new Date(t);
+        return d.toLocaleDateString(undefined, { weekday: 'short', day: 'numeric', month: 'short' }) + ' ' + d.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+      }
+      function pageName(e) {
+        var parts = String(e.path || '#/').replace(/^#\/?/, '').split('?')[0].split('/');
+        var r = parts[1] && state.byId[decodeURIComponent(parts[1])];
+        return esc(r ? r.title : (e.d.title || e.path || 'Home'));
+      }
+
+      // Days chart: one bar per day in the period, minutes spent.
+      var nDays = parseInt(daysSel.value, 10), perDay = [], today = new Date(); today.setHours(0, 0, 0, 0);
+      for (var i = nDays - 1; i >= 0; i--) {
+        var t0 = today.getTime() - i * 86400000;
+        var m = visits.filter(function (v) { return v.start >= t0 && v.start < t0 + 86400000; }).reduce(function (a, v) { return a + v.mins; }, 0);
+        perDay.push({ t: t0, m: Math.round(m) });
+      }
+      var maxDay = Math.max.apply(null, perDay.map(function (x) { return x.m; }).concat([1]));
+      var dayChart = '<div class="udays" style="--n:' + perDay.length + '">' + perDay.map(function (x) {
+        var d = new Date(x.t);
+        return '<span title="' + escAttr(d.toDateString() + ': ' + x.m + ' min') + '"><i style="height:' + (x.m ? Math.max(6, Math.round(x.m / maxDay * 100)) : 0) + '%"></i></span>';
+      }).join('') + '</div><p class="udays__legend"><span>' + new Date(perDay[0].t).toLocaleDateString(undefined, { day: 'numeric', month: 'short' })
+        + '</span><span>today</span></p>';
+
+      var hours = []; for (var h = 0; h < 24; h += 3) hours.push([h, 0]);
+      ev.forEach(function (e) { hours[Math.floor(new Date(e.ts).getHours() / 3)][1]++; });
+      var hourRows = hours.map(function (x) {
+        var a = new Date(); a.setHours(x[0], 0);
+        return [a.toLocaleTimeString(undefined, { hour: 'numeric' }) + '–' + new Date(a.getTime() + 3 * 3600000).toLocaleTimeString(undefined, { hour: 'numeric' }), x[1]];
+      });
+
+      var opened = count(views.filter(function (e) { return /^#\/(recipe|health|questions)\/./.test(e.path); }), pageName).slice(0, 12);
+      var areas = count(views, function (e) {
+        var h2 = String(e.path || '#/').replace(/^#\/?/, '').split(/[/?]/)[0] || 'home';
+        return { home: 'Home page', recipe: 'A recipe', recipes: 'Recipe list', category: 'A category', health: 'Health', questions: 'Questions', admin: 'Adding / editing', search: 'Search results', login: 'Sign in', usage: 'This page' }[h2] || h2;
+      });
+      var searches = ev.filter(function (e) { return e.type === 'search'; });
+      var missed = count(searches.filter(function (e) { return !e.d.results; }), function (e) { return esc(String(e.d.q || '').toLowerCase()); });
+      var found = count(searches.filter(function (e) { return e.d.results; }), function (e) { return esc(String(e.d.q || '').toLowerCase()); });
+      var taps = count(ev.filter(function (e) { return e.type === 'tap' && e.d.label; }), function (e) { return esc(e.d.label); }).slice(0, 12);
+      var devices = count(visits, function (v) { return v.device || 'unknown'; });
+      var apis = {};
+      ev.filter(function (e) { return e.type === 'api'; }).forEach(function (e) {
+        var k = String(e.d.path || '').replace('/api/', '') + (e.d.mode ? ' · ' + e.d.mode : '');
+        var a = apis[k] = apis[k] || { n: 0, bad: 0, ms: 0, errs: [] };
+        a.n++; a.ms += num(e.d.ms); if (!e.d.ok) { a.bad++; if (e.d.error) a.errs.push(e.d.error); }
+      });
+      var errors = ev.filter(function (e) { return e.type === 'error'; });
+      var quizzes = ev.filter(function (e) { return e.type === 'quiz_finish'; });
+
+      // Plain-English ideas for what to change, from what the log shows.
+      var ideas = [];
+      if (missed.length) ideas.push('Searched and found nothing: <strong>' + missed.slice(0, 6).map(function (x) { return x[0]; }).join(', ') + '</strong>. Add those, or add them as tags.');
+      var phone = devices.filter(function (d) { return d[0] === 'phone'; })[0];
+      if (phone && phone[1] / visits.length >= 0.6) ideas.push('Most visits are on a phone. Check every change on a phone first.');
+      Object.keys(apis).forEach(function (k) {
+        var a = apis[k];
+        if (a.bad) ideas.push(a.bad + ' of ' + a.n + ' “' + esc(k) + '” requests failed' + (a.errs[0] ? ' (“' + esc(a.errs[0]) + '”)' : '') + '.');
+        else if (a.n >= 2 && a.ms / a.n > 20000) ideas.push('“' + esc(k) + '” takes ' + Math.round(a.ms / a.n / 1000) + ' seconds on average. Worth making faster.');
+      });
+      if (errors.length) ideas.push(errors.length + ' script error' + (errors.length === 1 ? '' : 's') + ' happened on her screen. See the list below.');
+      ['Health', 'Questions'].forEach(function (a) { if (!areas.some(function (x) { return x[0] === a; })) ideas.push('The ' + a + ' section was not opened in this period.'); });
+
+      var feed = ev.slice(-40).reverse().map(function (e) {
+        var what = e.type === 'view' ? 'Opened ' + pageName(e)
+          : e.type === 'search' ? 'Searched “' + esc(e.d.q) + '” (' + (e.d.results || 'no') + ' result' + (e.d.results === 1 ? '' : 's') + ')'
+          : e.type === 'tap' ? 'Tapped “' + esc(e.d.label || e.d.href) + '”'
+          : e.type === 'api' ? (e.d.ok ? '' : 'Failed: ') + esc(String(e.d.path).replace('/api/', '')) + (e.d.mode ? ' ' + esc(e.d.mode) : '') + ' (' + (Math.round(num(e.d.ms) / 100) / 10) + 's)'
+          : e.type === 'quiz_finish' ? 'Finished a quiz: ' + e.d.correct + ' of ' + e.d.answered + ' right'
+          : e.type === 'error' ? 'Error: ' + esc(e.d.msg)
+          : esc(e.type);
+        return '<li><time>' + when(e.ts) + '</time><span>' + what + '</span></li>';
+      }).join('');
+
+      body.innerHTML = '<div class="ustats">'
+        + '<div><strong>' + Object.keys(days).length + '</strong><span>days active</span></div>'
+        + '<div><strong>' + visits.length + '</strong><span>visits</span></div>'
+        + '<div><strong>' + (mins >= 120 ? Math.round(mins / 6) / 10 + ' h' : mins + ' min') + '</strong><span>time on the site</span></div>'
+        + '<div><strong>' + saves.length + '</strong><span>things saved</span></div>'
+        + '<div><strong>' + quizzes.length + '</strong><span>quizzes finished</span></div>'
+        + '</div>'
+        + (ideas.length ? card('What to improve', '<ul class="uideas">' + ideas.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>', true) : '')
+        + card('Minutes per day', dayChart, true)
+        + '<div class="ugrid">'
+        + card('Where time goes', bars(areas.slice(0, 8)))
+        + card('Time of day', bars(hourRows))
+        + card('Most opened', opened.length ? bars(opened) : '<p class="umuted">Nothing opened yet.</p>')
+        + card('Most tapped', taps.length ? bars(taps) : '<p class="umuted">No taps yet.</p>')
+        + card('Searched, found nothing', missed.length ? bars(missed) : '<p class="umuted">Every search found something.</p>')
+        + card('Searched and found', found.length ? bars(found.slice(0, 10)) : '<p class="umuted">No searches yet.</p>')
+        + card('Device', bars(devices))
+        + card('Saving and writing', Object.keys(apis).length ? '<ul class="ubars">' + Object.keys(apis).map(function (k) {
+            var a = apis[k];
+            return '<li><span class="ubars__k">' + esc(k) + '</span><span class="ubars__v">' + a.n + '× · ' + Math.round(a.ms / a.n / 100) / 10 + 's avg'
+              + (a.bad ? ' · <b class="ubad">' + a.bad + ' failed</b>' : '') + '</span></li>';
+          }).join('') + '</ul>' : '<p class="umuted">Nothing saved yet.</p>')
+        + '</div>'
+        + (errors.length ? card('Errors on screen', '<ul class="ufeed">' + errors.slice(-10).reverse().map(function (e) {
+            return '<li><time>' + when(e.ts) + '</time><span>' + esc(e.d.msg) + ' <small>' + esc(e.path) + '</small></span></li>';
+          }).join('') + '</ul>', true) : '')
+        + card('Latest activity', '<ul class="ufeed">' + feed + '</ul>', true);
+    }
+
+    whoSel.addEventListener('change', paint);
+    daysSel.addEventListener('change', load);
+    load();
+  }
+
   function renderAdmin(query) {
     setMeta('My posts', 'Add and edit recipes, health posts and questions.');
     if (!signedIn()) {
@@ -2753,6 +3041,7 @@
             + ' href="#/admin?s=' + s2 + '">' + esc(sectionConf(s2).label)
             + ' <span class="sectabs__n">' + entriesIn(s2).length + '</span></a>';
         }).join('')
+      + (isOwner() ? '<a class="sectabs__tab" href="#/usage">Usage</a>' : '')
       + '</div>';
 
     var listBlock = list.length

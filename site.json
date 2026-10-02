@@ -2,11 +2,12 @@
   "brand": "Recipe Mom",
   "tagline": "Everything worth cooking twice.",
   "hero": {
-    "eyebrow": "Today's pick",
-    "title": "Cook something you'll want again tomorrow",
-    "sub": "Recipes cooked more than twice in a real kitchen, with the timings that actually held up and the shortcuts that didn't ruin anything.",
-    "cta": "Browse all recipes",
-    "featured": "thai-congee"
+    "eyebrow": "For Mum",
+    "title": "Mum’s kitchen, written down.",
+    "sub": "Every dish she cooks for the family, kept in one place so none of them is ever lost.",
+    "cta": "Open the recipes",
+    "featured": "thai-congee",
+    "sign": "with love, Brian"
   },
   "nav": [
     {
@@ -196,7 +197,7 @@
     }
   ],
   "footer": {
-    "note": "Recipe Mom is a home kitchen, not a test lab. Nothing goes up here until it has been cooked at least twice and worked both times.",
+    "note": "Every recipe here is Mum’s, the way she makes it. Written down with love, so they stay in the family.",
     "columns": [
       {
         "heading": "Explore",
