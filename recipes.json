@@ -6583,6 +6583,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "espinacas-con-garbanzos-spinach-chickpeas",
+      "title": "Espinacas con Garbanzos (Spinach & Chickpeas)",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Spanish",
+        "chickpeas",
+        "spinach",
+        "simmered"
+      ],
+      "img": "images/espinacas-con-garbanzos-spinach-chickpeas-card.jpg",
+      "poster": "images/espinacas-con-garbanzos-spinach-chickpeas.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "A traditional Spanish dish made with tender chickpeas, fresh spinach, garlic and paprika.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
