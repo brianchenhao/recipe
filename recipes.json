@@ -5924,6 +5924,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-garlic-on-cholesterol",
+      "section": "health",
+      "title": "The Truth About Garlic on Cholesterol",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "garlic",
+        "cholesterol",
+        "heart health",
+        "LDL"
+      ],
+      "img": "images/the-truth-about-garlic-on-cholesterol-card.jpg",
+      "poster": "images/the-truth-about-garlic-on-cholesterol.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Garlic may modestly lower LDL cholesterol as part of a heart-healthy diet, not as a cure.",
+      "lede": "",
+      "body": "Garlic may help modestly improve cholesterol levels, especially by lowering LDL (bad) cholesterol, but it is not a proven treatment for high cholesterol. Garlic contains sulfur compounds such as allicin, which may influence cholesterol metabolism, reduce oxidation of LDL, and support heart health.\n\nStudies report a modest reduction in total and LDL cholesterol with garlic consumption or supplementation. Its antioxidants may help prevent LDL oxidation linked to plaque build-up. It may influence liver enzymes and increase cholesterol excretion through bile, and its anti-inflammatory and antioxidant properties may support cardiovascular health.\n\nResearch shows small to moderate reductions, but results vary by study design, garlic form, dose and duration. Garlic is more helpful as part of a heart-healthy diet and lifestyle, not as a standalone treatment. Curing high cholesterol with garlic is false, and replacing medication is false. Lowering LDL is true with modest effect, raising HDL is possible, and raw better than cooked is not established.\n\nUse fresh garlic chopped, minced or sliced in cooking. Add to stir-fries, vegetables, soups and stews. Season meat, fish or tofu, and use in marinades, dressings and homemade sauces.\n\nGarlic is generally safe in normal food amounts. High supplement doses may cause stomach upset and increase bleeding risk, especially with blood-thinning medication. Always consult your healthcare professional before using garlic supplements. The best approach is a balanced diet, regular exercise, and medical guidance.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
