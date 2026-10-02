@@ -6550,6 +6550,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "garbanzada-chickpea-soup-with-chorizo",
+      "title": "Garbanzada (Chickpea Soup with Chorizo)",
+      "author": "",
+      "cat": "Soup",
+      "tags": [
+        "Spanish",
+        "chickpea",
+        "chorizo",
+        "simmered"
+      ],
+      "img": "images/garbanzada-chickpea-soup-with-chorizo-card.jpg",
+      "poster": "images/garbanzada-chickpea-soup-with-chorizo.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Hearty Spanish stew with tender chickpeas, smoky chorizo, vegetables and aromatic spices.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
