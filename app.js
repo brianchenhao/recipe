@@ -317,9 +317,39 @@
     return state.recipes.filter(function (r) { return r.cat === cat; });
   }
 
+  // The hero only shows recipes that have a picture; an illustration-only card
+  // looks empty up there. Topped up with the newest pictured recipes.
   function featuredRecipes() {
-    var f = state.recipes.filter(function (r) { return r.featured; });
+    var pictured = state.recipes.filter(function (r) { return isStr(r.img) || isStr(r.poster); });
+    var f = pictured.filter(function (r) { return r.featured; });
+    var newest = pictured.slice().sort(SORTS.newest);
+    for (var i = 0; f.length < 5 && i < newest.length; i++) if (f.indexOf(newest[i]) === -1) f.push(newest[i]);
     return f.length ? f : state.recipes.slice(0, 5);
+  }
+
+  // Cuisine is read from the tags. Aliases fold regional tags into one chip.
+  var CUISINES = ['Malaysian', 'Chinese', 'Korean', 'Japanese', 'Thai', 'Indian', 'Nyonya', 'Vietnamese', 'Indonesian', 'Taiwanese', 'Western'];
+  var CUISINE_ALIAS = { 'south indian': 'Indian', 'north indian': 'Indian', 'hakka': 'Chinese', 'cantonese': 'Chinese', 'teochew': 'Chinese', 'hokkien': 'Chinese', 'peranakan': 'Nyonya' };
+  function cuisinesOf(r) {
+    var out = [];
+    arr(r.tags).forEach(function (t) {
+      if (!isStr(t)) return;
+      var k = t.trim().toLowerCase();
+      var c = CUISINE_ALIAS[k] || CUISINES.filter(function (x) { return x.toLowerCase() === k; })[0];
+      if (c && out.indexOf(c) === -1) out.push(c);
+    });
+    return out;
+  }
+  // Cuisines with at least two recipes in the list, most common first.
+  function cuisineCounts(list) {
+    var n = {};
+    list.forEach(function (r) { cuisinesOf(r).forEach(function (c) { n[c] = (n[c] || 0) + 1; }); });
+    return Object.keys(n).filter(function (c) { return n[c] >= 2; }).sort(function (a, b) { return n[b] - n[a]; });
+  }
+  // A filter is only worth showing when enough recipes carry the field;
+  // most of mum's recipes are pictures with no time or level written down.
+  function shareWith(list, test) {
+    return list.length ? list.filter(test).length / list.length : 0;
   }
 
   // Apply a collection filter object: {maxMinutes, minRating, cat, tag}.
@@ -754,7 +784,7 @@
     if (head === '' || head === 'home') { html = renderHome(); isHome = true; }
     else if (head === 'recipes') html = renderAll(route.query);
     else if (head === 'recipe') html = renderRecipe(parts[1]);
-    else if (head === 'category') html = renderCategory(parts[1]);
+    else if (head === 'category') html = renderCategory(parts[1], route.query);
     else if (head === 'collection') html = renderCollection(parts[1]);
     else if (head === 'search') html = renderSearch(route.query.q || '');
     else if (head === 'login') html = renderLogin();
@@ -801,8 +831,8 @@
       + '</div>';
 
     // The big "plenty to choose from" grid — at least 24 cards.
-    var big = all.slice(0, Math.max(24, Math.min(all.length, 24)));
-    if (all.length > 24) big = all.slice(0, 24);
+    // Newest first, so what mum just added is the first thing anyone sees.
+    var big = all.slice().sort(SORTS.newest).slice(0, 24);
     var bigGrid = '<section class="section reveal">'
       + '<div class="section__head"><h2 class="section__title">Plenty to choose from</h2>'
       + '<a class="section__link" href="#/recipes">See all ' + all.length + '</a></div>'
@@ -811,7 +841,7 @@
 
     // One rail per collection.
     var rails = arr(site.collections).filter(Boolean).map(function (c) {
-      var list = applyFilter(all, c.filter).slice(0, 12);
+      var list = applyFilter(all, c.filter).sort(SORTS.newest).slice(0, 12);
       return list.length ? railHtml(c.label || 'Collection', '#/collection/' + encodeURIComponent(c.id), c.desc, list) : '';
     }).join('');
 
@@ -848,15 +878,17 @@
       + (isStr(opts.desc) ? '<p>' + esc(opts.desc) + '</p>' : '')
       + '</div>';
 
-    var filters = opts.showFilters ? filtersHtml(opts.query, opts.activeCat) : '';
+    var filters = opts.showFilters ? filtersHtml(opts.query, opts.activeCat, opts.base || opts.list) : '';
     var count = '<p class="results__count" aria-live="polite">' + opts.list.length + ' recipe' + (opts.list.length === 1 ? '' : 's') + '</p>';
     var grid = '<div id="grid-host">' + gridHtml(opts.list, { emptyTitle: 'No matches', emptyMsg: 'Try clearing a filter or searching for something else.' }) + '</div>';
 
     return '<section class="section">' + pagehead + filters + count + grid + '</section>';
   }
 
-  function filtersHtml(query, activeCat) {
+  function filtersHtml(query, activeCat, base) {
     query = query || {};
+    base = base || state.recipes;
+    var cuisine = query.cuisine || '';
     var cats = allCategories();
     var cat = activeCat || query.cat || '';
     var level = query.level || '';
@@ -872,11 +904,22 @@
       + cats.map(function (c) { return chip('cat', c, c, cat === c); }).join('')
       + '</div>';
 
-    var levelChips = '<div class="filters__group"><span class="filters__label">Level</span>'
+    var cuisines = cuisineCounts(base);
+    if (cuisine && cuisines.indexOf(cuisine) === -1) cuisines.push(cuisine);
+    var cuisineChips = cuisines.length < 2 ? '' : '<div class="filters__group"><span class="filters__label">Cuisine</span>'
+      + chip('cuisine', '', 'All', !cuisine)
+      + cuisines.map(function (c) { return chip('cuisine', c, c, cuisine === c); }).join('')
+      + '</div>';
+
+    var showLevel = level || shareWith(base, function (r) { return isStr(r.level); }) >= 0.3;
+    var showTime = time || shareWith(base, function (r) { return parseMinutes(r.total || r.active || r.cook) > 0; }) >= 0.3;
+    var showTop = shareWith(base, function (r) { return num(r.rating) > 0; }) >= 0.3;
+
+    var levelChips = !showLevel ? '' : '<div class="filters__group"><span class="filters__label">Level</span>'
       + ['Easy', 'Intermediate', 'Advanced'].map(function (l) { return chip('level', l, l, level === l); }).join('')
       + '</div>';
 
-    var timeChips = '<div class="filters__group"><span class="filters__label">Time</span>'
+    var timeChips = !showTime ? '' : '<div class="filters__group"><span class="filters__label">Time</span>'
       + chip('time', '30', '≤ 30 min', time === '30')
       + chip('time', '60', '≤ 1 hr', time === '60')
       + chip('time', '61', '1 hr +', time === '61')
@@ -884,12 +927,12 @@
 
     var sortSel = '<div class="filters__group"><span class="filters__label" id="sort-label">Sort</span>'
       + '<select id="sort-select" aria-labelledby="sort-label">'
-      + [['newest', 'Newest'], ['top', 'Top rated'], ['quick', 'Quickest'], ['az', 'A–Z']].map(function (o) {
+      + [['newest', 'Newest'], showTop && ['top', 'Top rated'], showTime && ['quick', 'Quickest'], ['az', 'A–Z']].filter(Boolean).map(function (o) {
           return '<option value="' + o[0] + '"' + (sort === o[0] ? ' selected' : '') + '>' + o[1] + '</option>';
         }).join('')
       + '</select></div>';
 
-    return '<div class="filters" role="group" aria-label="Filter recipes">' + catChips + levelChips + timeChips + sortSel + '</div>';
+    return '<div class="filters" role="group" aria-label="Filter recipes">' + catChips + cuisineChips + levelChips + timeChips + sortSel + '</div>';
   }
 
   function filterAndSort(list, query, activeCat) {
@@ -897,6 +940,7 @@
     var out = list.slice();
     var cat = activeCat || query.cat;
     if (isStr(cat)) out = out.filter(function (r) { return r.cat === cat; });
+    if (isStr(query.cuisine)) out = out.filter(function (r) { return cuisinesOf(r).indexOf(query.cuisine) !== -1; });
     if (isStr(query.level)) out = out.filter(function (r) { return String(r.level || '').toLowerCase() === query.level.toLowerCase(); });
     if (isStr(query.time)) {
       var t = query.time;
@@ -916,17 +960,18 @@
 
   function renderAll(query) {
     var list = filterAndSort(state.recipes, query, null);
-    setMeta('All recipes', 'Every recipe on Recipe Mom — filter by category, level and time.');
+    setMeta('All recipes', 'Every recipe on Recipe Mom — filter by category and cuisine.');
     return listPage({
       title: 'All recipes',
       desc: 'The whole collection. Filter it down, or sort by what matters right now.',
-      list: list, showFilters: true, query: query || {}
+      list: list, showFilters: true, query: query || {}, base: state.recipes
     });
   }
 
-  function renderCategory(cat) {
+  function renderCategory(cat, query) {
+    query = query || {};
     if (!isStr(cat)) return renderAll({});
-    var list = filterAndSort(recipesInCategory(cat), {}, cat);
+    var list = filterAndSort(recipesInCategory(cat), query, cat);
     if (!recipesInCategory(cat).length) {
       return '<section class="section"><div class="pagehead"><h1>' + esc(cat) + '</h1></div>'
         + emptyHtml('No recipes here yet', 'This category is waiting for its first recipe.', '#/recipes', 'Browse all recipes') + '</section>';
@@ -935,7 +980,7 @@
     return listPage({
       title: cat,
       desc: 'Every ' + cat.toLowerCase() + ' recipe in the collection.',
-      list: list, showFilters: true, activeCat: cat, query: {}
+      list: list, showFilters: true, activeCat: cat, query: query, base: recipesInCategory(cat)
     });
   }
 
@@ -943,7 +988,7 @@
     var c = collectionById(id);
     if (!c) return renderAll({});
     var list = applyFilter(state.recipes, c.filter);
-    list.sort(SORTS.top);
+    list.sort(SORTS.newest);
     setMeta(c.label || 'Collection', c.desc || '');
     return listPage({
       title: c.label || 'Collection',

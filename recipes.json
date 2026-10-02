@@ -570,7 +570,7 @@
       "cat": "Noodles",
       "tags": [
         "Thai",
-        "Stir-fry",
+        "Stir Fry",
         "Spicy",
         "30 Minutes",
         "Weeknight"
@@ -759,7 +759,7 @@
       "tags": [
         "Thai",
         "Shrimp",
-        "Stir-fry",
+        "Stir Fry",
         "Family Dinner"
       ],
       "img": "",
@@ -1142,10 +1142,10 @@
       "author": "Recipe Mom",
       "cat": "Drinks",
       "tags": [
-        "matcha",
-        "iced",
-        "cafe at home",
-        "vegan"
+        "Matcha",
+        "Iced",
+        "Cafe at home",
+        "Vegan"
       ],
       "img": "",
       "ill": "ill-drink",
@@ -1552,7 +1552,7 @@
       "author": "",
       "cat": "Stir-Fry",
       "tags": [
-        "Stir-Fry",
+        "Stir Fry",
         "Tempeh",
         "High Protein",
         "Quick",
@@ -2988,9 +2988,9 @@
       "cat": "Soup",
       "tags": [
         "Thai",
-        "chicken",
-        "spicy",
-        "soup"
+        "Chicken",
+        "Spicy",
+        "Soup"
       ],
       "img": "images/tom-yam-chicken-2-card.jpg",
       "poster": "images/tom-yam-chicken-2.jpg",
@@ -3021,9 +3021,9 @@
       "cat": "Breakfast",
       "tags": [
         "Japanese",
-        "egg",
-        "pan-fried",
-        "fluffy"
+        "Egg",
+        "Pan Fried",
+        "Fluffy"
       ],
       "img": "images/fluffy-souffle-pancake-card.jpg",
       "poster": "images/fluffy-souffle-pancake.jpg",
@@ -3054,10 +3054,10 @@
       "cat": "Meat & Seafood",
       "tags": [
         "Greek",
-        "chicken",
-        "roasted",
-        "lemon",
-        "potato"
+        "Chicken",
+        "Roasted",
+        "Lemon",
+        "Potato"
       ],
       "img": "images/greek-chicken-maryland-card.jpg",
       "poster": "images/greek-chicken-maryland.jpg",
@@ -3087,9 +3087,9 @@
       "author": "",
       "cat": "Bread & Pau",
       "tags": [
-        "homemade",
-        "flour",
-        "baked"
+        "Homemade",
+        "Flour",
+        "Baked"
       ],
       "img": "images/bread-rolls-card.jpg",
       "poster": "images/bread-rolls.jpg",
@@ -3120,9 +3120,9 @@
       "cat": "Salad",
       "tags": [
         "Korean",
-        "cilantro",
-        "sesame",
-        "no-cook"
+        "Cilantro",
+        "Sesame",
+        "No Cook"
       ],
       "img": "images/cilantro-salad-card.jpg",
       "poster": "images/cilantro-salad.jpg",
@@ -3153,9 +3153,9 @@
       "cat": "Stir-Fry",
       "tags": [
         "Korean",
-        "zucchini",
-        "sautéed",
-        "perilla seeds"
+        "Zucchini",
+        "Sautéed",
+        "Perilla seeds"
       ],
       "img": "images/sauteed-zucchini-with-perilla-seeds-card.jpg",
       "poster": "images/sauteed-zucchini-with-perilla-seeds.jpg",
@@ -3186,9 +3186,9 @@
       "cat": "Stir-Fry",
       "tags": [
         "Korean",
-        "cucumber",
-        "stir-fried",
-        "temple food"
+        "Cucumber",
+        "Stir-fried",
+        "Temple food"
       ],
       "img": "images/temple-style-sauteed-cucumbers-card.jpg",
       "poster": "images/temple-style-sauteed-cucumbers.jpg",
@@ -3219,9 +3219,9 @@
       "cat": "Stir-Fry",
       "tags": [
         "Korean",
-        "shiitake mushrooms",
-        "pan-fried",
-        "plant-based"
+        "Shiitake mushrooms",
+        "Pan Fried",
+        "Plant-based"
       ],
       "img": "images/pan-fried-shiitake-mushrooms-card.jpg",
       "poster": "images/pan-fried-shiitake-mushrooms.jpg",
@@ -3252,9 +3252,9 @@
       "cat": "Salad",
       "tags": [
         "Korean",
-        "burdock root",
-        "spicy",
-        "tossed"
+        "Burdock root",
+        "Spicy",
+        "Tossed"
       ],
       "img": "images/spicy-burdock-root-salad-card.jpg",
       "poster": "images/spicy-burdock-root-salad.jpg",
@@ -3286,8 +3286,8 @@
       "tags": [
         "Korean",
         "Chinese yam",
-        "pan-fried",
-        "vegetarian"
+        "Pan Fried",
+        "Vegetarian"
       ],
       "img": "images/pan-fried-chinese-yam-slices-card.jpg",
       "poster": "images/pan-fried-chinese-yam-slices.jpg",
@@ -3319,8 +3319,8 @@
       "tags": [
         "Korean",
         "Chinese yam",
-        "steamed",
-        "shiitake"
+        "Steamed",
+        "Shiitake"
       ],
       "img": "images/steamed-chinese-yams-ma-jjim-card.jpg",
       "poster": "images/steamed-chinese-yams-ma-jjim.jpg",
@@ -3352,8 +3352,8 @@
       "tags": [
         "Korean",
         "Thai basil",
-        "chili",
-        "pan-fried"
+        "Chili",
+        "Pan Fried"
       ],
       "img": "images/korean-pancakes-with-thai-basil-chili-card.jpg",
       "poster": "images/korean-pancakes-with-thai-basil-chili.jpg",
@@ -3384,9 +3384,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Korean",
-        "tofu",
-        "fried",
-        "sweet-spicy"
+        "Tofu",
+        "Fried",
+        "Sweet-spicy"
       ],
       "img": "images/sweet-and-crunchy-tofu-card.jpg",
       "poster": "images/sweet-and-crunchy-tofu.jpg",
@@ -3417,9 +3417,9 @@
       "cat": "Dessert",
       "tags": [
         "Korean",
-        "ginger",
-        "candied",
-        "temple food"
+        "Ginger",
+        "Candied",
+        "Temple food"
       ],
       "img": "images/candied-ginger-card.jpg",
       "poster": "images/candied-ginger.jpg",
@@ -3450,9 +3450,9 @@
       "cat": "Kuih",
       "tags": [
         "Korean",
-        "glutinous rice",
-        "steamed",
-        "soybean powder"
+        "Glutinous Rice",
+        "Steamed",
+        "Soybean powder"
       ],
       "img": "images/rice-cakes-dusted-with-soybean-powder-card.jpg",
       "poster": "images/rice-cakes-dusted-with-soybean-powder.jpg",
@@ -3483,9 +3483,9 @@
       "cat": "Dessert",
       "tags": [
         "Korean",
-        "red beans",
-        "shaved ice",
-        "fruit"
+        "Red beans",
+        "Shaved ice",
+        "Fruit"
       ],
       "img": "images/shaved-ice-with-sweet-red-beans-and-fruits-card.jpg",
       "poster": "images/shaved-ice-with-sweet-red-beans-and-fruits.jpg",
@@ -3516,9 +3516,9 @@
       "cat": "Drinks",
       "tags": [
         "Korean",
-        "peach",
-        "hibiscus",
-        "chilled punch"
+        "Peach",
+        "Hibiscus",
+        "Chilled punch"
       ],
       "img": "images/peach-hibiscus-punch-card.jpg",
       "poster": "images/peach-hibiscus-punch.jpg",
@@ -3549,10 +3549,10 @@
       "cat": "Stir-Fry",
       "tags": [
         "Korean",
-        "chicken",
-        "rice cakes",
-        "spicy",
-        "skillet"
+        "Chicken",
+        "Rice cakes",
+        "Spicy",
+        "Skillet"
       ],
       "img": "images/cheese-fire-chicken-card.jpg",
       "poster": "images/cheese-fire-chicken.jpg",
@@ -3583,9 +3583,9 @@
       "cat": "Dessert",
       "tags": [
         "Korean",
-        "rice cake",
-        "mozzarella",
-        "pan-fried"
+        "Rice cake",
+        "Mozzarella",
+        "Pan Fried"
       ],
       "img": "images/rice-cake-and-melted-cheese-skewers-card.jpg",
       "poster": "images/rice-cake-and-melted-cheese-skewers.jpg",
@@ -3616,9 +3616,9 @@
       "cat": "Dessert",
       "tags": [
         "Korean",
-        "sweet potato",
-        "fried",
-        "candied"
+        "Sweet potato",
+        "Fried",
+        "Candied"
       ],
       "img": "images/candied-sweet-potatoes-card.jpg",
       "poster": "images/candied-sweet-potatoes.jpg",
@@ -3649,9 +3649,9 @@
       "cat": "Dessert",
       "tags": [
         "Korean",
-        "flour",
-        "seeds",
-        "pan-fried"
+        "Flour",
+        "Seeds",
+        "Pan Fried"
       ],
       "img": "images/sweet-pancakes-filled-with-syrup-and-seeds-card.jpg",
       "poster": "images/sweet-pancakes-filled-with-syrup-and-seeds.jpg",
@@ -3682,9 +3682,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Puerto Rican",
-        "cilantro",
-        "herb base",
-        "blended"
+        "Cilantro",
+        "Herb base",
+        "Blended"
       ],
       "img": "images/recaito-card.jpg",
       "poster": "images/recaito.jpg",
@@ -3715,9 +3715,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Trinidadian",
-        "chadon beni",
-        "blended",
-        "condiment"
+        "Chadon beni",
+        "Blended",
+        "Condiment"
       ],
       "img": "images/chadon-beni-sauce-card.jpg",
       "poster": "images/chadon-beni-sauce.jpg",
@@ -3748,10 +3748,10 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Southeast Asian",
-        "culantro",
-        "peanuts",
-        "blended",
-        "no-cook"
+        "Culantro",
+        "Peanuts",
+        "Blended",
+        "No Cook"
       ],
       "img": "images/southeast-asian-culantro-pesto-card.jpg",
       "poster": "images/southeast-asian-culantro-pesto.jpg",
@@ -3782,9 +3782,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Argentine",
-        "culantro",
-        "garlic",
-        "no-cook"
+        "Culantro",
+        "Garlic",
+        "No Cook"
       ],
       "img": "images/culantro-chimichurri-card.jpg",
       "poster": "images/culantro-chimichurri.jpg",
@@ -3815,9 +3815,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Spanish",
-        "tomato",
-        "peppers",
-        "sautéed"
+        "Tomato",
+        "Peppers",
+        "Sautéed"
       ],
       "img": "images/the-spanish-sofrito-card.jpg",
       "poster": "images/the-spanish-sofrito.jpg",
@@ -3848,9 +3848,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Italian",
-        "onion",
-        "carrot",
-        "slow-cooked"
+        "Onion",
+        "Carrot",
+        "Slow-cooked"
       ],
       "img": "images/the-italian-soffritto-card.jpg",
       "poster": "images/the-italian-soffritto.jpg",
@@ -3881,9 +3881,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Dominican",
-        "peppers",
-        "herbs",
-        "blended"
+        "Peppers",
+        "Herbs",
+        "Blended"
       ],
       "img": "images/dominican-sofrito-sazon-card.jpg",
       "poster": "images/dominican-sofrito-sazon.jpg",
@@ -3914,9 +3914,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Cuban",
-        "tomato",
-        "peppers",
-        "sautéed"
+        "Tomato",
+        "Peppers",
+        "Sautéed"
       ],
       "img": "images/cuban-sofrito-card.jpg",
       "poster": "images/cuban-sofrito.jpg",
@@ -3947,9 +3947,9 @@
       "cat": "Kuih",
       "tags": [
         "Cantonese",
-        "rice flour",
-        "steamed",
-        "fermented"
+        "Rice flour",
+        "Steamed",
+        "Fermented"
       ],
       "img": "images/white-sugar-sponge-cake-card.jpg",
       "poster": "images/white-sugar-sponge-cake.jpg",
@@ -3980,9 +3980,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Malaysian",
-        "coconut",
-        "egg",
-        "steamed"
+        "Coconut",
+        "Egg",
+        "Steamed"
       ],
       "img": "images/kaya-coconut-jam-card.jpg",
       "poster": "images/kaya-coconut-jam.jpg",
@@ -4013,8 +4013,8 @@
       "cat": "Bread & Pau",
       "tags": [
         "Indian",
-        "flour",
-        "baked"
+        "Flour",
+        "Baked"
       ],
       "img": "images/naan-bread-card.jpg",
       "poster": "images/naan-bread.jpg",
@@ -4045,9 +4045,9 @@
       "cat": "Bread & Pau",
       "tags": [
         "Indian",
-        "chickpea flour",
-        "spiced",
-        "pan-fried"
+        "Chickpea flour",
+        "Spiced",
+        "Pan Fried"
       ],
       "img": "images/missi-roti-card.jpg",
       "poster": "images/missi-roti.jpg",
@@ -4078,10 +4078,10 @@
       "cat": "Dessert",
       "tags": [
         "Malaysian",
-        "coconut",
-        "pandan",
-        "agar-agar",
-        "boiled"
+        "Coconut",
+        "Pandan",
+        "Agar-agar",
+        "Boiled"
       ],
       "img": "images/agar-agar-santan-coconut-jelly-2-card.jpg",
       "poster": "images/agar-agar-santan-coconut-jelly-2.jpg",
@@ -4112,8 +4112,8 @@
       "cat": "Bread & Pau",
       "tags": [
         "Indian",
-        "atta flour",
-        "pan-fried"
+        "Atta flour",
+        "Pan Fried"
       ],
       "img": "images/chapatis-card.jpg",
       "poster": "images/chapatis.jpg",
@@ -4144,9 +4144,9 @@
       "cat": "Bread & Pau",
       "tags": [
         "Italian-style",
-        "zucchini",
-        "meatballs",
-        "broiled"
+        "Zucchini",
+        "Meatballs",
+        "Broiled"
       ],
       "img": "images/zucchini-meatball-bread-card.jpg",
       "poster": "images/zucchini-meatball-bread.jpg",
@@ -4177,9 +4177,9 @@
       "cat": "Noodles",
       "tags": [
         "Southern",
-        "chicken",
-        "carrot noodles",
-        "sauteed"
+        "Chicken",
+        "Carrot noodles",
+        "Sauteed"
       ],
       "img": "images/chicken-and-carrot-noodles-card.jpg",
       "poster": "images/chicken-and-carrot-noodles.jpg",
@@ -4210,9 +4210,9 @@
       "cat": "Meat & Seafood",
       "tags": [
         "American",
-        "chicken",
-        "baked",
-        "honey BBQ"
+        "Chicken",
+        "Baked",
+        "Honey BBQ"
       ],
       "img": "images/baked-bbq-honey-chicken-card.jpg",
       "poster": "images/baked-bbq-honey-chicken.jpg",
@@ -4243,10 +4243,10 @@
       "cat": "Noodles",
       "tags": [
         "Italian",
-        "chicken",
-        "sweet potato",
-        "seared",
-        "simmered"
+        "Chicken",
+        "Sweet potato",
+        "Seared",
+        "Simmered"
       ],
       "img": "images/chicken-breast-with-sweet-potato-noodles-card.jpg",
       "poster": "images/chicken-breast-with-sweet-potato-noodles.jpg",
@@ -4277,9 +4277,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Middle Eastern",
-        "chickpeas",
-        "fried",
-        "plant-based"
+        "Chickpeas",
+        "Fried",
+        "Plant-based"
       ],
       "img": "images/falafel-card.jpg",
       "poster": "images/falafel.jpg",
@@ -4310,9 +4310,9 @@
       "cat": "Breakfast",
       "tags": [
         "Middle Eastern",
-        "chickpea",
-        "herbs",
-        "waffle-iron"
+        "Chickpea",
+        "Herbs",
+        "Waffle-iron"
       ],
       "img": "images/falafel-waffle-card.jpg",
       "poster": "images/falafel-waffle.jpg",
@@ -4343,9 +4343,9 @@
       "cat": "Bread & Pau",
       "tags": [
         "Italian",
-        "flour",
-        "kneaded",
-        "baked"
+        "Flour",
+        "Kneaded",
+        "Baked"
       ],
       "img": "images/pizza-dough-card.jpg",
       "poster": "images/pizza-dough.jpg",
@@ -4376,9 +4376,9 @@
       "cat": "Dessert",
       "tags": [
         "Japanese",
-        "matcha",
-        "glutinous rice",
-        "microwaved"
+        "Matcha",
+        "Glutinous Rice",
+        "Microwaved"
       ],
       "img": "images/matcha-mochi-card.jpg",
       "poster": "images/matcha-mochi.jpg",
@@ -4408,10 +4408,10 @@
       "author": "",
       "cat": "Dessert",
       "tags": [
-        "healthy",
-        "peanut butter",
-        "dates",
-        "no-bake"
+        "Healthy",
+        "Peanut butter",
+        "Dates",
+        "No Bake"
       ],
       "img": "images/peanut-butterballs-card.jpg",
       "poster": "images/peanut-butterballs.jpg",
@@ -4441,10 +4441,10 @@
       "author": "",
       "cat": "Dessert",
       "tags": [
-        "healthy",
-        "chickpea",
-        "oats",
-        "no-bake"
+        "Healthy",
+        "Chickpea",
+        "Oats",
+        "No Bake"
       ],
       "img": "images/no-bake-chickpea-cookies-card.jpg",
       "poster": "images/no-bake-chickpea-cookies.jpg",
@@ -4475,9 +4475,9 @@
       "cat": "Noodles",
       "tags": [
         "Chinese",
-        "prawns",
-        "yee mee",
-        "braised"
+        "Prawns",
+        "Yee mee",
+        "Braised"
       ],
       "img": "images/braised-yee-mee-card.jpg",
       "poster": "images/braised-yee-mee.jpg",
@@ -4508,9 +4508,9 @@
       "cat": "Pickles",
       "tags": [
         "Korean",
-        "cabbage",
-        "fermented",
-        "spicy"
+        "Cabbage",
+        "Fermented",
+        "Spicy"
       ],
       "img": "images/kimchi-card.jpg",
       "poster": "images/kimchi.jpg",
@@ -4575,9 +4575,9 @@
       "cat": "Rice",
       "tags": [
         "Korean",
-        "kimchi",
-        "rice",
-        "stir-fry"
+        "Kimchi",
+        "Rice",
+        "Stir Fry"
       ],
       "img": "images/kimchi-fried-rice-card.jpg",
       "poster": "images/kimchi-fried-rice.jpg",
@@ -4608,10 +4608,10 @@
       "cat": "Noodles",
       "tags": [
         "Korean",
-        "kimchi",
-        "ramen noodles",
-        "spicy",
-        "one-pot"
+        "Kimchi",
+        "Ramen noodles",
+        "Spicy",
+        "One Pot"
       ],
       "img": "images/kimchi-ramen-card.jpg",
       "poster": "images/kimchi-ramen.jpg",
@@ -4642,9 +4642,9 @@
       "cat": "Bread & Pau",
       "tags": [
         "Malaysian",
-        "potato",
-        "curry",
-        "steamed"
+        "Potato",
+        "Curry",
+        "Steamed"
       ],
       "img": "images/potato-curry-pau-card.jpg",
       "poster": "images/potato-curry-pau.jpg",
@@ -4675,9 +4675,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Western",
-        "sugar",
-        "cream",
-        "stovetop"
+        "Sugar",
+        "Cream",
+        "Stovetop"
       ],
       "img": "images/homemade-caramel-sauce-card.jpg",
       "poster": "images/homemade-caramel-sauce.jpg",
@@ -4708,9 +4708,9 @@
       "cat": "Breakfast",
       "tags": [
         "French",
-        "ham",
-        "broccoli",
-        "baked"
+        "Ham",
+        "Broccoli",
+        "Baked"
       ],
       "img": "images/ham-broccoli-quiche-card.jpg",
       "poster": "images/ham-broccoli-quiche.jpg",
@@ -4741,9 +4741,9 @@
       "cat": "Cake",
       "tags": [
         "Japanese",
-        "cream cheese",
-        "baked",
-        "fluffy"
+        "Cream cheese",
+        "Baked",
+        "Fluffy"
       ],
       "img": "images/japanese-soft-cheese-cake-card.jpg",
       "poster": "images/japanese-soft-cheese-cake.jpg",
@@ -4774,8 +4774,8 @@
       "cat": "Cake",
       "tags": [
         "Basque",
-        "cream cheese",
-        "baked"
+        "Cream cheese",
+        "Baked"
       ],
       "img": "images/burnt-cheese-cake-card.jpg",
       "poster": "images/burnt-cheese-cake.jpg",
@@ -4806,9 +4806,9 @@
       "cat": "Dessert",
       "tags": [
         "Japanese",
-        "strawberry",
-        "red bean",
-        "mochi"
+        "Strawberry",
+        "Red bean",
+        "Mochi"
       ],
       "img": "images/strawberry-daifuku-card.jpg",
       "poster": "images/strawberry-daifuku.jpg",
@@ -4839,9 +4839,9 @@
       "cat": "Sides & Sauces",
       "tags": [
         "Indian",
-        "white beans",
-        "pan-fried",
-        "spicy"
+        "White beans",
+        "Pan Fried",
+        "Spicy"
       ],
       "img": "images/kacang-putih-indian-style-card.jpg",
       "poster": "images/kacang-putih-indian-style.jpg",
@@ -4872,9 +4872,9 @@
       "cat": "Noodles",
       "tags": [
         "Thai",
-        "prawns",
-        "rice noodles",
-        "stir-fry"
+        "Prawns",
+        "Rice noodles",
+        "Stir Fry"
       ],
       "img": "images/thai-pad-thai-card.jpg",
       "poster": "images/thai-pad-thai.jpg",
@@ -4905,9 +4905,9 @@
       "cat": "Stir-Fry",
       "tags": [
         "Chinese-American",
-        "chicken",
-        "deep-fried",
-        "sweet-spicy"
+        "Chicken",
+        "Deep Fried",
+        "Sweet-spicy"
       ],
       "img": "images/general-tso-chicken-card.jpg",
       "poster": "images/general-tso-chicken.jpg",
@@ -4938,9 +4938,9 @@
       "cat": "Pickles",
       "tags": [
         "Sichuan",
-        "napa cabbage",
-        "pickled",
-        "spicy"
+        "Napa Cabbage",
+        "Pickled",
+        "Spicy"
       ],
       "img": "images/pao-cai-card.jpg",
       "poster": "images/pao-cai.jpg",
@@ -4971,8 +4971,8 @@
       "cat": "Pickles",
       "tags": [
         "Japanese",
-        "soybeans",
-        "fermented"
+        "Soybeans",
+        "Fermented"
       ],
       "img": "images/natto-card.jpg",
       "poster": "images/natto.jpg",
@@ -5003,9 +5003,9 @@
       "cat": "Stir-Fry",
       "tags": [
         "Indonesian",
-        "tempeh",
-        "stir-fry",
-        "spicy"
+        "Tempeh",
+        "Stir Fry",
+        "Spicy"
       ],
       "img": "images/tempeh-indonesian-style-stir-fry-card.jpg",
       "poster": "images/tempeh-indonesian-style-stir-fry.jpg",
@@ -5036,9 +5036,9 @@
       "cat": "Soup",
       "tags": [
         "Japanese",
-        "miso",
-        "tofu",
-        "simmered"
+        "Miso",
+        "Tofu",
+        "Simmered"
       ],
       "img": "images/miso-soup-japanese-style-card.jpg",
       "poster": "images/miso-soup-japanese-style.jpg",
@@ -5069,9 +5069,9 @@
       "cat": "Pickles",
       "tags": [
         "German",
-        "cabbage",
-        "fermented",
-        "probiotic"
+        "Cabbage",
+        "Fermented",
+        "Probiotic"
       ],
       "img": "images/sauerkraut-german-style-card.jpg",
       "poster": "images/sauerkraut-german-style.jpg",
@@ -5101,10 +5101,10 @@
       "author": "",
       "cat": "Pickles",
       "tags": [
-        "vegetarian",
-        "beetroot",
-        "pickled",
-        "vinegar"
+        "Vegetarian",
+        "Beetroot",
+        "Pickled",
+        "Vinegar"
       ],
       "img": "images/beets-pickle-card.jpg",
       "poster": "images/beets-pickle.jpg",
@@ -5134,9 +5134,9 @@
       "author": "",
       "cat": "Pickles",
       "tags": [
-        "homemade",
-        "beetroot",
-        "vinegar pickle"
+        "Homemade",
+        "Beetroot",
+        "Vinegar pickle"
       ],
       "img": "images/beets-pickle-2-card.jpg",
       "poster": "images/beets-pickle-2.jpg",
@@ -5167,9 +5167,9 @@
       "cat": "Noodles",
       "tags": [
         "Thai-Malaysian",
-        "bee hoon",
-        "prawns",
-        "stir-fry"
+        "Bee hoon",
+        "Prawns",
+        "Stir Fry"
       ],
       "img": "images/tom-yam-fried-bee-hoon-card.jpg",
       "poster": "images/tom-yam-fried-bee-hoon.jpg",
@@ -5200,9 +5200,9 @@
       "cat": "Noodles",
       "tags": [
         "Malaysian",
-        "bee hoon",
-        "tauchu",
-        "stir-fry"
+        "Bee hoon",
+        "Tauchu",
+        "Stir Fry"
       ],
       "img": "images/bee-hoon-goreng-tauchu-card.jpg",
       "poster": "images/bee-hoon-goreng-tauchu.jpg",
@@ -5233,9 +5233,9 @@
       "cat": "Salad",
       "tags": [
         "Malaysian",
-        "fruit",
-        "spicy",
-        "tossed"
+        "Fruit",
+        "Spicy",
+        "Tossed"
       ],
       "img": "images/buah-rojak-card.jpg",
       "poster": "images/buah-rojak.jpg",
@@ -5266,9 +5266,9 @@
       "cat": "Stir-Fry",
       "tags": [
         "Chinese",
-        "ridge gourd",
-        "beancurd",
-        "braised"
+        "Ridge gourd",
+        "Beancurd",
+        "Braised"
       ],
       "img": "images/petola-beancurd-card.jpg",
       "poster": "images/petola-beancurd.jpg",
@@ -5299,11 +5299,11 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "purple foods",
-        "antioxidants",
-        "fibre",
-        "heart health",
-        "gut health"
+        "Purple foods",
+        "Antioxidants",
+        "Fibre",
+        "Heart health",
+        "Gut health"
       ],
       "img": "images/purple-cabbage-eggplant-blueberry-plum-and-prune-card.jpg",
       "poster": "images/purple-cabbage-eggplant-blueberry-plum-and-prune.jpg",
@@ -5335,10 +5335,10 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "cabbage",
-        "vitamins",
-        "fibre",
-        "antioxidants"
+        "Cabbage",
+        "Vitamins",
+        "Fibre",
+        "Antioxidants"
       ],
       "img": "images/napa-green-and-purple-cabbage-benefits-card.jpg",
       "poster": "images/napa-green-and-purple-cabbage-benefits.jpg",
@@ -5370,10 +5370,10 @@
       "author": "",
       "cat": "Wellbeing",
       "tags": [
-        "diabetes",
-        "blood glucose",
-        "myths",
-        "healthy habits"
+        "Diabetes",
+        "Blood glucose",
+        "Myths",
+        "Healthy habits"
       ],
       "img": "images/the-truth-about-diabetes-card.jpg",
       "poster": "images/the-truth-about-diabetes.jpg",
@@ -5405,10 +5405,10 @@
       "author": "",
       "cat": "Wellbeing",
       "tags": [
-        "high blood pressure",
-        "hypertension myths",
-        "heart health",
-        "blood pressure monitoring"
+        "High blood pressure",
+        "Hypertension myths",
+        "Heart health",
+        "Blood pressure monitoring"
       ],
       "img": "images/the-truth-about-high-blood-pressure-card.jpg",
       "poster": "images/the-truth-about-high-blood-pressure.jpg",
@@ -5440,11 +5440,11 @@
       "author": "",
       "cat": "Wellbeing",
       "tags": [
-        "heart rate",
-        "elevated heart rate",
-        "causes",
-        "symptoms",
-        "self-care"
+        "Heart rate",
+        "Elevated heart rate",
+        "Causes",
+        "Symptoms",
+        "Self-care"
       ],
       "img": "images/the-truth-about-elevated-hrt-card.jpg",
       "poster": "images/the-truth-about-elevated-hrt.jpg",
@@ -5476,8 +5476,8 @@
       "author": "",
       "cat": "Wellbeing",
       "tags": [
-        "cholesterol",
-        "heart health",
+        "Cholesterol",
+        "Heart health",
         "LDL",
         "HDL"
       ],
@@ -5511,10 +5511,10 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "kimchi",
-        "cholesterol",
-        "probiotics",
-        "fermented foods"
+        "Kimchi",
+        "Cholesterol",
+        "Probiotics",
+        "Fermented foods"
       ],
       "img": "images/the-truth-about-kimchi-on-cholesterol-card.jpg",
       "poster": "images/the-truth-about-kimchi-on-cholesterol.jpg",
@@ -5546,10 +5546,10 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "kimchi",
-        "blood sugar",
-        "probiotics",
-        "fibre"
+        "Kimchi",
+        "Blood sugar",
+        "Probiotics",
+        "Fibre"
       ],
       "img": "images/the-truth-about-kimchi-on-blood-sugar-card.jpg",
       "poster": "images/the-truth-about-kimchi-on-blood-sugar.jpg",
@@ -5581,10 +5581,10 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "kimchi",
-        "blood pressure",
-        "sodium",
-        "gut health"
+        "Kimchi",
+        "Blood pressure",
+        "Sodium",
+        "Gut health"
       ],
       "img": "images/the-truth-about-kimchi-on-blood-pressure-card.jpg",
       "poster": "images/the-truth-about-kimchi-on-blood-pressure.jpg",
@@ -5616,11 +5616,11 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "celery",
-        "blood pressure",
-        "heart health",
-        "potassium",
-        "sodium"
+        "Celery",
+        "Blood pressure",
+        "Heart health",
+        "Potassium",
+        "Sodium"
       ],
       "img": "images/the-truth-about-celery-and-high-blood-pressure-card.jpg",
       "poster": "images/the-truth-about-celery-and-high-blood-pressure.jpg",
@@ -5652,10 +5652,10 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "celery",
-        "blood sugar",
-        "diabetes",
-        "fibre"
+        "Celery",
+        "Blood sugar",
+        "Diabetes",
+        "Fibre"
       ],
       "img": "images/the-truth-about-celery-on-blood-sugar-card.jpg",
       "poster": "images/the-truth-about-celery-on-blood-sugar.jpg",
@@ -5687,10 +5687,10 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "celery",
-        "cholesterol",
-        "fibre",
-        "heart health"
+        "Celery",
+        "Cholesterol",
+        "Fibre",
+        "Heart health"
       ],
       "img": "images/the-truth-about-celery-on-cholesterol-card.jpg",
       "poster": "images/the-truth-about-celery-on-cholesterol.jpg",
@@ -5722,10 +5722,10 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "kimchi",
-        "cholesterol",
-        "heart health",
-        "fermented food"
+        "Kimchi",
+        "Cholesterol",
+        "Heart health",
+        "Fermented food"
       ],
       "img": "images/the-truth-about-kimchi-on-cholesterol-2-card.jpg",
       "poster": "images/the-truth-about-kimchi-on-cholesterol-2.jpg",
@@ -5757,10 +5757,10 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "kimchi",
-        "blood sugar",
-        "diabetes",
-        "fermented food"
+        "Kimchi",
+        "Blood sugar",
+        "Diabetes",
+        "Fermented food"
       ],
       "img": "images/the-truth-about-kimchi-and-blood-sugar-card.jpg",
       "poster": "images/the-truth-about-kimchi-and-blood-sugar.jpg",
@@ -5792,10 +5792,10 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "garlic",
-        "blood sugar",
-        "diabetes",
-        "balanced diet"
+        "Garlic",
+        "Blood sugar",
+        "Diabetes",
+        "Balanced diet"
       ],
       "img": "images/the-truth-about-garlic-on-blood-sugar-card.jpg",
       "poster": "images/the-truth-about-garlic-on-blood-sugar.jpg",
@@ -5827,10 +5827,10 @@
       "author": "",
       "cat": "Herbal & Tonics",
       "tags": [
-        "garlic",
-        "blood sugar",
-        "insulin sensitivity",
-        "aged garlic extract"
+        "Garlic",
+        "Blood sugar",
+        "Insulin sensitivity",
+        "Aged garlic extract"
       ],
       "img": "images/the-truth-about-garlic-on-blood-sugar-2-card.jpg",
       "poster": "images/the-truth-about-garlic-on-blood-sugar-2.jpg",
@@ -5862,10 +5862,10 @@
       "author": "",
       "cat": "Herbal & Tonics",
       "tags": [
-        "garlic",
-        "blood pressure",
-        "heart health",
-        "allicin"
+        "Garlic",
+        "Blood pressure",
+        "Heart health",
+        "Allicin"
       ],
       "img": "images/the-truth-about-garlic-on-blood-pressure-card.jpg",
       "poster": "images/the-truth-about-garlic-on-blood-pressure.jpg",
@@ -5897,10 +5897,10 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "garlic",
-        "blood pressure",
-        "heart health",
-        "allicin"
+        "Garlic",
+        "Blood pressure",
+        "Heart health",
+        "Allicin"
       ],
       "img": "images/the-truth-about-garlic-on-blood-pressure-2-card.jpg",
       "poster": "images/the-truth-about-garlic-on-blood-pressure-2.jpg",
@@ -5932,9 +5932,9 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "garlic",
-        "cholesterol",
-        "heart health",
+        "Garlic",
+        "Cholesterol",
+        "Heart health",
         "LDL"
       ],
       "img": "images/the-truth-about-garlic-on-cholesterol-card.jpg",
@@ -5967,10 +5967,10 @@
       "author": "",
       "cat": "Herbal & Tonics",
       "tags": [
-        "garlic",
-        "cholesterol",
-        "heart health",
-        "allicin"
+        "Garlic",
+        "Cholesterol",
+        "Heart health",
+        "Allicin"
       ],
       "img": "images/the-truth-about-garlic-on-cholesterol-2-card.jpg",
       "poster": "images/the-truth-about-garlic-on-cholesterol-2.jpg",
@@ -6002,11 +6002,11 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "brinjal",
-        "eggplant",
-        "cholesterol",
-        "heart health",
-        "fibre"
+        "Brinjal",
+        "Eggplant",
+        "Cholesterol",
+        "Heart health",
+        "Fibre"
       ],
       "img": "images/the-truth-about-brinjal-eggplant-on-cholesterol-card.jpg",
       "poster": "images/the-truth-about-brinjal-eggplant-on-cholesterol.jpg",
@@ -6038,11 +6038,11 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "brinjal",
-        "cholesterol",
-        "fibre",
-        "antioxidants",
-        "heart health"
+        "Brinjal",
+        "Cholesterol",
+        "Fibre",
+        "Antioxidants",
+        "Heart health"
       ],
       "img": "images/the-truth-about-brinjal-eggplant-on-cholesterol-2-card.jpg",
       "poster": "images/the-truth-about-brinjal-eggplant-on-cholesterol-2.jpg",
@@ -6074,10 +6074,10 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "brinjal",
-        "blood sugar",
-        "fibre",
-        "diabetes"
+        "Brinjal",
+        "Blood sugar",
+        "Fibre",
+        "Diabetes"
       ],
       "img": "images/the-truth-about-brinjal-on-blood-sugar-card.jpg",
       "poster": "images/the-truth-about-brinjal-on-blood-sugar.jpg",
@@ -6109,11 +6109,11 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "brinjal",
-        "eggplant",
-        "blood sugar",
-        "fibre",
-        "diabetes"
+        "Brinjal",
+        "Eggplant",
+        "Blood sugar",
+        "Fibre",
+        "Diabetes"
       ],
       "img": "images/the-truth-about-brinjal-eggplant-on-blood-sugar-card.jpg",
       "poster": "images/the-truth-about-brinjal-eggplant-on-blood-sugar.jpg",
@@ -6145,11 +6145,11 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "brinjal",
-        "blood pressure",
-        "heart health",
-        "potassium",
-        "fibre"
+        "Brinjal",
+        "Blood pressure",
+        "Heart health",
+        "Potassium",
+        "Fibre"
       ],
       "img": "images/the-truth-about-brinjal-eggplant-on-blood-pressure-card.jpg",
       "poster": "images/the-truth-about-brinjal-eggplant-on-blood-pressure.jpg",
@@ -6181,11 +6181,11 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "brinjal",
-        "eggplant",
-        "blood pressure",
-        "potassium",
-        "fibre"
+        "Brinjal",
+        "Eggplant",
+        "Blood pressure",
+        "Potassium",
+        "Fibre"
       ],
       "img": "images/the-truth-about-brinjal-eggplant-on-blood-pressure-2-card.jpg",
       "poster": "images/the-truth-about-brinjal-eggplant-on-blood-pressure-2.jpg",
@@ -6217,11 +6217,11 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "okra",
-        "blood pressure",
-        "heart health",
-        "potassium",
-        "fibre"
+        "Okra",
+        "Blood pressure",
+        "Heart health",
+        "Potassium",
+        "Fibre"
       ],
       "img": "images/the-truth-about-okra-on-blood-pressure-card.jpg",
       "poster": "images/the-truth-about-okra-on-blood-pressure.jpg",
@@ -6253,11 +6253,11 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "okra",
-        "blood pressure",
-        "potassium",
-        "fibre",
-        "heart health"
+        "Okra",
+        "Blood pressure",
+        "Potassium",
+        "Fibre",
+        "Heart health"
       ],
       "img": "images/the-truth-about-okra-on-blood-pressure-2-card.jpg",
       "poster": "images/the-truth-about-okra-on-blood-pressure-2.jpg",
@@ -6288,9 +6288,9 @@
       "author": "",
       "cat": "Stir-Fry",
       "tags": [
-        "healthy",
-        "okra",
-        "stir-fry"
+        "Healthy",
+        "Okra",
+        "Stir Fry"
       ],
       "img": "images/okra-stir-fry-card.jpg",
       "poster": "images/okra-stir-fry.jpg",
@@ -6320,10 +6320,10 @@
       "author": "",
       "cat": "Stir-Fry",
       "tags": [
-        "healthy",
-        "okra",
-        "stir-fry",
-        "high-fibre"
+        "Healthy",
+        "Okra",
+        "Stir Fry",
+        "High-fibre"
       ],
       "img": "images/okra-stir-fry-2-card.jpg",
       "poster": "images/okra-stir-fry-2.jpg",
@@ -6353,10 +6353,10 @@
       "author": "",
       "cat": "Soup",
       "tags": [
-        "healthy",
-        "okra",
-        "tomato",
-        "soup"
+        "Healthy",
+        "Okra",
+        "Tomato",
+        "Soup"
       ],
       "img": "images/tomato-okra-soup-card.jpg",
       "poster": "images/tomato-okra-soup.jpg",
@@ -6387,11 +6387,11 @@
       "author": "",
       "cat": "Nutrition",
       "tags": [
-        "vitamin K2",
-        "bone health",
-        "fermented foods",
-        "cheese",
-        "chicken"
+        "Vitamin K2",
+        "Bone health",
+        "Fermented foods",
+        "Cheese",
+        "Chicken"
       ],
       "img": "images/top-foods-rich-in-vitamin-k2-card.jpg",
       "poster": "images/top-foods-rich-in-vitamin-k2.jpg",
@@ -6423,11 +6423,11 @@
       "author": "",
       "cat": "Fitness",
       "tags": [
-        "seated calf raises",
-        "blood sugar",
-        "post-meal habit",
-        "soleus muscle",
-        "low impact"
+        "Seated calf raises",
+        "Blood sugar",
+        "Post-meal habit",
+        "Soleus muscle",
+        "Low impact"
       ],
       "img": "images/seated-calf-raises-after-a-meal-card.jpg",
       "poster": "images/seated-calf-raises-after-a-meal.jpg",
@@ -6459,8 +6459,8 @@
       "cat": "Pickles",
       "tags": [
         "Japanese",
-        "soybeans",
-        "fermented"
+        "Soybeans",
+        "Fermented"
       ],
       "img": "images/natto-fermented-soybeans-card.jpg",
       "poster": "images/natto-fermented-soybeans.jpg",

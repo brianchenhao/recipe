@@ -91,12 +91,12 @@
               "href": "#/recipes"
             },
             {
-              "label": "Quick & Easy",
-              "collection": "quick"
+              "label": "Malaysian Favourites",
+              "collection": "malaysian"
             },
             {
-              "label": "Weeknight Dinners",
-              "collection": "weeknight"
+              "label": "Korean at Home",
+              "collection": "korean"
             }
           ]
         }
@@ -163,19 +163,35 @@
   },
   "collections": [
     {
-      "id": "quick",
-      "label": "Quick & Easy",
-      "desc": "On the table in thirty minutes, start to plate.",
+      "id": "malaysian",
+      "label": "Malaysian Favourites",
+      "desc": "The dishes we grew up on.",
       "filter": {
-        "maxMinutes": 30
+        "tag": "Malaysian"
       }
     },
     {
-      "id": "weeknight",
-      "label": "Weeknight Dinners",
-      "desc": "Between six and seven, handled.",
+      "id": "korean",
+      "label": "Korean at Home",
+      "desc": "Banchan, kimchi and everything that goes with rice.",
       "filter": {
-        "tag": "Weeknight"
+        "tag": "Korean"
+      }
+    },
+    {
+      "id": "steamed",
+      "label": "Steamed & Gentle",
+      "desc": "Light on oil, easy on the stomach.",
+      "filter": {
+        "tag": "Steamed"
+      }
+    },
+    {
+      "id": "no-cook",
+      "label": "No Cooking Needed",
+      "desc": "Mix, pickle, assemble. No stove.",
+      "filter": {
+        "tag": "No Cook"
       }
     }
   ],
@@ -198,8 +214,8 @@
             "href": "#/questions"
           },
           {
-            "label": "Quick & Easy",
-            "href": "#/collection/quick"
+            "label": "Malaysian Favourites",
+            "href": "#/collection/malaysian"
           }
         ]
       },
@@ -228,8 +244,8 @@
         "heading": "The kitchen",
         "links": [
           {
-            "label": "Weeknight dinners",
-            "href": "#/collection/weeknight"
+            "label": "Steamed & Gentle",
+            "href": "#/collection/steamed"
           },
           {
             "label": "Start from the top",
