@@ -6616,6 +6616,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "tahini",
+      "title": "Tahini",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Middle Eastern",
+        "sesame",
+        "blended",
+        "homemade"
+      ],
+      "img": "images/tahini-card.jpg",
+      "poster": "images/tahini.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "A smooth and creamy sesame seed paste made with toasted sesame seeds and oil.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "makes about 1 cup",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
