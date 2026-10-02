@@ -5749,6 +5749,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-kimchi-and-blood-sugar",
+      "section": "health",
+      "title": "The Truth About Kimchi and Blood Sugar",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "kimchi",
+        "blood sugar",
+        "diabetes",
+        "fermented food"
+      ],
+      "img": "images/the-truth-about-kimchi-and-blood-sugar-card.jpg",
+      "poster": "images/the-truth-about-kimchi-and-blood-sugar.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Kimchi is low-carb and may fit a blood-sugar-friendly diet but is not a diabetes treatment.",
+      "lede": "",
+      "body": "Kimchi is generally a low-carbohydrate food that may fit well into a blood-sugar-friendly diet. However, it is not a proven treatment for diabetes. It is made from vegetables such as napa cabbage and radish, fermented with lactic acid bacteria, and typically has a smaller direct effect on blood glucose than rice, bread or sugary foods.\n\nTraditional cabbage kimchi generally contains relatively few digestible carbohydrates in a small serving, so its direct effect is often modest. It contains lactic acid bacteria, fibre, vitamins, minerals and plant compounds such as polyphenols and flavonoids, but human evidence on glucose metabolism and insulin sensitivity remains limited and inconsistent. It works best as part of a balanced meal with protein-rich foods, vegetables and whole grains.\n\nSome human studies suggest kimchi may help improve fasting blood glucose, insulin sensitivity and other metabolic markers, while other studies show small or no significant changes. Overall, evidence is promising but not strong enough to establish kimchi as a treatment for diabetes.\n\nMyth vs fact: kimchi cures diabetes is false, usually low in carbohydrates is generally true, reliably lowers blood sugar is not established, all kimchi has no added sugar is false, can fit into a diabetes-friendly diet is yes.\n\nTry 1-2 tablespoons with a meal. Check the label for added sugar and sodium. Choose traditional, vegetable-based kimchi, pair with protein, fibre and whole grains, and be mindful of sodium. It should not be relied on to lower glucose or replace diabetes medication.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
