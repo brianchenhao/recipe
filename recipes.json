@@ -5854,6 +5854,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-garlic-on-blood-pressure",
+      "section": "health",
+      "title": "The Truth About Garlic on Blood Pressure",
+      "author": "",
+      "cat": "Herbal & Tonics",
+      "tags": [
+        "garlic",
+        "blood pressure",
+        "heart health",
+        "allicin"
+      ],
+      "img": "images/the-truth-about-garlic-on-blood-pressure-card.jpg",
+      "poster": "images/the-truth-about-garlic-on-blood-pressure.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Garlic may modestly lower blood pressure as part of a healthy lifestyle, not replacing medication.",
+      "lede": "",
+      "body": "Garlic (Allium sativum) is a widely used culinary herb and traditional medicinal plant. It contains bioactive compounds, especially allicin, which are thought to contribute to potential cardiovascular benefits and may help relax blood vessels.\n\nGarlic may help increase nitric oxide production to relax and widen blood vessels, reduce tightness in blood vessels, reduce oxidative stress and inflammation, and improve endothelial function and healthy circulation.\n\nMany meta-analyses of randomised controlled trials show garlic supplementation can lead to a modest reduction in blood pressure, especially in people with high blood pressure. Average reductions are around 3-8 mmHg for systolic and 2-5 mmHg for diastolic, with greater reductions with higher baseline pressure.\n\nAbout 1-2 cloves raw garlic per day (3-6 g), or 600-1,200 mg aged garlic extract per day in studies, or garlic powder or oil per product label. Raw garlic provides allicin but may cause stronger taste and digestive discomfort. Choose reputable, standardised products and follow instructions.\n\nIt may cause bloating, gas, heartburn or stomach discomfort, increase bleeding risk especially with anticoagulant or antiplatelet medications, and add to blood pressure medications. Use with caution with garlic allergy, planned surgery, or certain medical conditions. Consult your doctor if unsure.\n\nAdd fresh garlic to stir-fries, soups, sauces and marinades, pair with vegetables, fruits, whole grains, lean protein and healthy fats, and be consistent over weeks to months. Combine with regular exercise, healthy weight, limiting salt and not smoking, not as a replacement for medication.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
