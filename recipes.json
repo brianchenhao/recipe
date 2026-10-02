@@ -6066,6 +6066,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-brinjal-on-blood-sugar",
+      "section": "health",
+      "title": "The Truth About Brinjal on Blood Sugar",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "brinjal",
+        "blood sugar",
+        "fibre",
+        "diabetes"
+      ],
+      "img": "images/the-truth-about-brinjal-on-blood-sugar-card.jpg",
+      "poster": "images/the-truth-about-brinjal-on-blood-sugar.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Brinjal may help reduce post-meal blood sugar as part of a balanced diet.",
+      "lede": "",
+      "body": "Brinjal (eggplant) is a low-calorie, low-carbohydrate vegetable rich in dietary fibre, antioxidants (especially nasunin), vitamins, and low glycaemic index, naturally suitable for people who want to manage blood sugar levels. Nasunin is a powerful antioxidant in brinjal skin that may help reduce inflammation and support better glucose metabolism.\n\nIt is naturally low in carbs and calories, so it has a small direct impact on blood sugar. Fibre slows down digestion and absorption of carbohydrates, helping to prevent rapid blood sugar spikes. Antioxidants may improve insulin sensitivity and reduce inflammation. Some studies suggest brinjal may help improve glucose metabolism and reduce insulin resistance.\n\nSome human studies suggest regular consumption can help lower post-meal blood sugar and improve insulin sensitivity, especially as part of a balanced diet in people with type 2 diabetes or prediabetes. Combined results show modest but significant improvements in fasting blood sugar, HbA1c and insulin resistance. The evidence is promising, but the effect size is moderate. Brinjal is a supportive food, not a replacement for medical treatment.\n\nAbout 100-200 g cooked brinjal (roughly 1/2 - 1 medium brinjal) per meal, stir-fried, grilled, roasted, curried or steamed. Keep the skin on, use less oil and avoid deep-frying, choose fresh firm brinjal, and combine with protein, healthy fats and other vegetables.\n\nAvoid deep-fried brinjal, sweet sugary or starchy sauces, and large portions. Responses can vary, so monitor your own blood sugar.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
