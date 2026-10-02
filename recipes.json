@@ -6483,6 +6483,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "paella",
+      "title": "Paella",
+      "author": "",
+      "cat": "Rice",
+      "tags": [
+        "Spanish",
+        "seafood",
+        "rice",
+        "one-pan"
+      ],
+      "img": "images/paella-card.jpg",
+      "poster": "images/paella.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Flavourful Spanish one-pan rice with saffron, seafood, vegetables and aromatic spices.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
