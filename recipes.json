@@ -6101,6 +6101,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-brinjal-eggplant-on-blood-sugar",
+      "section": "health",
+      "title": "The Truth About Brinjal (Eggplant) on Blood Sugar",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "brinjal",
+        "eggplant",
+        "blood sugar",
+        "fibre",
+        "diabetes"
+      ],
+      "img": "images/the-truth-about-brinjal-eggplant-on-blood-sugar-card.jpg",
+      "poster": "images/the-truth-about-brinjal-eggplant-on-blood-sugar.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Brinjal is a low-carbohydrate, high-fibre vegetable that may support healthy blood sugar but cannot treat diabetes.",
+      "lede": "",
+      "body": "Brinjal (eggplant) is a low-carbohydrate, high-fibre vegetable that may help support healthy blood sugar levels, but it is not a proven treatment for diabetes. It contains fibre, antioxidants such as nasunin, and other plant compounds that may improve how the body handles glucose.\n\nBrinjal is naturally low in digestible carbohydrates, so it generally has a small direct effect on blood glucose compared to starchy foods like rice, bread or noodles. Its fibre, especially soluble fibre, can slow down digestion and absorption of carbohydrates, which may help prevent rapid spikes in blood sugar. Nasunin in the purple skin may help improve insulin sensitivity and reduce inflammation. Some animal and small human studies suggest eggplant compounds may help the body use insulin more effectively, but more high-quality human research is needed.\n\nResearch is promising but not strong enough to establish brinjal as a treatment for diabetes. It cannot cure diabetes or replace diabetes medication. Include it by stir-frying with minimal oil, grilling or roasting with herbs and spices, adding to curries, soups or stews, or steaming or baking instead of deep-frying. Avoid deep-frying, continue medication as prescribed, and discuss major dietary changes with your healthcare professional.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
