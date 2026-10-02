@@ -2567,8 +2567,8 @@
     var batch = usage.queue.splice(0, 100);
     try { localStorage.setItem('rm-usage-queue', JSON.stringify(usage.queue)); } catch (e) {}
     var payload = JSON.stringify({ visitor: usage.visitor, device: deviceKind(), events: batch });
-    if (leaving && navigator.sendBeacon && navigator.sendBeacon('/api/track', new Blob([payload], { type: 'application/json' }))) return;
-    fetch('/api/track', { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'same-origin', body: payload, keepalive: true })
+    if (leaving && navigator.sendBeacon && navigator.sendBeacon('/api/usage', new Blob([payload], { type: 'application/json' }))) return;
+    fetch('/api/usage', { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'same-origin', body: payload, keepalive: true })
       .catch(function () {
         // Offline: put them back to go with the next batch.
         usage.queue = batch.concat(usage.queue).slice(-100);
