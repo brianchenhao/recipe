@@ -6281,6 +6281,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "okra-stir-fry",
+      "title": "Okra Stir-Fry",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "healthy",
+        "okra",
+        "stir-fry"
+      ],
+      "img": "images/okra-stir-fry-card.jpg",
+      "poster": "images/okra-stir-fry.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Lightly stir-fried okra served as part of a balanced heart-healthy diet.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
