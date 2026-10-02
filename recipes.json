@@ -6379,6 +6379,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "top-foods-rich-in-vitamin-k2",
+      "section": "health",
+      "title": "Top Foods Rich in Vitamin K2",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "vitamin K2",
+        "bone health",
+        "fermented foods",
+        "cheese",
+        "chicken"
+      ],
+      "img": "images/top-foods-rich-in-vitamin-k2-card.jpg",
+      "poster": "images/top-foods-rich-in-vitamin-k2.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Discover natural sources of vitamin K2 and how much you get from a typical serving.",
+      "lede": "",
+      "body": "Vitamin K2 helps direct calcium to your bones and away from arteries.\n\nNatto (fermented soybeans) provides 235 µg per 25 g serving. Chicken drumstick, chicken breast and turkey breast provide 33.2 µg, 15.5 µg and 9.1 µg per 100 g serving. Beef pepperoni provides 12.5 µg per 30 g serving. Chicken frankfurter provides 12.5 µg per 50 g serving. Cream cheese, cheddar, parmesan and mozzarella provide 2.6 µg, 2.6 µg, 2.1 µg and 1.2 µg per 30 g serving. Kimchi amount per 50 g serving is not reliably established.\n\nNatto is the richest natural source of vitamin K2. Cheese, chicken, turkey and other fermented foods provide smaller amounts. Kimchi may contain vitamin K2, but the amount varies depending on fermentation method and bacterial strains. Leafy green vegetables are rich in vitamin K1, which is different from K2.\n\nValues are approximate and may vary by brand, preparation and fermentation. µg = micrograms. Vitamin K2 does not have a separate established daily requirement. General vitamin K adequate intake (for K1 + K2) is 90 µg/day for women and 120 µg/day for men. If you are taking warfarin (a blood thinner), consult your doctor before significantly changing your vitamin K intake. This table is for general information and not a substitute for medical advice.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
