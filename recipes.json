@@ -5819,6 +5819,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-garlic-on-blood-sugar-2",
+      "section": "health",
+      "title": "The Truth About Garlic on Blood Sugar",
+      "author": "",
+      "cat": "Herbal & Tonics",
+      "tags": [
+        "garlic",
+        "blood sugar",
+        "insulin sensitivity",
+        "aged garlic extract"
+      ],
+      "img": "images/the-truth-about-garlic-on-blood-sugar-2-card.jpg",
+      "poster": "images/the-truth-about-garlic-on-blood-sugar-2.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Garlic may modestly lower fasting and post-meal blood sugar as supportive food.",
+      "lede": "",
+      "body": "Garlic (Allium sativum) is a widely used culinary herb and medicinal plant, containing bioactive compounds such as allicin, sulfur compounds and antioxidants.\n\nGarlic may help lower blood sugar by helping cells respond better to insulin, enhancing glucose uptake in muscle and other tissues, suppressing excess glucose production in the liver, and reducing oxidative stress and inflammation linked to insulin resistance.\n\nSome clinical trials show modest reductions in fasting blood sugar, HbA1c and improved insulin sensitivity with garlic or aged garlic extract. Combined results suggest a small but significant decrease, especially in people with type 2 diabetes. Some studies show a lower post-meal blood sugar rise when garlic is consumed with a carbohydrate-containing meal.\n\nRaw garlic is about 1-2 cloves per day (3-6 g); crush or chop and let it sit for 5-10 minutes to help activate allicin. Common doses of aged garlic extract in studies are 600-1,200 mg per day. Regularly include garlic in meals such as stir-fries, soups and sauces, though cooking may reduce allicin.\n\nGarlic may cause bloating, gas, heartburn or stomach discomfort, may interact with blood-thinning medications such as warfarin, and with diabetes medications there may be a risk of blood sugar becoming too low. The evidence is promising but modest, so use garlic as a supportive food, not a replacement for prescribed medication or lifestyle changes, and consult your healthcare provider especially if you have diabetes or take medication.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
