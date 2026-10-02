@@ -6209,6 +6209,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-truth-about-okra-on-blood-pressure",
+      "section": "health",
+      "title": "The Truth About Okra on Blood Pressure",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "okra",
+        "blood pressure",
+        "heart health",
+        "potassium",
+        "fibre"
+      ],
+      "img": "images/the-truth-about-okra-on-blood-pressure-card.jpg",
+      "poster": "images/the-truth-about-okra-on-blood-pressure.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Okra may help modestly lower blood pressure as part of a balanced heart-healthy diet.",
+      "lede": "",
+      "body": "Okra (Abelmoschus esculentus) is a low-calorie, nutrient-rich vegetable high in dietary fibre, vitamins, minerals and plant compounds. Key compounds are flavonoids, polyphenols and polysaccharides with antioxidant and anti-inflammatory effects.\n\nOkra is rich in potassium which helps balance sodium in the body. Flavonoids and polyphenols may reduce oxidative stress and inflammation, helping blood vessels function better. It may increase nitric oxide production, helping vessels relax and improve circulation. Soluble fibre may reduce sodium absorption and support cardiovascular health.\n\nSmall human studies suggest okra may lower systolic and diastolic pressure, especially in prehypertension or type 2 diabetes. Combined results show modest but significant reduction, though more large trials are needed. Animal models show similar effects.\n\nAverage change in grouped studies was -3.2 mmHg systolic and -2.4 mmHg diastolic, varying by dose, form, study design and individual characteristics.\n\nTypical serving is about 100-200 g cooked okra (6-12 pods) per meal, steamed, stir-fried, in curry, soup, stews or salads, as part of a balanced diet with minimal salt. Be consistent over time.\n\nAvoid added salt and deep-frying. Okra is supportive, not a cure, and allergies are rare. Pair with vegetables, lean protein and whole grains, cooked with unsaturated oils, eaten regularly. It is not a replacement for medication.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
