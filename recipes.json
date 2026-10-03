@@ -7054,6 +7054,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "brookie-s-mores-cookies",
+      "title": "Brookie S'mores Cookies",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "American",
+        "chocolate",
+        "marshmallow",
+        "baked"
+      ],
+      "img": "images/brookie-s-mores-cookies-card.jpg",
+      "poster": "images/brookie-s-mores-cookies.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Gooey brownie-cookie hybrid stuffed with melted marshmallow, chocolate and graham crackers.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "makes ~12 cookies",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
