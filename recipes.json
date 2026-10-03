@@ -6788,6 +6788,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "boston-pie-cake",
+      "title": "Boston Pie Cake",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "Malaysian",
+        "sponge cake",
+        "custard",
+        "baked"
+      ],
+      "img": "images/boston-pie-cake-card.jpg",
+      "poster": "images/boston-pie-cake.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft sponge layers filled with vanilla custard and topped with glossy chocolate ganache.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "8-10 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
