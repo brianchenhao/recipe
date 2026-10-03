@@ -75,8 +75,8 @@ Return ONLY a JSON object:
   "category": "one of: ${CATEGORIES.join(' | ')}",
   "summary": "two plain sentences saying what the quiz covers",
   "tags": ["3 to 5 short tags"],
-  "subtopics": ["12 to 20 distinct subtopics that together cover the topic, each a short phrase"],
-  "facts": ["30 to 50 short, accurate, well-established facts to build questions on, one sentence each"]
+  "subtopics": ["12 to 16 distinct subtopics that together cover the topic, each a short phrase"],
+  "facts": ["25 to 35 short, accurate, well-established facts to build questions on, one sentence each"]
 }
 
 Rules:
@@ -141,9 +141,12 @@ export default async function handler(req, res) {
     // Web results ground the plan in checkable facts. If web search is not
     // available to this account or model, plan from the model's own knowledge
     // rather than failing the whole quiz; account problems still stop it.
-    let r = await askReader({ text, maxTokens: 8000, plugins: [{ id: 'web', max_results: 5 }], tag: 'quiz-research' });
+    // Each try has its own clock (the route gets 120s), so a slow web search
+    // still leaves the no-web plan time to finish. A 60s cap here once cut
+    // the research off at 60.8s with a 504.
+    let r = await askReader({ text, maxTokens: 6000, plugins: [{ id: 'web', max_results: 5 }], tag: 'quiz-research', timeoutMs: 55000 });
     if (!r.ok && ![401, 402, 403, 429].includes(r.upstreamStatus)) {
-      r = await askReader({ text, maxTokens: 8000, tag: 'quiz-research-noweb' });
+      r = await askReader({ text, maxTokens: 6000, tag: 'quiz-research-noweb', timeoutMs: 55000 });
     }
     if (!r.ok) return json(res, r.status, { error: r.error });
 

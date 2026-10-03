@@ -91,8 +91,10 @@ export function extractJson(text) {
  *   maxTokens  budget; reasoning is mandatory on Muse Spark and counts too
  *   plugins    optional OpenRouter plugins, e.g. [{ id: 'web' }]
  *   tag        label for the runtime logs
+ *   timeoutMs  optional: give up after this long, so a caller can still
+ *              try something else before the function's own time limit
  */
-export async function askReader({ text, image, maxTokens, plugins, tag }) {
+export async function askReader({ text, image, maxTokens, plugins, tag, timeoutMs }) {
   const label = tag || 'reader';
   const apiKey = process.env.OPENROUTER_API_KEY;
   if (!apiKey) {
@@ -122,9 +124,14 @@ export async function askReader({ text, image, maxTokens, plugins, tag }) {
         'HTTP-Referer': 'https://r.geyam.com',
         'X-Title': 'Recipe Mom'
       },
-      body: JSON.stringify(payload)
+      body: JSON.stringify(payload),
+      signal: timeoutMs ? AbortSignal.timeout(timeoutMs) : undefined
     });
   } catch (err) {
+    if (err && (err.name === 'TimeoutError' || err.name === 'AbortError')) {
+      console.error('[%s] gave up after %dms', label, timeoutMs);
+      return { ok: false, status: 504, upstreamStatus: 0, timedOut: true, error: 'The writer took too long to answer. Please try again.' };
+    }
     console.error('[%s] network failure: %s', label, err && err.message);
     return { ok: false, status: 502, upstreamStatus: 0, error: `Could not reach the reader service: ${err.message}` };
   }
