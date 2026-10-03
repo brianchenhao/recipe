@@ -7154,6 +7154,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cantonese-style-chow-mein",
+      "title": "Cantonese Style Chow Mein",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Cantonese",
+        "egg noodles",
+        "stir-fry"
+      ],
+      "img": "images/cantonese-style-chow-mein-card.jpg",
+      "poster": "images/cantonese-style-chow-mein.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Classic Cantonese stir-fried egg noodles with crisp bean sprouts and spring onions.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2-3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
