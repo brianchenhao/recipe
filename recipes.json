@@ -6855,6 +6855,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "castella-cake",
+      "title": "Castella Cake",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "Japanese",
+        "eggs",
+        "honey",
+        "baked"
+      ],
+      "img": "images/castella-cake-card.jpg",
+      "poster": "images/castella-cake.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Classic Japanese sponge cake with fine, bouncy texture, lightly sweet and perfect with tea.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "8-10 slices",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
