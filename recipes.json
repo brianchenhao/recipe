@@ -7087,6 +7087,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sesame-yaki-udon-noodles",
+      "title": "Sesame Yaki Udon Noodles",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Japanese",
+        "udon noodles",
+        "sesame sauce",
+        "stir-fry"
+      ],
+      "img": "images/sesame-yaki-udon-noodles-card.jpg",
+      "poster": "images/sesame-yaki-udon-noodles.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Thick chewy udon stir-fried with sesame sauce, tender meat and crisp vegetables.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2–3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
