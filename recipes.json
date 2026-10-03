@@ -6715,6 +6715,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "diabetes-basics-explained",
+      "section": "questions",
+      "title": "Diabetes Basics Explained",
+      "author": "",
+      "cat": "Health & Medicine",
+      "tags": [
+        "Diabetes",
+        "Blood Sugar",
+        "Health",
+        "Prevention"
+      ],
+      "img": "",
+      "poster": "",
+      "quiz": "quizzes/diabetes-basics-explained.json",
+      "questionCount": 150,
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "This quiz covers the main types, symptoms, diagnosis, and management of diabetes using mainstream medical guidance. It also covers healthy lifestyle habits, monitoring, and prevention of long-term complications.",
+      "lede": "",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
