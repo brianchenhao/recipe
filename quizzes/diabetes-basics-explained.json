@@ -1,0 +1,1837 @@
+{
+  "id": "diabetes-basics-explained",
+  "title": "Diabetes Basics Explained",
+  "topic": "diabetic",
+  "category": "Health & Medicine",
+  "summary": "This quiz covers the main types, symptoms, diagnosis, and management of diabetes using mainstream medical guidance. It also covers healthy lifestyle habits, monitoring, and prevention of long-term complications.",
+  "createdAt": "2026-10-03",
+  "questions": [
+    {
+      "q": "Which of these is a common warning sign of high blood sugar (too much glucose in the blood)?",
+      "o": [
+        "Feeling shaky and sweaty that gets better after eating",
+        "Having much more energy and seeing more clearly than usual",
+        "Feeling very thirsty and needing to pee often",
+        "Having sudden sharp pain in one ankle after a walk"
+      ],
+      "a": 3,
+      "tip": "High blood sugar often causes increased thirst and frequent urination as the body tries to remove extra glucose through urine.",
+      "eli5": "Think of it like a soup that is too salty — your body gets thirsty for water and makes extra pee to help wash the extra sugar away."
+    },
+    {
+      "q": "Which type of diabetes is the most common form in adults?",
+      "o": [
+        "Type 2 diabetes",
+        "Type 1 diabetes",
+        "Gestational diabetes",
+        "Diabetes that only affects newborn babies"
+      ],
+      "a": 1,
+      "tip": "Type 2 diabetes is the most common form of diabetes in adults.",
+      "eli5": "Think of diabetes types like ice cream flavors — vanilla, which is type 2, is ordered far more often by adults than the other flavors."
+    },
+    {
+      "q": "What does prediabetes mean? Prediabetes is when blood sugar is above normal.",
+      "o": [
+        "Blood sugar is much lower than normal and causes fainting",
+        "Blood sugar is higher than normal but not yet high enough to be diabetes",
+        "The body has stopped making insulin completely",
+        "Diabetes that develops only during pregnancy"
+      ],
+      "a": 2,
+      "tip": "Prediabetes means blood sugar is higher than normal but not yet in the diabetes range.",
+      "eli5": "Like a yellow traffic light between green and red, prediabetes is the warning zone before diabetes."
+    },
+    {
+      "q": "What is gestational diabetes?",
+      "o": [
+        "Diabetes that is always present from birth",
+        "Damage to the eyes and kidneys after many years of diabetes",
+        "Diabetes that can develop during pregnancy",
+        "Blood sugar that is higher than normal but below the diabetes range"
+      ],
+      "a": 3,
+      "tip": "Gestational diabetes is diabetes that can develop during pregnancy.",
+      "eli5": "Like a temporary guest staying only for the pregnancy months, this type of diabetes appears during pregnancy."
+    },
+    {
+      "q": "How do symptoms usually differ between type 1 diabetes and type 2 diabetes?",
+      "o": [
+        "Both types always cause sudden collapse with no early warning",
+        "Type 2 symptoms always appear suddenly in a few hours and type 1 takes years",
+        "Both types always cause exactly the same speed of symptoms in everyone",
+        "Type 1 symptoms usually develop over a short period, while type 2 develops slowly and some people have no symptoms at first"
+      ],
+      "a": 4,
+      "tip": "Type 1 symptoms usually develop over a short period, while type 2 develops slowly and some people have no symptoms.",
+      "eli5": "Like a burst pipe versus a slow drip, type 1 floods in fast while type 2 can leak quietly for a long time."
+    },
+    {
+      "q": "At what age is type 1 diabetes usually first found?",
+      "o": [
+        "Only after age 80 and never earlier",
+        "Often in childhood or young adulthood, but it can occur at any age",
+        "Only in middle-aged adults who are overweight",
+        "Only during pregnancy"
+      ],
+      "a": 2,
+      "tip": "Type 1 diabetes is often diagnosed in childhood or young adulthood but can occur at any age.",
+      "eli5": "Like getting freckles, it shows up most in kids and young people, but anyone can get it later too."
+    },
+    {
+      "q": "What basic problem causes diabetes? Insulin is a hormone that helps sugar (glucose) move from the blood into cells.",
+      "o": [
+        "The body makes too much insulin and blood sugar is always too low",
+        "The blood has too few red blood cells to carry oxygen",
+        "The body does not make enough insulin or cannot use insulin properly, so glucose stays in the blood",
+        "The stomach cannot digest fruits and vegetables"
+      ],
+      "a": 3,
+      "tip": "Diabetes occurs when the body does not make enough insulin or cannot use insulin properly, so glucose stays in the blood.",
+      "eli5": "Like a key that no longer opens the kitchen door, insulin cannot move sugar into cells so sugar piles up in the hallway of the blood."
+    },
+    {
+      "q": "What does prediabetes mean?",
+      "o": [
+        "Blood sugar is normal and insulin is working perfectly",
+        "Blood sugar is higher than normal but not yet high enough for diabetes",
+        "Blood sugar is already in the diabetes range",
+        "Blood sugar is too low because of too much insulin"
+      ],
+      "a": 2,
+      "tip": "Prediabetes means blood sugar is higher than normal but not yet in the diabetes range.",
+      "eli5": "Think like a traffic light turning yellow — not green and not red yet, so it is a warning to slow down."
+    },
+    {
+      "q": "Your A1C test result (average blood sugar over the past 3 months) is 6.0%. What does this usually mean?",
+      "o": [
+        "Low blood sugar",
+        "Normal blood sugar",
+        "Diabetes",
+        "Prediabetes"
+      ],
+      "a": 4,
+      "tip": "An HbA1c of 5.7 to 6.4 percent generally indicates prediabetes.",
+      "eli5": "Like getting a middle grade on a 3-month school report card — not failing, but showing you need to study harder."
+    },
+    {
+      "q": "Why is it important to act on prediabetes?",
+      "o": [
+        "It greatly raises the risk of type 2 diabetes, heart disease, and stroke",
+        "It only raises the risk of catching a cold",
+        "It means there is no future health risk",
+        "It only causes problems during pregnancy"
+      ],
+      "a": 1,
+      "tip": "A person with prediabetes is at high risk of developing type 2 diabetes, heart disease, and stroke.",
+      "eli5": "Like a small crack in a house wall — ignore it and it can lead to much bigger damage later."
+    },
+    {
+      "q": "A fasting blood sugar test (blood sugar after not eating overnight) is 112 mg per dL. Which range is this in?",
+      "o": [
+        "Normal, which is less than 100 mg per dL",
+        "Diabetes range, which is 126 mg per dL or higher",
+        "Prediabetes range, which is about 100 to 125 mg per dL",
+        "Low blood sugar, which is below 70 mg per dL"
+      ],
+      "a": 3,
+      "tip": "Normal fasting glucose is less than 100 mg per dL and diabetes is 126 mg per dL or higher, leaving about 100 to 125 mg per dL as the prediabetes range.",
+      "eli5": "Like water warming on the stove — not cold and not yet boiling, sitting in the middle warm zone."
+    },
+    {
+      "q": "Which habit is proven to greatly lower the chance that prediabetes turns into type 2 diabetes?",
+      "o": [
+        "Skipping meals for several days to drop weight quickly",
+        "Losing about 5 to 7 percent of body weight with about 30 minutes of daily activity",
+        "Eating mostly processed snacks and sitting most of the day",
+        "Stopping all fruits, vegetables, and whole grains"
+      ],
+      "a": 2,
+      "tip": "Losing 5 to 7 percent of body weight with about 30 minutes of daily exercise reduced diabetes risk by more than half in a major study.",
+      "eli5": "Like tidying a messy kitchen a little every day — small steady effort keeps the big mess from happening."
+    },
+    {
+      "q": "Which statement about symptoms in prediabetes is most accurate?",
+      "o": [
+        "It always causes severe thirst and frequent urination",
+        "It always causes rapid weight loss within days",
+        "It always causes seizures and vision changes",
+        "It often causes no symptoms, so a blood test is needed to find it"
+      ],
+      "a": 4,
+      "tip": "Prediabetes and early type 2 diabetes develop slowly and often cause no symptoms at all.",
+      "eli5": "Like homework piling up quietly in a backpack — you may not notice until a teacher checks it."
+    },
+    {
+      "q": "Which two changes in hunger and thirst are common symptoms of diabetes?",
+      "o": [
+        "Decreased hunger and decreased thirst",
+        "Increased hunger and increased thirst",
+        "Increased hunger but much less thirst",
+        "Decreased hunger but much more thirst"
+      ],
+      "a": 2,
+      "tip": "General symptoms of diabetes include both increased hunger and increased thirst.",
+      "eli5": "Like a car that cannot use its fuel, the body keeps asking for more food and water."
+    },
+    {
+      "q": "When blood sugar stays high, why do frequent urination and constant thirst often happen together?",
+      "o": [
+        "High blood sugar makes the body hold onto water, so you urinate less and feel less thirsty",
+        "High blood sugar mainly affects the joints, so thirst and urination stay normal",
+        "High blood sugar lowers the desire for fluids, so you drink less and urinate less",
+        "High blood sugar makes the kidneys pass extra water as urine, and that fluid loss makes you thirsty"
+      ],
+      "a": 4,
+      "tip": "Frequent urination and persistent thirst are common symptoms of high blood sugar.",
+      "eli5": "Like overfilling a cup so it spills over, extra sugar pulls extra water out and you feel thirsty to refill it."
+    },
+    {
+      "q": "Which of these everyday feelings can be early signs of diabetes?",
+      "o": [
+        "Feeling very tired a lot and having a dry mouth",
+        "Feeling full of energy and never feeling thirsty",
+        "Having sharper hearing and sleeping less at night",
+        "Having stronger muscles and a very moist mouth"
+      ],
+      "a": 1,
+      "tip": "Feeling very tired and having a dry mouth can be early signs of diabetes.",
+      "eli5": "Like a phone that will not charge, the cells lack usable energy so you feel worn out and dry."
+    },
+    {
+      "q": "Which change in eyesight can be an early sign of high blood sugar?",
+      "o": [
+        "Night vision becomes much sharper than normal",
+        "Colors look brighter and never fade",
+        "Vision becomes blurry, like looking through fog",
+        "Side vision becomes much wider than normal"
+      ],
+      "a": 3,
+      "tip": "Having blurry vision can be an early sign of diabetes.",
+      "eli5": "Like looking through a steamy bathroom mirror after a shower, things look fuzzy and unclear."
+    },
+    {
+      "q": "A small cut on the foot stays open for many weeks in a person with high blood sugar. What does this suggest?",
+      "o": [
+        "Cuts healing much faster than usual is typical with high blood sugar",
+        "Sores that take a long time to heal can occur with high blood sugar",
+        "High blood sugar prevents cuts from happening at all",
+        "High blood sugar only changes skin color and does not affect healing"
+      ],
+      "a": 2,
+      "tip": "Sores that take a long time to heal can occur when blood sugar stays high.",
+      "eli5": "Like a road repair slowed by bad weather, the body fixes skin more slowly when sugar stays high."
+    },
+    {
+      "q": "Which nerve-related feeling in the hands or feet is more commonly noted with type 2 diabetes over time?",
+      "o": [
+        "Sharp joint pain that happens only after heavy lifting",
+        "Itchy skin that clears up after one shower",
+        "Muscle cramps that happen only during exercise",
+        "Tingling or numbness in the hands or feet"
+      ],
+      "a": 4,
+      "tip": "Tingling in the hands or feet is more commonly noted with type 2 diabetes.",
+      "eli5": "Like a foot falling asleep after sitting too long in school, irritated nerves can tingle or feel numb."
+    },
+    {
+      "q": "What causes type 1 diabetes?",
+      "o": [
+        "Eating too much sugar in one week suddenly stops insulin production",
+        "The body's immune system destroys the pancreas cells that make insulin",
+        "The kidneys lose the ability to remove extra sugar from the blood",
+        "The stomach stops digesting carbohydrates into glucose"
+      ],
+      "a": 2,
+      "tip": "Type 1 diabetes happens when an autoimmune attack destroys insulin-making beta cells, so little or no insulin is made.",
+      "eli5": "Like a bakery losing all its bakers, so no bread — or in this case insulin — can be made."
+    },
+    {
+      "q": "What mainly causes high blood sugar in type 2 diabetes?",
+      "o": [
+        "The body responds poorly to insulin and over time cannot make enough insulin to keep blood sugar normal",
+        "The body makes insulin that works too well and pulls too much sugar into cells",
+        "The immune system destroys all insulin-making cells within a few days in adulthood",
+        "The lungs cannot carry enough oxygen, so sugar builds up in the blood"
+      ],
+      "a": 1,
+      "tip": "Type 2 diabetes involves insulin resistance plus a gradual failure to make enough insulin, so glucose stays in the blood.",
+      "eli5": "Like a rusty lock and a tired key-maker — the keys do not turn well and fewer keys are made."
+    },
+    {
+      "q": "Which combination most raises a person's risk of developing type 2 diabetes?",
+      "o": [
+        "Young age, normal weight, and daily exercise",
+        "Balanced meals with vegetables, whole grains, and lean protein",
+        "Drinking plenty of water and sleeping 7 to 8 hours a night",
+        "Carrying extra body weight, being inactive, and having a family history of diabetes"
+      ],
+      "a": 4,
+      "tip": "Overweight, physical inactivity, and family history are major risk factors for type 2 diabetes.",
+      "eli5": "Like carrying a heavy backpack uphill every day — extra strain makes the body's sugar system wear out faster."
+    },
+    {
+      "q": "How do carrying extra body weight and getting little exercise increase the risk of type 2 diabetes?",
+      "o": [
+        "They cause the pancreas to make far too much insulin that works too fast",
+        "They make the kidneys filter blood sugar too quickly",
+        "They make the body's cells respond poorly to insulin, so sugar stays in the blood",
+        "They cause the immune system to destroy all insulin in a few days"
+      ],
+      "a": 3,
+      "tip": "Excess weight and inactivity promote insulin resistance, where cells do not use insulin properly.",
+      "eli5": "Like shouting through a thick closed door — the message from insulin does not get through, so sugar piles up outside."
+    },
+    {
+      "q": "Which 2 of these are known risk factors for type 2 diabetes? (Choose 2)",
+      "o": [
+        "Having had gestational diabetes during pregnancy",
+        "Drinking water instead of sugary soda every day",
+        "Having a parent or sibling with type 2 diabetes",
+        "Staying at a healthy weight with regular exercise"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "History of gestational diabetes and family history both raise future risk of type 2 diabetes.",
+      "eli5": "Like family recipes and past kitchen troubles — what runs in the family and what happened in pregnancy can hint at future trouble."
+    },
+    {
+      "q": "A woman had gestational diabetes (high blood sugar during pregnancy) that went away after birth. What is true about her future risk?",
+      "o": [
+        "She has no higher future risk than someone who never had it",
+        "She will definitely develop type 1 diabetes within a year",
+        "Her child is guaranteed never to get diabetes",
+        "She has a higher risk of developing type 2 diabetes later and needs follow-up checks"
+      ],
+      "a": 4,
+      "tip": "A history of gestational diabetes greatly raises later risk of type 2 diabetes for the mother.",
+      "eli5": "Like a smoke alarm that went off once — even if quiet now, you watch more closely for fire later."
+    },
+    {
+      "q": "What does the A1C (HbA1c) blood test measure?",
+      "o": [
+        "The blood sugar level at the exact minute of the test",
+        "The level of cholesterol in the blood",
+        "The average blood sugar level over the past 3 months",
+        "The amount of insulin made after one meal"
+      ],
+      "a": 3,
+      "tip": "The A1C test measures average blood sugar levels over the past 3 months.",
+      "eli5": "Like a report card average for the whole term, not just one quiz, A1C shows how blood sugar did over months."
+    },
+    {
+      "q": "Which HbA1c level generally indicates diabetes?",
+      "o": [
+        "Below 5.7 percent",
+        "5.0 percent",
+        "6.0 percent",
+        "6.5 percent or higher"
+      ],
+      "a": 4,
+      "tip": "An HbA1c of 6.5 percent or higher generally indicates diabetes.",
+      "eli5": "Think of 6.5 as a line on a measuring wall — at or above that line means diabetes range."
+    },
+    {
+      "q": "What is considered a normal fasting plasma glucose level (blood sugar after not eating overnight)?",
+      "o": [
+        "Less than 100 mg per dL",
+        "100 to 125 mg per dL",
+        "126 mg per dL or higher",
+        "200 mg per dL or higher"
+      ],
+      "a": 1,
+      "tip": "Normal fasting plasma glucose is less than 100 mg per dL.",
+      "eli5": "Like an empty shopping cart before the store opens, morning blood sugar should start low, under 100."
+    },
+    {
+      "q": "A person has a fasting blood sugar of 132 mg per dL, and a repeat test on another day is also above 126 mg per dL. What does this usually suggest?",
+      "o": [
+        "A normal fasting level",
+        "Diabetes when confirmed by repeat testing",
+        "Low blood sugar from skipping meals",
+        "Prediabetes range only"
+      ],
+      "a": 2,
+      "tip": "A fasting plasma glucose of 126 mg per dL or higher can indicate diabetes when confirmed by repeat testing.",
+      "eli5": "Like needing two photos to prove a tall plant, doctors use two high morning readings to confirm diabetes."
+    },
+    {
+      "q": "Why can type 2 diabetes go unnoticed for a long time before diagnosis?",
+      "o": [
+        "It develops slowly and some people with high blood sugar have no symptoms",
+        "Symptoms of type 2 always develop very quickly over a few hours",
+        "High blood sugar in type 2 always causes a fever that is easy to notice",
+        "Blood tests cannot show high blood sugar in type 2"
+      ],
+      "a": 1,
+      "tip": "Type 2 diabetes develops slowly and some people with high blood sugar have no symptoms at all.",
+      "eli5": "Like a slow leak in a bike tire, type 2 can build up quietly without you feeling it at first."
+    },
+    {
+      "q": "Which set of information can doctors use together to diagnose diabetes?",
+      "o": [
+        "Blood pressure reading alone",
+        "Fasting glucose, symptoms, glucose tolerance testing, and HbA1c levels",
+        "Cholesterol result alone",
+        "Body weight on one day alone"
+      ],
+      "a": 2,
+      "tip": "Diagnosis of diabetes can involve fasting glucose, symptoms, glucose tolerance testing, and HbA1c levels.",
+      "eli5": "Like using pieces of a puzzle, doctors put blood tests plus symptoms together to see the full picture."
+    },
+    {
+      "q": "What does an HbA1c test (A1C test for average blood sugar) mainly tell you?",
+      "o": [
+        "It shows blood sugar only at the exact minute of the blood draw.",
+        "It shows the average blood sugar level over about the past 3 months.",
+        "It shows how much food was eaten on the day of the test.",
+        "It shows blood pressure and cholesterol levels over the past year."
+      ],
+      "a": 2,
+      "tip": "The A1C test measures average blood sugar levels over the past 3 months.",
+      "eli5": "Think of it like a movie of the last 3 months, not a single photo from today."
+    },
+    {
+      "q": "An adult has an HbA1c test result of 5.3% (a test of average blood sugar). How is this result usually described?",
+      "o": [
+        "Diabetes, because it is above the diabetes level",
+        "Prediabetes, because it is between 5.7% and 6.4%",
+        "Low blood sugar that needs emergency sugar",
+        "Normal, because it is below 5.7%"
+      ],
+      "a": 4,
+      "tip": "A normal HbA1c level is below 5.7 percent.",
+      "eli5": "Like staying under a speed limit — 5.3 is still in the safe zone under 5.7."
+    },
+    {
+      "q": "A person has an HbA1c (average blood sugar test) of 7.2% on two separate lab tests. What does this usually mean?",
+      "o": [
+        "Diabetes, because 6.5% or higher generally indicates diabetes",
+        "Normal blood sugar, because it is below 5.7%",
+        "Prediabetes, because it is between 5.7% and 6.4%",
+        "Low blood sugar from too little glucose in the blood"
+      ],
+      "a": 1,
+      "tip": "An HbA1c of 6.5 percent or higher generally indicates diabetes.",
+      "eli5": "Like a fever thermometer with a clear line — once you cross 6.5, you are in the diabetes range."
+    },
+    {
+      "q": "Why does a doctor order an HbA1c test (average blood sugar test) every 3 to 6 months for someone with diabetes?",
+      "o": [
+        "To replace daily glucose checks because daily checks are no longer needed",
+        "To see how one single meal affected blood sugar that morning",
+        "To check long-term average control and help adjust the care plan",
+        "To measure blood pressure and cholesterol instead of blood sugar"
+      ],
+      "a": 3,
+      "tip": "The A1C test is commonly used to help manage diabetes and guide treatment over time.",
+      "eli5": "Like a coach looking at the whole season average to decide if practice needs to change."
+    },
+    {
+      "q": "Which HbA1c (average blood sugar) range generally indicates prediabetes (blood sugar higher than normal but not yet diabetes)?",
+      "o": [
+        "Below 4.0%",
+        "Below 5.7%",
+        "Above 8.0% only",
+        "From 5.7% to 6.4%"
+      ],
+      "a": 4,
+      "tip": "An HbA1c from 5.7 percent to 6.4 percent generally indicates prediabetes.",
+      "eli5": "Like a yellow traffic light between green and red — a warning to slow down before diabetes."
+    },
+    {
+      "q": "Which 2 test results generally point to diabetes when confirmed by repeat testing? (Choose 2)",
+      "o": [
+        "HbA1c of 6.5% or higher",
+        "Fasting blood sugar (after not eating overnight) of 126 mg per dL or higher",
+        "Fasting blood sugar (after not eating overnight) of 85 mg per dL",
+        "HbA1c of 5.0%"
+      ],
+      "a": [
+        1,
+        2
+      ],
+      "tip": "Diabetes is generally indicated by HbA1c of 6.5% or higher or fasting glucose of 126 mg per dL or higher when confirmed.",
+      "eli5": "Think of them as two different alarms — if either alarm rings twice, sugar is staying too high."
+    },
+    {
+      "q": "Why do many people with diabetes check their blood sugar at home each day with a meter (finger-stick test)?",
+      "o": [
+        "To cure diabetes after a few normal readings",
+        "To see how food, activity, and medicine affect sugar that day so care can be adjusted",
+        "To replace the need for an A1C lab test forever",
+        "To measure blood pressure and cholesterol at the same time"
+      ],
+      "a": 2,
+      "tip": "Daily glucose monitoring shows day-to-day patterns so food, activity, and medicine can be adjusted.",
+      "eli5": "Like checking the weather before you dress, a daily sugar check tells you what is happening right now."
+    },
+    {
+      "q": "How is a home finger-stick sugar reading different from an A1C lab test?",
+      "o": [
+        "A finger-stick shows sugar at that moment, while A1C shows the average over about 3 months",
+        "A finger-stick shows the 3-month average, while A1C shows sugar at that moment",
+        "A finger-stick measures cholesterol, while A1C measures blood pressure",
+        "There is no difference; they measure exactly the same time period"
+      ],
+      "a": 1,
+      "tip": "A home meter measures glucose at one moment, while A1C reflects average glucose over about 3 months.",
+      "eli5": "A finger-stick is like one photo, while A1C is like a whole season of photos put together."
+    },
+    {
+      "q": "A person who takes insulin checks sugar often because low blood sugar can be dangerous. Which signs may mean severe low blood sugar that needs quick help?",
+      "o": [
+        "A slow-healing sore and constant thirst",
+        "Dry mouth and needing to urinate often",
+        "Gradual weight gain over many months",
+        "Confusion, shakiness, vision changes, or seizure"
+      ],
+      "a": 4,
+      "tip": "Severe low blood sugar with insulin use may cause disorientation, vision changes, shakiness, and seizures.",
+      "eli5": "Think of the brain like a phone needing charge; when sugar drops too low, the screen glitches and may shut down."
+    },
+    {
+      "q": "Which 2 are part of current diabetes care along with healthy eating and regular activity? (Choose 2)",
+      "o": [
+        "Skipping meals whenever sugar looks high",
+        "Checking blood sugar as advised and tracking the results",
+        "Taking diabetes medicine as prescribed and having A1C checked as advised",
+        "Stopping checkups once you feel fine for a few days"
+      ],
+      "a": [
+        2,
+        3
+      ],
+      "tip": "Current management can include diet, exercise, medication, daily glucose monitoring, and HbA1c monitoring.",
+      "eli5": "Like caring for a garden with water plus weeding and checking the soil, diabetes care uses several tools together."
+    },
+    {
+      "q": "If home meter readings and lab tests stay high for many weeks, why do doctors worry even if the person still feels okay?",
+      "o": [
+        "High sugar for one hour always causes instant blindness",
+        "High readings mean the meter is broken and should be thrown away",
+        "Continuing high glucose can damage blood vessels and nerves over time, raising risk of heart, eye, kidney, nerve, and foot problems",
+        "High readings only cause hunger and have no long-term effects"
+      ],
+      "a": 3,
+      "tip": "Continuing high blood glucose can damage blood vessels and nerves over time.",
+      "eli5": "Like a slow leak rusting pipes, high sugar quietly harms vessels and nerves over months and years."
+    },
+    {
+      "q": "What is a good way to use home blood sugar results at clinic visits?",
+      "o": [
+        "Check only once a year and ignore daily patterns",
+        "Bring a dated log of readings with notes on meals, activity, and medicine so the care team can spot patterns",
+        "Throw the numbers away and try to remember one good reading",
+        "Share only low readings and hide high readings"
+      ],
+      "a": 2,
+      "tip": "Keeping and sharing a log of glucose results helps the care team find patterns and adjust the care plan.",
+      "eli5": "Like bringing a homework notebook to show your work, a sugar log helps the team see the full story, not just one page."
+    },
+    {
+      "q": "Where in the body is insulin (the hormone that controls blood sugar) normally made?",
+      "o": [
+        "In the liver",
+        "In the kidneys",
+        "In the pancreas",
+        "In the lungs"
+      ],
+      "a": 3,
+      "tip": "Insulin is normally made by beta cells in the pancreas.",
+      "eli5": "Think of the pancreas as a small kitchen behind the stomach that cooks up insulin when needed."
+    },
+    {
+      "q": "In a person without diabetes, when does the body normally release more insulin?",
+      "o": [
+        "Right after eating, when blood sugar rises",
+        "Only during deep sleep at night",
+        "Only when a person feels very thirsty",
+        "When blood sugar is already very low"
+      ],
+      "a": 1,
+      "tip": "Rising blood sugar after a meal normally triggers the pancreas to release more insulin.",
+      "eli5": "Like turning on a fan when a room gets hot, the body sends out more insulin when sugar in the blood goes up after food."
+    },
+    {
+      "q": "What does insulin resistance (a key problem in type 2 diabetes) mean?",
+      "o": [
+        "The body is allergic to sugar and gets a skin rash",
+        "The pancreas makes extra juices to digest fatty foods",
+        "The immune system destroys all insulin within minutes",
+        "The body's cells respond poorly to insulin, so glucose stays in the blood"
+      ],
+      "a": 4,
+      "tip": "Insulin resistance means cells do not respond well to insulin, so glucose remains in the blood.",
+      "eli5": "It is like a rusty lock that will not turn well even with the right key, so the door into cells stays shut."
+    },
+    {
+      "q": "How does the insulin problem in type 1 diabetes mainly differ from the problem in type 2 diabetes?",
+      "o": [
+        "In type 1 the body makes too much insulin; in type 2 the body makes none at all",
+        "In type 1 the body makes little or no insulin; in type 2 the body does not use insulin well",
+        "In type 1 insulin raises body temperature; in type 2 insulin lowers body temperature",
+        "In type 1 exercise replaces insulin; in type 2 diet replaces insulin"
+      ],
+      "a": 2,
+      "tip": "Type 1 diabetes mainly involves little or no insulin production, while type 2 mainly involves poor use of insulin.",
+      "eli5": "Type 1 is like a factory that closed down and makes nothing, while type 2 is like workers ignoring the delivery truck."
+    },
+    {
+      "q": "After insulin helps sugar (glucose) enter cells, what does insulin also help the body do with extra sugar?",
+      "o": [
+        "Turn extra sugar directly into water to be breathed out",
+        "Send extra sugar to the lungs to help breathing",
+        "Store extra sugar in the liver and muscles for later energy",
+        "Change extra sugar into salt for the kidneys to keep"
+      ],
+      "a": 3,
+      "tip": "Insulin helps cells use glucose for energy now and helps store extra glucose in liver and muscle for later.",
+      "eli5": "Like packing leftovers into lunchboxes for tomorrow, insulin helps save extra sugar for when you need energy later."
+    },
+    {
+      "q": "A person who uses insulin becomes confused, has vision changes, and in a severe case has a seizure. What does this suggest?",
+      "o": [
+        "Blood sugar has dropped too low from too much insulin effect",
+        "A common cold with no link to blood sugar",
+        "Healthy digestion after a balanced meal",
+        "Extra vitamins from food building up in the blood"
+      ],
+      "a": 1,
+      "tip": "Too much insulin effect can cause severe low blood sugar, which may cause confusion, vision changes, and seizures.",
+      "eli5": "Too much insulin is like pressing the brakes too hard on a car, dropping blood sugar so low the brain cannot steer clearly."
+    },
+    {
+      "q": "Which group of people must take insulin (blood-sugar-lowering hormone medicine) every day to stay alive?",
+      "o": [
+        "Adults with prediabetes, because their blood sugar is slightly above normal",
+        "People with type 1 diabetes, because their body makes little or no insulin",
+        "People with type 2 diabetes whose blood sugar is controlled by diet and exercise alone",
+        "Women who had gestational diabetes in the past but now have normal blood sugar"
+      ],
+      "a": 2,
+      "tip": "People with type 1 diabetes make little or no insulin, so they need daily insulin to live.",
+      "eli5": "It is like a kitchen with no stove — you have to bring in heat from outside to cook the food."
+    },
+    {
+      "q": "Metformin is a common first-choice pill for type 2 diabetes. What is its main job when used with healthy eating and activity?",
+      "o": [
+        "Replace insulin in people with type 1 diabetes",
+        "Raise blood sugar quickly during low blood sugar",
+        "Cure diabetes so medicine can be stopped after a few days",
+        "Help lower blood sugar, partly by reducing sugar made by the liver and helping the body use insulin better"
+      ],
+      "a": 4,
+      "tip": "Metformin is commonly used in type 2 diabetes to help lower blood sugar along with diet and exercise.",
+      "eli5": "Think of the liver as a sugar faucet left dripping — metformin helps turn that extra drip down."
+    },
+    {
+      "q": "Why is insulin usually given as a shot, insulin pen, or pump instead of being swallowed as a regular pill?",
+      "o": [
+        "Stomach acids and digestion would break down insulin before it could work",
+        "Shots work only on the skin and never reach the blood",
+        "Pills always work faster than shots for all hormones",
+        "Insulin would permanently damage the stomach if swallowed"
+      ],
+      "a": 1,
+      "tip": "Insulin is a protein hormone that digestion would destroy, so it must go directly into the body by shot or pump.",
+      "eli5": "It is like an ice sculpture sent through a hot oven — it would melt before it arrived."
+    },
+    {
+      "q": "A person takes insulin or another diabetes medicine that lowers blood sugar. Which safety habit is most important to prevent dangerously low blood sugar?",
+      "o": [
+        "Skip meals when busy and take the same dose to save time",
+        "Take an extra dose whenever feeling tired without checking sugar",
+        "Take medicine as prescribed, eat meals regularly, and check blood sugar as advised",
+        "Stop checking blood sugar once you feel okay for a few days"
+      ],
+      "a": 3,
+      "tip": "Insulin and some diabetes medicines can cause low blood sugar, so regular meals and monitoring as advised are key safety steps.",
+      "eli5": "It is like balancing water in a bucket — medicine lets water out, and regular meals keep refilling it so it does not run empty."
+    },
+    {
+      "q": "A person with type 2 diabetes starts taking diabetes medicine and blood sugar improves. What is true about diet and exercise after starting medicine?",
+      "o": [
+        "Healthy eating and activity are no longer needed once medicine is started",
+        "Healthy eating and activity are still needed because they work together with medicine",
+        "Exercise should be stopped because medicine does all the work",
+        "Diet only matters for type 1 diabetes, not when taking type 2 pills"
+      ],
+      "a": 2,
+      "tip": "Current diabetes care combines medicine with healthy eating and regular activity, not medicine alone.",
+      "eli5": "Medicine and healthy habits are like two oars on a boat — you need both rowing together to move straight."
+    },
+    {
+      "q": "Why do many people with diabetes also take medicines for blood pressure and cholesterol, even when blood sugar is improving?",
+      "o": [
+        "To help lower the risk of heart, kidney, and vessel problems linked to diabetes",
+        "To raise blood sugar to a normal level",
+        "To replace the need for blood sugar checks and A1C tests",
+        "To cure type 1 diabetes so insulin is no longer needed"
+      ],
+      "a": 1,
+      "tip": "Managing blood pressure and cholesterol lowers the risk of heart and kidney complications in diabetes.",
+      "eli5": "High sugar harms pipes over time, like rust in plumbing — protecting pressure and cholesterol helps keep the pipes safe."
+    },
+    {
+      "q": "Which eating pattern best helps prevent type 2 diabetes and keep blood sugar steady?",
+      "o": [
+        "Mostly fried foods, sweets, and sugary drinks with little vegetables",
+        "Mostly vegetables, fruits, whole grains, beans, and lean proteins like fish or chicken",
+        "Skipping meals and then eating one very large meal late at night",
+        "Eating only meat and butter while avoiding all fruits and whole grains"
+      ],
+      "a": 2,
+      "tip": "A balanced pattern rich in vegetables, fruits, whole grains, and lean proteins helps prevent type 2 diabetes.",
+      "eli5": "Think of your body like a car engine — clean, steady fuel like veggies and whole grains keeps it running smooth, not sputtering."
+    },
+    {
+      "q": "Why are regular soda and sweetened fruit drinks a poor choice for blood sugar control?",
+      "o": [
+        "They contain a lot of added sugar that raises blood sugar quickly with little nutrition",
+        "They contain too much fiber that blocks all sugar from being used",
+        "They contain too much protein that raises blood sugar for many hours",
+        "They have no calories so they cause low blood sugar right away"
+      ],
+      "a": 1,
+      "tip": "Sugary drinks provide large amounts of fast-absorbing added sugar that spikes blood glucose.",
+      "eli5": "Sugary drinks are like dumping a bucket of water on a fire at once — a fast flood of sugar hits the blood, like a rush in a checkout line."
+    },
+    {
+      "q": "Why are whole grains like oats, brown rice, and whole wheat often a better choice than white bread and white rice?",
+      "o": [
+        "White bread has more fiber and vitamins than whole grains",
+        "Whole grains and white grains affect blood sugar in exactly the same way",
+        "Whole grains cost less sugar to make so they taste sweeter",
+        "Whole grains have more fiber, which slows digestion and causes a slower rise in blood sugar"
+      ],
+      "a": 4,
+      "tip": "Fiber in whole grains slows digestion and leads to a slower, steadier rise in blood sugar than refined grains.",
+      "eli5": "Think of fiber like speed bumps on a road — whole-grain foods slow the sugar traffic so it does not all rush in at once."
+    },
+    {
+      "q": "What is the diabetes plate method for building a balanced meal?",
+      "o": [
+        "Fill the whole plate with meat and add sugary sauce on top",
+        "Fill half the plate with fruit juice, one quarter with candy, and one quarter with white bread",
+        "Fill half the plate with non-starchy vegetables, one quarter with lean protein, and one quarter with whole grains or starchy vegetables",
+        "Skip vegetables and protein and fill the whole plate with large portions of pasta or rice"
+      ],
+      "a": 3,
+      "tip": "The plate method is about half non-starchy vegetables, one-quarter lean protein, and one-quarter whole grains or starchy foods.",
+      "eli5": "Picture your plate like a school lunch tray divided into sections — veggies get the biggest spot, like the main playground, with smaller spots for protein and grains."
+    },
+    {
+      "q": "Which fat choice fits a diabetes-friendly, heart-healthy eating pattern?",
+      "o": [
+        "Cooking often with butter, lard, and fatty processed meats",
+        "Using liquid plant oils like olive or canola oil, plus nuts and fish, instead of solid animal fats",
+        "Avoiding all fats and eating mostly sweets and sugary snacks instead",
+        "Eating deep-fried foods and pastries every day for energy"
+      ],
+      "a": 2,
+      "tip": "Unsaturated fats from plant oils, nuts, and fish are healthier for heart and blood vessels than saturated fats from butter and fatty meats.",
+      "eli5": "Think of pipes in a kitchen sink — liquid plant oils and fish fats are like warm soapy water that keeps pipes clearer than thick grease from butter."
+    },
+    {
+      "q": "Why is eating regular meals with steady portions of carbohydrate foods (bread, rice, pasta, fruit) helpful for blood sugar?",
+      "o": [
+        "Large, uneven portions keep blood sugar perfectly flat all day",
+        "Steady portions at regular times help avoid large blood sugar spikes and dips",
+        "Skipping carbohydrate foods for days cures diabetes and removes the need for medicine",
+        "Eating all carbohydrates in one huge meal helps the body use insulin better"
+      ],
+      "a": 4,
+      "tip": "Eating consistent carbohydrate portions at regular meals helps keep blood glucose from swinging too high or too low.",
+      "eli5": "It is like feeding logs to a campfire a few at a time — small steady amounts keep a calm flame instead of big flares and smoke-outs."
+    },
+    {
+      "q": "For adults managing diabetes, how much moderate activity (like brisk walking that makes you breathe a little faster but still lets you talk) is commonly recommended each week?",
+      "o": [
+        "About 30 minutes total for the whole week",
+        "About 150 minutes total spread over the week",
+        "About 10 minutes total for the whole month",
+        "No regular activity until blood sugar is perfect"
+      ],
+      "a": 2,
+      "tip": "Mainstream guidance commonly recommends at least 150 minutes of moderate activity per week for managing diabetes.",
+      "eli5": "Think of it like brushing teeth — a little most days, about 30 minutes five times a week, keeps things working better than one big scrub."
+    },
+    {
+      "q": "How does regular physical activity help lower blood sugar in type 2 diabetes?",
+      "o": [
+        "It makes the body make less blood and fewer cells",
+        "It stops the kidneys from ever making urine",
+        "It makes hunger disappear so you never need to eat",
+        "It helps muscles use more blood sugar and helps insulin work better"
+      ],
+      "a": 4,
+      "tip": "Exercise helps muscles take up glucose and improves how well the body uses insulin.",
+      "eli5": "Muscles at work are like sponges soaking up extra sugar water, so there is less sugar left floating in the blood."
+    },
+    {
+      "q": "Which weekly exercise pattern best fits mainstream advice for diabetes?",
+      "o": [
+        "Spread brisk walking over 3 or more days to reach 150 minutes, plus muscle-strengthening on 2 days",
+        "Do all exercise in one exhausting weekend session once a month",
+        "Only do gentle finger stretches and avoid walking",
+        "Rest in bed all week and skip activity to save energy"
+      ],
+      "a": 1,
+      "tip": "Advice is to spread at least 150 minutes of aerobic activity over 3 or more days and add resistance activity about twice a week.",
+      "eli5": "Like watering plants a little every few days instead of flooding once a month, steady activity keeps blood sugar steadier."
+    },
+    {
+      "q": "A person who takes insulin plans a long brisk walk or bike ride. Which safety habit is most important to prevent dangerously low blood sugar during or after exercise?",
+      "o": [
+        "Skip checking blood sugar and skip meals to burn more sugar",
+        "Exercise alone in a remote place without any phone or snack",
+        "Check blood sugar as advised and carry fast sugar like glucose tablets or juice",
+        "Drink alcohol before exercise to relax the muscles"
+      ],
+      "a": 3,
+      "tip": "Exercise can lower blood sugar, so insulin users should follow a plan for checking sugar and carrying fast-acting sugar.",
+      "eli5": "Like bringing a spare battery on a long trip, bringing quick sugar keeps you safe if exercise drains blood sugar low."
+    },
+    {
+      "q": "Why are well-fitting shoes and checking feet before and after exercise especially important for people with diabetes?",
+      "o": [
+        "Sweaty shoes make blood sugar meters read too high",
+        "Diabetes can damage nerves and blood flow, so a small blister can turn into a slow-healing sore",
+        "Foot checks replace the need for blood sugar checks",
+        "Blisters help lower blood sugar faster"
+      ],
+      "a": 2,
+      "tip": "Diabetes can cause nerve and blood-vessel damage that makes foot injuries heal slowly and get infected.",
+      "eli5": "Like a small crack in a dam can grow if you do not watch it, a tiny rub from a shoe can grow into a big sore when feeling and healing are poor."
+    },
+    {
+      "q": "An adult with long-standing diabetes, heart disease, or eye, kidney, or foot problems wants to start vigorous exercise like heavy running. What is the safest first step?",
+      "o": [
+        "Talk with a doctor first for a checkup and a safe activity plan",
+        "Start with the hardest workout to test limits quickly",
+        "Stop all diabetes medicines on exercise days",
+        "Exercise through chest pain, dizziness, or vision changes"
+      ],
+      "a": 1,
+      "tip": "People with long-standing diabetes or heart, eye, kidney, or foot complications should get medical advice before starting vigorous exercise.",
+      "eli5": "Like asking a mechanic to check an old car before a long road trip, a checkup helps pick a workout that will not break anything."
+    },
+    {
+      "q": "An adult with overweight and prediabetes (blood sugar higher than normal) wants to lower the chance of getting type 2 diabetes. What weight-loss goal is often recommended as healthy and effective?",
+      "o": [
+        "Lose about 25% to 30% of body weight in 1 to 2 months",
+        "Lose about 5% to 7% of body weight slowly with healthy eating and activity",
+        "Stay the same weight but skip breakfast every day",
+        "Gain a little weight to store extra energy"
+      ],
+      "a": 2,
+      "tip": "Losing 5 to 7 percent of body weight with about 30 minutes of daily activity reduced diabetes risk by more than half in a major prevention study.",
+      "eli5": "Like taking a few heavy books out of a backpack makes a long walk easier, losing a modest amount of weight helps the body use insulin better."
+    },
+    {
+      "q": "How much moderate activity, such as brisk walking, is commonly recommended each week to help manage weight and blood sugar in diabetes?",
+      "o": [
+        "At least 150 minutes spread over the week, such as 30 minutes on 5 days",
+        "Only about 10 minutes one time per week",
+        "At least 10 hours of hard exercise every single day",
+        "No activity at all until weight returns to normal"
+      ],
+      "a": 1,
+      "tip": "Mainstream guidance commonly recommends at least 150 minutes of moderate activity per week for managing diabetes.",
+      "eli5": "Like washing dishes a little each day instead of letting them pile up, regular walks spread through the week keep weight and sugar steadier."
+    },
+    {
+      "q": "Why does carrying extra body fat, especially around the waist, raise the risk of type 2 diabetes?",
+      "o": [
+        "It makes the body make too much insulin that lowers sugar too far",
+        "It directly turns fat into sugar in the blood",
+        "It makes the pancreas grow larger and stronger",
+        "It makes body cells respond less well to insulin, so sugar stays in the blood"
+      ],
+      "a": 4,
+      "tip": "Extra body fat increases insulin resistance, meaning cells do not use insulin properly and glucose stays in the blood.",
+      "eli5": "Think of insulin as a key and cells as locks; extra fat is like rust that makes the locks harder to open."
+    },
+    {
+      "q": "Which daily approach to weight management best helps keep blood sugar steady for a person with diabetes?",
+      "o": [
+        "Skip meals and then eat one very large meal late at night",
+        "Follow a strict crash diet with diet pills and no activity",
+        "Eat regular balanced meals with controlled portions plus regular activity",
+        "Eat as little as possible and avoid all exercise to save energy"
+      ],
+      "a": 3,
+      "tip": "Steady portions, regular balanced meals, and regular activity support both healthy weight and steadier blood sugar.",
+      "eli5": "Like keeping a campfire burning evenly with small logs added regularly, steady meals and activity keep energy and sugar from swinging high and low."
+    },
+    {
+      "q": "Why are regular soda, sweetened fruit drinks, and very large fast-food portions especially linked to weight gain and higher diabetes risk?",
+      "o": [
+        "They add many calories quickly without making a person feel full for long",
+        "They contain no calories but slow down digestion too much",
+        "They remove water from the body so weight drops too fast",
+        "They have protein that directly blocks all insulin"
+      ],
+      "a": 1,
+      "tip": "Sugary drinks and large portions add excess calories with little fullness, which promotes weight gain and higher blood sugar.",
+      "eli5": "Like filling a shopping cart with puffed-up packaging that looks big but does not feed the family, these foods add calories without lasting fullness."
+    },
+    {
+      "q": "After losing weight, why is keeping the weight off with continued healthy eating and activity important for diabetes?",
+      "o": [
+        "Regained weight has no effect once blood sugar has improved one time",
+        "Regaining weight can make insulin resistance and blood sugar rise again",
+        "Keeping weight off only helps joints and does not affect blood sugar",
+        "Weight must keep dropping every week for life to prevent diabetes"
+      ],
+      "a": 2,
+      "tip": "Maintaining weight loss helps keep insulin sensitivity and blood sugar lower, while regaining weight can raise them again.",
+      "eli5": "Like weeds growing back in a garden if you stop weeding, blood sugar problems can return if healthy habits stop and weight comes back."
+    },
+    {
+      "q": "What blood sugar level is commonly used as the low blood sugar alert level that needs quick action?",
+      "o": [
+        "126 mg per dL or higher",
+        "Below 70 mg per dL",
+        "100 to 125 mg per dL",
+        "180 mg per dL or higher"
+      ],
+      "a": 2,
+      "tip": "Low blood sugar that needs quick treatment is commonly defined as below 70 mg per dL.",
+      "eli5": "Think of it like a car fuel light. Below 70 means the tank is almost empty and you need fuel fast."
+    },
+    {
+      "q": "A person with diabetes takes their usual insulin in the morning but then skips lunch and does extra yard work. What is most likely to happen?",
+      "o": [
+        "Blood sugar will drop too low because there is more insulin than food and activity need",
+        "Blood sugar will stay exactly the same no matter what",
+        "Blood sugar will rise very high from missing food",
+        "Only blood pressure will change, blood sugar will not change"
+      ],
+      "a": 1,
+      "tip": "Too much insulin for the food eaten, a missed meal, or extra activity can make blood sugar drop too low.",
+      "eli5": "It is like making sandwiches for two but three hungry friends show up. There is not enough to go around."
+    },
+    {
+      "q": "Which group of feelings are common early warning signs of low blood sugar (blood sugar too low)?",
+      "o": [
+        "Very thirsty, urinating often, and dry mouth",
+        "Blurry vision for months and a sore that heals slowly",
+        "Tingling in the feet that lasts for years",
+        "Shakiness, sweating, fast heartbeat, hunger, dizziness, and feeling nervous or irritable"
+      ],
+      "a": 4,
+      "tip": "Early low blood sugar often causes shakiness, sweating, fast heartbeat, hunger, dizziness, and feeling nervous or irritable.",
+      "eli5": "It is like a phone buzzing when the battery is low. Your body shakes and sweats to warn you before it shuts down."
+    },
+    {
+      "q": "An awake adult with diabetes feels shaky and sweaty and a home meter shows low blood sugar. What is usually the best first action?",
+      "o": [
+        "Take extra insulin to bring sugar down more",
+        "Go for a brisk walk to burn off sugar",
+        "Have a fast-acting sugar such as fruit juice or glucose tablets, then recheck sugar",
+        "Drink plain water and wait several hours to see what happens"
+      ],
+      "a": 3,
+      "tip": "Mild low blood sugar in an awake person who can swallow is usually treated with a fast-acting sugar and then rechecking.",
+      "eli5": "It is like adding dry wood to a dying campfire. Fast sugar catches quickly and brings the flame back."
+    },
+    {
+      "q": "Why do doctors say to treat low blood sugar right away instead of waiting to see if it gets better on its own?",
+      "o": [
+        "The brain needs a steady supply of sugar, and waiting can lead to confusion, fainting, or seizure",
+        "Waiting helps lower the A1C test over 3 months",
+        "Waiting helps sores heal faster",
+        "Low blood sugar only affects thirst and will go away after drinking water"
+      ],
+      "a": 1,
+      "tip": "The brain needs steady glucose, so untreated low blood sugar can quickly worsen to confusion, fainting, or seizure.",
+      "eli5": "It is like holding your breath underwater. Waiting too long is dangerous, so you need air right away."
+    },
+    {
+      "q": "A person who uses insulin passes out from very low blood sugar and cannot swallow safely. What should a family member do?",
+      "o": [
+        "Pour fruit juice or put food in the mouth to force swallowing",
+        "Give extra insulin to lower sugar more",
+        "Have the person drive to the clinic right away",
+        "Call for emergency help and use prescribed glucagon if available, without putting food or drink in the mouth"
+      ],
+      "a": 4,
+      "tip": "A person who has passed out or cannot swallow should not be given food or drink by mouth because of choking, so call for emergency help.",
+      "eli5": "It is like someone choking in a pool. You do not pour in more water, you call the lifeguard for a rescue float."
+    },
+    {
+      "q": "When blood sugar stays too high for many years, which set of long-term problems is most commonly linked to diabetes?",
+      "o": [
+        "Broken bones, ear infections, hay fever, and tooth cavities",
+        "Lung damage, stomach ulcers, thyroid lumps, and muscle sprains",
+        "Heart, eye, kidney, nerve, and foot problems",
+        "Skin moles, seasonal allergies, back strain, and hiccups"
+      ],
+      "a": 3,
+      "tip": "Continuing high blood glucose can damage blood vessels and nerves and lead to heart, eye, kidney, nerve, and foot problems.",
+      "eli5": "Like rust slowly damages pipes, extra sugar in the blood slowly wears out vessels and nerves all over the body."
+    },
+    {
+      "q": "Why does ongoing high blood sugar raise the chance of heart disease and stroke over time?",
+      "o": [
+        "It slowly damages blood vessels, making heart disease and stroke more likely",
+        "It makes the blood too thin so the heart beats too slowly",
+        "It makes the lungs hold extra water that stops the heart",
+        "It turns blood sugar into extra bone that blocks joints"
+      ],
+      "a": 1,
+      "tip": "Diabetes is a major cause of heart disease and stroke because high glucose damages blood vessels over time.",
+      "eli5": "Think of sugary soda left in a metal can — over time it corrodes the inside, just as high sugar wears out blood vessels."
+    },
+    {
+      "q": "A person with long-term high blood sugar is told diabetes can cause vision loss. What is the usual reason?",
+      "o": [
+        "High sugar makes the eyelids swell shut and blocks light",
+        "High sugar changes eye color and makes glasses stop working",
+        "High sugar causes extra tears that wash away clear vision",
+        "High sugar damages small blood vessels in the eyes, which can lead to vision loss"
+      ],
+      "a": 4,
+      "tip": "Long-term high blood sugar can damage the small vessels in the eyes and cause vision loss.",
+      "eli5": "Like a garden hose with cracks leaks and hurts the plants, damaged eye vessels leak and hurt sight."
+    },
+    {
+      "q": "How can long-term high blood sugar lead to kidney failure and to amputation of a toe, foot, or leg?",
+      "o": [
+        "It makes bones grow too fast in the kidneys and feet",
+        "It damages blood vessels and nerves, harming kidney filtering and foot feeling and healing",
+        "It causes the kidneys to make too much insulin that melts foot skin",
+        "It fills the kidneys and feet with extra air that causes swelling"
+      ],
+      "a": 2,
+      "tip": "Ongoing high glucose damages vessels and nerves, which can cause kidney failure and foot problems that may need amputation.",
+      "eli5": "Like a clogged filter and frayed wires, hurt kidneys cannot clean blood and hurt foot nerves cannot feel injury."
+    },
+    {
+      "q": "Why do many people with high blood sugar also need to manage blood pressure and cholesterol?",
+      "o": [
+        "Managing blood pressure and cholesterol lowers the risk of heart and kidney complications",
+        "Managing blood pressure and cholesterol cures diabetes so sugar pills are no longer needed",
+        "Managing blood pressure and cholesterol replaces the need to check blood sugar",
+        "Managing blood pressure and cholesterol makes insulin no longer work in the body"
+      ],
+      "a": 1,
+      "tip": "Blood pressure and cholesterol management can lower the risk of heart and kidney complications in diabetes.",
+      "eli5": "Like fixing both leaky pipes and high water pressure protects a house, controlling sugar plus pressure and cholesterol protects heart and kidneys."
+    },
+    {
+      "q": "Why are regular eye exams and foot exams recommended for people with diabetes, even when they feel well?",
+      "o": [
+        "Exams make blood sugar drop to normal within one day",
+        "Exams replace healthy eating, activity, and medicines",
+        "Early checks and timely treatment can prevent up to 90 percent of diabetes-related blindness and up to 85 percent of amputations",
+        "Exams are only needed after vision is already gone or a sore will not heal"
+      ],
+      "a": 3,
+      "tip": "Regular eye exams with timely treatment and regular foot exams with education can prevent most diabetes-related blindness and amputations.",
+      "eli5": "Like checking tires and brakes before a long trip, eye and foot checks catch small damage before it causes a big crash."
+    },
+    {
+      "q": "A person with long-standing diabetes steps on a small pebble inside a shoe, feels nothing, and later the spot becomes a deep sore that will not heal. What damage best explains this?",
+      "o": [
+        "High blood sugar makes bones grow extra fast and push through the skin",
+        "Nerve damage lowers feeling in the feet and poor blood flow slows healing, so injuries go unnoticed and get worse",
+        "High blood sugar makes the skin too moist so shoes slip off",
+        "Diabetes makes foot muscles stronger so small injuries are ignored"
+      ],
+      "a": 2,
+      "tip": "Long-term high blood sugar can damage nerves and blood vessels, causing loss of feeling and slow healing in the feet.",
+      "eli5": "Like a smoke alarm with dead batteries, damaged nerves do not warn you, and poor blood flow is like slow delivery trucks bringing repair supplies late."
+    },
+    {
+      "q": "How does many years of high blood sugar harm the kidneys, the organs that filter and clean the blood?",
+      "o": [
+        "It makes the kidneys make extra insulin to lower blood sugar",
+        "It makes the kidneys grow larger so they filter too much water at once",
+        "It turns kidney stones into sugar that dissolves safely",
+        "It damages the tiny blood vessels and filters in the kidneys so waste builds up in the blood"
+      ],
+      "a": 4,
+      "tip": "Diabetes can damage the small blood vessels that form the kidney filters, which can lead to kidney failure.",
+      "eli5": "Think of kidney filters like a coffee filter with tiny holes; high sugar tears the holes so the filter clogs and stops cleaning well."
+    },
+    {
+      "q": "For people with diabetes, regular eye exams with timely treatment can prevent up to what share of diabetes-related blindness?",
+      "o": [
+        "Up to 90 percent",
+        "Up to 5 percent",
+        "Up to 20 percent",
+        "Up to 35 percent"
+      ],
+      "a": 1,
+      "tip": "Regular eye exams and timely treatment could prevent up to 90 percent of diabetes-related blindness.",
+      "eli5": "Like checking a bike tire for tiny leaks before a long trip, eye checks catch small vessel damage early when it is still fixable."
+    },
+    {
+      "q": "For people with diabetes, regular foot exams plus foot-care teaching can prevent up to what share of diabetes-related amputations of a toe, foot, or leg?",
+      "o": [
+        "Up to 10 percent",
+        "Up to 30 percent",
+        "Up to 85 percent",
+        "Up to 45 percent"
+      ],
+      "a": 3,
+      "tip": "Regular foot exams and patient education could prevent up to 85 percent of diabetes-related amputations.",
+      "eli5": "Like checking your shoes for rocks every day on a hike, daily foot checks catch blisters early before they turn into big trouble."
+    },
+    {
+      "q": "Why do doctors stress early treatment and steady control of blood sugar, blood pressure, and cholesterol in diabetes?",
+      "o": [
+        "It cures diabetes in a few weeks so no more visits are needed",
+        "It can prevent or delay long-term heart, eye, kidney, nerve, and foot problems",
+        "It only helps for colds and flu and does not affect diabetes",
+        "It lets a person stop all eye and foot exams because damage is impossible"
+      ],
+      "a": 2,
+      "tip": "Early treatment and good control can help prevent or delay diabetes-related health conditions.",
+      "eli5": "Like fixing a small roof leak right away, early care stops tiny damage from turning into a ruined ceiling later."
+    },
+    {
+      "q": "Diabetes is a major cause of heart and blood-vessel disease over many years. Which 2 emergencies are examples of this? (Choose 2)",
+      "o": [
+        "Heart attack (blocked blood flow to the heart)",
+        "Short cold that goes away in 2 days",
+        "Stroke (blocked or burst blood vessel in the brain)",
+        "Mild sunburn after one sunny afternoon"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Diabetes is a major cause of heart disease and stroke from long-term blood-vessel damage.",
+      "eli5": "Like sugary soda rusting pipes over time, high sugar roughs up blood vessels so clogs can block flow to the heart or brain."
+    },
+    {
+      "q": "When blood sugar stays high for many years, how does it increase the risk of heart attack and stroke?",
+      "o": [
+        "It makes blood vessels wider and more flexible so blood flows too fast",
+        "It damages the inside lining of blood vessels and speeds up fatty plaque buildup that narrows them",
+        "It makes the heart beat much slower so clots dissolve more easily",
+        "It lowers blood pressure so the heart does not get enough oxygen"
+      ],
+      "a": 2,
+      "tip": "Long-term high blood sugar injures vessel walls and speeds plaque buildup that can block blood flow.",
+      "eli5": "Like rust and grease clogging a kitchen pipe, damaged walls plus sticky buildup make the pipe narrow."
+    },
+    {
+      "q": "A person with diabetes also has high blood pressure and high LDL cholesterol (a fatty substance in the blood). What is true about heart risk?",
+      "o": [
+        "Only blood sugar matters, so blood pressure and cholesterol do not change heart risk",
+        "High blood pressure cancels out the harm from high cholesterol",
+        "Only older adults need to worry about combined risks",
+        "The risks add together, so controlling blood sugar, blood pressure, and cholesterol all matter for the heart"
+      ],
+      "a": 4,
+      "tip": "Diabetes, high blood pressure, and high LDL cholesterol combine to greatly raise heart disease and stroke risk.",
+      "eli5": "Like three heavy bags on one small boat, each extra risk makes it more likely to tip over."
+    },
+    {
+      "q": "Why might a person with long-term diabetes have a heart problem with little or no typical chest pain?",
+      "o": [
+        "Diabetes can damage nerves over time, so warning pain from the heart may be dulled or silent",
+        "Diabetes makes the heart muscle too strong to feel any strain",
+        "High blood sugar removes all pain from the body",
+        "People with diabetes cannot have heart attacks"
+      ],
+      "a": 1,
+      "tip": "Diabetic nerve damage can blunt chest pain, so heart ischemia may occur with mild or no symptoms.",
+      "eli5": "Like a doorbell with a broken wire, the warning signal does not ring even when someone is at the door."
+    },
+    {
+      "q": "Which set of daily habits gives the best protection for the heart and blood vessels when you have diabetes?",
+      "o": [
+        "Smoke, rest all day, and only check blood sugar once a year",
+        "Eat mostly sugary drinks and salty snacks but avoid all activity to rest the heart",
+        "Stay smoke-free, be regularly active, eat vegetables, whole grains and lean proteins, and follow prescribed blood pressure and cholesterol care",
+        "Skip blood pressure and cholesterol care because only sweets affect the heart"
+      ],
+      "a": 3,
+      "tip": "Heart protection in diabetes comes from no smoking, activity, heart-healthy eating, plus blood pressure and cholesterol control.",
+      "eli5": "Like caring for both the engine and the tires of a car, the heart needs healthy fuel, movement, and clean air."
+    },
+    {
+      "q": "If someone with diabetes also has untreated high blood pressure (strong force of blood on vessel walls), how does it harm the body over time?",
+      "o": [
+        "It rests the heart and cleans the blood vessels",
+        "It puts extra strain on vessel walls and the heart, raising the risk of stroke, heart failure, and kidney and eye damage",
+        "It only affects arm muscles and does not affect the heart or kidneys",
+        "It lowers cholesterol so blood vessels stay healthy"
+      ],
+      "a": 2,
+      "tip": "High blood pressure strains vessel walls and forces the heart to work harder, injuring heart, brain, kidneys, and eyes.",
+      "eli5": "Like water blasting too hard through a garden hose, too much pressure wears out the hose and the pump."
+    },
+    {
+      "q": "How does smoking affect heart and blood vessel health in a person who already has diabetes?",
+      "o": [
+        "Smoking helps blood carry more oxygen and protects the feet",
+        "Smoking only harms the lungs and has no effect on blood vessels",
+        "Quitting smoking raises heart risk, so continuing is safer",
+        "Smoking further injures blood vessels and greatly raises the risk of heart attack, stroke, and slow-healing foot wounds"
+      ],
+      "a": 4,
+      "tip": "Smoking damages blood vessels and adds to diabetes damage, sharply raising heart, stroke, and foot risks.",
+      "eli5": "Like pouring smoke into an already clogged chimney, smoking makes a narrow, damaged pipe even worse."
+    },
+    {
+      "q": "Why is checking the feet each day, including the soles and between the toes, especially important when you have diabetes?",
+      "o": [
+        "Because daily checks improve blood flow to the toes",
+        "Because nerve damage can dull feeling so small cuts or blisters may go unnoticed",
+        "Because daily checks cure athlete's foot and other infections",
+        "Because feet need daily powder to stop extra sweating"
+      ],
+      "a": 2,
+      "tip": "Diabetes can reduce feeling in the feet, so daily visual checks catch injuries that might not be felt.",
+      "eli5": "Like checking tires for tiny nails you cannot feel while driving — a quick look catches trouble early."
+    },
+    {
+      "q": "What is a safe way for a person with diabetes to wash and dry the feet each day?",
+      "o": [
+        "Wash with lukewarm water, then dry well, especially between the toes",
+        "Soak feet in hot water for 30 minutes to soften the skin",
+        "Scrub hard with a stiff brush and leave skin damp between the toes",
+        "Use very hot water to kill germs and then let feet stay damp"
+      ],
+      "a": 1,
+      "tip": "Daily washing with lukewarm water and thorough drying, especially between the toes, lowers skin breakdown and infection risk.",
+      "eli5": "Like washing cups in warm, not scalding, water and towel-drying them so they do not stay damp."
+    },
+    {
+      "q": "How should a person with diabetes trim toenails to lower the risk of ingrown nails and sores?",
+      "o": [
+        "Cut nails in a deep curve and dig out the corners",
+        "Bite or tear nails very short and cut the cuticles",
+        "Let nails grow long and cover them with tight socks",
+        "Trim straight across, not too short, then gently file sharp edges"
+      ],
+      "a": 4,
+      "tip": "Trimming toenails straight across and not too short helps prevent ingrown nails and skin breaks.",
+      "eli5": "Like trimming a hedge straight across instead of digging into the corners — smooth edges do not poke the skin."
+    },
+    {
+      "q": "Why do doctors advise people with diabetes not to walk barefoot, even indoors?",
+      "o": [
+        "Because bare floors weaken foot muscles over time",
+        "Because shoes make feet sweat less than going barefoot",
+        "Because loss of feeling raises the risk of stepping on something sharp without noticing",
+        "Because going barefoot directly raises blood sugar"
+      ],
+      "a": 3,
+      "tip": "Reduced sensation from nerve damage increases injury risk, so protective footwear is advised even indoors.",
+      "eli5": "Like wearing gloves to pick up sticks when your hands are numb — shoes guard feet you cannot fully feel."
+    },
+    {
+      "q": "Which 2 shoe and sock habits best protect the feet when you have diabetes? (Choose 2)",
+      "o": [
+        "Wear well-fitting, closed-toe shoes and check inside for pebbles or rough seams",
+        "Wear clean, dry socks and change them if they get damp",
+        "Break in new shoes with long walks and choose tight shoes to prevent swelling",
+        "Wear open sandals with no socks and share shoes with others"
+      ],
+      "a": [
+        1,
+        2
+      ],
+      "tip": "Well-fitting closed shoes checked inside plus clean dry socks reduce pressure, friction, and moisture injury.",
+      "eli5": "Like shaking stones from sneakers and wearing fresh socks before a hike — comfort stops blisters before they start."
+    },
+    {
+      "q": "A person with diabetes finds a small blister, cut, redness, or swelling on the foot. What is the safest next step?",
+      "o": [
+        "Wait several weeks and try to drain blisters with unclean tools at home",
+        "Apply strong chemicals and a hot heating pad to burn away infection",
+        "Cover it with tight tape and keep wearing tight shoes",
+        "Keep weight off it, keep it clean and covered, and call the clinic promptly if it does not improve quickly"
+      ],
+      "a": 4,
+      "tip": "Foot wounds in diabetes can worsen quickly, so prompt cleaning, protection, and medical advice are recommended.",
+      "eli5": "Like reporting a small leak in a boat right away — a quick cover and an expert check stops a tiny hole from growing."
+    },
+    {
+      "q": "What is diabetic retinopathy (diabetes-related eye damage)?",
+      "o": [
+        "Clouding of the lens at the front of the eye that makes things look foggy",
+        "Damage to the tiny blood vessels in the retina, the light-sensitive layer at the back of the eye",
+        "A sudden infection of the eyelid that causes redness and swelling",
+        "A change in the shape of the eyeball that makes distant objects look blurry"
+      ],
+      "a": 2,
+      "tip": "Diabetic retinopathy is damage to the small retinal blood vessels from long-term high blood sugar.",
+      "eli5": "Think of the retina like camera film. If its tiny supply tubes leak or close off, the picture gets spotty."
+    },
+    {
+      "q": "A person with diabetes has clear vision and no eye pain. How often is a dilated eye exam (eye check with drops that widen the pupil) usually recommended?",
+      "o": [
+        "Only once in a lifetime",
+        "Only when vision becomes blurry",
+        "About once a year",
+        "About once every 5 years"
+      ],
+      "a": 3,
+      "tip": "Mainstream guidance recommends a dilated eye exam about yearly for people with diabetes, even with no symptoms.",
+      "eli5": "Like checking tires before a long trip, the eye doctor looks inside each year to catch tiny leaks before you notice them."
+    },
+    {
+      "q": "Which new vision changes in a person with diabetes are warning signs to get a prompt eye check?",
+      "o": [
+        "New floaters or dark spots, flashes of light, a dark curtain over vision, or sudden blur or vision loss",
+        "Mild dry eyes in winter that get better with blinking",
+        "Needing brighter light to read as you get older",
+        "Brief eye watering when cutting onions"
+      ],
+      "a": 1,
+      "tip": "New floaters, flashes, dark areas, or sudden vision loss can signal retinal damage or bleeding needing prompt care.",
+      "eli5": "Like smoke in the kitchen means check the stove fast, new spots or shadows in sight mean get eyes checked fast."
+    },
+    {
+      "q": "Which 2 tests do doctors commonly use to check kidney health in a person with diabetes? (Choose 2)",
+      "o": [
+        "Lung breathing test to measure air flow",
+        "Urine test for protein called albumin, which can leak when filters are damaged",
+        "Eye pressure test to measure fluid in the eye",
+        "Blood test for creatinine and eGFR to show how well the kidneys filter blood"
+      ],
+      "a": [
+        2,
+        4
+      ],
+      "tip": "Kidney checks in diabetes typically include urine albumin and blood creatinine with eGFR for filtering ability.",
+      "eli5": "Like checking both what leaks from a coffee filter and how fast water flows through, doctors check urine and blood."
+    },
+    {
+      "q": "Why do high blood sugar and high blood pressure together greatly increase kidney damage in diabetes?",
+      "o": [
+        "They make the kidneys make extra insulin",
+        "They cause the eye lens to swell and press on the kidney",
+        "They cure kidney infections by killing germs",
+        "They both injure the tiny blood vessels in the kidney filters over time"
+      ],
+      "a": 4,
+      "tip": "Both high glucose and high pressure injure small vessels in the kidney filters, so controlling both protects kidneys.",
+      "eli5": "Like hot water plus high pressure wears out a garden hose faster, high sugar plus high pressure wears out kidney filters faster."
+    },
+    {
+      "q": "Which daily pattern best protects both eye and kidney health when you have diabetes?",
+      "o": [
+        "Keep blood sugar, blood pressure, and cholesterol toward target ranges, do not smoke, and keep yearly eye and kidney checkups",
+        "Use only herbal teas and skip prescribed medicines to clean the eyes and kidneys",
+        "Smoke to calm nerves and skip eye and urine checkups unless there is pain",
+        "Exercise hard once a month and get an eye exam only after vision is gone"
+      ],
+      "a": 1,
+      "tip": "Steady control of blood sugar, blood pressure, and cholesterol plus no smoking and regular eye and kidney checks protects small vessels.",
+      "eli5": "Like keeping water clean and pipes at safe pressure protects a fish tank filter, steady healthy habits protect eyes and kidneys."
+    },
+    {
+      "q": "A 34-year-old adult is newly diagnosed with type 1 diabetes. A family member says type 1 only happens in children. What is the most accurate response?",
+      "o": [
+        "Type 1 is only diagnosed after age 60, so this diagnosis must be a mistake",
+        "Type 1 is often diagnosed in childhood or young adulthood but can occur at any age",
+        "Adults can only develop type 2 diabetes and never type 1",
+        "Type 1 found in adults is always temporary and goes away on its own"
+      ],
+      "a": 2,
+      "tip": "Type 1 diabetes is often diagnosed in young people but can develop at any age.",
+      "eli5": "Like learning to ride a bike is common as a kid, but you can still learn as an adult."
+    },
+    {
+      "q": "Which type of diabetes can often be delayed or prevented by keeping a healthy weight, eating a balanced diet, and staying physically active?",
+      "o": [
+        "Type 1 diabetes",
+        "Only diabetes first found during pregnancy",
+        "Type 2 diabetes",
+        "Type 1 and type 2 are equally preventable by lifestyle"
+      ],
+      "a": 3,
+      "tip": "Healthy habits can often delay or prevent type 2 diabetes, while type 1 cannot currently be prevented that way.",
+      "eli5": "Like clearing leaves from gutters helps prevent clogs, healthy habits help a lot with type 2 but cannot stop type 1."
+    },
+    {
+      "q": "A person has prediabetes, meaning blood sugar is higher than normal but not yet in the diabetes range. Besides type 2 diabetes, which 2 health problems is this person at higher risk for? (Choose 2)",
+      "o": [
+        "Heart disease",
+        "Common cold",
+        "Stroke",
+        "Seasonal hay fever"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Prediabetes raises the risk of type 2 diabetes, heart disease, and stroke.",
+      "eli5": "Like a yellow traffic light warns that red is coming and the crossing is risky, prediabetes warns of diabetes and vessel problems."
+    },
+    {
+      "q": "A pregnant woman who did not have diabetes before pregnancy has high blood sugar found on a routine prenatal check in mid-pregnancy. Which type is this most likely to be?",
+      "o": [
+        "Gestational diabetes",
+        "Type 1 diabetes diagnosed in childhood",
+        "Type 2 diabetes that started years before birth",
+        "A type of diabetes that cannot occur during pregnancy"
+      ],
+      "a": 1,
+      "tip": "Gestational diabetes is diabetes that can develop during pregnancy.",
+      "eli5": "Like rain that only shows up during one trip, this high blood sugar shows up during pregnancy."
+    },
+    {
+      "q": "A student asks why increased thirst and frequent urination alone cannot tell whether someone has type 1 or type 2 diabetes. What is the best explanation?",
+      "o": [
+        "Only type 1 causes thirst and only type 2 causes urination",
+        "Thirst and urination never occur with diabetes",
+        "Type 2 diabetes never causes any symptoms at all",
+        "Both type 1 and type 2 can cause similar symptoms such as increased thirst and frequent urination"
+      ],
+      "a": 4,
+      "tip": "Both type 1 and type 2 diabetes can have similar symptoms.",
+      "eli5": "Like two different colds can both give you a cough, so a cough alone does not tell which cold you have."
+    },
+    {
+      "q": "Early after diagnosis, which type of diabetes is sometimes managed at first with healthy eating, physical activity, and weight loss, without diabetes medicine right away?",
+      "o": [
+        "Type 1 diabetes",
+        "Only diabetes that starts in childhood",
+        "Diabetes that always needs insulin to survive",
+        "Type 2 diabetes"
+      ],
+      "a": 4,
+      "tip": "Early type 2 can sometimes be managed at first with lifestyle changes, while type 1 always needs insulin.",
+      "eli5": "Like a small warm pan can cool with air and time, early type 2 may improve with habits, while type 1 needs insulin like a car needs fuel."
+    },
+    {
+      "q": "A person is told they have prediabetes (blood sugar above normal but not yet diabetes). What is true about what can happen next?",
+      "o": [
+        "Blood sugar will stay high forever no matter what habits change",
+        "Blood sugar can often return to the normal range with healthy eating, regular activity, and modest weight loss",
+        "Prediabetes always turns into type 1 diabetes within a few weeks",
+        "No follow-up is needed unless vision loss or kidney failure happens"
+      ],
+      "a": 2,
+      "tip": "Prediabetes is a warning stage, not yet diabetes, and lifestyle changes can often bring blood sugar back to normal.",
+      "eli5": "Like a yellow traffic light before red, you can still slow down and avoid running the red."
+    },
+    {
+      "q": "Which adult is most likely to have prediabetes and should ask a doctor about a blood sugar test?",
+      "o": [
+        "A 28-year-old at a healthy weight who is active daily with no family history of diabetes",
+        "A 30-year-old athlete with normal blood pressure who eats balanced meals",
+        "A 25-year-old with a healthy weight, normal blood sugar in the past, and daily exercise",
+        "A 52-year-old with extra weight around the waist, little physical activity, and a parent with type 2 diabetes"
+      ],
+      "a": 4,
+      "tip": "Extra body weight, little exercise, older age, and family history of type 2 diabetes raise the risk for prediabetes.",
+      "eli5": "Like weeds grow faster in certain gardens, high blood sugar starts more easily when weight, inactivity, and family history pile up."
+    },
+    {
+      "q": "A glucose tolerance test measures blood sugar 2 hours after drinking a sweet drink. A result of 165 mg per dL is in which range?",
+      "o": [
+        "Prediabetes range, about 140 to 199 mg per dL at 2 hours",
+        "Normal range, below 140 mg per dL at 2 hours",
+        "Diabetes range, 200 mg per dL or higher at 2 hours",
+        "Low blood sugar range, below 70 mg per dL"
+      ],
+      "a": 1,
+      "tip": "A 2-hour glucose tolerance result of 140 to 199 mg per dL generally indicates prediabetes.",
+      "eli5": "Like a quiz score between passing and failing, 165 is higher than normal but not yet in the diabetes zone."
+    },
+    {
+      "q": "If prediabetes continues without healthy lifestyle changes, which type of diabetes is it most likely to develop into over time?",
+      "o": [
+        "Type 1 diabetes, where the body stops making insulin",
+        "Gestational diabetes, which only occurs during pregnancy",
+        "Type 2 diabetes, where the body cannot use insulin properly",
+        "No type of diabetes, prediabetes never progresses"
+      ],
+      "a": 3,
+      "tip": "Prediabetes is high risk for developing type 2 diabetes if blood sugar keeps rising.",
+      "eli5": "Like a small crack that grows into the same wall breaking, prediabetes usually leads to type 2 if ignored."
+    },
+    {
+      "q": "Which statement about prediabetes in teenagers is true?",
+      "o": [
+        "Only adults older than 65 can develop prediabetes",
+        "Prediabetes in teens always causes loud, obvious symptoms right away",
+        "Teens never need blood sugar testing even with extra weight and family history",
+        "Teens with extra body weight, little activity, and family history can also develop prediabetes"
+      ],
+      "a": 4,
+      "tip": "Prediabetes can occur at younger ages, especially with extra weight, inactivity, and family history.",
+      "eli5": "Like cavities are not only for grown-ups, high blood sugar can start early when habits and weight strain the body."
+    },
+    {
+      "q": "A person is diagnosed with prediabetes. Which 2 steps are usually part of the recommended plan? (Choose 2)",
+      "o": [
+        "Join a structured lifestyle program focused on healthy eating, activity, and modest weight control",
+        "Wait until strong thirst, frequent urination, or vision changes appear before acting",
+        "Have blood sugar rechecked as the doctor advises to track progress",
+        "Take antibiotics to cure prediabetes and lower blood sugar"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Prediabetes care usually centers on lifestyle change plus regular blood sugar follow-up to prevent type 2 diabetes.",
+      "eli5": "Like tending a garden with regular watering and weeding checks, healthy habits plus retests keep sugar from overgrowing."
+    },
+    {
+      "q": "A person drinks plenty of water during the day but still has a dry mouth and feels very thirsty all the time. What does this pattern commonly suggest related to diabetes?",
+      "o": [
+        "It is a sign that blood sugar is too low and the body needs less water",
+        "Persistent thirst and a dry mouth can be common symptoms of high blood sugar",
+        "It means diabetes has gone away and no follow-up is needed",
+        "It is a normal response that rules out a blood sugar problem"
+      ],
+      "a": 2,
+      "tip": "Persistent thirst and dry mouth are common symptoms of high blood sugar.",
+      "eli5": "Like a sponge that never stays wet no matter how much water you pour, the body keeps losing fluid and stays thirsty when sugar is high."
+    },
+    {
+      "q": "Why does ongoing high blood sugar often make a person feel very tired or low on energy?",
+      "o": [
+        "Glucose stays in the blood instead of moving into cells where it is used for energy",
+        "Blood sugar is too low so the brain gets too much energy",
+        "The stomach digests food too quickly and makes extra energy",
+        "Tiredness happens only because people with diabetes sleep too much"
+      ],
+      "a": 1,
+      "tip": "Diabetes leaves glucose in the blood instead of letting insulin move it into cells for energy.",
+      "eli5": "Like groceries left on the porch instead of put in the kitchen, the energy is there but the cells cannot use it."
+    },
+    {
+      "q": "A person eats normal meals but feels very hungry again soon after eating. How can undiagnosed diabetes explain this increased hunger?",
+      "o": [
+        "High blood sugar always makes the stomach empty faster and that is healthy",
+        "Hunger after meals proves the person is eating too little salt",
+        "Skipping water causes hunger and has no link to blood sugar",
+        "The body does not make enough insulin or cannot use it well, so cells lack energy and signal hunger"
+      ],
+      "a": 4,
+      "tip": "Increased hunger is a general diabetes symptom when cells cannot get glucose for energy.",
+      "eli5": "Like workers asking for more lunch because their food boxes never arrived, hungry cells keep asking for more food."
+    },
+    {
+      "q": "Which group of new changes together most suggests high blood sugar that should be checked by a doctor?",
+      "o": [
+        "Fever, sore throat, cough, and body aches for a few days",
+        "Sneezing, runny nose, itchy eyes, and skin rash",
+        "Needing to urinate often, feeling very thirsty, feeling very tired, and blurry vision",
+        "Stiff joints in the morning that get better with movement"
+      ],
+      "a": 3,
+      "tip": "Frequent urination, persistent thirst, tiredness, and blurry vision often occur together with high blood sugar.",
+      "eli5": "Like smoke, heat, and a loud alarm together mean fire, these clues together point to high sugar."
+    },
+    {
+      "q": "Over months or years, which 2 problems are more commonly noted with type 2 diabetes and high blood sugar? (Choose 2)",
+      "o": [
+        "Sores or cuts that take a very long time to heal",
+        "Sudden sharp tooth pain that goes away right after brushing",
+        "Tingling, numbness, or pins-and-needles feeling in the hands or feet",
+        "A cold that gets completely better in one day without rest"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Slow-healing sores and tingling in hands or feet are more commonly noted with type 2 diabetes over time.",
+      "eli5": "Like a road crew that is slow to fix potholes and phone lines that buzz, healing and nerves work poorly when sugar stays high."
+    },
+    {
+      "q": "A teenager who felt well last month develops strong thirst, frequent urination, increased hunger, and tiredness over about 1 to 2 weeks. What does how fast this happened suggest?",
+      "o": [
+        "Normal teenage growth, so no medical check is needed",
+        "Slow change over many years, which fits only type 2 diabetes",
+        "Rapid onset over a short period, which fits the usual pattern of type 1 diabetes and needs prompt care",
+        "Proof of prediabetes that will never change or need care"
+      ],
+      "a": 2,
+      "tip": "Type 1 symptoms usually develop over a short period, while type 2 develops slowly.",
+      "eli5": "Like a faucet that suddenly bursts instead of slowly dripping, type 1 symptoms often come on fast."
+    },
+    {
+      "q": "Your mother and older brother both have type 2 diabetes (high blood sugar that develops when the body cannot use insulin well). What does a close family history like this mean for you?",
+      "o": [
+        "You have no extra risk because diabetes does not run in families",
+        "You have a higher chance of developing type 2 diabetes than someone with no family history",
+        "You will definitely get type 1 diabetes as a child",
+        "You are protected from diabetes for life"
+      ],
+      "a": 2,
+      "tip": "Having a parent, brother, or sister with type 2 diabetes raises your own risk.",
+      "eli5": "Like eye color running in families, diabetes risk can run in families too."
+    },
+    {
+      "q": "Doctors say adults age 45 and older should get checked for high blood sugar even if they feel well. Why is older age itself a risk factor for type 2 diabetes?",
+      "o": [
+        "Aging guarantees everyone will get diabetes within a year",
+        "Children can never develop type 2 diabetes at any age",
+        "As people get older, the body is more likely to resist insulin and be less active, so risk rises",
+        "Blood sugar always falls to very low levels after age 45"
+      ],
+      "a": 3,
+      "tip": "The risk of type 2 diabetes rises with age, especially after about age 45.",
+      "eli5": "Like an old bike chain getting rusty, the body's sugar control works less smoothly with age."
+    },
+    {
+      "q": "In the United States, type 2 diabetes is more common in people with African American, Hispanic, Native American, Asian American, or Pacific Islander family background. What does this mean?",
+      "o": [
+        "People from these backgrounds have a higher average risk and should pay extra attention to prevention and screening",
+        "Only people from these backgrounds can get diabetes",
+        "Family background alone decides diabetes and lifestyle does not matter",
+        "People from other backgrounds never need blood sugar testing"
+      ],
+      "a": 1,
+      "tip": "Certain racial and ethnic backgrounds have a higher average risk of type 2 diabetes.",
+      "eli5": "Like some people needing sunscreen sooner, some groups benefit from earlier check-ups."
+    },
+    {
+      "q": "A person has high blood pressure (strong force of blood on vessel walls) and unhealthy cholesterol (high triglycerides and low HDL, types of fat in the blood). How are these linked to type 2 diabetes risk?",
+      "o": [
+        "They only matter after diabetes has caused blindness",
+        "They prove the person already has type 1 diabetes",
+        "They cure diabetes by lowering blood sugar",
+        "They are linked to insulin resistance, so they signal a higher chance of developing type 2 diabetes"
+      ],
+      "a": 4,
+      "tip": "High blood pressure and unhealthy cholesterol are linked to a higher risk of type 2 diabetes.",
+      "eli5": "Like smoke often comes with fire, these heart risks often travel with diabetes risk."
+    },
+    {
+      "q": "Two office workers eat about the same food, but one walks daily and one sits almost all day watching screens. How does sitting most of the day affect type 2 diabetes risk?",
+      "o": [
+        "It has no effect on blood sugar at all",
+        "Sitting prevents type 1 diabetes in children",
+        "Only standing jobs raise diabetes risk, sitting lowers it",
+        "Sitting most of the day with little activity raises the risk of type 2 diabetes"
+      ],
+      "a": 4,
+      "tip": "Little physical activity and long sitting time raise the risk of type 2 diabetes.",
+      "eli5": "Like a car engine clogging when never driven, muscles use sugar poorly when rarely moved."
+    },
+    {
+      "q": "A baby was born to a mother who had gestational diabetes (high blood sugar during pregnancy). What is true about that child's future risk?",
+      "o": [
+        "The child has no extra risk later in life",
+        "The child has a higher chance of obesity and type 2 diabetes later in life",
+        "The child will be born with type 1 diabetes that never changes",
+        "The child is protected from diabetes because the mother had it"
+      ],
+      "a": 2,
+      "tip": "Being exposed to gestational diabetes in the womb raises the child's later risk of obesity and type 2 diabetes.",
+      "eli5": "Like seeds sprouting in very sweet soil, babies growing with high sugar have higher risk later."
+    },
+    {
+      "q": "You are told not to eat or drink anything except water for at least 8 hours before a fasting blood sugar test. Why is this fasting step needed?",
+      "o": [
+        "To clean out the stomach so insulin can be seen more clearly",
+        "So food from a recent meal does not temporarily raise the result above your usual baseline",
+        "To make red blood cells live longer for the test",
+        "To prevent thirst during the blood draw"
+      ],
+      "a": 2,
+      "tip": "A fasting glucose test requires at least 8 hours with no calories so the result shows baseline sugar without a recent meal effect.",
+      "eli5": "It is like weighing yourself before putting groceries in your backpack, so you get your true weight."
+    },
+    {
+      "q": "What happens during an oral glucose tolerance test (a sweet-drink test for diabetes)?",
+      "o": [
+        "Your blood pressure is checked before and after exercise",
+        "Your urine is checked after drinking only water",
+        "You drink a sugary liquid, then your blood sugar is measured after 2 hours to see how your body handles sugar",
+        "You skip meals for 3 days, then your average sugar is estimated"
+      ],
+      "a": 3,
+      "tip": "The oral glucose tolerance test measures blood sugar 2 hours after drinking a standard sweet drink.",
+      "eli5": "It is like giving everyone the same spelling quiz after one lesson to see who learned the words."
+    },
+    {
+      "q": "Do you need to skip breakfast before an A1C (average blood sugar) lab test?",
+      "o": [
+        "No fasting is usually needed because one recent meal does not change the 3-month average much",
+        "Yes, you must fast for 3 full days before an A1C test",
+        "Yes, you must skip water as well as food for 12 hours",
+        "Yes, you must eat extra sweets the night before to prepare"
+      ],
+      "a": 1,
+      "tip": "The A1C test reflects average sugar over about 3 months and does not usually require fasting.",
+      "eli5": "It is like a report card for the whole term, one homework snack does not change the grade."
+    },
+    {
+      "q": "A person did not fast and has a random clinic blood sugar of 215 mg per dL along with strong thirst and frequent urination. What does this combination usually suggest to a doctor?",
+      "o": [
+        "Normal blood sugar with no concern",
+        "Low blood sugar that needs sugar right away",
+        "Dehydration that rules out diabetes",
+        "Likely diabetes that needs confirmatory follow-up testing"
+      ],
+      "a": 4,
+      "tip": "A random sugar of 200 mg per dL or higher along with classic high-sugar symptoms points toward diabetes and needs confirmation.",
+      "eli5": "It is like smoke plus a hot stove smell in the kitchen, it points to cooking trouble that needs a closer check."
+    },
+    {
+      "q": "A person feels well with no severe symptoms but has one high fasting sugar result. Why does the doctor usually repeat the test on another day before diagnosing diabetes?",
+      "o": [
+        "Because one high result always means the meter is broken",
+        "Because diabetes can only be diagnosed on weekends",
+        "Because illness, stress, food, or lab variation can temporarily raise sugar, so confirmation is needed",
+        "Because repeat testing cures high blood sugar"
+      ],
+      "a": 3,
+      "tip": "Diabetes is confirmed by repeat testing on a different day when there are no severe symptoms, to rule out temporary causes.",
+      "eli5": "It is like re-taking a photo when someone blinked, to make sure the blurry eye was real."
+    },
+    {
+      "q": "A pregnant woman did not have diabetes before pregnancy. When is she usually checked for gestational diabetes (high blood sugar in pregnancy)?",
+      "o": [
+        "Only one year after the baby is born",
+        "During routine prenatal care in mid-pregnancy, often around 24 to 28 weeks",
+        "Only before pregnancy begins",
+        "Only during labor and delivery"
+      ],
+      "a": 2,
+      "tip": "Screening for gestational diabetes is routinely done in mid-pregnancy, often around 24 to 28 weeks.",
+      "eli5": "It is like checking school supplies halfway through the year, when needs often show up."
+    },
+    {
+      "q": "Why does the HbA1c (A1C) test show average blood sugar over about 2 to 3 months instead of just that day?",
+      "o": [
+        "Because the lab stores your blood sample and checks it slowly for 3 months",
+        "Because sugar sticks to hemoglobin in red blood cells, which live for about 3 months",
+        "Because you must eat exactly the same meals for 3 months before the test",
+        "Because blood sugar only changes once every 3 months"
+      ],
+      "a": 2,
+      "tip": "HbA1c measures glucose attached to hemoglobin in red blood cells that live about 3 months.",
+      "eli5": "Like dust building up on classroom shelves over a term, sugar builds up on blood cells while they are alive."
+    },
+    {
+      "q": "Do you usually need to fast (not eat or drink overnight) before an HbA1c test for average blood sugar?",
+      "o": [
+        "No, the test reflects a long-term average so it can be done at any time of day, fasting or not",
+        "Yes, you must not eat for at least 12 hours or the A1C will always read too high",
+        "Yes, you must skip water as well as food for a full day before an A1C",
+        "Yes, you must first drink a very sugary drink and then wait 2 hours"
+      ],
+      "a": 1,
+      "tip": "HbA1c does not require fasting because it reflects months of blood sugar, not one moment.",
+      "eli5": "Like checking the average soup taste from a big pot, one recent snack does not change the whole mix."
+    },
+    {
+      "q": "Two adults have HbA1c results from the same lab: one is 6% and the other is 9%. What does this comparison mean?",
+      "o": [
+        "The 6% result means a much higher average blood sugar than 9%",
+        "Both results mean exactly the same average blood sugar",
+        "The 9% result means a much higher average blood sugar over the past months than 6%",
+        "The numbers only show blood type and say nothing about blood sugar"
+      ],
+      "a": 3,
+      "tip": "A higher HbA1c percentage means a higher average blood sugar over the past months.",
+      "eli5": "Like a higher report-card score means more points overall, a higher A1C means more sugar on average."
+    },
+    {
+      "q": "A person with diabetes has an HbA1c of 8.2% and three months later, after treatment changes, it is 7.4%. What does this change usually mean?",
+      "o": [
+        "Average blood sugar has gotten worse and control has slipped",
+        "The test is broken because HbA1c can never go down",
+        "Average blood sugar over recent months has improved",
+        "Blood sugar is now always low every single day"
+      ],
+      "a": 3,
+      "tip": "A fall in HbA1c over months means the average blood sugar has improved.",
+      "eli5": "Like your grocery bill dropping over months when you shop smarter, a lower A1C means lower sugar on average."
+    },
+    {
+      "q": "For many adults living with diabetes, what HbA1c goal do doctors commonly aim for, with the exact goal adjusted for each person?",
+      "o": [
+        "Above 11% to keep sugar extra high",
+        "Below 7% for many adults, with a personal goal set by the doctor",
+        "Below 4% for everyone, even if it causes frequent low blood sugar",
+        "Exactly 10% for all people with diabetes"
+      ],
+      "a": 2,
+      "tip": "Many adult diabetes guidelines use below 7% as a common HbA1c goal, individualized by the doctor.",
+      "eli5": "Like a coach setting under 7 minutes as a target mile for many runners, doctors often target under 7% but adjust for each person."
+    },
+    {
+      "q": "Why can severe anemia, recent heavy bleeding, or a recent blood transfusion make an HbA1c result less reliable?",
+      "o": [
+        "Because HbA1c depends on normal numbers and lifespan of red blood cells, so losing or replacing them skews the average",
+        "Because those conditions always cure diabetes and make blood sugar normal",
+        "Because the lab machine cannot measure blood sugar in people with anemia at all",
+        "Because anemia makes everyone eat much less sugar for exactly 3 months"
+      ],
+      "a": 1,
+      "tip": "Conditions that shorten, change, or replace red blood cells make HbA1c less accurate.",
+      "eli5": "Like swapping library books halfway through the term ruins the checkout record, swapping blood cells ruins the sugar record."
+    },
+    {
+      "q": "A person with diabetes wants to learn how a meal affected blood sugar. When is it commonly recommended to check blood sugar after a meal?",
+      "o": [
+        "About 15 minutes after the first bite",
+        "About 30 minutes after finishing the meal",
+        "About 2 hours after starting the meal",
+        "About 8 hours after the meal"
+      ],
+      "a": 3,
+      "tip": "A 2-hour post-meal check shows how the body handled the rise from that meal.",
+      "eli5": "Like waiting for cookies to bake before checking, you wait about 2 hours to see where the sugar settled."
+    },
+    {
+      "q": "Why do instructions for a finger-stick meter (small device that checks a drop of blood) say to wash hands with soap and dry them well first?",
+      "o": [
+        "Leftover food or sugar on the fingers can make the reading falsely high",
+        "Washing makes blood flow slower and easier to collect",
+        "Soap on clean skin lowers the sugar inside the blood",
+        "Dry skin makes the meter need less blood to work"
+      ],
+      "a": 1,
+      "tip": "Sugar residue on skin can mix with the blood drop and raise the result.",
+      "eli5": "Like crumbs on your fingers change how food tastes, sugar on fingers changes what the meter tastes in the drop."
+    },
+    {
+      "q": "What is a continuous glucose monitor (CGM), a small sensor worn on the skin for blood sugar monitoring?",
+      "o": [
+        "A pill that lowers blood sugar for 24 hours",
+        "A one-time lab test that shows a 3-month average",
+        "A blood pressure cuff worn only during exercise",
+        "A small sensor that checks sugar automatically day and night and can give alerts"
+      ],
+      "a": 4,
+      "tip": "A CGM uses a tiny sensor under the skin to track sugar levels over time.",
+      "eli5": "Like a weather station that reports temperature all day, the sensor reports sugar all day and night."
+    },
+    {
+      "q": "Which person with diabetes usually needs to check blood sugar most often each day?",
+      "o": [
+        "An adult with well-controlled type 2 diabetes managed by healthy eating and activity alone",
+        "A person who takes insulin several times a day or uses an insulin pump",
+        "A person with prediabetes who does not take diabetes medicine",
+        "An adult whose readings have been steady for months on one daily pill"
+      ],
+      "a": 2,
+      "tip": "Insulin treatment carries higher risk of low blood sugar, so more frequent checks guide safe daily choices.",
+      "eli5": "Like a new driver checks mirrors more often in busy traffic, insulin users check more often because levels can change fast."
+    },
+    {
+      "q": "A home meter shows a very high or very low number that does not match how the person feels. What is usually the best next step?",
+      "o": [
+        "Wash and dry hands, then recheck, and also check that test strips are not expired or damaged",
+        "Throw the meter away and wait a week to test again",
+        "Rub fruit juice on the fingers and test again right away",
+        "Keep eating the same foods and ignore the strange result"
+      ],
+      "a": 1,
+      "tip": "Unexpected readings should be verified with a clean retest and a check of strip expiry and storage.",
+      "eli5": "Like stepping back on the scale if it shows a silly number with shoes on, clean up and check again."
+    }
+  ]
+}
