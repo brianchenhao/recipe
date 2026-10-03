@@ -6954,6 +6954,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cone-dog",
+      "title": "Cone Dog",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Western",
+        "sausage",
+        "cheese",
+        "baked"
+      ],
+      "img": "images/cone-dog-card.jpg",
+      "poster": "images/cone-dog.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft baked bread cones filled with juicy sausages topped with cheese and sauces.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "makes 8 cone dogs",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
