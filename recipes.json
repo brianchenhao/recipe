@@ -6921,6 +6921,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "banana-pie",
+      "title": "Banana Pie",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Western",
+        "banana",
+        "custard",
+        "baked"
+      ],
+      "img": "images/banana-pie-card.jpg",
+      "poster": "images/banana-pie.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Flaky pie crust filled with caramelised bananas and creamy custard.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
