@@ -6987,6 +6987,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "lor-mee",
+      "title": "Lor Mee",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Malaysian",
+        "pork belly",
+        "egg noodles",
+        "braised",
+        "gravy"
+      ],
+      "img": "images/lor-mee-card.jpg",
+      "poster": "images/lor-mee.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Thick savoury gravy over tender egg noodles with braised pork, egg and toppings.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
