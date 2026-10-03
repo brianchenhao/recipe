@@ -6751,6 +6751,43 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "blood-sugar-basics-quiz",
+      "section": "questions",
+      "title": "Blood Sugar Basics Quiz",
+      "author": "",
+      "cat": "Health & Medicine",
+      "tags": [
+        "blood sugar",
+        "glucose",
+        "diabetes",
+        "insulin",
+        "health"
+      ],
+      "img": "",
+      "poster": "",
+      "quiz": "quizzes/blood-sugar-basics-quiz.json",
+      "questionCount": 150,
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "This quiz covers how blood sugar works and how the body regulates glucose. It also explores diabetes, testing methods, symptoms, and lifestyle factors that affect levels.",
+      "lede": "",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
