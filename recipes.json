@@ -6888,6 +6888,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "banana-pie-with-desiccated-coconut",
+      "title": "Banana Pie with Desiccated Coconut",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Western",
+        "banana",
+        "coconut",
+        "baked"
+      ],
+      "img": "images/banana-pie-with-desiccated-coconut-card.jpg",
+      "poster": "images/banana-pie-with-desiccated-coconut.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Creamy banana custard pie with caramelised bananas and toasted coconut topping.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
