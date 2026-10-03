@@ -1,0 +1,1812 @@
+{
+  "id": "blood-sugar-basics-quiz",
+  "title": "Blood Sugar Basics Quiz",
+  "topic": "Blood sugar",
+  "category": "Health & Medicine",
+  "summary": "This quiz covers how blood sugar works and how the body regulates glucose. It also explores diabetes, testing methods, symptoms, and lifestyle factors that affect levels.",
+  "createdAt": "2026-10-03",
+  "questions": [
+    {
+      "q": "Which of these foods is most likely to cause a quick rise in blood sugar (glucose in the blood)?",
+      "o": [
+        "Plain boiled eggs",
+        "A handful of almonds",
+        "A slice of white bread",
+        "Steamed broccoli"
+      ],
+      "a": 3,
+      "tip": "White bread is high in refined starch that the body digests quickly into glucose, raising blood sugar faster than protein, fat, or fiber-rich foods.",
+      "eli5": "Think of white bread like sugar dissolving quickly in hot tea, while eggs or nuts are like vegetables that take much longer to cook soft."
+    },
+    {
+      "q": "When doctors say 'blood sugar,' what are they usually measuring?",
+      "o": [
+        "The amount of insulin in the blood",
+        "The concentration of glucose in the blood",
+        "The amount of red blood cells in the blood",
+        "The blood pressure in the arteries"
+      ],
+      "a": 2,
+      "tip": "Blood sugar usually refers to the concentration of glucose in the blood.",
+      "eli5": "Think of blood like delivery trucks carrying sugar packets to houses, and blood sugar is how many packets are on the road."
+    },
+    {
+      "q": "Glucose in the blood is best described as what for the body?",
+      "o": [
+        "The body's main source of energy for cells",
+        "A waste product the kidneys must remove",
+        "A protein that builds muscles",
+        "A vitamin that helps bones grow"
+      ],
+      "a": 1,
+      "tip": "Glucose is the body's main source of energy for cells.",
+      "eli5": "Like firewood keeps a stove burning, glucose is the fuel your cells burn to keep you going."
+    },
+    {
+      "q": "You eat a bowl of pasta, which is rich in carbohydrates. What happens to those carbohydrates during digestion?",
+      "o": [
+        "They are turned into insulin by the stomach",
+        "They pass out of the body unchanged",
+        "They are turned into calcium for the bones",
+        "They are broken down into glucose that enters the blood"
+      ],
+      "a": 4,
+      "tip": "Carbohydrates from food are broken down into glucose during digestion.",
+      "eli5": "Like a loaf of bread broken into crumbs for sharing, pasta is broken into tiny glucose pieces that can travel in the blood."
+    },
+    {
+      "q": "What does insulin, a hormone made by the pancreas, mainly do?",
+      "o": [
+        "It raises blood glucose by releasing stored sugar",
+        "It breaks down food inside the stomach",
+        "It helps glucose move from the blood into cells for energy or storage",
+        "It carries oxygen around the body"
+      ],
+      "a": 3,
+      "tip": "Insulin helps glucose move from the blood into cells for energy or storage, which lowers blood glucose.",
+      "eli5": "Think of insulin like a school bus driver opening the doors so sugar kids can leave the road and go into their classroom cells."
+    },
+    {
+      "q": "What does glucagon, another hormone from the pancreas, do when blood glucose is low?",
+      "o": [
+        "It raises blood glucose by telling the liver to release stored glucose",
+        "It lowers blood glucose by pushing glucose into muscles",
+        "It slows the heartbeat to save energy",
+        "It stops digestion to save water"
+      ],
+      "a": 1,
+      "tip": "The pancreas makes glucagon, which raises blood glucose when it is low.",
+      "eli5": "Like a parent bringing snacks from the pantry when the kitchen is empty, glucagon tells the liver to share its saved sugar."
+    },
+    {
+      "q": "In a person without diabetes, what normally happens to blood glucose after eating a meal?",
+      "o": [
+        "It stays perfectly flat and never changes",
+        "It rises and then returns toward its starting level within a few hours",
+        "It drops to zero until the next meal",
+        "It keeps rising higher for the rest of the day"
+      ],
+      "a": 2,
+      "tip": "Blood glucose normally rises after meals and returns toward baseline within a few hours.",
+      "eli5": "Like a tide that comes in after rain and then goes back out, sugar rises after eating and then settles down."
+    },
+    {
+      "q": "After not eating for at least 8 hours overnight (a fasting test), what blood sugar level is commonly expected for an adult without diabetes?",
+      "o": [
+        "Under 100 mg per dL",
+        "126 mg per dL or higher",
+        "180 to 200 mg per dL",
+        "Below 40 mg per dL"
+      ],
+      "a": 1,
+      "tip": "A common fasting level for adults without diabetes is under 100 mg per dL.",
+      "eli5": "Think of the water level in a bathtub after draining overnight — it should be low and steady before you add more."
+    },
+    {
+      "q": "An A1c test shows your average blood sugar over about 2 to 3 months. Which result is generally considered normal?",
+      "o": [
+        "6.5% to 7.5%",
+        "Below 5.7%",
+        "8.0% to 9.0%",
+        "Above 10%"
+      ],
+      "a": 2,
+      "tip": "An A1c below 5.7 percent is generally considered in the normal range.",
+      "eli5": "Like a report card average for the whole term, a lower average means your sugar stayed calm most days."
+    },
+    {
+      "q": "Low blood sugar is called hypoglycemia. Below what level is blood sugar commonly defined as low?",
+      "o": [
+        "Below 140 mg per dL",
+        "Below 100 mg per dL",
+        "Below 70 mg per dL",
+        "Below 200 mg per dL"
+      ],
+      "a": 3,
+      "tip": "Hypoglycemia is commonly defined as blood sugar below 70 mg per dL.",
+      "eli5": "Think of a car gas tank hitting the red warning line — below that mark the engine starts to sputter."
+    },
+    {
+      "q": "After a meal with carbohydrates, what pattern is normal for blood sugar in a person without diabetes?",
+      "o": [
+        "It stays exactly the same as before eating",
+        "It drops sharply and stays low for many hours",
+        "It stays above 300 mg per dL all day",
+        "It rises for a while, then returns toward the starting level within a few hours"
+      ],
+      "a": 4,
+      "tip": "Blood glucose normally rises after meals and returns toward baseline within a few hours.",
+      "eli5": "Like a crowd after the school lunch rush, the hallway fills up then clears out again."
+    },
+    {
+      "q": "Fasting blood sugar in the prediabetes range is higher than normal but below diabetes. Which fasting range commonly describes prediabetes?",
+      "o": [
+        "100 to 125 mg per dL",
+        "Under 70 mg per dL",
+        "200 to 250 mg per dL",
+        "Under 50 mg per dL"
+      ],
+      "a": 1,
+      "tip": "Prediabetes fasting glucose is commonly 100 to 125 mg per dL, between normal and diabetes.",
+      "eli5": "Like a yellow traffic light between green and red, it means slow down and pay attention before it turns red."
+    },
+    {
+      "q": "At what A1c level is diabetes commonly diagnosed?",
+      "o": [
+        "4.0% or lower",
+        "6.5% or higher",
+        "5.0% to 5.2%",
+        "Below 5.7%"
+      ],
+      "a": 2,
+      "tip": "An A1c of 6.5 percent or higher is commonly used to diagnose diabetes.",
+      "eli5": "Like needing a certain score to make the team, reaching that number puts you in the diabetes range."
+    },
+    {
+      "q": "After you eat a meal with carbohydrates, your blood glucose goes up. What does a healthy pancreas normally do with insulin at that time?",
+      "o": [
+        "It stops making insulin completely",
+        "It releases more insulin into the blood",
+        "It switches to making only glucagon",
+        "It sends insulin to the stomach to block digestion"
+      ],
+      "a": 2,
+      "tip": "Rising blood glucose after eating normally triggers the pancreas to release more insulin.",
+      "eli5": "Like a kitchen that sends out more servers when lots of dinner orders come in."
+    },
+    {
+      "q": "When there is more glucose than cells need right now, what does insulin help the liver and muscles do with the extra?",
+      "o": [
+        "Help the kidneys remove it as sweat",
+        "Turn it into oxygen for breathing",
+        "Break it down into fiber for digestion",
+        "Help store it as glycogen in the liver and muscles for later use"
+      ],
+      "a": 4,
+      "tip": "Insulin promotes storage of extra glucose as glycogen in the liver and muscles.",
+      "eli5": "Like putting leftovers into lunch boxes in the fridge to eat tomorrow."
+    },
+    {
+      "q": "Doctors talk about 'insulin resistance' in type 2 diabetes. What does that term mean?",
+      "o": [
+        "Cells respond poorly to insulin, so glucose stays in the blood longer",
+        "The pancreas makes extra-strong insulin that works too fast",
+        "The immune system fights infections better because of insulin",
+        "Insulin completely stops being made for hours after meals"
+      ],
+      "a": 1,
+      "tip": "Insulin resistance means cells do not respond well to insulin.",
+      "eli5": "Like a door with a rusty lock where the key turns but the door is hard to open."
+    },
+    {
+      "q": "In type 1 diabetes, which is an autoimmune condition, what happens to insulin production?",
+      "o": [
+        "The pancreas makes too much insulin after every meal",
+        "The liver makes insulin instead of the pancreas",
+        "The pancreas makes little or no insulin",
+        "Cells use insulin too well so blood sugar stays high"
+      ],
+      "a": 3,
+      "tip": "In type 1 diabetes the pancreas makes little or no insulin.",
+      "eli5": "Like a bakery that closes down, so almost no bread goes out to the shops."
+    },
+    {
+      "q": "During exercise like brisk walking, muscles burn extra glucose for energy. How does this affect blood sugar compared to what insulin normally does?",
+      "o": [
+        "It raises blood sugar, which is opposite to insulin",
+        "It helps lower blood sugar, similar to insulin moving glucose out of the blood",
+        "It stops the pancreas from ever making insulin again",
+        "It has no effect on blood sugar at all"
+      ],
+      "a": 2,
+      "tip": "Physical activity lowers blood sugar because muscles use more glucose from the blood.",
+      "eli5": "Like shoppers clearing items off a store shelf, so the shelves get emptier faster."
+    },
+    {
+      "q": "When blood sugar is high, what message does insulin send to the liver about stored sugar?",
+      "o": [
+        "Keep releasing stored sugar into the blood quickly",
+        "Ignore blood sugar and make stress hormones instead",
+        "Change stored sugar into stomach acid",
+        "Stop releasing stored sugar and help store more as glycogen"
+      ],
+      "a": 4,
+      "tip": "When blood sugar is high, insulin signals the liver to stop releasing glucose and to store more.",
+      "eli5": "Like a teacher telling the class to stop handing out pencils and start collecting them back into the box."
+    },
+    {
+      "q": "The liver saves extra glucose for later use between meals. What is this stored form of glucose called?",
+      "o": [
+        "Insulin",
+        "Glycogen",
+        "Glucagon",
+        "Hemoglobin"
+      ],
+      "a": 2,
+      "tip": "The liver stores extra glucose as glycogen for later release.",
+      "eli5": "It's like cooking extra rice and saving it in containers for tomorrow's lunch."
+    },
+    {
+      "q": "When blood sugar is low, glucagon travels in the blood to help raise it. Which organ does glucagon mainly tell to release stored sugar?",
+      "o": [
+        "Lungs",
+        "Stomach",
+        "Kidneys",
+        "Liver"
+      ],
+      "a": 4,
+      "tip": "Glucagon raises low blood sugar mainly by signaling the liver to release stored glucose.",
+      "eli5": "It's like a school office calling the cafeteria to bring out stored snacks when kids are hungry."
+    },
+    {
+      "q": "How do insulin and glucagon work as a pair to manage blood sugar?",
+      "o": [
+        "Insulin lowers blood sugar while glucagon raises it",
+        "Both hormones lower blood sugar together",
+        "Both hormones raise blood sugar together",
+        "Insulin raises blood sugar while glucagon lowers it"
+      ],
+      "a": 1,
+      "tip": "Insulin lowers blood glucose while glucagon raises it to keep levels balanced.",
+      "eli5": "They are like a brother and sister sharing a thermostat, one cools the room and the other warms it."
+    },
+    {
+      "q": "What situation most directly signals the pancreas to release more glucagon?",
+      "o": [
+        "Blood sugar rising high right after a big meal",
+        "Blood sugar staying steady after a balanced snack",
+        "Blood sugar dropping low after many hours without food",
+        "Blood sugar staying normal during light walking"
+      ],
+      "a": 3,
+      "tip": "Low blood glucose is the main signal for the pancreas to release more glucagon.",
+      "eli5": "It is like a low-fuel light in a car telling you it is time to use the spare gas can."
+    },
+    {
+      "q": "During an overnight fast with no food, what do glucagon and the liver do together?",
+      "o": [
+        "Pull extra glucose out of the blood to lower sugar further",
+        "Put stored glucose back into the blood to keep sugar from dropping too low",
+        "Turn glucose into insulin to build muscle",
+        "Stop all sugar movement to save energy"
+      ],
+      "a": 2,
+      "tip": "During fasting, glucagon tells the liver to release glycogen as glucose to prevent blood sugar from dropping too low.",
+      "eli5": "Like a family using food from pantry jars overnight when the stores are closed."
+    },
+    {
+      "q": "After a meal rich in carbohydrates, when insulin is high, what does the liver mainly do with the extra glucose?",
+      "o": [
+        "Releases even more glucose into the blood",
+        "Sends glucose to the lungs to be breathed out",
+        "Changes glucose into glucagon",
+        "Stores the extra glucose as glycogen for later use"
+      ],
+      "a": 4,
+      "tip": "After meals, insulin helps the liver store extra glucose as glycogen for later.",
+      "eli5": "It is like putting shopping bags away into the pantry after a big grocery trip."
+    },
+    {
+      "q": "You eat two meals with the same amount of carbohydrate, but one meal also has plenty of fiber from beans and vegetables. What does the fiber most likely do to your blood sugar after the meal?",
+      "o": [
+        "It makes blood sugar rise faster and higher",
+        "It has no effect on how fast sugar enters the blood",
+        "It slows digestion so blood sugar rises more gradually",
+        "It turns directly into extra glucose in the stomach"
+      ],
+      "a": 3,
+      "tip": "Fiber slows digestion and can reduce sharp rises in blood sugar after meals.",
+      "eli5": "Like speed bumps slowing cars on a road, fiber slows digestion so sugar enters the blood more slowly."
+    },
+    {
+      "q": "Why does whole-grain bread usually raise blood sugar more slowly than white bread made from refined flour?",
+      "o": [
+        "Whole grains keep more fiber, which takes longer to digest",
+        "Whole grains have no carbohydrates at all",
+        "White bread has more water that slows down sugar",
+        "Whole grains stop insulin from working"
+      ],
+      "a": 1,
+      "tip": "Whole grains generally raise blood sugar more slowly than refined grains because their fiber slows digestion.",
+      "eli5": "Think of whole logs burning slowly in a fireplace versus shredded paper flaring up fast."
+    },
+    {
+      "q": "Why do sugary drinks like regular soda tend to raise blood sugar more quickly than solid foods with a similar amount of sugar?",
+      "o": [
+        "Soda has protein that pushes sugar into the blood",
+        "Solid food has no carbohydrates to digest",
+        "Soda stops the pancreas from making insulin",
+        "Liquid sugar needs very little digestion and is absorbed fast"
+      ],
+      "a": 4,
+      "tip": "Sugary drinks raise blood sugar quickly because liquid sugar is absorbed fast.",
+      "eli5": "Like pouring water through a funnel versus pushing thick dough through, liquid sugar flows into the blood much faster."
+    },
+    {
+      "q": "Compared with carbohydrates, how do protein and fat in foods like eggs, nuts, or oil usually affect blood sugar soon after a meal?",
+      "o": [
+        "They raise blood sugar much faster than carbohydrates do",
+        "They do not raise blood sugar as quickly as carbohydrates do",
+        "They cause the same instant spike as pure sugar",
+        "They turn into glucose before they leave the mouth"
+      ],
+      "a": 2,
+      "tip": "Protein and fat do not raise blood sugar as quickly as carbohydrates do.",
+      "eli5": "If carbs are like dry leaves catching fire fast, protein and fat are like damp wood that burns much slower."
+    },
+    {
+      "q": "You eat white toast alone one day, and white toast with peanut butter, which adds protein, fat, and fiber, another day. What most likely happens to blood sugar when you add the peanut butter?",
+      "o": [
+        "Blood sugar rises more slowly and peaks lower than with toast alone",
+        "Blood sugar rises much faster and higher than with toast alone",
+        "Blood sugar drops below the fasting level right away",
+        "Peanut butter removes all carbohydrate from the toast"
+      ],
+      "a": 1,
+      "tip": "Adding protein, fat, and fiber to carbohydrates slows digestion and reduces the sharp rise in blood sugar.",
+      "eli5": "Like adding heavy passengers to a fast car, protein and fat slow down how quickly the carb sugar gets into the blood."
+    },
+    {
+      "q": "Most starch and sugar from food are broken down into glucose, but fiber is a different type of carbohydrate. What happens to most fiber during digestion?",
+      "o": [
+        "It is quickly turned into glucose in the stomach",
+        "It is not fully broken down into glucose and helps slow digestion",
+        "It is turned into insulin by the pancreas",
+        "It is stored as glycogen in the liver"
+      ],
+      "a": 2,
+      "tip": "Most fiber is not broken down into glucose and it helps slow digestion.",
+      "eli5": "Like the stringy strings on celery you cannot chew apart, fiber passes through mostly whole and holds other food back with it."
+    },
+    {
+      "q": "The glycemic index (GI) ranks carbohydrate foods on a scale from 0 to 100. What does that number actually measure?",
+      "o": [
+        "How many calories the food contains per serving",
+        "How much fiber and vitamins the food contains",
+        "How quickly the carbohydrate in the food raises blood sugar compared to pure glucose",
+        "How much fat and protein the food contains"
+      ],
+      "a": 3,
+      "tip": "Glycemic index measures the speed of the blood sugar rise from a food's carbohydrate compared to pure glucose.",
+      "eli5": "Think like race cars on a track — pure glucose is the fastest car, and GI tells you how close other carb foods come to that speed."
+    },
+    {
+      "q": "A GI of 55 or less is usually called low, and 70 or more is called high. Which of these GI values is in the low-GI range?",
+      "o": [
+        "40",
+        "65",
+        "78",
+        "92"
+      ],
+      "a": 1,
+      "tip": "A GI of 55 or less is considered low.",
+      "eli5": "Like a school quiz where a smaller number means slower and gentler — 40 is in the slow group."
+    },
+    {
+      "q": "How is glycemic load (GL) different from glycemic index (GI)?",
+      "o": [
+        "GL measures only vitamins and minerals, while GI measures sugar",
+        "GL measures only fat content, while GI measures carbohydrate",
+        "GI measures portion size, while GL measures only the speed of digestion",
+        "GL accounts for both how fast a food raises blood sugar and how much carbohydrate is in the serving"
+      ],
+      "a": 4,
+      "tip": "Glycemic load combines GI with the grams of carbohydrate in the serving.",
+      "eli5": "GI is how fast each car can go, GL is speed plus how many cars are on the road — speed plus amount."
+    },
+    {
+      "q": "You eat one slice of bread with a certain GI, then you eat a second identical slice. What happens to the glycemic load (GL) you get?",
+      "o": [
+        "It stays exactly the same because GI did not change",
+        "It roughly doubles because you ate twice as much carbohydrate",
+        "It drops by half because your stomach digests faster",
+        "It drops to zero because the second slice has no extra effect"
+      ],
+      "a": 2,
+      "tip": "Eating a larger portion of the same carbohydrate increases glycemic load because GL depends on amount.",
+      "eli5": "Like adding a second spoon of sugar to tea — same kind of sugar, but double the amount makes it sweeter."
+    },
+    {
+      "q": "Watermelon has a high GI of about 75, but a typical wedge has a low glycemic load of about 5. Why can both be true at once?",
+      "o": [
+        "A wedge has very little total carbohydrate because it is mostly water, so the total rise per serving is small",
+        "Watermelon has no carbohydrate at all, so GI testing does not work",
+        "Glycemic load is always the opposite of glycemic index for fruits",
+        "A wedge has extra fat and protein that cancel out all the sugar"
+      ],
+      "a": 1,
+      "tip": "A food can have a high GI but low GL when a normal serving contains only a few grams of carbohydrate.",
+      "eli5": "Like a fast sprinter who only runs for ten seconds — very speedy, but does not go far because the run is so short."
+    },
+    {
+      "q": "Which of these meal choices would likely have the lowest glycemic effect on blood sugar?",
+      "o": [
+        "White toast with jam and sugary soda",
+        "A large portion of white rice eaten alone",
+        "Steel-cut oats with peanuts and apple slices",
+        "A large glass of fruit juice on an empty stomach"
+      ],
+      "a": 3,
+      "tip": "Adding fiber, protein, and fat and choosing less-refined grains slows digestion and lowers the glycemic response.",
+      "eli5": "Like cooking on low heat with a lid on — fiber, nuts, and whole grains put the brakes on so sugar enters the blood more slowly."
+    },
+    {
+      "q": "A person with diabetes feels suddenly shaky, sweaty, and very hungry a few hours after taking insulin. Which condition do these early signs most likely point to?",
+      "o": [
+        "High blood sugar (hyperglycemia), when there is too much glucose in the blood",
+        "Dehydration, when the body does not have enough water",
+        "Low blood sugar (hypoglycemia), when there is not enough glucose to fuel cells",
+        "A stomach bug from spoiled food"
+      ],
+      "a": 3,
+      "tip": "Shakiness, sweating, and sudden hunger are classic early warning signs of low blood sugar.",
+      "eli5": "Like a car sputtering when the gas tank is almost empty, the body shakes and rumbles when it needs fuel."
+    },
+    {
+      "q": "When blood sugar drops low, many people get shaky hands, a pounding heartbeat, and nervous sweating together. What causes this alarm reaction?",
+      "o": [
+        "The body releases alert hormones such as adrenaline because fuel is low",
+        "The kidneys make extra urine to remove sugar",
+        "The stomach stops digesting carbohydrates",
+        "The liver stores extra water and salt"
+      ],
+      "a": 1,
+      "tip": "Low glucose triggers adrenaline release, which causes shaking, sweating, and a fast heartbeat.",
+      "eli5": "Like a fire alarm ringing when there is smoke, adrenaline rings the body's alarm when sugar runs low."
+    },
+    {
+      "q": "The brain needs a steady supply of glucose to work well. Which group of symptoms best shows the brain is running low on sugar during hypoglycemia (low blood sugar)?",
+      "o": [
+        "Strong thirst and needing to urinate often",
+        "Warm skin and feeling full after eating",
+        "Steady energy and clear thinking",
+        "Confusion, trouble concentrating, headache, and blurry vision"
+      ],
+      "a": 4,
+      "tip": "When the brain lacks glucose, thinking, vision, and coordination suffer.",
+      "eli5": "Like a phone dimming and glitching on 1% battery, the brain gets fuzzy without enough sugar power."
+    },
+    {
+      "q": "Maria takes medicine that lowers blood sugar in the morning, then skips lunch. In the afternoon she feels dizzy, irritable, weak, and very hungry. What is the most likely explanation?",
+      "o": [
+        "Her blood sugar is rising slowly from fiber in her breakfast",
+        "Her blood sugar has dropped too low because no food replaced the glucose that was used",
+        "Her blood sugar is high from drinking too little water",
+        "Her long-term A1c average changed within one hour"
+      ],
+      "a": 2,
+      "tip": "Skipping meals after glucose-lowering medicine can cause blood sugar to fall too low.",
+      "eli5": "Like spending money with no paycheck coming in, using up sugar without eating leaves the account empty."
+    },
+    {
+      "q": "Which symptom is more typical of high blood sugar (hyperglycemia) than of low blood sugar (hypoglycemia)?",
+      "o": [
+        "Sudden shakiness or trembling hands",
+        "Extreme thirst with frequent urination",
+        "Sudden cold sweating",
+        "Sudden intense hunger"
+      ],
+      "a": 2,
+      "tip": "Extreme thirst and frequent urination are typical of high blood sugar, not low blood sugar.",
+      "eli5": "Like an overflowing sink that keeps needing mopping and refilling, extra sugar spills into urine and makes you very thirsty."
+    },
+    {
+      "q": "Which signs suggest low blood sugar has become severe and the person needs urgent help from others?",
+      "o": [
+        "Mild hunger that eases quickly",
+        "Slight thirst after a salty snack",
+        "Calm mood with clear thinking",
+        "Slurred speech, clumsiness, extreme sleepiness, or fainting"
+      ],
+      "a": 4,
+      "tip": "Severe low blood sugar impairs the brain and can cause slurred speech, clumsiness, drowsiness, or loss of consciousness.",
+      "eli5": "Like a laptop shutting down when the battery dies, the brain starts to shut down and the person cannot think or move right."
+    },
+    {
+      "q": "Hyperglycemia means high blood sugar. Which group of early signs fits hyperglycemia best?",
+      "o": [
+        "Shakiness, sweating, and sudden hunger that comes on quickly",
+        "Increased thirst, urinating often, and feeling tired",
+        "Fever, cough, and sore throat with body aches",
+        "Sudden sweating and confusion that improves after eating sugar"
+      ],
+      "a": 2,
+      "tip": "Hyperglycemia commonly causes increased thirst, frequent urination, and fatigue.",
+      "eli5": "Think of extra sugar like extra salt in soup — your body tries to flush it with water, so you pee more and get thirsty."
+    },
+    {
+      "q": "When blood sugar stays high, why does a person often need to urinate more often?",
+      "o": [
+        "The pancreas releases extra water to wash sugar out of the blood",
+        "The liver turns extra blood sugar directly into urine",
+        "High sugar makes the bladder muscles squeeze more often on their own",
+        "The kidneys spill extra glucose into the urine, and extra water leaves with it"
+      ],
+      "a": 4,
+      "tip": "In hyperglycemia the kidneys excrete excess glucose in urine, pulling water with it and increasing urination.",
+      "eli5": "Like sugar spilled on a wet counter drags more water when you wipe it, extra sugar in urine drags water along."
+    },
+    {
+      "q": "Why do people with ongoing high blood sugar often feel very thirsty with a dry mouth?",
+      "o": [
+        "Losing extra fluid through frequent urination causes dehydration and thirst",
+        "High blood sugar makes the stomach produce extra acid that dries the mouth",
+        "Sweating from low blood sugar dries out the mouth very quickly",
+        "Extra insulin in the blood absorbs water from the mouth tissues"
+      ],
+      "a": 1,
+      "tip": "Fluid loss from frequent urination in hyperglycemia leads to dehydration, thirst, and dry mouth.",
+      "eli5": "Like losing water from a leaky bucket, peeing out extra fluid leaves you empty and thirsty for a refill."
+    },
+    {
+      "q": "A person with high blood sugar has plenty of glucose in the blood but still feels tired and weak. Why?",
+      "o": [
+        "Extra glucose thickens the blood so the heart beats too slowly",
+        "Extra glucose is used up too fast by muscles, leaving no energy",
+        "Without enough effective insulin, glucose stays in the blood instead of entering cells for energy",
+        "Extra glucose blocks oxygen from reaching the brain during the day"
+      ],
+      "a": 3,
+      "tip": "Fatigue in hyperglycemia happens because glucose remains in the blood rather than entering cells for energy when insulin is lacking or not working well.",
+      "eli5": "Like groceries stuck on the porch with a locked front door, sugar stuck in the blood cannot get inside cells to fuel them."
+    },
+    {
+      "q": "Which eyesight change can happen when blood sugar stays high for days?",
+      "o": [
+        "Seeing only at night and not during the day",
+        "Needing brighter light because the pupils shrink permanently",
+        "Losing side vision with eye pain that never changes",
+        "Blurry vision that often improves as blood sugar returns toward its usual range"
+      ],
+      "a": 4,
+      "tip": "High blood sugar can cause temporary blurry vision from fluid shifts in the eye's lens.",
+      "eli5": "Like looking through watery plastic wrap, a swollen lens bends light the wrong way until fluid levels settle."
+    },
+    {
+      "q": "Which group of signs with very high blood sugar is a warning of a serious emergency and needs urgent medical care?",
+      "o": [
+        "Nausea, vomiting, belly pain, fruity-smelling breath, and confusion",
+        "Mild thirst and needing to urinate once extra at night",
+        "Slight hunger before lunch and brief tiredness after a big meal",
+        "Dry skin in winter and needing water after salty food"
+      ],
+      "a": 1,
+      "tip": "Very high blood sugar with nausea, vomiting, belly pain, fruity breath, rapid breathing, or confusion can signal diabetic ketoacidosis and needs emergency care.",
+      "eli5": "Like a smoke alarm plus the smell of smoke means call for help fast, those combined warning signs mean get medical help right away."
+    },
+    {
+      "q": "Lena has type 1 diabetes, which means her pancreas makes little or no insulin. What does this mean for managing her blood sugar day to day?",
+      "o": [
+        "She can manage it by drinking extra water alone with no medicine",
+        "She needs insulin every day, usually by shot or pump, because her body does not make it",
+        "She only needs one insulin shot per year like a vaccine",
+        "She needs no medicine if she avoids all protein and fat"
+      ],
+      "a": 2,
+      "tip": "Type 1 diabetes requires lifelong daily insulin because the body makes little or no insulin on its own.",
+      "eli5": "Like a phone with a dead battery that needs a charger every day, her body needs insulin from outside every day to work."
+    },
+    {
+      "q": "What causes type 1 diabetes inside the body?",
+      "o": [
+        "Muscles slowly stop responding to insulin after many years",
+        "The liver stores too much glycogen and blocks insulin from working",
+        "Eating a lot of sugar at once destroys the pancreas overnight",
+        "The immune system mistakenly attacks and destroys the insulin-making cells in the pancreas"
+      ],
+      "a": 4,
+      "tip": "Type 1 diabetes is an autoimmune condition where the immune system destroys pancreatic cells that make insulin.",
+      "eli5": "It is like security guards in a building mistakenly breaking the kitchen, so no meals can be made anymore."
+    },
+    {
+      "q": "How is type 1 diabetes different from type 2 diabetes?",
+      "o": [
+        "In type 1 the body makes little or no insulin from the start; in type 2 the body resists insulin and slowly makes less over time",
+        "In type 1 the body makes too much insulin; in type 2 the body makes no glucagon",
+        "In type 1 only blood sugar after meals is high; in type 2 only fasting sugar is high",
+        "In type 1 the liver makes insulin; in type 2 the pancreas makes glucagon"
+      ],
+      "a": 1,
+      "tip": "Type 1 is mainly lack of insulin from autoimmune damage, while type 2 is mainly insulin resistance with gradual loss of insulin.",
+      "eli5": "Type 1 is like a factory that closed down, while type 2 is like doors with rusty locks plus a factory slowing down."
+    },
+    {
+      "q": "Without enough insulin, glucose stays in the blood and cannot move into cells well for energy. How does the body try to get energy, and what is the risk in type 1 diabetes?",
+      "o": [
+        "It stores extra water, which safely lowers blood sugar with no risk",
+        "It makes extra insulin on its own, which quickly fixes the problem",
+        "It burns a lot of fat for energy, which can make harmful acids called ketones build up",
+        "It turns glucose into fiber, which blocks digestion completely"
+      ],
+      "a": 3,
+      "tip": "Without insulin, cells starve and the body burns fat rapidly, which can cause a dangerous buildup of ketones.",
+      "eli5": "Like burning scrap wood when the gas is cut off, the smoky buildup from burning fat can poison the house."
+    },
+    {
+      "q": "A friend tells a teen with type 1 diabetes that cutting out all sugar and exercising a lot will cure it so insulin is no longer needed. What is true?",
+      "o": [
+        "Healthy eating and activity help control blood sugar but cannot replace insulin because the body still makes little or no insulin",
+        "Cutting out sugar regrows the insulin-making cells within a few weeks",
+        "Exercise replaces insulin completely if done every morning",
+        "Skipping carbohydrates cures the autoimmune attack permanently"
+      ],
+      "a": 1,
+      "tip": "Lifestyle habits help manage type 1 diabetes but cannot cure it or replace daily insulin.",
+      "eli5": "Like steering and brakes help drive safely, but a car with no fuel still needs fuel to run."
+    },
+    {
+      "q": "Which statement about who gets type 1 diabetes is most accurate?",
+      "o": [
+        "It only happens in older adults who have extra weight",
+        "It is caused by eating too many sweets as a child",
+        "It only happens if a parent has type 2 diabetes",
+        "It often starts in childhood or the teen years but can start at any age and is not caused by lifestyle alone"
+      ],
+      "a": 4,
+      "tip": "Type 1 diabetes often begins in youth but can occur at any age and is autoimmune, not caused by diet or weight alone.",
+      "eli5": "Like a storm that often comes in spring but can happen any season, it can start at any age."
+    },
+    {
+      "q": "Type 2 diabetes involves two related problems with insulin. What are they?",
+      "o": [
+        "The immune system quickly destroys all insulin-making cells so no insulin is made",
+        "The liver stops storing any sugar and only too much glucagon is made",
+        "Body cells respond poorly to insulin, and over time the pancreas cannot make enough extra insulin",
+        "Insulin works too well so blood sugar is always too low"
+      ],
+      "a": 3,
+      "tip": "Type 2 diabetes involves insulin resistance plus gradual loss of enough insulin production.",
+      "eli5": "Like a key that gets rusty in the lock, then the key-maker gets tired from making extra copies."
+    },
+    {
+      "q": "Which combination of factors most raises a person's chance of developing type 2 diabetes?",
+      "o": [
+        "Having extra body weight, being inactive, and having close family members with type 2 diabetes",
+        "Being very active, eating high-fiber foods, and keeping a healthy weight",
+        "Having plenty of sleep and drinking only water every day",
+        "Having type 1 diabetes as a child and taking insulin shots"
+      ],
+      "a": 1,
+      "tip": "Extra weight, little activity, family history, and older age raise the risk of type 2 diabetes.",
+      "eli5": "Like carrying a heavy backpack every day while rarely exercising, it wears the body out faster."
+    },
+    {
+      "q": "Type 2 diabetes often develops slowly over years. What does that mean for early symptoms?",
+      "o": [
+        "Severe shaking, sweating, and confusion within minutes after eating sugar",
+        "Sudden high fever and skin rash that go away in a day",
+        "Sharp stomach pain right after one high-sugar drink",
+        "Mild thirst, needing to pee often, feeling tired, and cuts healing slowly"
+      ],
+      "a": 4,
+      "tip": "Early type 2 diabetes often causes mild high-blood-sugar signs like thirst, frequent urination, and fatigue.",
+      "eli5": "Like a slow faucet leak, you may not notice at first until the sink starts to fill."
+    },
+    {
+      "q": "Why do walking after meals, healthy eating, and losing extra weight help control blood sugar in type 2 diabetes?",
+      "o": [
+        "Exercise stops the pancreas from making any insulin so sugar stays in the blood",
+        "Active muscles use more blood glucose and body cells respond better to insulin",
+        "Weight loss makes the liver release extra sugar all day to keep energy high",
+        "Healthy eating removes all carbohydrates so blood sugar can never rise"
+      ],
+      "a": 2,
+      "tip": "Physical activity lowers blood sugar by increasing glucose use by muscles and improving insulin response.",
+      "eli5": "Like opening more doors to a busy store so shoppers get inside faster and the line outside shrinks."
+    },
+    {
+      "q": "How is early treatment for type 2 diabetes often different from treatment for type 1 diabetes?",
+      "o": [
+        "Healthy eating, activity, and sometimes medicines that help insulin work better, with insulin shots not always needed at first",
+        "Insulin shots are always required from day one and lifestyle changes do not help",
+        "No treatment is needed because type 2 always goes away on its own in weeks",
+        "Only sugary drinks are used to raise blood sugar back to normal"
+      ],
+      "a": 1,
+      "tip": "Type 2 is often first managed with lifestyle changes and medicines that improve insulin response, while type 1 always needs insulin.",
+      "eli5": "Like fixing a sticky door by cleaning the hinges first before buying a whole new door."
+    },
+    {
+      "q": "If type 2 diabetes stays high and unmanaged for many years, which health problems are most likely?",
+      "o": [
+        "Stronger bones and sharper eyesight within a few months",
+        "Only brief low blood sugar with no long-term effects",
+        "Higher chance of damage to the eyes, kidneys, nerves, and heart over years",
+        "The pancreas heals completely and diabetes disappears without care"
+      ],
+      "a": 3,
+      "tip": "Long-term untreated high blood sugar can damage the eyes, kidneys, nerves, and heart.",
+      "eli5": "Like sugary water left in pipes for years, it slowly rusts and clogs the whole system."
+    },
+    {
+      "q": "You are told you have prediabetes. What does that mean about your blood sugar levels?",
+      "o": [
+        "Your blood sugar is higher than normal but still below the level used to diagnose diabetes",
+        "Your blood sugar is lower than normal and you need sugar right away",
+        "Your blood sugar is already in the diabetes range and cannot change",
+        "Your blood sugar is always normal and will never rise"
+      ],
+      "a": 1,
+      "tip": "Prediabetes means blood sugar is above normal but below the diabetes threshold.",
+      "eli5": "Like a yellow traffic light between green and red, prediabetes is a warning zone before diabetes."
+    },
+    {
+      "q": "Which hemoglobin A1c result, which shows average blood sugar over 2 to 3 months, is commonly in the prediabetes range?",
+      "o": [
+        "4.8 percent",
+        "5.2 percent",
+        "6.0 percent",
+        "7.2 percent"
+      ],
+      "a": 3,
+      "tip": "Prediabetes is commonly defined as an A1c of 5.7 percent to 6.4 percent.",
+      "eli5": "Think of A1c like a school grade average; 6.0 is not failing yet but worse than a good grade below 5.7."
+    },
+    {
+      "q": "After fasting for at least 8 hours with no food, which blood sugar result commonly points to diabetes rather than prediabetes?",
+      "o": [
+        "82 mg per dL",
+        "95 mg per dL",
+        "112 mg per dL",
+        "132 mg per dL on more than one test"
+      ],
+      "a": 4,
+      "tip": "Fasting glucose of 126 mg per dL or higher on repeat testing is commonly used to diagnose diabetes.",
+      "eli5": "Like needing two high weigh-ins to set a record, doctors look for 126 or higher more than once."
+    },
+    {
+      "q": "In an oral glucose tolerance test you drink a sugary liquid and blood sugar is checked 2 hours later. Which 2-hour value is commonly in the prediabetes range?",
+      "o": [
+        "85 mg per dL",
+        "165 mg per dL",
+        "215 mg per dL",
+        "65 mg per dL"
+      ],
+      "a": 2,
+      "tip": "A 2-hour result of 140 to 199 mg per dL is commonly classified as prediabetes.",
+      "eli5": "Like timing how fast a sink drains, 165 drains too slowly for normal but is not as clogged as diabetes."
+    },
+    {
+      "q": "Why is prediabetes often found only during a routine blood test?",
+      "o": [
+        "Because blood tests are wrong most of the time",
+        "Because prediabetes usually causes no clear symptoms, so people feel fine",
+        "Because prediabetes always causes extreme thirst and fainting",
+        "Because only children can develop prediabetes"
+      ],
+      "a": 2,
+      "tip": "Prediabetes usually has no obvious symptoms, so testing is needed to find it.",
+      "eli5": "Like a tiny leak under the sink you cannot see, prediabetes hides until a test spots it."
+    },
+    {
+      "q": "If your first fasting test is high enough for diabetes but you have no symptoms, why will the doctor usually repeat the test on a different day?",
+      "o": [
+        "To use up extra test strips in the clinic",
+        "To see if you ate enough sugar before the next test",
+        "To confirm the result was not temporary or a lab error before diagnosing diabetes",
+        "To wait until the problem goes away on its own"
+      ],
+      "a": 3,
+      "tip": "A diabetes diagnosis is usually confirmed with repeat testing on another day.",
+      "eli5": "Like retaking a blurry photo to be sure, a second test makes sure the high number is real."
+    },
+    {
+      "q": "An A1c test is sometimes called a hemoglobin A1c test. What does it actually measure in the blood?",
+      "o": [
+        "The amount of insulin the pancreas made that morning",
+        "The amount of cholesterol floating in the liquid part of blood",
+        "The percentage of hemoglobin in red blood cells that has glucose stuck to it",
+        "The number of white blood cells available to fight infection"
+      ],
+      "a": 3,
+      "tip": "A1c measures the percentage of hemoglobin that is coated with glucose.",
+      "eli5": "Think of red blood cells like red delivery trucks. A1c counts how many trucks got sticky sugar splashed on them."
+    },
+    {
+      "q": "Why is the A1c test described as showing average blood sugar over about 2 to 3 months, rather than just today?",
+      "o": [
+        "Because red blood cells that carry the sugar coating live for about 3 months before being replaced",
+        "Because the liver only releases stored sugar once every 3 months",
+        "Because insulin stays in the blood for 2 to 3 months after it is made",
+        "Because glucose takes 2 to 3 months to travel from food into the blood"
+      ],
+      "a": 1,
+      "tip": "Red blood cells live about 2 to 3 months, so their sugar coating reflects that whole period.",
+      "eli5": "Like tree rings show months of growth, old red cells carry months of sugar history until new cells replace them."
+    },
+    {
+      "q": "Jamal gets an A1c result of 6.0 percent. His doctor says it is above normal but below the diabetes range. What category does this result fall into?",
+      "o": [
+        "Normal range",
+        "Low blood sugar emergency",
+        "Diabetes range",
+        "Prediabetes range"
+      ],
+      "a": 4,
+      "tip": "An A1c from 5.7 percent to below 6.5 percent is generally in the prediabetes range.",
+      "eli5": "Like a yellow traffic light between green and red, prediabetes is a warning zone between normal and diabetes."
+    },
+    {
+      "q": "For a fasting blood glucose test, you are asked to have nothing to eat or drink except water for at least 8 hours. Why is fasting needed?",
+      "o": [
+        "To make red blood cells live longer so the test can find them",
+        "To measure the baseline level without a recent meal raising it",
+        "To force the pancreas to stop making all hormones for the day",
+        "To dehydrate the blood so glucose is easier to see"
+      ],
+      "a": 2,
+      "tip": "Fasting removes the effect of a recent meal so the result shows the baseline glucose level.",
+      "eli5": "Like weighing yourself before breakfast for a steady number, fasting gives a clean starting point without food noise."
+    },
+    {
+      "q": "Lena's morning fingertip meter often reads around 95 mg per dL, but her A1c is high at 8.5 percent. How can a normal morning reading and a high A1c both be true?",
+      "o": [
+        "A fingertip check shows glucose at that moment, while A1c reflects the average over months, so high readings later in the day can raise A1c",
+        "A1c only measures low blood sugar episodes, so it ignores normal morning readings",
+        "A fingertip meter shows the 3-month average and A1c shows only that morning moment",
+        "Both tests measure exactly the same moment, so one of the results must be a lab mistake"
+      ],
+      "a": 1,
+      "tip": "A meter shows one moment in time, while A1c shows the average over 2 to 3 months.",
+      "eli5": "Like one sunny morning photo versus a whole season weather report, one good morning does not erase many high afternoons."
+    },
+    {
+      "q": "What does a continuous glucose monitor (CGM) do differently from a standard fingertip blood glucose meter?",
+      "o": [
+        "It measures blood cholesterol once a year from a vein in the arm",
+        "It measures how much insulin the pancreas is making each hour",
+        "It uses a small sensor under the skin to check glucose often and show trends up or down",
+        "It tests urine for sugar instead of testing blood for glucose"
+      ],
+      "a": 3,
+      "tip": "A CGM uses a sensor under the skin to track glucose levels and trends over time.",
+      "eli5": "Like a video versus a single photo, a CGM records the movie of sugar going up and down all day."
+    },
+    {
+      "q": "With a standard home blood glucose meter, what sample do you test to get your reading?",
+      "o": [
+        "A small sample of urine on a dipstick",
+        "A breath sample blown into the meter",
+        "A small drop of blood, usually from the fingertip, on a test strip",
+        "A saliva sample collected on the tongue"
+      ],
+      "a": 3,
+      "tip": "Standard blood glucose meters measure glucose from a small drop of capillary blood, usually from the fingertip.",
+      "eli5": "Like pricking a juice box for one tiny drop to taste, the meter needs one tiny drop of blood to check the sugar level."
+    },
+    {
+      "q": "Where does the tiny sensor of a continuous glucose monitor (CGM) sit while you wear it?",
+      "o": [
+        "Just under the skin, measuring glucose in the fluid between cells every few minutes",
+        "Inside the stomach to test food as it digests",
+        "Deep in a large vein to pump blood out for testing",
+        "On a tooth to test saliva when you chew"
+      ],
+      "a": 1,
+      "tip": "A CGM uses a small filament worn just under the skin to track glucose in interstitial fluid and show trends.",
+      "eli5": "Like a tiny weather station placed just under the surface, it sends updates every few minutes without a finger prick each time."
+    },
+    {
+      "q": "Why do meter instructions tell you to wash and fully dry your hands before a fingertip check?",
+      "o": [
+        "To warm the blood so the meter runs faster",
+        "To kill germs that drain the meter battery",
+        "To make the skin tougher so lancing hurts less",
+        "To remove food or sugar residue that could falsely change the reading"
+      ],
+      "a": 4,
+      "tip": "Sugar or food left on the fingers can mix with the blood drop and cause a falsely high reading.",
+      "eli5": "Like jam left on your fingers changing how something tastes, leftover food on skin can trick the meter."
+    },
+    {
+      "q": "To learn how lunch affects your blood sugar with a fingertip meter, which pair of checks is most useful?",
+      "o": [
+        "Two checks right before lunch, one minute apart",
+        "One check just before lunch and one about 2 hours after starting lunch",
+        "One check at bedtime and one at 3 a.m.",
+        "One check during exercise and one right after drinking water"
+      ],
+      "a": 2,
+      "tip": "Comparing a pre-meal reading with a reading about 2 hours after starting the meal shows how much that meal raised glucose.",
+      "eli5": "Like a before-and-after photo of a messy room, the two numbers show how much the meal changed things."
+    },
+    {
+      "q": "What makes a continuous glucose monitor (CGM) beep or vibrate to warn about nighttime low blood sugar?",
+      "o": [
+        "It detects or predicts glucose falling below your set low limit, often around 70 mg per dL",
+        "It detects that you rolled over in bed and the sensor moved",
+        "It detects a high heart rate from a dream",
+        "It detects that the skin under the patch is sweaty"
+      ],
+      "a": 1,
+      "tip": "CGMs can be set to alarm automatically when sensor glucose crosses a low threshold or is falling fast.",
+      "eli5": "Like a smoke alarm that rings before you see fire, the CGM rings when sugar is dropping too low."
+    },
+    {
+      "q": "Why do doctors ask you to write down the time, recent food, activity, and diabetes medicine next to each meter reading?",
+      "o": [
+        "To use up the memory in the meter faster",
+        "To prove you bought enough test strips",
+        "To link each number to its likely cause and spot patterns over days",
+        "To change the meter reading to a lower number"
+      ],
+      "a": 3,
+      "tip": "A glucose number alone is a snapshot; notes about meals, activity, and medicine help explain why it is high or low.",
+      "eli5": "Like writing the recipe next to a cake score, notes show why the sugar number came out that way."
+    },
+    {
+      "q": "For dinner you have chicken, broccoli, and white rice. One day you mix it all together. Another day you eat the chicken and broccoli first, then eat the rice about 10 minutes later. What usually happens to blood sugar when you eat the protein and vegetables first?",
+      "o": [
+        "Blood sugar rises higher and faster because digestion starts earlier",
+        "Blood sugar stays flat because rice has no effect if eaten last",
+        "Blood sugar usually rises more slowly to a lower peak after the meal",
+        "Blood sugar drops low right after the meal because of the vegetables"
+      ],
+      "a": 3,
+      "tip": "Eating protein, fat, and fiber before carbohydrate slows stomach emptying and glucose absorption.",
+      "eli5": "It is like letting buses go first before cars — the rice sugar joins the blood road more slowly and does not jam up all at once."
+    },
+    {
+      "q": "You eat 1/2 cup of cooked rice one day and 2 cups of the same cooked rice another day, with nothing else eaten. What is the main effect of the larger portion on blood sugar?",
+      "o": [
+        "It causes a larger total rise because there is more carbohydrate to turn into glucose",
+        "It causes the same rise because the food type is the same",
+        "It causes a smaller rise because a full stomach digests more slowly",
+        "It causes no rise because rice starch does not turn into glucose"
+      ],
+      "a": 1,
+      "tip": "Total amount of carbohydrate is a major driver of how much blood sugar rises.",
+      "eli5": "It is like adding scoops of sugar to tea — two big scoops sweeten more than half a scoop, even if it is the same sugar."
+    },
+    {
+      "q": "You have two bananas of the same size: one green and slightly unripe, and one very ripe with brown spots. Which one usually raises blood sugar faster, and why?",
+      "o": [
+        "The green banana, because it has more water that speeds absorption",
+        "The green banana, because unripe fiber turns directly into fat",
+        "Both raise blood sugar exactly the same because size is the same",
+        "The ripe banana, because much of its starch has already turned to sugar"
+      ],
+      "a": 4,
+      "tip": "As fruit ripens, starch converts to simple sugars that are digested and absorbed faster.",
+      "eli5": "Think of a green banana as hard Lego bricks and a ripe banana as loose beads — the beads pour out much faster."
+    },
+    {
+      "q": "You compare hot, freshly cooked potatoes with the same potatoes cooled overnight in the fridge and eaten cold as potato salad. What usually happens with the cooled potatoes?",
+      "o": [
+        "They raise blood sugar much faster because cold food digests faster",
+        "They cause a smaller rise because some starch becomes resistant starch that digests slowly",
+        "They contain no carbohydrate anymore because cooling destroys it",
+        "They raise blood sugar the same but cause dehydration"
+      ],
+      "a": 2,
+      "tip": "Cooling cooked starch forms resistant starch, which is digested more slowly.",
+      "eli5": "It is like hot pasta going soft, then firming up in the fridge — the firmed-up bits are harder for your tummy to break down quickly."
+    },
+    {
+      "q": "A person drinks alcohol, such as beer or liquor, on an empty stomach without eating any food. What can happen to blood sugar in the next few hours?",
+      "o": [
+        "It always rises very high because alcohol turns quickly into glucose",
+        "It stays exactly the same because alcohol has no effect on the liver",
+        "It may drop too low because alcohol makes it harder for the liver to release stored sugar"
+      ],
+      "a": 3,
+      "tip": "Alcohol without food can lower blood sugar because it blocks the liver from releasing glucose.",
+      "eli5": "The liver is like a backup snack box, but alcohol locks the box for a while, so blood sugar can run low with no food coming in."
+    },
+    {
+      "q": "Both are plain oats with the same amount of carbohydrate, but instant oatmeal is ground very fine and cooks in 1 minute, while steel-cut oats are coarse pieces that cook in about 30 minutes. Which usually raises blood sugar faster?",
+      "o": [
+        "Steel-cut oats, because longer cooking creates more sugar",
+        "Instant oatmeal, because fine grinding lets digestive juices break it down faster",
+        "Both raise blood sugar at exactly the same speed because both are oats",
+        "Steel-cut oats, because coarse pieces absorb faster in the stomach"
+      ],
+      "a": 1,
+      "tip": "More finely ground and highly processed starch has more surface area and is digested faster.",
+      "eli5": "It is like sand versus pebbles in water — fine powder melts away fast, while chunky pieces take longer to soften."
+    },
+    {
+      "q": "Over several weeks, regular exercise changes how the body's cells respond to insulin, the hormone that helps lower blood sugar. What is the usual long-term effect?",
+      "o": [
+        "Cells stop responding to insulin at all, so blood sugar stays high",
+        "Cells respond better to insulin, so blood sugar is easier to control",
+        "The pancreas stops making glucagon, so blood sugar cannot rise",
+        "The liver stops storing glycogen, so fasting sugar stays high"
+      ],
+      "a": 2,
+      "tip": "Regular activity over time improves insulin sensitivity, making blood sugar control easier.",
+      "eli5": "Like practicing a sport makes teamwork smoother, regular exercise trains your cells to listen to insulin better."
+    },
+    {
+      "q": "A person who takes insulin goes for a long bike ride without changing food or medicine. Why is low blood sugar a common risk during the ride?",
+      "o": [
+        "Working muscles use extra blood glucose while insulin is also moving glucose into cells",
+        "Exercise stops the stomach from digesting food, so no sugar enters the blood",
+        "Working muscles make extra insulin, doubling the dose in the body",
+        "Sweat removes large amounts of sugar from the blood through the skin"
+      ],
+      "a": 1,
+      "tip": "Exercise and insulin both remove glucose from the blood, so together they can lower it too much.",
+      "eli5": "It is like two straws drinking from the same juice box at once, the level drops twice as fast."
+    },
+    {
+      "q": "Why do health guides often tell people with diabetes to check blood sugar before and after exercise?",
+      "o": [
+        "To replace warming up and cooling down before sports",
+        "To measure how fit the heart and lungs have become",
+        "To diagnose whether they have type 1 or type 2 diabetes",
+        "To learn if the level is too low or very high for safe exercise and how activity changed it"
+      ],
+      "a": 4,
+      "tip": "Pre- and post-exercise checks show if it is safe to start and how the body reacted.",
+      "eli5": "Like checking the fuel gauge before and after a car trip, you see if you had enough and how much you used."
+    },
+    {
+      "q": "Moderate walking usually lowers blood sugar, but a short all-out sprint or intense competition can briefly raise it. Why does this happen?",
+      "o": [
+        "Sprinting muscles stop using any glucose for energy",
+        "Hard exercise destroys all the insulin in the blood at once",
+        "Stress hormones like adrenaline tell the liver to release stored glucose quickly",
+        "Heavy sweating concentrates the blood so the meter reads low"
+      ],
+      "a": 3,
+      "tip": "Intense effort releases stress hormones that signal the liver to dump glucose into the blood.",
+      "eli5": "Like a coach shouting for emergency backup players, adrenaline tells the liver to send extra sugar fast."
+    },
+    {
+      "q": "After a workout ends, blood sugar can stay lower than usual for many hours. Muscles need to refill their stored glucose, called glycogen. What explains this longer effect?",
+      "o": [
+        "Muscles keep pulling glucose from the blood to rebuild their glycogen stores",
+        "The pancreas makes extra sugar after exercise to cause high blood sugar",
+        "The liver blocks insulin for hours so cells cannot use glucose",
+        "The body stops using glucose entirely while it rests and sleeps"
+      ],
+      "a": 1,
+      "tip": "After exercise, muscles continue to take up glucose to restore glycogen and stay more sensitive to insulin.",
+      "eli5": "Like restocking pantry shelves after cooking a big meal, muscles keep taking sugar from the blood to refill."
+    },
+    {
+      "q": "For someone with type 1 diabetes who has very high blood sugar plus ketones, acids made when the body burns fat without enough insulin, what is usually advised about vigorous exercise?",
+      "o": [
+        "Exercise even harder to burn off the ketones quickly",
+        "Drink regular soda and keep playing without checking again",
+        "Rest from vigorous exercise and get medical advice, because exercise can raise sugar more and worsen ketones",
+        "Skip insulin and keep exercising until the sugar falls below 70 mg per dL"
+      ],
+      "a": 3,
+      "tip": "Very high sugar with ketones is a warning to avoid vigorous exercise and seek care.",
+      "eli5": "Like not driving a car that is overheating and smoking, you stop hard play and get help first."
+    },
+    {
+      "q": "When you are very stressed, your body releases stress hormones such as cortisol. What do these hormones usually do to blood sugar?",
+      "o": [
+        "They lower blood sugar by pushing extra sugar into muscles",
+        "They raise blood sugar by telling the liver to release stored sugar",
+        "They keep blood sugar exactly the same until you eat",
+        "They remove sugar from the blood through urine right away"
+      ],
+      "a": 2,
+      "tip": "Stress hormones such as cortisol signal the liver to release glucose, which raises blood sugar.",
+      "eli5": "Stress is like a fire alarm for your body, so it throws extra fuel on the fire by dumping sugar into the blood for quick energy."
+    },
+    {
+      "q": "Adults who regularly sleep only 4 to 5 hours a night often have worse blood sugar control than those who sleep 7 to 9 hours. What is the usual link between poor sleep and blood sugar?",
+      "o": [
+        "Poor sleep has no effect on how the body handles sugar",
+        "Poor sleep always causes low blood sugar overnight",
+        "Poor sleep only affects blood sugar if you eat in bed",
+        "Poor sleep is linked to higher blood sugar and the body responding less well to insulin"
+      ],
+      "a": 4,
+      "tip": "Short or poor-quality sleep is associated with insulin resistance and worse blood sugar regulation.",
+      "eli5": "Think of sleep like charging a phone overnight; a half-charged body struggles to do its job of keeping sugar steady the next day."
+    },
+    {
+      "q": "You skip lunch and then have a stressful argument. Even though you ate nothing, your blood sugar reading goes up a little. What best explains this rise?",
+      "o": [
+        "Stress hormones told the body to release stored sugar for energy to handle the threat",
+        "Stress burned up insulin and created new sugar in the stomach",
+        "Being upset stops the kidneys from working for an hour",
+        "Skipping lunch always lowers stress hormones to zero"
+      ],
+      "a": 1,
+      "tip": "The fight-or-flight stress response raises blood sugar to supply energy even without eating.",
+      "eli5": "Like a school packing extra snacks before a big game, your body packs extra sugar into the blood when it thinks you may need to act fast."
+    },
+    {
+      "q": "Some people wake up with higher fasting blood sugar even though they ate nothing overnight. Hormones released in the early morning help you wake up. What do those morning hormones do?",
+      "o": [
+        "They tell the pancreas to destroy all insulin during sleep",
+        "They force all sugar out of the body in morning urine",
+        "They signal the liver to release sugar, which can raise morning blood sugar",
+        "They stop digestion completely until noon"
+      ],
+      "a": 3,
+      "tip": "Early-morning hormones trigger the liver to release glucose, which can raise fasting blood sugar.",
+      "eli5": "It is like a parent turning on the kitchen light before breakfast, the body turns on sugar supply early to help you wake up and get moving."
+    },
+    {
+      "q": "After several nights of poor sleep, many people feel extra hungry and crave sweets, chips, or sugary drinks. How can this affect blood sugar?",
+      "o": [
+        "Cravings have no link to what you eat or your blood sugar",
+        "Eating more sugary, high-carbohydrate snacks can cause larger rises in blood sugar",
+        "Feeling hungry from poor sleep always lowers blood sugar for the whole day",
+        "Poor sleep removes all carbohydrate from food before it is digested"
+      ],
+      "a": 2,
+      "tip": "Poor sleep can increase hunger and cravings for high-carbohydrate foods, leading to higher blood sugar rises.",
+      "eli5": "Like shopping when you are tired and hungry, poor sleep makes you grab quick candy at the store, which spikes your cart and your sugar."
+    },
+    {
+      "q": "Which daily habit is most likely to help keep blood sugar steadier from the point of view of sleep and stress?",
+      "o": [
+        "Staying up very late and drinking sugary energy drinks to stay awake",
+        "Skipping sleep for several nights to avoid morning high readings",
+        "Getting regular 7 to 9 hour sleep and using calm routines to manage stress",
+        "Holding your breath when stressed to quickly burn off blood sugar"
+      ],
+      "a": 3,
+      "tip": "Regular adequate sleep and lower stress support better insulin action and steadier blood sugar.",
+      "eli5": "Like keeping a cooking pot on a steady low simmer instead of blasting the heat, steady sleep and calm habits keep sugar from boiling over."
+    },
+    {
+      "q": "Both insulin and glucagon help control blood sugar. Which organ makes both of these hormones?",
+      "o": [
+        "Liver",
+        "Pancreas",
+        "Kidney",
+        "Stomach"
+      ],
+      "a": 2,
+      "tip": "The pancreas produces both insulin to lower blood glucose and glucagon to raise it.",
+      "eli5": "The pancreas is like a home thermostat that has both a heater button and a cooler button."
+    },
+    {
+      "q": "What is gestational diabetes?",
+      "o": [
+        "Low blood sugar that happens only in children",
+        "An autoimmune condition where the pancreas makes no insulin from birth",
+        "High blood sugar that existed long before pregnancy and never changes",
+        "High blood sugar that first develops during pregnancy"
+      ],
+      "a": 4,
+      "tip": "Gestational diabetes is high blood sugar that develops during pregnancy.",
+      "eli5": "It is like temporary extra-sweet blood that shows up while a baby is growing and often goes away after birth."
+    },
+    {
+      "q": "Your lab result says fasting blood glucose is 95 mg per dL. What does the mg per dL part actually tell you?",
+      "o": [
+        "How concentrated glucose is, meaning 95 milligrams of glucose in each deciliter of blood",
+        "The total weight of all the blood in your body",
+        "How fast blood is flowing through your veins",
+        "The number of blood cells in each drop of blood"
+      ],
+      "a": 1,
+      "tip": "Blood sugar is a concentration, or amount of glucose per amount of blood.",
+      "eli5": "It is like saying how many spoonfuls of sugar are stirred into each cup of tea, not how much tea you have."
+    },
+    {
+      "q": "After a stomach illness with vomiting and drinking very little water, your blood glucose reads higher than usual even though you ate no sugar. What best explains this?",
+      "o": [
+        "Dehydration makes the meter break and always read high",
+        "Dehydration stops the kidneys from ever filtering blood",
+        "With less water in the blood, the same amount of glucose becomes more concentrated",
+        "With less water, the liver permanently loses all its stored sugar"
+      ],
+      "a": 3,
+      "tip": "Dehydration means less fluid, so the same amount of glucose measures as a higher concentration.",
+      "eli5": "It is like the same spoon of cocoa in half a cup of water tastes stronger than in a full cup."
+    },
+    {
+      "q": "Why does the body try to keep blood glucose in a fairly narrow range instead of letting it go very low or very high?",
+      "o": [
+        "To keep bones hard and muscles large without exercise",
+        "To save water so you never feel thirsty",
+        "To avoid ever needing insulin or glucagon",
+        "Because cells need a steady supply for energy, too little starves the brain and too much damages organs over time"
+      ],
+      "a": 4,
+      "tip": "Glucose is the main fuel for cells, but both low and long-term high levels cause harm.",
+      "eli5": "It is like keeping a campfire burning steady, not so small it goes out and not so big it burns the forest."
+    },
+    {
+      "q": "If fasting lasts a very long time and the liver's stored glycogen runs low, how does the liver still help maintain blood glucose?",
+      "o": [
+        "It pumps extra water into the blood to dilute sugar",
+        "It filters glucose out of the blood into urine",
+        "It destroys insulin so sugar stays in the blood forever",
+        "It makes new glucose from other building materials, such as parts from protein"
+      ],
+      "a": 4,
+      "tip": "When stored glycogen is low, the liver can make new glucose to supply the blood.",
+      "eli5": "It is like a kitchen that starts cooking a fresh batch from scratch when the leftovers in the fridge run out."
+    },
+    {
+      "q": "About 2 hours after starting a meal, what blood sugar level is usually considered in the normal range for an adult without diabetes?",
+      "o": [
+        "180 to 220 mg per dL",
+        "Less than 140 mg per dL",
+        "140 to 199 mg per dL",
+        "200 mg per dL or higher"
+      ],
+      "a": 2,
+      "tip": "A normal 2-hour post-meal blood sugar is usually under 140 mg per dL.",
+      "eli5": "Like a puddle after rain that drains away, blood sugar rises after eating then falls back below the high-water mark."
+    },
+    {
+      "q": "In the U.S., a blood sugar result is often written as 90 mg per dL. What does this number actually describe?",
+      "o": [
+        "How fast insulin is working that minute",
+        "What share of hemoglobin has sugar attached",
+        "The blood pressure in a small vessel",
+        "How much glucose, by weight, is in a small amount of blood"
+      ],
+      "a": 4,
+      "tip": "mg per dL means milligrams of glucose in each deciliter of blood.",
+      "eli5": "Like saying how many spoonfuls of sugar are stirred into a cup of tea, it tells how crowded the blood is with sugar."
+    },
+    {
+      "q": "Why do doctors give a normal fasting range, about 70 to 99 mg per dL, instead of one exact normal number?",
+      "o": [
+        "Blood sugar naturally varies a little between people and from minute to minute",
+        "Home meters always add 20 points by mistake",
+        "Everyone without diabetes has exactly the same blood sugar",
+        "Fasting blood sugar never changes once you are an adult"
+      ],
+      "a": 1,
+      "tip": "Normal blood sugar is a small range because it shifts slightly with the person, time of day, and recent activity.",
+      "eli5": "Like healthy heights in a class are a range, not one exact height, healthy blood sugar has a normal zone."
+    },
+    {
+      "q": "Which pair of results together best fits normal blood sugar ranges for an adult without diabetes?",
+      "o": [
+        "Fasting 130 mg per dL and 2 hours after a meal 210 mg per dL",
+        "Fasting 115 mg per dL and 2 hours after a meal 180 mg per dL",
+        "Fasting 85 mg per dL and 2 hours after a meal 120 mg per dL",
+        "Fasting 65 mg per dL and 2 hours after a meal 65 mg per dL"
+      ],
+      "a": 3,
+      "tip": "Normal is typically fasting about 70 to 99 and 2 hours after eating under 140 mg per dL.",
+      "eli5": "Like a morning room that is cool then warms a little in the afternoon sun, sugar is lower before eating and a bit higher after."
+    },
+    {
+      "q": "For someone without diabetes, how do normal blood sugar levels before a meal usually compare with levels 1 to 2 hours after starting that meal?",
+      "o": [
+        "About the same before and after the meal",
+        "Lower before the meal and higher after the meal, but both in their normal limits",
+        "Higher before the meal and lower after the meal",
+        "Zero before the meal and very high after the meal"
+      ],
+      "a": 2,
+      "tip": "Normal levels are lower before eating and rise afterward, usually staying under 140 mg per dL at 2 hours.",
+      "eli5": "Like a laundry basket emptier before the week and fuller after clothes are added, sugar is lower before food and higher after."
+    },
+    {
+      "q": "In many countries blood sugar is reported in mmol per L instead of mg per dL. A normal fasting level is under 5.6 mmol per L. Which fasting value is in the normal range?",
+      "o": [
+        "5.0 mmol per L",
+        "7.0 mmol per L",
+        "8.5 mmol per L",
+        "11.1 mmol per L"
+      ],
+      "a": 1,
+      "tip": "A normal fasting glucose is under 5.6 mmol per L, which is about the same as under 100 mg per dL.",
+      "eli5": "Like inches and centimeters measure the same length, mmol per L and mg per dL are two rulers for the same sugar level."
+    },
+    {
+      "q": "After the pancreas releases insulin, how does that insulin reach muscle, liver, and other cells to do its job?",
+      "o": [
+        "It travels along nerves like an electrical signal",
+        "It moves directly through the hollow tube of the gut to the cells",
+        "It is carried in the blood to cells all over the body",
+        "It stays inside the pancreas and works from there"
+      ],
+      "a": 3,
+      "tip": "Insulin is a hormone that travels in the bloodstream to signal distant cells.",
+      "eli5": "Like a letter sent by mail truck to many houses, insulin rides the blood to deliver its message."
+    },
+    {
+      "q": "Sara's blood sugar is already low at 65 mg per dL and she has not eaten. What does a healthy pancreas normally do with insulin release at that time?",
+      "o": [
+        "Releases a big surge of insulin to push more sugar into cells",
+        "Turns insulin release down very low so blood sugar is not pushed even lower",
+        "Releases insulin to order the liver to dump stored sugar",
+        "Keeps releasing the same high amount as after a large meal"
+      ],
+      "a": 2,
+      "tip": "When blood glucose is low, a healthy pancreas reduces insulin release.",
+      "eli5": "Like turning down a hose when the bucket is almost empty, the body makes less insulin when sugar is low."
+    },
+    {
+      "q": "After insulin helps glucose move from the blood into muscle cells during the day, what do those cells most often do with that glucose right away?",
+      "o": [
+        "Burn it for energy to power movement and body functions",
+        "Turn it directly into new insulin for later use",
+        "Change it back into starch in the blood",
+        "Store it as water to hydrate the body"
+      ],
+      "a": 1,
+      "tip": "Cells use glucose delivered with the help of insulin as their main source of energy.",
+      "eli5": "Glucose is like firewood delivered to houses — cells burn it right away to keep warm and move."
+    },
+    {
+      "q": "You regularly eat much more carbohydrate than your body burns, so insulin stays high to handle the extra. For longer-term storage beyond glycogen, what does high insulin encourage fat tissue to do?",
+      "o": [
+        "Release its stored fat into the blood for energy",
+        "Break down muscle to make more blood sugar",
+        "Flush extra glucose out in sweat immediately",
+        "Take in extra energy and store it as fat for later"
+      ],
+      "a": 4,
+      "tip": "High insulin promotes energy storage, including storing sustained excess as fat.",
+      "eli5": "Like packing extra groceries into a deep freezer for next month, insulin tells fat cells to save leftover energy."
+    },
+    {
+      "q": "In early type 2 diabetes the body's cells respond poorly to insulin. At first, how does the pancreas often try to keep blood sugar normal?",
+      "o": [
+        "It stops making any insulin at all right away",
+        "It switches to making glucagon after meals instead of insulin",
+        "It makes extra insulin to overcome the poor response",
+        "It destroys its own insulin before it can work"
+      ],
+      "a": 3,
+      "tip": "Early insulin resistance is often met with compensatory higher insulin production.",
+      "eli5": "If door locks are rusty, you push harder — the pancreas makes more insulin keys to get the same doors open."
+    },
+    {
+      "q": "Even between meals when you have not eaten for hours, a healthy body keeps a small background amount of insulin in the blood. What is that background insulin mainly for?",
+      "o": [
+        "To keep telling the liver not to release too much stored sugar, keeping levels steady",
+        "To digest fiber in the empty stomach without food",
+        "To raise blood sugar quickly if you start exercising",
+        "To block all glucose from entering brain cells"
+      ],
+      "a": 1,
+      "tip": "Basal insulin restrains liver glucose release to keep fasting glucose steady.",
+      "eli5": "Like a gentle foot on the brake on a hill, a little insulin keeps the liver from pouring out too much sugar between meals."
+    },
+    {
+      "q": "When blood sugar is low, glucagon signals the liver to use its stored glycogen. What does the liver do to that glycogen to raise blood sugar?",
+      "o": [
+        "It links more glucose pieces together to build bigger glycogen chains for storage.",
+        "It breaks glycogen chains apart into single glucose pieces and releases glucose into the blood.",
+        "It changes glycogen directly into insulin to lower blood sugar.",
+        "It burns up glycogen inside the liver only for heat, without releasing glucose."
+      ],
+      "a": 2,
+      "tip": "Glucagon raises blood sugar by triggering the liver to break down glycogen into glucose and release it into the blood.",
+      "eli5": "Think of glycogen like Lego bricks stuck together on a shelf. Glucagon tells the liver to pull them apart and hand out single bricks."
+    },
+    {
+      "q": "After glucagon and the liver have raised low blood sugar back toward the normal range, what normally happens to glucagon release from the pancreas?",
+      "o": [
+        "It keeps increasing to push blood sugar much higher.",
+        "It stays at its highest level for the rest of the day.",
+        "It switches to digesting food in the stomach.",
+        "It slows down because blood sugar is no longer low."
+      ],
+      "a": 4,
+      "tip": "Rising blood glucose feeds back to the pancreas to reduce further glucagon release.",
+      "eli5": "Like a thermostat that turns off the heater once the room is warm, the pancreas turns down glucagon once sugar is back up."
+    },
+    {
+      "q": "A classmate says, 'Glucagon lowers high blood sugar by helping glucose move from the blood into muscle cells, just like insulin.' What is wrong with this statement?",
+      "o": [
+        "Glucagon raises low blood sugar by telling the liver to release glucose, and it does not move glucose into cells like insulin does.",
+        "Glucagon lowers high blood sugar even faster than insulin does.",
+        "Glucagon works in the stomach to block digestion of carbohydrates.",
+        "Glucagon helps muscles absorb glucose without any help from the liver."
+      ],
+      "a": 1,
+      "tip": "Insulin moves glucose into cells to lower blood sugar, while glucagon acts mainly on the liver to raise blood sugar.",
+      "eli5": "If insulin is like opening classroom doors to let students in, glucagon is like the office sending more students out from the main hall."
+    },
+    {
+      "q": "A person with diabetes has very low blood sugar and is too confused to safely swallow juice or food. Why can an emergency glucagon injection help in this situation?",
+      "o": [
+        "It helps the stomach digest food faster so sugar enters the blood.",
+        "It helps muscles pull extra sugar out of the blood to protect the brain.",
+        "It signals the liver to release its stored glucose into the blood even though no food was eaten.",
+        "It replaces water lost from the blood and dilutes the low sugar."
+      ],
+      "a": 3,
+      "tip": "Injected glucagon can raise blood sugar without food by ordering the liver to release stored glucose.",
+      "eli5": "Like calling the pantry to bring out canned soup when you cannot go to the store, the shot tells the liver to share what it saved."
+    },
+    {
+      "q": "Both the liver and muscles store some glucose as glycogen. When blood sugar runs low between meals, which statement about those stores is true?",
+      "o": [
+        "Muscle glycogen is released into the blood to feed the brain, while liver glycogen stays locked away.",
+        "The liver and muscles both release equal amounts of glucose into the blood.",
+        "The liver stores glycogen only after exercise and never between meals.",
+        "The liver can release its glycogen as glucose into the blood for the whole body, while muscle glycogen is mainly saved for that muscle's own use."
+      ],
+      "a": 4,
+      "tip": "Only liver glycogen can be readily released as blood glucose for other organs; muscle glycogen fuels that muscle itself.",
+      "eli5": "Think of the liver as the family pantry that shares snacks with everyone, while muscle is like a lunchbox packed for one kid only."
+    },
+    {
+      "q": "Blood sugar is already high after a large sugary meal. If the pancreas mistakenly released a lot of glucagon at that moment, what would the liver do and what would happen to blood sugar?",
+      "o": [
+        "The liver would release even more glucose into the blood, making the high blood sugar worse.",
+        "The liver would quickly pull extra glucose out of the blood and lower blood sugar.",
+        "The liver would turn glucagon into insulin and fix the high sugar.",
+        "The liver would send glucose to the stomach to be removed with digestion."
+      ],
+      "a": 1,
+      "tip": "Glucagon always orders liver glucose release, so extra glucagon during high blood sugar would raise it further.",
+      "eli5": "It is like pouring more water into a cup that is already overflowing instead of stopping the pour."
+    },
+    {
+      "q": "After you swallow chewed food, where does most of the final breakdown of carbohydrates into single sugars and absorption into the blood take place?",
+      "o": [
+        "In the stomach, where acid melts sugar into the blood",
+        "In the mouth, where teeth push sugar into the blood",
+        "In the small intestine, where enzymes finish breakdown and sugars pass into the blood",
+        "In the large intestine, where water pushes sugar into the blood"
+      ],
+      "a": 3,
+      "tip": "Most carbohydrate digestion and glucose absorption happen in the small intestine.",
+      "eli5": "Think of the small intestine like a checkout lane where tiny sugars finally get scanned and let into the blood."
+    },
+    {
+      "q": "When you chew plain bread or rice for a long time, it starts to taste slightly sweet. What is the saliva in your mouth doing to the starch?",
+      "o": [
+        "Starting to cut long starch chains into smaller, sweeter sugar pieces",
+        "Turning starch directly into fiber so it cannot be absorbed",
+        "Turning starch into protein to build muscle",
+        "Pushing starch straight into the blood through the tongue"
+      ],
+      "a": 1,
+      "tip": "Saliva contains an enzyme that starts breaking starch into smaller sugars.",
+      "eli5": "Like scissors snipping a long paper chain into smaller links, saliva starts snipping starch apart."
+    },
+    {
+      "q": "Starch is made of hundreds of glucose units linked in a long chain. Why must it be fully broken into single glucose molecules before it can get into the blood?",
+      "o": [
+        "Because single glucose is sweeter on the tongue",
+        "Because the stomach can only hold single sugars",
+        "Because insulin only works on single sugars in food",
+        "Because only tiny single sugars are small enough to pass through the gut wall into the blood"
+      ],
+      "a": 4,
+      "tip": "Only single sugars are small enough to be absorbed through the wall of the small intestine.",
+      "eli5": "Like sand can pass through a sieve but pebbles cannot, only tiny single sugars can slip into the blood."
+    },
+    {
+      "q": "You compare the same amount of carbohydrate from a pure glucose tablet and from starchy crackers. Which raises blood glucose faster, and why?",
+      "o": [
+        "The crackers, because chewing adds extra sugar",
+        "The glucose tablet, because it needs no digestion and is absorbed very quickly",
+        "Both at exactly the same speed, because all carbohydrates digest the same way",
+        "The crackers, because starch is already smaller than glucose"
+      ],
+      "a": 2,
+      "tip": "Pure glucose needs no digestion, so it is absorbed faster than starch that must be broken down.",
+      "eli5": "It is like drinking water versus melting ice first; glucose is already ready to go."
+    },
+    {
+      "q": "Table sugar, called sucrose, is two simple sugars joined together. What happens to sucrose during digestion?",
+      "o": [
+        "It passes whole into the blood and stays as sucrose",
+        "It is burned up in the stomach and never reaches the blood",
+        "It is split into glucose and fructose, which are then absorbed into the blood",
+        "It is turned into fiber and passes out without being absorbed"
+      ],
+      "a": 3,
+      "tip": "Sucrose is split during digestion into glucose and fructose before absorption.",
+      "eli5": "Like pulling apart two Lego bricks stuck together, the gut splits table sugar into two smaller sugars."
+    },
+    {
+      "q": "Two foods have the same amount of starch, but one is very soft, well-cooked, and mashed into tiny pieces. Why does the soft mashed version often raise blood sugar faster?",
+      "o": [
+        "Tiny soft pieces are attacked more quickly by digestive juices, so glucose is released faster",
+        "Soft food has more vitamins that turn into sugar",
+        "Mashing removes all the carbohydrate from the food",
+        "Soft food skips the small intestine and goes straight to the blood"
+      ],
+      "a": 1,
+      "tip": "Smaller, softer food particles are broken down by enzymes more quickly.",
+      "eli5": "Like crushed ice melts faster than one big ice cube, tiny soft bits digest faster."
+    },
+    {
+      "q": "Scientists want to find the glycemic index (GI) of a new bread. How do they usually test it?",
+      "o": [
+        "They measure the vitamins and calories in one slice of the bread",
+        "They feed volunteers a portion with 50 grams of digestible carbohydrate and compare the blood sugar rise over about 2 hours to pure glucose",
+        "They ask volunteers how sweet the bread tastes compared to sugar",
+        "They measure how long the bread keeps a person feeling full"
+      ],
+      "a": 2,
+      "tip": "GI is measured by comparing the blood sugar response to 50 grams of carbohydrate from the food versus 50 grams of pure glucose.",
+      "eli5": "It is like a race where pure sugar is the champion to beat, and each food runs the same distance to see how fast it raises blood sugar."
+    },
+    {
+      "q": "The glycemic index uses 55 or less as low and 70 or more as high. Which of these foods most likely has a low GI?",
+      "o": [
+        "Cornflakes, a puffed refined cereal",
+        "White baguette made from refined flour",
+        "Baked russet potato served hot",
+        "Boiled lentils or kidney beans"
+      ],
+      "a": 4,
+      "tip": "Beans and lentils are usually low-GI because their fiber and intact structure slow digestion.",
+      "eli5": "Beans are like logs that burn slowly in a fireplace, while white bread and cornflakes are like newspaper that flare up fast."
+    },
+    {
+      "q": "Glycemic load (GL) is calculated as GI times grams of carbohydrate in the serving, divided by 100. A snack has GI 60 and 30 grams of carbohydrate. What is its GL?",
+      "o": [
+        "2",
+        "9",
+        "18",
+        "60"
+      ],
+      "a": 3,
+      "tip": "GL equals GI multiplied by carbohydrate grams divided by 100, so 60 x 30 / 100 = 18.",
+      "eli5": "Think of GI as speed and carbs as amount of fuel; you multiply them to get the total size of the blood sugar bump."
+    },
+    {
+      "q": "Why do foods like plain chicken breast, eggs, or olive oil not have a useful glycemic index (GI) value?",
+      "o": [
+        "They contain almost no digestible carbohydrate to raise blood sugar, so the GI test does not apply well",
+        "They contain too much fiber for the GI test to work",
+        "They raise blood sugar too high to fit on the 0 to 100 scale",
+        "They are liquids, and GI can only be measured for solid foods"
+      ],
+      "a": 1,
+      "tip": "GI ranks carbohydrate foods, so foods with almost no carbohydrate cannot produce a meaningful GI response.",
+      "eli5": "Trying to give chicken a GI is like rating a car with no gas on fuel speed; there is almost nothing there to measure."
+    },
+    {
+      "q": "You cook the same spaghetti two ways: one pot is cooked firm (al dente) and one pot is cooked very soft and mushy. Which version usually has the lower glycemic effect?",
+      "o": [
+        "The very soft, overcooked spaghetti, because it holds more water",
+        "The firm, al dente spaghetti, because its starch is less swollen and slower to digest",
+        "Both have exactly the same effect because cooking time never changes digestion",
+        "The very soft spaghetti, because heat destroys all the carbohydrate"
+      ],
+      "a": 2,
+      "tip": "Longer cooking swells and softens starch so enzymes break it down faster, raising GI.",
+      "eli5": "Firm pasta is like a tight sponge that takes longer to soak through, while mushy pasta is already soggy and falls apart fast."
+    },
+    {
+      "q": "You compare two lunches with about the same total carbohydrate: lunch A is a large bowl of white rice alone, and lunch B is a smaller portion of white rice mixed with lentils, vegetables, and olive oil. Which lunch usually causes a smaller, slower blood sugar rise?",
+      "o": [
+        "Lunch A, because eating one plain food is always gentler on blood sugar",
+        "Both will be identical because total carbohydrate is the same",
+        "Lunch B, because added fiber, protein, fat, and a smaller rice portion slow digestion and lower glycemic load",
+        "Lunch A, because vegetables and beans add extra sugar that raises blood sugar more"
+      ],
+      "a": 3,
+      "tip": "Adding fiber, protein, and fat and reducing the high-GI portion lowers the overall glycemic response even when total carbs are similar.",
+      "eli5": "White rice alone is like sledding down a steep hill, while mixing it with beans and veggies adds bumps and flat spots that slow the sled down."
+    },
+    {
+      "q": "Jake uses insulin in the evening. He wakes at 3 a.m. with soaked pajamas, a racing heart, and vivid bad dreams, then has a headache in the morning. Which explanation fits these nighttime clues best?",
+      "o": [
+        "His blood sugar was high overnight from drinking water",
+        "His blood sugar dropped low overnight while he slept",
+        "His blood sugar stayed perfectly steady all night",
+        "His blood sugar rose slowly from a daytime cold"
+      ],
+      "a": 2,
+      "tip": "Night sweats, restless sleep with nightmares, and a morning headache can signal overnight hypoglycemia.",
+      "eli5": "Like a phone battery draining overnight, blood sugar can dip while you sleep and leave sweaty sheets as a clue."
+    },
+    {
+      "q": "What change in the skin is a common visible clue of low blood sugar that another person might notice first?",
+      "o": [
+        "Flushed, hot, and very dry skin",
+        "Yellowish skin with a rash",
+        "Red, itchy patches on the cheeks",
+        "Pale, cool, and sweaty or clammy skin"
+      ],
+      "a": 4,
+      "tip": "Low blood sugar often causes pale, cool, sweaty skin from the body's alarm response.",
+      "eli5": "Like cold sweat on a scary roller coaster, a low makes skin look pale and feel damp."
+    },
+    {
+      "q": "Which tingling feeling is a common early warning sign of low blood sugar (hypoglycemia)?",
+      "o": [
+        "Tingling or numbness around the lips, tongue, or cheeks",
+        "Tingling only in the big toe that lasts for weeks",
+        "Itchy tingling on the elbow after a mosquito bite",
+        "Tingling in the knee right after sitting still"
+      ],
+      "a": 1,
+      "tip": "Tingling or numbness around the mouth is a recognized early symptom of hypoglycemia.",
+      "eli5": "Like pins-and-needles when your foot falls asleep, a low can make lips feel buzzy as a warning bell."
+    },
+    {
+      "q": "During a low, a person starts stumbling, seems clumsy, and speech sounds slurred or mumbled. Why are these coordination signs important?",
+      "o": [
+        "They mean blood sugar is a little high but harmless",
+        "They show dehydration and will go away with water alone",
+        "They show the brain is short on glucose and the person may soon be unable to help themselves",
+        "They prove the person has a cold and needs rest"
+      ],
+      "a": 3,
+      "tip": "Clumsiness and slurred speech mean the brain lacks glucose and the low may be becoming severe.",
+      "eli5": "Like a remote with dying batteries pressing the wrong buttons, a sugar-starved brain makes movement and speech wobbly."
+    },
+    {
+      "q": "Low blood sugar often starts suddenly within minutes, while high blood sugar usually builds over days. Which 2 patterns point to a likely low? (Choose 2)",
+      "o": [
+        "Sudden shakiness and sweating shortly after too much insulin or a missed meal",
+        "Gradual thirst and frequent urination getting worse over several days",
+        "Sudden trouble thinking, shakiness, or hunger soon after hard exercise without eating enough",
+        "Slow weight change over many months with no sudden symptoms"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Sudden onset after insulin, missed food, or exercise points to a low; gradual thirst and urination points to a high.",
+      "eli5": "A low is like a sudden power cut after skipping fuel, while a high is like a sink slowly overflowing over days."
+    },
+    {
+      "q": "Which headache and eyesight clue can happen during low blood sugar?",
+      "o": [
+        "Sudden headache with blurry vision and dizziness during a low episode",
+        "Only sharp eye pain from reading in bright light",
+        "Gradual need for stronger glasses over many years",
+        "Red, itchy eyes only during spring pollen season"
+      ],
+      "a": 1,
+      "tip": "Headache, dizziness, and blurry vision can occur when the brain gets too little glucose during hypoglycemia.",
+      "eli5": "Like a camera losing power and going fuzzy, eyes and head feel off when the brain runs low on sugar fuel."
+    },
+    {
+      "q": "Tom has had high blood sugar (hyperglycemia) for a few days and notices a dull headache that keeps returning. What is the most accurate statement about headache and hyperglycemia?",
+      "o": [
+        "Headache never happens with high blood sugar, only with low blood sugar.",
+        "A dull headache can be a common general symptom when blood sugar stays high.",
+        "A headache with high blood sugar means the blood sugar has returned to normal.",
+        "Headache only happens after blood sugar has been high for many years."
+      ],
+      "a": 2,
+      "tip": "A dull headache can occur as a general symptom during sustained hyperglycemia.",
+      "eli5": "Like working in a stuffy classroom gives you a dull headache, high sugar can leave your whole body feeling off."
+    },
+    {
+      "q": "Maria has had high blood sugar for several weeks and notices a small blister on her foot is healing very slowly. Which statement about healing and hyperglycemia is most accurate?",
+      "o": [
+        "High blood sugar helps cuts and blisters heal faster than normal.",
+        "Slow healing only happens with low blood sugar, never with high blood sugar.",
+        "Washing a cut with water raises blood sugar and slows healing.",
+        "Ongoing high blood sugar can slow healing and make infection more likely."
+      ],
+      "a": 4,
+      "tip": "Sustained high blood sugar impairs wound healing and the ability to fight infection.",
+      "eli5": "Like sticky syrup slowing down a cleanup crew, extra sugar in the blood slows the body's repair crew."
+    },
+    {
+      "q": "James gets repeated skin infections and gum infections while his blood sugar stays high for months. Which pattern best fits hyperglycemia?",
+      "o": [
+        "Staying high for a long time can lead to more frequent infections.",
+        "High blood sugar protects against infections and keeps skin clear.",
+        "Infections become less common the longer blood sugar stays high.",
+        "Only low blood sugar causes repeated infections, never high blood sugar."
+      ],
+      "a": 1,
+      "tip": "Chronic hyperglycemia weakens immune defense, leading to more frequent infections.",
+      "eli5": "Like a tired school guard missing trouble, a body worn down by high sugar misses germs more often."
+    },
+    {
+      "q": "Priya has ongoing high blood sugar and notices very dry, itchy skin. Which explanation fits best with hyperglycemia?",
+      "o": [
+        "High blood sugar adds extra moisture to the skin, so dry skin rules out hyperglycemia.",
+        "Dry skin with high blood sugar is always caused by soap allergy, not blood sugar.",
+        "High blood sugar can cause extra fluid loss from the body, leaving skin dry and itchy.",
+        "High blood sugar makes the skin oily and sweaty, never dry."
+      ],
+      "a": 3,
+      "tip": "Hyperglycemia can increase fluid loss, which can leave skin dry and itchy.",
+      "eli5": "Like a sponge left in the sun drying out, losing extra water leaves skin dry and scratchy."
+    },
+    {
+      "q": "When blood sugar is high and glucose is not moving into cells well for energy, why might a person still feel extra hungry?",
+      "o": [
+        "Hunger goes away completely whenever blood sugar is high.",
+        "Cells are short on usable energy, so the body keeps sending hunger signals.",
+        "The stomach empties more slowly, so hunger means blood sugar is low.",
+        "Extra glucose in the blood directly fills the stomach, causing hunger."
+      ],
+      "a": 2,
+      "tip": "When glucose cannot enter cells well, cells lack energy and hunger can persist despite high blood sugar.",
+      "eli5": "Like groceries stuck on the porch instead of in the kitchen, the food is there but the family still feels hungry."
+    },
+    {
+      "q": "Carlos is eating his usual meals but is losing weight without trying, and his blood sugar has been very high. What best explains this sign?",
+      "o": [
+        "Without enough usable glucose in cells, the body breaks down fat and muscle for energy, causing weight loss.",
+        "High blood sugar always causes fast weight gain, never weight loss.",
+        "Weight loss with high blood sugar means the diabetes is cured.",
+        "Eating normal meals prevents any weight loss when blood sugar is very high."
+      ],
+      "a": 1,
+      "tip": "Very high blood sugar with poor glucose use can force the body to burn fat and muscle, causing unintended weight loss.",
+      "eli5": "Like burning furniture when the pantry is locked, the body burns its own stores when it cannot use sugar."
+    },
+    {
+      "q": "In type 1 diabetes, doctors call it an autoimmune condition. What does that mean?",
+      "o": [
+        "The body's immune system mistakenly attacks its own insulin-making cells in the pancreas",
+        "Bacteria from spoiled food temporarily poison the pancreas",
+        "Extra body fat blocks insulin from working in the muscles",
+        "Eating too much sugar wears out the pancreas over time"
+      ],
+      "a": 1,
+      "tip": "Type 1 diabetes is caused by an autoimmune attack that destroys insulin-making cells.",
+      "eli5": "Think like a security guard who mistakes family for intruders and locks them out — the body attacks its own helper cells."
+    },
+    {
+      "q": "Which tiny parts of the pancreas are mainly destroyed in type 1 diabetes?",
+      "o": [
+        "Cells that make digestive juices for the stomach",
+        "Cells that make glucagon to raise blood sugar",
+        "Beta cells that make insulin to lower blood sugar",
+        "Cells that form the outer wall of the pancreas"
+      ],
+      "a": 3,
+      "tip": "Type 1 diabetes destroys the pancreatic beta cells that make insulin.",
+      "eli5": "Like a bakery losing its bakers, the pancreas loses the specific workers that make insulin."
+    },
+    {
+      "q": "Why must insulin for type 1 diabetes be given by injection or pump instead of simply swallowing it as a pill?",
+      "o": [
+        "Swallowed pills work too fast and cause instant low blood sugar",
+        "Insulin is a protein that digestion would break down before it could work",
+        "Injections taste better than pills for children",
+        "Swallowed insulin would permanently damage the liver"
+      ],
+      "a": 2,
+      "tip": "Insulin taken by mouth would be digested like food protein before reaching the blood.",
+      "eli5": "Like an ice cube melting in hot soup, swallowed insulin gets broken apart in the stomach and stops working."
+    },
+    {
+      "q": "A person with type 1 diabetes takes insulin each day. Why must the amount be balanced with food eaten and physical activity?",
+      "o": [
+        "Insulin only works if you eat exactly the same food every day",
+        "Exercise completely replaces the need for insulin that day",
+        "Insulin works better at night than during the day",
+        "Too much insulin for little food or hard exercise can drive blood sugar too low, while too little insulin leaves it too high"
+      ],
+      "a": 4,
+      "tip": "With little or no own insulin, injected insulin must match glucose from food and glucose used by activity.",
+      "eli5": "Like adding just enough water to balance dry ingredients in a recipe, insulin must match food in and energy used up."
+    },
+    {
+      "q": "What usually happens to blood sugar if someone with type 1 diabetes misses insulin doses around meals?",
+      "o": [
+        "Blood sugar stays perfectly steady because the liver takes over",
+        "Blood sugar climbs very high because glucose from food cannot move into cells well",
+        "Blood sugar drops very low because the body makes extra insulin",
+        "Blood sugar is unchanged because food no longer turns into glucose"
+      ],
+      "a": 2,
+      "tip": "Without insulin, glucose from digestion stays in the blood and blood sugar rises high.",
+      "eli5": "Like shoppers stuck outside a locked store, sugar piles up in the blood because insulin is not there to open the doors."
+    }
+  ]
+}
