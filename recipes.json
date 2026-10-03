@@ -6821,6 +6821,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "wantan-mee",
+      "title": "Wantan Mee",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Malaysian-Chinese",
+        "egg noodles",
+        "pork",
+        "prawn",
+        "boiled"
+      ],
+      "img": "images/wantan-mee-card.jpg",
+      "poster": "images/wantan-mee.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Springy egg noodles tossed in savoury sauce with juicy pork-prawn wantans, char siu and greens.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "3-4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
