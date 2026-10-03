@@ -3,7 +3,7 @@
   "trailingSlash": false,
   "functions": {
     "api/quiz-generate.js": {
-      "maxDuration": 120
+      "maxDuration": 300
     },
     "api/recipe-extract.js": {
       "maxDuration": 60
