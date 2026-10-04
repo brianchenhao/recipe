@@ -7186,6 +7186,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kohlrabi-fries",
+      "title": "Kohlrabi Fries",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "vegetarian",
+        "kohlrabi",
+        "baked",
+        "low-carb"
+      ],
+      "img": "images/kohlrabi-fries-card.jpg",
+      "poster": "images/kohlrabi-fries.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy baked kohlrabi sticks, a tender low-carb alternative to potato fries.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2-3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
