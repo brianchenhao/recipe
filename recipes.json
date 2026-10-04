@@ -7321,6 +7321,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "hdl-cholesterol-the-good-cholesterol",
+      "section": "health",
+      "title": "HDL CHOLESTEROL The “Good Cholesterol”",
+      "author": "",
+      "cat": "Wellbeing",
+      "tags": [
+        "HDL",
+        "good cholesterol",
+        "heart health",
+        "arteries",
+        "liver"
+      ],
+      "img": "images/hdl-cholesterol-the-good-cholesterol-card.jpg",
+      "poster": "images/hdl-cholesterol-the-good-cholesterol.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "HDL removes excess cholesterol from arteries and carries it to the liver for disposal.",
+      "lede": "",
+      "body": "HDL helps remove excess cholesterol from the body, especially from the arteries, and takes it to the liver for disposal.\n\nHDL collects excess cholesterol from cells, tissues and artery walls, including plaque. HDL transports the collected cholesterol through the bloodstream to the liver. HDL unloads the cholesterol at the liver. The liver then converts it into bile, which is used for digestion and removed from the body through the stool.\n\nBy removing excess cholesterol from artery walls, HDL helps prevent plaque build-up, keeps arteries more flexible, and supports better blood flow. Low HDL means more plaque build-up and narrower artery, with higher risk of heart attack and stroke. Higher HDL means less plaque build-up and healthier artery, with better blood flow and lower risk.\n\nKey benefits are removing excess cholesterol, preventing plaque build-up (atherosclerosis), keeping arteries flexible, lowering risk of heart attack and stroke, and supporting heart health with anti-inflammatory and antioxidant effects. HDL supports reverse cholesterol transport, healthy cholesterol balance, healthy artery function, reduces oxidation of LDL, reduces inflammation, and may protect against blood clots.\n\nHigher HDL is associated with lower risk of heart disease and stroke, better blood vessel health, lower inflammation, and improved cardiovascular health. Healthy levels are Low below 1.0 mmol/L, Normal for women at or above 1.3, Normal for men at or above 1.0, and Higher at or above 1.6. Higher HDL is generally better, but HDL is just one part of heart health.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
