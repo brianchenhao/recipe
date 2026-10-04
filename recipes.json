@@ -7285,6 +7285,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-science-of-how-food-lowers-cholesterol",
+      "section": "health",
+      "title": "THE SCIENCE OF HOW FOOD LOWERS CHOLESTEROL",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "cholesterol",
+        "heart health",
+        "fiber",
+        "healthy fats",
+        "plant protein"
+      ],
+      "img": "images/the-science-of-how-food-lowers-cholesterol-card.jpg",
+      "poster": "images/the-science-of-how-food-lowers-cholesterol.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Eat fiber, plant sterols, unsaturated fats and plant proteins to lower LDL cholesterol.",
+      "lede": "",
+      "body": "Soluble viscous fiber binds bile acids made from cholesterol, preventing their reabsorption. Liver pulls more LDL cholesterol from the bloodstream to produce new bile. Sources include oats, barley, lentils, apple and okra. 5%-10% LDL reduction.\n\nPlant sterols and stanols block absorption. Structurally similar to cholesterol, sterols compete for absorption, blocking cholesterol from entering the bloodstream. Sources include seeds, wheat germ and fortified foods. 8%-12% LDL reduction.\n\nHealthy unsaturated fats improve lipid ratios. Replacing saturated fats with healthy fats lowers bad LDL and maintains good HDL levels. Sources include avocado, olive oil, almonds, walnuts and flaxseeds. 5%-8% LDL reduction when replacing saturated fat.\n\nPlant-based proteins replace animal fats. Choosing plant-based proteins reduces intake of dietary saturated fats commonly found in animal products. Sources include tofu, edamame and various beans. 3%-5% LDL reduction.\n\nCombining these strategies achieves additive benefits. Consistent use can achieve 20%-30%+ LDL reduction, comparable to some medications. Omega-3 fatty acids from fatty fish lowers triglycerides 20-30% and supports heart health. Antioxidant polyphenols from berries, dark chocolate, garlic and onions prevents LDL cholesterol from oxidizing and damaging arteries.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
