@@ -7219,6 +7219,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "fermented-kohlrabi",
+      "title": "Fermented Kohlrabi",
+      "author": "",
+      "cat": "Pickles",
+      "tags": [
+        "kohlrabi",
+        "carrot",
+        "fermented",
+        "probiotic"
+      ],
+      "img": "images/fermented-kohlrabi-card.jpg",
+      "poster": "images/fermented-kohlrabi.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crisp tangy fermented kohlrabi with crunch, natural probiotics and bright refreshing flavour.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 1 jar",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
