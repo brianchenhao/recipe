@@ -7252,6 +7252,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chocolate-chip-cookies",
+      "title": "Chocolate Chip Cookies",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "Western",
+        "chocolate chips",
+        "butter",
+        "baked"
+      ],
+      "img": "images/chocolate-chip-cookies-card.jpg",
+      "poster": "images/chocolate-chip-cookies.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft and chewy cookies loaded with melty chocolate chips and optional nuts.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 40–48 cookies",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
