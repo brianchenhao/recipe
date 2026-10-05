@@ -7357,6 +7357,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "the-physiological-sigh",
+      "section": "health",
+      "title": "The Physiological Sigh",
+      "author": "",
+      "cat": "Wellbeing",
+      "tags": [
+        "breathing",
+        "calm",
+        "stress relief",
+        "heart rate",
+        "sleep"
+      ],
+      "img": "images/the-physiological-sigh-card.jpg",
+      "poster": "images/the-physiological-sigh.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Double inhale through nose and slow exhale to reduce heart rate and calm nerves.",
+      "lede": "",
+      "body": "Repeat this loop 2 to 3 times for an immediate feeling of calm.\n\nTake a deep inhale through your nose to fill your lungs about 80% to 90% of the way. Take a second, sharp sniff through your nose immediately on top of the first breath to fully inflate the alveoli. Exhale slowly and completely through your mouth with a long, relaxed sighing sound like \"aaaah\".\n\nWhen stressed, the tiny air sacs in your lungs collapse, causing carbon dioxide to build up in your blood, which triggers anxiety. The second \"pop\" sniff forces those tiny sacs wide open. The double-inhale stretches your diaphragm, which sends a nerve signal to your brain saying, \"The lungs are full, everything is safe.\" The brain instructs your heart to slow down, and the long, slow exhale pulls heart rate down to a restful baseline.\n\nUse it right when the \"creep up\" starts, when body temperature rises or heart races after a workout. Use it during a stressful moment with jitteriness, anxiety, or internal heat. Use it before sleep if your body feels too \"wired\" or full of residual workout adrenaline to fall asleep.\n\nIt is a fast, natural way to calm your nervous system, takes only 2 to 3 breaths, is backed by neuroscience, and can be used anytime heart rate rises, with stress, anxiety, or before sleep.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
