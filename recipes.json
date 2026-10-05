@@ -7531,6 +7531,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "mamak-fried-chicken",
+      "title": "Mamak Fried Chicken",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Mamak",
+        "Chicken",
+        "Deep-Fried",
+        "Crispy"
+      ],
+      "img": "images/mamak-fried-chicken-card.jpg",
+      "poster": "images/mamak-fried-chicken.jpg",
+      "ill": "ill-grill",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy outside, juicy inside Mamak-style fried chicken with aromatic spices.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4-6",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
