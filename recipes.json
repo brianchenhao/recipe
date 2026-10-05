@@ -7564,6 +7564,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "spicy-garlic-noodles",
+      "title": "Spicy Garlic Noodles",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Asian",
+        "garlic",
+        "noodles",
+        "spicy",
+        "stir-fry"
+      ],
+      "img": "images/spicy-garlic-noodles-card.jpg",
+      "poster": "images/spicy-garlic-noodles.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Simple, bold and addictive noodles with lots of garlic, a touch of heat and savory sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "15 minutes",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
