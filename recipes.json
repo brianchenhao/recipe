@@ -7498,6 +7498,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "mamak-yellow-cabbage",
+      "title": "Mamak Yellow Cabbage",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Mamak",
+        "cabbage",
+        "turmeric",
+        "stir-fry"
+      ],
+      "img": "images/mamak-yellow-cabbage-card.jpg",
+      "poster": "images/mamak-yellow-cabbage.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Flavorful Mamak-style stir-fried cabbage with turmeric, spices and curry leaves.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3-4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
