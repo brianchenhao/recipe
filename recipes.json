@@ -7598,6 +7598,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "dhall-curry",
+      "title": "Dhall Curry",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Mamak-style",
+        "split lentils",
+        "simmered",
+        "vegetarian"
+      ],
+      "img": "images/dhall-curry-card.jpg",
+      "poster": "images/dhall-curry.jpg",
+      "ill": "ill-pot",
+      "badge": "New",
+      "featured": false,
+      "desc": "Mamak-style dhall curry with split lentils, aromatic spices and curry leaves.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
