@@ -7631,6 +7631,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kl-hokkien-mee",
+      "title": "KL Hokkien Mee",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Malaysian",
+        "prawns",
+        "pork",
+        "stir-fry"
+      ],
+      "img": "images/kl-hokkien-mee-card.jpg",
+      "poster": "images/kl-hokkien-mee.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rich, dark, savoury and smoky stir-fried noodles, the classic Kuala Lumpur style!",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2-3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
