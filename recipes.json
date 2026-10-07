@@ -7798,37 +7798,6 @@
       "nutrition": {}
     },
     {
-      "id": "low-carb-protein-rich-breakfast",
-      "title": "Low-Carb, Protein-Rich Breakfast",
-      "author": "",
-      "cat": "Breakfast",
-      "tags": [
-        "Exercise",
-        "diabetes"
-      ],
-      "img": "images/low-carb-protein-rich-breakfast-card.jpg",
-      "poster": "images/low-carb-protein-rich-breakfast.jpg",
-      "ill": "ill-egg",
-      "badge": "New",
-      "featured": false,
-      "desc": "Protein-rich breakfast with egg, nuts and vegetables to keep blood sugar stable.",
-      "lede": "The whole recipe is in the picture — tap it to zoom in.",
-      "level": "",
-      "prep": "",
-      "cook": "",
-      "active": "",
-      "total": "",
-      "yield": "",
-      "serves": 0,
-      "rating": 0,
-      "reviews": 0,
-      "ingredientGroups": [],
-      "steps": [],
-      "tips": [],
-      "cooksNote": "",
-      "nutrition": {}
-    },
-    {
       "id": "the-fed-and-smooth-morning-strategy",
       "section": "health",
       "title": "The \"Fed and Smooth\" Morning Strategy",
