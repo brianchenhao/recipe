@@ -7863,6 +7863,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "46-minutes-after-breakfast-for-blood-sugar",
+      "section": "health",
+      "title": "46 Minutes After Breakfast for Blood Sugar",
+      "author": "",
+      "cat": "Fitness",
+      "tags": [
+        "blood sugar",
+        "after breakfast",
+        "kettlebell exercise",
+        "glucose spike",
+        "pancreas rest"
+      ],
+      "img": "images/46-minutes-after-breakfast-for-blood-sugar-card.jpg",
+      "poster": "images/46-minutes-after-breakfast-for-blood-sugar.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Exercise 46 minutes after breakfast to intercept glucose spike and keep blood sugar stable.",
+      "lede": "",
+      "body": "Exercise at 46 minutes after first bite helps intercept the glucose spike, pull sugar into your muscles, and keep your blood sugar stable or lower without stressing your body. Without exercise sugar typically peaks at 60-90 minutes, while exercise at 46 minutes keeps sugar stable or lower.\n\nAt 46 minutes glucose from breakfast is entering the bloodstream before its 60-90 minute peak, so you begin using it before it fully peaks. Muscle contractions activate GLUT4 transporters, which open up and pull sugar directly out of your blood to use for energy. Muscles can take in glucose during exercise without needing insulin, which gives your pancreas a big break. Because you have recently eaten, your brain knows there is incoming fuel, which suppresses the dawn phenomenon, so your liver will not dump extra stored sugar into your blood.\n\nEat a low-carb, protein-rich breakfast such as egg, nuts and vegetables, then do your 15-minute kettlebell routine 46 minutes later. With a fasting sugar of around 7.8 mmol/L, a proper breakfast and workout should result in a stable or downward trend, such as 6.5 mmol/L after workout.\n\nAvoid high-carb items like white bread, sugary cereals and instant oats as they may outpace what a 15-minute workout can clear, and stick to protein, healthy fats and fiber. When standing up from your kettlebell squat or pulling the weight up, blow your breath out smoothly through your mouth, and never hold your breath or strain aggressively. Focus on a slow, deliberate pace as a steady strength-building routine rather than a fast, exhausting cardio session.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
