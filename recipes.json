@@ -7762,6 +7762,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "insulin-shield-breakfast",
+      "title": "Insulin-Shield Breakfast",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "low-carb",
+        "protein",
+        "egg",
+        "nuts",
+        "yogurt"
+      ],
+      "img": "images/insulin-shield-breakfast-card.jpg",
+      "poster": "images/insulin-shield-breakfast.jpg",
+      "ill": "ill-egg",
+      "badge": "New",
+      "featured": false,
+      "desc": "Small protein-focused snack with egg, nuts or yogurt before workout.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
