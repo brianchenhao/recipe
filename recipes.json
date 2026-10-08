@@ -7834,6 +7834,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "eggless-donuts",
+      "title": "Eggless Donuts",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Western",
+        "flour",
+        "fried",
+        "eggless"
+      ],
+      "img": "images/eggless-donuts-card.jpg",
+      "poster": "images/eggless-donuts.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft and fluffy eggless fried donuts with assorted sweet glazes and toppings.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 8-10 donuts",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
