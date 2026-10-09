@@ -7966,6 +7966,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "baked-jacket-potato-with-cheese",
+      "title": "Baked Jacket Potato with Cheese",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Western",
+        "potato",
+        "cheese",
+        "baked"
+      ],
+      "img": "images/baked-jacket-potato-with-cheese-card.jpg",
+      "poster": "images/baked-jacket-potato-with-cheese.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy baked potato with fluffy inside topped with gooey melted cheese.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "1 serving",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
