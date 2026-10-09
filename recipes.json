@@ -7900,6 +7900,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "haw-tea",
+      "title": "Haw Tea",
+      "author": "",
+      "cat": "Drinks",
+      "tags": [
+        "Chinese",
+        "hawthorn",
+        "red dates",
+        "simmered"
+      ],
+      "img": "images/haw-tea-card.jpg",
+      "poster": "images/haw-tea.jpg",
+      "ill": "ill-drink",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tangy refreshing hawthorn tea that aids digestion, served hot or iced.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 1 litre",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
