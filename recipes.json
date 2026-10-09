@@ -7867,6 +7867,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "mochi-red-bean-wrap-in-bun",
+      "title": "Mochi Red Bean Wrap in Bun",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Japanese",
+        "red bean",
+        "mochi",
+        "baked"
+      ],
+      "img": "images/mochi-red-bean-wrap-in-bun-card.jpg",
+      "poster": "images/mochi-red-bean-wrap-in-bun.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft baked buns filled with chewy mochi and sweet red bean paste.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 8 buns",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
