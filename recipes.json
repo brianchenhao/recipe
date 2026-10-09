@@ -7933,6 +7933,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "rosella-tea",
+      "title": "Rosella Tea",
+      "author": "",
+      "cat": "Drinks",
+      "tags": [
+        "herbal",
+        "rosella",
+        "simmered",
+        "healthy"
+      ],
+      "img": "images/rosella-tea-card.jpg",
+      "poster": "images/rosella-tea.jpg",
+      "ill": "ill-drink",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tangy refreshing red tea made from dried rosella, served hot or iced.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 1 litre",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
