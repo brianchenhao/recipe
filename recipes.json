@@ -8098,6 +8098,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cantonese-style-sea-coconut-snow-fungus-chicken-soup",
+      "title": "Cantonese-Style Sea Coconut & Snow Fungus Chicken Soup",
+      "author": "",
+      "cat": "Soup",
+      "tags": [
+        "Cantonese",
+        "chicken",
+        "sea coconut",
+        "snow fungus",
+        "simmered"
+      ],
+      "img": "images/cantonese-style-sea-coconut-snow-fungus-chicken-soup-card.jpg",
+      "poster": "images/cantonese-style-sea-coconut-snow-fungus-chicken-soup.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Nourishing Cantonese chicken soup with sea coconut and snow fungus for lungs and skin.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
