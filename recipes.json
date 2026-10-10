@@ -7999,6 +7999,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "baked-king-oyster-mushroom",
+      "title": "Baked King Oyster Mushroom",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "vegetarian",
+        "king oyster mushroom",
+        "baked",
+        "healthy"
+      ],
+      "img": "images/baked-king-oyster-mushroom-card.jpg",
+      "poster": "images/baked-king-oyster-mushroom.jpg",
+      "ill": "ill-grill",
+      "badge": "New",
+      "featured": false,
+      "desc": "Juicy baked king oyster mushrooms with garlic-soy-honey marinade and meaty texture.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2-3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
