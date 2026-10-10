@@ -8065,6 +8065,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "hokkien-chai-boey",
+      "title": "Hokkien Chai Boey",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Hokkien",
+        "napa cabbage",
+        "mushrooms",
+        "stewed"
+      ],
+      "img": "images/hokkien-chai-boey-card.jpg",
+      "poster": "images/hokkien-chai-boey.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Comforting Hokkien mixed vegetable stew with cabbage, mushrooms and tofu puffs.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "3-4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
