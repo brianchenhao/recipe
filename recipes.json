@@ -8032,6 +8032,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "minced-pork-with-potato",
+      "title": "Minced Pork with Potato",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Chinese",
+        "pork",
+        "potato",
+        "stir-fry"
+      ],
+      "img": "images/minced-pork-with-potato-card.jpg",
+      "poster": "images/minced-pork-with-potato.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Savory minced pork simmered with tender potatoes in soy sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "3-4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
