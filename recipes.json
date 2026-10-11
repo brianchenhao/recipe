@@ -8199,6 +8199,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "khao-yum",
+      "title": "Khao Yum",
+      "author": "",
+      "cat": "Rice",
+      "tags": [
+        "Thai",
+        "rice",
+        "herbs",
+        "tossed"
+      ],
+      "img": "images/khao-yum-card.jpg",
+      "poster": "images/khao-yum.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Fragrant Southern Thai rice salad with fresh herbs, vegetables and spicy-sour dressing.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2-3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
