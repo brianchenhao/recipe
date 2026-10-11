@@ -8165,6 +8165,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chicken-soup-with-chinese-yam-and-soybean",
+      "title": "Chicken Soup with Chinese Yam and Soybean",
+      "author": "",
+      "cat": "Soup",
+      "tags": [
+        "Chinese",
+        "chicken",
+        "yam",
+        "soybean",
+        "simmered"
+      ],
+      "img": "images/chicken-soup-with-chinese-yam-and-soybean-card.jpg",
+      "poster": "images/chicken-soup-with-chinese-yam-and-soybean.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Nourishing chicken soup with Chinese yam and soybeans, gentle for the whole family.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4-6 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
