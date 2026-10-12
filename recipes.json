@@ -8299,6 +8299,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "how-the-brain-memorises-and-studies",
+      "section": "health",
+      "title": "How the Brain Memorises and Studies",
+      "author": "",
+      "cat": "Wellbeing",
+      "tags": [
+        "memory",
+        "brain",
+        "study tips",
+        "exams"
+      ],
+      "img": "images/how-the-brain-memorises-and-studies-card.jpg",
+      "poster": "images/how-the-brain-memorises-and-studies.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Explains how memory works and lists evidence-based study strategies for exams.",
+      "lede": "",
+      "body": "Memory is created by changing the strength of connections between neurons. The more you use a memory, the stronger and more stable it becomes. Prefrontal cortex helps focus, planning and decision making. Sensory cortex processes what you see, hear and read. Parietal cortex integrates information. Hippocampus converts short-term to long-term memory. Temporal lobe processes meaning. Amygdala adds emotional importance. Cerebellum helps procedural memory for skills and habits.\n\nThe memory process is encode, process, store and retrieve. Encode takes in information through senses. Process pays attention, understands meaning and links to what you already know. Store keeps information in hippocampus and strengthens it in cortex through repetition. Retrieve reactivates neural pathways, and more retrieval makes recall easier.\n\nSensory memory lasts 0-2 seconds. Short-term memory lasts seconds to minutes, holds 7 plus or minus 2 items, and is easily forgotten if not rehearsed. Long-term memory lasts days to years and becomes more stable with repetition and retrieval. Explicit memory is conscious facts and events. Implicit memory is unconscious skills and habits.\n\nStudy with active recall, spaced repetition on day 1, 3, 7, 14 and 30, chunking, elaborative learning, dual coding with words and visuals, and practice testing with past papers. Create a quiet, organised space with good lighting and keep phone away. Get good sleep 7-9 hours, exercise regularly, eat healthy diet, stay hydrated and manage stress. Follow a plan from learning concepts to review to practice tests to light review.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
