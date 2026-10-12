@@ -8334,6 +8334,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "homemade-wraps",
+      "title": "Homemade Wraps",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Mexican-style",
+        "flour",
+        "pan-cooked"
+      ],
+      "img": "images/homemade-wraps-card.jpg",
+      "poster": "images/homemade-wraps.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft and flexible homemade flour wraps perfect for chicken, tuna, or veggie fillings.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 8 wraps",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
