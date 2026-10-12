@@ -8232,6 +8232,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "abc-soup",
+      "title": "ABC Soup",
+      "author": "",
+      "cat": "Soup",
+      "tags": [
+        "Malaysian",
+        "pork ribs",
+        "vegetables",
+        "simmered"
+      ],
+      "img": "images/abc-soup-card.jpg",
+      "poster": "images/abc-soup.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Classic Malaysian home-cooked soup with carrot, potato, tomato and pork, light and naturally sweet.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4-6 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
