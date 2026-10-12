@@ -8265,6 +8265,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "lotus-black-bean-soup",
+      "title": "Lotus Black Bean Soup",
+      "author": "",
+      "cat": "Soup",
+      "tags": [
+        "Chinese",
+        "pork ribs",
+        "lotus root",
+        "black beans",
+        "simmered"
+      ],
+      "img": "images/lotus-black-bean-soup-card.jpg",
+      "poster": "images/lotus-black-bean-soup.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Nourishing pork rib soup with lotus root, black beans and red dates.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4-6 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
