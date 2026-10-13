@@ -8400,6 +8400,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "ayam-masak-lemak-cili-api",
+      "title": "Ayam Masak Lemak Cili Api",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Malaysian",
+        "chicken",
+        "coconut milk",
+        "spicy",
+        "simmered"
+      ],
+      "img": "images/ayam-masak-lemak-cili-api-card.jpg",
+      "poster": "images/ayam-masak-lemak-cili-api.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender chicken simmered in creamy turmeric coconut gravy with spicy bird's eye chillies.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
