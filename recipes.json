@@ -8366,6 +8366,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "ayam-masak-merah",
+      "title": "Ayam Masak Merah",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Malaysian",
+        "chicken",
+        "spicy",
+        "tomato",
+        "simmered"
+      ],
+      "img": "images/ayam-masak-merah-card.jpg",
+      "poster": "images/ayam-masak-merah.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender chicken in rich, sweet, spicy and tangy tomato sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
