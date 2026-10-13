@@ -8467,6 +8467,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sayur-pucuk-manis-masak-lemak-labu",
+      "title": "Sayur Pucuk Manis Masak Lemak Labu",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Malaysian",
+        "pumpkin",
+        "sweet leaf",
+        "masak lemak"
+      ],
+      "img": "images/sayur-pucuk-manis-masak-lemak-labu-card.jpg",
+      "poster": "images/sayur-pucuk-manis-masak-lemak-labu.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender sweet leaf shoots and pumpkin in rich creamy turmeric coconut gravy.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3-4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
