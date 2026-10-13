@@ -8434,6 +8434,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chickpea-wraps",
+      "title": "Chickpea Wraps",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Vegan",
+        "Gluten-Free",
+        "Chickpea",
+        "Pan-fried"
+      ],
+      "img": "images/chickpea-wraps-card.jpg",
+      "poster": "images/chickpea-wraps.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft flexible gluten-free wraps made with just chickpeas and water.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "makes 6–8 wraps",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
