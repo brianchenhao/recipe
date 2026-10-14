@@ -8600,6 +8600,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "peria-goreng-telur-dengan-ikan-bilis",
+      "title": "Peria Goreng Telur dengan Ikan Bilis",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Malaysian",
+        "bitter gourd",
+        "egg",
+        "anchovies",
+        "stir-fry"
+      ],
+      "img": "images/peria-goreng-telur-dengan-ikan-bilis-card.jpg",
+      "poster": "images/peria-goreng-telur-dengan-ikan-bilis.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crisp stir-fried bitter gourd tossed with fluffy egg and crunchy anchovies.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2-3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
