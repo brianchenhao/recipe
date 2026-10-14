@@ -8634,6 +8634,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "paper-baked-chicken",
+      "title": "Paper Baked Chicken",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "western",
+        "chicken",
+        "vegetables",
+        "paper-baked"
+      ],
+      "img": "images/paper-baked-chicken-card.jpg",
+      "poster": "images/paper-baked-chicken.jpg",
+      "ill": "ill-grill",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender juicy chicken baked in parchment with vegetables and herbs.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
