@@ -8566,6 +8566,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "moong-dal-chilla",
+      "title": "Moong Dal Chilla",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "Indian",
+        "moong dal",
+        "savoury pancake",
+        "vegan",
+        "gluten-free"
+      ],
+      "img": "images/moong-dal-chilla-card.jpg",
+      "poster": "images/moong-dal-chilla.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy lentil pancakes with soft centers studded with onion, carrot and herbs.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "makes 6–8 chillas",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
