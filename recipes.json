@@ -8533,6 +8533,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "steam-brinjal-terung-kukus",
+      "title": "Steam Brinjal (Terung Kukus)",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Malaysian",
+        "brinjal",
+        "steamed",
+        "garlic sauce"
+      ],
+      "img": "images/steam-brinjal-terung-kukus-card.jpg",
+      "poster": "images/steam-brinjal-terung-kukus.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender steamed brinjal topped with fragrant savoury spicy garlic sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3-4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
