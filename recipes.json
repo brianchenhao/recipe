@@ -8641,17 +8641,17 @@
       "author": "",
       "cat": "Meat & Seafood",
       "tags": [
-        "western",
+        "healthy",
         "chicken",
-        "vegetables",
-        "paper-baked"
+        "baked",
+        "vegetables"
       ],
       "img": "images/paper-baked-chicken-card.jpg",
       "poster": "images/paper-baked-chicken.jpg",
       "ill": "ill-grill",
       "badge": "New",
       "featured": false,
-      "desc": "Tender juicy chicken baked in parchment with vegetables and herbs.",
+      "desc": "Tender juicy chicken baked in parchment with vegetables, lemon and herbs.",
       "lede": "The whole recipe is in the picture — tap it to zoom in.",
       "level": "",
       "prep": "",
