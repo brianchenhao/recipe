@@ -8766,6 +8766,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cholesterol-basics-and-heart-health",
+      "section": "questions",
+      "title": "Cholesterol Basics and Heart Health",
+      "author": "",
+      "cat": "Health & Medicine",
+      "tags": [
+        "Cholesterol",
+        "Heart Health",
+        "Nutrition",
+        "Prevention"
+      ],
+      "img": "",
+      "poster": "",
+      "quiz": "quizzes/cholesterol-basics-and-heart-health.json",
+      "questionCount": 150,
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "This quiz covers what cholesterol is and how LDL, HDL, and triglycerides affect health. It also explores testing, diet, lifestyle, and management of high cholesterol.",
+      "lede": "",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
