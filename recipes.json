@@ -8700,6 +8700,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "bitter-gourd-egg-omelette",
+      "title": "Bitter Gourd Egg Omelette",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "Malaysian",
+        "bitter gourd",
+        "egg",
+        "pan-fried"
+      ],
+      "img": "images/bitter-gourd-egg-omelette-card.jpg",
+      "poster": "images/bitter-gourd-egg-omelette.jpg",
+      "ill": "ill-egg",
+      "badge": "New",
+      "featured": false,
+      "desc": "Savoury fluffy eggs with tender bitter gourd slices, slightly bitter and full of flavour.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2-3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
