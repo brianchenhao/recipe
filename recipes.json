@@ -8667,6 +8667,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "bitter-gourd-chicken",
+      "title": "Bitter Gourd Chicken",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Chinese",
+        "chicken",
+        "bitter gourd",
+        "stir-fry"
+      ],
+      "img": "images/bitter-gourd-chicken-card.jpg",
+      "poster": "images/bitter-gourd-chicken.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "A classic and healthy home-cooked dish with tender chicken and mildly bitter gourd, stir-fried with garlic and savoury seasoning.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3-4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
