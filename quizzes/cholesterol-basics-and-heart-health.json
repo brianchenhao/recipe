@@ -1,0 +1,1846 @@
+{
+  "id": "cholesterol-basics-and-heart-health",
+  "title": "Cholesterol Basics and Heart Health",
+  "topic": "Cholesterol",
+  "category": "Health & Medicine",
+  "summary": "This quiz covers what cholesterol is and how LDL, HDL, and triglycerides affect health. It also explores testing, diet, lifestyle, and management of high cholesterol.",
+  "createdAt": "2026-10-15",
+  "questions": [
+    {
+      "q": "Which type of cholesterol is called 'good' cholesterol because it helps carry extra cholesterol back to the liver?",
+      "o": [
+        "LDL cholesterol",
+        "Triglycerides",
+        "HDL cholesterol",
+        "VLDL cholesterol"
+      ],
+      "a": 3,
+      "tip": "HDL is considered good cholesterol because it carries excess cholesterol from the blood to the liver to be removed.",
+      "eli5": "Think of HDL like a cleanup crew after family dinner, collecting leftover plates and taking them back to the kitchen."
+    },
+    {
+      "q": "Which description best fits what cholesterol is?",
+      "o": [
+        "A mineral like iron that helps carry oxygen in the blood",
+        "A sugar that dissolves easily in blood to give quick energy",
+        "A waxy, fat-like substance found in every cell of the body",
+        "A protein that fights germs and infections"
+      ],
+      "a": 3,
+      "tip": "Cholesterol is a waxy, fat-like substance found in every cell of the body.",
+      "eli5": "Think of it like the wax on an apple skin — a fatty layer that is part of every tiny building block in your body."
+    },
+    {
+      "q": "Where does most of the body's cholesterol come from?",
+      "o": [
+        "Most is made by the liver, with the rest coming from food",
+        "Most is breathed in from the air, with the rest made by the lungs",
+        "Most comes from drinking water, with the rest made by the kidneys",
+        "Most comes only from food and the body cannot make it"
+      ],
+      "a": 1,
+      "tip": "The liver makes most of the body's cholesterol, with the rest coming from food.",
+      "eli5": "Like a bakery that bakes most of its own bread and buys just a little extra from a shop."
+    },
+    {
+      "q": "Cholesterol does not mix with blood on its own. How does it travel through the bloodstream?",
+      "o": [
+        "It dissolves directly like salt in water",
+        "It turns into sugar for transport",
+        "It is breathed out through the lungs",
+        "It is carried by particles called lipoproteins"
+      ],
+      "a": 4,
+      "tip": "Cholesterol does not dissolve in blood and is carried by particles called lipoproteins.",
+      "eli5": "Like oil in soup needs a delivery truck, fatty cholesterol needs lipoprotein carriers to ride through watery blood."
+    },
+    {
+      "q": "Lipoproteins carry cholesterol in the blood. What does LDL (low-density lipoprotein) normally do?",
+      "o": [
+        "Removes excess cholesterol and takes it back to the liver",
+        "Delivers cholesterol from the liver to cells, but excess can deposit in artery walls",
+        "Breaks down food in the stomach for digestion",
+        "Carries oxygen from the lungs to the body"
+      ],
+      "a": 2,
+      "tip": "LDL delivers cholesterol from the liver to cells, but excess LDL can deposit cholesterol in artery walls.",
+      "eli5": "Think of LDL like delivery vans from a warehouse — helpful in the right number, but too many clog the streets."
+    },
+    {
+      "q": "What are triglycerides, which are often measured along with cholesterol?",
+      "o": [
+        "A type of fat in the blood that provides energy, but high levels raise cardiovascular risk",
+        "A type of vitamin that strengthens bones and teeth",
+        "A type of red blood cell that fights infection",
+        "A type of hormone that controls sleep"
+      ],
+      "a": 1,
+      "tip": "Triglycerides are a type of fat in the blood that provides energy, but high levels raise cardiovascular risk.",
+      "eli5": "Like pantry jars of cooking oil saved for later meals — useful stored energy, but too many jars crowd the kitchen."
+    },
+    {
+      "q": "Why is LDL often called 'bad' cholesterol?",
+      "o": [
+        "Because it lowers blood sugar to dangerous levels",
+        "Because it prevents the body from absorbing vitamins",
+        "Because it causes immediate pain and fever",
+        "Because high levels can lead to plaque buildup in arteries"
+      ],
+      "a": 4,
+      "tip": "LDL is called bad cholesterol because high levels can lead to plaque buildup.",
+      "eli5": "Like grease poured down a sink drain, too much LDL can slowly clog the pipes that carry blood."
+    },
+    {
+      "q": "Why is LDL cholesterol often called 'bad' cholesterol?",
+      "o": [
+        "Because it helps clean extra cholesterol out of the blood",
+        "Because high levels can leave cholesterol in artery walls and form plaque (sticky buildup that narrows arteries)",
+        "Because it gives the body quick energy after meals",
+        "Because it lowers blood pressure and protects the heart"
+      ],
+      "a": 2,
+      "tip": "High LDL can deposit cholesterol in artery walls, leading to plaque buildup.",
+      "eli5": "Think of LDL like delivery trucks that dump extra boxes in the hallway when there are too many, blocking the way."
+    },
+    {
+      "q": "What is the normal job of LDL in the body?",
+      "o": [
+        "To carry oxygen from the lungs to body tissues",
+        "To carry extra cholesterol back to the liver for removal",
+        "To break down food in the stomach for digestion",
+        "To carry cholesterol from the liver out to cells that need it"
+      ],
+      "a": 4,
+      "tip": "LDL delivers cholesterol from the liver to cells, but excess LDL can deposit cholesterol in artery walls.",
+      "eli5": "Like a grocery van bringing supplies to houses, it is helpful until too many vans start piling bags on the street."
+    },
+    {
+      "q": "Which eating pattern is most likely to raise LDL cholesterol?",
+      "o": [
+        "Regular meals with fatty meats, butter, cheese, and full-fat dairy",
+        "Meals with oats, beans, lentils, fruits, and vegetables",
+        "Meals with vegetables, whole grains, and oily fish twice a week",
+        "Cooking with unsaturated oils instead of butter or lard"
+      ],
+      "a": 1,
+      "tip": "Saturated fats in fatty meats and full-fat dairy products can raise LDL cholesterol.",
+      "eli5": "It is like pouring bacon grease down a kitchen sink, over time the greasy stuff sticks and clogs the pipes."
+    },
+    {
+      "q": "How would most adults know they have high LDL cholesterol?",
+      "o": [
+        "They feel chest pain every time they eat fatty food",
+        "They notice yellow skin right after fatty meals",
+        "They usually feel fine and learn about it from a blood test called a lipid panel",
+        "They get dizzy only in the morning before breakfast"
+      ],
+      "a": 3,
+      "tip": "High cholesterol usually causes no symptoms and is found through blood testing.",
+      "eli5": "It is like dust building up inside a closed closet, you do not see it until you open the door and check."
+    },
+    {
+      "q": "Which change to fats and fiber in the diet is widely recommended to help lower LDL cholesterol?",
+      "o": [
+        "Eat more processed and fried foods made with trans fats",
+        "Limit saturated fat, avoid trans fat, and eat more soluble fiber from oats and beans",
+        "Replace fruits and vegetables with fatty meats and cheese",
+        "Skip whole grains and eat only full-fat dairy foods"
+      ],
+      "a": 2,
+      "tip": "Limiting saturated fat and avoiding trans fat while eating more fiber-rich foods helps lower LDL.",
+      "eli5": "It is like swapping heavy muddy boots for light sneakers and sweeping the path clean with a broom made of oats and beans."
+    },
+    {
+      "q": "Over many years, what can high LDL cholesterol contribute to if it is not managed?",
+      "o": [
+        "Plaque buildup in artery walls, raising the risk of heart disease and stroke",
+        "Stronger bones and healthier joints",
+        "Lower blood sugar and better eyesight",
+        "Faster healing of cuts and colds"
+      ],
+      "a": 1,
+      "tip": "High LDL can contribute to plaque buildup, increasing heart disease and stroke risk.",
+      "eli5": "Like rust slowly narrowing a water pipe, plaque narrows arteries so blood has trouble getting through."
+    },
+    {
+      "q": "If two adults are similar except one has a higher HDL (good cholesterol) level, what is generally true about heart disease risk?",
+      "o": [
+        "The person with higher HDL tends to have higher heart disease risk",
+        "The person with higher HDL tends to have lower heart disease risk",
+        "HDL level has no link to heart disease risk",
+        "Doctors ignore HDL and look only at age"
+      ],
+      "a": 2,
+      "tip": "Higher HDL levels are linked with lower heart disease risk, which is why HDL is called good cholesterol.",
+      "eli5": "Think of HDL like a cleanup crew after a school party — more helpers means less mess left to cause trouble."
+    },
+    {
+      "q": "What does HDL stand for when doctors talk about good cholesterol?",
+      "o": [
+        "High-density lipoprotein",
+        "High-dose lipoprotein",
+        "Heavy-density lipoprotein",
+        "High-density lipid"
+      ],
+      "a": 1,
+      "tip": "HDL stands for high-density lipoprotein, a particle that carries cholesterol in blood.",
+      "eli5": "Like a delivery van with its full company name on the side, HDL's full name tells you it is a dense carrier for cholesterol."
+    },
+    {
+      "q": "You want to know your HDL (good cholesterol) number. Which blood test will include it?",
+      "o": [
+        "Fasting blood sugar test",
+        "Thyroid hormone test",
+        "Complete blood count for anemia",
+        "Lipid panel or lipid profile"
+      ],
+      "a": 4,
+      "tip": "A lipid panel measures total cholesterol, HDL, LDL, and triglycerides.",
+      "eli5": "A lipid panel is like a shopping receipt that lists each item separately — HDL is one line on that receipt."
+    },
+    {
+      "q": "Total blood cholesterol is the sum of parts measured in a lipid panel. How does HDL fit into that total?",
+      "o": [
+        "Total ignores HDL completely",
+        "Total counts only HDL",
+        "Total is HDL plus LDL plus part of the triglyceride level",
+        "Total is HDL minus LDL"
+      ],
+      "a": 3,
+      "tip": "Total blood cholesterol equals HDL plus LDL plus part of the triglyceride level.",
+      "eli5": "Think of total cholesterol like a grocery bill — HDL is one bag, LDL is another bag, plus a small snack from triglycerides."
+    },
+    {
+      "q": "Which lifestyle pattern is most linked with maintaining a healthier HDL (good cholesterol) level?",
+      "o": [
+        "Smoking daily and sitting most of the day",
+        "Regular physical activity and keeping a healthy body weight",
+        "Eating many foods high in trans fat",
+        "Gaining a lot of extra weight quickly"
+      ],
+      "a": 2,
+      "tip": "Regular physical activity and a healthy body weight are linked with healthier cholesterol levels.",
+      "eli5": "Like riding a bike often and keeping it clean keeps it running well, moving often and keeping a steady weight helps keep HDL healthy."
+    },
+    {
+      "q": "LDL mainly delivers cholesterol from the liver out to cells in the body. In contrast, what does HDL mainly do?",
+      "o": [
+        "Turn cholesterol into blood sugar for energy",
+        "Deliver extra oxygen to the heart muscle",
+        "Store cholesterol inside artery walls",
+        "Pick up excess cholesterol from blood and tissues and bring it back to the liver"
+      ],
+      "a": 4,
+      "tip": "HDL removes excess cholesterol from blood and tissues for transport back to the liver.",
+      "eli5": "If LDL trucks deliver boxes from the warehouse to houses, HDL trucks drive around town picking up extra boxes and returning them to the warehouse."
+    },
+    {
+      "q": "A blood test shows high triglycerides, a type of fat in the blood. What does a high level usually mean for the heart and blood vessels?",
+      "o": [
+        "It lowers the risk of heart disease",
+        "It raises the risk of cardiovascular disease",
+        "It has no effect on heart health",
+        "It protects arteries from plaque"
+      ],
+      "a": 2,
+      "tip": "High triglyceride levels raise cardiovascular risk.",
+      "eli5": "Like extra grease clogging a kitchen drain over time, extra triglycerides make heart problems more likely."
+    },
+    {
+      "q": "A doctor orders a lipid panel, also called a cholesterol check. Which set of results will this test measure?",
+      "o": [
+        "Blood sugar, iron, and vitamin D",
+        "Red blood cells, white blood cells, and platelets",
+        "Blood pressure, heart rate, and body weight",
+        "Total cholesterol, HDL, LDL, and triglycerides"
+      ],
+      "a": 4,
+      "tip": "A lipid panel measures total cholesterol, HDL, LDL, and triglycerides.",
+      "eli5": "Like a four-item shopping list, a lipid panel always checks those four blood fats together."
+    },
+    {
+      "q": "Total blood cholesterol is given as one number. How is that number calculated from HDL, LDL, and triglycerides?",
+      "o": [
+        "HDL plus LDL plus part of the triglyceride level",
+        "HDL minus LDL minus the triglyceride level",
+        "The average of HDL, LDL, and triglycerides",
+        "LDL alone, without HDL or triglycerides"
+      ],
+      "a": 1,
+      "tip": "Total blood cholesterol is the sum of HDL and LDL plus part of the triglyceride level.",
+      "eli5": "Like a grocery bill that adds two big items plus a small part of a third, total cholesterol adds HDL, LDL, and a bit of triglycerides."
+    },
+    {
+      "q": "People used to be told to fast, or eat nothing, for 9 to 12 hours before a lipid panel. Why was fasting especially recommended for triglycerides?",
+      "o": [
+        "Because fasting permanently lowers HDL",
+        "Because fasting makes LDL disappear from the blood",
+        "Because a recent meal can temporarily raise triglycerides",
+        "Because fasting is needed to find plaque in arteries"
+      ],
+      "a": 3,
+      "tip": "Traditionally, fasting for 9 to 12 hours was recommended before a lipid panel, especially for triglycerides.",
+      "eli5": "Like stepping on a scale right after a big lunch, a recent meal can make the triglyceride number look temporarily higher."
+    },
+    {
+      "q": "For a routine cholesterol screening today, what do most modern guidelines say about eating before the test?",
+      "o": [
+        "You must always fast for 9 to 12 hours with no exceptions",
+        "Fasting is usually not needed because HDL, LDL, and total cholesterol barely change after a meal",
+        "You should eat a fatty meal right before to test digestion",
+        "You should skip the test if you ate at all in the past month"
+      ],
+      "a": 2,
+      "tip": "Most modern guidelines no longer require fasting before a routine lipid panel.",
+      "eli5": "Like checking shoe size after lunch, most cholesterol numbers barely move after eating, so fasting is often skipped."
+    },
+    {
+      "q": "Which 2 habits are well known to raise triglyceride levels over time? (Choose 2)",
+      "o": [
+        "Eating soluble fiber from oats, beans, and vegetables often",
+        "Getting regular physical activity and keeping a healthy weight",
+        "Regularly drinking sugary sodas and sweet drinks",
+        "Often drinking a lot of alcohol"
+      ],
+      "a": [
+        3,
+        4
+      ],
+      "tip": "Excess added sugars and excess alcohol are well-established causes of high triglycerides.",
+      "eli5": "Like pouring extra sugar and extra oil into the same pan, too many sweet drinks and too much alcohol overload the blood fats."
+    },
+    {
+      "q": "Your lab report shows total cholesterol of 210 and HDL (good cholesterol) of 60. How is non-HDL cholesterol calculated from these numbers?",
+      "o": [
+        "Subtract HDL from total: 210 minus 60 equals 150",
+        "Add total and HDL together: 210 plus 60 equals 270",
+        "Divide total by HDL: 210 divided by 60",
+        "Multiply total by HDL: 210 times 60"
+      ],
+      "a": 1,
+      "tip": "Non-HDL cholesterol equals total cholesterol minus HDL cholesterol.",
+      "eli5": "Think like a shopping bill minus a discount coupon — you take the total and take away the good part to see what is left."
+    },
+    {
+      "q": "What is non-HDL cholesterol (the cholesterol number left after removing the good HDL part)?",
+      "o": [
+        "Only the good HDL cholesterol that helps protect the heart",
+        "Only the triglycerides that were measured after fasting",
+        "All the cholesterol that is not HDL, including LDL and other artery-clogging types",
+        "Only the cholesterol that comes directly from food in the last meal"
+      ],
+      "a": 3,
+      "tip": "Non-HDL includes LDL plus other harmful cholesterol-carrying particles like VLDL.",
+      "eli5": "Think of a classroom without the helpers — non-HDL is everyone left who could cause trouble."
+    },
+    {
+      "q": "Two adults both have a total cholesterol of 230. One has high HDL (good cholesterol) and normal LDL, while the other has low HDL and high LDL. What does this tell you about total cholesterol alone?",
+      "o": [
+        "Total cholesterol alone always predicts the exact same heart risk for everyone",
+        "Total cholesterol alone can hide important differences, so you need the breakdown to judge risk",
+        "Total cholesterol alone proves the person with higher HDL has higher risk",
+        "Total cholesterol alone means diet and lifestyle do not matter"
+      ],
+      "a": 2,
+      "tip": "The same total can come from mostly good HDL or mostly bad LDL, so the breakdown matters.",
+      "eli5": "Like two lunchboxes with the same weight — one could be full of fruit and the other full of candy."
+    },
+    {
+      "q": "If your LDL (bad cholesterol) rises a lot while your HDL (good cholesterol) and triglycerides stay about the same, what most likely happens to your total cholesterol?",
+      "o": [
+        "It falls a lot because LDL and total move in opposite directions",
+        "It stays exactly the same because the body balances it",
+        "It turns into HDL so the total does not change",
+        "It rises because total includes LDL"
+      ],
+      "a": 4,
+      "tip": "Total cholesterol is the sum of HDL plus LDL plus part of triglycerides, so raising LDL raises the total.",
+      "eli5": "Like adding more apples to a fruit basket — the whole basket gets heavier."
+    },
+    {
+      "q": "Why do many doctors track non-HDL cholesterol to judge heart disease risk?",
+      "o": [
+        "Because it adds up all the cholesterol types that can build up in artery walls",
+        "Because it measures only the good HDL that cleans the blood",
+        "Because it shows blood sugar and iron levels at the same time",
+        "Because it tells exactly how much cholesterol you ate yesterday"
+      ],
+      "a": 1,
+      "tip": "Non-HDL captures all harmful, artery-clogging cholesterol particles, not just LDL.",
+      "eli5": "Like counting all the weeds in a garden, not just the tallest ones, to know the real work ahead."
+    },
+    {
+      "q": "For most healthy adults age 20 and older, how often is cholesterol (total and related levels) generally advised to be checked?",
+      "o": [
+        "Only once after age 65 and never again",
+        "Every day at home like body temperature",
+        "At least every 4 to 6 years if results have been normal",
+        "Only when chest pain or other symptoms appear"
+      ],
+      "a": 3,
+      "tip": "Adults 20 and older are generally advised to have cholesterol measured at least every 4 to 6 years.",
+      "eli5": "Like a car check-up every few years — you look under the hood before there is smoke."
+    },
+    {
+      "q": "Your lab slip says 'lipid profile' and the nurse calls it a 'cholesterol check.' What does this mean?",
+      "o": [
+        "They are three different heart scans",
+        "They are different names for the same blood test measuring cholesterol and triglycerides",
+        "The lipid profile measures blood sugar while the cholesterol check measures cholesterol",
+        "The cholesterol check is a urine test while the lipid profile is a blood test"
+      ],
+      "a": 2,
+      "tip": "Lipid panel, lipid profile, and cholesterol check are different names for the same test.",
+      "eli5": "Like fries and chips can mean the same food in different places, these three names mean the same blood test."
+    },
+    {
+      "q": "A healthy 25-year-old adult had a normal cholesterol result. When is she generally advised to have it checked again if she has no new risks?",
+      "o": [
+        "Only if she feels chest pain",
+        "Every week for a year",
+        "Only once after age 60",
+        "At least every 4 to 6 years"
+      ],
+      "a": 4,
+      "tip": "Adults ages 20 and older are generally advised to have cholesterol measured at least every 4 to 6 years.",
+      "eli5": "Like getting your car inspected every few years when it runs fine, cholesterol is rechecked every few years when it is normal."
+    },
+    {
+      "q": "What happens to your body during a routine lipid panel for cholesterol testing?",
+      "o": [
+        "A small sample of blood is taken, usually from a vein in the arm",
+        "A small piece of artery tissue is removed for testing",
+        "An X-ray picture is taken of the heart arteries",
+        "Electrical sensors are placed on the chest to record the heartbeat"
+      ],
+      "a": 1,
+      "tip": "A lipid panel is a blood test using a small blood sample, usually from an arm vein.",
+      "eli5": "Like taking a spoonful of soup to taste the whole pot, the lab takes a little blood to check fats in all your blood."
+    },
+    {
+      "q": "A lipid panel reports total cholesterol plus separate HDL, LDL, and triglyceride numbers. Why are the separate numbers needed?",
+      "o": [
+        "Because the lab machine cannot calculate a total number",
+        "Because total cholesterol alone changes every few minutes",
+        "Because insurance only pays for separate numbers",
+        "Because a normal total can still hide high LDL or low HDL"
+      ],
+      "a": 4,
+      "tip": "Total cholesterol alone can look normal while LDL is high or HDL is low, so the parts must be viewed separately.",
+      "eli5": "Like knowing the total grocery bill does not tell you if you bought veggies or candy, total cholesterol does not tell you the mix of good and bad types."
+    },
+    {
+      "q": "For routine screening, modern labs often accept a blood sample after a normal meal. Why is the result still useful?",
+      "o": [
+        "Food has no effect on any part of the blood",
+        "Eating makes all cholesterol leave the blood for hours",
+        "Total cholesterol, HDL, and LDL change very little after a meal",
+        "A meal makes the blood draw less painful"
+      ],
+      "a": 3,
+      "tip": "Total cholesterol, HDL, and LDL barely move after a meal, so routine screening is generally fine without fasting.",
+      "eli5": "Like adding a cup of water to a pool barely changes it, a meal barely changes most cholesterol numbers, only triglycerides bump up a bit."
+    },
+    {
+      "q": "You are scheduled for a lipid panel (cholesterol test). Which 2 steps help make the results accurate? (Choose 2)",
+      "o": [
+        "Follow the clinic's instructions about fasting or eating beforehand",
+        "Have a heavy fried meal and alcohol the night before",
+        "Tell the clinic about medicines, vitamins, and health conditions",
+        "Do intense exercise and drink lots of coffee right before the draw"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Accurate lipid testing depends on following fasting/eating instructions and telling staff about medicines and conditions that affect lipids.",
+      "eli5": "Like following test rules and telling a teacher what help you used, you follow eating rules and share medicine info so the test is fair."
+    },
+    {
+      "q": "Fatty beef, butter, and full-fat cheese can raise LDL (bad cholesterol). Which nutrient in these foods is mainly responsible?",
+      "o": [
+        "Soluble fiber",
+        "Saturated fat",
+        "Vitamin C",
+        "Water"
+      ],
+      "a": 2,
+      "tip": "Saturated fats in fatty meats and full-fat dairy products can raise LDL cholesterol.",
+      "eli5": "Think of saturated fat like thick grease in a frying pan that can clog the drain if you pour in too much."
+    },
+    {
+      "q": "Which foods are most likely to contain artificial trans fats, which doctors strongly discourage for cholesterol health?",
+      "o": [
+        "Fresh apples and carrots",
+        "Plain brown rice and oats",
+        "Grilled chicken breast without skin",
+        "Store-bought cookies, pastries, and deep-fried fast foods"
+      ],
+      "a": 4,
+      "tip": "Trans fats in processed and fried foods are strongly discouraged for cholesterol management.",
+      "eli5": "Trans fats are like putting sand in a gas tank, they make the engine run worse, so it is best to avoid them."
+    },
+    {
+      "q": "How does soluble fiber from foods like oats and beans help lower cholesterol?",
+      "o": [
+        "It helps reduce how much cholesterol is absorbed from the gut into the blood",
+        "It adds extra cholesterol that the liver needs",
+        "It turns HDL (good cholesterol) into LDL (bad cholesterol)",
+        "It stops the liver from making blood cells"
+      ],
+      "a": 1,
+      "tip": "Soluble fiber from oats, beans, lentils, fruits, and vegetables helps reduce cholesterol absorption.",
+      "eli5": "Soluble fiber works like a sponge in your intestines, soaking up cholesterol so less gets into your blood."
+    },
+    {
+      "q": "Olive oil, canola oil, nuts, and oily fish contain unsaturated fats. How do these fats compare to saturated and trans fats for heart health?",
+      "o": [
+        "They raise LDL (bad cholesterol) much more than butter does",
+        "They should be avoided completely to manage cholesterol",
+        "They support better heart health when used instead of saturated and trans fats",
+        "They turn into harmful plaque faster than trans fats do"
+      ],
+      "a": 3,
+      "tip": "Replacing saturated and trans fats with unsaturated fats supports better heart health.",
+      "eli5": "It is like swapping heavy winter boots for light sneakers on a long walk, the lighter choice is easier on your body."
+    },
+    {
+      "q": "Which 2 foods are good sources of soluble fiber that can help with cholesterol? (Choose 2)",
+      "o": [
+        "Oatmeal and oat bran",
+        "White candy and soda",
+        "Beans and lentils",
+        "Bacon and pepperoni"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Soluble fiber from oats, beans, lentils, fruits, and vegetables helps lower cholesterol.",
+      "eli5": "Oats and beans are like small brooms in your shopping cart that help sweep extra cholesterol out."
+    },
+    {
+      "q": "Which weekly eating pattern best matches heart-healthy advice for cholesterol?",
+      "o": [
+        "Fried chicken daily with sugary drinks",
+        "Lots of vegetables, fruits, and whole grains, with oily fish like salmon twice a week",
+        "Processed meats and pastries at most meals",
+        "Butter, cream, and fatty cheese at every meal"
+      ],
+      "a": 2,
+      "tip": "Heart-healthy eating patterns emphasize vegetables, fruits, whole grains, and oily fish twice a week.",
+      "eli5": "This plate is like a colorful school lunchbox with garden veggies plus fish helpers visiting twice a week."
+    },
+    {
+      "q": "Which foods are highest in saturated fat, the type of fat that can raise LDL (bad) cholesterol?",
+      "o": [
+        "Olive oil, almonds, and salmon",
+        "Fatty beef, butter, cheese, and whole milk",
+        "Oats, beans, apples, and carrots",
+        "Fresh fruit, plain rice, and boiled potatoes"
+      ],
+      "a": 2,
+      "tip": "Saturated fats in fatty meats and full-fat dairy products can raise LDL cholesterol.",
+      "eli5": "Like bacon grease that hardens in a cold pan, saturated fat from fatty meat and butter is the thick kind that can clog pipes."
+    },
+    {
+      "q": "Which foods are most likely to contain artificial trans fats?",
+      "o": [
+        "Fresh apples and bananas",
+        "Plain beans and lentils",
+        "Grilled salmon and brown rice",
+        "Doughnuts, french fries, and stick margarine"
+      ],
+      "a": 4,
+      "tip": "Artificial trans fats are found in some processed, fried, and baked foods made with partially hydrogenated oils.",
+      "eli5": "Like reused fryer oil at a fast-food shop, sweet packaged treats and deep-fried foods are the most likely hiding spots."
+    },
+    {
+      "q": "If you eat a lot of saturated fat over time, what usually happens to your LDL (bad) cholesterol?",
+      "o": [
+        "It goes up",
+        "It goes down",
+        "It stays exactly the same",
+        "It turns into HDL (good) cholesterol"
+      ],
+      "a": 1,
+      "tip": "Eating a lot of saturated fat over time tends to raise LDL cholesterol.",
+      "eli5": "Think of LDL like delivery trucks — more saturated fat sends out more trucks that can dump cholesterol on artery walls."
+    },
+    {
+      "q": "How do trans fats affect LDL (bad) cholesterol and HDL (good) cholesterol?",
+      "o": [
+        "They lower LDL and raise HDL",
+        "They have no effect on either one",
+        "They raise LDL and lower HDL",
+        "They only change triglycerides for one hour after eating"
+      ],
+      "a": 3,
+      "tip": "Trans fats tend to raise LDL cholesterol and lower HDL cholesterol.",
+      "eli5": "Like a bad teammate who helps the other team and benches your best player, trans fat pushes the bad number up and the good number down."
+    },
+    {
+      "q": "Which 2 swaps help replace saturated and trans fats with healthier unsaturated fats? (Choose 2)",
+      "o": [
+        "Use olive oil instead of butter for cooking",
+        "Eat nuts or oily fish instead of fatty processed meats",
+        "Drink heavy cream instead of low-fat milk",
+        "Eat more fried pies made with shortening"
+      ],
+      "a": [
+        1,
+        2
+      ],
+      "tip": "Replacing saturated and trans fats with unsaturated fats supports better heart health.",
+      "eli5": "Like swapping heavy boots for light sneakers, swapping butter for olive oil and sausage for salmon is lighter work for the heart."
+    },
+    {
+      "q": "You are checking an ingredient list to avoid trans fat. Which words tell you trans fat may be present?",
+      "o": [
+        "Whole grain flour",
+        "Partially hydrogenated oils",
+        "Soluble fiber",
+        "Cold-pressed olive oil"
+      ],
+      "a": 2,
+      "tip": "Partially hydrogenated oils on an ingredient list mean the food may contain trans fat.",
+      "eli5": "Like spotting a secret code word on a shopping list, seeing those two words tells you trans fat is hiding inside."
+    },
+    {
+      "q": "Butter and lard are firm at room temperature, while olive oil and canola oil are liquid. Which one is mainly unsaturated fat and the better choice for cholesterol health?",
+      "o": [
+        "Coconut oil, because it is firm and tropical",
+        "Butter, because it is dairy and natural",
+        "Olive oil, because it is mainly unsaturated fat",
+        "Lard, because it comes from meat"
+      ],
+      "a": 3,
+      "tip": "Unsaturated fats are usually liquid at room temperature and are a better choice than solid saturated fats.",
+      "eli5": "Think of hard butter versus pourable oil — the oils that pour easily are usually kinder to your arteries."
+    },
+    {
+      "q": "Heart-healthy advice suggests eating oily fish such as salmon, sardines, or mackerel about twice a week. Why is this suggested for cholesterol and heart health?",
+      "o": [
+        "Oily fish supplies unsaturated fats that are better for the heart than saturated fats from fatty meats",
+        "Oily fish has almost no calories so you can eat as much as you want",
+        "Oily fish replaces the need for any fiber from oats or beans",
+        "Oily fish provides trans fat that protects the arteries"
+      ],
+      "a": 1,
+      "tip": "Oily fish provides heart-healthier unsaturated fats as part of a balanced eating pattern.",
+      "eli5": "Swapping sausage for salmon for dinner is like swapping heavy boots for light shoes — easier work for your heart."
+    },
+    {
+      "q": "Whole oats, brown rice, and whole-wheat bread are preferred over white bread, pastries, and sugary cereals for cholesterol health. What makes the whole-grain choice better?",
+      "o": [
+        "Whole grains contain more trans fat for better flavor",
+        "Whole grains contain more salt which lowers cholesterol",
+        "Whole grains cost more so they must work better",
+        "Whole grains keep more soluble fiber that helps reduce cholesterol absorption"
+      ],
+      "a": 4,
+      "tip": "Whole grains retain soluble fiber that helps reduce cholesterol absorption, while heavy refining removes much of it.",
+      "eli5": "Whole grains are like a sponge with extra fuzz — that fuzzy fiber helps trap some cholesterol on its way out."
+    },
+    {
+      "q": "For a snack, why is a small handful of unsalted nuts usually a better choice for cholesterol than chips fried in hydrogenated oil?",
+      "o": [
+        "Nuts have no fat of any kind",
+        "Nuts provide unsaturated fats and fiber instead of harmful trans and saturated fats",
+        "Nuts contain artificial trans fats that raise good cholesterol",
+        "Nuts only help if they are heavily salted"
+      ],
+      "a": 2,
+      "tip": "Nuts provide unsaturated fats and fiber, while chips fried in hydrogenated oil often add trans and saturated fats.",
+      "eli5": "Picking nuts over fried chips is like picking a fresh apple over candy — one gives helpful nutrients, the other gives fats that clog."
+    },
+    {
+      "q": "You enjoy full-fat cheese and fatty meats but want to follow advice to limit saturated fat. Which habit best fits that advice?",
+      "o": [
+        "Eat them in smaller amounts less often and choose lean meats or lower-fat dairy more often",
+        "Eat larger portions of fatty meats to stay full longer",
+        "Keep the same portions but add butter to vegetables",
+        "Avoid all fruits and grains so you can keep fatty meats"
+      ],
+      "a": 1,
+      "tip": "Limiting saturated fat means eating smaller amounts less often and choosing lean or lower-fat versions.",
+      "eli5": "It is like spending pocket money — smaller treats less often leave more room for healthier foods."
+    },
+    {
+      "q": "Soluble fiber, the soft fiber that dissolves in water, helps with cholesterol. Why is eating a whole apple with skin better than drinking clear apple juice for this fiber?",
+      "o": [
+        "Juice has more soluble fiber because it is liquid",
+        "Whole fruit and juice have exactly the same fiber",
+        "Whole fruit keeps its soluble fiber while clear juice has most of the fiber removed",
+        "Whole fruit works only because the skin has trans fat"
+      ],
+      "a": 3,
+      "tip": "Whole fruits keep soluble fiber that helps reduce cholesterol absorption, while clear juice has most fiber removed.",
+      "eli5": "Eating the whole apple is like eating the orange with its juicy sacs — the juice alone leaves the helpful pulp behind."
+    },
+    {
+      "q": "Regular aerobic activity, such as brisk walking, biking, or swimming for several weeks, most often does what to blood fats?",
+      "o": [
+        "Greatly raises LDL (bad cholesterol) while lowering HDL (good cholesterol)",
+        "Tends to raise HDL (good cholesterol) and lower triglycerides",
+        "Removes all plaque already in artery walls",
+        "Stops the liver from making any cholesterol"
+      ],
+      "a": 2,
+      "tip": "Regular aerobic activity is linked with higher HDL and lower triglycerides.",
+      "eli5": "Think of movement like tidying up — it brings out more helper trucks for cleanup and burns off extra fuel cans."
+    },
+    {
+      "q": "How does regular physical activity mainly help with cholesterol control through body weight?",
+      "o": [
+        "Keeping a healthy weight through activity is linked with healthier cholesterol levels",
+        "Gaining a lot of extra weight always lowers heart risk no matter the cholesterol",
+        "Being active lets a person eat unlimited saturated and trans fat with no effect",
+        "Body weight has no connection to cholesterol or heart health"
+      ],
+      "a": 1,
+      "tip": "Staying active and keeping a healthy weight are linked with healthier cholesterol levels.",
+      "eli5": "Like keeping a backpack light for a hike, keeping weight in a healthy range makes the trip easier for the heart."
+    },
+    {
+      "q": "Which activity habit is most linked with healthier cholesterol and heart health over time?",
+      "o": [
+        "Sitting most of the day and rarely moving",
+        "Doing one very hard workout every few months only",
+        "Resting completely for weeks to protect the heart",
+        "Being active with moderate effort, like brisk walking, on a regular basis"
+      ],
+      "a": 4,
+      "tip": "Regular moderate activity on a routine basis supports healthier cholesterol and heart health.",
+      "eli5": "Like watering plants a little often, steady movement works better than one big splash once in a while."
+    },
+    {
+      "q": "Regular physical activity helps heart health in ways related to cholesterol. Which 2 effects are most expected? (Choose 2)",
+      "o": [
+        "Helps raise HDL (good cholesterol)",
+        "Cures inherited very high LDL on its own",
+        "Helps lower triglycerides, a type of fat in the blood",
+        "Makes high cholesterol cause warning symptoms"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Regular activity is linked with higher HDL and lower triglycerides.",
+      "eli5": "Like washing dishes and taking out trash often, moving often helps clear extra grease and brings more cleanup helpers."
+    },
+    {
+      "q": "Two adults eat a similar heart-healthy diet, but one walks briskly most days and one sits most of the day. What is generally expected for their blood fats?",
+      "o": [
+        "Both will have exactly the same cholesterol numbers",
+        "The adult who sits most will always have higher HDL (good cholesterol)",
+        "The regularly active adult is more likely to have higher HDL and lower triglycerides",
+        "Activity only builds leg strength and does not affect blood fats"
+      ],
+      "a": 3,
+      "tip": "With diet similar, regular activity is linked with higher HDL and lower triglycerides.",
+      "eli5": "Like two shops selling the same food, the one that cleans daily stays tidier than the one where staff sit all day."
+    },
+    {
+      "q": "Doctors often say activity works best with healthy eating and not smoking for cholesterol. Why is activity usually one part of that foundation?",
+      "o": [
+        "Activity alone always fixes very high LDL without any other changes",
+        "Smoking plus sitting improves HDL faster than activity alone",
+        "High cholesterol needs only exercise and no food changes",
+        "Activity supports healthy weight and blood fats, while healthy diet and not smoking add further benefit"
+      ],
+      "a": 4,
+      "tip": "Healthy diet, regular exercise, and not smoking together form the usual foundation for managing cholesterol.",
+      "eli5": "Like a school team where each player has a job, food, movement, and not smoking each help the heart win."
+    },
+    {
+      "q": "An adult with overweight has high LDL (bad cholesterol). If they lose extra weight and keep a healthy weight with balanced eating and activity, what change in blood fats is most often expected?",
+      "o": [
+        "HDL (good cholesterol) falls a lot and LDL rises a lot",
+        "LDL and triglycerides tend to fall, and HDL tends to stay the same or rise a little",
+        "Cholesterol numbers stay exactly the same and only body weight changes",
+        "Triglycerides rise sharply and HDL falls sharply"
+      ],
+      "a": 2,
+      "tip": "Reaching and keeping a healthy weight is linked with lower LDL and triglycerides and healthier HDL.",
+      "eli5": "Like taking heavy bags out of a car, losing extra weight helps the body move fats around more smoothly."
+    },
+    {
+      "q": "Why does carrying a lot of extra fat around the belly often go together with unhealthy cholesterol results?",
+      "o": [
+        "Belly fat has no link to blood fats and only affects height",
+        "Belly fat usually raises HDL (good cholesterol) a great deal",
+        "Extra belly fat is linked with higher triglycerides, higher LDL, and lower HDL",
+        "Belly fat only changes total cholesterol after a single meal"
+      ],
+      "a": 3,
+      "tip": "Excess fat around the waist is linked with higher triglycerides and LDL and lower HDL.",
+      "eli5": "Like a crowded kitchen pantry that gets messy, extra belly fat makes it harder for the body to keep blood fats tidy."
+    },
+    {
+      "q": "Which everyday habit best supports both a healthy weight and healthier cholesterol levels?",
+      "o": [
+        "Choose water instead of sugary drinks, eat moderate portions with vegetables, fruits, and whole grains, and stay active",
+        "Skip meals all day and then eat one very large late-night meal",
+        "Snack on fried chips and candy most days and sit most of the day",
+        "Eat mostly butter, bacon, and pastries with very little fiber"
+      ],
+      "a": 1,
+      "tip": "Balanced portions, fewer sugary drinks, and regular activity support both healthy weight and healthy cholesterol.",
+      "eli5": "Like keeping a shopping cart balanced and not overfilled, steady portions and water instead of soda keep weight and cholesterol steadier."
+    },
+    {
+      "q": "Which 2 habits help keep a healthy weight to support healthy cholesterol? (Choose 2)",
+      "o": [
+        "Eat balanced meals with vegetables, fruits, and whole grains and watch portion sizes",
+        "Drink several sugary sodas every day",
+        "Get regular activity, such as brisk walking most days of the week",
+        "Use a crash diet with very few calories to lose weight very fast"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Steady balanced eating and regular activity are the foundation for a healthy weight and healthier cholesterol.",
+      "eli5": "Like doing homework a little each day instead of cramming, steady meals and daily walks keep the body in better balance."
+    },
+    {
+      "q": "During a cholesterol visit, a doctor also checks body weight, BMI (weight compared to height), and waist size. Why?",
+      "o": [
+        "To calculate the exact LDL number without a blood test",
+        "To decide how many hours the person fasted before the test",
+        "To replace the lipid panel so no blood test is needed",
+        "Because extra body weight adds heart risk along with cholesterol, so together they give a fuller picture"
+      ],
+      "a": 4,
+      "tip": "Weight measures are checked with cholesterol because both affect heart disease risk.",
+      "eli5": "Like checking both the tires and the engine before a trip, doctors check weight and cholesterol to see the whole car."
+    },
+    {
+      "q": "A person with overweight wants to improve cholesterol and considers a crash diet that cuts out almost all food for very fast weight loss. What is generally advised instead?",
+      "o": [
+        "Stay on the crash diet for many months to keep cholesterol low",
+        "Aim for slow, steady weight loss with healthy eating and regular activity, which is safer and easier to keep",
+        "Gain more weight quickly and then stop all activity",
+        "Add more trans fats and sugary foods while eating much less"
+      ],
+      "a": 2,
+      "tip": "Gradual weight loss with healthy eating and activity is safer and more lasting than crash diets for cholesterol health.",
+      "eli5": "Like learning to cook slowly instead of burning food on high heat, slow and steady weight loss works better and lasts longer."
+    },
+    {
+      "q": "How does regular cigarette smoking usually affect HDL (good cholesterol) and LDL (bad cholesterol)?",
+      "o": [
+        "It raises HDL and lowers LDL",
+        "It lowers HDL and makes LDL more likely to damage arteries",
+        "It raises HDL and removes triglycerides from the blood",
+        "It has no effect on cholesterol levels"
+      ],
+      "a": 2,
+      "tip": "Smoking tends to lower HDL good cholesterol and make LDL more harmful to artery walls.",
+      "eli5": "Think of HDL as street cleaners and smoking as sending half of them home, so sticky trash piles up faster."
+    },
+    {
+      "q": "A person has high LDL (bad cholesterol) and also smokes. Why is this combination especially risky for heart attack and stroke?",
+      "o": [
+        "Smoking cools the blood so cholesterol cannot move",
+        "Smoking removes plaque that has already formed",
+        "High LDL protects vessels from smoke damage",
+        "Smoking damages blood vessel walls, making it easier for LDL cholesterol to form plaque"
+      ],
+      "a": 4,
+      "tip": "Smoking injures vessel linings, which lets excess LDL deposit plaque more easily.",
+      "eli5": "Like scratched-up pipes catch rust faster, smoked-damaged vessels catch cholesterol gunk faster."
+    },
+    {
+      "q": "If someone with high cholesterol quits smoking, what usually happens to heart and vessel health over time?",
+      "o": [
+        "Heart disease risk starts to fall and blood vessel health and HDL can improve",
+        "LDL immediately drops to zero and arteries are instantly cleared",
+        "Total cholesterol rises sharply but the heart is protected",
+        "Quitting has no effect on the heart unless diet also changes the same day"
+      ],
+      "a": 1,
+      "tip": "Quitting smoking lowers cardiovascular risk over time and can help HDL recover.",
+      "eli5": "Like airing out a smoky kitchen, quitting lets the body clean up and breathe easier bit by bit."
+    },
+    {
+      "q": "How does regularly drinking a lot of alcohol, such as heavy or binge drinking, usually affect triglycerides, a type of fat in the blood?",
+      "o": [
+        "It usually removes all triglycerides from the blood",
+        "It usually has no effect on triglycerides",
+        "It usually raises triglyceride levels and cardiovascular risk",
+        "It usually turns triglycerides directly into HDL"
+      ],
+      "a": 3,
+      "tip": "Heavy alcohol intake is a well-known cause of high triglycerides.",
+      "eli5": "Like pouring extra cooking oil into a pan, extra alcohol adds extra fat floating in the blood."
+    },
+    {
+      "q": "Some people hear that alcohol can raise HDL (good cholesterol). What is the mainstream medical advice about drinking for cholesterol?",
+      "o": [
+        "Do not start drinking to raise HDL; use proven habits like healthy eating, activity, and not smoking",
+        "Start drinking daily because any rise in HDL guarantees heart protection",
+        "Heavy drinking is the best way to lower LDL and triglycerides",
+        "Alcohol replaces the need for cholesterol testing and medicines"
+      ],
+      "a": 1,
+      "tip": "Guidelines do not recommend starting alcohol for heart health because harms outweigh any HDL rise.",
+      "eli5": "Like you would not start a leaky roof to water plants, you should not start drinking to help cholesterol."
+    },
+    {
+      "q": "Which 2 habits around smoking and alcohol best fit heart-healthy advice for cholesterol? (Choose 2)",
+      "o": [
+        "Smoke a few cigarettes a day because light smoking is safe for arteries",
+        "Do not smoke and avoid breathing other people's tobacco smoke",
+        "Drink heavily on weekends to relax blood vessels",
+        "Limit alcohol and avoid heavy or binge drinking"
+      ],
+      "a": [
+        2,
+        4
+      ],
+      "tip": "Not smoking and limiting alcohol are core lifestyle foundations for managing cholesterol and heart risk.",
+      "eli5": "Like keeping smoke out of a clean room and not flooding the sink, clean air and less alcohol keep vessels tidier."
+    },
+    {
+      "q": "Your father and older brother both had very high LDL (bad cholesterol) and heart attacks before age 55. What does this family history mean for your own risk?",
+      "o": [
+        "You have almost no risk because only your own diet matters, not family",
+        "You have a higher chance of high LDL and early heart disease, so you should share this history and get your cholesterol checked",
+        "You have higher risk only if you are the same height as them",
+        "Family history only matters after age 70, so you can ignore it for now"
+      ],
+      "a": 2,
+      "tip": "Having a close relative with very high LDL or early heart disease raises your own risk for high cholesterol and heart disease.",
+      "eli5": "Like inheriting your family's eye color, you can inherit their tendency for high cholesterol."
+    },
+    {
+      "q": "What is familial hypercholesterolemia (FH), an inherited cholesterol condition that runs in families?",
+      "o": [
+        "A brief rise in cholesterol after one fatty meal",
+        "High blood pressure caused only by eating too much salt",
+        "Low HDL (good cholesterol) caused only by lack of sleep",
+        "An inherited gene change that keeps LDL (bad cholesterol) very high from a young age because the liver cannot clear it well"
+      ],
+      "a": 4,
+      "tip": "Familial hypercholesterolemia is an inherited gene change that causes very high LDL from childhood because the liver clears LDL poorly.",
+      "eli5": "Think of the liver as a kitchen strainer, and in FH the strainer has bigger holes from birth so bad cholesterol slips through."
+    },
+    {
+      "q": "Which 2 facts about your family are most useful for a doctor judging your inherited cholesterol risk? (Choose 2)",
+      "o": [
+        "Whether a close relative like a parent or sibling had very high cholesterol",
+        "What jobs your close relatives did for a living",
+        "Whether a close relative had a heart attack or stroke and how old they were at the time",
+        "What favorite recipes your grandparents liked to cook"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Doctors use close relatives' high cholesterol and age at heart attack or stroke to judge inherited risk.",
+      "eli5": "Like showing a teacher last year's report card, showing these two family clues helps the doctor see the pattern."
+    },
+    {
+      "q": "A person with inherited very high LDL eats healthy, exercises, and does not smoke, but LDL stays very high. Why is medicine often still needed?",
+      "o": [
+        "Because inherited genes keep LDL high, so healthy habits alone usually cannot lower it enough, though habits still help the heart",
+        "Because healthy habits make inherited genes disappear after a few weeks",
+        "Because diet and exercise only affect height, not cholesterol",
+        "Because medicine is needed to replace the need for any healthy habits"
+      ],
+      "a": 1,
+      "tip": "With inherited very high LDL, lifestyle is the foundation but usually cannot overcome the genetic effect alone.",
+      "eli5": "Like mopping a floor while the sink still overflows, healthy habits help but you also need to fix the source."
+    },
+    {
+      "q": "Two adults eat the same heart-healthy diet and get the same exercise. One has parents with normal cholesterol, the other has parents with very high LDL from an inherited condition. What is generally expected?",
+      "o": [
+        "Both will always have exactly the same LDL level because diet decides everything",
+        "The one with normal-cholesterol parents will always have higher LDL",
+        "The one with high-LDL parents is much more likely to have high LDL despite the same healthy habits",
+        "Family background makes no difference to cholesterol at all"
+      ],
+      "a": 3,
+      "tip": "Genes strongly affect LDL, so family history can cause high LDL even with the same healthy lifestyle.",
+      "eli5": "Like two plants getting the same sun and water, the one from taller seeds still grows taller."
+    },
+    {
+      "q": "Routine cholesterol checks are often advised starting at age 20. If a child has a parent with very high inherited cholesterol or early heart disease, what is generally advised?",
+      "o": [
+        "Wait until age 60 to check because children cannot have high cholesterol",
+        "Only check the parents again and never check the child",
+        "Avoid testing because inherited cholesterol always goes away on its own",
+        "Talk to the doctor about testing much earlier, often in childhood, and do not wait until adulthood"
+      ],
+      "a": 4,
+      "tip": "Children with a strong family history of very high cholesterol or early heart disease are generally advised to have cholesterol tested early.",
+      "eli5": "Like checking smoke alarms early in a house that had a fire before, you check cholesterol sooner when it runs in the family."
+    },
+    {
+      "q": "When LDL (bad) cholesterol stays high for many years, how does it raise the risk of heart attack and stroke?",
+      "o": [
+        "It thins the blood so cuts bleed much longer",
+        "It makes red blood cells carry less oxygen to muscles",
+        "Excess LDL deposits cholesterol in artery walls, forming plaque that narrows and can block blood flow",
+        "It stretches artery walls so blood flows too quickly"
+      ],
+      "a": 3,
+      "tip": "Excess LDL can deposit cholesterol in artery walls, forming plaque that narrows arteries and can block blood flow to the heart or brain.",
+      "eli5": "Think of grease building up inside a kitchen drain pipe until water can barely get through."
+    },
+    {
+      "q": "Doctors say high cholesterol raises the risk of coronary heart disease. What does coronary heart disease mean?",
+      "o": [
+        "The heart's own supply arteries are narrowed by plaque, so the heart muscle gets less blood",
+        "The valves of the heart leak only after hard exercise",
+        "The heartbeat becomes too fast only during sleep",
+        "The lungs fill with extra air after a cold"
+      ],
+      "a": 1,
+      "tip": "Coronary heart disease is narrowing of the coronary arteries that supply the heart muscle, often by cholesterol plaque.",
+      "eli5": "Like a garden hose feeding one plant getting pinched, so that plant does not get enough water."
+    },
+    {
+      "q": "How can cholesterol-related plaque lead to a stroke, which can cause sudden trouble with speech, movement, or vision?",
+      "o": [
+        "It makes the stomach absorb less iron from food",
+        "It makes bones lose calcium and become fragile",
+        "It makes lung airways tighten and wheeze",
+        "Plaque or a clot from plaque can block an artery to the brain, cutting off blood flow to brain cells"
+      ],
+      "a": 4,
+      "tip": "Plaque in arteries to the brain can limit or block blood flow, starving part of the brain and causing a stroke.",
+      "eli5": "Like a blocked pipe to a fish tank filter, so part of the tank gets no fresh water."
+    },
+    {
+      "q": "What happens during a heart attack that is linked to high cholesterol and plaque buildup?",
+      "o": [
+        "A short headache that goes away after drinking water",
+        "Blood flow to part of the heart muscle is suddenly blocked, so that part is starved of oxygen",
+        "The heart muscle grows larger so it can pump stronger",
+        "The kidneys suddenly start filtering blood much faster"
+      ],
+      "a": 2,
+      "tip": "A heart attack often happens when plaque or a clot suddenly blocks blood flow to part of the heart muscle.",
+      "eli5": "Like a delivery truck blocked from reaching a store, so the shelves on that aisle go empty."
+    },
+    {
+      "q": "If close family members had heart attacks at a young age or have very high LDL cholesterol, what does this suggest about your own risk?",
+      "o": [
+        "Family history has no effect on cholesterol or heart risk",
+        "You may have inherited a higher risk for very high LDL and earlier heart disease, so earlier checking is important",
+        "You are protected from heart disease because relatives already had it",
+        "Only childhood diet matters and genes play no role"
+      ],
+      "a": 2,
+      "tip": "Family history and inherited conditions can cause very high LDL and earlier heart disease risk.",
+      "eli5": "Like inheriting your family's recipe book, you can also inherit their tendency for high cholesterol."
+    },
+    {
+      "q": "High cholesterol usually causes no symptoms. Why do doctors still treat it as a serious risk for heart disease and stroke?",
+      "o": [
+        "Silent plaque buildup can damage arteries for years, and the first sign may be a heart attack or stroke, so it must be found by blood testing",
+        "It always causes a mild fever that most people ignore",
+        "It causes red spots on the skin that fade in a day",
+        "It only matters if it causes chest pain every day"
+      ],
+      "a": 1,
+      "tip": "High cholesterol usually has no symptoms and is found by blood testing, while silent plaque buildup raises heart attack and stroke risk.",
+      "eli5": "Like termites quietly weakening a house wall for years until part of it breaks, with no warning noise."
+    },
+    {
+      "q": "Cholesterol is found in every cell of the body. What does this tell you about cholesterol?",
+      "o": [
+        "It is a germ that only appears when you are sick",
+        "It is a normal building material the body uses in cells",
+        "It is a waste product that healthy bodies do not have",
+        "It is only found in the heart and blood vessels"
+      ],
+      "a": 2,
+      "tip": "Cholesterol is a waxy, fat-like substance normally present in every cell.",
+      "eli5": "Like bricks are in every wall of a house, a little cholesterol is in every tiny cell block of the body."
+    },
+    {
+      "q": "Doctors say LDL and HDL are lipoproteins, not cholesterol itself. What does that mean?",
+      "o": [
+        "They are lumps of pure cholesterol floating freely in blood",
+        "They are sugars that turn into cholesterol after a meal",
+        "They are carrier particles that transport cholesterol in the blood",
+        "They are stomach acids that digest cholesterol from food"
+      ],
+      "a": 3,
+      "tip": "LDL and HDL are lipoprotein particles that carry cholesterol because it does not dissolve in blood.",
+      "eli5": "Like delivery vans carry groceries around town, LDL and HDL vans carry cholesterol around the blood."
+    },
+    {
+      "q": "Which group of foods can naturally contain cholesterol?",
+      "o": [
+        "Apples, bananas, and carrots",
+        "Oats, beans, and olive oil",
+        "Beef, chicken, eggs, and cheese from animals",
+        "Water, salt, and plain white sugar"
+      ],
+      "a": 3,
+      "tip": "Dietary cholesterol comes from animal foods, while the liver makes most of the body's cholesterol.",
+      "eli5": "Like only hens can lay hen eggs, only animal foods can bring cholesterol in food; plants do not make it."
+    },
+    {
+      "q": "The body needs a small amount of cholesterol even though too much can harm arteries. Why is some needed?",
+      "o": [
+        "To fight colds by killing viruses in the lungs",
+        "To carry oxygen in red blood cells",
+        "To dissolve bones to keep them soft",
+        "To build cell walls and make hormones, vitamin D, and bile for digestion"
+      ],
+      "a": 4,
+      "tip": "Cholesterol is used to build cells and to make hormones, vitamin D, and bile.",
+      "eli5": "Like flour is needed for a small cake but too much ruins it, a little cholesterol is needed as an ingredient for cells and hormones."
+    },
+    {
+      "q": "How is cholesterol itself different from saturated fat in food?",
+      "o": [
+        "Saturated fat is a nutrient in food that can raise LDL, while cholesterol is a waxy substance in cells and blood",
+        "Saturated fat and cholesterol are exactly the same substance with different names",
+        "Saturated fat is found in blood, while cholesterol is only found in food",
+        "Cholesterol gives food its sweet taste, while saturated fat gives it a salty taste"
+      ],
+      "a": 1,
+      "tip": "Cholesterol is a waxy substance in the body, while saturated fat is a food fat that can raise LDL cholesterol.",
+      "eli5": "Like rain and a wet umbrella are related but not the same thing, saturated fat in food and cholesterol in the body are related but different."
+    },
+    {
+      "q": "A friend says, 'Cholesterol in my blood gives me energy when I run.' What is wrong with that idea?",
+      "o": [
+        "Blood has no cholesterol during exercise",
+        "Providing quick energy is mainly the job of triglycerides and sugars, not cholesterol",
+        "Cholesterol only gives energy while you sleep",
+        "Energy comes only from vitamins, never from blood fats"
+      ],
+      "a": 2,
+      "tip": "Triglycerides are the blood fats that store and supply energy, while cholesterol is mainly a building material.",
+      "eli5": "Like bricks build a school but lunch gives energy to run at recess, cholesterol builds cells while other fuels give energy."
+    },
+    {
+      "q": "When a lab report says LDL, what do those letters stand for?",
+      "o": [
+        "Low-density lipoprotein",
+        "Light digestion lipid",
+        "Large dietary level",
+        "Low digestive lipase"
+      ],
+      "a": 1,
+      "tip": "LDL stands for low-density lipoprotein.",
+      "eli5": "Think of it like a name tag on a delivery truck; LDL is the label for the low-density carrier."
+    },
+    {
+      "q": "Your lipid panel shows total cholesterol, HDL, LDL, and triglycerides. Which of these numbers best shows the bad cholesterol that builds plaque in arteries?",
+      "o": [
+        "HDL number",
+        "Blood sugar number",
+        "LDL number",
+        "Blood pressure number"
+      ],
+      "a": 3,
+      "tip": "LDL is the bad cholesterol most directly linked to plaque buildup.",
+      "eli5": "Like checking which bag has the muddy shoes, LDL is the number doctors check for clogging trouble."
+    },
+    {
+      "q": "You ate a normal breakfast before a routine lipid panel for cholesterol testing. Why is your LDL result still usually useful to your doctor?",
+      "o": [
+        "Breakfast turns LDL into HDL right away",
+        "Eating has little effect on LDL, HDL, and total cholesterol",
+        "LDL disappears from blood after eating",
+        "Food cures high LDL within one hour"
+      ],
+      "a": 2,
+      "tip": "Non-fasting testing is generally fine because LDL and other cholesterol values barely move after a meal.",
+      "eli5": "Like measuring your height after lunch, a sandwich does not change it much, and a meal does not change LDL much."
+    },
+    {
+      "q": "You often cook with butter and eat fatty beef. If you switch to olive oil, nuts, and fish more often, what usually happens to LDL cholesterol over time?",
+      "o": [
+        "LDL usually stays exactly the same no matter what fat you eat",
+        "LDL usually goes up a lot",
+        "HDL turns into LDL",
+        "LDL usually goes down"
+      ],
+      "a": 4,
+      "tip": "Replacing saturated fats with unsaturated fats supports lower LDL and better heart health.",
+      "eli5": "Like swapping heavy mud for clean water in a bucket, lighter unsaturated fats help keep LDL down."
+    },
+    {
+      "q": "High LDL is unhealthy, but the body still needs some LDL at normal levels. Why?",
+      "o": [
+        "Because LDL carries oxygen to muscles for exercise",
+        "Because cells use the cholesterol that LDL delivers to build and maintain themselves",
+        "Because LDL digests food in the stomach",
+        "Because LDL fights germs like an antibody"
+      ],
+      "a": 2,
+      "tip": "LDL normally delivers cholesterol from the liver to cells that need it, and only excess causes harm.",
+      "eli5": "Like trucks bringing bricks to houses, a few deliveries are helpful, but too many dump bricks in the road."
+    },
+    {
+      "q": "Doctors say high LDL can lead to plaque buildup. What is plaque in this context?",
+      "o": [
+        "A cleaning film on teeth",
+        "A type of red blood cell that carries oxygen",
+        "A fatty deposit of cholesterol stuck inside artery walls",
+        "A stomach acid that digests fat"
+      ],
+      "a": 3,
+      "tip": "Excess LDL can deposit cholesterol in artery walls, forming plaque that narrows arteries.",
+      "eli5": "Like grease clogging a kitchen drain pipe, plaque is sticky cholesterol gunk stuck inside blood pipes."
+    },
+    {
+      "q": "HDL stands for high-density lipoprotein. What does 'high-density' mean about this cholesterol-carrying particle?",
+      "o": [
+        "It is larger and lighter than other particles because it holds mostly water",
+        "It holds more cholesterol and triglycerides than any other particle in the blood",
+        "It is smaller and heavier for its size because it has more protein and less fat than LDL",
+        "It dissolves directly in blood without needing protein to carry it"
+      ],
+      "a": 3,
+      "tip": "HDL is denser than LDL because it contains proportionally more protein and less fat.",
+      "eli5": "Like a small bag of sugar versus a big bag of popcorn — the sugar bag is smaller but heavier for its size."
+    },
+    {
+      "q": "Which HDL (good cholesterol) level is generally viewed as most helpful for heart health?",
+      "o": [
+        "30 mg/dL",
+        "38 mg/dL",
+        "45 mg/dL",
+        "65 mg/dL"
+      ],
+      "a": 4,
+      "tip": "Higher HDL is generally linked with lower risk, with about 60 mg/dL and above often considered protective.",
+      "eli5": "Like having more street sweepers on duty — more helpers to clear extra mess."
+    },
+    {
+      "q": "HDL picks up extra cholesterol from the blood and tissues and carries it back to the liver. What does the liver mainly do next with that returned cholesterol?",
+      "o": [
+        "Processes it so the body can get rid of it, for example in bile",
+        "Pumps it straight back into artery walls to build plaque",
+        "Burns it directly for quick energy like sugar",
+        "Turns it into triglycerides to store in the heart muscle"
+      ],
+      "a": 1,
+      "tip": "The liver processes HDL-returned cholesterol so it can be removed from the body.",
+      "eli5": "Like taking recyclables to a recycling center so they leave the house for good."
+    },
+    {
+      "q": "A person has very high LDL (bad cholesterol) but also high HDL (good cholesterol). Why can heart disease risk still be high?",
+      "o": [
+        "HDL turns into LDL when LDL levels get very high",
+        "Excess LDL can still leave cholesterol in artery walls faster than HDL can clear it",
+        "HDL stops working completely whenever LDL rises",
+        "High HDL directly raises blood pressure and damages vessels"
+      ],
+      "a": 2,
+      "tip": "HDL helps clear cholesterol but cannot fully offset heavy cholesterol depositing by very high LDL.",
+      "eli5": "Like one person mopping while three others spill buckets — the floor still gets wet."
+    },
+    {
+      "q": "A lipid panel shows low HDL (good cholesterol). What does a low HDL mainly tell you about cholesterol handling?",
+      "o": [
+        "The body is making no cholesterol at all",
+        "Triglycerides are automatically in a healthy range",
+        "LDL (bad cholesterol) must also be low",
+        "There is less capacity to carry extra cholesterol from blood and tissues back to the liver"
+      ],
+      "a": 4,
+      "tip": "Low HDL means less transport capacity to remove excess cholesterol to the liver.",
+      "eli5": "Like having only one small cleanup truck for a big neighborhood — less trash gets hauled away."
+    },
+    {
+      "q": "Which 2 statements about HDL (good cholesterol) are true? (Choose 2)",
+      "o": [
+        "Higher levels are generally linked with lower heart disease risk",
+        "It helps move excess cholesterol from blood and tissues back to the liver",
+        "Its main job is to deliver cholesterol from the liver out to body cells",
+        "High levels directly cause plaque buildup in artery walls"
+      ],
+      "a": [
+        1,
+        2
+      ],
+      "tip": "HDL is protective and performs reverse transport of excess cholesterol to the liver.",
+      "eli5": "Like garbage trucks hauling trash back to the dump — more trucks means cleaner streets, not more trash delivery."
+    },
+    {
+      "q": "Cholesterol helps build cells, but triglycerides have a different main job. What do triglycerides mainly do in the body?",
+      "o": [
+        "Help carry oxygen inside red blood cells",
+        "Store energy from food to use between meals",
+        "Fight germs that cause infections",
+        "Harden bones and teeth"
+      ],
+      "a": 2,
+      "tip": "Triglycerides are the body's main form of stored energy from food calories.",
+      "eli5": "Think of triglycerides like leftovers packed in the freezer to reheat later when you need energy."
+    },
+    {
+      "q": "Over time, where do extra blood triglycerides mostly come from?",
+      "o": [
+        "Extra calories from sugary foods, refined starches, and alcohol that the body saves as fat",
+        "Drinking only plain water instead of juice",
+        "Eating plain vegetables without added oil",
+        "Using very little salt in home cooking"
+      ],
+      "a": 1,
+      "tip": "The liver turns extra calories, especially from sugar, refined carbs, and alcohol, into triglycerides.",
+      "eli5": "Like stuffing extra groceries into a pantry, the body packs unused food energy away as triglycerides."
+    },
+    {
+      "q": "A friend thinks triglycerides and LDL and HDL cholesterol are exactly the same thing. What is the key difference?",
+      "o": [
+        "Triglycerides carry oxygen while LDL and HDL carry carbon dioxide",
+        "Triglycerides build bones while LDL and HDL build muscles",
+        "Triglycerides fight infection while LDL and HDL carry vitamins",
+        "Triglycerides mainly store energy while LDL and HDL mainly carry cholesterol for building cells"
+      ],
+      "a": 4,
+      "tip": "Triglycerides are energy fat, while LDL and HDL are carriers for cholesterol used to build cells.",
+      "eli5": "Triglycerides are like gas cans for fuel, while LDL and HDL are like delivery trucks for building supplies."
+    },
+    {
+      "q": "A lipid panel shows high triglycerides. Which everyday food and drink change best matches mainstream advice to help lower them?",
+      "o": [
+        "Eat more fried snacks and fatty pastries",
+        "Drink more regular soda and sweetened juice",
+        "Cut back on sugary drinks, sweets, and alcohol and eat more vegetables and whole grains",
+        "Replace fresh fruit with candy and cookies"
+      ],
+      "a": 3,
+      "tip": "Limiting added sugars, refined sweets, and excess alcohol is a core step to lower triglycerides.",
+      "eli5": "Swapping soda for water and candy for fruit is like turning off a faucet that was overfilling the energy tank."
+    },
+    {
+      "q": "Besides raising heart and vessel risk, why do doctors get especially worried when triglycerides become extremely high?",
+      "o": [
+        "They can cause sudden vision loss overnight",
+        "They can trigger painful swelling of the pancreas called pancreatitis",
+        "They can cause bones to become brittle and break",
+        "They can cause red blood cells to stop forming"
+      ],
+      "a": 2,
+      "tip": "Extremely high triglycerides can inflame the pancreas, causing pancreatitis.",
+      "eli5": "Like too much grease clogging and burning a kitchen pipe, extreme triglycerides can irritate the pancreas next to the stomach."
+    },
+    {
+      "q": "After a big sugary meal, triglycerides often rise much more than LDL or total cholesterol. Why?",
+      "o": [
+        "The lab machine mistakes sugar for cholesterol",
+        "Cholesterol quickly leaves the blood after eating",
+        "Eating removes all lipoproteins from the blood",
+        "Triglycerides move energy from that recent meal through the blood"
+      ],
+      "a": 4,
+      "tip": "Triglycerides carry recent food energy in the blood, so they jump after eating while cholesterol changes little.",
+      "eli5": "Like delivery vans crowding the road right after a grocery run, triglycerides flood the blood after a meal."
+    },
+    {
+      "q": "Your lab report says total cholesterol is 210. What does that one number include?",
+      "o": [
+        "Only the HDL (good) cholesterol",
+        "The cholesterol in HDL plus LDL plus other particles such as VLDL combined",
+        "Only the LDL (bad) cholesterol",
+        "Only triglycerides, a different type of fat"
+      ],
+      "a": 2,
+      "tip": "Total cholesterol is the sum of HDL, LDL, and part of the triglyceride-related cholesterol.",
+      "eli5": "Think of total cholesterol like the total grocery bill, with HDL, LDL, and others as items on the receipt."
+    },
+    {
+      "q": "Why can total cholesterol alone give a confusing picture of heart risk?",
+      "o": [
+        "Total cholesterol always equals LDL, so other numbers do not matter",
+        "Total cholesterol never changes and cannot be lowered",
+        "Total cholesterol measures blood sugar instead of cholesterol",
+        "A high total can come from high good HDL, while a normal total can hide high bad cholesterol with low good HDL"
+      ],
+      "a": 4,
+      "tip": "Total includes both protective HDL and harmful non-HDL, so the breakdown matters more than total alone.",
+      "eli5": "Like two shopping carts with the same total price, one can be full of healthy food and the other full of junk."
+    },
+    {
+      "q": "Non-HDL cholesterol means total cholesterol minus HDL. Which cholesterol is left in that non-HDL part?",
+      "o": [
+        "LDL plus VLDL and other remnant cholesterol, the types linked to plaque buildup",
+        "Only HDL, the good cholesterol",
+        "Only the cholesterol the body used up yesterday",
+        "Only triglycerides stored for quick energy"
+      ],
+      "a": 1,
+      "tip": "Non-HDL includes LDL and VLDL remnant cholesterol, all the non-protective types.",
+      "eli5": "If you take the helpful friends out of a group photo, everyone left in the picture is the non-HDL group."
+    },
+    {
+      "q": "Your total cholesterol stayed at 200, but your HDL (good cholesterol) rose from 40 to 55. What happened to your non-HDL cholesterol?",
+      "o": [
+        "It stayed at 200 because total did not change",
+        "It rose from 160 to 175",
+        "It cannot be known without a new LDL test",
+        "It fell from 160 to 145 because more of the total is now good HDL"
+      ],
+      "a": 4,
+      "tip": "Non-HDL equals total minus HDL, so if total is fixed and HDL rises, non-HDL must fall.",
+      "eli5": "Like a pizza cut into two parts, if the good slice gets bigger and the whole pizza stays the same, the other slice gets smaller."
+    },
+    {
+      "q": "Why do doctors often prefer non-HDL cholesterol when triglycerides are very high or blood was taken after a meal?",
+      "o": [
+        "Eating before the test makes total cholesterol impossible to measure",
+        "Non-HDL is total minus HDL, so it avoids the LDL calculation that gets unreliable and still counts remnant cholesterol",
+        "Non-HDL ignores all bad cholesterol and only shows good cholesterol",
+        "A meal raises HDL a lot, so total always falls after eating"
+      ],
+      "a": 2,
+      "tip": "Non-HDL needs only total and HDL, so it stays reliable when high triglycerides make LDL estimates less accurate.",
+      "eli5": "It is like counting all the weeds by weighing the whole garden bed minus the flowers, instead of trying to pick out each weed."
+    },
+    {
+      "q": "Which 2 statements about total cholesterol and non-HDL cholesterol are true? (Choose 2)",
+      "o": [
+        "Total cholesterol includes HDL (good) plus non-HDL (bad-type) cholesterol",
+        "Non-HDL cholesterol is calculated as total cholesterol minus HDL cholesterol",
+        "A higher non-HDL number means a lower risk for heart disease",
+        "Total cholesterol measures only triglycerides and not HDL or LDL"
+      ],
+      "a": [
+        1,
+        2
+      ],
+      "tip": "Total is HDL plus non-HDL, and non-HDL is found by subtracting HDL from total.",
+      "eli5": "Think of total as a full lunchbox, HDL as the healthy apple, and non-HDL as everything else left inside."
+    },
+    {
+      "q": "You are sent for a lipid panel, also called a cholesterol check. How is the test sample usually collected?",
+      "o": [
+        "By holding a blood pressure cuff on your arm for a few minutes",
+        "By collecting a urine sample in a cup",
+        "By drawing a small tube of blood from a vein, usually in your arm",
+        "By swabbing saliva from inside your cheek"
+      ],
+      "a": 3,
+      "tip": "A lipid panel is a blood test that measures cholesterol and triglycerides in blood drawn from a vein.",
+      "eli5": "Like tasting soup to know the flavor, the lab needs a little spoonful of blood to check the fats in it."
+    },
+    {
+      "q": "A routine lipid panel directly measures total cholesterol, HDL (good cholesterol), and triglycerides. How does the lab often report your LDL (bad cholesterol)?",
+      "o": [
+        "It estimates LDL with a formula using those three measured numbers",
+        "It copies the HDL number and reports it again as LDL",
+        "It measures LDL by testing a urine sample",
+        "It guesses LDL from your age and weight alone"
+      ],
+      "a": 1,
+      "tip": "LDL is often calculated from total cholesterol, HDL, and triglycerides instead of being measured directly.",
+      "eli5": "Like finding the missing pizza slice when you know the whole pizza and the other slices, the lab figures out LDL from the other numbers."
+    },
+    {
+      "q": "A healthy adult with normal results may wait 4 to 6 years for the next cholesterol check. When is more frequent cholesterol testing usually advised?",
+      "o": [
+        "Only after age 90, no matter what other health problems exist",
+        "Only if a person wants extra paperwork for work",
+        "Never again, because one normal test lasts a lifetime",
+        "When LDL is very high, other heart risks are present, or treatment with lifestyle changes or medicine has started"
+      ],
+      "a": 4,
+      "tip": "High results, added heart risks, or starting treatment usually call for closer follow-up testing.",
+      "eli5": "Like checking the oven more often when baking a tricky cake, doctors check blood fats more often when risk is higher."
+    },
+    {
+      "q": "Before a lipid panel for cholesterol testing, why does the clinic ask about your medicines, vitamins, and any recent cold, flu, or infection?",
+      "o": [
+        "Because the blood draw will cure the infection",
+        "Because some medicines and short-term illness can temporarily shift cholesterol and triglyceride results",
+        "Because cholesterol testing requires eating nothing for a full week",
+        "Because taking any medicine makes blood impossible to draw"
+      ],
+      "a": 2,
+      "tip": "Some drugs, supplements, and acute illness can temporarily raise or lower lipid results.",
+      "eli5": "Like wet shoes weigh more on a scale, a recent illness or medicine can make the numbers look heavier or lighter for a short time."
+    },
+    {
+      "q": "Your first lipid panel shows very high LDL (bad cholesterol), but you had a stomach bug that week. Why might the doctor order another lipid panel in a few weeks before making long-term plans?",
+      "o": [
+        "To confirm the high reading was real and not a short-term shift or lab variation",
+        "To prove that one blood test can diagnose a cold",
+        "To replace the need to ask about diet and family history",
+        "To show that cholesterol never changes over time"
+      ],
+      "a": 1,
+      "tip": "An unexpected high result is often rechecked after a few weeks to confirm it is stable.",
+      "eli5": "Like re-weighing a suitcase that seems too heavy, a second check makes sure the first surprise number was correct."
+    },
+    {
+      "q": "Modern guidelines say fasting is usually not needed for a routine cholesterol screening alone. Why might your morning instructions still say do not eat after midnight?",
+      "o": [
+        "Because eating ever again will ruin cholesterol forever",
+        "Because all clinics enjoy making patients hungry",
+        "Because cholesterol can only be tested at midnight",
+        "Because another test ordered at the same visit, such as fasting blood sugar, still needs fasting"
+      ],
+      "a": 4,
+      "tip": "Fasting instructions often come from other tests done together with the lipid panel, not from cholesterol alone.",
+      "eli5": "Like bringing an umbrella because one friend needs it, you fast because one test in the group still needs an empty stomach."
+    },
+    {
+      "q": "Shrimp and eggs contain dietary cholesterol but are low in saturated fat. Compared with fatty beef and butter, what do mainstream heart experts generally say about their effect on LDL (bad cholesterol) for most people?",
+      "o": [
+        "Dietary cholesterol raises LDL much more than saturated fat, so shrimp and eggs should always be avoided first",
+        "Saturated and trans fats usually raise LDL more than dietary cholesterol alone, so fatty beef and butter are generally a bigger concern than shrimp or eggs eaten in moderation",
+        "Dietary cholesterol and saturated fat have no effect on blood cholesterol, only total calories matter",
+        "Shrimp and eggs lower LDL because they contain no saturated fat"
+      ],
+      "a": 2,
+      "tip": "For most people, saturated and trans fats raise LDL cholesterol more than dietary cholesterol from foods like eggs or shrimp.",
+      "eli5": "Think like cooking: butter and fatty meat are like turning the burner up high, while a shrimp is more like a small flicker."
+    },
+    {
+      "q": "Most liquid plant oils like olive and canola oil are mainly unsaturated fats. Which two plant oils are the exception because they are high in saturated fat that can raise LDL?",
+      "o": [
+        "Olive oil and canola oil",
+        "Sunflower oil and safflower oil",
+        "Coconut oil and palm oil",
+        "Flaxseed oil and soybean oil"
+      ],
+      "a": 3,
+      "tip": "Coconut oil and palm oil are plant oils that are high in saturated fat.",
+      "eli5": "Most plant oils are like watery juice, but coconut and palm oils are like butter that firms up — a clue they act more like saturated fat."
+    },
+    {
+      "q": "You want to cook chicken in a more heart-healthy way to help manage cholesterol. Which cooking method best fits advice to limit saturated and trans fats?",
+      "o": [
+        "Bake, grill, or steam it using little or no oil, or a small amount of olive or canola oil",
+        "Deep-fry it in butter, lard, or reused frying fat",
+        "Pan-fry it in a large spoonful of butter and bacon fat",
+        "Coat it thickly and fry it in hydrogenated shortening"
+      ],
+      "a": 1,
+      "tip": "Baking, grilling, or steaming with little unsaturated oil adds less saturated and trans fat than deep-frying in butter, lard, or shortening.",
+      "eli5": "Like washing clothes: baking or steaming keeps things clean, while deep-frying in butter soaks the food like a sponge in grease."
+    },
+    {
+      "q": "Heart-healthy advice suggests eating oily fish about twice a week. Which 2 of these are oily fish? (Choose 2)",
+      "o": [
+        "Cod, a lean white fish",
+        "Salmon",
+        "Tilapia, a lean white fish",
+        "Sardines"
+      ],
+      "a": [
+        2,
+        4
+      ],
+      "tip": "Salmon, sardines, mackerel, and herring are oily fish, while cod and tilapia are lean white fish.",
+      "eli5": "Think of a shopping basket: salmon and sardines are the oily cans that count, while cod and tilapia are like plain white boxes."
+    },
+    {
+      "q": "Which lunch best matches advice to lower LDL by limiting saturated fat and adding soluble fiber from oats, beans, fruits, and vegetables?",
+      "o": [
+        "Bacon cheeseburger with fries cooked in palm oil and a milkshake",
+        "Sausage pizza with extra cheese and a sugary pastry",
+        "Fried chicken, buttered white bread, and chips fried in hydrogenated oil",
+        "Oatmeal with fruit, lentil and vegetable soup, and a fresh apple"
+      ],
+      "a": 4,
+      "tip": "Meals rich in oats, beans, fruits, and vegetables add soluble fiber and replace foods high in saturated and trans fats.",
+      "eli5": "Like packing a school bag: the oatmeal, beans, and fruit pack helpful tools, while burgers and fries pack heavy rocks."
+    },
+    {
+      "q": "A package of cookies says cholesterol-free on the front, but the ingredient list shows palm oil and hydrogenated shortening and the label shows high saturated fat. What should you conclude for cholesterol health?",
+      "o": [
+        "Cholesterol-free means it will lower LDL no matter what fat it contains",
+        "It is automatically heart-healthy because only dietary cholesterol matters",
+        "It can still raise LDL because saturated and trans fats raise LDL even when dietary cholesterol is zero",
+        "Saturated fat only matters if the food also contains cholesterol"
+      ],
+      "a": 3,
+      "tip": "A cholesterol-free food can still raise LDL if it is high in saturated fat or contains trans fat.",
+      "eli5": "Like a store sign saying no candy inside, but the shelves are full of soda — the claim hides the real sugary problem, here the unhealthy fat."
+    },
+    {
+      "q": "In simple terms, what is the difference between saturated fat and unsaturated fat?",
+      "o": [
+        "Saturated fat is made mostly of sugar and dissolves in water, while unsaturated fat does not",
+        "Saturated fat has straight chains that pack tightly and is usually solid at room temperature, while unsaturated fat has bent chains and is usually liquid",
+        "Saturated fat is only found in vegetables, while unsaturated fat is only found in meat",
+        "There is no real difference; the names just describe the brand"
+      ],
+      "a": 2,
+      "tip": "Saturated fats pack tightly and are usually solid at room temperature, while unsaturated fats are usually liquid oils.",
+      "eli5": "Think of saturated fat like straight Lego bricks stacked tight into butter, and unsaturated fat like bent pieces that cannot stack, so they stay runny like olive oil."
+    },
+    {
+      "q": "Coconut oil and palm oil come from plants. What is true about them for cholesterol?",
+      "o": [
+        "They are high in saturated fat and can raise LDL (bad) cholesterol much like butter or fatty meat",
+        "They are free of all fat so they cannot affect cholesterol",
+        "They are high in soluble fiber so they lower cholesterol absorption",
+        "They are artificial trans fats made in a factory"
+      ],
+      "a": 1,
+      "tip": "Despite coming from plants, coconut oil and palm oil are high in saturated fat that can raise LDL cholesterol.",
+      "eli5": "Just like cow butter, these tropical plant oils are creamy and solid-ish, so your body treats them like other saturated fats."
+    },
+    {
+      "q": "Why did food companies often use artificial trans fats in cookies, crackers, and deep-fried fast foods?",
+      "o": [
+        "To add soluble fiber to the foods",
+        "To lower the calories in the foods",
+        "To add extra water so foods weigh more",
+        "Because they are cheap, keep foods crisp, and help packaged and fried foods stay fresh longer"
+      ],
+      "a": 4,
+      "tip": "Artificial trans fats were valued because they are cheap, stable for frying, and extend shelf life and texture.",
+      "eli5": "Like using plastic wrap that never goes stale, makers used trans fat to keep cookies crisp and fryer oil usable for a long time."
+    },
+    {
+      "q": "Compared with the same amount of saturated fat, why do doctors say trans fat is even worse for cholesterol?",
+      "o": [
+        "Trans fat lowers LDL and raises HDL, the opposite of saturated fat",
+        "Trans fat raises LDL (bad) cholesterol and also lowers HDL (good) cholesterol, while saturated fat mainly raises LDL",
+        "Trans fat has no effect on cholesterol, while saturated fat lowers both",
+        "Both fats work exactly the same way in the body"
+      ],
+      "a": 2,
+      "tip": "Trans fat both raises LDL cholesterol and lowers HDL cholesterol, giving it a worse combined effect than saturated fat.",
+      "eli5": "If cholesterol is a school bus, saturated fat adds more rowdy riders, but trans fat adds rowdy riders and also removes the helpful driver."
+    },
+    {
+      "q": "You are comparing two packaged foods on the Nutrition Facts label to protect cholesterol. What should you look for?",
+      "o": [
+        "Pick the one with higher saturated fat and some trans fat for better flavor",
+        "Ignore the fat section and only look at the protein grams",
+        "Pick the one with 0 grams trans fat and lower saturated fat and lower % Daily Value for saturated fat",
+        "Pick the one with more total calories regardless of fat type"
+      ],
+      "a": 3,
+      "tip": "To help cholesterol, choose foods with 0 grams trans fat and lower saturated fat on the label.",
+      "eli5": "Like checking price tags before shopping, check the fat lines on the label and put the lower saturated fat box in your cart."
+    },
+    {
+      "q": "For most people, which raises LDL (bad) cholesterol more: the natural cholesterol in foods like eggs and shrimp, or saturated and trans fats?",
+      "o": [
+        "Saturated and trans fats usually raise LDL (bad) cholesterol more than the natural cholesterol in foods does for most people",
+        "Natural food cholesterol usually raises LDL much more than saturated and trans fats do",
+        "Neither saturated fat, trans fat, nor food cholesterol has any effect on LDL",
+        "Food cholesterol and saturated fat lower LDL, while only trans fat raises it"
+      ],
+      "a": 1,
+      "tip": "For most people, saturated and trans fats have a larger LDL-raising effect than dietary cholesterol itself.",
+      "eli5": "Blaming only eggs is like blaming the sprinkles, when the big scoop of fatty frosting is what really piles up the LDL."
+    },
+    {
+      "q": "Nutrition labels sometimes say soluble fiber and insoluble fiber. Which statement best shows the difference for cholesterol care?",
+      "o": [
+        "Both types are the same, and only wheat bran lowers LDL cholesterol.",
+        "Soluble fiber, like in oats and beans, can help lower LDL cholesterol, while insoluble fiber, like in wheat bran, mainly helps with regular bowel movements.",
+        "Insoluble fiber lowers LDL cholesterol, while soluble fiber only helps with bowel movements.",
+        "Fiber has no effect on cholesterol and only adds flavor to food."
+      ],
+      "a": 2,
+      "tip": "Soluble fiber is the type linked to lower LDL cholesterol; insoluble fiber mainly aids digestion.",
+      "eli5": "Think of soluble fiber like a sponge in oats that soaks things up, while bran fiber is like a broom that sweeps things along."
+    },
+    {
+      "q": "Advice says to use olive oil or canola oil instead of butter or lard. Why is the word instead important?",
+      "o": [
+        "The benefit comes from replacing saturated fat with unsaturated fat, not just adding oil on top of butter.",
+        "Adding oil on top of butter doubles the cholesterol-lowering effect.",
+        "Butter and olive oil are identical, so the swap does not matter.",
+        "Liquid oils only help if you also eat extra butter with them."
+      ],
+      "a": 1,
+      "tip": "Heart benefit comes from replacing saturated fat with unsaturated fat.",
+      "eli5": "Like swapping muddy shoes for clean ones, you must take the old fat off to make room for the better fat."
+    },
+    {
+      "q": "Why are beans, lentils, and peas often suggested as a main dish in place of fatty beef or sausage for cholesterol?",
+      "o": [
+        "Beans have more saturated fat than beef, which helps raise HDL.",
+        "Beans contain trans fat that balances out saturated fat.",
+        "Beans and lentils are naturally very low in saturated fat and add soluble fiber, while fatty meats are high in saturated fat.",
+        "Beans have no fiber or protein and are only suggested for taste."
+      ],
+      "a": 3,
+      "tip": "Beans and lentils add soluble fiber and are low in saturated fat compared with fatty meats.",
+      "eli5": "Trading a greasy burger for a bean stew is like trading a heavy backpack for a light one with helpful tools inside."
+    },
+    {
+      "q": "Which 2 foods provide mainly heart-healthier unsaturated fats rather than saturated fat? (Choose 2)",
+      "o": [
+        "Olive oil",
+        "Butter",
+        "Avocado",
+        "Bacon grease"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Olive oil and avocado are mainly unsaturated fats; butter and bacon grease are mainly saturated fats.",
+      "eli5": "Olive oil and avocado are like smooth-running kitchen oils, while butter and bacon grease harden like cold bacon fat in the pan."
+    },
+    {
+      "q": "You compare two cereals. Cereal A lists whole oats first and has 4 grams of fiber per serving. Cereal B lists enriched white flour and sugar first and has less than 1 gram of fiber per serving. Which choice better fits cholesterol advice?",
+      "o": [
+        "Cereal B, because less fiber and more sugar help lower cholesterol.",
+        "Both are equal because color of the box matters most.",
+        "Cereal A only if you add butter to it.",
+        "Cereal A, because whole oats as the first ingredient plus more fiber signal more cholesterol-helpful soluble fiber."
+      ],
+      "a": 4,
+      "tip": "Whole grain first on the ingredient list plus higher fiber grams signals more helpful fiber.",
+      "eli5": "Picking cereal is like picking a team: the first name on the list and the fiber score tell you who will actually play."
+    },
+    {
+      "q": "Unsalted nuts and olive oil are heart-healthier fats, but they are still high in calories. What is the best way to use them for cholesterol and weight?",
+      "o": [
+        "Eat unlimited large portions every day in addition to other fats.",
+        "Use small portions to replace butter, lard, or fried snacks, not just add them on top.",
+        "Avoid them completely because all fat raises LDL the same way.",
+        "Only eat them with fatty meats to cancel out saturated fat."
+      ],
+      "a": 2,
+      "tip": "Use unsaturated fats in small portions as replacements to avoid extra calories.",
+      "eli5": "Healthy oil is like good paint: a thin new coat to replace the old one works, but pouring on extra buckets just makes a mess."
+    },
+    {
+      "q": "For heart and cholesterol health, how much aerobic activity like brisk walking do mainstream guidelines generally recommend for adults each week?",
+      "o": [
+        "About 10 minutes total per week",
+        "About 150 minutes of moderate activity or 75 minutes of vigorous activity per week",
+        "About 10 hours of moderate activity every day",
+        "No weekly amount, only one workout per year"
+      ],
+      "a": 2,
+      "tip": "Adults are generally advised to get at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity per week.",
+      "eli5": "Think like watering a plant a little each week, not once a year. Regular weekly walks keep the body in a healthy rhythm."
+    },
+    {
+      "q": "You are walking to help your cholesterol. How can you tell the pace is moderate intensity rather than a slow stroll?",
+      "o": [
+        "You breathe faster and feel warmer but can still talk in short sentences",
+        "You can sing a whole song easily without breathing harder",
+        "You feel no change in breathing, warmth, or effort at all",
+        "You must gasp and cannot speak at all the whole time"
+      ],
+      "a": 1,
+      "tip": "Moderate intensity means breathing and heart rate go up but you can still talk, not sing comfortably.",
+      "eli5": "Like stirring soup fast enough to feel warm but still able to chat. If you can sing easily, stir a little faster."
+    },
+    {
+      "q": "An adult sits at a desk almost all day with very little movement. What is generally true about long unbroken sitting and blood fats?",
+      "o": [
+        "How long you sit has no link to health at all",
+        "Only sitting on holidays affects cholesterol",
+        "Taking short movement breaks makes cholesterol much worse",
+        "Long unbroken sitting is linked with less healthy triglyceride and HDL levels"
+      ],
+      "a": 4,
+      "tip": "Long sedentary time is linked with higher triglycerides and lower HDL, so breaking up sitting helps.",
+      "eli5": "Like a kitchen sink that clogs if water sits still. Getting up and moving keeps things flowing better."
+    },
+    {
+      "q": "Besides aerobic activity like walking or swimming, what do heart-health guidelines often recommend about 2 days a week to support weight and heart health?",
+      "o": [
+        "All-out marathon running every single day",
+        "Long hot sauna sessions instead of movement",
+        "Muscle-strengthening activities, such as body-weight exercises, bands, or light weights",
+        "Holding your breath for as long as possible"
+      ],
+      "a": 3,
+      "tip": "Guidelines often advise muscle-strengthening activities on 2 or more days per week in addition to aerobic activity.",
+      "eli5": "Aerobic activity is like sweeping the floor, strength work is like fixing the shelves. Both help keep the house strong."
+    },
+    {
+      "q": "A person exercises very hard for one weekend and then does nothing for 3 months. What usually happens to any cholesterol benefit?",
+      "o": [
+        "One hard weekend protects cholesterol for life",
+        "Cholesterol improves more the longer you rest afterward",
+        "Benefits fade without regular activity, so steady consistency matters more than one hard effort",
+        "Exercise only helps if done at midnight"
+      ],
+      "a": 3,
+      "tip": "Cholesterol and heart benefits from activity require regular ongoing activity and fade with long inactivity.",
+      "eli5": "Like brushing teeth once super hard and then skipping for months. Little and often keeps things cleaner."
+    },
+    {
+      "q": "An inactive adult with high cholesterol wants to start exercising. Which starting plan best fits mainstream medical advice?",
+      "o": [
+        "Start low and go slow, such as short daily brisk walks and build up, checking with a doctor if there are heart symptoms or high risks",
+        "Start on day one with an all-out sprint and very heavy lifting",
+        "Wait until cholesterol is perfect before moving at all",
+        "Exercise only once every few months as hard as possible"
+      ],
+      "a": 1,
+      "tip": "Inactive adults should start low, go slow, and build up gradually, with medical advice if heart disease or symptoms are present.",
+      "eli5": "Like learning to cook with a simple recipe first. Start with short walks, then add more as you get stronger."
+    },
+    {
+      "q": "An adult slowly gains a lot of extra weight over several years and becomes less active. What change in blood fats is most often seen with this weight gain?",
+      "o": [
+        "LDL and triglycerides go down and HDL goes up",
+        "Total cholesterol disappears from the blood",
+        "LDL and triglycerides go up and HDL often goes down",
+        "Only HDL goes up and other fats stay the same"
+      ],
+      "a": 3,
+      "tip": "Gaining excess body fat is linked with higher LDL and triglycerides and lower HDL.",
+      "eli5": "Think like a backpack getting heavier each year - the extra load makes it harder for the body to keep blood fats in a healthy balance."
+    },
+    {
+      "q": "An adult with overweight and high LDL wants to help cholesterol by losing weight. About how much weight loss is often enough to start seeing better LDL and triglyceride levels?",
+      "o": [
+        "About 5% to 10% of starting weight, kept off with steady habits",
+        "About one-third to one-half of starting weight in a few weeks",
+        "Less than 1% of starting weight for one day",
+        "Weight loss does not affect blood fats until weight is perfect"
+      ],
+      "a": 1,
+      "tip": "Even a modest loss of about 5% to 10% of body weight can begin to improve cholesterol and triglycerides.",
+      "eli5": "Like lightening a heavy grocery bag by just a few items - even a small drop in weight can make the carry easier for the body."
+    },
+    {
+      "q": "At a cholesterol visit the nurse records BMI, which compares weight to height. What does BMI actually tell the care team?",
+      "o": [
+        "The exact amount of LDL cholesterol in the arteries",
+        "The exact percent of body fat and muscle",
+        "How much cholesterol is in foods you ate",
+        "A screening category for weight, such as healthy weight or overweight, to help judge risk"
+      ],
+      "a": 4,
+      "tip": "BMI is a weight-for-height screening tool for weight category, not a direct measure of cholesterol or body fat.",
+      "eli5": "BMI is like a shoe-size chart for weight - it gives a quick size range, not the exact material inside."
+    },
+    {
+      "q": "To keep body weight steady over time to support healthy cholesterol, which balance of food and activity is needed?",
+      "o": [
+        "Eat many more calories than the body uses every day",
+        "Use many more calories than eaten every day for years",
+        "Keep calories eaten about equal to calories the body uses",
+        "Skip meals for days and then eat very large meals"
+      ],
+      "a": 3,
+      "tip": "Stable weight requires energy balance where calories taken in about match calories used.",
+      "eli5": "Think of a bathtub with tap and drain - to keep the water level steady, water in must match water going out."
+    },
+    {
+      "q": "An adult with overweight lowers LDL by losing extra weight with balanced eating and activity. What is most important afterward to keep the cholesterol improvement?",
+      "o": [
+        "Keep up the healthy eating and activity to keep the weight from returning",
+        "Return to old eating and sitting habits once labs look better",
+        "Stop all activity to save energy after weight loss",
+        "Rely only on short crash diets once a year"
+      ],
+      "a": 1,
+      "tip": "Keeping lost weight off with lasting habits is needed to keep the cholesterol benefit.",
+      "eli5": "Like weeding a garden - you have to keep tending it, or the weeds and old problems grow back."
+    }
+  ]
+}
