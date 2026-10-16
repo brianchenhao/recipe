@@ -8811,15 +8811,15 @@
       "tags": [
         "Middle Eastern",
         "chicken",
-        "grilled",
+        "pan-fried",
         "wrap"
       ],
       "img": "images/chicken-shawarma-card.jpg",
       "poster": "images/chicken-shawarma.jpg",
-      "ill": "ill-bread",
+      "ill": "ill-grill",
       "badge": "New",
       "featured": false,
-      "desc": "Charred marinated chicken wrapped in warm flatbread with garlic sauce and fresh vegetables.",
+      "desc": "Juicy charred marinated chicken wrapped in warm flatbread with garlic sauce and fresh vegetables.",
       "lede": "The whole recipe is in the picture — tap it to zoom in.",
       "level": "",
       "prep": "",
