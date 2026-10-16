@@ -8835,6 +8835,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "strawberry-jelly-matcha-latte",
+      "title": "Strawberry Jelly Matcha Latte",
+      "author": "",
+      "cat": "Drinks",
+      "tags": [
+        "Japanese",
+        "strawberry",
+        "matcha",
+        "iced"
+      ],
+      "img": "images/strawberry-jelly-matcha-latte-card.jpg",
+      "poster": "images/strawberry-jelly-matcha-latte.jpg",
+      "ill": "ill-drink",
+      "badge": "New",
+      "featured": false,
+      "desc": "A refreshing layered drink with sweet strawberry jelly, creamy milk and earthy matcha.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 1",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
