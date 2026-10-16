@@ -8934,6 +8934,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sambal-nenas",
+      "title": "Sambal Nenas",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Malaysian",
+        "pineapple",
+        "spicy",
+        "fried"
+      ],
+      "img": "images/sambal-nenas-card.jpg",
+      "poster": "images/sambal-nenas.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Sweet, spicy and tangy Malaysian sambal with fresh pineapple, chilli and aromatics.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4-6",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
