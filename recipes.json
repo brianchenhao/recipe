@@ -8802,6 +8802,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chicken-shawarma",
+      "title": "Chicken Shawarma",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Middle Eastern",
+        "chicken",
+        "grilled",
+        "wrap"
+      ],
+      "img": "images/chicken-shawarma-card.jpg",
+      "poster": "images/chicken-shawarma.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Charred marinated chicken wrapped in warm flatbread with garlic sauce and fresh vegetables.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
