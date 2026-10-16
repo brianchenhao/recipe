@@ -8901,6 +8901,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "shih-barack-meat-filled-dumplings-in-yogurt-sauce",
+      "title": "Shih Barack (Meat-Filled Dumplings in Yogurt Sauce)",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Levantine",
+        "minced lamb",
+        "boiled",
+        "yogurt sauce"
+      ],
+      "img": "images/shih-barack-meat-filled-dumplings-in-yogurt-sauce-card.jpg",
+      "poster": "images/shih-barack-meat-filled-dumplings-in-yogurt-sauce.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Delicate spiced meat dumplings simmered in creamy garlicky yogurt topped with toasted pine nuts.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
