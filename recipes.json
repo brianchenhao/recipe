@@ -9000,6 +9000,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "ribbed-labanieh",
+      "title": "Ribbed Labanieh",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Middle Eastern",
+        "yogurt",
+        "strained",
+        "dip"
+      ],
+      "img": "images/ribbed-labanieh-card.jpg",
+      "poster": "images/ribbed-labanieh.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Creamy strained yogurt swirled into ridges with olive oil, za'atar and mint.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
