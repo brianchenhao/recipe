@@ -9066,6 +9066,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "homemade-ramen-noodles",
+      "title": "Homemade Ramen Noodles",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Japanese",
+        "wheat flour",
+        "handmade",
+        "boiled"
+      ],
+      "img": "images/homemade-ramen-noodles-card.jpg",
+      "poster": "images/homemade-ramen-noodles.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chewy, springy and delicious noodles you can make at home with simple ingredients.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "makes about 4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
