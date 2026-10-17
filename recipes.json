@@ -9033,6 +9033,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "braised-radish",
+      "title": "Braised Radish",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Chinese",
+        "daikon radish",
+        "pork belly",
+        "braised"
+      ],
+      "img": "images/braised-radish-card.jpg",
+      "poster": "images/braised-radish.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "A simple, comforting dish of tender radish simmered in a savoury, flavourful sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
