@@ -9033,39 +9033,6 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
-    },
-    {
-      "id": "makloubeh-upside-down-rice",
-      "title": "Makloubeh (Upside-Down Rice)",
-      "author": "",
-      "cat": "Rice",
-      "tags": [
-        "Levantine",
-        "Chicken",
-        "Rice",
-        "One-Pot"
-      ],
-      "img": "images/makloubeh-upside-down-rice-card.jpg",
-      "poster": "images/makloubeh-upside-down-rice.jpg",
-      "ill": "ill-pot",
-      "badge": "New",
-      "featured": false,
-      "desc": "Spiced chicken layered with fried vegetables and fragrant rice, flipped upside-down to reveal a beautiful cake.",
-      "lede": "The whole recipe is in the picture — tap it to zoom in.",
-      "level": "",
-      "prep": "",
-      "cook": "",
-      "active": "",
-      "total": "",
-      "yield": "Serves 4",
-      "serves": 0,
-      "rating": 0,
-      "reviews": 0,
-      "ingredientGroups": [],
-      "steps": [],
-      "tips": [],
-      "cooksNote": "",
-      "nutrition": {}
     }
   ]
 }
