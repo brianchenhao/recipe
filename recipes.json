@@ -9165,6 +9165,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "wholemeal-bread",
+      "title": "Wholemeal Bread",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Western",
+        "wholemeal flour",
+        "oats",
+        "baked"
+      ],
+      "img": "images/wholemeal-bread-card.jpg",
+      "poster": "images/wholemeal-bread.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft homemade wholemeal oat loaf topped with golden rolled oats.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "1 small loaf",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
