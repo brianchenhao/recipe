@@ -9099,6 +9099,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "shanghai-ramen",
+      "title": "Shanghai Ramen",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Chinese",
+        "pork belly",
+        "ramen",
+        "soy broth"
+      ],
+      "img": "images/shanghai-ramen-card.jpg",
+      "poster": "images/shanghai-ramen.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Savory soy-based ramen with tender pork belly, soft eggs, and bok choy.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
