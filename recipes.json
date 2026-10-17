@@ -9041,17 +9041,16 @@
       "cat": "Rice",
       "tags": [
         "Levantine",
-        "chicken",
-        "eggplant",
-        "layered",
-        "one-pot"
+        "Chicken",
+        "Rice",
+        "One-Pot"
       ],
       "img": "images/makloubeh-upside-down-rice-card.jpg",
       "poster": "images/makloubeh-upside-down-rice.jpg",
       "ill": "ill-pot",
       "badge": "New",
       "featured": false,
-      "desc": "Spiced chicken, fragrant rice and fried vegetables layered and flipped into a cake.",
+      "desc": "Spiced chicken layered with fried vegetables and fragrant rice, flipped upside-down to reveal a beautiful cake.",
       "lede": "The whole recipe is in the picture — tap it to zoom in.",
       "level": "",
       "prep": "",
