@@ -8967,6 +8967,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "purple-sweet-potato-bread",
+      "title": "Purple Sweet Potato Bread",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "homemade",
+        "purple sweet potato",
+        "baked",
+        "soft loaf"
+      ],
+      "img": "images/purple-sweet-potato-bread-card.jpg",
+      "poster": "images/purple-sweet-potato-bread.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, fluffy purple loaf made with real fresh purple sweet potato.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "1 small loaf",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
