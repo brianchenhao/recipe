@@ -9298,6 +9298,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chilli-century-egg",
+      "title": "Chilli Century Egg",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Chinese",
+        "century egg",
+        "chilli",
+        "cold appetizer",
+        "no-cook"
+      ],
+      "img": "images/chilli-century-egg-card.jpg",
+      "poster": "images/chilli-century-egg.jpg",
+      "ill": "ill-egg",
+      "badge": "New",
+      "featured": false,
+      "desc": "Sliced century eggs topped with spicy garlic soy-vinegar sauce and fresh herbs.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
