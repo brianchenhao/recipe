@@ -9231,6 +9231,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "dairy-free-cinnamon-rolls-with-date-syrup-glaze",
+      "title": "Dairy-Free Cinnamon Rolls with Date Syrup Glaze",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "dairy-free",
+        "cinnamon",
+        "baked",
+        "date syrup"
+      ],
+      "img": "images/dairy-free-cinnamon-rolls-with-date-syrup-glaze-card.jpg",
+      "poster": "images/dairy-free-cinnamon-rolls-with-date-syrup-glaze.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, fluffy, bakery-style cinnamon rolls made with a fragrant cinnamon-infused dough and a naturally sweet date syrup glaze.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 6-7 large rolls",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
