@@ -9365,6 +9365,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "lion-s-mane-mushroom-with-tofu",
+      "title": "Lion's Mane Mushroom with Tofu",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Chinese",
+        "mushroom",
+        "tofu",
+        "stir-fry"
+      ],
+      "img": "images/lion-s-mane-mushroom-with-tofu-card.jpg",
+      "poster": "images/lion-s-mane-mushroom-with-tofu.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Pan-fried tofu and lion's mane mushrooms in savory soy-oyster sauce with aromatics.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
