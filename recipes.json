@@ -9398,6 +9398,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "taiwan-rectangular-pineapple-tarts",
+      "title": "Taiwan Rectangular Pineapple Tarts",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "Taiwanese",
+        "pineapple",
+        "baked",
+        "pastry"
+      ],
+      "img": "images/taiwan-rectangular-pineapple-tarts-card.jpg",
+      "poster": "images/taiwan-rectangular-pineapple-tarts.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Buttery shortcrust rectangles filled with sweet pineapple jam.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
