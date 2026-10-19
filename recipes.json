@@ -9431,6 +9431,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chickpea-pancake-using-home-cooked-chickpeas",
+      "title": "Chickpea Pancake using Home Cooked Chickpeas",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "vegetarian",
+        "chickpea",
+        "pan-fried",
+        "high-protein"
+      ],
+      "img": "images/chickpea-pancake-using-home-cooked-chickpeas-card.jpg",
+      "poster": "images/chickpea-pancake-using-home-cooked-chickpeas.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy golden chickpea pancakes with soft inside, high in protein and fibre.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "makes about 6 medium pancakes",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
