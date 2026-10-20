@@ -9500,6 +9500,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sauerkraut-vs-kimchi",
+      "section": "health",
+      "title": "Sauerkraut vs. Kimchi",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "sauerkraut",
+        "kimchi",
+        "liver health",
+        "fermented foods"
+      ],
+      "img": "images/sauerkraut-vs-kimchi-card.jpg",
+      "poster": "images/sauerkraut-vs-kimchi.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Kimchi edges out sauerkraut for liver-detoxification power, though both are cruciferous powerhouses.",
+      "lede": "",
+      "body": "Sauerkraut uses green or red cabbage, while kimchi uses napa cabbage and daikon radish. It is a tie, as both are rich in glucosinolates.\n\nSauerkraut has single source sulfur diversity from cabbage. Kimchi has multi-source diversity from garlic, scallions, onions, and ginger. Kimchi wins as it provides a much wider variety of organosulfur compounds like allicin.\n\nSauerkraut gives a high glutathione boost via isothiocyanates. Kimchi gives maximum boost via isothiocyanates plus allyl sulfides. Kimchi wins as the addition of garlic and onions speeds up glutathione production.\n\nSauerkraut is mild and acidic for digestive fire. Kimchi is thermogenic, as spices boost metabolism and circulation. Kimchi wins as capsaicin from chili peppers helps reduce liver fat accumulation.\n\nWhile both are phenomenal cruciferous powerhouses, kimchi edges out sauerkraut when it comes to raw liver-detoxification power.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
