@@ -9464,6 +9464,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "summary-comparison",
+      "section": "health",
+      "title": "Summary Comparison",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "natto",
+        "miso",
+        "bean sprouts",
+        "chicken liver",
+        "supersulfides"
+      ],
+      "img": "images/summary-comparison-card.jpg",
+      "poster": "images/summary-comparison.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Compares natto, miso, bean sprouts, and chicken liver for detox support and best ways to eat them.",
+      "lede": "",
+      "body": "Natto is highest in supersulfides and contains nattokinase. It is best whipped until frothy with raw scallions.\n\nMiso is high in ferment-driven glutathione precursors. It is best stirred into warm, not boiling, soups to preserve enzymes.\n\nBean sprouts are high in plant-based active supersulfides. They are best lightly sautéed or tossed raw into salads and bowls.\n\nChicken liver is high in animal-based supersulfides and selenium. It is best pan-seared with garlic and onions for extra sulfur.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
