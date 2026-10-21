@@ -9741,6 +9741,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kuih-bom-bijian",
+      "title": "Kuih Bom Bijian",
+      "author": "",
+      "cat": "Kuih",
+      "tags": [
+        "Malaysian",
+        "glutinous rice",
+        "peanut",
+        "deep-fried"
+      ],
+      "img": "images/kuih-bom-bijian-card.jpg",
+      "poster": "images/kuih-bom-bijian.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy sesame-coated glutinous rice balls with chewy texture and sweet nutty filling.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 15 – 20 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
