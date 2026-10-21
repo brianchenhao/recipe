@@ -9570,6 +9570,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "malfouf-stuffed-cabbage-rolls",
+      "title": "Malfouf (Stuffed Cabbage Rolls)",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Middle Eastern",
+        "cabbage",
+        "minced meat",
+        "stuffed",
+        "simmered"
+      ],
+      "img": "images/malfouf-stuffed-cabbage-rolls-card.jpg",
+      "poster": "images/malfouf-stuffed-cabbage-rolls.jpg",
+      "ill": "ill-pot",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender cabbage leaves stuffed with seasoned rice and minced meat simmered in tomato sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
