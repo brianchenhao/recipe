@@ -9604,6 +9604,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cheese-buns",
+      "title": "Cheese Buns",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "bakery",
+        "cheese",
+        "mozzarella",
+        "baked"
+      ],
+      "img": "images/cheese-buns-card.jpg",
+      "poster": "images/cheese-buns.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft fluffy bread buns filled and topped with melted cheesy goodness.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 8 - 10 buns",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
