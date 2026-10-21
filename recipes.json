@@ -9708,6 +9708,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "honey-comb-cake",
+      "title": "Honey Comb Cake",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "Southeast Asian",
+        "coconut milk",
+        "tapioca",
+        "baked"
+      ],
+      "img": "images/honey-comb-cake-card.jpg",
+      "poster": "images/honey-comb-cake.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, chewy coconut cake with distinctive honeycomb bubbles, fragrant with pandan and lemongrass.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 8-10 slices",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
