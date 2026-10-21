@@ -9671,6 +9671,43 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "understanding-anxiety-basics",
+      "section": "questions",
+      "title": "Understanding Anxiety Basics",
+      "author": "",
+      "cat": "Health & Medicine",
+      "tags": [
+        "anxiety",
+        "mental health",
+        "stress management",
+        "coping skills",
+        "wellness"
+      ],
+      "img": "",
+      "poster": "",
+      "quiz": "quizzes/understanding-anxiety-basics.json",
+      "questionCount": 150,
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "This quiz covers common types, symptoms, causes, and risk factors for anxiety disorders. It also reviews diagnosis, treatment options, coping skills, and support for daily life.",
+      "lede": "",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
