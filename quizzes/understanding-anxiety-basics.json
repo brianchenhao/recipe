@@ -1,0 +1,1828 @@
+{
+  "id": "understanding-anxiety-basics",
+  "title": "Understanding Anxiety Basics",
+  "topic": "Anxiety",
+  "category": "Health & Medicine",
+  "summary": "This quiz covers common types, symptoms, causes, and risk factors for anxiety disorders. It also reviews diagnosis, treatment options, coping skills, and support for daily life.",
+  "createdAt": "2026-10-21",
+  "questions": [
+    {
+      "q": "Which of these is a commonly recommended first way to calm anxiety in the moment?",
+      "o": [
+        "Drink several cups of strong coffee to stay alert",
+        "Take fast, shallow chest breaths to get more air",
+        "Do slow, deep belly breathing for a few minutes",
+        "Stay in bed alone all day to avoid all stress"
+      ],
+      "a": 3,
+      "tip": "Slow, controlled breathing helps activate the body's calming response and is widely recommended for coping with anxiety in the moment.",
+      "eli5": "Think of it like letting air out of a balloon slowly instead of popping it. Steady breaths tell your body the alarm can turn down."
+    },
+    {
+      "q": "What is the key feature that turns normal worry into an anxiety disorder?",
+      "o": [
+        "Brief nervousness before a big test that goes away afterward",
+        "Persistent, excessive fear or worry that interferes with daily life",
+        "Feeling calm and focused during stressful times",
+        "A short burst of excitement before a fun event"
+      ],
+      "a": 2,
+      "tip": "Anxiety disorders involve persistent excessive fear or worry that interferes with daily life.",
+      "eli5": "Like a school fire alarm that keeps ringing all day even with no fire, it makes it hard to do normal classwork."
+    },
+    {
+      "q": "Which pattern best describes generalized anxiety disorder, meaning constant worry about many everyday topics?",
+      "o": [
+        "Excessive worry about many everyday events, more days than not for at least six months, that is hard to control",
+        "Sudden episodes of intense fear that peak within minutes for no clear reason",
+        "Extreme fear only of social situations like meeting new people",
+        "A specific unrealistic fear of one object, such as spiders"
+      ],
+      "a": 1,
+      "tip": "Generalized anxiety disorder involves excessive worry about everyday events occurring more days than not for at least six months and feeling hard to control.",
+      "eli5": "Like worrying about homework, chores, and shopping every single day for months, like carrying too many heavy grocery bags at once."
+    },
+    {
+      "q": "Which experience best fits panic disorder, which involves sudden attacks of intense fear?",
+      "o": [
+        "Slowly building worry about bills and work over many months",
+        "Shyness that fades after getting to know classmates",
+        "A realistic fear during a truly dangerous emergency",
+        "A sudden episode of intense fear with sweating, chest pain, and a pounding heartbeat, even with no clear danger"
+      ],
+      "a": 4,
+      "tip": "Panic disorder involves sudden episodes of intense fear that can occur without an apparent reason, often with sweating, chest pain, and a pounding heartbeat.",
+      "eli5": "Like a cooking timer blasting suddenly when nothing is in the oven, your body acts alarmed for no clear reason."
+    },
+    {
+      "q": "Which example best shows social anxiety disorder, which is strong fear of social situations?",
+      "o": [
+        "Preferring to stay home sometimes but still enjoying parties and meetings",
+        "Feeling a little nervous before a speech but then speaking anyway",
+        "Extreme fear of being judged in social situations, leading to avoiding parties, speaking up, or eating in front of others",
+        "Disliking one food but being comfortable around other people"
+      ],
+      "a": 3,
+      "tip": "Social anxiety disorder involves extreme fear and avoidance of social situations.",
+      "eli5": "Like being so afraid of spilling food at a family dinner that you skip dinner altogether to avoid being watched."
+    },
+    {
+      "q": "What is the difference between a specific phobia and agoraphobia?",
+      "o": [
+        "A specific phobia is an unrealistic fear of one object or situation, while agoraphobia is fear and avoidance of places where escape might feel difficult",
+        "A specific phobia is fear of open places, while agoraphobia is fear of one animal",
+        "A specific phobia lasts only seconds, while agoraphobia never involves fear",
+        "A specific phobia is normal caution, while agoraphobia is enjoyment of crowds"
+      ],
+      "a": 1,
+      "tip": "Specific phobia is a specific unrealistic fear of an object or situation, while agoraphobia is intense fear and avoidance of situations where escape might be difficult.",
+      "eli5": "Like being scared of one spider in the kitchen versus being scared to go shopping at all in case you cannot leave the store quickly."
+    },
+    {
+      "q": "Which set of signs is most typical of an anxiety disorder?",
+      "o": [
+        "Occasional happiness and deep relaxation with no tension",
+        "Forgetting a name once and then remembering it later",
+        "Brief excitement before a fun game that quickly passes",
+        "Persistent worrying, restlessness, and physical signs such as a faster heartbeat"
+      ],
+      "a": 4,
+      "tip": "Symptoms of anxiety disorders can include persistent worrying, restlessness, and physical signs such as increased heart rate.",
+      "eli5": "Like a school backpack that stays heavy all day with worry, fidgeting, and a racing heart, not just heavy for one minute."
+    },
+    {
+      "q": "Which pattern best describes generalized anxiety disorder (ongoing excessive worry)?",
+      "o": [
+        "Sudden episodes of intense fear that come out of nowhere",
+        "Ongoing hard-to-control worry about many everyday topics like work, health, and money",
+        "Extreme fear and avoidance of social situations like parties",
+        "Intense fear of one specific object or situation like spiders"
+      ],
+      "a": 2,
+      "tip": "Generalized anxiety disorder involves chronic excessive worry about many everyday issues without a single specific trigger.",
+      "eli5": "It is like carrying a heavy backpack of worries about school, family, and chores all at once, not just one thing."
+    },
+    {
+      "q": "For how long must hard-to-control worry occur on most days to fit generalized anxiety disorder?",
+      "o": [
+        "For at least two weeks",
+        "For at least one month",
+        "For at least three months",
+        "On more days than not for at least six months"
+      ],
+      "a": 4,
+      "tip": "Generalized anxiety disorder involves excessive worry occurring more days than not for at least six months.",
+      "eli5": "Think of it like a long rainy season that lasts half a year, not just a few rainy days."
+    },
+    {
+      "q": "How is generalized anxiety disorder different from a specific phobia?",
+      "o": [
+        "GAD is worry about many everyday issues, while a phobia is an unrealistic fear of one specific object or situation",
+        "GAD only happens in brief panic attacks, while a phobia lasts for months without stopping",
+        "GAD is fear of social situations, while a phobia is fear of open spaces where escape is hard",
+        "GAD has no emotional symptoms, while a phobia causes only physical symptoms"
+      ],
+      "a": 1,
+      "tip": "Generalized anxiety disorder involves broad worry about many topics, while specific phobia involves fear tied to one specific object or situation.",
+      "eli5": "GAD is like worrying about the whole shopping list, while a phobia is like being scared of just the freezer aisle."
+    },
+    {
+      "q": "Which set of symptoms is most typical of generalized anxiety disorder?",
+      "o": [
+        "Brief chest pain and pounding heartbeat that peak within minutes and then fade",
+        "Extreme sleepiness and loss of interest with no worry at all",
+        "Ongoing worrying, restlessness, and physical signs like a faster heart rate",
+        "Seeing or hearing things that are not really there"
+      ],
+      "a": 3,
+      "tip": "Symptoms of anxiety disorders can include persistent worrying, restlessness, and physical signs such as increased heart rate.",
+      "eli5": "It is like a pot simmering all day on the stove — bubbling worry, fidgety energy, and a busy heartbeat."
+    },
+    {
+      "q": "Besides worry itself, what else is usually true in generalized anxiety disorder?",
+      "o": [
+        "The worry only happens at night and never in the daytime",
+        "The person can easily stop worrying whenever they choose",
+        "The worry is only about one rare event and never changes topics",
+        "The worry is hard to control and makes work, school, or social life harder"
+      ],
+      "a": 4,
+      "tip": "Generalized anxiety disorder involves difficulty controlling worry and impairment in social, occupational, or other functioning.",
+      "eli5": "It is like trying to do homework while a loud TV keeps playing — you cannot turn it off and schoolwork gets harder."
+    },
+    {
+      "q": "Which treatment is considered a first-line treatment usually tried first for generalized anxiety disorder?",
+      "o": [
+        "Cognitive behavioral therapy, which helps change negative thought patterns and manage symptoms",
+        "Taking daily antibiotics to cure worry",
+        "Avoiding all people and responsibilities permanently",
+        "Drinking more caffeine and energy drinks to stay alert"
+      ],
+      "a": 1,
+      "tip": "Cognitive behavioral therapy is considered a first-line treatment for anxiety disorders.",
+      "eli5": "It is like learning a new cooking recipe for your thoughts — you practice calmer steps with a coach until they feel normal."
+    },
+    {
+      "q": "In panic disorder, what is a panic attack like?",
+      "o": [
+        "A mild nervous feeling that slowly builds over many months about work",
+        "A low mood and loss of interest that lasts for weeks",
+        "A sudden episode of intense fear that peaks quickly and can happen without a clear reason",
+        "A fear that only happens when facing a specific animal like a spider"
+      ],
+      "a": 3,
+      "tip": "Panic disorder involves sudden episodes of intense fear that can occur without an apparent reason.",
+      "eli5": "Like a school fire alarm blaring at full volume when there is no fire or smoke."
+    },
+    {
+      "q": "During a panic attack, which set of body signs is most typical?",
+      "o": [
+        "Sweating, chest pain or tightness, and a pounding or racing heartbeat",
+        "Itchy eyes, sneezing, and a runny nose with a rash",
+        "High fever, sore throat, and swollen glands",
+        "Slow relaxed breathing, loose muscles, and a slow steady pulse"
+      ],
+      "a": 1,
+      "tip": "During a panic attack a person may sweat, have chest pain, and feel a pounding heartbeat.",
+      "eli5": "Like your body runs a fast race on the playground while you are just sitting in a chair."
+    },
+    {
+      "q": "How is panic disorder different from generalized anxiety disorder?",
+      "o": [
+        "Panic disorder is constant mild happiness and generalized anxiety is constant sadness",
+        "Panic disorder involves sudden brief bursts of intense fear, while generalized anxiety involves ongoing excessive worry about many everyday issues",
+        "Generalized anxiety involves sudden bursts of fear and panic disorder involves ongoing daily worry",
+        "There is no difference; the two conditions are exactly the same"
+      ],
+      "a": 2,
+      "tip": "Panic disorder centers on sudden intense attacks, while generalized anxiety disorder centers on chronic worry about many everyday issues.",
+      "eli5": "Like a sudden flash storm compared to cloudy rainy weather that hangs around for weeks."
+    },
+    {
+      "q": "Between attacks, what worry and behavior often develop in panic disorder?",
+      "o": [
+        "No memory of the attack and no concern about it happening again",
+        "Worry only about meeting new people at a party",
+        "Feeling calm and keeping the same daily routine with no changes",
+        "Ongoing worry about having another attack and avoiding places where leaving or getting help might be hard"
+      ],
+      "a": 4,
+      "tip": "People with panic disorder often fear future attacks and avoid situations where escape might be difficult.",
+      "eli5": "Like after slipping in one grocery aisle, you keep worrying and skip that aisle just in case."
+    },
+    {
+      "q": "Which statement best separates panic disorder from a specific phobia?",
+      "o": [
+        "Both conditions are triggered by exactly the same specific object every time",
+        "Panic attacks can happen suddenly without a clear trigger, while phobia fear is tied to a specific object or situation",
+        "A specific phobia causes unexpected attacks and panic disorder never involves sudden fear",
+        "Neither condition involves fear, only tiredness and hunger"
+      ],
+      "a": 2,
+      "tip": "Panic attacks can be unexpected without a specific trigger, while a specific phobia is fear tied to a specific object or situation.",
+      "eli5": "Like a phone ringing loudly out of nowhere compared to a phone that only rings when grandma calls."
+    },
+    {
+      "q": "Which treatment approach follows mainstream guidance for panic disorder?",
+      "o": [
+        "Cognitive behavioral therapy to change unhelpful thought patterns, sometimes combined with medicines, plus better sleep, stress management, and limiting caffeine",
+        "Taking antibiotics alone for a few days to cure panic attacks",
+        "Staying alone in bed for months with no activity and no professional help",
+        "Drinking more coffee and energy drinks and getting less sleep to push through stress"
+      ],
+      "a": 1,
+      "tip": "Cognitive behavioral therapy that addresses negative thought patterns is first-line for anxiety, sometimes with medicines, plus sleep, stress management, and limiting caffeine.",
+      "eli5": "Like learning a new cooking recipe step by step with a teacher, plus getting good rest instead of too much coffee."
+    },
+    {
+      "q": "What is the central fear in social anxiety disorder (extreme fear of social situations)?",
+      "o": [
+        "Fear of sudden intense panic that comes without any clear reason",
+        "Fear of being judged, embarrassed, or rejected when watched by others",
+        "Fear of one specific object, such as dogs or spiders",
+        "Worry about many everyday topics like money, health, and work"
+      ],
+      "a": 2,
+      "tip": "Social anxiety disorder centers on extreme fear of social scrutiny, judgment, or humiliation.",
+      "eli5": "It is like feeling everyone in the school cafeteria is grading how you eat and talk."
+    },
+    {
+      "q": "Which thought pattern is most typical of social anxiety disorder before a social event?",
+      "o": [
+        "Everyone will think I sound stupid and laugh at me if I speak up",
+        "I worry about many different everyday problems and cannot control it",
+        "I might suddenly have intense fear and a pounding heart for no clear reason",
+        "I am afraid of heights and will avoid tall buildings"
+      ],
+      "a": 1,
+      "tip": "Social anxiety involves negative thoughts about being negatively evaluated by others.",
+      "eli5": "It is like rehearsing a school play in your head but only imagining boos from the audience."
+    },
+    {
+      "q": "A teenager has to read aloud in class. Which reaction best fits social anxiety disorder?",
+      "o": [
+        "Sudden sweating, chest pain, and pounding heart at home with no clear trigger",
+        "Excessive hard-to-control worry about many everyday events for months",
+        "Intense fear of a specific animal that is avoided whenever possible",
+        "Blushing, trembling, sweating, racing heart, and shaky voice when watched, with urge to avoid speaking"
+      ],
+      "a": 4,
+      "tip": "In social anxiety, feared social scrutiny triggers physical signs like blushing, trembling, sweating, and fast heartbeat.",
+      "eli5": "It is like your body hits the fire alarm just because you have to answer a question in school."
+    },
+    {
+      "q": "How is social anxiety disorder different from ordinary shyness?",
+      "o": [
+        "It is mild nervousness that goes away quickly after saying hello",
+        "It makes a person seek out more parties and performances",
+        "It is persistent, intense fear and avoidance that interferes with school, work, or daily life",
+        "It is worry only about health and money, not about people"
+      ],
+      "a": 3,
+      "tip": "Anxiety disorders involve persistent excessive fear that interferes with daily life, unlike mild temporary shyness.",
+      "eli5": "Shyness is like wobbly training wheels, while social anxiety is like refusing to ride the bike to school at all."
+    },
+    {
+      "q": "How is social anxiety disorder different from panic disorder?",
+      "o": [
+        "Both involve exactly the same triggers and feel identical",
+        "Social anxiety is triggered by feared social scrutiny, while panic attacks can occur suddenly without an apparent reason",
+        "Social anxiety happens without any trigger, while panic only happens at parties",
+        "Panic disorder is only worry about chores, while social anxiety is chest pain at home alone"
+      ],
+      "a": 2,
+      "tip": "Social anxiety is cued by social situations, while panic disorder involves sudden episodes of intense fear that can occur without an apparent reason.",
+      "eli5": "It is like one alarm rings only when you shop in a crowded store, while the other alarm can ring at home for no clear reason."
+    },
+    {
+      "q": "Which treatment approach is recommended for social anxiety disorder?",
+      "o": [
+        "Avoid all people forever and never practice social skills",
+        "Use alcohol before social events to relax",
+        "Only limit caffeine and do nothing else",
+        "Cognitive behavioral therapy to change negative thoughts with gradual exposure, sometimes with medicines plus therapy"
+      ],
+      "a": 4,
+      "tip": "Cognitive behavioral therapy with exposure is first-line treatment for anxiety disorders, sometimes combined with antidepressant or anti-anxiety medicines.",
+      "eli5": "It is like learning to swim in the shallow school pool with a coach before trying the deep end."
+    },
+    {
+      "q": "Which example best shows a specific phobia, meaning a strong unrealistic fear of one particular object or situation?",
+      "o": [
+        "Lena dislikes cleaning but still cleans her apartment on weekends.",
+        "James has an intense fear of spiders and avoids basements and camping even for tiny harmless spiders he knows are not dangerous.",
+        "Priya worries about bills, health, and work almost every day for months.",
+        "Carlos sometimes feels nervous before a job interview but still attends."
+      ],
+      "a": 2,
+      "tip": "A specific phobia is a persistent, excessive fear of one specific object or situation that leads to avoidance.",
+      "eli5": "It is like one song on repeat that always scares you, while other songs are fine — for James, only spiders trigger the alarm."
+    },
+    {
+      "q": "What makes a fear count as a specific phobia rather than normal caution?",
+      "o": [
+        "The fear lasts only a few seconds and never changes plans.",
+        "The fear matches the real danger and helps a person stay safe.",
+        "The person enjoys talking about the feared thing with friends.",
+        "The fear is persistent, much stronger than the real danger, and causes avoidance that interferes with daily life."
+      ],
+      "a": 4,
+      "tip": "A phobia is diagnosed when fear is excessive, persistent, and causes avoidance or impairment.",
+      "eli5": "Normal caution is like using an umbrella in rain; a phobia is like refusing to leave home because a single cloud might appear."
+    },
+    {
+      "q": "When someone with a specific phobia faces the feared object or situation, what reaction is most typical?",
+      "o": [
+        "Immediate intense anxiety with physical signs like a pounding heart, sweating, and a strong urge to escape.",
+        "Calm thinking and no change in the body.",
+        "General worry about many everyday topics that lasts for months.",
+        "Sudden loss of memory with no fear or physical arousal."
+      ],
+      "a": 1,
+      "tip": "Exposure to the phobic trigger usually causes an immediate anxiety response with physical arousal.",
+      "eli5": "It is like touching a hot stove button — the alarm rings right away and your body shouts to pull back fast."
+    },
+    {
+      "q": "Which group lists common triggers for specific phobias?",
+      "o": [
+        "Worry about money, health, and school grades every day.",
+        "Fear of being judged or embarrassed while talking to others.",
+        "Animals such as spiders or dogs, heights, flying, enclosed spaces, and seeing blood or needles.",
+        "Sudden panic attacks that come without any clear trigger."
+      ],
+      "a": 3,
+      "tip": "Common specific phobias involve animals, natural environments like heights, flying, enclosed places, and blood-injection-injury.",
+      "eli5": "Think of a zoo of fears with separate cages — bug cage, high-place cage, airplane cage, and needle cage."
+    },
+    {
+      "q": "Which treatment approach is commonly recommended for a specific phobia?",
+      "o": [
+        "Avoiding all reminders forever without any plan to learn coping skills.",
+        "Taking antibiotics to remove the fear.",
+        "Just waiting for the fear to disappear while continuing to avoid it.",
+        "Gradual exposure therapy, often with cognitive behavioral therapy, facing the feared object step by step to learn calmer responses."
+      ],
+      "a": 4,
+      "tip": "Exposure therapy with cognitive behavioral therapy is a first-line treatment that helps reduce phobic fear through gradual, controlled exposure.",
+      "eli5": "It is like learning to swim in the shallow end first, then deeper — small safe steps make the scary water feel calmer."
+    },
+    {
+      "q": "How is a specific phobia different from social anxiety disorder?",
+      "o": [
+        "A specific phobia is fear limited to one object or situation, while social anxiety disorder is fear of social situations due to worry about being judged.",
+        "A specific phobia involves worry about many everyday topics, while social anxiety involves only spiders.",
+        "A specific phobia never causes avoidance, while social anxiety always causes fever.",
+        "There is no difference; both mean the same fear of heights."
+      ],
+      "a": 1,
+      "tip": "Specific phobia centers on a particular object or situation, while social anxiety centers on scrutiny and embarrassment in social situations.",
+      "eli5": "It is like being scared of one dog versus being scared of the whole playground crowd watching you play."
+    },
+    {
+      "q": "Which example best shows agoraphobia, meaning intense fear and avoidance of places where escape might be difficult?",
+      "o": [
+        "A person who washes hands many times a day for fear of germs",
+        "A person who avoids basements because of a strong fear of spiders",
+        "A person who avoids crowded buses, malls, and open squares and stays home unless someone goes along",
+        "A person who worries all day about bills, health, and work without one clear trigger"
+      ],
+      "a": 3,
+      "tip": "Agoraphobia involves intense fear and avoidance of situations where escape might be difficult or help might be unavailable.",
+      "eli5": "Like refusing to go to a big supermarket alone because getting out fast feels impossible, so you just stay home."
+    },
+    {
+      "q": "What is the central fear in agoraphobia?",
+      "o": [
+        "Having anxiety or panic-like symptoms in a place where it would be hard to escape or get help",
+        "Being judged, embarrassed, or rejected by other people in social situations",
+        "Being harmed by a specific animal or object, such as dogs or blood",
+        "Worrying too much about many everyday problems for months at a time"
+      ],
+      "a": 1,
+      "tip": "The core of agoraphobia is fear of being trapped without escape or help if intense anxiety occurs.",
+      "eli5": "Like being scared to get stuck in a school elevator with no teacher nearby, not scared of the elevator itself."
+    },
+    {
+      "q": "A person with agoraphobia avoids the bus, then stores, then leaves home less. Why does this avoidance usually make the fear worse over time?",
+      "o": [
+        "Avoidance quickly builds confidence for entering new places",
+        "Avoidance cures anxiety by giving the brain time to rest",
+        "Avoidance has no effect on fear and daily life",
+        "Avoidance gives short-term relief but blocks chances to learn the situation is manageable"
+      ],
+      "a": 4,
+      "tip": "Avoidance maintains anxiety by giving quick relief while preventing learning that the situation can be managed.",
+      "eli5": "Like never trying cooking again after burning toast once — you feel safe now, but you never learn you can cook fine."
+    },
+    {
+      "q": "Which pattern shows how avoidance can spread in agoraphobia?",
+      "o": [
+        "Fear of one bus ride that stays exactly the same and never affects other activities",
+        "First avoiding a crowded train, then all public transport, then going out only with a trusted person, then rarely leaving home",
+        "Feeling nervous once before a test but still going to school every day",
+        "Worrying about many topics but continuing to go to all usual places"
+      ],
+      "a": 2,
+      "tip": "Agoraphobia avoidance often expands from one feared situation to many similar ones and limits daily life.",
+      "eli5": "Like skipping one shopping aisle, then the whole store, then all shopping trips with family."
+    },
+    {
+      "q": "Which treatment approach follows mainstream guidance for agoraphobia?",
+      "o": [
+        "Cognitive behavioral therapy with gradual, planned exposure to feared places, sometimes with medicine",
+        "Staying home and avoiding all feared places until the fear disappears on its own",
+        "Increasing caffeine and using willpower alone to push through panic",
+        "Talking only about the past without ever practicing facing feared situations"
+      ],
+      "a": 1,
+      "tip": "Cognitive behavioral therapy with gradual exposure is considered a first-line treatment for anxiety disorders including agoraphobia.",
+      "eli5": "Like learning to swim by starting in the shallow end with a coach, not by never going near water."
+    },
+    {
+      "q": "How is agoraphobia different from social anxiety disorder, which is extreme fear of social situations?",
+      "o": [
+        "Agoraphobia is constant worry about everyday events with no single trigger",
+        "Agoraphobia is fear of a specific animal or object causing harm",
+        "They are exactly the same condition with different names",
+        "Agoraphobia is fear of being trapped without escape or help, while social anxiety is fear of being judged or embarrassed"
+      ],
+      "a": 4,
+      "tip": "Agoraphobia centers on escape and help, while social anxiety centers on negative judgment by others.",
+      "eli5": "Like one child avoids the crowded family market because exits feel far, another avoids it because people might laugh at them."
+    },
+    {
+      "q": "When anxiety triggers the body's fight-or-flight alarm (its emergency response to danger), which physical reaction is most expected?",
+      "o": [
+        "Blood pressure drops so much you fall into a deep sleep and feel icy cold",
+        "Heart beats faster, breathing quickens, and sweating increases",
+        "Vision and hearing shut off completely for several hours",
+        "Muscles become fully limp and you cannot feel your pulse"
+      ],
+      "a": 2,
+      "tip": "Anxiety activates fight-or-flight, which speeds up heart rate, breathing, and sweating to prepare for danger.",
+      "eli5": "It is like a school fire drill bell that makes everyone move fast and breathe hard, even if there is no real fire."
+    },
+    {
+      "q": "Ongoing anxiety often affects sleep. Which sleep pattern is most typical?",
+      "o": [
+        "Trouble falling asleep or staying asleep because worries keep racing",
+        "Sleeping 14 hours straight without ever waking and feeling no worry",
+        "Falling asleep instantly and never dreaming at all",
+        "Needing no sleep for a week while feeling calm and rested"
+      ],
+      "a": 1,
+      "tip": "Persistent worry and arousal in anxiety commonly cause difficulty falling or staying asleep.",
+      "eli5": "It is like trying to fall asleep in a noisy kitchen while someone keeps clattering pots — racing thoughts keep the brain awake."
+    },
+    {
+      "q": "A person who has worried most days for months notices tight shoulders, jaw clenching, and tension headaches. What does this best illustrate?",
+      "o": [
+        "Anxiety only affects thoughts and never affects the body",
+        "Muscle tightness always means a sports injury unrelated to worry",
+        "Headaches prove the worry has turned into a completely different illness",
+        "Long-term worry often causes muscle tension from holding the body tight"
+      ],
+      "a": 4,
+      "tip": "Chronic anxiety commonly produces sustained muscle tension, jaw clenching, and tension headaches.",
+      "eli5": "It is like carrying heavy shopping bags all day — your shoulders and jaw ache because they never got a chance to relax."
+    },
+    {
+      "q": "During periods of high anxiety, which stomach or bathroom change is most common?",
+      "o": [
+        "Complete loss of hunger for a full month with no stomach feelings at all",
+        "Sudden craving for only very spicy food and nothing else",
+        "Churning stomach, nausea, or a sudden urgent need to use the bathroom",
+        "Stomach becomes totally numb and digestion stops for days"
+      ],
+      "a": 3,
+      "tip": "Anxiety arousal often upsets the digestive system, causing nausea, churning, or urgent bathroom needs.",
+      "eli5": "It is like a washing machine sloshing before a big family trip — your stomach churns when your brain feels rushed."
+    },
+    {
+      "q": "Besides a fast heartbeat, which restlessness and thinking symptom often comes with persistent anxiety?",
+      "o": [
+        "Feeling restless or on edge, with trouble concentrating or mind going blank",
+        "Feeling completely calm, sleepy, and able to focus for many hours",
+        "Losing all memories of childhood and forgetting your own name",
+        "Hearing voices that comment on everything you do all day"
+      ],
+      "a": 1,
+      "tip": "Persistent anxiety often includes restlessness, feeling on edge, and difficulty concentrating or mind going blank.",
+      "eli5": "It is like trying to do homework with a little brother bouncing a ball nearby — you feel jittery and cannot keep your mind on one page."
+    },
+    {
+      "q": "Why might someone with ongoing anxiety feel tired or worn out even without hard physical work?",
+      "o": [
+        "Anxiety gives the body extra rest, so tiredness means they are lazy",
+        "Constant tension, poor sleep, and high alertness use up energy and cause fatigue",
+        "Anxiety removes the need for sleep, so tiredness is imaginary",
+        "Tiredness only happens with anxiety if the person also runs a marathon"
+      ],
+      "a": 2,
+      "tip": "Ongoing muscle tension, poor sleep, and constant alertness in anxiety commonly lead to fatigue and being easily worn out.",
+      "eli5": "It is like leaving a cooking pot simmering all night — by morning the gas is used up, just as constant worry uses up your energy."
+    },
+    {
+      "q": "Which of these is recognized as a common set of causes or contributors to anxiety disorders?",
+      "o": [
+        "Only living in a cold climate",
+        "Genetics, trauma, ongoing stress, and chemical imbalances in the brain",
+        "Eating too much sugar on one day",
+        "Only a single sports injury"
+      ],
+      "a": 2,
+      "tip": "Anxiety disorders can be caused by a mix of genetics, trauma, ongoing stress, and brain chemical imbalances.",
+      "eli5": "Like a cake can flop from a bad recipe, a too-hot oven, and old ingredients together, anxiety can build from family traits, hard experiences, and stress combined."
+    },
+    {
+      "q": "If a close family member, such as a parent or sibling, has an anxiety disorder, what does that mean for your own risk?",
+      "o": [
+        "It guarantees you will never develop anxiety",
+        "It has no effect on your risk at all",
+        "It only matters if you live in the same house",
+        "It increases your risk of developing an anxiety disorder"
+      ],
+      "a": 4,
+      "tip": "A family history of mental illness increases the risk of developing an anxiety disorder.",
+      "eli5": "Like inheriting curly hair from your family, you can inherit a higher chance of anxiety — it raises the odds but does not decide the outcome."
+    },
+    {
+      "q": "Which situation best shows how ongoing stress and health problems can raise the risk of anxiety?",
+      "o": [
+        "A person with a long-term health condition working in a very high-pressure job for many months",
+        "A person who feels tired after one busy day but then rests",
+        "A person who sleeps well and has no major health concerns",
+        "A person who takes a short relaxing weekend trip once a year"
+      ],
+      "a": 1,
+      "tip": "Chronic health problems and high-pressure environments can increase the risk of anxiety disorders.",
+      "eli5": "Like carrying a heavy backpack to school every single day, long illness plus constant pressure wears you down and makes worry grow."
+    },
+    {
+      "q": "When comparing men and women, who is more likely to experience an anxiety disorder?",
+      "o": [
+        "Men are much more likely than women",
+        "Men and women have exactly the same likelihood",
+        "Women are more likely than men",
+        "Risk is linked only to age and never to sex"
+      ],
+      "a": 3,
+      "tip": "Women are more likely than men to experience anxiety disorders.",
+      "eli5": "Like two school gardens where one gets more rain, women as a group face anxiety more often than men do."
+    },
+    {
+      "q": "About how common are anxiety disorders among adults in the United States?",
+      "o": [
+        "Less than 1 in 100 adults",
+        "About 1 in 50 adults",
+        "Almost all adults",
+        "About 1 in 5 adults, around 19 percent"
+      ],
+      "a": 4,
+      "tip": "An estimated 19.1 percent of United States adults experience an anxiety disorder.",
+      "eli5": "Like lining up five shoppers at a store, about one out of the five deals with an anxiety disorder."
+    },
+    {
+      "q": "What is true about anxiety disorders in children and teenagers?",
+      "o": [
+        "Children and teens can develop them, affecting about 1 in 3 teens",
+        "Children and teens never develop anxiety disorders",
+        "Only adults over age 40 can develop anxiety disorders",
+        "Teen worry never interferes with school or daily life"
+      ],
+      "a": 1,
+      "tip": "Children and adolescents can develop anxiety disorders, and about 31.9 percent of adolescents have one.",
+      "eli5": "Like homework stress that shows up in many classrooms, anxiety is common in teens — about one student in three faces one."
+    },
+    {
+      "q": "Which example best shows separation anxiety in a young child (strong fear of being away from a parent or caregiver)?",
+      "o": [
+        "A 7-year-old feels a little sad for a few minutes after waving goodbye on the first day of school, then plays happily.",
+        "A 7-year-old panics, cries, clings, and fears something bad will happen every time a parent leaves, and refuses to sleep alone or go to school.",
+        "A 7-year-old enjoys sleepovers and rarely calls home.",
+        "A 7-year-old gets angry only when asked to do homework."
+      ],
+      "a": 2,
+      "tip": "Separation anxiety involves persistent excessive fear about separation from parents or caregivers that interferes with daily life.",
+      "eli5": "Like a lamp that only works when plugged in, the child feels unsafe unless the parent is close by."
+    },
+    {
+      "q": "About how common are anxiety disorders in teenagers?",
+      "o": [
+        "About 3 in 100 teenagers",
+        "About 10 in 100 teenagers",
+        "About 15 in 100 teenagers",
+        "About 32 in 100 teenagers, or about 1 in 3"
+      ],
+      "a": 4,
+      "tip": "About 31.9 percent of adolescents have an anxiety disorder.",
+      "eli5": "Like one student in every small classroom row, anxiety touches about one out of three teens."
+    },
+    {
+      "q": "Which two types of anxiety are common in children and teenagers? (Choose 2)",
+      "o": [
+        "Separation anxiety about being away from parents or caregivers",
+        "Autism spectrum disorder affecting social communication",
+        "Social anxiety disorder with strong fear of social situations",
+        "Iron-deficiency anemia causing low iron and tiredness"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Anxiety in children and teens can include separation anxiety, social anxiety, generalized anxiety, and panic disorders.",
+      "eli5": "Like different flavors in one ice cream shop, anxiety in kids can taste like fear of separation or fear of people."
+    },
+    {
+      "q": "How might an anxiety disorder often look in a child or teen at home or school?",
+      "o": [
+        "Frequent stomachaches or headaches before school, restlessness, trouble sleeping, and avoiding schoolwork or activities",
+        "Sleeping well every night, feeling calm, and joining new activities with ease",
+        "Brief excitement before a field trip that fades quickly and does not affect schoolwork",
+        "A single day of sadness after a bad grade that improves with rest and encouragement"
+      ],
+      "a": 1,
+      "tip": "Anxiety in youth often shows as persistent worrying plus restlessness and physical signs like stomachaches, headaches, or fast heartbeat that interfere with daily life.",
+      "eli5": "Like carrying a heavy backpack every morning, worry shows up in the body and makes school harder to carry."
+    },
+    {
+      "q": "A 12-year-old worries excessively most days, avoids friends, and grades are dropping. Which adult response best follows mainstream guidance?",
+      "o": [
+        "Punish the child for worrying and take away all activities until the worry stops",
+        "Tell the child to just stop worrying and shame them for being weak",
+        "Listen with calm support, keep regular sleep and school routines, encourage small brave steps, and ask a doctor or counselor about treatments such as cognitive behavioral therapy",
+        "Let the child avoid school and all feared situations indefinitely and keep it a secret"
+      ],
+      "a": 3,
+      "tip": "Mainstream guidance supports calm listening, steady routines, gradual facing of fears, and first-line treatment such as cognitive behavioral therapy when anxiety persists.",
+      "eli5": "Like teaching swimming with small steps in the shallow end, you stay close, practice a little at a time, and get a coach if needed."
+    },
+    {
+      "q": "When should parents or teachers consider getting professional help for a child or teen's anxiety?",
+      "o": [
+        "When the child feels briefly nervous before one test but calms down and does well",
+        "When fear or worry is persistent, excessive, hard to control, and interferes with school, friendships, sleep, or family life",
+        "When the child feels happy and relaxed during holidays",
+        "When the child shows brief shyness with strangers but warms up quickly and plays"
+      ],
+      "a": 2,
+      "tip": "Anxiety disorders involve persistent excessive fear or worry that interferes with daily life.",
+      "eli5": "Like a rain cloud that stays for weeks and cancels playtime, not a quick shower, it needs extra help when worry blocks everyday life."
+    },
+    {
+      "q": "In older adults, how common are anxiety disorders compared with dementia, which causes severe memory loss?",
+      "o": [
+        "They are much rarer than dementia",
+        "They are about twice as common as dementia",
+        "They never occur after age 65",
+        "They only occur together with dementia"
+      ],
+      "a": 2,
+      "tip": "In older adults, anxiety disorders are twice as common as dementia.",
+      "eli5": "Like apples and oranges at a market stall, there are about two piles of anxiety for every one pile of dementia."
+    },
+    {
+      "q": "A 76-year-old with arthritis, heart disease, and ongoing stress about living alone feels persistent worry that interferes with daily life. What is true about this situation?",
+      "o": [
+        "Ongoing health problems and stress can raise the risk of anxiety in older adults",
+        "Ongoing health problems protect older adults from anxiety",
+        "Only childhood events affect anxiety, not later-life health",
+        "Worry that interferes with daily life is normal aging and never a disorder"
+      ],
+      "a": 1,
+      "tip": "Chronic health problems and ongoing stress can increase the risk of anxiety disorders.",
+      "eli5": "Like rain every day makes a garden muddy, health troubles and stress piling up day after day can make worry grow."
+    },
+    {
+      "q": "Why is anxiety sometimes overlooked in a 70-year-old who visits the doctor often for stomach upset, muscle tension, and poor sleep?",
+      "o": [
+        "Anxiety cannot start after age 60",
+        "Anxiety in older adults always goes away without help",
+        "Anxiety never causes body symptoms in older adults",
+        "Worry, restlessness, and body signs like a fast heartbeat are often mistaken for aging or medical illness"
+      ],
+      "a": 4,
+      "tip": "Anxiety symptoms like worrying, restlessness, and physical signs can be mistaken for aging or medical problems in older adults.",
+      "eli5": "Like hearing a phone buzz and thinking it is the washing machine, families may mistake worry signals for just getting older or being sick."
+    },
+    {
+      "q": "How does ongoing anxiety usually affect an older adult's everyday life?",
+      "o": [
+        "It usually improves memory and energy",
+        "It has no effect on daily activities",
+        "It is linked to poorer quality of life and harder daily functioning",
+        "It only affects young people, not daily life after age 65"
+      ],
+      "a": 3,
+      "tip": "In adults, anxiety is associated with poorer quality of life and impairment in daily functioning.",
+      "eli5": "Like a foggy window makes it hard to see the street, ongoing worry makes everyday tasks and visits with family less enjoyable."
+    },
+    {
+      "q": "A 68-year-old asks about safe, standard help for persistent excessive worry that interferes with daily life. Which approach follows mainstream guidance?",
+      "o": [
+        "Cognitive behavioral therapy, a talk therapy that addresses negative thought patterns, often with medicine if needed",
+        "Avoiding all doctors and handling severe anxiety alone",
+        "Using alcohol to calm nerves every night",
+        "Waiting for worry to turn into dementia before seeking help"
+      ],
+      "a": 1,
+      "tip": "Cognitive behavioral therapy is considered a first-line treatment for anxiety disorders, sometimes combined with medicines.",
+      "eli5": "Like learning a new recipe with a cooking teacher, talk therapy teaches new thought habits, and medicine can help alongside it if a doctor advises."
+    },
+    {
+      "q": "Besides therapy or medicine, which daily habits can play an important role in managing anxiety in older adults?",
+      "o": [
+        "Drinking a lot of caffeine late at night",
+        "Getting better sleep, managing stress, limiting caffeine, and using support groups or meditation",
+        "Staying alone all day and avoiding all movement",
+        "Using alcohol every evening to relax"
+      ],
+      "a": 2,
+      "tip": "Support groups, meditation, improved sleep and stress management, and limiting caffeine can help manage anxiety.",
+      "eli5": "Like keeping a plant healthy with water, sunlight, and good soil, calm grows better with good sleep, less caffeine, and friendly support."
+    },
+    {
+      "q": "When should someone consider seeing a doctor or counselor about worry or fear?",
+      "o": [
+        "Only if worry happens once after a scary movie",
+        "When worry is persistent, feels excessive, and interferes with daily life, work, or relationships",
+        "Only if a person has no stress at all in life",
+        "When worry is brief, mild, and easy to control"
+      ],
+      "a": 2,
+      "tip": "Anxiety disorders involve persistent excessive fear or worry that interferes with daily life.",
+      "eli5": "Like a school fire alarm that keeps ringing with no fire and stops class, worry that will not stop and gets in the way needs a check-up."
+    },
+    {
+      "q": "What does a first visit with a doctor or therapist for possible anxiety usually include?",
+      "o": [
+        "Questions about your worry, how often it happens, how it affects work, school or relationships, plus health, stress and family history",
+        "Only a brain scan, with no questions about symptoms or daily life",
+        "A single blood test that alone proves an anxiety disorder",
+        "A diagnosis made without asking how long symptoms last or what makes them better or worse"
+      ],
+      "a": 1,
+      "tip": "Diagnosis is based on history of persistent symptoms, duration, distress, and impairment in social or work life.",
+      "eli5": "Like a teacher asking about homework, sleep, and family routine before helping, the doctor gathers the full story first."
+    },
+    {
+      "q": "Cognitive behavioral therapy (CBT), a structured talk therapy often tried first for anxiety, mainly works by what?",
+      "o": [
+        "Giving medicine during the session to stop all feelings",
+        "Teaching you to avoid every stressful topic for the rest of life",
+        "Telling you to just suppress emotions and work harder",
+        "Helping you notice and change negative thought patterns and practice skills to manage symptoms"
+      ],
+      "a": 4,
+      "tip": "Cognitive behavioral therapy addresses negative thought patterns and helps manage anxiety symptoms.",
+      "eli5": "Like fixing a cooking recipe by spotting too much salt and practicing a better mix, CBT spots unhelpful thoughts and practices better ones."
+    },
+    {
+      "q": "When medicine is used for an anxiety disorder, which approach follows mainstream medical guidance?",
+      "o": [
+        "Using only painkillers as needed with no therapy or follow-up",
+        "Stopping a prescribed medicine suddenly as soon as you feel better without talking to the doctor",
+        "Antidepressant or anti-anxiety medicines, usually combined with psychotherapy and medical follow-up",
+        "Taking someone else's prescription because the symptoms seem similar"
+      ],
+      "a": 3,
+      "tip": "Medications for anxiety can include antidepressants and anti-anxiety drugs used together with psychotherapy.",
+      "eli5": "Like using both lessons and practice for a hard school subject, medicine and talk therapy often work best as a team with check-ins."
+    },
+    {
+      "q": "What is exposure therapy, a technique where a person slowly faces feared situations step by step with support?",
+      "o": [
+        "A planned, gradual practice often used alongside other treatments like CBT to reduce avoidance",
+        "Facing the worst fear all at once alone with no plan or support",
+        "Avoiding the feared situation completely forever",
+        "Trying one quick exposure with no coping skills and no follow-up"
+      ],
+      "a": 1,
+      "tip": "Exposure therapy is often used alongside other treatments for anxiety disorders.",
+      "eli5": "Like learning to swim by starting in the shallow end with a family member nearby, you take small safe steps, not a deep-end jump."
+    },
+    {
+      "q": "A counselor explains a standard care plan for an anxiety disorder. Which plan best fits mainstream guidance?",
+      "o": [
+        "Only willpower is needed, so professional treatment never helps",
+        "Drink extra caffeine and cut back on sleep to push through anxiety",
+        "Stop all daily activities and stay home alone until worry disappears on its own",
+        "Therapy, medicine, or both as needed, plus healthy habits like limiting caffeine, better sleep, stress management, meditation, and support groups"
+      ],
+      "a": 4,
+      "tip": "Treatment can involve medicines, therapy, or both, plus sleep, stress management, support groups, and limiting caffeine.",
+      "eli5": "Like shopping with a list, a cart, and a budget together, therapy, healthy habits, and medicine if needed work better as a full plan."
+    },
+    {
+      "q": "In cognitive behavioral therapy (CBT) for anxiety, what is the main goal?",
+      "o": [
+        "To uncover hidden childhood memories that explain all worry",
+        "To learn to spot unhelpful thoughts and change worried behaviors",
+        "To use hypnosis to erase fearful memories completely",
+        "To rely only on relaxation during sessions without daily practice"
+      ],
+      "a": 2,
+      "tip": "CBT is a first-line treatment that addresses negative thought patterns and helps manage anxiety symptoms.",
+      "eli5": "Like fixing a wobbly bike by checking both the steering (thoughts) and the pedals (actions)."
+    },
+    {
+      "q": "A person in CBT thinks, 'If I go to the party, everyone will laugh at me.' What would challenging this thought most likely involve?",
+      "o": [
+        "Looking at evidence for and against the thought and finding a more balanced view",
+        "Repeating the scary thought until you believe it even more strongly",
+        "Avoiding all parties to prove the thought was right",
+        "Pushing the thought away and refusing to ever think about parties"
+      ],
+      "a": 1,
+      "tip": "CBT teaches people to test unhelpful thoughts against facts and reframe them.",
+      "eli5": "Like being a detective at school checking if a rumor is really true before believing it."
+    },
+    {
+      "q": "What is exposure therapy, a technique often used alongside CBT for anxiety?",
+      "o": [
+        "Taking medicine only when panic starts to block all feelings",
+        "Avoiding feared situations completely until anxiety disappears on its own",
+        "Facing a feared situation step by step, from easier to harder, to build confidence",
+        "Talking only about unrelated life history without ever facing fears"
+      ],
+      "a": 3,
+      "tip": "Exposure therapy involves gradually facing feared objects or situations, often with other treatment.",
+      "eli5": "Like learning to swim by starting in the shallow end before trying the deep end."
+    },
+    {
+      "q": "How is CBT for anxiety usually organized?",
+      "o": [
+        "As open-ended talks for many years with no clear goals",
+        "As listening only, without teaching any coping skills",
+        "As a single session that cures anxiety forever",
+        "As short-term, goal-focused sessions with skills to practice between visits"
+      ],
+      "a": 4,
+      "tip": "CBT is usually structured, time-limited, and goal-oriented with practice between sessions.",
+      "eli5": "Like soccer practice with a game plan and drills to try at home before the next practice."
+    },
+    {
+      "q": "Why does a CBT therapist often assign homework, such as tracking worries or practicing calm breathing?",
+      "o": [
+        "So you can practice new coping skills in everyday life where anxiety happens",
+        "To grade your memory like a school exam on anxiety facts",
+        "To replace talking and learning skills during sessions",
+        "To keep you busy so you have less time to ask questions"
+      ],
+      "a": 1,
+      "tip": "CBT works by learning skills in session and practicing them in daily life to manage symptoms.",
+      "eli5": "Like math homework, you get better by doing short practice at home, not just in class."
+    },
+    {
+      "q": "Which statement best describes how psychotherapy and medicine are often used for anxiety disorders?",
+      "o": [
+        "Therapy is never combined with medicine for anxiety",
+        "Medicines alone teach the same coping skills that therapy teaches",
+        "Therapy such as CBT can be used alone or together with medicines such as antidepressants",
+        "Therapy works only if you avoid other supports like sleep and stress management"
+      ],
+      "a": 3,
+      "tip": "Treatment for anxiety disorders can involve medicines, therapy, or both together.",
+      "eli5": "Like cooking with both a good recipe (therapy skills) and helpful kitchen tools (medicine) when needed."
+    },
+    {
+      "q": "Which group of medicines is usually tried first for ongoing, long-term treatment of anxiety disorders?",
+      "o": [
+        "Over-the-counter cold medicines that dry up a runny nose",
+        "Antidepressants such as SSRIs and SNRIs prescribed by a doctor",
+        "Antibiotics that fight bacterial infections",
+        "Strong painkillers used after surgery"
+      ],
+      "a": 2,
+      "tip": "Antidepressants such as SSRIs and SNRIs are commonly first-choice medicines for long-term anxiety care.",
+      "eli5": "Like choosing sturdy everyday shoes for a long walk instead of party shoes you wear once."
+    },
+    {
+      "q": "Antidepressants have depression in the name. Why are they also used for anxiety disorders?",
+      "o": [
+        "Because they help regulate brain chemicals involved in both mood and anxiety",
+        "Because they work in minutes to stop a panic attack instantly",
+        "Because they only work if a person also has a cold or flu",
+        "Because they replace the need for sleep and healthy habits"
+      ],
+      "a": 1,
+      "tip": "Antidepressants help balance brain signaling that affects both depression and anxiety.",
+      "eli5": "Like one watering can helping both tomatoes and cucumbers grow in the same garden."
+    },
+    {
+      "q": "What is true about fast-acting anti-anxiety medicines called benzodiazepines, which quickly calm severe symptoms?",
+      "o": [
+        "They cure anxiety permanently after one prescription",
+        "They are safe to share with family members who feel stressed",
+        "They work best when taken with alcohol to boost calming",
+        "They work quickly but are usually for short-term use because of dependence risk"
+      ],
+      "a": 4,
+      "tip": "Benzodiazepines act fast but are usually short-term because they can cause dependence.",
+      "eli5": "Like a fire extinguisher for a quick flare-up, not the daily stove you cook on."
+    },
+    {
+      "q": "After starting a daily antidepressant medicine for anxiety, when is the full benefit usually felt?",
+      "o": [
+        "Within a few minutes of the very first pill",
+        "By the next morning after one night of sleep",
+        "After several weeks of taking it every day as prescribed",
+        "Only after taking it for more than two years"
+      ],
+      "a": 3,
+      "tip": "Daily antidepressants for anxiety often take several weeks to reach full effect.",
+      "eli5": "Like planting seeds that need weeks of watering before you see sprouts, not instant noodles."
+    },
+    {
+      "q": "What should a person do if they want to stop or change their prescribed anxiety medicine?",
+      "o": [
+        "Talk to the prescribing doctor first and usually taper off slowly",
+        "Stop suddenly all at once without telling anyone",
+        "Double the dose for a few days and then quit",
+        "Give leftover pills to a friend and stop"
+      ],
+      "a": 1,
+      "tip": "Anxiety medicines should be changed or stopped only with a doctor's guidance, often by tapering.",
+      "eli5": "Like getting a teacher's help to climb down a ladder step by step instead of jumping off the top."
+    },
+    {
+      "q": "Which two statements about medicine for anxiety disorders are correct? (Choose 2)",
+      "o": [
+        "Medicine often works best when combined with psychotherapy such as CBT",
+        "If you feel better for one day, double the dose to cure anxiety faster",
+        "Keep taking it as prescribed and tell the doctor about side effects or concerns",
+        "Drinking alcohol with anxiety medicine is a safe way to increase calm"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Anxiety medicine is often combined with therapy and should be taken as prescribed with doctor follow-up.",
+      "eli5": "Like school plus homework work better together, and you tell the teacher if the homework is too hard."
+    },
+    {
+      "q": "Why do mainstream guides often suggest limiting caffeine, such as coffee and energy drinks, when managing anxiety?",
+      "o": [
+        "Caffeine calms anxiety by slowing the heart rate and easing tension",
+        "Caffeine can trigger or worsen anxiety signs like a racing heart, jitteriness, and restlessness",
+        "Caffeine improves sleep quality and lowers stress hormones",
+        "Caffeine only affects anxiety in children, not in adults"
+      ],
+      "a": 2,
+      "tip": "Caffeine is a stimulant that can mimic and worsen anxiety symptoms like increased heart rate and restlessness.",
+      "eli5": "Like adding extra sugar to an already bouncy puppy, caffeine can make a jittery body feel even more jumpy."
+    },
+    {
+      "q": "Which sleep habit best helps manage ongoing anxiety over time?",
+      "o": [
+        "Staying up very late and sleeping in at very different times each day",
+        "Drinking coffee late at night and scrolling on a phone in bed",
+        "Taking long daytime naps instead of getting a full night of sleep",
+        "Keeping a regular bedtime and wake time and winding down without screens before bed"
+      ],
+      "a": 4,
+      "tip": "Regular, sufficient sleep and good sleep habits support stress management and help control anxiety.",
+      "eli5": "Like charging your phone at the same time each night, a steady sleep routine keeps your brain battery steady for school."
+    },
+    {
+      "q": "How does regular moderate exercise, such as brisk walking most days, usually affect anxiety?",
+      "o": [
+        "It often lowers tension, improves mood, and helps sleep, which can ease anxiety",
+        "It always makes anxiety worse and should be completely avoided",
+        "It only builds muscles and has no effect on mood or stress",
+        "It replaces the need for sleep and rest"
+      ],
+      "a": 1,
+      "tip": "Regular moderate exercise helps reduce tension, improve mood, and improve sleep, which supports anxiety management.",
+      "eli5": "Like shaking crumbs out of a tablecloth, a good walk helps shake loose tight, worried feelings."
+    },
+    {
+      "q": "What is the main helpful role of an anxiety support group, where people with similar experiences meet to talk?",
+      "o": [
+        "To give a formal diagnosis and prescribe medicine to members",
+        "To force members to face their biggest fear all at once without help",
+        "To reduce isolation by sharing experiences and practical coping ideas",
+        "To replace professional therapy and medical care for everyone"
+      ],
+      "a": 3,
+      "tip": "Support groups help by reducing isolation and sharing coping strategies, not by diagnosing or prescribing treatment.",
+      "eli5": "Like a study group for a hard class, it helps to learn tips and feel less alone with others who understand."
+    },
+    {
+      "q": "What does a regular stress-management practice like meditation or slow deep breathing do to help with anxiety?",
+      "o": [
+        "It makes worries disappear permanently after trying it once",
+        "It raises heart rate and muscle tension to burn off stress",
+        "It teaches people to avoid all stressful thoughts forever",
+        "It helps calm the body's stress response and makes worry easier to manage"
+      ],
+      "a": 4,
+      "tip": "Meditation and slow breathing help calm the body's stress response and make anxiety symptoms easier to manage.",
+      "eli5": "Like turning down the heat when soup is boiling over, slow breathing helps cool down a racing body."
+    },
+    {
+      "q": "Which daily pattern best shows healthy lifestyle coping and support for ongoing anxiety?",
+      "o": [
+        "Limiting caffeine and alcohol, staying connected to others, and using healthy habits like exercise and a sleep routine",
+        "Drinking more alcohol to relax, spending most time alone, and drinking extra coffee to stay up",
+        "Skipping sleep, avoiding friends and family, and using only energy drinks for energy",
+        "Keeping worries to yourself, avoiding all activity, and staying up late every night"
+      ],
+      "a": 1,
+      "tip": "Limiting caffeine and alcohol, staying socially connected, exercising, and keeping good sleep habits support anxiety management.",
+      "eli5": "Like cooking a balanced meal instead of only candy, mixing good sleep, friends, and movement keeps your mind healthier."
+    },
+    {
+      "q": "When guides say anxiety involves 'excessive' fear or worry, what does 'excessive' mean?",
+      "o": [
+        "The fear matches the real danger exactly and fades quickly",
+        "The fear is much stronger or lasts much longer than the situation calls for",
+        "The person feels no fear at all even in real danger",
+        "The fear lasts only a few seconds and is easy to forget"
+      ],
+      "a": 2,
+      "tip": "Excessive means the fear or worry is out of proportion to the actual threat.",
+      "eli5": "Like bringing a huge umbrella and raincoat for a tiny drizzle that stops in a minute."
+    },
+    {
+      "q": "When guides say anxiety is 'persistent,' what does that mean?",
+      "o": [
+        "It comes once and then is gone for good",
+        "It only happens during one scary movie",
+        "It is brief nervousness that ends right after the event",
+        "It keeps returning over weeks or months and is hard to control"
+      ],
+      "a": 4,
+      "tip": "Persistent means the worry keeps happening over time, not just one brief moment.",
+      "eli5": "Like a leaky faucet that keeps dripping, not one splash from a cup."
+    },
+    {
+      "q": "Which example best shows worry that 'interferes with daily life'?",
+      "o": [
+        "Worrying for weeks, sleeping poorly, missing work, avoiding friends, and having trouble concentrating",
+        "Feeling nervous before a job interview but still preparing and going to it",
+        "Feeling excited before a vacation and packing quickly",
+        "Feeling briefly upset after an argument but making up the next day"
+      ],
+      "a": 1,
+      "tip": "Interference means the worry disrupts work, school, social life, or daily tasks.",
+      "eli5": "Like a loud radio that will not turn off, so you cannot hear the teacher or finish homework."
+    },
+    {
+      "q": "Which group lists only anxiety disorders?",
+      "o": [
+        "Depression, bipolar disorder, schizophrenia",
+        "Dementia, migraine, stomach flu",
+        "Generalized anxiety disorder, panic disorder, social anxiety disorder",
+        "Diabetes, asthma, high blood pressure"
+      ],
+      "a": 3,
+      "tip": "Generalized anxiety disorder, panic disorder, and social anxiety disorder are all common anxiety disorders.",
+      "eli5": "Like apples, bananas, and oranges are all fruits, these three are all in the anxiety family."
+    },
+    {
+      "q": "How do many health guides describe anxiety in terms of time — what is it mostly about?",
+      "o": [
+        "Only reacting to pain after an injury has already healed",
+        "Anticipating a possible future threat or problem, even when danger is not happening now",
+        "Only remembering something happy from long ago",
+        "Losing all feelings about the past and the future"
+      ],
+      "a": 2,
+      "tip": "Anxiety is often future-focused worry about what might happen.",
+      "eli5": "Like packing extra snacks because you keep thinking you might get hungry later on the trip."
+    },
+    {
+      "q": "What do different anxiety disorders have in common, and how do they differ?",
+      "o": [
+        "They have nothing in common and they all have the exact same trigger",
+        "They all involve only low mood and never involve fear or worry",
+        "They all involve only body pain with no worried thoughts",
+        "They all involve persistent excessive fear or worry, but differ in what triggers it, such as everyday topics, sudden attacks, social situations, or a specific object"
+      ],
+      "a": 4,
+      "tip": "All anxiety disorders share persistent excessive fear or worry but differ by trigger pattern.",
+      "eli5": "Like ice cream flavors share being cold and sweet but taste different, like chocolate, vanilla, and strawberry."
+    },
+    {
+      "q": "Maya worries about work, bills, and her family's health on most days. She tells herself to stop worrying, but the thoughts keep coming back. Which feature of generalized anxiety disorder does this show?",
+      "o": [
+        "Worry that lasts only a few minutes before one exam",
+        "Difficulty controlling the worry even when trying hard to stop it",
+        "Fear that happens only around one specific animal",
+        "Feeling rested and focused after time spent worrying"
+      ],
+      "a": 2,
+      "tip": "Generalized anxiety disorder often involves finding it hard to control worry on most days.",
+      "eli5": "It is like a faucet that keeps dripping even when you try to turn it off tight."
+    },
+    {
+      "q": "When a doctor asks about generalized anxiety disorder, how often does the worry usually happen?",
+      "o": [
+        "Only on holidays or birthdays",
+        "Only for a short time after one bad night of sleep",
+        "Only when giving a speech in front of a crowd",
+        "On more days than not during normal daily life"
+      ],
+      "a": 4,
+      "tip": "Generalized anxiety disorder involves excessive worry occurring more days than not.",
+      "eli5": "It is like cloudy weather most days of the week, not just one rainy afternoon."
+    },
+    {
+      "q": "Which example shows how generalized anxiety disorder can interfere with daily life at work or with friends?",
+      "o": [
+        "Missing work deadlines and cancelling plans with friends because worry makes it hard to focus and follow through",
+        "Finishing all work early and enjoying more free time because of brief worry",
+        "Feeling worried for ten minutes and then performing better than usual for months",
+        "Only feeling nervous when in real danger and then recovering right away"
+      ],
+      "a": 1,
+      "tip": "Generalized anxiety disorder can cause impairment in social, occupational, or other areas of functioning.",
+      "eli5": "It is like trying to cook dinner while someone keeps turning up the noise, so the meal burns."
+    },
+    {
+      "q": "A counselor is checking if shifting everyday worries fit generalized anxiety disorder. Which two examples fit that kind of worry? (Choose 2)",
+      "o": [
+        "Worrying about rent one week, car repairs the next week, and a child's schoolwork the next week",
+        "Feeling calm about daily life except for intense fear when seeing one specific spider",
+        "Worrying across weeks about chores, health appointments, and work schedules without one single trigger",
+        "Feeling fear only in one crowded elevator and feeling fine about money, health, and work"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Generalized anxiety disorder involves chronic worry about many everyday issues without a single specific trigger.",
+      "eli5": "It is like weeds popping up all over the garden, not just one weed in one corner."
+    },
+    {
+      "q": "How is generalized anxiety disorder different from agoraphobia, which is intense fear of places where escape might be difficult?",
+      "o": [
+        "Agoraphobia is worry about everyday bills and health, while generalized anxiety is fear of buses and crowds",
+        "Both conditions are exactly the same and have the same triggers",
+        "Generalized anxiety disorder is broad worry about many everyday matters, while agoraphobia centers on being trapped without easy escape",
+        "Generalized anxiety disorder happens only in buses and stores, while agoraphobia happens only at home"
+      ],
+      "a": 3,
+      "tip": "Generalized anxiety disorder is chronic broad worry, while agoraphobia is fear and avoidance of situations where escape might be difficult.",
+      "eli5": "One is like worrying about many school subjects, the other is like fearing the locked hallway itself."
+    },
+    {
+      "q": "How is generalized anxiety disorder different from social anxiety disorder, which is extreme fear of social judgment?",
+      "o": [
+        "Social anxiety covers money, health, and chores, while generalized anxiety covers only parties",
+        "Generalized anxiety disorder covers worry about many daily topics like money and health, while social anxiety centers on embarrassment or judgment by others",
+        "Generalized anxiety happens only during parties, while social anxiety happens only when alone",
+        "Both involve only sudden pounding heartbeat attacks with no worry between them"
+      ],
+      "a": 2,
+      "tip": "Generalized anxiety disorder is worry about many everyday issues, while social anxiety disorder is fear and avoidance of social situations.",
+      "eli5": "One is like worrying about the whole shopping list, the other is like fearing the cashier will laugh at you."
+    },
+    {
+      "q": "After a person has had unexpected panic attacks, for about how long must the worry about more attacks or changes in behavior last to fit the usual pattern of panic disorder?",
+      "o": [
+        "Only a few minutes during the attack itself",
+        "For one month or more after the attacks",
+        "For less than a day with no worry between attacks",
+        "Only on weekends when stress is lower"
+      ],
+      "a": 2,
+      "tip": "Panic disorder involves recurrent unexpected attacks plus at least one month of persistent worry about more attacks or behavior change.",
+      "eli5": "Like worrying for weeks after burning food that the smoke alarm will go off again, not just during the smoke."
+    },
+    {
+      "q": "How does a typical panic attack unfold over time?",
+      "o": [
+        "It starts suddenly, becomes very intense within a few minutes, then gradually eases",
+        "It builds slowly over several weeks and stays at the same level",
+        "It starts after hours of planning and lasts for days without a peak",
+        "It only happens during sleep and never when awake"
+      ],
+      "a": 1,
+      "tip": "A panic attack comes on abruptly and usually peaks within minutes.",
+      "eli5": "Like a sudden summer downpour that pours hardest right away, then stops, not a week of light drizzle."
+    },
+    {
+      "q": "During a panic attack, which kind of frightening thought is most typical?",
+      "o": [
+        "Forgetting what day of the week it is",
+        "Feeling bored and wanting a snack",
+        "Feeling calm and sleepy",
+        "Fearing you are dying, having a heart attack, or losing control"
+      ],
+      "a": 4,
+      "tip": "Panic attacks often include catastrophic fears such as dying, having a heart attack, or losing control.",
+      "eli5": "Like when a school fire alarm rings and your mind jumps to the worst idea, even though it is only a drill."
+    },
+    {
+      "q": "Which example best shows an unexpected panic attack with no apparent reason, as can happen in panic disorder?",
+      "o": [
+        "Feeling nervous only when giving a speech in front of a class",
+        "Feeling fear only when seeing a spider in the bathroom",
+        "Sitting calmly watching TV at home when sudden intense fear, chest tightness, and a pounding heart strike",
+        "Feeling a little worried for days about bills and work deadlines"
+      ],
+      "a": 3,
+      "tip": "In panic disorder, attacks can be unexpected and occur without an obvious trigger or danger.",
+      "eli5": "Like a phone ringing loudly when no one called, not like answering because you saw who was calling."
+    },
+    {
+      "q": "A person has new, severe chest pain and a pounding heartbeat during intense fear. What is the safest mainstream advice?",
+      "o": [
+        "Get an urgent medical check first to rule out a heart or other medical cause",
+        "Assume it is always panic and never seek medical care",
+        "Exercise very hard to test the heart during the pain",
+        "Drink several energy drinks with caffeine to calm down"
+      ],
+      "a": 1,
+      "tip": "New or severe chest symptoms should be medically evaluated first and not automatically assumed to be panic.",
+      "eli5": "Like checking with a grown-up if the cooking smell is burnt toast or a real kitchen fire, you check danger first."
+    },
+    {
+      "q": "Which response during a panic attack best follows mainstream coping guidance?",
+      "o": [
+        "Breathe very fast and run away from all activities forever",
+        "Remind yourself it is frightening but will pass in minutes, stay where you are if safe, and use slow steady breathing",
+        "Hold your breath as long as possible and tense all muscles",
+        "Keep telling yourself you are in serious danger and need emergency help no matter what doctors said"
+      ],
+      "a": 2,
+      "tip": "Mainstream coping is to ride out the attack with reassurance it will pass, stay put if safe, and use slow breathing.",
+      "eli5": "Like staying on the shopping cart through a bumpy aisle knowing the bumps will end, instead of jumping off."
+    },
+    {
+      "q": "Which set of situations most often triggers fear in social anxiety disorder, where a person fears judgment in social situations?",
+      "o": [
+        "Being alone at home, resting, and watching television",
+        "Heights, thunderstorms, insects, and seeing blood",
+        "Meeting new people, speaking up in a group, or eating in front of others",
+        "Paying bills on time, cleaning the house, and driving alone on an empty road"
+      ],
+      "a": 3,
+      "tip": "Social anxiety disorder centers on fear of scrutiny in social or performance situations such as meeting people, speaking, or being observed.",
+      "eli5": "It is like stage fright that shows up for everyday chats and meals, not just on a big stage. The worry is: people are watching and judging me."
+    },
+    {
+      "q": "After a normal friendly chat at a party, which thinking pattern is most typical of social anxiety disorder?",
+      "o": [
+        "Quickly forgetting the chat and moving on with the day",
+        "Replaying every word for hours, convinced it sounded foolish and embarrassing",
+        "Feeling proud and confident about how well the chat went",
+        "Deciding the chat proves strong social skills for future job interviews"
+      ],
+      "a": 2,
+      "tip": "Social anxiety disorder often involves post-event rumination, replaying social events and assuming the worst about how others saw you.",
+      "eli5": "It is like rewatching a home video over and over to hunt for mistakes. One small pause feels like a huge blunder."
+    },
+    {
+      "q": "When asked to introduce themselves in a meeting, which body reaction best fits social anxiety disorder?",
+      "o": [
+        "Falling asleep, yawning, and feeling very relaxed and calm",
+        "Blushing, trembling, sweating, racing heart, and trouble getting words out",
+        "Rash with itching all over, high fever, and swollen joints",
+        "Slow heartbeat, low energy, and wanting to sleep for hours"
+      ],
+      "a": 2,
+      "tip": "In feared social situations, social anxiety disorder can trigger visible anxiety signs such as blushing, shaking, sweating, and a pounding heart.",
+      "eli5": "It is like the body's alarm bell rings because talking feels dangerous. The face gets hot and the hands shake, like before a hard test."
+    },
+    {
+      "q": "Which work or school pattern best shows how social anxiety disorder interferes with daily life?",
+      "o": [
+        "Turning down a better job, skipping classes, or avoiding presentations to escape being watched and judged",
+        "Forgetting homework once because of a busy weekend with family",
+        "Taking sick days only with a fever, flu, or other physical illness",
+        "Choosing night shifts only to earn higher pay, not because of fear of people"
+      ],
+      "a": 1,
+      "tip": "Social anxiety disorder involves persistent fear and avoidance that interferes with school, work, or friendships.",
+      "eli5": "It is like skipping the birthday cake because you are afraid to be seen eating. Missing chances at school or work is the cost of dodging people."
+    },
+    {
+      "q": "What is a safety behavior in social anxiety disorder, meaning something a person does to hide anxiety that keeps the fear going?",
+      "o": [
+        "Practicing slow breathing and arriving early to settle in",
+        "Rehearsing every sentence, avoiding eye contact, hiding the face, or staring at a phone to avoid talking",
+        "Asking a trusted friend for feedback after practicing a speech",
+        "Keeping a regular sleep schedule and limiting caffeine"
+      ],
+      "a": 2,
+      "tip": "Safety behaviors such as over-rehearsing, hiding, and avoiding eye contact prevent learning that the situation is safe and maintain social anxiety.",
+      "eli5": "It is like always using training wheels because you fear falling. You never learn you can balance without them."
+    },
+    {
+      "q": "For social anxiety disorder, which step-by-step exposure plan best follows mainstream guidance for slowly facing fears with support?",
+      "o": [
+        "Avoid all social events completely until all fear disappears on its own",
+        "Start with the hardest task, like giving a long public speech on day one",
+        "Only think about social situations but never practice them in real life",
+        "Start small, like greeting a neighbor, then asking a clerk a question, then joining a small group activity"
+      ],
+      "a": 4,
+      "tip": "Exposure therapy for social anxiety uses a gradual hierarchy from easier to harder social situations, often alongside cognitive behavioral therapy.",
+      "eli5": "It is like learning to swim in the shallow end before the deep end. Small hellos build courage for bigger groups."
+    },
+    {
+      "q": "To fit the usual definition of a specific phobia, a strong unrealistic fear of one object or situation, about how long must the fear and avoidance usually last?",
+      "o": [
+        "Only a few minutes while the scary thing is present",
+        "A few days right after a scare, then it fades away",
+        "6 months or more of persistent fear and avoidance",
+        "Only for a short phase in early childhood"
+      ],
+      "a": 3,
+      "tip": "A specific phobia usually requires persistent fear or avoidance lasting 6 months or more.",
+      "eli5": "Like deciding you truly hate a food, one bad bite is not enough — it has to last a long season like winter."
+    },
+    {
+      "q": "How might a specific phobia often look in a young child who suddenly sees a feared dog up close?",
+      "o": [
+        "Calmly explaining the real risk from dogs and walking past",
+        "Feeling a little nervous but quickly petting the dog",
+        "Asking curious questions about how dogs are trained",
+        "Crying, clinging to a parent, freezing, or having a tantrum and refusing to go near"
+      ],
+      "a": 4,
+      "tip": "In young children, specific phobia often shows as crying, clinging, freezing, or tantrums when facing the feared object.",
+      "eli5": "Like a toddler scared of the vacuum who screams and hugs mom's leg instead of using words to explain it."
+    },
+    {
+      "q": "A teenager turns pale, feels dizzy, and may faint when seeing blood or getting a shot. What does this best show about specific phobias?",
+      "o": [
+        "The blood-injection-injury type can cause fainting from a drop in heart rate and blood pressure",
+        "Every specific phobia causes fainting whenever the person feels afraid",
+        "Fainting around blood means the person has low iron, not a phobia",
+        "Fainting around blood means the fear is normal caution, not a phobia"
+      ],
+      "a": 1,
+      "tip": "Blood-injection-injury phobia can uniquely trigger fainting from lowered heart rate and blood pressure.",
+      "eli5": "Most fears speed the body up like pressing the gas, but blood fears can hit the brakes so hard the lights dim."
+    },
+    {
+      "q": "Which story best shows a common way a specific phobia can develop?",
+      "o": [
+        "Worrying a little about many different everyday topics for years",
+        "Being bitten and badly frightened by a dog as a child, then having lasting intense fear of dogs",
+        "Feeling shy before meeting new people but warming up quickly",
+        "Having sudden panic attacks with pounding heart that come with no trigger"
+      ],
+      "a": 2,
+      "tip": "Specific phobias often develop after a frightening personal experience or seeing others show intense fear.",
+      "eli5": "Like burning your hand on a hot pan once and then being scared to go near the stove for a long time."
+    },
+    {
+      "q": "Which two actions show avoidance that can keep a specific phobia going over time? (Choose 2)",
+      "o": [
+        "Learning facts about airplanes to understand how flying works",
+        "Always driving very long distances and turning down flights to avoid flying",
+        "Having someone else always check rooms for spiders and avoiding basements or sheds",
+        "Looking at a picture of an elevator, then riding one floor with support to practice"
+      ],
+      "a": [
+        2,
+        3
+      ],
+      "tip": "Repeated avoidance prevents learning the fear is unrealistic and keeps a specific phobia going.",
+      "eli5": "Like never touching water because you fear swimming — you never learn you can float with help, so the fear sticks."
+    },
+    {
+      "q": "A counselor builds a step-by-step ladder for an adult with a strong unrealistic fear of elevators. Which ladder best follows mainstream guidance for gradual exposure with support?",
+      "o": [
+        "Avoid all elevators completely and only use stairs for life",
+        "Only talk about elevators in the office and never go near one",
+        "Look at elevator pictures, stand near elevators, then ride one floor with support before riding more floors",
+        "Start with a long solo ride to the top floor to get it over with at once"
+      ],
+      "a": 3,
+      "tip": "Specific phobias are often treated with gradual exposure that moves from easier to harder steps with support.",
+      "eli5": "Like learning to swim by first dipping toes, then standing in the shallow end, then paddling with a coach nearby."
+    },
+    {
+      "q": "Which group of situations is most often feared and avoided in agoraphobia, where escape might feel difficult?",
+      "o": [
+        "Only spiders, dogs, storms, and other single animal or nature triggers",
+        "Only giving speeches and eating while others watch and judge",
+        "Public buses and trains, crowded stores or lines, open parking lots, and being outside home alone",
+        "Only high places like ladders, bridges, and rooftops"
+      ],
+      "a": 3,
+      "tip": "Agoraphobia involves fear and avoidance of several public or open situations where escape or help might be hard to get.",
+      "eli5": "Think of it like avoiding big busy markets because you worry you could not get out fast. It is about many tricky places, not just one animal or one speech."
+    },
+    {
+      "q": "Luis will go to the store only if his wife comes with him, and he parks close and keeps his keys ready to leave fast. What does this best show?",
+      "o": [
+        "Normal careful planning that has nothing to do with anxiety",
+        "Using a trusted companion and escape planning as safety behaviors for fear of being trapped",
+        "Fear of being judged or embarrassed while talking to strangers",
+        "A specific phobia of cars and parking lots only"
+      ],
+      "a": 2,
+      "tip": "People with agoraphobia often rely on a companion and plan quick escape routes to feel safe.",
+      "eli5": "It is like bringing a buddy and sitting near the door at a scary movie. The buddy and the door plan make it feel safer."
+    },
+    {
+      "q": "Which statement best describes how panic attacks and agoraphobia are often linked?",
+      "o": [
+        "Agoraphobia always causes a fear of spiders that later turns into panic",
+        "Panic attacks only happen after years of staying home for any reason",
+        "Agoraphobia and panic never happen together in the same person",
+        "Agoraphobia often develops after panic attacks because the person fears having symptoms where escape or help is hard"
+      ],
+      "a": 4,
+      "tip": "Agoraphobia often starts after unexpected panic-like symptoms, leading to avoidance of places where another attack would feel trapped.",
+      "eli5": "Like touching a hot pan once, then avoiding the whole kitchen. One scary rush of panic makes many places feel risky."
+    },
+    {
+      "q": "Which example best shows how agoraphobia avoidance can interfere with daily life?",
+      "o": [
+        "Missing doctor visits, turning down a job, and skipping family events because travel or crowds feel impossible",
+        "Feeling a little nervous before a test but still going and doing well",
+        "Worrying about bills most days but still paying them and going to work",
+        "Being shy at one party but chatting happily at the next party"
+      ],
+      "a": 1,
+      "tip": "Agoraphobia interferes with daily life when avoidance stops work, health care, shopping, or family activities.",
+      "eli5": "It is like skipping school trips, games, and checkups because the bus ride feels too scary. Life gets smaller."
+    },
+    {
+      "q": "Sara feels rising fear about taking the bus, so she cancels the trip. What usually happens right after she avoids it?",
+      "o": [
+        "Her worry about bills and work suddenly disappears for good",
+        "Her anxiety drops quickly, which feels like relief and makes her more likely to avoid next time",
+        "She instantly develops a fear of a completely different object like dogs",
+        "Her heart rate stays dangerously high for weeks until she sees a doctor"
+      ],
+      "a": 2,
+      "tip": "Avoidance gives fast short-term relief, which rewards and strengthens future avoidance.",
+      "eli5": "It is like skipping a hard homework problem to feel better now. The quick relief teaches you to skip again."
+    },
+    {
+      "q": "Which two behaviors are common safety or avoidance behaviors in agoraphobia? (Choose 2)",
+      "o": [
+        "Always sitting near an exit in theaters, classrooms, or buses",
+        "Only going out with a trusted person and never going out alone",
+        "Rehearsing a speech over and over to avoid sounding foolish",
+        "Washing hands many times to prevent germs and illness"
+      ],
+      "a": [
+        1,
+        2
+      ],
+      "tip": "Agoraphobia safety behaviors focus on easy escape and having help nearby, such as exit seats and a companion.",
+      "eli5": "Think of always picking the seat by the door and only going with mom. Both tricks are about a fast way out and help close by."
+    },
+    {
+      "q": "When anxiety suddenly rises, which change in breathing is most typical?",
+      "o": [
+        "Breathing becomes very slow and deep with long pauses",
+        "Breathing becomes fast and shallow, feeling short of breath",
+        "Breathing stops for a minute and then returns to normal",
+        "Breathing becomes loud wheezing that only inhalers can fix"
+      ],
+      "a": 2,
+      "tip": "Anxiety activates fight-or-flight, which often causes rapid, shallow breathing or a feeling of shortness of breath.",
+      "eli5": "It is like panting after running to catch the bus, even though you are just sitting still."
+    },
+    {
+      "q": "Which shaking symptom is commonly linked to anxiety and nervous tension?",
+      "o": [
+        "Slow, smooth, and extra-steady hand movements",
+        "Stiff frozen muscles that cannot move at all",
+        "Strong, rhythmic shaking that only happens during sleep",
+        "Trembling hands, shaky legs, or a shaky voice"
+      ],
+      "a": 4,
+      "tip": "Trembling or shakiness is a common physical sign of anxiety from extra adrenaline and muscle tension.",
+      "eli5": "It is like shivering on a cold morning, but it comes from worry instead of cold air."
+    },
+    {
+      "q": "Which sweating and temperature change is most typical with anxiety?",
+      "o": [
+        "Sweating, clammy hands, or sudden hot flashes or chills",
+        "No sweating at all with skin that stays very dry and pale for weeks",
+        "High fever over 103 degrees that lasts for days",
+        "Only sweating on one foot and nowhere else"
+      ],
+      "a": 1,
+      "tip": "Anxiety often causes sweating, clammy skin, or sudden feelings of heat or chills.",
+      "eli5": "It is like getting sweaty palms before giving a class presentation."
+    },
+    {
+      "q": "Which dizzy or unsteady feeling is commonly reported during high anxiety?",
+      "o": [
+        "Clear, steady balance with sharper vision than usual",
+        "Total loss of hearing that never comes back",
+        "Feeling dizzy, lightheaded, or unsteady as if you might faint",
+        "Spinning that always means an ear infection"
+      ],
+      "a": 3,
+      "tip": "Dizziness, lightheadedness, or feeling faint or unsteady are common physical effects of anxiety.",
+      "eli5": "It is like standing up too fast from a chair and the room wobbles for a moment."
+    },
+    {
+      "q": "Besides worry itself, which mood change often comes with ongoing anxiety?",
+      "o": [
+        "Feeling calm and patient even when interrupted",
+        "Feeling irritable, on edge, and easily annoyed by small things",
+        "Feeling sleepy and relaxed all day long",
+        "Losing all emotions and feeling nothing at all"
+      ],
+      "a": 2,
+      "tip": "Persistent anxiety often includes irritability and feeling on edge or easily annoyed.",
+      "eli5": "It is like a pot simmering too close to boiling, so even a tiny stir makes it bubble over."
+    },
+    {
+      "q": "Which mouth and throat sensation is a common physical effect of anxiety?",
+      "o": [
+        "Strong sweet taste that makes all food taste like candy",
+        "Numb tongue that cannot taste anything for months",
+        "Toothache that only dentists can explain",
+        "Dry mouth, trouble swallowing, or a lump-in-the-throat feeling"
+      ],
+      "a": 4,
+      "tip": "Anxiety commonly causes dry mouth and a tight or lump-like feeling in the throat or trouble swallowing.",
+      "eli5": "It is like your mouth going dry before saying your name in a new class."
+    },
+    {
+      "q": "After a frightening event, such as a serious car crash or assault, which reaction shows how trauma can raise the risk of an anxiety disorder?",
+      "o": [
+        "Feeling shaken for a day and then returning to a normal routine with no lasting worry",
+        "Having lasting intense fear, nightmares, and avoidance of driving for months that disrupts work and daily life",
+        "Feeling proud of surviving and becoming relaxed and carefree in all risky situations",
+        "Forgetting the event completely the next day and never thinking about safety again"
+      ],
+      "a": 2,
+      "tip": "Trauma that causes lasting fear and interference with daily life can contribute to developing an anxiety disorder.",
+      "eli5": "Like a loud bang that keeps echoing in a hallway, a scary event can keep echoing in the mind for months."
+    },
+    {
+      "q": "Doctors say chemical imbalances in the brain can help cause anxiety disorders. What does that mean?",
+      "o": [
+        "Brain messenger chemicals that help control mood and danger signals are out of their usual balance",
+        "The bones of the skull become too thin and let in cold air that causes worry",
+        "The stomach makes too much acid that washes away feelings of calm",
+        "Muscles in the arms and legs become too strong and overpower the brain"
+      ],
+      "a": 1,
+      "tip": "Anxiety can involve brain messenger chemicals that regulate mood and threat responses being out of balance.",
+      "eli5": "Like soup with too much salt and too little water, the brain's message mix is off and tastes wrong."
+    },
+    {
+      "q": "Which work situation best shows a high-pressure environment that can raise the risk of an anxiety disorder over time?",
+      "o": [
+        "A steady job with clear hours, supportive coworkers, and regular time off to rest",
+        "An occasional busy day followed by rest and no lasting worry about work",
+        "A part-time project with flexible deadlines and control over the schedule",
+        "Months of 12-hour shifts, constant deadlines, no breaks, and ongoing fear of losing the job"
+      ],
+      "a": 4,
+      "tip": "Ongoing high-pressure environments with constant demands and little control can increase anxiety risk.",
+      "eli5": "Like carrying a heavy backpack every day without ever putting it down, constant pressure wears you out."
+    },
+    {
+      "q": "How is months of ongoing stress different from a single short stressful moment in raising the risk of anxiety?",
+      "o": [
+        "Both have exactly the same effect on long-term anxiety risk",
+        "A short stressful moment raises risk much more than months of stress",
+        "Months of ongoing stress keeps the body's alarm system switched on, while a brief stress that resolves lets the system calm down",
+        "Ongoing stress protects against anxiety and only brief stress causes harm"
+      ],
+      "a": 3,
+      "tip": "Ongoing, unresolved stress raises anxiety risk more than a brief stress that resolves.",
+      "eli5": "Like leaving a school fire alarm ringing for weeks versus a short drill, nonstop stress never lets your ears rest."
+    },
+    {
+      "q": "Why can living with a long-term health problem, such as heart disease or asthma, raise the risk of an anxiety disorder?",
+      "o": [
+        "Long-term illness removes all stress because doctors handle everything",
+        "Constant worry about symptoms, medical visits, and limits on daily life keeps stress and fear high over time",
+        "Long-term illness makes the body's alarm system permanently turn off",
+        "People with health problems never think about their health after diagnosis"
+      ],
+      "a": 2,
+      "tip": "Chronic health problems can raise anxiety risk through constant worry and ongoing strain on daily life.",
+      "eli5": "Like shopping with a cart that always has a wobbly wheel, daily health worries keep bumping you."
+    },
+    {
+      "q": "A friend says anxiety disorders happen because a person is weak or lazy. What is the best response based on mainstream guidance?",
+      "o": [
+        "That is unfair and incorrect because anxiety disorders come from factors like genetics, trauma, ongoing stress, and brain chemistry, not character weakness",
+        "That is correct because willpower alone controls all anxiety",
+        "That is correct because only lazy people feel fear or worry",
+        "That is correct because anxiety is a choice people make to avoid work"
+      ],
+      "a": 1,
+      "tip": "Anxiety disorders stem from biological and life factors, not from weakness or laziness.",
+      "eli5": "Like blaming a rainy day on a kid's mood, calling anxiety laziness misses the real clouds causing it."
+    },
+    {
+      "q": "Lena, age 8, cries and clings at school drop-off, worries something bad will happen to her parents while apart, and refuses sleepovers. Which type of anxiety does this best show?",
+      "o": [
+        "Fear of social judgment in front of peers",
+        "Panic attacks that come without warning",
+        "Separation anxiety, meaning strong fear of being away from a caregiver",
+        "A specific phobia of school buildings"
+      ],
+      "a": 3,
+      "tip": "Separation anxiety centers on fear that harm will come when apart from a parent or caregiver.",
+      "eli5": "Like a phone charger that panics when unplugged, the child feels safe only when close to the parent."
+    },
+    {
+      "q": "Why is strong crying when a parent leaves usually normal at age 2 but more concerning at age 11?",
+      "o": [
+        "Toddlers cannot feel fear, but older children can",
+        "Young children naturally protest separation, but it should fade with age; lasting intense fear that blocks school or sleep suggests a disorder",
+        "Separation fear always disappears by age 3 with no exceptions",
+        "Older children never feel separation fears"
+      ],
+      "a": 1,
+      "tip": "Separation protest is developmentally expected in toddlers but concerning when it persists and interferes with daily life in older children.",
+      "eli5": "Like training wheels, clinginess is normal at first but a worry if still needed years later to get through the day."
+    },
+    {
+      "q": "A 14-year-old feels nauseous and gets headaches every school morning, medical tests are normal, and the symptoms fade on weekends and holidays. What does this pattern best show?",
+      "o": [
+        "Stomachaches and headaches prove there is no anxiety",
+        "A contagious stomach illness caught only at school",
+        "Needing more vitamins to cure worry",
+        "Anxiety in teens can cause real physical symptoms such as stomach upset and headaches"
+      ],
+      "a": 4,
+      "tip": "Anxiety in children and teens often appears as physical complaints with no medical cause, especially around feared situations.",
+      "eli5": "Like a fire alarm making noise through the whole house, worry in the mind can ring as a tummy ache in the body."
+    },
+    {
+      "q": "Two 16-year-olds feel nervous before a school dance. One goes anyway and has fun, the other skips all dances and clubs for months fearing embarrassment. What is the key difference?",
+      "o": [
+        "The first teen has no feelings at all",
+        "Only the second teen likes dancing",
+        "The second pattern shows persistent fear, avoidance, and interference with daily life, which fits an anxiety disorder",
+        "Nervousness always means social anxiety disorder"
+      ],
+      "a": 2,
+      "tip": "Normal nerves pass and do not stop activities, while social anxiety involves persistent fear and avoidance that interferes with life.",
+      "eli5": "Like rain that passes versus a flood that closes roads for weeks, one nervous feeling fades while the other blocks daily life."
+    },
+    {
+      "q": "A 7-year-old asks, 'Are you sure I will be okay?' many times a day, needs constant hugs for reassurance, and has trouble sleeping alone. What does this best show?",
+      "o": [
+        "Typical confident behavior with no worry",
+        "Reassurance-seeking and sleep trouble, which are common ways anxiety looks in young children",
+        "A sign the child needs stricter punishment",
+        "Proof the child is being lazy at bedtime"
+      ],
+      "a": 3,
+      "tip": "Child anxiety often looks like repeated reassurance-seeking, clinginess, and trouble sleeping or concentrating.",
+      "eli5": "Like asking to check the locked door over and over, the worried mind keeps asking for one more promise to feel safe."
+    },
+    {
+      "q": "What is true about standard, evidence-based help for anxiety in children and teens?",
+      "o": [
+        "Children are expected to just outgrow severe anxiety without any help",
+        "Age-adapted cognitive behavioral therapy that teaches coping skills and gradual facing, often with parent coaching, is usually tried first",
+        "Exposure to fears should always be sudden and scary without support",
+        "Only adult medicines at adult doses should be used alone"
+      ],
+      "a": 1,
+      "tip": "First-line care for youth anxiety is age-adapted cognitive behavioral therapy with coping skills, gradual exposure, and parent involvement.",
+      "eli5": "Like learning to swim with small steps and a coach plus a parent cheering, kids practice brave steps little by little."
+    },
+    {
+      "q": "A 74-year-old thinks constant fear and worry that stops her from cooking and visiting friends is just normal getting older. What is the best understanding?",
+      "o": [
+        "It is normal aging, so nothing can or should be done about it",
+        "Only younger adults can develop an anxiety disorder",
+        "Persistent excessive worry that interferes with daily life is not normal aging and should be discussed with a doctor",
+        "If she keeps busy, the disorder will go away on its own without help"
+      ],
+      "a": 3,
+      "tip": "Persistent excessive worry that interferes with daily life is an anxiety disorder, not normal aging.",
+      "eli5": "Like gray hair is normal with age but a broken stove is not, worry that stops daily life is not just age and needs a check-up."
+    },
+    {
+      "q": "A 70-year-old has had hard-to-control worry for many months. Which two patterns fit generalized anxiety disorder in older adults? (Choose 2)",
+      "o": [
+        "Worrying on most days for at least six months about many everyday topics like health, bills, and family safety",
+        "Feeling calm most days with only brief nervousness right before a doctor visit",
+        "Finding it hard to control the worry even when trying to rest or be reassured",
+        "Having a strong fear only of one object, like spiders, with no worry about other daily topics"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Generalized anxiety disorder involves hard-to-control worry about many everyday issues on most days for at least six months.",
+      "eli5": "It is like leaving many pots boiling in the kitchen at once and not being able to turn the heat down."
+    },
+    {
+      "q": "A 71-year-old feels nervous most days, is restless, has tense muscles, sleeps poorly, and notices a fast heartbeat. Which set of signs does this best match?",
+      "o": [
+        "Only normal energy and good sleep in older age",
+        "Only severe memory loss with no worry or tension",
+        "Only a brief cold with cough and fever",
+        "Persistent worrying with restlessness and physical signs such as muscle tension, poor sleep, and increased heart rate"
+      ],
+      "a": 4,
+      "tip": "Anxiety symptoms include persistent worrying, restlessness, and physical signs such as increased heart rate, tension, and poor sleep.",
+      "eli5": "Like a school fire alarm stuck on, the mind worries and the body stays tight, restless, and wide awake."
+    },
+    {
+      "q": "A 73-year-old develops new restlessness, racing heart, and worry. Why do mainstream guides say a doctor should first review health problems, medicines, and caffeine use?",
+      "o": [
+        "Because older adults never develop real anxiety disorders",
+        "Because heart, thyroid, and lung problems, some medicines, and caffeine can cause or worsen similar symptoms",
+        "Because a review will instantly cure worry without any other care",
+        "Because anxiety symptoms are always caused by laziness or weak character"
+      ],
+      "a": 2,
+      "tip": "Medical conditions, medicines, and stimulants like caffeine can mimic or worsen anxiety and must be checked.",
+      "eli5": "Like checking if soup is salty because of salt or stock, the doctor checks if the racing heart is from health, pills, or coffee."
+    },
+    {
+      "q": "A family wants to help a 75-year-old grandfather whose worry keeps him home alone and away from friends. Which response best follows mainstream guidance?",
+      "o": [
+        "Listen supportively, encourage regular routine and social contact, and suggest talking to a doctor or counselor",
+        "Tell him to just stop worrying and stay home until he feels better",
+        "Keep his worries secret and stop all visitors so he is not stressed",
+        "Blame him for being weak and say anxiety is his own fault"
+      ],
+      "a": 1,
+      "tip": "Support, regular routine, social contact, and professional help are important parts of managing anxiety.",
+      "eli5": "Like helping grandpa back to the family table after he stays in his room, gentle company and a doctor visit help more than scolding."
+    },
+    {
+      "q": "A 78-year-old worries a lot and has trouble concentrating and remembering details. Family wonders if it is dementia, which causes severe memory loss. What is important to know?",
+      "o": [
+        "Trouble concentrating from anxiety and memory loss from dementia are exactly the same and need no check",
+        "Older adults with worry should never see a doctor because it is always dementia",
+        "Anxiety can cause poor concentration, restlessness, and sleep problems that can look like memory trouble, so a professional evaluation is needed to tell them apart",
+        "If an older person worries, dementia is impossible and no evaluation is needed"
+      ],
+      "a": 3,
+      "tip": "Anxiety can impair concentration and daily functioning and needs professional evaluation to separate it from dementia.",
+      "eli5": "Like flour dust looking like sugar, worry can cloud thinking like memory loss, so an expert needs to taste-test which is which."
+    },
+    {
+      "q": "A doctor seeing someone for constant worry often checks the thyroid and heart, and asks about medicines, caffeine, and alcohol. Why is this step part of diagnosing anxiety?",
+      "o": [
+        "To show that anxiety is only a physical problem and counseling is not needed",
+        "Because medical conditions, some medicines, caffeine, and alcohol can cause or worsen anxiety-like symptoms and must be ruled out",
+        "To test if the person remembers all their prescriptions perfectly",
+        "To delay treatment until every possible blood test has been done"
+      ],
+      "a": 2,
+      "tip": "Mainstream guidance says clinicians rule out medical causes and substances that can mimic anxiety before diagnosing an anxiety disorder.",
+      "eli5": "Like checking if a smoke alarm beeps because of low batteries before calling the fire department."
+    },
+    {
+      "q": "What is a main difference between a psychiatrist and a psychologist when getting professional help for anxiety?",
+      "o": [
+        "A psychologist performs surgery for anxiety while a psychiatrist does not",
+        "A psychiatrist only gives lifestyle advice while a psychologist only gives medicines",
+        "Both do exactly the same job with the same training and license",
+        "A psychiatrist is a medical doctor who can prescribe medicines, while a psychologist usually provides testing and talk therapy"
+      ],
+      "a": 4,
+      "tip": "Psychiatrists can prescribe medication as physicians, while psychologists most often provide assessment and psychotherapy.",
+      "eli5": "Like a pharmacist can give you medicine and a driving instructor teaches you to drive — both help you travel safely, but in different ways."
+    },
+    {
+      "q": "A counselor asks a person to bring two weeks of notes about worry days, sleep, triggers, and missed work or social plans. How does this help with diagnosis?",
+      "o": [
+        "It shows whether worry is persistent, hard to control, and interferes with daily life, which is needed for diagnosis",
+        "It proves the person has a perfect memory for dates and times",
+        "It replaces the need to talk about feelings or daily functioning",
+        "It is only used to decide how much to charge for the visit"
+      ],
+      "a": 1,
+      "tip": "Diagnosis of anxiety disorders depends on a persistent pattern of excessive worry and impairment in daily life, not a single bad day.",
+      "eli5": "Like a teacher looks at homework over two weeks, not just one day, to see how you are really doing in school."
+    },
+    {
+      "q": "After starting therapy or medicine for anxiety, why does the clinic usually schedule follow-up visits every few weeks?",
+      "o": [
+        "To stop treatment right away once the person feels a little better for one day",
+        "To tell the person to try harder without changing anything in the plan",
+        "To track symptoms and daily functioning, check for side effects, and adjust the treatment plan if needed",
+        "To repeat the same diagnosis test without discussing progress or concerns"
+      ],
+      "a": 3,
+      "tip": "Follow-up care for anxiety involves monitoring symptoms, functioning, and side effects to adjust therapy or medicine.",
+      "eli5": "Like a coach checks your running time each week and changes practice if your shoes hurt or you are not getting faster."
+    },
+    {
+      "q": "Which pattern means someone should seek prompt professional help for anxiety rather than just waiting to see if it passes?",
+      "o": [
+        "Feeling nervous for an hour before a big test but still going and doing okay",
+        "Worry that lasts for weeks, stops the person going to work or school, leads to avoiding leaving home or using alcohol to cope, or includes thoughts of self-harm",
+        "Having one restless night after drinking coffee late in the evening",
+        "Feeling shy when meeting new people but warming up after a few minutes"
+      ],
+      "a": 2,
+      "tip": "Prompt help is advised when anxiety is persistent, impairs daily functioning, leads to avoidance or substance use, or involves thoughts of self-harm.",
+      "eli5": "Like calling a plumber right away when water floods the kitchen, not just when the faucet drips once."
+    }
+  ]
+}
