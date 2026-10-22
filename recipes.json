@@ -9364,6 +9364,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "jeruk-lobak",
+      "title": "Jeruk Lobak",
+      "author": "",
+      "cat": "Pickles",
+      "tags": [
+        "Malaysian",
+        "white radish",
+        "carrot",
+        "pickled"
+      ],
+      "img": "images/jeruk-lobak-card.jpg",
+      "poster": "images/jeruk-lobak.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crunchy, tangy and slightly sweet pickled white radish with carrot and chilli.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes ~1 jar",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
