@@ -9457,6 +9457,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "oatmeal-raisin-cookies",
+      "title": "Oatmeal Raisin Cookies",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "American",
+        "oats",
+        "raisins",
+        "baked"
+      ],
+      "img": "images/oatmeal-raisin-cookies-card.jpg",
+      "poster": "images/oatmeal-raisin-cookies.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chewy soft classic oatmeal cookies packed with raisins and warm spices.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 16 cookies",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
