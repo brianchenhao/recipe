@@ -9397,6 +9397,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "ang-ku-kueh",
+      "title": "Ang Ku Kueh",
+      "author": "",
+      "cat": "Kuih",
+      "tags": [
+        "Chinese-Malaysian",
+        "glutinous rice",
+        "mung bean",
+        "steamed"
+      ],
+      "img": "images/ang-ku-kueh-card.jpg",
+      "poster": "images/ang-ku-kueh.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft chewy red glutinous rice cakes filled with sweet mung bean paste.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 12-15 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
