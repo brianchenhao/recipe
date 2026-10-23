@@ -1,0 +1,1837 @@
+{
+  "id": "cortisol-stress-and-balance",
+  "title": "Cortisol Stress And Balance",
+  "topic": "Cortisol",
+  "category": "Health & Medicine",
+  "summary": "This quiz covers what cortisol is and how the body controls it through daily rhythms and stress responses. It explores metabolism, immunity, sleep, testing, related disorders, and everyday habits that affect balance.",
+  "createdAt": "2026-10-23",
+  "questions": [
+    {
+      "q": "Cortisol is the body's main stress hormone. Which glands, located just above the kidneys, make it?",
+      "o": [
+        "Thyroid gland",
+        "Pancreas",
+        "Adrenal glands",
+        "Pituitary gland"
+      ],
+      "a": 3,
+      "tip": "Cortisol is made by the outer layer of the adrenal glands.",
+      "eli5": "Think of the adrenal glands like two tiny alarm hats sitting on the kidneys that call for extra energy when school or work gets stressful."
+    },
+    {
+      "q": "Cortisol is called a glucocorticoid hormone. In which specific part of the body is this hormone made?",
+      "o": [
+        "In the adrenal medulla, the inner part of the adrenal gland",
+        "In the zona fasciculata of the adrenal cortex, the outer layer of the adrenal gland",
+        "In the thyroid gland in the neck",
+        "In the insulin-making cells of the pancreas"
+      ],
+      "a": 2,
+      "tip": "Cortisol is a glucocorticoid made in the zona fasciculata of the adrenal cortex.",
+      "eli5": "Think of the adrenal cortex like a bakery with different counters; cortisol is baked at the middle counter called the fasciculata."
+    },
+    {
+      "q": "The body builds cortisol using enzymes of the cytochrome P450 family. Which starting material is used to build it?",
+      "o": [
+        "Glucose from carbohydrates",
+        "Iron from red blood cells",
+        "Calcium from bones",
+        "Cholesterol from fats"
+      ],
+      "a": 4,
+      "tip": "Cortisol is synthesized from cholesterol by enzymes of the cytochrome P450 family.",
+      "eli5": "Like cooking oil is the base for many recipes, cholesterol is the base ingredient the body cooks into cortisol."
+    },
+    {
+      "q": "The HPA axis controls cortisol release (HPA means hypothalamus-pituitary-adrenal, CRH is a hypothalamus signal, ACTH is a pituitary signal). Which sequence triggers cortisol release?",
+      "o": [
+        "Hypothalamus releases CRH, pituitary releases ACTH, then adrenal cortex releases cortisol",
+        "Adrenal cortex releases cortisol, pituitary releases ACTH, then hypothalamus releases CRH",
+        "Pituitary releases ACTH, hypothalamus releases CRH, then adrenal cortex releases cortisol",
+        "Hypothalamus releases ACTH, pituitary releases CRH, then adrenal cortex releases cortisol"
+      ],
+      "a": 1,
+      "tip": "In the HPA axis the hypothalamus releases CRH, the pituitary releases ACTH, and the adrenal cortex then releases cortisol.",
+      "eli5": "It is like a school chain of command: the principal tells the teacher, the teacher tells the class, and the class does the job."
+    },
+    {
+      "q": "Once cortisol levels have risen, how does cortisol affect its own control signals, CRH from the hypothalamus and ACTH from the pituitary?",
+      "o": [
+        "It stimulates more CRH and ACTH to make even more cortisol",
+        "It has no effect on CRH and ACTH",
+        "It inhibits CRH and ACTH to turn down further cortisol release in a negative feedback loop",
+        "It makes the adrenal gland switch to making adrenaline instead"
+      ],
+      "a": 3,
+      "tip": "Cortisol inhibits production of CRH and ACTH to form a negative feedback loop.",
+      "eli5": "Like a thermostat turning off the heater when the room is warm enough, cortisol tells the brain to stop asking for more."
+    },
+    {
+      "q": "When you first face a stressor, what is cortisol's short-term job to help with fight-or-flight?",
+      "o": [
+        "Pause energy release and store more glycogen, stored sugar, and fat",
+        "Mobilize energy stores by breaking down glycogen and fat for quick use",
+        "Lower blood sugar and slow the heart to conserve energy",
+        "Boost digestion and reproduction to use extra energy"
+      ],
+      "a": 2,
+      "tip": "Cortisol mobilizes energy stores by stimulating breakdown of glycogen and fat for fight-or-flight.",
+      "eli5": "It is like opening the pantry and fridge at once to quickly pack lunch boxes for a sudden trip."
+    },
+    {
+      "q": "Day to day, which broad set of functions does cortisol help regulate?",
+      "o": [
+        "Blood clotting, bone healing, and scar formation only",
+        "Vision, hearing, and sense of smell only",
+        "Thirst, hunger, and body temperature only",
+        "Blood pressure, metabolism of fats, proteins and carbohydrates, immune activity, and energy availability"
+      ],
+      "a": 4,
+      "tip": "Cortisol helps regulate blood pressure, metabolism, immune activity, and energy availability.",
+      "eli5": "Think of cortisol like a shopping mall manager keeping many different stores like energy, blood pressure, and immunity running smoothly."
+    },
+    {
+      "q": "The adrenal cortex (the outer part of the adrenal gland) has three layers. Which middle layer makes cortisol?",
+      "o": [
+        "Zona glomerulosa",
+        "Zona reticularis",
+        "Zona fasciculata",
+        "Adrenal medulla"
+      ],
+      "a": 3,
+      "tip": "Cortisol is made in the zona fasciculata, the middle layer of the adrenal cortex.",
+      "eli5": "Think of the adrenal cortex like a three-layer cake, and the middle layer is the bakery that makes cortisol."
+    },
+    {
+      "q": "Adrenal cells build cortisol from a fatty substance in the blood using cytochrome P450 enzymes. What is that starting substance?",
+      "o": [
+        "Cholesterol",
+        "Glucose",
+        "Insulin",
+        "Potassium"
+      ],
+      "a": 1,
+      "tip": "Cortisol is synthesized from cholesterol by enzymes of the cytochrome P450 family.",
+      "eli5": "Like bread is baked from flour, cortisol is baked from cholesterol dough."
+    },
+    {
+      "q": "In the HPA axis (the control chain between brain and adrenals), the hypothalamus, pituitary gland, and adrenal cortex signal each other. What is the correct order to release cortisol?",
+      "o": [
+        "Adrenal cortex releases cortisol, then pituitary releases ACTH, then hypothalamus releases CRH",
+        "Pituitary releases ACTH, then hypothalamus releases CRH, then adrenal cortex releases cortisol",
+        "Hypothalamus releases ACTH, then pituitary releases CRH, then adrenal cortex releases cortisol",
+        "Hypothalamus releases CRH, then pituitary releases ACTH, then adrenal cortex releases cortisol"
+      ],
+      "a": 4,
+      "tip": "The hypothalamus releases CRH, the pituitary releases ACTH, and then the adrenal cortex releases cortisol.",
+      "eli5": "It is like a relay race where the hypothalamus passes the baton to the pituitary, which passes it to the adrenals."
+    },
+    {
+      "q": "When blood cortisol gets high, how does cortisol affect its own starting signals, CRH from the hypothalamus and ACTH from the pituitary?",
+      "o": [
+        "It increases both to make even more cortisol",
+        "It decreases both to slow down cortisol production",
+        "It increases CRH but decreases ACTH",
+        "It has no effect on either signal"
+      ],
+      "a": 2,
+      "tip": "High cortisol inhibits CRH and ACTH production to form a negative feedback loop.",
+      "eli5": "Like a thermostat turning off the heat when the room is warm, cortisol tells the brain to stop sending start signals."
+    },
+    {
+      "q": "Addison disease is when the adrenal glands make too little cortisol and aldosterone. What is the most common cause of Addison disease?",
+      "o": [
+        "Long-term steroid medicine that raises cortisol",
+        "Autoimmune attack that damages the adrenal glands",
+        "Pituitary tumor that makes extra ACTH",
+        "Adrenal tumor that makes extra cortisol"
+      ],
+      "a": 2,
+      "tip": "Addison disease is most often caused by an autoimmune attack that damages the adrenal glands.",
+      "eli5": "It is like the body's security team mistakenly attacking its own factory so it cannot make enough product."
+    },
+    {
+      "q": "Cushing syndrome is when the body has too much cortisol. Which 2 causes can lead to Cushing syndrome? (Choose 2)",
+      "o": [
+        "A pituitary tumor making extra ACTH",
+        "An autoimmune attack destroying the adrenal glands",
+        "An adrenal tumor making extra cortisol",
+        "Pituitary failure making too little ACTH"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Pituitary tumors that make extra ACTH and adrenal tumors that make extra cortisol can both cause excess cortisol in Cushing syndrome.",
+      "eli5": "It is like having either a stuck gas pedal in the control room or an extra engine in the factory — both make too much speed."
+    },
+    {
+      "q": "In the HPA axis control chain for cortisol, which structure acts first by releasing CRH (corticotropin-releasing hormone) when the brain detects stress?",
+      "o": [
+        "Hypothalamus",
+        "Pituitary gland",
+        "Adrenal cortex",
+        "Pancreas"
+      ],
+      "a": 1,
+      "tip": "The hypothalamus starts the HPA axis by releasing CRH.",
+      "eli5": "Think of the hypothalamus like a smoke alarm that shouts first to warn the rest of the house."
+    },
+    {
+      "q": "In the HPA axis, after the hypothalamus releases CRH, which hormone does the pituitary gland release to tell the adrenal cortex to make cortisol?",
+      "o": [
+        "Insulin",
+        "ACTH (adrenocorticotropic hormone)",
+        "Thyroxine",
+        "Glucagon"
+      ],
+      "a": 2,
+      "tip": "CRH from the hypothalamus causes the pituitary to release ACTH, which stimulates cortisol release.",
+      "eli5": "Like a manager passing a note down the line, the pituitary hands ACTH to the adrenals as the work order."
+    },
+    {
+      "q": "For healthy HPA axis control of cortisol across the day (circadian rhythm), when are cortisol and its control signal ACTH normally highest?",
+      "o": [
+        "Late at night during deep sleep",
+        "In the late evening before bed",
+        "Just before waking in the morning",
+        "In the middle of the afternoon"
+      ],
+      "a": 3,
+      "tip": "Cortisol follows a circadian rhythm peaking in the morning just before waking.",
+      "eli5": "It is like a coffee maker on a timer that brews strongest right before you get up."
+    },
+    {
+      "q": "In a healthy daily cortisol rhythm controlled by the HPA axis, how does the morning level just after awakening usually compare to the evening level?",
+      "o": [
+        "About the same as in the evening",
+        "Slightly lower than in the evening",
+        "Ten times lower than in the evening",
+        "Two to three times higher than in the evening"
+      ],
+      "a": 4,
+      "tip": "A healthy rhythm is typically two to three times higher upon awakening than in the evening.",
+      "eli5": "Like morning traffic being much busier than late-night traffic, morning cortisol is much higher than evening cortisol."
+    },
+    {
+      "q": "How does the normal daily HPA rhythm change in Cushing syndrome, when cortisol stays too high?",
+      "o": [
+        "The morning peak shifts to the early afternoon",
+        "Daily variation is lost and late-night cortisol stays inappropriately high",
+        "Cortisol falls to zero overnight",
+        "Morning cortisol disappears completely"
+      ],
+      "a": 2,
+      "tip": "In Cushing syndrome diurnal variation is lost and late-night cortisol is inappropriately elevated.",
+      "eli5": "Like a night-light that never turns off, cortisol stays on high even when it should go dim for sleep."
+    },
+    {
+      "q": "In Addison disease the adrenal glands fail and make too little cortisol. With less cortisol to complete the HPA feedback loop, what happens to pituitary ACTH?",
+      "o": [
+        "ACTH rises to high levels as the pituitary tries harder to stimulate the adrenals",
+        "ACTH falls to very low levels because the pituitary shuts down",
+        "ACTH is converted directly into cortisol in the blood",
+        "ACTH stays exactly normal because feedback does not affect it"
+      ],
+      "a": 1,
+      "tip": "With insufficient cortisol in Addison disease, loss of negative feedback leads to elevated ACTH.",
+      "eli5": "Like a parent shouting louder when a child does not answer, the pituitary makes more ACTH when the adrenals do not respond."
+    },
+    {
+      "q": "In a healthy daily rhythm (circadian rhythm means the natural 24-hour cycle), when is cortisol normally at its highest?",
+      "o": [
+        "In the middle of the night during deep sleep",
+        "Just before you wake up in the morning",
+        "Late in the evening before bed",
+        "Right after lunch in the early afternoon"
+      ],
+      "a": 2,
+      "tip": "Cortisol peaks in the morning just before waking.",
+      "eli5": "Like a parent turning on the kitchen lights before calling you for school, cortisol rises early to help you wake up alert."
+    },
+    {
+      "q": "What normally happens to cortisol levels from morning to night in a healthy person?",
+      "o": [
+        "They stay high and flat all day and night",
+        "They rise slowly all day to peak at bedtime",
+        "They spike up and down every hour with no pattern",
+        "They gradually fall to their lowest point overnight during sleep"
+      ],
+      "a": 4,
+      "tip": "Cortisol gradually declines through the day to its lowest point overnight during sleep.",
+      "eli5": "It is like the sun rising high in the morning and slowly setting until it is dark at night."
+    },
+    {
+      "q": "How does a healthy morning cortisol level just after waking usually compare to the evening level?",
+      "o": [
+        "About the same as in the evening",
+        "About two to three times higher than in the evening",
+        "Slightly lower than in the evening",
+        "More than ten times lower than in the evening"
+      ],
+      "a": 2,
+      "tip": "A healthy rhythm is typically two to three times higher upon awakening than in the evening.",
+      "eli5": "Think of morning coffee as two to three strong cups and evening tea as just one weak cup."
+    },
+    {
+      "q": "In Cushing syndrome (a condition where the body has too much cortisol), what happens to the normal daily cortisol rhythm?",
+      "o": [
+        "The morning peak shifts to the afternoon but nighttime stays low",
+        "Cortisol drops to zero in the morning and only rises at night",
+        "The normal rise and fall is lost and late-night cortisol stays too high",
+        "The rhythm gets even stronger with an extra-low nighttime level"
+      ],
+      "a": 3,
+      "tip": "In Cushing syndrome diurnal variation is lost and late-night cortisol is inappropriately elevated.",
+      "eli5": "Like a school bell that should be quiet at night but keeps ringing, cortisol fails to turn off when it should."
+    },
+    {
+      "q": "People who regularly average only short sleep, compared with people who get full sleep, tend to show what change in cortisol?",
+      "o": [
+        "Substantially higher cortisol that can disrupt insulin and blood sugar control",
+        "Much lower cortisol that improves blood sugar control",
+        "No change in cortisol levels at all",
+        "Higher cortisol only for one hour that helps memory"
+      ],
+      "a": 1,
+      "tip": "People averaging short sleep show substantially higher cortisol than those getting full sleep, disrupting insulin and blood sugar control.",
+      "eli5": "Like leaving the stove on too long because you never turn it off to rest, short sleep keeps stress heat turned up."
+    },
+    {
+      "q": "A doctor wants to see your total cortisol pattern across a whole day and night, not just one moment. Which cortisol test is most helpful for that?",
+      "o": [
+        "A single blood cortisol sample taken at noon",
+        "A single saliva sample taken right after lunch",
+        "A single evening blood cortisol sample",
+        "A 24-hour urine collection that gathers all urine for a full day and night"
+      ],
+      "a": 4,
+      "tip": "A 24-hour urine collection captures cortisol variation across the full day.",
+      "eli5": "Like saving all your shopping receipts for a whole day to see spending, collecting all urine for a day shows the full pattern."
+    },
+    {
+      "q": "During sudden stress, cortisol redirects energy to fight-or-flight. Which nonessential activities does it temporarily slow down?",
+      "o": [
+        "Muscle strength and reaction speed",
+        "Digestion and immune defense",
+        "Heart rate and breathing rate",
+        "Alertness and vision focus"
+      ],
+      "a": 2,
+      "tip": "During acute stress cortisol suppresses nonessential functions like digestion and immune activity to redirect energy.",
+      "eli5": "Like closing the kitchen and cleaning crew during a school fire drill so all power goes to the exits."
+    },
+    {
+      "q": "How does cortisol quickly supply extra fuel when you face a sudden stressor?",
+      "o": [
+        "By slowing the breakdown of stored sugar and fat to save them",
+        "By blocking sugar from entering the blood to keep blood sugar low",
+        "By building new bone and muscle tissue right away",
+        "By breaking down stored glycogen and fat to release usable energy"
+      ],
+      "a": 4,
+      "tip": "Cortisol mobilizes energy by stimulating breakdown of glycogen and fat for fight-or-flight.",
+      "eli5": "Like breaking open pantry jars and snack boxes for quick lunch money when you need energy fast."
+    },
+    {
+      "q": "What happens to immunity and mood when cortisol stays high for many weeks of chronic stress?",
+      "o": [
+        "It weakens immune defense and can contribute to anxiety and mood problems",
+        "It makes immunity permanently stronger and prevents all infections",
+        "It has no lasting effect on immunity or mood at all",
+        "It only sharpens memory and always improves sleep"
+      ],
+      "a": 1,
+      "tip": "Sustained elevated cortisol weakens the immune system and can contribute to mood disturbances and anxiety.",
+      "eli5": "Like leaving the house alarm on loud for weeks, the guards get tired and everyone feels on edge."
+    },
+    {
+      "q": "Why do people with long-term high cortisol often gain belly fat and crave high-calorie foods?",
+      "o": [
+        "Cortisol lowers blood sugar and takes away all appetite",
+        "Cortisol only burns belly fat and stops hunger signals",
+        "Cortisol surges raise blood sugar and insulin and trigger cravings for high-calorie foods",
+        "Cortisol stops digestion completely so body weight cannot change"
+      ],
+      "a": 3,
+      "tip": "Cortisol surges raise blood sugar, stimulate insulin release, and trigger cravings for high-calorie foods, promoting abdominal fat storage.",
+      "eli5": "Like getting extra hungry for cookies and chips after a sugar rush, then storing leftovers around the belly like a packed suitcase."
+    },
+    {
+      "q": "Cortisol rises with physical or emotional strain. Which 2 situations can raise cortisol levels? (Choose 2)",
+      "o": [
+        "A serious infection or physical injury",
+        "A calm night of full, restful sleep",
+        "Intense emotional stress or very strenuous exercise",
+        "A quiet period of relaxing meditation after stress has passed"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Physical or emotional stress, strenuous activity, infection, or injury can raise cortisol levels.",
+      "eli5": "Like a smoke alarm that rings for both burnt toast and a real fire, the body raises cortisol for germs, hurts, hard workouts, and big worries."
+    },
+    {
+      "q": "For healthier cortisol balance during everyday stress, which set of habits is most helpful?",
+      "o": [
+        "Skipping sleep, skipping meals, and avoiding all movement",
+        "Meditation, regular exercise, quality sleep, and balanced whole foods",
+        "Staying up late with constant caffeine and sugary drinks all day",
+        "Very long intense workouts with no rest and very little sleep"
+      ],
+      "a": 2,
+      "tip": "Meditation, regular exercise, quality sleep, and a balanced diet with whole foods are associated with healthier cortisol regulation.",
+      "eli5": "Like watering, sunshine, and rest for a plant, calm breaks, movement, sleep, and good food keep stress levels steady."
+    },
+    {
+      "q": "For quick fight-or-flight energy, cortisol helps break down stored fuels. Which 2 stored fuels does it help break down? (Choose 2)",
+      "o": [
+        "Glycogen (stored sugar) in the liver and muscles",
+        "Fat stored in fat tissue",
+        "Calcium stored in bones",
+        "Iron stored in red blood cells"
+      ],
+      "a": [
+        1,
+        2
+      ],
+      "tip": "Cortisol mobilizes energy stores by stimulating breakdown of glycogen and fat.",
+      "eli5": "Like grabbing snacks and firewood you already stored for a sudden trip, cortisol unpacks saved sugar and fat for fast fuel."
+    },
+    {
+      "q": "During stress, what does cortisol do to blood sugar to make energy available?",
+      "o": [
+        "Lowers blood sugar to very low levels",
+        "Keeps blood sugar exactly unchanged",
+        "Raises blood sugar to supply quick energy",
+        "Removes all sugar from the blood for storage"
+      ],
+      "a": 3,
+      "tip": "Cortisol raises blood sugar during stress to provide usable energy.",
+      "eli5": "Like turning up the stove to cook faster, cortisol puts more sugar-fuel into the blood for action."
+    },
+    {
+      "q": "After a cortisol surge, what often happens to insulin and appetite?",
+      "o": [
+        "Insulin release increases, blood sugar rises, and cravings for sugary high-calorie foods increase",
+        "Insulin stops working completely and hunger disappears for weeks",
+        "Blood sugar falls sharply and the body craves only water",
+        "Insulin and appetite stay flat and are turned off permanently"
+      ],
+      "a": 1,
+      "tip": "Cortisol surges stimulate insulin release, raise blood sugar, and trigger cravings for high-calorie foods.",
+      "eli5": "Like wanting pizza after a hard day, a cortisol spike makes the body ask for quick comfort food."
+    },
+    {
+      "q": "If cortisol stays high for many months, where does the body tend to store extra fat?",
+      "o": [
+        "Evenly in the earlobes and nose",
+        "Mainly in the hands and feet",
+        "Mainly in the hair and nails",
+        "Mainly around the belly in the abdominal area"
+      ],
+      "a": 4,
+      "tip": "Chronically high cortisol promotes increased fat storage particularly in the abdominal area.",
+      "eli5": "Like packing heavy boxes in the middle of a moving van, long-term high cortisol packs extra fat around the middle."
+    },
+    {
+      "q": "When the body makes too little cortisol over time, which pattern of energy problems is most likely?",
+      "o": [
+        "Weight gain, high energy, and high blood sugar",
+        "Weight loss, extreme fatigue, and low blood sugar",
+        "Weight gain, extra-deep sleep, and high blood sugar",
+        "Weight loss, extra energy, and high blood sugar"
+      ],
+      "a": 2,
+      "tip": "Too little cortisol can lead to weight loss, extreme fatigue, and low blood sugar.",
+      "eli5": "Like a phone with a weak battery that dies fast, low cortisol leaves the body tired, lighter, and low on sugar-fuel."
+    },
+    {
+      "q": "During stress, cortisol briefly slows digestion and reproduction. Why does it do this in terms of energy?",
+      "o": [
+        "To permanently stop those organs from working",
+        "To speed up digestion so it uses more energy",
+        "To redirect saved energy to fight-or-flight needs like muscles and alertness",
+        "To lower alertness and save sugar for later"
+      ],
+      "a": 3,
+      "tip": "During stress cortisol suppresses nonessential functions like digestion to redirect energy.",
+      "eli5": "Like pausing the dishwasher during a power cut to keep the lights on, the body pauses digestion to send energy where it is needed most."
+    },
+    {
+      "q": "During stress, cortisol needs to quickly raise blood sugar for energy. What does it signal the liver to do with its stored starch called glycogen?",
+      "o": [
+        "Store more glucose as glycogen and lower blood sugar",
+        "Break down glycogen into glucose and release it into the blood",
+        "Turn glucose into fat and stop releasing sugar",
+        "Block the liver from releasing any sugar into the blood"
+      ],
+      "a": 2,
+      "tip": "Cortisol raises blood sugar by stimulating the liver to break down glycogen into glucose.",
+      "eli5": "Like opening the pantry and heating up canned soup for a fast dinner."
+    },
+    {
+      "q": "When stress lasts many hours and stored sugar runs low, cortisol helps the liver make new sugar. Which building material does it mainly use for this backup sugar supply?",
+      "o": [
+        "Amino acids from broken-down protein",
+        "Calcium released from bones",
+        "Oxygen carried by red blood cells",
+        "Water held in body fluids"
+      ],
+      "a": 1,
+      "tip": "Cortisol promotes making new glucose in the liver from amino acids from protein.",
+      "eli5": "Like making soup from leftover chicken when the pantry cans are all gone."
+    },
+    {
+      "q": "If cortisol stays high for many weeks, how does it usually change the way the body's cells respond to insulin, the hormone that lowers blood sugar?",
+      "o": [
+        "Cells become much more sensitive to insulin and blood sugar drops too low",
+        "Cells stop making insulin completely on their own",
+        "Insulin starts raising blood sugar instead of lowering it",
+        "Cells respond less well to insulin, so blood sugar stays higher than normal"
+      ],
+      "a": 4,
+      "tip": "Chronically high cortisol promotes insulin resistance, so blood sugar stays higher.",
+      "eli5": "Like turning the TV volume down so you stop hearing someone calling your name."
+    },
+    {
+      "q": "Over many months, repeated cortisol-driven rises in blood sugar can increase the risk for which long-term blood sugar problem?",
+      "o": [
+        "Low iron anemia from too few red blood cells",
+        "Ongoing low blood sugar that never rises",
+        "Lasting high blood sugar and type 2 diabetes",
+        "Sudden loss of ability to digest fiber"
+      ],
+      "a": 3,
+      "tip": "Long-term high cortisol is linked to persistent high blood sugar and higher diabetes risk.",
+      "eli5": "Like running a car engine too hot every day until it starts to wear out."
+    },
+    {
+      "q": "Adults who regularly sleep only a short time often have higher cortisol the next day. What effect does this pattern usually have on blood sugar and hunger?",
+      "o": [
+        "Blood sugar stays perfectly steady with much less hunger",
+        "Blood sugar swings more with stronger hunger and cravings",
+        "Blood sugar stays low with no appetite at all",
+        "Hunger disappears and blood sugar never changes after meals"
+      ],
+      "a": 2,
+      "tip": "Short sleep raises cortisol and disrupts insulin and blood sugar control, increasing hunger.",
+      "eli5": "Like a tired babysitter handing out extra snacks because the normal routine is off."
+    },
+    {
+      "q": "For steadier blood sugar and healthier cortisol balance during the day, which eating habit is generally recommended?",
+      "o": [
+        "Eat regular balanced meals with whole foods, protein, fiber, and healthy fats",
+        "Skip meals all day and then eat only sugary snacks late at night",
+        "Drink sugary energy drinks instead of meals to stay alert",
+        "Eat only one very large high-sugar meal each day"
+      ],
+      "a": 1,
+      "tip": "Regular balanced meals with whole foods support steadier blood sugar and cortisol.",
+      "eli5": "Like adding logs steadily to a campfire instead of pouring on gasoline all at once."
+    },
+    {
+      "q": "During a short-term emergency, cortisol briefly quiets the immune system. Why does it do this?",
+      "o": [
+        "To help the body grow many new immune cells right away",
+        "To temporarily redirect energy to fight-or-flight needs like muscles and alertness",
+        "To permanently shut down the immune system to save nutrients",
+        "To trigger a high fever to kill germs faster"
+      ],
+      "a": 2,
+      "tip": "During acute stress cortisol briefly suppresses nonessential immune activity to redirect energy to fight-or-flight.",
+      "eli5": "Like pausing the laundry so all the power can go to cooking dinner when guests arrive suddenly."
+    },
+    {
+      "q": "What is cortisol's short-term effect on inflammation (redness, swelling, and pain after injury or infection)?",
+      "o": [
+        "It greatly increases swelling and pain to speed up healing",
+        "It has no effect on redness or swelling",
+        "It only increases inflammation in the stomach",
+        "It reduces inflammation by calming the immune response"
+      ],
+      "a": 4,
+      "tip": "In the short term cortisol acts as an anti-inflammatory signal that reduces redness, swelling, and pain.",
+      "eli5": "Like turning down the volume on a loud speaker so the noise does not hurt your ears."
+    },
+    {
+      "q": "Medicines that copy cortisol, such as prednisone (a lab-made glucocorticoid), are often prescribed for asthma flare-ups, severe allergies, or autoimmune conditions. What is their main job in these conditions?",
+      "o": [
+        "To calm an overactive immune response and reduce harmful inflammation",
+        "To stimulate the immune system to attack germs more aggressively",
+        "To raise blood sugar to give instant energy for exercise",
+        "To replace antibiotics by directly killing bacteria and viruses"
+      ],
+      "a": 1,
+      "tip": "Cortisol-like glucocorticoid medicines suppress overactive immunity and inflammation in allergies, asthma, and autoimmune disease.",
+      "eli5": "Like a calm teacher quieting a classroom that got too rowdy and started knocking over chairs."
+    },
+    {
+      "q": "When cortisol stays high for many months because of ongoing chronic stress, what usually happens to protection against common infections such as colds and flu?",
+      "o": [
+        "Protection becomes much stronger and colds become rare",
+        "Protection stays exactly the same because cortisol only affects energy",
+        "Protection becomes weaker, so infections happen more often and last longer",
+        "Protection switches to only heal injuries, not fight germs"
+      ],
+      "a": 3,
+      "tip": "Sustained elevated cortisol weakens immune defenses and raises vulnerability to infections.",
+      "eli5": "Like leaving the front-door guards tired from no sleep, so more sneaky visitors slip inside."
+    },
+    {
+      "q": "How does long-term high cortisol typically affect wound healing and recovery after surgery or injury?",
+      "o": [
+        "Wounds heal much faster with less scarring",
+        "Wounds heal more slowly and the risk of infection is higher",
+        "Wounds heal at normal speed but with no pain at all",
+        "Wounds close faster but only on the arms and legs"
+      ],
+      "a": 2,
+      "tip": "Chronically high cortisol suppresses immune repair processes and slows wound healing.",
+      "eli5": "Like a construction crew working with fewer workers, so fixing a broken fence takes much longer."
+    },
+    {
+      "q": "Cortisol calms inflammation partly by affecting chemical messengers. What does cortisol do to inflammation-promoting messengers (called pro-inflammatory cytokines)?",
+      "o": [
+        "It increases their production to boost swelling",
+        "It turns them into red blood cells",
+        "It leaves them unchanged and only affects sleep",
+        "It decreases their production to limit inflammation"
+      ],
+      "a": 4,
+      "tip": "Cortisol reduces production of pro-inflammatory cytokines to limit the inflammatory response.",
+      "eli5": "Like sending out fewer party invitations, so fewer guests show up and the house stays calm."
+    },
+    {
+      "q": "During sudden stress, cortisol helps keep blood pressure up so blood reaches the brain and muscles. How does it mainly do this?",
+      "o": [
+        "By making blood vessels relax and widen to lower pressure",
+        "By slowing the heartbeat to save energy",
+        "By helping blood vessels respond more strongly to tightening signals like adrenaline",
+        "By making the kidneys release large amounts of salt and water"
+      ],
+      "a": 3,
+      "tip": "Cortisol has a permissive effect that makes blood vessels more sensitive to tightening signals such as adrenaline and noradrenaline.",
+      "eli5": "Like turning up a speaker knob, so the same shout from adrenaline squeezes the vessels tighter."
+    },
+    {
+      "q": "A person has Cushing syndrome, meaning the body has too much cortisol for many months. Which heart and blood pressure finding is most expected at a checkup?",
+      "o": [
+        "Persistently high blood pressure",
+        "Persistently very low blood pressure with fainting",
+        "A slow heart rate below normal at all times",
+        "Blood pressure that is always perfectly normal"
+      ],
+      "a": 1,
+      "tip": "Too much cortisol over time is linked to high blood pressure.",
+      "eli5": "Like keeping a garden hose kinked with the tap on full, pressure stays high for months."
+    },
+    {
+      "q": "In Addison disease the adrenal glands make too little cortisol and aldosterone, and people often feel dizzy when standing up. Which blood pressure change best explains this?",
+      "o": [
+        "High blood pressure that spikes when standing",
+        "Normal blood pressure with a very fast pulse only",
+        "High pressure in the morning and low pressure only at night",
+        "Low blood pressure, especially a drop when standing up"
+      ],
+      "a": 4,
+      "tip": "Insufficient cortisol and aldosterone lowers vessel tone and salt and water retention, causing low blood pressure.",
+      "eli5": "Like a water balloon with too little water inside, pressure drops when you lift it upright."
+    },
+    {
+      "q": "At very high levels, cortisol can act like the salt-balancing hormone aldosterone. What does this do to salt, water, and blood pressure?",
+      "o": [
+        "Makes the kidneys lose salt and water, lowering blood volume and pressure",
+        "Makes the kidneys hold onto more salt and water, raising blood volume and pressure",
+        "Makes the kidneys hold onto potassium only, with no change in pressure",
+        "Stops the kidneys from filtering blood, causing pressure to fall to zero"
+      ],
+      "a": 2,
+      "tip": "Excess cortisol increases kidney retention of sodium and water, which raises blood volume and blood pressure.",
+      "eli5": "Like pouring extra water into a soup pot without getting a bigger pot, more fluid pushes harder on the walls."
+    },
+    {
+      "q": "Excess cortisol can raise blood pressure in more than one way. Which 2 effects help raise it? (Choose 2)",
+      "o": [
+        "Makes blood vessels more sensitive to tightening signals",
+        "Helps the body hold onto salt and water",
+        "Makes blood vessels relax and widen",
+        "Helps the kidneys flush out extra salt and water"
+      ],
+      "a": [
+        1,
+        2
+      ],
+      "tip": "High cortisol both increases vessel sensitivity to constricting signals and increases salt and water retention.",
+      "eli5": "It both squeezes the hose tighter and adds more water to the hose, so pressure climbs two ways."
+    },
+    {
+      "q": "Why is a brief cortisol rise during short stress usually not harmful to the heart, while high cortisol for many months can raise blood pressure risk?",
+      "o": [
+        "A brief rise permanently damages vessels, while long-term high cortisol repairs them",
+        "Short stress and long stress affect the heart in exactly the same lasting way",
+        "A brief rise is temporary and reverses after stress, while months of high cortisol keeps vessels tight and fluid high",
+        "A brief rise lowers blood pressure a lot, while long-term cortisol only affects sleep"
+      ],
+      "a": 3,
+      "tip": "Short-term cortisol effects on heart rate and pressure normally reverse, but sustained elevation keeps pressure high.",
+      "eli5": "Like borrowing a chair for a minute versus piling chairs on someone for months, short strain is easy to recover from."
+    },
+    {
+      "q": "During a short, stressful challenge like a big test, what does a brief rise in cortisol do to your brain's alertness?",
+      "o": [
+        "It makes you fall asleep right away and stop paying attention",
+        "It has no effect on how awake or focused you feel",
+        "It briefly heightens alertness and focus to help you respond quickly",
+        "It permanently deletes memories you formed years ago"
+      ],
+      "a": 3,
+      "tip": "A short-term cortisol rise increases energy and alertness to support fight-or-flight.",
+      "eli5": "Like turning up the classroom lights for a pop quiz, a little cortisol helps your brain pay closer attention for a short time."
+    },
+    {
+      "q": "The hippocampus is the brain's center for forming new memories. What can happen to it when cortisol stays very high for many months?",
+      "o": [
+        "It can work less well, making it harder to learn and recall recent information",
+        "It grows much larger and gives you perfect photographic memory",
+        "It moves to a different part of the brain and stops working",
+        "It only controls movement and has no link to memory"
+      ],
+      "a": 1,
+      "tip": "Chronically high cortisol is linked to hippocampus changes, brain fog, and memory problems.",
+      "eli5": "Like a notebook that gets soggy if left in rain, the memory center works poorly after soaking in too much cortisol for too long."
+    },
+    {
+      "q": "The amygdala is the brain's alarm for fear and emotion. How does long-term high cortisol usually change how it reacts?",
+      "o": [
+        "It makes the alarm much quieter so you never feel any fear",
+        "It turns the alarm off and removes all emotions",
+        "It only affects eyesight and hearing, not emotion",
+        "It makes the alarm extra sensitive, increasing worry, irritability, and anxiety"
+      ],
+      "a": 4,
+      "tip": "Chronically elevated cortisol is linked to stronger emotional reactivity and higher risk of anxiety and mood disturbances.",
+      "eli5": "Like a smoke alarm that beeps at just toast, a stressed alarm brain overreacts to small worries."
+    },
+    {
+      "q": "The prefrontal cortex is the front of the brain that helps with clear thinking and decisions. What does ongoing high cortisol often do to this kind of thinking?",
+      "o": [
+        "It greatly improves complex planning even under months of stress",
+        "It makes it harder to concentrate, think clearly, and make decisions, often called brain fog",
+        "It has no connection to attention or decision-making",
+        "It only improves balance and coordination"
+      ],
+      "a": 2,
+      "tip": "Too much cortisol over time is linked to brain fog, poor concentration, and trouble with clear thinking.",
+      "eli5": "Like trying to do homework with loud music on, a tired front brain struggles to focus and choose well."
+    },
+    {
+      "q": "Evening cortisol should normally be low to allow sleep. If evening cortisol stays high for many nights, how does sleep and next-day brain function usually change?",
+      "o": [
+        "Sleep becomes lighter and broken, leading to poorer memory, focus, and mood the next day",
+        "Sleep becomes much deeper and memory becomes perfect the next day",
+        "Sleep does not change and thinking stays exactly the same",
+        "People need no sleep at all and think more clearly"
+      ],
+      "a": 1,
+      "tip": "Too much cortisol over time is linked to sleep problems and insomnia, which impairs memory and mood.",
+      "eli5": "Like leaving the kitchen light on all night, high evening cortisol keeps the brain awake so it cannot tidy up memories for tomorrow."
+    },
+    {
+      "q": "Addison disease is when the adrenal glands make too little cortisol. Besides low blood pressure and low blood sugar, what brain-related symptoms are most common?",
+      "o": [
+        "Greatly increased energy with no need for rest",
+        "Sharply improved memory with no forgetfulness",
+        "Superhuman hearing and perfect night vision",
+        "Extreme tiredness, low motivation, and low mood with trouble thinking clearly"
+      ],
+      "a": 4,
+      "tip": "Too little cortisol can cause extreme fatigue, low blood sugar, and problems with mood and clear thinking.",
+      "eli5": "Like a phone with a nearly dead battery, a brain with too little cortisol runs slow and feels too tired to stay cheerful."
+    },
+    {
+      "q": "Cortisol can be checked in the laboratory. In which samples can cortisol be measured?",
+      "o": [
+        "Only in blood",
+        "Only in urine",
+        "In blood, urine, or saliva",
+        "Only in spinal fluid"
+      ],
+      "a": 3,
+      "tip": "Cortisol can be measured in blood, urine, or saliva.",
+      "eli5": "Like you can check sugar in tea by tasting the cup, the spoon, or the pot, doctors can check cortisol in blood, pee, or spit."
+    },
+    {
+      "q": "A doctor suspects adrenal insufficiency, when the adrenals make too little cortisol. When is the first blood cortisol test usually done?",
+      "o": [
+        "Early in the morning, when cortisol should be at its daily peak",
+        "Late at night, when cortisol should be lowest",
+        "Right after a large meal, when digestion is busiest",
+        "Right after strenuous exercise, when muscles are tired"
+      ],
+      "a": 1,
+      "tip": "Early-morning serum cortisol is recommended as the initial test for adrenal insufficiency.",
+      "eli5": "It is like checking the morning sun to see if it rose — morning is when cortisol should be brightest, so a low morning level stands out."
+    },
+    {
+      "q": "To check for Cushing syndrome, when the body makes too much cortisol, a doctor may order a late-night saliva test. Why is late night helpful?",
+      "o": [
+        "Cortisol is normally highest late at night, so a low result means disease",
+        "Saliva can only be collected at night",
+        "Cortisol testing does not work in the morning",
+        "Cortisol should normally be low late at night, so a high result suggests loss of daily rhythm"
+      ],
+      "a": 4,
+      "tip": "In Cushing syndrome diurnal variation is lost and late-night cortisol is inappropriately elevated.",
+      "eli5": "Healthy cortisol is like streetlights off at midnight. If the lights are still bright at midnight, something is keeping them on."
+    },
+    {
+      "q": "What does a 24-hour urine free cortisol test require the patient to do?",
+      "o": [
+        "Give one urine sample right after waking up",
+        "Collect all urine passed during a full 24-hour period into one container",
+        "Drink extra water and give no urine for 24 hours",
+        "Give one blood sample every hour for 24 hours"
+      ],
+      "a": 2,
+      "tip": "A 24-hour urine collection captures cortisol made across the whole day and night.",
+      "eli5": "It is like saving all the crumbs from a whole day of snacks in one jar to see how much you ate, instead of looking at one bite."
+    },
+    {
+      "q": "Cortisol results can be temporarily raised by strain on test day. Which 2 situations can raise cortisol and make the test hard to interpret? (Choose 2)",
+      "o": [
+        "Sitting quietly and reading before the test",
+        "Having an acute infection with fever or injury",
+        "Sleeping a full 8 hours the night before",
+        "Doing very strenuous exercise just before the test"
+      ],
+      "a": [
+        2,
+        4
+      ],
+      "tip": "Physical or emotional stress, strenuous activity, infection, or injury can raise cortisol levels.",
+      "eli5": "Cortisol is like a fire alarm that rings for a real fire or just burnt toast — infection and hard exercise can ring it even without adrenal disease."
+    },
+    {
+      "q": "Why does the laboratory need to know the exact time of day a blood cortisol sample was taken?",
+      "o": [
+        "Because the needle only works at certain hours",
+        "Because cortisol follows a daily rhythm with a morning peak and a nighttime low",
+        "Because cortisol stays exactly the same all day",
+        "Because time of day only affects urine, never blood"
+      ],
+      "a": 2,
+      "tip": "Cortisol follows a circadian rhythm with peak levels in the morning and lowest levels overnight.",
+      "eli5": "Reading cortisol without the time is like reading a tide height without knowing high tide or low tide — morning high and night low mean very different things."
+    },
+    {
+      "q": "After many months of too much cortisol in Cushing syndrome, which pattern of body changes is most typical?",
+      "o": [
+        "Weight loss, darker skin patches, and very low appetite",
+        "Round moon-shaped face, extra fat around the belly and upper back/neck, purple stretch marks, and thin skin that bruises easily",
+        "Becoming much taller, very low blood pressure, and strong craving for salty foods",
+        "Hot swollen joints with fever and widespread rash"
+      ],
+      "a": 2,
+      "tip": "Chronic excess cortisol causes central weight gain, moon face, buffalo hump, purple striae, and thin fragile skin.",
+      "eli5": "Think of too much cortisol like overfilling a water balloon in the middle — face gets rounder, belly fills out, and skin stretches thin like an overstretched bag."
+    },
+    {
+      "q": "Overall, what is the most common cause of Cushing syndrome?",
+      "o": [
+        "Autoimmune attack that destroys the adrenal glands",
+        "Averaging too little sleep for a few nights",
+        "A short severe infection that briefly raises stress hormones",
+        "Taking glucocorticoid medicines such as prednisone daily for a long time"
+      ],
+      "a": 4,
+      "tip": "Exogenous long-term glucocorticoid therapy is the most common cause of Cushing syndrome overall.",
+      "eli5": "Like taking extra sugar every day when your body already makes enough — the extra medicine adds up to too much cortisol-like signal."
+    },
+    {
+      "q": "Doctors use the terms Cushing syndrome and Cushing disease. What does Cushing disease specifically mean?",
+      "o": [
+        "Cushing syndrome caused by a pituitary tumor making too much ACTH, which then drives the adrenals to make too much cortisol",
+        "Cushing syndrome caused by the adrenals making too little cortisol",
+        "Brief everyday stress that raises cortisol for a few minutes",
+        "Cushing syndrome caused only by lack of sleep"
+      ],
+      "a": 1,
+      "tip": "Cushing disease is Cushing syndrome specifically due to an ACTH-secreting pituitary tumor.",
+      "eli5": "Think of a stuck doorbell button at headquarters — the pituitary keeps ringing the adrenals with ACTH, so they keep making cortisol."
+    },
+    {
+      "q": "A person has high cortisol, and a blood test shows ACTH is very low. Using the HPA feedback loop, what does this pattern most suggest?",
+      "o": [
+        "The pituitary is driving the problem by making extra ACTH",
+        "The hypothalamus is making extra CRH because cortisol is low",
+        "An adrenal tumor is making cortisol on its own and shutting off ACTH by negative feedback",
+        "The adrenal glands have failed and cannot make cortisol"
+      ],
+      "a": 3,
+      "tip": "Autonomous adrenal cortisol suppresses CRH and ACTH by negative feedback, so high cortisol with low ACTH points to an adrenal source.",
+      "eli5": "Like a factory making toys without orders — the boss stops sending orders because the shelves are already full."
+    },
+    {
+      "q": "When checking for Cushing syndrome, why do doctors often measure cortisol late at night, such as with midnight saliva?",
+      "o": [
+        "Because antibiotics work best when taken at night",
+        "Because cortisol should normally be at its lowest overnight, so a high late-night level shows the daily rhythm is lost",
+        "Because cortisol is normally highest at midnight in healthy people",
+        "Because a late-night test measures aldosterone instead of cortisol"
+      ],
+      "a": 2,
+      "tip": "Healthy cortisol is lowest overnight, while in Cushing syndrome diurnal variation is lost and late-night cortisol is inappropriately high.",
+      "eli5": "Like streetlights that should be off at noon — if the lights are still bright at midnight, you know the timer is broken."
+    },
+    {
+      "q": "What often happens to muscles and bones after many months of very high cortisol in Cushing syndrome?",
+      "o": [
+        "Muscles become much larger and bones become much denser and stronger",
+        "Only memory improves with no change to muscles or bones",
+        "Muscles twitch briefly after exercise but recover fully with no lasting effect",
+        "Leg muscles become weak, especially climbing stairs or standing up, and bones become thinner and break more easily"
+      ],
+      "a": 4,
+      "tip": "Chronic excess cortisol breaks down protein and bone, causing proximal muscle weakness and osteoporosis.",
+      "eli5": "Like termites slowly chewing a wooden house frame — the walls look the same at first, but the legs and beams get weak and wobbly."
+    },
+    {
+      "q": "Addison disease is when the outer adrenal glands fail. Which two adrenal hormones are too low in typical Addison disease?",
+      "o": [
+        "Growth hormone and thyroid hormone",
+        "Cortisol and aldosterone",
+        "Insulin and glucagon",
+        "Estrogen and testosterone"
+      ],
+      "a": 2,
+      "tip": "Typical Addison disease is primary adrenal failure that lowers both cortisol and aldosterone.",
+      "eli5": "Think of the adrenal cortex like a shop making two products; in Addison both machines break, so both cortisol and aldosterone run short."
+    },
+    {
+      "q": "A person has months of extreme tiredness, loss of appetite with weight loss, low blood pressure, and episodes of low blood sugar. Which low-cortisol condition best fits this pattern?",
+      "o": [
+        "Cushing syndrome from too much cortisol",
+        "An overactive thyroid gland",
+        "A brief cortisol surge during short-term stress",
+        "Addison disease from too little cortisol"
+      ],
+      "a": 4,
+      "tip": "Too little cortisol over time causes extreme fatigue, weight loss, low blood pressure, and low blood sugar seen in Addison disease.",
+      "eli5": "Like a car running out of fuel and battery, the body without enough cortisol feels tired, light-headed, and loses weight."
+    },
+    {
+      "q": "In Addison disease, loss of the salt-balancing hormone aldosterone affects the kidneys. What happens to salt and water balance?",
+      "o": [
+        "Lose too much salt and water in urine, which lowers blood pressure",
+        "Hold on to too much salt and water, which raises blood pressure",
+        "Lose too much potassium and keep too much sodium",
+        "Stop filtering blood and make no urine at all"
+      ],
+      "a": 1,
+      "tip": "Without enough aldosterone the kidneys waste sodium and water and keep potassium, which lowers blood pressure.",
+      "eli5": "Like a bucket with a leak, the kidneys let salty water drain away, so pressure in the pipes drops."
+    },
+    {
+      "q": "Many people with long-standing Addison disease get darker patches of skin on knuckles, scars, and gums. What causes this darkening?",
+      "o": [
+        "Low blood sugar staining the skin darker",
+        "Too much cortisol thinning and bruising the skin",
+        "Extra pituitary ACTH that also stimulates skin pigment cells",
+        "Low aldosterone depositing salt under the skin"
+      ],
+      "a": 3,
+      "tip": "In primary Addison disease low cortisol removes feedback, so the pituitary makes extra ACTH that also stimulates melanin pigment.",
+      "eli5": "Like a boss shouting louder when workers do not answer, the brain shouts extra ACTH, and that loud signal also tans the skin."
+    },
+    {
+      "q": "Why can a fever, stomach infection, or surgery quickly become an emergency for someone with untreated Addison disease?",
+      "o": [
+        "The body makes far too much cortisol and blood pressure spikes dangerously",
+        "The immune system becomes too strong and attacks infections too fast",
+        "Blood sugar rises very high because cortisol keeps making new sugar",
+        "The body cannot make the extra cortisol needed for stress, risking crisis with very low pressure and sugar"
+      ],
+      "a": 4,
+      "tip": "Stress normally raises cortisol needs, but Addison glands cannot respond, risking adrenal crisis with low blood pressure and low blood sugar.",
+      "eli5": "Like having no spare tire for a long trip, there is no extra cortisol for a stressful bump, so the body can break down."
+    },
+    {
+      "q": "Doctors give people with Addison disease a sick-day plan for illness, vomiting, or injury. What is the basic idea of this plan?",
+      "o": [
+        "Get prompt medical help for extra cortisol support because needs rise during stress",
+        "Stop all hormone replacement until the illness is over",
+        "Exercise harder and skip sleep to raise cortisol naturally",
+        "Eat only sugar and drink less water to raise blood pressure"
+      ],
+      "a": 1,
+      "tip": "Because illness or injury increases cortisol need, people with Addison disease need prompt care and extra cortisol support to prevent crisis.",
+      "eli5": "Like bringing an umbrella when storms are forecast, they plan for extra help ahead of time when the body faces extra stress."
+    },
+    {
+      "q": "For a healthy daily cortisol rhythm with a morning peak and low night level, which sleep habit is most helpful?",
+      "o": [
+        "Staying up much later on weekends than on weekdays",
+        "Keeping a regular bedtime and wake time every day, even on weekends",
+        "Watching bright screens in bed until you fall asleep",
+        "Taking long late-afternoon naps to catch up on sleep"
+      ],
+      "a": 2,
+      "tip": "A regular sleep-wake schedule supports the normal circadian cortisol rhythm with a morning peak and low overnight level.",
+      "eli5": "Like feeding a pet at the same time daily, a steady bedtime teaches your body when to raise and lower cortisol."
+    },
+    {
+      "q": "How does regular moderate exercise, such as brisk walking most days, usually affect cortisol balance over time?",
+      "o": [
+        "It is commonly linked to healthier long-term cortisol regulation and stress resilience",
+        "It permanently shuts off cortisol production from the adrenal glands",
+        "It keeps resting cortisol very high at all times",
+        "It has no effect on stress hormones at all"
+      ],
+      "a": 1,
+      "tip": "Regular moderate exercise is commonly associated with healthier cortisol regulation.",
+      "eli5": "Like practicing a little each day for a school play, gentle regular movement trains your body to handle stress more calmly."
+    },
+    {
+      "q": "How does a single bout of very strenuous prolonged activity, such as a marathon race or intense overtraining without rest, usually affect cortisol right afterward?",
+      "o": [
+        "It lowers cortisol to zero for several days",
+        "It locks cortisol at exactly the same level as rest",
+        "It only affects muscles and never changes stress hormones",
+        "It temporarily raises cortisol as a response to physical stress"
+      ],
+      "a": 4,
+      "tip": "Strenuous activity and physical strain temporarily raise cortisol as part of the stress response.",
+      "eli5": "Like revving a car engine hard uphill, pushing your body very hard briefly pushes the stress hormone higher."
+    },
+    {
+      "q": "Stress-relief practices such as meditation, slow deep breathing, and quiet relaxing time are often suggested. How are they generally linked to cortisol?",
+      "o": [
+        "They are linked to much higher cortisol during rest",
+        "They prevent the adrenal glands from ever making cortisol again",
+        "They are commonly associated with lower cortisol and healthier regulation during stress",
+        "They raise blood sugar to improve calmness"
+      ],
+      "a": 3,
+      "tip": "Relaxation practices like meditation are commonly associated with healthier cortisol regulation and lower stress responses.",
+      "eli5": "Like turning down loud music to relax, slow breathing helps tell your body's alarm to quiet down."
+    },
+    {
+      "q": "Which 2 evening habits help keep late-night cortisol low so sleep comes more easily? (Choose 2)",
+      "o": [
+        "Following a calm wind-down routine with dim lights before bed",
+        "Going to bed and waking up at about the same time each night",
+        "Drinking strong coffee or energy drinks late in the evening",
+        "Having an intense argument or hard workout right before bed"
+      ],
+      "a": [
+        1,
+        2
+      ],
+      "tip": "Calm, regular bedtime routines support low evening cortisol, while stimulants and late intense stress can raise it.",
+      "eli5": "Like dimming the shop lights before closing, a calm steady bedtime tells your body the busy day is done."
+    },
+    {
+      "q": "Why do ongoing worry and poor sleep often make each other worse in a cycle involving cortisol?",
+      "o": [
+        "Low cortisol causes deep sleepiness that prevents any stress",
+        "Good sleep permanently removes all cortisol from the blood",
+        "Sleep and stress use completely separate hormones with no link",
+        "High evening stress raises cortisol which disrupts sleep, and short sleep then raises cortisol higher the next day"
+      ],
+      "a": 4,
+      "tip": "High cortisol can disrupt sleep, and short sleep raises cortisol, creating a stress-sleep cycle.",
+      "eli5": "Like staying up late worrying about a test makes you more tired and worried the next day, bad sleep and stress feed each other."
+    },
+    {
+      "q": "What is cortisol in simplest terms?",
+      "o": [
+        "A digestive enzyme made in the stomach to break down food",
+        "A fast nerve message made in the brain to pass signals between neurons",
+        "A glucocorticoid steroid hormone made in the adrenal cortex to help the body handle stress and manage energy",
+        "An oxygen-carrying protein made in red blood cells"
+      ],
+      "a": 3,
+      "tip": "Cortisol is a glucocorticoid steroid hormone from the adrenal cortex that drives the stress response and energy management.",
+      "eli5": "Think of cortisol like a school principal during a fire drill, sending orders to save energy and stay alert."
+    },
+    {
+      "q": "Cortisol is called a glucocorticoid. What does that name tell you about it?",
+      "o": [
+        "Gluco means it affects blood sugar and glucose use, and corticoid means it is made in the adrenal cortex",
+        "Gluco means it is made only from dietary sugar, and corticoid means it is made in the heart",
+        "Gluco means it controls only thirst, and corticoid means it is made in the pituitary gland",
+        "Gluco means it digests starch in the gut, and corticoid means it is made in the kidneys"
+      ],
+      "a": 1,
+      "tip": "Gluco refers to glucose and blood-sugar control and corticoid refers to the adrenal cortex where it is made.",
+      "eli5": "Like the name sun-flower tells you it loves sun and looks like a flower, gluco-corticoid tells you sugar-control plus adrenal-cortex."
+    },
+    {
+      "q": "Why is cortisol grouped with the steroid hormones?",
+      "o": [
+        "Because it is built from small protein pieces linked like beads on a string",
+        "Because it is built from cholesterol, a fat-like steroid building block, using cytochrome P450 enzymes",
+        "Because it is built directly from DNA in the cell nucleus",
+        "Because it is built from calcium and iron absorbed from food"
+      ],
+      "a": 2,
+      "tip": "Steroid hormones like cortisol are synthesized from cholesterol by cytochrome P450 enzymes.",
+      "eli5": "Like cookies are baked from flour dough, cortisol is baked from cholesterol dough."
+    },
+    {
+      "q": "Both cortisol and adrenaline are stress hormones. How are they different?",
+      "o": [
+        "Adrenaline is made in the outer adrenal cortex for slow action and cortisol is made in the inner adrenal medulla for fast action",
+        "Cortisol and adrenaline are the exact same hormone with two different names",
+        "Both cortisol and adrenaline are made in the pituitary gland in the brain",
+        "Cortisol is made in the outer adrenal cortex and works over hours, while adrenaline is made in the inner adrenal medulla and works in seconds"
+      ],
+      "a": 4,
+      "tip": "Cortisol is a slow, long-acting cortex hormone while adrenaline is a fast, short-acting medulla hormone.",
+      "eli5": "Adrenaline is like a sprint start whistle, cortisol is like a coach planning food and rest for the whole race."
+    },
+    {
+      "q": "What does it mean to say cortisol is the primary hormone for the stress response and is regulated by the HPA axis?",
+      "o": [
+        "It is the main hormone that carries out the stress response, with release controlled by signals from the hypothalamus to the pituitary to the adrenals",
+        "It is the only hormone in the body that ever changes during stress or illness",
+        "It is a hormone made by the brain that travels directly to muscles without involving the adrenals",
+        "It is a hormone that stays at one fixed level all day and never responds to the brain"
+      ],
+      "a": 1,
+      "tip": "Cortisol is the main stress-effect hormone, controlled by hypothalamus CRH to pituitary ACTH to adrenal cortisol.",
+      "eli5": "Like a family chain where parent tells older child who tells younger child to turn on lights, brain tells pituitary who tells adrenals to release cortisol."
+    },
+    {
+      "q": "Cortisol levels go up with emotional stress, strenuous activity, infection, or injury. What does that show about what kind of hormone cortisol is?",
+      "o": [
+        "It is a fixed-level hormone that stays exactly the same no matter what happens",
+        "It is a responsive hormone that rises to meet higher demand during strain on the body",
+        "It is a sleep-only hormone that works only overnight and shuts off all day",
+        "It is a growth-only hormone that works only in childhood"
+      ],
+      "a": 2,
+      "tip": "Cortisol is an adaptive hormone whose levels rise with physical or emotional stress, activity, infection, or injury.",
+      "eli5": "Like a shop ordering more umbrellas when rain is forecast, the body orders more cortisol when hard times are forecast."
+    },
+    {
+      "q": "An adrenal gland has two main parts: an outer cortex and an inner medulla. Which pairing of part to main product is correct?",
+      "o": [
+        "Cortex makes adrenaline and medulla makes cortisol",
+        "Cortex makes cortisol and medulla makes adrenaline",
+        "Cortex makes insulin and medulla makes cortisol",
+        "Cortex makes adrenaline and medulla makes aldosterone"
+      ],
+      "a": 2,
+      "tip": "The adrenal cortex makes steroid hormones like cortisol and the adrenal medulla makes adrenaline.",
+      "eli5": "Think of a candy factory with two rooms: the outer room bakes slow cookies like cortisol, the inner room hands out quick energy drinks like adrenaline."
+    },
+    {
+      "q": "The adrenal cortex has three layers. The outermost layer, called the zona glomerulosa, mainly makes which hormone that helps the kidneys keep salt and water?",
+      "o": [
+        "Aldosterone",
+        "Cortisol",
+        "Adrenaline",
+        "Melatonin"
+      ],
+      "a": 1,
+      "tip": "The outermost adrenal cortex layer makes aldosterone for salt and water balance.",
+      "eli5": "Like the front desk controlling salty snacks and water cups, the outer layer handles salt through aldosterone."
+    },
+    {
+      "q": "The innermost layer of the adrenal cortex, called the zona reticularis, mainly makes small amounts of which hormones?",
+      "o": [
+        "Thyroid hormones for metabolism",
+        "Insulin for blood sugar",
+        "Digestive enzymes for the stomach",
+        "Adrenal androgens like DHEA, which are weak sex hormones"
+      ],
+      "a": 4,
+      "tip": "The inner adrenal cortex layer makes adrenal androgens such as DHEA.",
+      "eli5": "Like a side kitchen making small spice packets, the inner layer makes small batches of helper sex hormones."
+    },
+    {
+      "q": "In a sudden scare, the two parts of the adrenal gland work on different time scales. Which description is correct?",
+      "o": [
+        "Both parts release cortisol within seconds",
+        "Both parts release adrenaline over many hours",
+        "The medulla releases adrenaline within seconds for an instant response while the cortex releases cortisol over minutes to sustain energy",
+        "The cortex releases adrenaline within seconds while the medulla releases cortisol over minutes"
+      ],
+      "a": 3,
+      "tip": "Medulla adrenaline acts in seconds and cortex cortisol acts over minutes to hours.",
+      "eli5": "Like a sprinter and a marathon runner, the inner medulla sprints fast with adrenaline while the outer cortex keeps going with cortisol."
+    },
+    {
+      "q": "The pituitary gland sits at the base of the brain and the adrenal glands sit above the kidneys. How does the pituitary signal ACTH reach the adrenal cortex?",
+      "o": [
+        "Through a direct nerve wire from brain to adrenal",
+        "It travels in the bloodstream from the pituitary to the adrenals",
+        "It flows down a hollow tube connecting the two glands",
+        "It passes through air in the lungs to the adrenals"
+      ],
+      "a": 2,
+      "tip": "ACTH is a blood-borne hormone that travels from the pituitary to the adrenals in the blood.",
+      "eli5": "Like a letter sent by mail truck, ACTH rides the blood highway from the brain to the glands above the kidneys."
+    },
+    {
+      "q": "Unlike glands that store lots of ready-made hormone, what does the adrenal cortex do when ACTH tells it to release cortisol?",
+      "o": [
+        "It builds cortisol fresh from cholesterol within minutes because very little is stored",
+        "It squeezes out months of stored cortisol from large sacs",
+        "It converts stored adrenaline directly into cortisol",
+        "It stops blood flow to save energy for later"
+      ],
+      "a": 1,
+      "tip": "The adrenal cortex stores very little cortisol and must make it fresh from cholesterol on demand.",
+      "eli5": "Like a pizza shop that makes dough fresh when you order, the adrenal gland cooks up cortisol fresh instead of keeping boxes stacked up."
+    },
+    {
+      "q": "Which statement best describes HPA axis control of cortisol (HPA means hypothalamus-pituitary-adrenal, CRH is the hypothalamus signal, ACTH is the pituitary signal)?",
+      "o": [
+        "The adrenal cortex sends the first signal and the brain only follows orders with no feedback",
+        "The hypothalamus releases CRH to signal the pituitary, the pituitary releases ACTH to signal the adrenal cortex, and cortisol feeds back to quiet the first two",
+        "The hypothalamus, pituitary, and adrenal cortex all make cortisol at the same time",
+        "The pituitary makes cortisol and the adrenal cortex makes ACTH"
+      ],
+      "a": 2,
+      "tip": "The HPA axis is a negative-feedback loop: CRH drives ACTH, ACTH drives cortisol, and cortisol then inhibits CRH and ACTH.",
+      "eli5": "It works like a thermostat with a heater. The heat turns the thermostat down so it does not keep heating forever."
+    },
+    {
+      "q": "In HPA axis control, ACTH (the signal from the pituitary gland) travels in the blood. Which tissue is its main target for triggering cortisol release?",
+      "o": [
+        "The liver, to directly release stored sugar",
+        "The inner adrenal medulla, which makes adrenaline",
+        "The outer adrenal cortex, especially the middle layer that makes cortisol",
+        "The kidneys, to directly filter blood"
+      ],
+      "a": 3,
+      "tip": "ACTH acts mainly on the adrenal cortex to stimulate cortisol production.",
+      "eli5": "Think of mail with one address label. ACTH is addressed to the outer adrenal factory, not to other organs."
+    },
+    {
+      "q": "Besides sudden stress, healthy HPA control gives cortisol a daily rhythm with a morning peak. What mainly sets the timing of that morning peak?",
+      "o": [
+        "The brain's internal 24-hour body clock tied to light and the sleep-wake cycle",
+        "How full the stomach is after breakfast",
+        "How sore the muscles feel from the day before",
+        "The temperature of the bedroom in the evening"
+      ],
+      "a": 1,
+      "tip": "The hypothalamus uses circadian timing signals to drive high morning and low nighttime CRH, ACTH, and cortisol.",
+      "eli5": "It is like a school bell on a timer. The bell rings in the morning because of the clock, not because someone is hungry."
+    },
+    {
+      "q": "A person takes a high dose of a cortisol-like steroid medicine such as prednisone every day for several weeks. Using HPA feedback control, what usually happens to the body's own CRH and ACTH signals?",
+      "o": [
+        "They rise sharply because the body wants even more steroid",
+        "They stay exactly the same because medicines do not affect the brain",
+        "They switch to making adrenaline instead of cortisol",
+        "They fall because the brain senses plenty of steroid signal and turns down its own drive"
+      ],
+      "a": 4,
+      "tip": "Outside glucocorticoids mimic cortisol and suppress hypothalamic CRH and pituitary ACTH by negative feedback.",
+      "eli5": "Like a full pantry stops more grocery orders. When the shelves look full, the brain stops ordering more."
+    },
+    {
+      "q": "Blood tests show both cortisol and ACTH (the pituitary signal that drives the adrenals) are much higher than normal. Using HPA feedback logic, where is the extra drive most likely coming from?",
+      "o": [
+        "Extra ACTH from the pituitary or another ACTH-making tumor that is over-driving the adrenals",
+        "An adrenal tumor alone making cortisol, which would normally lower ACTH",
+        "The kidneys failing to clear cortisol with no change in brain signals",
+        "The hypothalamus fully stopped with no CRH at all"
+      ],
+      "a": 1,
+      "tip": "High cortisol with high ACTH points upstream of the adrenal, while high cortisol with low ACTH points to the adrenal itself.",
+      "eli5": "Like a loud speaker and microphone. If both the orders and the product are high, the boss shouting orders is the problem, not just the factory."
+    },
+    {
+      "q": "In healthy HPA axis control, what typically happens to cortisol in the first 30 to 45 minutes right after waking up in the morning?",
+      "o": [
+        "It drops sharply to its lowest point of the day",
+        "It shows a brief extra surge on top of the already high morning level, then starts to decline",
+        "It stays completely flat with no change all morning",
+        "It rises slowly and peaks late at night before sleep"
+      ],
+      "a": 2,
+      "tip": "A healthy cortisol awakening response is a short 30- to 45-minute rise after waking within the morning peak.",
+      "eli5": "Like a kettle giving one last bubbling boost when you turn it on. It puffs up after waking, then cools down through the day."
+    },
+    {
+      "q": "After you wake up in the morning, what normally happens to cortisol in the next 30 to 45 minutes (sometimes called the awakening response)?",
+      "o": [
+        "It rises briefly to help you feel alert and get moving",
+        "It drops to the lowest level of the whole day",
+        "It stays exactly flat until the next night",
+        "It falls in the morning and only rises at bedtime"
+      ],
+      "a": 1,
+      "tip": "Healthy cortisol shows a brief awakening rise within about 30-45 minutes after waking.",
+      "eli5": "Like a kettle that whistles to start the morning, a little cortisol surge helps switch your brain from sleep to go-mode."
+    },
+    {
+      "q": "In a healthy 24-hour rhythm, when is cortisol normally at its lowest point?",
+      "o": [
+        "Just after you wake up in the morning",
+        "Around midnight while you are in deep sleep",
+        "Right before lunch at midday",
+        "In the late afternoon before dinner"
+      ],
+      "a": 2,
+      "tip": "Healthy cortisol gradually declines through the day to its lowest point overnight during sleep.",
+      "eli5": "Think of cortisol like daylight, brightest in the morning and darkest at midnight when your body rests."
+    },
+    {
+      "q": "How does getting bright light soon after waking in the morning usually affect a healthy cortisol rhythm?",
+      "o": [
+        "It has no effect on hormones and only affects vision",
+        "It makes cortisol peak at midnight instead of in the morning",
+        "It helps keep the body clock timed so the morning peak is strong and night levels fall low",
+        "It stops the adrenal glands from making any cortisol that day"
+      ],
+      "a": 3,
+      "tip": "Morning light anchors the circadian clock that times the cortisol morning peak and nighttime low.",
+      "eli5": "Like setting your watch each morning, morning light resets your body clock so cortisol rises and falls on time."
+    },
+    {
+      "q": "What often happens to the daily cortisol rhythm in people who work rotating night shifts for many weeks?",
+      "o": [
+        "The morning peak gets much higher and the night low gets much lower",
+        "The rhythm stays perfectly normal because work hours do not affect hormones",
+        "Cortisol disappears completely during night work and returns on days off",
+        "The rhythm becomes flattened or shifted, with a blunted morning peak and higher-than-normal night levels"
+      ],
+      "a": 4,
+      "tip": "Chronic night-shift work and jet lag disrupt circadian timing and flatten or shift the cortisol rhythm.",
+      "eli5": "Like constantly changing time zones confuses your alarm, flipping day and night confuses when cortisol should rise and fall."
+    },
+    {
+      "q": "Melatonin is a hormone that makes you feel sleepy at night. How do normal nighttime levels of cortisol and melatonin compare?",
+      "o": [
+        "Both cortisol and melatonin are at their highest levels at night",
+        "Both cortisol and melatonin are at their lowest levels at night",
+        "Cortisol is normally low at night while melatonin is high",
+        "Cortisol is normally high at night while melatonin is low"
+      ],
+      "a": 3,
+      "tip": "At night healthy cortisol is low to permit sleep while melatonin is high to promote sleepiness.",
+      "eli5": "Like a seesaw, when sleepy melatonin goes up at bedtime, awake cortisol goes down."
+    },
+    {
+      "q": "In a healthy rhythm, cortisol begins to rise in the early morning hours just before you wake up. What is the useful purpose of that pre-wake rise?",
+      "o": [
+        "To make you fall back into deeper sleep and dream longer",
+        "To mobilize energy and alertness to help you transition from sleep to waking",
+        "To lower blood sugar and blood pressure before breakfast",
+        "To shut down memory and attention until the afternoon"
+      ],
+      "a": 2,
+      "tip": "The pre-waking cortisol peak mobilizes energy stores and alertness for the start of the day.",
+      "eli5": "Like warming up the car engine before driving, morning cortisol warms up your body's energy before you get up."
+    },
+    {
+      "q": "Scientists often describe the stress response in three stages: alarm, resistance, and exhaustion. What happens in each stage in order?",
+      "o": [
+        "Exhaustion first with collapse, then alarm with recovery, then resistance with full health",
+        "Resistance first with calm energy, then exhaustion with an energy burst, then alarm with shutdown",
+        "Alarm first with quick fight-or-flight mobilization, then resistance with sustained coping effort, then exhaustion if resources run low",
+        "Alarm, resistance, and exhaustion all happen at the same instant and last the same amount of time"
+      ],
+      "a": 3,
+      "tip": "The stress response moves from quick alarm to sustained resistance and then to exhaustion if stress continues too long.",
+      "eli5": "Like running a race: sprint at the start, steady pace to keep going, then collapse if you never get to rest."
+    },
+    {
+      "q": "During the stress response, cortisol helps control how the body uses fuel. Which group of nutrients does it help regulate?",
+      "o": [
+        "Fats, proteins, and carbohydrates",
+        "Only water and dietary fiber",
+        "Only calcium and vitamin D",
+        "Only sodium and potassium"
+      ],
+      "a": 1,
+      "tip": "Cortisol helps regulate the metabolism of fats, proteins, and carbohydrates.",
+      "eli5": "Like a kitchen manager deciding how to use butter, chicken, and pasta to keep meals cooking."
+    },
+    {
+      "q": "After a short danger has passed and you are safe again, what normally happens to cortisol as part of a healthy stress response?",
+      "o": [
+        "It stays at peak level for many weeks to keep you ready",
+        "It climbs even higher after the danger ends",
+        "It drops to zero permanently and never rises again",
+        "It falls back toward its normal baseline because stop signals tell the brain to stop driving cortisol release"
+      ],
+      "a": 4,
+      "tip": "After short stress ends, negative feedback lowers cortisol back toward baseline.",
+      "eli5": "Like turning down the thermostat after warming the house — once warm enough, the heater shuts off."
+    },
+    {
+      "q": "Why can ongoing emotional worry, like months of work or family pressure with no injury, keep cortisol raised?",
+      "o": [
+        "The adrenal glands start making cortisol on their own without any brain signals",
+        "The brain keeps treating the worry as a continuing threat and keeps telling the adrenals to release cortisol",
+        "The pituitary gland is permanently destroyed by worry and cannot make hormones",
+        "Cortisol builds up because the kidneys stop filtering blood during worry"
+      ],
+      "a": 2,
+      "tip": "Psychological stress keeps the brain signaling for cortisol even without physical injury.",
+      "eli5": "Like a smoke alarm that keeps ringing because someone keeps pressing the test button."
+    },
+    {
+      "q": "Which pair of examples best shows a helpful short-term stress response versus a harmful long-term stress response?",
+      "o": [
+        "Short-term: feeling calm during sleep; Long-term: feeling calm during vacation",
+        "Short-term: cortisol stays very high for a year with good sleep; Long-term: cortisol drops briefly during a game",
+        "Short-term: brief cortisol rise before a race that falls back afterward with quick recovery; Long-term: cortisol stays high for months with poor sleep, belly weight gain, and frequent colds",
+        "Short-term: cortisol never rises during an emergency; Long-term: cortisol never rises during months of stress"
+      ],
+      "a": 3,
+      "tip": "Short-term cortisol helps then recovers, while cortisol high for months harms sleep, weight, and immunity.",
+      "eli5": "Like borrowing an umbrella for one rainy dash versus carrying it for months until your arm aches."
+    },
+    {
+      "q": "If the stress response stays switched on for many months, what can happen to reproductive function such as periods, sex drive, and fertility?",
+      "o": [
+        "Reproduction is temporarily paused to save energy, so periods can become irregular and sex drive and fertility can drop",
+        "Reproduction becomes much stronger and fertility doubles during chronic stress",
+        "Reproductive hormones are never affected by cortisol at any level",
+        "Reproduction speeds up to burn extra energy and periods become more regular"
+      ],
+      "a": 1,
+      "tip": "Prolonged cortisol suppresses nonessential functions including reproduction to save energy.",
+      "eli5": "Like a school pausing art clubs during exams to save time for core tests."
+    },
+    {
+      "q": "During sudden stress, cortisol tells muscle and fat cells to take in less sugar for a while. Why is that helpful for energy?",
+      "o": [
+        "It lowers blood sugar to force the body to rest and save fuel",
+        "It leaves more glucose in the blood for the brain and urgent needs",
+        "It helps muscles store extra sugar as glycogen for later",
+        "It stops the liver from releasing any sugar into the blood"
+      ],
+      "a": 2,
+      "tip": "During stress cortisol spares blood glucose for the brain by reducing uptake by muscle and fat.",
+      "eli5": "Like saving the last cookies for the driver on a long trip, cortisol saves sugar for the brain."
+    },
+    {
+      "q": "If you have to keep going during a stressful wait with no food, how does cortisol help body fat supply energy?",
+      "o": [
+        "It tells fat cells to absorb more fat from the blood and lock it away",
+        "It turns fat directly into muscle tissue for strength",
+        "It blocks all use of fat so only sugar is burned",
+        "It triggers fat cells to release fatty acids into the blood for muscles to burn"
+      ],
+      "a": 4,
+      "tip": "Cortisol stimulates lipolysis, releasing fatty acids from fat tissue for fuel.",
+      "eli5": "Like opening a packed lunchbox, cortisol opens fat cells so muscles can grab snacks to burn."
+    },
+    {
+      "q": "When high cortisol lasts for weeks, it keeps turning muscle protein into new blood sugar. What is the energy trade-off for the body?",
+      "o": [
+        "Muscles lose protein and become thinner and weaker over time",
+        "Muscles grow larger because extra sugar builds new muscle",
+        "The liver stops making sugar and saves all protein",
+        "Body fat is burned up completely with no muscle change"
+      ],
+      "a": 1,
+      "tip": "Prolonged cortisol breaks down muscle protein for gluconeogenesis, causing muscle wasting.",
+      "eli5": "Like burning furniture to heat the house, using muscle for sugar keeps you going but weakens the house."
+    },
+    {
+      "q": "Cortisol and insulin are often described as having opposite jobs for blood sugar. What does that mean?",
+      "o": [
+        "Both hormones lower blood sugar at the same time after meals",
+        "Both hormones raise blood sugar only during sleep",
+        "Cortisol raises blood sugar to supply energy while insulin lowers it to store energy",
+        "Cortisol controls blood pressure while insulin controls blood sugar"
+      ],
+      "a": 3,
+      "tip": "Cortisol raises blood glucose while insulin lowers it, balancing availability and storage.",
+      "eli5": "Like a gas pedal and a brake for sugar, cortisol speeds sugar up and insulin slows it down."
+    },
+    {
+      "q": "Even without eating much more at first, why can months of high cortisol still lead to weight gain?",
+      "o": [
+        "Low cortisol slows digestion so food stays longer and weighs more",
+        "Repeated rises in blood sugar and insulin favor storing extra energy as fat",
+        "High cortisol makes the body unable to store any fat at all",
+        "High cortisol burns all protein and fat so weight must go up"
+      ],
+      "a": 2,
+      "tip": "Chronic cortisol-driven high blood sugar and insulin promote increased fat storage.",
+      "eli5": "Like leftovers packed into the freezer every night, extra sugar from cortisol gets packed away as fat."
+    },
+    {
+      "q": "Why does too little cortisol often cause extreme tiredness, weight loss, and low blood sugar even at rest?",
+      "o": [
+        "The body makes too much sugar and stores too much fat without cortisol",
+        "The immune system uses less energy so the body gains weight",
+        "The heart beats faster and burns no fuel without cortisol",
+        "The body cannot mobilize stored fuel or keep blood sugar steady without enough cortisol"
+      ],
+      "a": 4,
+      "tip": "Too little cortisol impairs mobilization of glucose and fat, causing fatigue, weight loss, and hypoglycemia.",
+      "eli5": "Like a pantry with a stuck door, without cortisol the body cannot get its stored food out for energy."
+    },
+    {
+      "q": "If you skip a meal and your blood sugar drops too low, how does your body normally use cortisol to help?",
+      "o": [
+        "It lowers cortisol to save energy for later",
+        "It raises cortisol to help bring blood sugar back up",
+        "It stops cortisol so insulin can rise higher",
+        "It keeps cortisol unchanged because food controls sugar alone"
+      ],
+      "a": 2,
+      "tip": "Low blood sugar triggers cortisol release as a counter-regulatory hormone to raise glucose.",
+      "eli5": "Like a heater that turns on when the room gets cold, low sugar turns cortisol up to warm sugar back up."
+    },
+    {
+      "q": "During a stressful wait with no food, cortisol keeps extra sugar in the blood. Which organ needs that steady sugar the most to keep you alert and thinking clearly?",
+      "o": [
+        "The brain, which uses a lot of blood sugar for focus",
+        "The bladder, which stores urine",
+        "The hair follicles, which grow hair",
+        "The outer skin, which keeps out germs"
+      ],
+      "a": 1,
+      "tip": "The brain depends heavily on a steady supply of blood glucose to function.",
+      "eli5": "The brain is like the boss in an office who needs snacks delivered nonstop to keep working."
+    },
+    {
+      "q": "After cortisol has raised blood sugar during stress, which organ brings blood sugar back down by releasing insulin, the hormone that helps cells take in sugar?",
+      "o": [
+        "The adrenal cortex above the kidney",
+        "The thyroid in the neck",
+        "The sweat glands in the skin",
+        "The pancreas behind the stomach"
+      ],
+      "a": 4,
+      "tip": "The pancreas releases insulin to lower blood sugar after it has been raised.",
+      "eli5": "If cortisol is the gas pedal for blood sugar, the pancreas with insulin is the brake pedal."
+    },
+    {
+      "q": "Leptin is a hormone that tells the brain you are full. When cortisol stays high for weeks, this fullness signal works less well. What happens to appetite?",
+      "o": [
+        "You feel thirsty instead of hungry",
+        "You lose all interest in smells and tastes",
+        "You feel hungry sooner and less satisfied after eating",
+        "You feel full faster and eat much less"
+      ],
+      "a": 3,
+      "tip": "Chronic high cortisol can cause leptin resistance, so satiety signals are blunted and hunger persists.",
+      "eli5": "It is like turning down the volume on a full-belly alarm, so your stomach keeps asking for more snacks."
+    },
+    {
+      "q": "During a very stressful week cortisol is already raising blood sugar. If you drink several sugary sodas for quick energy, what usually happens to blood sugar and hunger next?",
+      "o": [
+        "Blood sugar stays perfectly flat all day",
+        "Blood sugar drops low and stays low with no recovery",
+        "Blood sugar spikes higher then crashes, making hunger and cravings return",
+        "Blood sugar is used up only by muscles with no effect on hunger"
+      ],
+      "a": 2,
+      "tip": "Added sugar on top of cortisol-driven glucose causes a larger spike, larger insulin response, then rebound hunger.",
+      "eli5": "It is like piling extra logs on a fire, then the fire burns out fast and you want more logs again."
+    },
+    {
+      "q": "When cortisol is too low, fasting or illness can let blood sugar fall too low. Which 2 feelings are common warning signs of low blood sugar? (Choose 2)",
+      "o": [
+        "Feeling shaky, sweaty, and jittery",
+        "Suddenly feeling very hungry, irritable, or unable to concentrate",
+        "Feeling very thirsty and urinating often over many days",
+        "Having a skin cut that heals very slowly over weeks"
+      ],
+      "a": [
+        1,
+        2
+      ],
+      "tip": "Acute low blood sugar often causes shakiness, sweating, hunger, irritability, and trouble thinking.",
+      "eli5": "Low sugar warnings are like a car beeping when gas is almost empty, with shakes and grumpy hunger as the beeps."
+    },
+    {
+      "q": "In a brief stressful emergency, cortisol temporarily holds back parts of the immune defense to save energy. Which defense cells does it mainly quiet down in the short term?",
+      "o": [
+        "Red blood cells that carry oxygen to tissues",
+        "Lymphocytes such as T-cells and B-cells that attack germs and make antibodies",
+        "Platelets that help the blood clot after a cut",
+        "Nerve cells that carry signals between brain and muscles"
+      ],
+      "a": 2,
+      "tip": "Short-term cortisol mainly suppresses lymphocytes to pause nonessential immune activity.",
+      "eli5": "Like sending hall monitors back to class during a fire drill, cortisol tells germ-fighting lymphocytes to wait so energy can go elsewhere."
+    },
+    {
+      "q": "After a sprained ankle, blood vessels become leaky and fluid escapes, causing swelling and redness. What does a short-term rise in cortisol do to limit this swelling?",
+      "o": [
+        "Makes the walls of small blood vessels less leaky so less fluid escapes into the tissue",
+        "Makes the walls of small blood vessels much leakier so more fluid escapes",
+        "Blocks red blood cells from carrying oxygen to the injured area",
+        "Dissolves platelets so the blood cannot clot at all"
+      ],
+      "a": 1,
+      "tip": "Short-term cortisol reduces vessel leakiness and blood flow to injured tissue, which limits swelling.",
+      "eli5": "Like tightening a dripping hose, cortisol makes vessels less leaky so less watery fluid puddles and swells the ankle."
+    },
+    {
+      "q": "One helpful job of cortisol is to act as a brake when the immune system starts to overreact to a minor trigger. Why is this braking action important for healthy tissues?",
+      "o": [
+        "It helps germs grow faster so the immune system can practice",
+        "It raises fever much higher to burn germs more quickly",
+        "It makes the immune system attack food and water for extra energy",
+        "It prevents an overactive immune attack from damaging the body's own healthy tissues"
+      ],
+      "a": 4,
+      "tip": "Cortisol prevents collateral damage by stopping the immune system from attacking the body's own tissues.",
+      "eli5": "Like a teacher calming an overexcited tug-of-war team, cortisol stops the immune pull from hurting its own side."
+    },
+    {
+      "q": "Adults with constantly high cortisol for many months often get less protection from vaccines. What does long-term high cortisol do to weaken vaccine protection?",
+      "o": [
+        "It makes the heart beat too slowly to circulate the vaccine",
+        "It lowers production of protective antibodies by B-cells after vaccination",
+        "It makes the stomach digest the vaccine before it can work",
+        "It increases appetite so the vaccine is used up as food energy"
+      ],
+      "a": 2,
+      "tip": "Chronically high cortisol suppresses B-cells and antibody production, so vaccines create weaker immunity.",
+      "eli5": "Like a factory with tired workers making fewer shields, high cortisol leaves B-cells making fewer antibody shields after a shot."
+    },
+    {
+      "q": "Some people carry quiet, hidden viruses, such as the virus that causes cold sores. What often happens to these hidden viruses when cortisol stays very high for many months?",
+      "o": [
+        "They wake up and cause outbreaks more often because immune surveillance is weakened",
+        "They are permanently destroyed because cortisol kills all viruses directly",
+        "They turn into helpful bacteria that aid digestion",
+        "They leave the body through sweat with no symptoms at all"
+      ],
+      "a": 1,
+      "tip": "Sustained high cortisol weakens immune surveillance, allowing latent viruses to reactivate.",
+      "eli5": "Like guards falling asleep on night shift, a weakened immune watch lets sneaky cold-sore viruses slip out again."
+    },
+    {
+      "q": "Shortly after a big cortisol surge, white blood cells move to different places for a few hours rather than being destroyed. Which 2 blood-test changes are typically seen for a few hours after the surge? (Choose 2)",
+      "o": [
+        "Lymphocyte count in blood goes down as cells move out into lymph nodes and tissues",
+        "Red blood cell count drops sharply because cortisol stops oxygen transport",
+        "Neutrophil count in blood goes up as cells detach from vessel walls into the bloodstream",
+        "Blood sugar drops to zero because cortisol uses up all glucose at once"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Acute cortisol causes temporary lymphopenia by redistribution and neutrophilia by demargination.",
+      "eli5": "Like kids changing classrooms when the bell rings, lymphocytes hide in side rooms while neutrophils crowd the hallway, then all return later."
+    },
+    {
+      "q": "Cortisol is said to have a 'permissive' effect on blood pressure. What does that mean in plain language?",
+      "o": [
+        "It directly forces the heart to stop for a rest",
+        "It blocks all nerve signals to blood vessels",
+        "It does not tighten vessels strongly by itself, but it helps adrenaline and noradrenaline tighten vessels",
+        "It permanently widens blood vessels to lower pressure"
+      ],
+      "a": 3,
+      "tip": "Cortisol maintains blood pressure mainly by making vessels more sensitive to catecholamines like adrenaline.",
+      "eli5": "Like a helper holding a ladder steady, cortisol does not climb itself but lets adrenaline do its tightening job."
+    },
+    {
+      "q": "In a sudden fright, adrenaline raises heart rate within seconds. What is cortisol's teamwork role for circulation over the next minutes to hours?",
+      "o": [
+        "It helps sustain blood pressure so blood keeps reaching the brain and muscles",
+        "It quickly drops blood pressure to make you sleepy",
+        "It stops the heartbeat to save energy",
+        "It only changes digestion and does nothing for circulation"
+      ],
+      "a": 1,
+      "tip": "Adrenaline gives the fast response and cortisol helps sustain vascular tone and pressure during stress.",
+      "eli5": "Adrenaline is the sprinter who starts fast, cortisol is the teammate who keeps carrying the baton longer."
+    },
+    {
+      "q": "A person must take a cortisol-like steroid medicine such as prednisone every day for several months. Why does the doctor regularly check blood pressure and look for swollen ankles?",
+      "o": [
+        "Because these medicines always cause severe dehydration and very low pressure",
+        "Because these medicines can make the body hold extra salt and water and raise blood pressure",
+        "Because these medicines permanently cure high blood pressure",
+        "Because these medicines only affect eyesight and hearing"
+      ],
+      "a": 2,
+      "tip": "Long-term glucocorticoid medicines can cause sodium and water retention and raise blood pressure.",
+      "eli5": "Like adding too much salt to soup and keeping extra water in the pot, the body holds fluid and pressure rises."
+    },
+    {
+      "q": "When cortisol stays very high for a long time, the kidneys may lose too much potassium while holding on to salt and water. How can very low potassium affect muscles and the heart?",
+      "o": [
+        "It makes bones instantly unbreakable",
+        "It causes muscle weakness, cramps, and irregular heartbeats",
+        "It gives permanent perfect vision",
+        "It makes blood pressure always stay very low and steady"
+      ],
+      "a": 2,
+      "tip": "Excess cortisol mineralocorticoid activity retains sodium and loses potassium, which can disturb muscle and heart rhythm.",
+      "eli5": "Think of potassium like batteries for muscles; when batteries run low, muscles twitch weakly and the heart can skip beats."
+    },
+    {
+      "q": "Long-term untreated high cortisol often keeps blood pressure high for years. Which 2 heart and vessel problems does this long-term high blood pressure raise the risk for? (Choose 2)",
+      "o": [
+        "Heart disease and heart attack from strained heart and damaged coronary arteries",
+        "Sharper night vision that never fades",
+        "Stroke from damaged blood vessels in the brain",
+        "Permanent protection against all infections"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "tip": "Chronic hypertension from excess cortisol damages artery walls and raises risk of heart attack and stroke.",
+      "eli5": "Like high water pressure wearing out old garden hoses, years of high pressure wear out heart pipes and brain pipes."
+    },
+    {
+      "q": "For a healthier heart, doctors advise steady sleep, regular moderate exercise, and calm evenings. How does this routine help blood pressure through cortisol?",
+      "o": [
+        "It keeps cortisol at maximum all night to keep vessels tight",
+        "It helps keep evening cortisol low so blood vessels can relax overnight and the morning rhythm stays normal",
+        "It removes all cortisol from the body forever",
+        "It makes blood pressure spike every night for training"
+      ],
+      "a": 2,
+      "tip": "Healthy sleep and stress habits support a normal cortisol rhythm with low evening levels, which supports healthy nighttime blood pressure dipping.",
+      "eli5": "Like dimming lights before bedtime, a calm evening lowers cortisol so blood vessels can soften and rest overnight."
+    },
+    {
+      "q": "During a sudden scare, cortisol briefly rises. How does this short-term rise affect how you remember that scary event?",
+      "o": [
+        "It mostly erases the memory so you forget the danger",
+        "It helps stamp in a strong emotional memory so you remember the danger",
+        "It only affects muscle memory, not brain memory",
+        "It blocks all new memories for several days"
+      ],
+      "a": 2,
+      "tip": "Short-term cortisol helps strengthen consolidation of emotional memories.",
+      "eli5": "Like using a highlighter on one scary page, short-term cortisol marks it so your brain keeps it."
+    },
+    {
+      "q": "After many months of high cortisol from ongoing chronic stress, which mood pattern is most typical?",
+      "o": [
+        "Calm, cheerful mood with extra patience",
+        "Sharply improved self-confidence and energy",
+        "No change in feelings or emotions at all",
+        "More anxious, irritable, or low mood with less enjoyment"
+      ],
+      "a": 4,
+      "tip": "Chronically high cortisol is linked to anxiety, irritability, and depressive symptoms.",
+      "eli5": "Like loud static playing for weeks, constant high cortisol wears down a good mood."
+    },
+    {
+      "q": "A person with long-term high cortisol says they have brain fog at work. Which everyday example best fits brain fog?",
+      "o": [
+        "Losing train of thought, getting easily distracted, and forgetting recent details",
+        "Remembering every detail faster than usual",
+        "Suddenly speaking a new language fluently",
+        "Needing less sleep but thinking more clearly"
+      ],
+      "a": 1,
+      "tip": "Sustained high cortisol often impairs attention, concentration, and short-term memory.",
+      "eli5": "Like a messy desk with papers everywhere, a foggy brain struggles to find the right note."
+    },
+    {
+      "q": "The hippocampus, the brain area that forms new memories, has many cortisol receptors (docking spots for cortisol). Why does this matter?",
+      "o": [
+        "It means the hippocampus never responds to cortisol",
+        "It means cortisol only affects the muscles, not the hippocampus",
+        "It makes the hippocampus especially sensitive to very high cortisol over time",
+        "It means the hippocampus makes cortisol itself"
+      ],
+      "a": 3,
+      "tip": "High density of cortisol receptors makes the hippocampus vulnerable to chronic high cortisol.",
+      "eli5": "Like having many ears in one room, the hippocampus hears cortisol loudly and gets overwhelmed."
+    },
+    {
+      "q": "When cortisol has stayed very high for weeks, what often happens when you try to recall facts you already learned, such as names or test answers?",
+      "o": [
+        "Recall becomes instant and perfect every time",
+        "Recall often becomes harder, with more blanks and forgotten words",
+        "Old memories are completely replaced with new ones",
+        "Only childhood memories improve while recent ones stay the same"
+      ],
+      "a": 2,
+      "tip": "Prolonged high cortisol can impair memory retrieval and clear thinking.",
+      "eli5": "Like trying to find a book in a noisy library, high cortisol makes it harder to pull out what you know."
+    },
+    {
+      "q": "If long-term high cortisol is brought back toward normal with medical treatment, better sleep, and less stress, what often happens to memory and mood?",
+      "o": [
+        "They often gradually improve as the brain recovers",
+        "They always get permanently worse no matter what",
+        "Memory improves but mood can never change",
+        "Mood improves but memory is permanently erased"
+      ],
+      "a": 1,
+      "tip": "Many cortisol-related memory and mood changes can partly reverse when cortisol normalizes.",
+      "eli5": "Like plants perking up after a long dry spell gets water, the brain often recovers when stress eases."
+    },
+    {
+      "q": "A doctor suspects adrenal insufficiency (adrenals making too little cortisol) and orders a first blood cortisol test at about 8 a.m. Why is early morning the best time for this first check?",
+      "o": [
+        "Because eating breakfast removes all cortisol from the blood, giving a clean zero baseline",
+        "Because ACTH is only made at night, so morning cortisol is unrelated to adrenal health",
+        "Because cortisol is normally at its daily peak in the morning, so a low level then suggests the adrenals cannot make enough",
+        "Because cortisol is normally lowest in the morning, so any cortisol found means there is too much"
+      ],
+      "a": 3,
+      "tip": "Early-morning serum cortisol is the recommended initial test for adrenal insufficiency because that is when healthy cortisol peaks.",
+      "eli5": "Like checking the bakery at opening time when shelves should be full — if shelves are empty then, you know there is a real baking problem."
+    },
+    {
+      "q": "A doctor does an overnight dexamethasone suppression test (you take a small nighttime dose of a cortisol-like steroid, then morning cortisol is measured). What result is normal, and what suggests Cushing syndrome with too much cortisol?",
+      "o": [
+        "Normally morning cortisol falls very low because the dose switches off natural production; if it stays high it suggests the body is making too much cortisol on its own",
+        "Normally morning cortisol rises very high after the dose; if it stays low it suggests too much cortisol",
+        "Normally the dose has no effect on cortisol; any change suggests adrenal failure",
+        "Normally urine volume doubles after the dose; if it does not, it suggests too little cortisol"
+      ],
+      "a": 1,
+      "tip": "Dexamethasone should suppress HPA-axis cortisol by negative feedback, so failure to suppress points toward autonomous cortisol excess.",
+      "eli5": "Like pressing the off button on a sprinkler — a good system stops watering, but if it keeps spraying, the switch is broken."
+    },
+    {
+      "q": "A doctor does an ACTH stimulation test, also called a cosyntropin test (a safe copy of the pituitary signal ACTH is injected, then blood cortisol is measured after 30 to 60 minutes). Which pattern points to adrenal insufficiency with too little cortisol?",
+      "o": [
+        "Cortisol starts high and then falls to zero within minutes, which is normal",
+        "Cortisol rises very high and stays high for days, which means the adrenals are failing",
+        "Blood sugar falls to zero right after the injection, which confirms healthy adrenals",
+        "Cortisol barely rises after the ACTH signal, which means the adrenal cortex cannot respond and make enough"
+      ],
+      "a": 4,
+      "tip": "Healthy adrenals should raise cortisol sharply after synthetic ACTH; a flat response indicates adrenal insufficiency.",
+      "eli5": "Like shouting to someone to lift a box — if they barely move, you know their muscles, not your shout, are the problem."
+    },
+    {
+      "q": "Why might a doctor order saliva cortisol samples at several times in one day, for example morning, afternoon, and late night, rather than only one morning blood test?",
+      "o": [
+        "To avoid ever needing to know the time of day the sample was taken",
+        "To check the healthy daily rhythm with a morning peak and a very low late-night level and see if that rhythm is lost",
+        "To measure cholesterol and blood sugar instead of cortisol",
+        "To prove that cortisol is always exactly the same level all day in healthy people"
+      ],
+      "a": 2,
+      "tip": "Multiple timed samples reveal circadian rhythm, which is normally 2-3 times higher on waking than in the evening and lost in Cushing syndrome.",
+      "eli5": "Like taking photos of the tide morning and night — one photo tells little, but several show if the normal rise and fall is missing."
+    },
+    {
+      "q": "Most cortisol in blood is stuck to a carrier protein called CBG, while cortisol in saliva shows only the free, active cortisol. Why does the lab need to know if a patient is pregnant or taking estrogen birth-control pills when reading a blood cortisol test?",
+      "o": [
+        "Because estrogen raises the carrier protein so total blood cortisol looks high even when the active free cortisol is normal",
+        "Because estrogen destroys all cortisol so blood tests are always zero in pregnancy",
+        "Because pregnancy and estrogen make saliva tests impossible to collect",
+        "Because estrogen only affects urine color and has no effect on cortisol carriers"
+      ],
+      "a": 1,
+      "tip": "Estrogen increases cortisol-binding globulin, raising total blood cortisol without raising free active cortisol measured in saliva.",
+      "eli5": "Like counting kids on a school bus versus kids playing outside — more buses can hold more kids, but it does not mean more kids are free to play."
+    }
+  ]
+}
