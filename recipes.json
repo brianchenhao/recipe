@@ -9330,6 +9330,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cucumber-pickles",
+      "title": "Cucumber Pickles",
+      "author": "",
+      "cat": "Pickles",
+      "tags": [
+        "homemade",
+        "cucumber",
+        "dill",
+        "pickled"
+      ],
+      "img": "images/cucumber-pickles-card.jpg",
+      "poster": "images/cucumber-pickles.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crisp tangy cucumber slices pickled with dill, garlic and spices.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes ~1 jar",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
