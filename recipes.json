@@ -9463,6 +9463,43 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cortisol-stress-and-balance",
+      "section": "questions",
+      "title": "Cortisol Stress And Balance",
+      "author": "",
+      "cat": "Health & Medicine",
+      "tags": [
+        "cortisol",
+        "stress",
+        "hormones",
+        "adrenal health",
+        "wellness"
+      ],
+      "img": "",
+      "poster": "",
+      "quiz": "quizzes/cortisol-stress-and-balance.json",
+      "questionCount": 150,
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "This quiz covers what cortisol is and how the body controls it through daily rhythms and stress responses. It explores metabolism, immunity, sleep, testing, related disorders, and everyday habits that affect balance.",
+      "lede": "",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
