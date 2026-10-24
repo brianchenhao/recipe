@@ -9396,6 +9396,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sweet-corn-butter-loaf",
+      "title": "Sweet Corn Butter Loaf",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Western",
+        "sweet corn",
+        "buttery",
+        "baked"
+      ],
+      "img": "images/sweet-corn-butter-loaf-card.jpg",
+      "poster": "images/sweet-corn-butter-loaf.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft fluffy buttery loaf loaded with sweet corn kernels for breakfast.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 1 loaf, about 20 x 10 x 10 cm",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
