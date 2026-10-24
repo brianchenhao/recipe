@@ -9528,6 +9528,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "katori-chaat",
+      "title": "Katori Chaat",
+      "author": "",
+      "cat": "Salad",
+      "tags": [
+        "Indian",
+        "chickpea",
+        "potato",
+        "deep-fried"
+      ],
+      "img": "images/katori-chaat-card.jpg",
+      "poster": "images/katori-chaat.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy edible bowls filled with tangy potatoes, chickpeas and chutneys.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 8-10 katori bowls",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
