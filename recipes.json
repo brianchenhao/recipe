@@ -9429,6 +9429,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "crispy-chicken-salad",
+      "title": "Crispy Chicken Salad",
+      "author": "",
+      "cat": "Salad",
+      "tags": [
+        "Western",
+        "chicken",
+        "fried",
+        "healthy"
+      ],
+      "img": "images/crispy-chicken-salad-card.jpg",
+      "poster": "images/crispy-chicken-salad.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy panko chicken sliced over fresh crunchy vegetables with creamy honey lemon dressing.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
