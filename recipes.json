@@ -9462,6 +9462,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kuih-licak-sarawak",
+      "title": "Kuih Licak Sarawak",
+      "author": "",
+      "cat": "Kuih",
+      "tags": [
+        "Sarawak",
+        "rice flour",
+        "coconut",
+        "steamed"
+      ],
+      "img": "images/kuih-licak-sarawak-card.jpg",
+      "poster": "images/kuih-licak-sarawak.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft chewy steamed rice cakes coated with fragrant gula Melaka coconut topping.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 16 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
