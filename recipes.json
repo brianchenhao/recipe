@@ -9495,6 +9495,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sweet-potato-salad-pizza",
+      "title": "Sweet Potato Salad Pizza",
+      "author": "",
+      "cat": "Salad",
+      "tags": [
+        "western",
+        "sweet potato",
+        "baked",
+        "vegetarian"
+      ],
+      "img": "images/sweet-potato-salad-pizza-card.jpg",
+      "poster": "images/sweet-potato-salad-pizza.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy sweet potato base topped with fresh colorful veggies and creamy yogurt dressing.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes 1 pizza, 2-3 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
