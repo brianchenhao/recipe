@@ -9627,6 +9627,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kuih-pie-tee",
+      "title": "Kuih Pie Tee",
+      "author": "",
+      "cat": "Kuih",
+      "tags": [
+        "Peranakan",
+        "prawns",
+        "jicama",
+        "deep-fried"
+      ],
+      "img": "images/kuih-pie-tee-card.jpg",
+      "poster": "images/kuih-pie-tee.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy pastry cups filled with juicy savoury prawn and vegetable filling.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 20-24 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
