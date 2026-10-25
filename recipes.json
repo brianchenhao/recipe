@@ -9594,6 +9594,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "oi-muchim",
+      "title": "Oi Muchim",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Korean",
+        "cucumber",
+        "spicy",
+        "marinated"
+      ],
+      "img": "images/oi-muchim-card.jpg",
+      "poster": "images/oi-muchim.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crisp cucumber slices in a spicy, garlicky, tangy Korean dressing.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "~30 mins",
+      "yield": "4 as banchan",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
