@@ -9660,6 +9660,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "taufufa",
+      "title": "Taufufa",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Malaysian",
+        "soybean",
+        "pudding",
+        "ginger syrup"
+      ],
+      "img": "images/taufufa-card.jpg",
+      "poster": "images/taufufa.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Silky soft soybean pudding served with warm ginger palm sugar syrup.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4-6",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
