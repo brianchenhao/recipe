@@ -9835,6 +9835,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "how-to-lower-insulin-resistance",
+      "section": "health",
+      "title": "How to Lower Insulin Resistance",
+      "author": "",
+      "cat": "Wellbeing",
+      "tags": [
+        "insulin resistance",
+        "blood sugar",
+        "healthy eating",
+        "exercise",
+        "weight loss"
+      ],
+      "img": "images/how-to-lower-insulin-resistance-card.jpg",
+      "poster": "images/how-to-lower-insulin-resistance.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Lower insulin resistance with healthy foods, activity, weight loss, sleep, and balanced eating habits.",
+      "lede": "",
+      "body": "Choose whole, nutrient-dense foods that keep blood sugar stable: non-starchy vegetables, whole grains like oats, quinoa, brown rice and barley, beans and legumes, healthy fats, fatty fish like salmon, sardines, mackerel and tuna, and berries and other low-glycemic fruits. Limit sugary drinks, candy, baked goods, white bread, white rice and processed snacks.\n\nMove regularly to help muscles absorb glucose and improve insulin sensitivity: at least 150 minutes of moderate aerobic exercise per week like brisk walking, cycling or swimming, 2-3 strength sessions per week, and a 10-20 minute walk after meals to lower blood sugar spikes.\n\nLose a small amount of weight to see big improvements, as just 5%-10% weight loss can significantly improve insulin sensitivity.\n\nGet 7-9 hours of quality sleep, manage stress with deep breathing, yoga, hobbies or time in nature, avoid smoking and limit alcohol, and work with your doctor to monitor fasting glucose and HbA1c.\n\nPair protein and fiber with carbohydrates to prevent spikes, eat vegetables first, protein next and carbohydrates last, and allow a 12-hour or longer overnight fast like dinner at 7pm and breakfast after 7am.\n\nHelpful foods include cinnamon, apple cider vinegar, green tea or matcha, nuts and seeds, berries, legumes and fatty fish to support lower insulin levels and better sensitivity.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
