@@ -9764,6 +9764,41 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "foods-that-help-lower-cholesterol",
+      "section": "health",
+      "title": "Foods That Help Lower Cholesterol",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "cholesterol",
+        "heart health",
+        "fiber",
+        "healthy fats"
+      ],
+      "img": "images/foods-that-help-lower-cholesterol-card.jpg",
+      "poster": "images/foods-that-help-lower-cholesterol.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Eat fiber-rich, heart-healthy foods to lower LDL and support heart health.",
+      "lede": "",
+      "body": "Oats and whole grains include oats, barley, quinoa and brown rice. Soluble fiber binds cholesterol and helps lower LDL.\n\nNuts and seeds include almonds, walnuts, chia seeds and flaxseeds. Healthy fats and plant sterols support better cholesterol levels.\n\nFatty fish includes salmon, sardines, mackerel and tuna. Omega-3s help raise HDL and lower triglycerides.\n\nBeans and legumes include lentils, chickpeas, black beans and kidney beans. High in soluble fiber that reduces LDL cholesterol.\n\nFruits and veggies include apples, berries, avocado and spinach. Fiber, antioxidants and healthy fats improve cholesterol balance.\n\nHealthy oils and plant foods include olive oil, avocado, soy products and plant sterols. Unsaturated fats and plant compounds help lower LDL.\n\nThese foods help by less LDL absorption, better cholesterol balance, and healthier heart.\n\nExtra tips: choose whole foods, limit saturated and trans fats, stay active, and manage weight.\n\nKey takeaway: focus on soluble fiber, healthy fats, and plant-rich foods to help lower cholesterol naturally.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
