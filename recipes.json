@@ -9799,6 +9799,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "foods-that-help",
+      "section": "health",
+      "title": "Foods That Help",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "cholesterol",
+        "blood pressure",
+        "diabetes",
+        "fiber-rich",
+        "heart health"
+      ],
+      "img": "images/foods-that-help-card.jpg",
+      "poster": "images/foods-that-help.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Fiber-rich, potassium-rich, low-glycemic whole foods to help manage cholesterol, blood pressure and blood sugar.",
+      "lede": "",
+      "body": "1. Leafy Greens & Veggies: Spinach, Kale, Broccoli, Beets, Bell peppers. High in fiber, potassium and magnesium; support blood pressure, cholesterol and blood sugar.\n\n2. Berries & Low-GI Fruits: Blueberries, Strawberries, Apples, Avocado. Antioxidants and fiber blunt blood sugar spikes and support heart health.\n\n3. Fatty Fish: Salmon, Sardines, Mackerel, Tuna. Omega-3s improve insulin sensitivity, lower triglycerides and support blood vessels.\n\n4. Oats & Whole Grains: Oats, Quinoa, Barley, Brown rice. Soluble fiber lowers LDL cholesterol and stabilizes blood sugar.\n\n5. Beans & Legumes: Lentils, Chickpeas, Black beans, Kidney beans. Plant protein and soluble fiber help lower blood pressure, cholesterol and post-meal glucose.\n\n6. Nuts, Seeds & Healthy Fats: Almonds, Walnuts, Chia seeds, Olive oil. Healthy fats and fiber improve insulin sensitivity and heart health.\n\nHow These Foods Help: Stable blood sugar, lower blood pressure, better cholesterol, healthier heart.\n\nExtra Tips: Choose whole, minimally processed foods. Pair carbs with protein and fiber. Stay active. Limit salt and added sugar.\n\nKey Takeaway: Focus on fiber-rich, potassium-rich, low-glycemic whole foods to help manage blood pressure, cholesterol and blood sugar together.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
