@@ -9728,6 +9728,42 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "foods-that-help-lower-high-blood-pressure",
+      "section": "health",
+      "title": "Foods That Help Lower High Blood Pressure",
+      "author": "",
+      "cat": "Nutrition",
+      "tags": [
+        "blood pressure",
+        "heart health",
+        "potassium",
+        "low-sodium",
+        "whole foods"
+      ],
+      "img": "images/foods-that-help-lower-high-blood-pressure-card.jpg",
+      "poster": "images/foods-that-help-lower-high-blood-pressure.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Eat potassium-rich, magnesium-rich, low-sodium, heart-healthy foods to help lower high blood pressure naturally.",
+      "lede": "",
+      "body": "Leafy Greens & Veggies: spinach, kale, Swiss chard, beets, broccoli, tomatoes. High in potassium, magnesium & nitrates that help relax blood vessels.\n\nBerries & Fruits: blueberries, strawberries, bananas, oranges, avocado. Rich in potassium & antioxidants that support healthy blood pressure.\n\nFatty Fish: salmon, sardines, mackerel, tuna. Omega-3s reduce inflammation and improve blood vessel function.\n\nWhole Grains: oats, quinoa, brown rice, barley. Fiber and magnesium help stabilize blood pressure.\n\nNuts & Seeds: almonds, walnuts, chia seeds, flaxseeds, pumpkin seeds. Healthy fats, magnesium & fiber support heart health.\n\nGarlic & Herbs: garlic, cinnamon, basil, oregano. Garlic compounds help blood vessels relax.\n\nHow these foods help: relaxed blood vessels lead to lower pressure and a healthier heart.\n\nExtra tips: choose low-sodium options, pair with movement, stay hydrated, and get enough sleep.\n\nKey takeaway: focus on potassium-rich, high-fiber, low-sodium whole foods (DASH style) to help lower blood pressure naturally.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
