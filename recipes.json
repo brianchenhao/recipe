@@ -9904,6 +9904,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "pumpkin-with-salted-egg",
+      "title": "Pumpkin with Salted Egg",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Chinese",
+        "Pumpkin",
+        "Salted Egg",
+        "Baked"
+      ],
+      "img": "images/pumpkin-with-salted-egg-card.jpg",
+      "poster": "images/pumpkin-with-salted-egg.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Golden pumpkin wedges coated in creamy sandy salted egg yolk, baked until crisp.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
