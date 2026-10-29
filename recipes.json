@@ -9937,6 +9937,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kupang-cili-hijau",
+      "title": "Kupang Cili Hijau",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Malaysian",
+        "mussels",
+        "green chili",
+        "stir-fry"
+      ],
+      "img": "images/kupang-cili-hijau-card.jpg",
+      "poster": "images/kupang-cili-hijau.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Fresh mussels stir-fried with aromatic green chilies, garlic and herbs.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
