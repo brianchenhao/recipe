@@ -9970,6 +9970,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sambal-cincalok",
+      "title": "Sambal Cincalok",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Malaysian",
+        "fermented shrimp",
+        "chilli",
+        "pounded"
+      ],
+      "img": "images/sambal-cincalok-card.jpg",
+      "poster": "images/sambal-cincalok.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Spicy, tangy Malaysian sambal pounded with fermented shrimp, chillies and lime.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
