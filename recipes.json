@@ -10003,6 +10003,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "crispy-fried-chicken",
+      "title": "Crispy Fried Chicken",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "homestyle",
+        "chicken",
+        "deep-fried",
+        "crispy"
+      ],
+      "img": "images/crispy-fried-chicken-card.jpg",
+      "poster": "images/crispy-fried-chicken.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Classic crunchy fried chicken that's crispy outside and juicy inside.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
