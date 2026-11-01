@@ -10036,6 +10036,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "maggi-goreng-mamak",
+      "title": "Maggi Goreng Mamak",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Malaysian",
+        "Instant Noodles",
+        "Fried",
+        "Spicy"
+      ],
+      "img": "images/maggi-goreng-mamak-card.jpg",
+      "poster": "images/maggi-goreng-mamak.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Spicy, savoury fried instant noodles with mamak stall flavour.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
