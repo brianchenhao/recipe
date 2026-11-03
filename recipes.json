@@ -10069,6 +10069,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cheese-tart",
+      "title": "Cheese Tart",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Japanese-style",
+        "cream cheese",
+        "baked"
+      ],
+      "img": "images/cheese-tart-card.jpg",
+      "poster": "images/cheese-tart.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Buttery tart crust with smooth, rich and creamy cheese filling.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "about 12 tarts",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
