@@ -10134,6 +10134,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "quiche-au-camembert-2",
+      "title": "Quiche au Camembert",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "French",
+        "Camembert",
+        "egg",
+        "baked"
+      ],
+      "img": "images/quiche-au-camembert-2-card.jpg",
+      "poster": "images/quiche-au-camembert-2.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "A creamy, rich and aromatic quiche with melted Camembert, egg custard and a flaky crust.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
