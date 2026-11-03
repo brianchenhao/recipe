@@ -10167,6 +10167,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "fried-bee-hoon-bihun-goreng",
+      "title": "Fried Bee Hoon (Bihun Goreng)",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Malaysian",
+        "rice vermicelli",
+        "stir-fried",
+        "prawns"
+      ],
+      "img": "images/fried-bee-hoon-bihun-goreng-card.jpg",
+      "poster": "images/fried-bee-hoon-bihun-goreng.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "A classic Malaysian-style stir-fried rice vermicelli — savoury, fragrant and full of wok hei!",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
