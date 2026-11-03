@@ -10076,8 +10076,9 @@
       "author": "",
       "cat": "Dessert",
       "tags": [
-        "Japanese-style",
-        "cream cheese",
+        "bakery",
+        "cheese",
+        "creamy",
         "baked"
       ],
       "img": "images/cheese-tart-card.jpg",
@@ -10085,7 +10086,7 @@
       "ill": "ill-cake",
       "badge": "New",
       "featured": false,
-      "desc": "Buttery tart crust with smooth, rich and creamy cheese filling.",
+      "desc": "Buttery tart crust with smooth, rich and creamy cheese filling!",
       "lede": "The whole recipe is in the picture — tap it to zoom in.",
       "level": "",
       "prep": "",
