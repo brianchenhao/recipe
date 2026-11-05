@@ -10266,6 +10266,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kari-ayam-mamak-style",
+      "title": "Kari Ayam Mamak Style",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Mamak",
+        "chicken",
+        "potato",
+        "curry"
+      ],
+      "img": "images/kari-ayam-mamak-style-card.jpg",
+      "poster": "images/kari-ayam-mamak-style.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rich, aromatic and flavourful curry with tender chicken and potatoes!",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
