@@ -10299,6 +10299,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "vegan-pretzel-bun",
+      "title": "Vegan Pretzel Bun",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "German",
+        "flour",
+        "baked",
+        "vegan"
+      ],
+      "img": "images/vegan-pretzel-bun-card.jpg",
+      "poster": "images/vegan-pretzel-bun.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, chewy golden pretzel buns perfect for burgers or sandwiches.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "8 buns",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
