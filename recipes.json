@@ -10233,6 +10233,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "teh-tarik-mamak-style",
+      "title": "Teh Tarik Mamak Style",
+      "author": "",
+      "cat": "Drinks",
+      "tags": [
+        "Malaysian",
+        "black tea",
+        "milk tea",
+        "pulled"
+      ],
+      "img": "images/teh-tarik-mamak-style-card.jpg",
+      "poster": "images/teh-tarik-mamak-style.jpg",
+      "ill": "ill-drink",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rich, creamy, frothy and aromatic Malaysian pulled milk tea.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
