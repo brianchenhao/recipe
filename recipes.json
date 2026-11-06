@@ -10464,6 +10464,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "low-net-carb-wheat-bran-pancakes",
+      "title": "Low-Net-Carb Wheat Bran Pancakes",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "low-carb",
+        "wheat bran",
+        "almond flour",
+        "pan-fried"
+      ],
+      "img": "images/low-net-carb-wheat-bran-pancakes-card.jpg",
+      "poster": "images/low-net-carb-wheat-bran-pancakes.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "A high-fiber, low-net-carb pancake that's quick, filling and blood sugar friendly!",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "1 large or 2 small",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
