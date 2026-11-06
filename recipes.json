@@ -10431,6 +10431,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "teh-halia-mamak-style",
+      "title": "Teh Halia Mamak Style",
+      "author": "",
+      "cat": "Drinks",
+      "tags": [
+        "Mamak",
+        "Ginger",
+        "Milk Tea",
+        "Boiled"
+      ],
+      "img": "images/teh-halia-mamak-style-card.jpg",
+      "poster": "images/teh-halia-mamak-style.jpg",
+      "ill": "ill-drink",
+      "badge": "New",
+      "featured": false,
+      "desc": "Aromatic, creamy and warming tea with the bold kick of fresh ginger!",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
