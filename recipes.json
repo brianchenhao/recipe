@@ -10365,6 +10365,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "ramen-eggs",
+      "title": "Ramen Eggs",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Japanese",
+        "egg",
+        "marinated",
+        "soy sauce"
+      ],
+      "img": "images/ramen-eggs-card.jpg",
+      "poster": "images/ramen-eggs.jpg",
+      "ill": "ill-egg",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rich, savoury, umami eggs with a creamy jammy yolk!",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
