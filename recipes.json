@@ -10398,6 +10398,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "pita-bread",
+      "title": "Pita Bread",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Middle Eastern",
+        "flour",
+        "yeast bread",
+        "pan-cooked"
+      ],
+      "img": "images/pita-bread-card.jpg",
+      "poster": "images/pita-bread.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, fluffy pocket-style bread perfect for wraps, shawarma, or dipping.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
