@@ -10332,6 +10332,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "mutton-varuval-mamak-style",
+      "title": "Mutton Varuval Mamak Style",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Mamak",
+        "Mutton",
+        "Dry Curry",
+        "Spicy"
+      ],
+      "img": "images/mutton-varuval-mamak-style-card.jpg",
+      "poster": "images/mutton-varuval-mamak-style.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender mutton tossed in a rich, fragrant, dry masala – a classic mamak favourite!",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
