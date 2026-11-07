@@ -10762,6 +10762,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "vegan-chicken-oyster-mushroom",
+      "title": "Vegan Chicken (Oyster Mushroom)",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "vegan",
+        "oyster mushroom",
+        "pan-fry"
+      ],
+      "img": "images/vegan-chicken-oyster-mushroom-card.jpg",
+      "poster": "images/vegan-chicken-oyster-mushroom.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Meaty, juicy plant-based chicken made from seasoned oyster mushrooms.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
