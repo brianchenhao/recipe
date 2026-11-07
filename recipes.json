@@ -10629,6 +10629,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "peanut-lotus-root-soup",
+      "title": "Peanut Lotus Root Soup",
+      "author": "",
+      "cat": "Soup",
+      "tags": [
+        "Chinese",
+        "lotus root",
+        "peanuts",
+        "pork ribs",
+        "simmered"
+      ],
+      "img": "images/peanut-lotus-root-soup-card.jpg",
+      "poster": "images/peanut-lotus-root-soup.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Nutty, comforting soup with tender lotus root, peanuts and pork ribs.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
