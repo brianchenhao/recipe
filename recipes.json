@@ -10696,6 +10696,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chicken-pot-pie",
+      "title": "Chicken Pot Pie",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Western",
+        "chicken",
+        "vegetables",
+        "baked"
+      ],
+      "img": "images/chicken-pot-pie-card.jpg",
+      "poster": "images/chicken-pot-pie.jpg",
+      "ill": "ill-pot",
+      "badge": "New",
+      "featured": false,
+      "desc": "Creamy, hearty chicken and vegetable filling topped with golden flaky pie crust.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
