@@ -10563,6 +10563,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cempedak-goreng",
+      "title": "Cempedak Goreng",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Malaysian",
+        "cempedak",
+        "deep-fried",
+        "crispy"
+      ],
+      "img": "images/cempedak-goreng-card.jpg",
+      "poster": "images/cempedak-goreng.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy golden fritters of sweet fragrant cempedak in light batter.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
