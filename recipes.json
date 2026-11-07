@@ -10530,6 +10530,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "teh-o",
+      "title": "Teh-O",
+      "author": "",
+      "cat": "Drinks",
+      "tags": [
+        "Malaysian",
+        "black tea",
+        "brewed",
+        "hot"
+      ],
+      "img": "images/teh-o-card.jpg",
+      "poster": "images/teh-o.jpg",
+      "ill": "ill-drink",
+      "badge": "New",
+      "featured": false,
+      "desc": "Simple, aromatic and refreshing Malaysian-style black tea.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "1 serving",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
