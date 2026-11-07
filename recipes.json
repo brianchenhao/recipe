@@ -10497,6 +10497,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "creamy-garlic-pasta",
+      "title": "Creamy Garlic Pasta",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Italian",
+        "pasta",
+        "mushroom",
+        "creamy"
+      ],
+      "img": "images/creamy-garlic-pasta-card.jpg",
+      "poster": "images/creamy-garlic-pasta.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rich and creamy garlic pasta with mushrooms and Parmesan.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
