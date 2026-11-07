@@ -10596,6 +10596,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "tokoyaki",
+      "title": "Tokoyaki",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Japanese",
+        "octopus",
+        "pan-fried",
+        "street food"
+      ],
+      "img": "images/tokoyaki-card.jpg",
+      "poster": "images/tokoyaki.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy octopus balls with soft creamy center topped with sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "≈18-20 balls",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
