@@ -10729,6 +10729,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "mayak-eggs",
+      "title": "Mayak Eggs",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Korean",
+        "eggs",
+        "soy-marinated",
+        "boiled"
+      ],
+      "img": "images/mayak-eggs-card.jpg",
+      "poster": "images/mayak-eggs.jpg",
+      "ill": "ill-egg",
+      "badge": "New",
+      "featured": false,
+      "desc": "Addictive, savoury, sweet and aromatic soy-marinated eggs with jammy yolks.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
