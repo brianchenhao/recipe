@@ -10663,6 +10663,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chickpea-wheat-bread",
+      "title": "Chickpea Wheat Bread",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "homemade",
+        "chickpea flour",
+        "wheat",
+        "baked"
+      ],
+      "img": "images/chickpea-wheat-bread-card.jpg",
+      "poster": "images/chickpea-wheat-bread.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "High-protein seeded loaf made with chickpea and wheat flour, nutty and fiber-rich.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "1 loaf, ~12 slices",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
