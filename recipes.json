@@ -10860,6 +10860,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "nasi-ulam",
+      "title": "Nasi Ulam",
+      "author": "",
+      "cat": "Rice",
+      "tags": [
+        "Malaysian",
+        "rice",
+        "herbs",
+        "tossed"
+      ],
+      "img": "images/nasi-ulam-card.jpg",
+      "poster": "images/nasi-ulam.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Fragrant cooked rice tossed with fresh herbs, toasted coconut and dried shrimp.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
