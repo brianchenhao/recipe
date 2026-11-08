@@ -10827,6 +10827,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "serabi",
+      "title": "Serabi",
+      "author": "",
+      "cat": "Kuih",
+      "tags": [
+        "Indonesian",
+        "rice flour",
+        "coconut",
+        "griddled"
+      ],
+      "img": "images/serabi-card.jpg",
+      "poster": "images/serabi.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, spongy pancakes with rich coconut sauce!",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "≈10–12 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
