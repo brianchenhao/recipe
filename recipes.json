@@ -10794,6 +10794,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "hu-la-tang-hot-and-sour-soup",
+      "title": "Hu La Tang (Hot and Sour Soup)",
+      "author": "",
+      "cat": "Soup",
+      "tags": [
+        "Chinese",
+        "tofu",
+        "mushrooms",
+        "simmered"
+      ],
+      "img": "images/hu-la-tang-hot-and-sour-soup-card.jpg",
+      "poster": "images/hu-la-tang-hot-and-sour-soup.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tangy, spicy Chinese soup with tofu, mushrooms, bamboo shoots and egg ribbons.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
