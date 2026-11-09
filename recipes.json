@@ -10992,6 +10992,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sambar",
+      "title": "Sambar",
+      "author": "",
+      "cat": "Soup",
+      "tags": [
+        "South Indian",
+        "toor dal",
+        "vegetables",
+        "simmered"
+      ],
+      "img": "images/sambar-card.jpg",
+      "poster": "images/sambar.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Hearty South Indian lentil curry with mixed vegetables and tangy tamarind tempering.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4-6 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
