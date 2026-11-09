@@ -10903,14 +10903,14 @@
         "Italian",
         "olive oil",
         "herbs",
-        "whisked"
+        "no-cook"
       ],
       "img": "images/italian-dressing-card.jpg",
       "poster": "images/italian-dressing.jpg",
       "ill": "ill-jar",
       "badge": "New",
       "featured": false,
-      "desc": "Herby, tangy and aromatic dressing made with common ingredients.",
+      "desc": "Herby, tangy and aromatic Italian dressing made with common ingredients.",
       "lede": "The whole recipe is in the picture — tap it to zoom in.",
       "level": "",
       "prep": "",
