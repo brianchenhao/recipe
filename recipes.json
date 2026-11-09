@@ -11091,6 +11091,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "rugelach",
+      "title": "Rugelach",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Jewish",
+        "walnuts",
+        "cinnamon",
+        "baked"
+      ],
+      "img": "images/rugelach-card.jpg",
+      "poster": "images/rugelach.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Buttery flaky crescents filled with sweet walnuts, raisins and cinnamon.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "≈ 24 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
