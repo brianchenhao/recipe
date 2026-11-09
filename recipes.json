@@ -10926,6 +10926,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "indian-chicken-bhuna",
+      "title": "Indian Chicken Bhuna",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Indian",
+        "chicken",
+        "dry curry",
+        "spiced"
+      ],
+      "img": "images/indian-chicken-bhuna-card.jpg",
+      "poster": "images/indian-chicken-bhuna.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rich, spiced thick dry chicken curry with aromatic gravy.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
