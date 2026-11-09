@@ -10959,6 +10959,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cabbage-thoran",
+      "title": "Cabbage Thoran",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "South Indian",
+        "cabbage",
+        "coconut",
+        "stir-fry"
+      ],
+      "img": "images/cabbage-thoran-card.jpg",
+      "poster": "images/cabbage-thoran.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Light South Indian cabbage stir-fry with coconut, mustard seeds and curry leaves.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "15 Minutes",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
