@@ -10893,6 +10893,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "italian-dressing",
+      "title": "Italian Dressing",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Italian",
+        "olive oil",
+        "herbs",
+        "whisked"
+      ],
+      "img": "images/italian-dressing-card.jpg",
+      "poster": "images/italian-dressing.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Herby, tangy and aromatic dressing made with common ingredients.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
