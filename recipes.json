@@ -11025,6 +11025,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "tomato-chutney",
+      "title": "Tomato Chutney",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "South Indian",
+        "tomato",
+        "sautéed",
+        "blended"
+      ],
+      "img": "images/tomato-chutney-card.jpg",
+      "poster": "images/tomato-chutney.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tangy and flavourful South Indian tomato chutney perfect with idli, dosa and vadai.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4–6 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
