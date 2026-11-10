@@ -11157,6 +11157,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cucur-sayur",
+      "title": "Cucur Sayur",
+      "author": "",
+      "cat": "Kuih",
+      "tags": [
+        "Malaysian",
+        "vegetable",
+        "fried",
+        "tea-time snack"
+      ],
+      "img": "images/cucur-sayur-card.jpg",
+      "poster": "images/cucur-sayur.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy Malaysian-style vegetable fritters with cabbage and carrot, perfect tea-time snack.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "≈ 15–20 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
