@@ -11190,6 +11190,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "dough-fritters",
+      "title": "Dough Fritters",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "Chinese",
+        "flour",
+        "deep-fried",
+        "breakfast"
+      ],
+      "img": "images/dough-fritters-card.jpg",
+      "poster": "images/dough-fritters.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy outside, soft and airy inside, perfect for breakfast or tea time.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "≈ 10-12 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
