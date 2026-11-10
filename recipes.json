@@ -11124,6 +11124,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sambal-tumis-kupang",
+      "title": "Sambal Tumis Kupang",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Malaysian",
+        "mussels",
+        "sambal",
+        "stir-fry"
+      ],
+      "img": "images/sambal-tumis-kupang-card.jpg",
+      "poster": "images/sambal-tumis-kupang.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Spicy, tangy mussels stir-fried in rich red sambal, a classic Malaysian dish.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
