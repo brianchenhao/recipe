@@ -11223,6 +11223,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "deep-fried-tempura-prawns",
+      "title": "Deep Fried Tempura Prawns",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Japanese",
+        "prawns",
+        "deep-fried",
+        "crispy"
+      ],
+      "img": "images/deep-fried-tempura-prawns-card.jpg",
+      "poster": "images/deep-fried-tempura-prawns.jpg",
+      "ill": "ill-fish",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy golden tempura prawns with light batter served with dipping sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "≈ 3-4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
