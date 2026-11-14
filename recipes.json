@@ -11322,6 +11322,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "malaysian-dai-chow-ginger-spring-onion-stir-fry",
+      "title": "Malaysian Dai Chow Ginger & Spring Onion Stir-Fry",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Malaysian",
+        "Chicken",
+        "Ginger",
+        "Stir-Fry"
+      ],
+      "img": "images/malaysian-dai-chow-ginger-spring-onion-stir-fry-card.jpg",
+      "poster": "images/malaysian-dai-chow-ginger-spring-onion-stir-fry.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender meat with aromatic ginger, spring onion and a savory, glossy sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "~ 20 Minutes",
+      "yield": "Serves 2-3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
