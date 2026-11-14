@@ -11289,6 +11289,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "fried-tofu-with-minced-meat",
+      "title": "Fried Tofu with Minced Meat",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Chinese",
+        "tofu",
+        "minced meat",
+        "fried"
+      ],
+      "img": "images/fried-tofu-with-minced-meat-card.jpg",
+      "poster": "images/fried-tofu-with-minced-meat.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy fried tofu coated in rich, savory minced meat sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
