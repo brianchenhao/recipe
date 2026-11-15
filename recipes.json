@@ -11355,6 +11355,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "slice-fish-soup-with-milk",
+      "title": "Slice Fish Soup with Milk",
+      "author": "",
+      "cat": "Soup",
+      "tags": [
+        "Malaysian",
+        "fish",
+        "milk",
+        "boiled"
+      ],
+      "img": "images/slice-fish-soup-with-milk-card.jpg",
+      "poster": "images/slice-fish-soup-with-milk.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender fish slices in light milky broth with ginger, tomato and rice wine.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "~ 20 Minutes",
+      "yield": "Serves 2 - 3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
