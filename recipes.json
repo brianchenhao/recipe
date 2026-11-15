@@ -11586,6 +11586,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cucumber-mushroom-tofu-stir-fry",
+      "title": "Cucumber, Mushroom & Tofu Stir-Fry",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Chinese",
+        "tofu",
+        "mushroom",
+        "cucumber",
+        "stir-fry"
+      ],
+      "img": "images/cucumber-mushroom-tofu-stir-fry-card.jpg",
+      "poster": "images/cucumber-mushroom-tofu-stir-fry.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "A quick and flavorful stir-fry with silky tofu, tender mushrooms and crisp cucumber in a savory sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2-3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
