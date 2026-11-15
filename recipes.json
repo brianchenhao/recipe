@@ -11454,6 +11454,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "kangkung-belacan",
+      "title": "Kangkung Belacan",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Malaysian",
+        "water spinach",
+        "stir-fry",
+        "spicy"
+      ],
+      "img": "images/kangkung-belacan-card.jpg",
+      "poster": "images/kangkung-belacan.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "A classic Malaysian stir-fry of water spinach (kangkung) with fragrant shrimp paste (belacan), aromatic garlic and a savoury spicy kick.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2-3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
