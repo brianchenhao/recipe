@@ -11421,6 +11421,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "fried-calamari",
+      "title": "Fried Calamari",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Italian",
+        "squid",
+        "deep-fried",
+        "crispy"
+      ],
+      "img": "images/fried-calamari-card.jpg",
+      "poster": "images/fried-calamari.jpg",
+      "ill": "ill-fish",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy and tender fried calamari with a light, crunchy coating, served with chilli sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2-3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
