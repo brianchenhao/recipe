@@ -11388,6 +11388,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "claypot-kung-pao-frog-legs",
+      "title": "Claypot Kung Pao Frog Legs",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Chinese",
+        "frog legs",
+        "kung pao",
+        "claypot"
+      ],
+      "img": "images/claypot-kung-pao-frog-legs-card.jpg",
+      "poster": "images/claypot-kung-pao-frog-legs.jpg",
+      "ill": "ill-pot",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender frog legs stir-fried in a classic Kung Pao sauce and served sizzling in a claypot.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2-3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
