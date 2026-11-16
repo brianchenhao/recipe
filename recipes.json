@@ -11818,6 +11818,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "creamy-chicken-with-thyme-french-style",
+      "title": "Creamy Chicken with Thyme (French-Style)",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "French",
+        "chicken",
+        "mushroom",
+        "creamy",
+        "pan-seared"
+      ],
+      "img": "images/creamy-chicken-with-thyme-french-style-card.jpg",
+      "poster": "images/creamy-chicken-with-thyme-french-style.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Golden chicken thighs simmered in a creamy thyme mushroom sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "~40 min",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
