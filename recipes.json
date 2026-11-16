@@ -11620,6 +11620,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "steamed-tofu-skin-roll-bean-curd-roll",
+      "title": "Steamed Tofu Skin Roll (Bean Curd Roll)",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Chinese",
+        "tofu skin",
+        "minced meat",
+        "steamed"
+      ],
+      "img": "images/steamed-tofu-skin-roll-bean-curd-roll-card.jpg",
+      "poster": "images/steamed-tofu-skin-roll-bean-curd-roll.jpg",
+      "ill": "ill-pot",
+      "badge": "New",
+      "featured": false,
+      "desc": "Savory steamed tofu skin rolls filled with minced meat and vegetables in sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3-4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
