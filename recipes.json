@@ -11851,6 +11851,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "poulet-roti-french-roast-chicken",
+      "title": "Poulet Rôti (French Roast Chicken)",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "French",
+        "chicken",
+        "roast",
+        "vegetables"
+      ],
+      "img": "images/poulet-roti-french-roast-chicken-card.jpg",
+      "poster": "images/poulet-roti-french-roast-chicken.jpg",
+      "ill": "ill-grill",
+      "badge": "New",
+      "featured": false,
+      "desc": "Golden herb-roasted whole chicken served with tender potatoes, carrots and onions.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4-6",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
