@@ -11828,15 +11828,14 @@
         "French",
         "chicken",
         "mushroom",
-        "creamy",
-        "pan-seared"
+        "creamy"
       ],
       "img": "images/creamy-chicken-with-thyme-french-style-card.jpg",
       "poster": "images/creamy-chicken-with-thyme-french-style.jpg",
       "ill": "ill-pan",
       "badge": "New",
       "featured": false,
-      "desc": "Golden chicken thighs simmered in a creamy thyme mushroom sauce.",
+      "desc": "Golden chicken thighs simmered in creamy thyme mushroom sauce with white wine.",
       "lede": "The whole recipe is in the picture — tap it to zoom in.",
       "level": "",
       "prep": "",
