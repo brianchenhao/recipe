@@ -11785,6 +11785,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "czech-bacon-potato-dumplings-bramborove-knedliky-se-slaninou",
+      "title": "Czech Bacon Potato Dumplings (Bramborové Knedlíky se Slaninou)",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Czech",
+        "potato",
+        "bacon",
+        "steamed"
+      ],
+      "img": "images/czech-bacon-potato-dumplings-bramborove-knedliky-se-slaninou-card.jpg",
+      "poster": "images/czech-bacon-potato-dumplings-bramborove-knedliky-se-slaninou.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft steamed potato dumplings studded with crispy bacon, sliced and served warm.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 4-6",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
