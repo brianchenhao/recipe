@@ -11686,6 +11686,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "honey-glazed-chicken-wings",
+      "title": "Honey Glazed Chicken Wings",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Asian",
+        "chicken wings",
+        "pan-fried",
+        "honey glaze"
+      ],
+      "img": "images/honey-glazed-chicken-wings-card.jpg",
+      "poster": "images/honey-glazed-chicken-wings.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Juicy chicken wings coated in a glossy, sweet and savoury honey glaze.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3-4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
