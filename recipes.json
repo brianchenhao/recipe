@@ -11752,6 +11752,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "grilled-stingray-ikan-pari-bakar",
+      "title": "Grilled Stingray (Ikan Pari Bakar)",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Malaysian",
+        "stingray",
+        "grilled",
+        "sambal"
+      ],
+      "img": "images/grilled-stingray-ikan-pari-bakar-card.jpg",
+      "poster": "images/grilled-stingray-ikan-pari-bakar.jpg",
+      "ill": "ill-grill",
+      "badge": "New",
+      "featured": false,
+      "desc": "Char-grilled stingray coated in spicy sambal, served with onion and lime.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 2-3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
