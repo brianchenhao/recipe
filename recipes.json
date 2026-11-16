@@ -11917,6 +11917,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "pickled-purple-cabbage",
+      "title": "Pickled Purple Cabbage",
+      "author": "",
+      "cat": "Pickles",
+      "tags": [
+        "vegetarian",
+        "purple cabbage",
+        "vinegar pickle"
+      ],
+      "img": "images/pickled-purple-cabbage-card.jpg",
+      "poster": "images/pickled-purple-cabbage.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crunchy tangy purple cabbage pickled in spiced vinegar with garlic.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 8-10",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
