@@ -11949,6 +11949,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "king-oyster-mushroom-cheese-spinach-rolls",
+      "title": "King Oyster Mushroom, Cheese & Spinach Rolls",
+      "author": "",
+      "cat": "Breakfast",
+      "tags": [
+        "Western",
+        "spinach",
+        "mushroom",
+        "cheese",
+        "pan-fried"
+      ],
+      "img": "images/king-oyster-mushroom-cheese-spinach-rolls-card.jpg",
+      "poster": "images/king-oyster-mushroom-cheese-spinach-rolls.jpg",
+      "ill": "ill-egg",
+      "badge": "New",
+      "featured": false,
+      "desc": "Savory spinach egg wrap filled with sautéed mushrooms, sausage and melted cheese.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "25 min",
+      "yield": "Serves 2-3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
