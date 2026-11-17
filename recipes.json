@@ -11983,6 +11983,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "bbq-glazed-wings",
+      "title": "BBQ Glazed Wings",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "American",
+        "chicken wings",
+        "fried",
+        "BBQ glaze"
+      ],
+      "img": "images/bbq-glazed-wings-card.jpg",
+      "poster": "images/bbq-glazed-wings.jpg",
+      "ill": "ill-grill",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender, juicy chicken wings coated in a rich, smoky and slightly sweet BBQ glaze.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 3-4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
