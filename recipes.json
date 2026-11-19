@@ -12052,6 +12052,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "bihun-goreng-kampung",
+      "title": "Bihun Goreng Kampung",
+      "author": "",
+      "cat": "Noodles",
+      "tags": [
+        "Malaysian",
+        "rice vermicelli",
+        "fried",
+        "spicy"
+      ],
+      "img": "images/bihun-goreng-kampung-card.jpg",
+      "poster": "images/bihun-goreng-kampung.jpg",
+      "ill": "ill-noodles",
+      "badge": "New",
+      "featured": false,
+      "desc": "A beloved Malaysian breakfast classic: fragrant, spicy fried rice vermicelli tossed with crispy anchovies, eggs, and leafy greens.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "3-4 servings",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
