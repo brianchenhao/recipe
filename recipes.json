@@ -11988,6 +11988,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sourdough-hydration-guide",
+      "title": "Sourdough Hydration Guide",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "western",
+        "flour",
+        "baked",
+        "sourdough"
+      ],
+      "img": "images/sourdough-hydration-guide-card.jpg",
+      "poster": "images/sourdough-hydration-guide.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Guide to sourdough hydration levels from firm low-hydration to airy high-hydration loaves.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
