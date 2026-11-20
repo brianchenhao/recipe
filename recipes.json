@@ -12186,6 +12186,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sourdough-sweet-buns",
+      "title": "Sourdough Sweet Buns",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "sourdough",
+        "bread flour",
+        "baked",
+        "sweet"
+      ],
+      "img": "images/sourdough-sweet-buns-card.jpg",
+      "poster": "images/sourdough-sweet-buns.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, fluffy naturally leavened sweet buns with tender crumb.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 14–18 hours (with cold proof)",
+      "yield": "8–10 buns",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
