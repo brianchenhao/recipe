@@ -12029,16 +12029,16 @@
       "cat": "Bread & Pau",
       "tags": [
         "western",
-        "sourdough",
         "bread flour",
-        "baked"
+        "baked",
+        "fermented"
       ],
       "img": "images/artisan-sourdough-bread-card.jpg",
       "poster": "images/artisan-sourdough-bread.jpg",
       "ill": "ill-bread",
       "badge": "New",
       "featured": false,
-      "desc": "Crusty artisan loaf with open crumb and rich tangy flavor.",
+      "desc": "Crispy crust bread with open crumb and rich tangy flavor.",
       "lede": "The whole recipe is in the picture — tap it to zoom in.",
       "level": "",
       "prep": "",
