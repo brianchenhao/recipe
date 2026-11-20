@@ -12054,6 +12054,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sourdough-focaccia",
+      "title": "Sourdough Focaccia",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Italian",
+        "bread flour",
+        "baked",
+        "sourdough"
+      ],
+      "img": "images/sourdough-focaccia-card.jpg",
+      "poster": "images/sourdough-focaccia.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Airy naturally leavened focaccia with olive oil, rosemary and cherry tomatoes.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 12–18 hours (with cold proof)",
+      "yield": "1 pan (≈ 8–12 pieces)",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
