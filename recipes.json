@@ -12085,6 +12085,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "garlic-bread",
+      "title": "Garlic Bread",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Italian",
+        "garlic",
+        "bread",
+        "baked"
+      ],
+      "img": "images/garlic-bread-card.jpg",
+      "poster": "images/garlic-bread.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy baguette slices spread with garlic parsley butter and baked golden.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "about 8 slices",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
