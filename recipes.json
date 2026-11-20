@@ -12087,6 +12087,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "ciabatta",
+      "title": "Ciabatta",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Italian",
+        "bread flour",
+        "sourdough",
+        "baked"
+      ],
+      "img": "images/ciabatta-card.jpg",
+      "poster": "images/ciabatta.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rustic Italian artisan bread with open airy crumb and crisp blistered crust.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 18–22 hours (with cold proof)",
+      "yield": "2 ciabatta",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
