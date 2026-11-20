@@ -12153,6 +12153,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "open-hole-sourdough",
+      "title": "Open-Hole Sourdough",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "artisan",
+        "bread flour",
+        "sourdough",
+        "baked"
+      ],
+      "img": "images/open-hole-sourdough-card.jpg",
+      "poster": "images/open-hole-sourdough.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "High-hydration artisan loaf with airy open crumb, chewy interior and crispy crust.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "~18-24 hours (with cold proof)",
+      "yield": "1 large loaf",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
