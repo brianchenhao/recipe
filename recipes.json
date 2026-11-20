@@ -11955,6 +11955,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sourdough-with-100-hydration",
+      "title": "Sourdough with 100% Hydration",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "sourdough",
+        "bread flour",
+        "baked",
+        "fermented"
+      ],
+      "img": "images/sourdough-with-100-hydration-card.jpg",
+      "poster": "images/sourdough-with-100-hydration.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Open-crumb sourdough loaf with soft interior, thin crisp crust and rich tangy flavor.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "1 loaf",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
