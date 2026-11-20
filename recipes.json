@@ -12021,6 +12021,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "artisan-sourdough-bread",
+      "title": "Artisan Sourdough Bread",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "western",
+        "sourdough",
+        "bread flour",
+        "baked"
+      ],
+      "img": "images/artisan-sourdough-bread-card.jpg",
+      "poster": "images/artisan-sourdough-bread.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crusty artisan loaf with open crumb and rich tangy flavor.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 18–22 hours",
+      "yield": "1 loaf (≈ 800 g)",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
