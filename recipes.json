@@ -12120,6 +12120,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "everyday-sourdough-sandwich-bread",
+      "title": "Everyday Sourdough Sandwich Bread",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "sourdough",
+        "bread flour",
+        "baked",
+        "sandwich"
+      ],
+      "img": "images/everyday-sourdough-sandwich-bread-card.jpg",
+      "poster": "images/everyday-sourdough-sandwich-bread.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, fluffy naturally leavened sandwich loaf with tender crumb for everyday slicing.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈12-16 h (with cold proof)",
+      "yield": "1 loaf",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
