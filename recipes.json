@@ -11922,6 +11922,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sourdough-pizza",
+      "title": "Sourdough Pizza",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "Italian",
+        "sourdough",
+        "mozzarella",
+        "baked"
+      ],
+      "img": "images/sourdough-pizza-card.jpg",
+      "poster": "images/sourdough-pizza.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chewy sourdough pizza with tomato sauce, mozzarella, and fresh basil.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "2 x 12-inch pizzas",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
