@@ -12252,6 +12252,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "tomato-and-egg-stir-fry",
+      "title": "Tomato and Egg Stir-Fry",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Chinese",
+        "tomato",
+        "egg",
+        "stir-fry"
+      ],
+      "img": "images/tomato-and-egg-stir-fry-card.jpg",
+      "poster": "images/tomato-and-egg-stir-fry.jpg",
+      "ill": "ill-egg",
+      "badge": "New",
+      "featured": false,
+      "desc": "Fluffy scrambled eggs tossed with juicy stir-fried tomatoes in a savoury tangy sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 10–15 minutes",
+      "yield": "Serves 2–3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
