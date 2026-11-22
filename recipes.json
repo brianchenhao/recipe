@@ -12318,6 +12318,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "buddha-s-delight",
+      "title": "Buddha's Delight",
+      "author": "",
+      "cat": "Stir-Fry",
+      "tags": [
+        "Chinese",
+        "vegetables",
+        "mushrooms",
+        "braised",
+        "vegetarian"
+      ],
+      "img": "images/buddha-s-delight-card.jpg",
+      "poster": "images/buddha-s-delight.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Hearty Chinese vegetarian stew with mushrooms, tofu and cabbage in savory sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "serves 4-6",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
