@@ -12285,6 +12285,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "steamed-minced-pork-chinese-style",
+      "title": "Steamed Minced Pork (Chinese Style)",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Chinese",
+        "pork",
+        "steamed",
+        "home-style"
+      ],
+      "img": "images/steamed-minced-pork-chinese-style-card.jpg",
+      "poster": "images/steamed-minced-pork-chinese-style.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender and juicy Chinese-style steamed minced pork served hot with rice.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 25–30 minutes",
+      "yield": "Serves 2–3",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
