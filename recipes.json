@@ -12219,6 +12219,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "bean-sprouts-popiah",
+      "title": "Bean Sprouts Popiah",
+      "author": "",
+      "cat": "Salad",
+      "tags": [
+        "Malaysian",
+        "bean sprouts",
+        "fresh rolls",
+        "street food"
+      ],
+      "img": "images/bean-sprouts-popiah-card.jpg",
+      "poster": "images/bean-sprouts-popiah.jpg",
+      "ill": "ill-salad",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crisp bean sprouts, tofu and egg wrapped in soft popiah skins with savory sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 40 minutes",
+      "yield": "8–10 rolls",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
