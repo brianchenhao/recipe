@@ -12822,6 +12822,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "black-bean-cajeta-2",
+      "title": "Black Bean Cajeta",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "Mexican",
+        "black beans",
+        "caramel",
+        "simmered"
+      ],
+      "img": "images/black-bean-cajeta-2-card.jpg",
+      "poster": "images/black-bean-cajeta-2.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Creamy black beans simmered in sweet caramel coconut sauce with cinnamon.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 40–50 minutes",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
