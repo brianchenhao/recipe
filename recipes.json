@@ -12493,6 +12493,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "black-bean-chocolate-cake",
+      "title": "Black Bean Chocolate Cake",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "healthy",
+        "black beans",
+        "chocolate",
+        "baked"
+      ],
+      "img": "images/black-bean-chocolate-cake-card.jpg",
+      "poster": "images/black-bean-chocolate-cake.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Moist flourless-style chocolate cake made with protein-rich black beans.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 50 minutes",
+      "yield": "Serves 8-10",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
