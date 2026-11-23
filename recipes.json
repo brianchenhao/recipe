@@ -12526,6 +12526,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "black-bean-cajeta",
+      "title": "Black Bean Cajeta",
+      "author": "",
+      "cat": "Sides & Sauces",
+      "tags": [
+        "Mexican",
+        "black beans",
+        "caramel",
+        "simmered"
+      ],
+      "img": "images/black-bean-cajeta-card.jpg",
+      "poster": "images/black-bean-cajeta.jpg",
+      "ill": "ill-jar",
+      "badge": "New",
+      "featured": false,
+      "desc": "Sweet, creamy and rich Mexican caramel made with black beans and milk.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "~45 minutes",
+      "yield": "1-2 Jars",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
