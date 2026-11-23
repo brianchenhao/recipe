@@ -12789,6 +12789,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cantonese-braised-radish-beef-stew",
+      "title": "Cantonese Braised Radish & Beef Stew",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Cantonese",
+        "beef",
+        "radish",
+        "braised"
+      ],
+      "img": "images/cantonese-braised-radish-beef-stew-card.jpg",
+      "poster": "images/cantonese-braised-radish-beef-stew.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Tender beef and melt-in-mouth radish in rich savoury broth.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 2 – 2½ hours",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
