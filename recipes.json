@@ -12690,6 +12690,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "edible-chickpea-cookie-dough",
+      "title": "Edible Chickpea Cookie Dough",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "American",
+        "chickpea",
+        "chocolate",
+        "no-bake"
+      ],
+      "img": "images/edible-chickpea-cookie-dough-card.jpg",
+      "poster": "images/edible-chickpea-cookie-dough.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Creamy no-bake chickpea dough with peanut butter and chocolate chips.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 10 minutes (no baking)",
+      "yield": "Serves 6-8 (≈ 1½ cups)",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
