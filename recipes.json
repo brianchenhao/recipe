@@ -12591,6 +12591,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chicken-satay",
+      "title": "Chicken Satay",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Malaysian",
+        "chicken",
+        "grilled",
+        "skewers"
+      ],
+      "img": "images/chicken-satay-card.jpg",
+      "poster": "images/chicken-satay.jpg",
+      "ill": "ill-grill",
+      "badge": "New",
+      "featured": false,
+      "desc": "Juicy, charred chicken skewers with rich peanut dipping sauce.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "~45 minutes (+ marinate)",
+      "yield": "Serves 4-6",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
