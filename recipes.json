@@ -12484,6 +12484,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "gai-tan-gao",
+      "title": "Gai Tan Gao",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "Chinese",
+        "egg",
+        "baked",
+        "tea-time"
+      ],
+      "img": "images/gai-tan-gao-card.jpg",
+      "poster": "images/gai-tan-gao.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft and fluffy traditional Chinese egg cake perfect for tea time.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 45 minutes",
+      "yield": "10-12 pcs",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
