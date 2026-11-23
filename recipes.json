@@ -12723,6 +12723,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "aquafaba-chocolate-mousse",
+      "title": "Aquafaba Chocolate Mousse",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "vegan",
+        "chocolate",
+        "whipped",
+        "chilled"
+      ],
+      "img": "images/aquafaba-chocolate-mousse-card.jpg",
+      "poster": "images/aquafaba-chocolate-mousse.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Light, airy dairy-free chocolate mousse whipped from aquafaba and dark chocolate.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 20 minutes (+ 1-2 hours chill)",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
