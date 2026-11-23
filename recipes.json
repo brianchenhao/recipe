@@ -12385,6 +12385,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "pulut-tai-tai",
+      "title": "Pulut Tai Tai",
+      "author": "",
+      "cat": "Kuih",
+      "tags": [
+        "Nyonya",
+        "glutinous rice",
+        "coconut",
+        "steamed"
+      ],
+      "img": "images/pulut-tai-tai-card.jpg",
+      "poster": "images/pulut-tai-tai.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Layered blue and white steamed glutinous rice topped with grated coconut.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 1 hour (plus 30 min soaking)",
+      "yield": "Serves 9-12 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
