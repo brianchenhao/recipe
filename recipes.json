@@ -12418,6 +12418,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "cucur-udang",
+      "title": "Cucur Udang",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "Malaysian",
+        "prawn",
+        "deep-fried",
+        "crispy snack"
+      ],
+      "img": "images/cucur-udang-card.jpg",
+      "poster": "images/cucur-udang.jpg",
+      "ill": "ill-pan",
+      "badge": "New",
+      "featured": false,
+      "desc": "Crispy golden fritters packed with prawns and vegetables, perfect tea-time snack.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "makes ≈ 12-15 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
