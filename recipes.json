@@ -12393,6 +12393,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "black-sesame-glutinous-rice-cake",
+      "title": "Black Sesame Glutinous Rice Cake",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "Chinese",
+        "black sesame",
+        "glutinous rice",
+        "pan-fried"
+      ],
+      "img": "images/black-sesame-glutinous-rice-cake-card.jpg",
+      "poster": "images/black-sesame-glutinous-rice-cake.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Chewy pan-fried glutinous rice cakes filled with sweet black sesame paste.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "About 40 minutes",
+      "yield": "Makes 8-10 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
