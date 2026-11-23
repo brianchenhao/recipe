@@ -12460,6 +12460,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chickpea-chocolate-pudding",
+      "title": "Chickpea Chocolate Pudding",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "healthy",
+        "chickpea",
+        "chocolate",
+        "blended"
+      ],
+      "img": "images/chickpea-chocolate-pudding-card.jpg",
+      "poster": "images/chickpea-chocolate-pudding.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Creamy rich high-protein chocolate pudding made with chickpeas and peanut butter.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 10 minutes (+ chill time)",
+      "yield": "Serves 3-4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
