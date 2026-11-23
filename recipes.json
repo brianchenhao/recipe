@@ -12559,6 +12559,38 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "aquafaba-chocolate-ice-cream",
+      "title": "Aquafaba Chocolate Ice-Cream",
+      "author": "",
+      "cat": "Dessert",
+      "tags": [
+        "vegan",
+        "chocolate",
+        "frozen"
+      ],
+      "img": "images/aquafaba-chocolate-ice-cream-card.jpg",
+      "poster": "images/aquafaba-chocolate-ice-cream.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Creamy, light dairy-free chocolate ice cream made with whipped aquafaba.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 6 hours (20 min prep + freezing)",
+      "yield": "Serves 4",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
