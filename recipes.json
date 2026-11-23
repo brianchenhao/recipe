@@ -12624,6 +12624,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "chickpea-banana-cake-cookies",
+      "title": "Chickpea Banana Cake Cookies",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "healthy",
+        "chickpea",
+        "banana",
+        "baked"
+      ],
+      "img": "images/chickpea-banana-cake-cookies-card.jpg",
+      "poster": "images/chickpea-banana-cake-cookies.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft, moist and naturally sweet high-protein cookies made with chickpeas and banana.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 25 minutes",
+      "yield": "makes 10-12 cookies",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
