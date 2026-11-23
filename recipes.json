@@ -12426,6 +12426,40 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "black-bean-brownies",
+      "title": "Black Bean Brownies",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "American",
+        "black bean",
+        "chocolate",
+        "baked",
+        "healthy"
+      ],
+      "img": "images/black-bean-brownies-card.jpg",
+      "poster": "images/black-bean-brownies.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Fudgy flourless brownies made with black beans, banana and cocoa.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 40 minutes",
+      "yield": "Serves 8-12",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
