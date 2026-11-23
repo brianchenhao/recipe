@@ -12451,6 +12451,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "ma-lai-gao",
+      "title": "Ma Lai Gao",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "Chinese",
+        "brown sugar",
+        "steamed",
+        "dim sum"
+      ],
+      "img": "images/ma-lai-gao-card.jpg",
+      "poster": "images/ma-lai-gao.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft and fluffy steamed brown sugar sponge cake with airy texture.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 50 minutes",
+      "yield": "Serves 9 pieces",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
