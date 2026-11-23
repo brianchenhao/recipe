@@ -12352,6 +12352,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "traditional-north-indian-curry-chicken",
+      "title": "Traditional North Indian Curry Chicken",
+      "author": "",
+      "cat": "Meat & Seafood",
+      "tags": [
+        "North Indian",
+        "chicken",
+        "curry",
+        "simmered"
+      ],
+      "img": "images/traditional-north-indian-curry-chicken-card.jpg",
+      "poster": "images/traditional-north-indian-curry-chicken.jpg",
+      "ill": "ill-bowl",
+      "badge": "New",
+      "featured": false,
+      "desc": "Rich and aromatic bone-in chicken curry in spiced tomato-yogurt gravy.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 1 hour",
+      "yield": "Serves 4-6",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
