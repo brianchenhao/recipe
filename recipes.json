@@ -12855,6 +12855,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "black-bean-tea-for-confinement",
+      "title": "Black Bean Tea for Confinement",
+      "author": "",
+      "cat": "Drinks",
+      "tags": [
+        "Chinese",
+        "black beans",
+        "ginger",
+        "boiled"
+      ],
+      "img": "images/black-bean-tea-for-confinement-card.jpg",
+      "poster": "images/black-bean-tea-for-confinement.jpg",
+      "ill": "ill-drink",
+      "badge": "New",
+      "featured": false,
+      "desc": "Warming black bean tea with ginger and red dates for postpartum recovery.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "≈ 45-60 minutes",
+      "yield": "Serves 4-6",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
