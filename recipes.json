@@ -12596,6 +12596,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "sweet-potato-walnut-pumpkin-seed-bread",
+      "title": "Sweet Potato, Walnut & Pumpkin Seed Bread",
+      "author": "",
+      "cat": "Bread & Pau",
+      "tags": [
+        "diabetes-friendly",
+        "sweet potato",
+        "walnut",
+        "baked"
+      ],
+      "img": "images/sweet-potato-walnut-pumpkin-seed-bread-card.jpg",
+      "poster": "images/sweet-potato-walnut-pumpkin-seed-bread.jpg",
+      "ill": "ill-bread",
+      "badge": "New",
+      "featured": false,
+      "desc": "Moist whole wheat loaf with sweet potato, walnuts and pumpkin seeds.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Serves 10 slices",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
