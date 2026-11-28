@@ -12629,6 +12629,39 @@
       "tips": [],
       "cooksNote": "",
       "nutrition": {}
+    },
+    {
+      "id": "red-velvet-cookies",
+      "title": "Red Velvet Cookies",
+      "author": "",
+      "cat": "Cake",
+      "tags": [
+        "American",
+        "cocoa",
+        "white chocolate",
+        "baked"
+      ],
+      "img": "images/red-velvet-cookies-card.jpg",
+      "poster": "images/red-velvet-cookies.jpg",
+      "ill": "ill-cake",
+      "badge": "New",
+      "featured": false,
+      "desc": "Soft chewy red velvet cookies with cocoa and creamy white chocolate chips.",
+      "lede": "The whole recipe is in the picture — tap it to zoom in.",
+      "level": "",
+      "prep": "",
+      "cook": "",
+      "active": "",
+      "total": "",
+      "yield": "Makes about 18-20 cookies",
+      "serves": 0,
+      "rating": 0,
+      "reviews": 0,
+      "ingredientGroups": [],
+      "steps": [],
+      "tips": [],
+      "cooksNote": "",
+      "nutrition": {}
     }
   ]
 }
